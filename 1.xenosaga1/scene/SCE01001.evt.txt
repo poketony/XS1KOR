@@ -1,0 +1,444 @@
+# chunk 14 @ 0x8edc cnum=2783 strings=443
+ 
+*************ColorScreen Printout*************
+*************Focus Printout*************
+***********Objchk printout***********
+*********CameraHistory SPL*********
+*********CameraTool Standby*****************
+*********Capture End.*****************
+*********Capture Start!!!*****************
+*********Capture Waiting...*****************
+*********CaptureTool Standby*****************
+*********DEBUGPRINT*********
+*********DEBUGPRINT3*********
+*********DEBUGPRINT4*********
+*********DEBUGPRINT6*********
+*********ManualCamera Replay*********
+*********Timechk Standby*****************
+*********printout /[$0]***********
+,
+--
+--------------------------------
+----------シーンは終了しました。
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])
+--alpha--
+--filter--
+--ref_alpha--
+--shake--
+/[#0]f,/[#1]f,
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+/[$0]
+/[$0](Cursor = /[$1])
+/[$0],
+/[$1],
+0,
+1,
+1001_1
+==
+================================
+Alpha Max!!
+Alpha Min!!
+Back.
+BaseCam.setFov(/[#0]f);
+BaseCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+Before.
+Blue Max!!
+Blue Min!!
+CAMHIS
+Camera instant test
+CameraHistory Overflow!!
+Cameratest_history
+Cancel!!
+Capture Cancel.
+Capture Folder Setting...
+CaptureMODE ---All Screen.
+CaptureMODE ---Chr(pic)
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---Particle(pic)
+CaptureMODE ---Particle(pic+zpic)
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---SoftImage BG(pic+zpic)
+CaptureMODE ---TXT(pic)
+CaptureMode = /[$0]
+Capture_abrupt
+Capture_wait
+ColorScreen  SetMode
+ColorScreenParam = {
+ColorScreenParamBack = {
+ColorScreenParamZ = {
+ColorScreenParam[2] = /[$1]
+ERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRROR!!
+End(Button).
+End(TimeOver).
+End.(RETURN = /[$0])
+Event Out
+F-/[$0]
+F-/[$0]/[$2] frame(/[$1])
+FLSkosmos.fpk
+FLSkosmos_h.fpk
+FLSshion.fpk
+FLSshion_h.fpk
+Face End.
+Facechk...
+Facechk...end.
+Focus SetMode
+Focus SetMode-------end
+Focus delta = /[$0](back)
+Fog  SetMode
+Fog SetMode-------end
+Gnochk...
+Green Max!!
+Green Min!!
+HISPTR
+HISTORY CLEAR
+HISTORY-SET /[$0]
+HISTORYDELETE PTR=/[$0]
+HISTORYLOOK PTR=/[$0]
+History is Empty.
+INPUT Number!!
+LINKTABLE
+Layer = /[$0]
+Layer = /[$3]
+Layer = Back
+Layer = Before
+Layer Not insight.
+Layer not exist.
+MANUALCAMHIS
+MANUALCAMPTR
+MSGprint(with Face).
+MSGprint.
+ManualCam_record.
+ManualCamera MOVE to start.
+ManualCamera not Recorded.
+ManualCameraRecord START!!!
+Mtn Frame = /[$0]
+Near Ratio Max!!
+Near Ratio Min!!
+No Face!!!
+Objchk(+Mtn)......
+Objchk......
+Objchk......(Chr)
+Objchk......(Effect)
+Objchk......(Unit)
+Objchk......End
+PATH = DOWN
+PATH = LINEAR
+PATH = SPLINE
+PATH = UP
+Record /[$0]
+Red Max!!
+Red Min!!
+Runtime.setDefocus(/[$2], /[$3], ColorScreenParam);
+Runtime.setDefocus(0,2,ColorScreenParamZ);
+Runtime.setDefocus(15, /[$2], ColorScreenParam);
+Runtime.setDefocus(15, /[$2], ColorScreenParamBack);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+ScreenColor SetMode-------end
+ShakeRoutine_main
+Time = /[$0]
+Timechk_main
+Timerchk_srv_main
+VibRoutine_main
+WAIT=/[$0]
+XEVEFLAG:EV01001_F
+XEVEJNAME:CFJ1_10 XEVEJPOINT:POINT_10
+Xenvmainthreadmain
+Xenvplaythread
+_MSGprint.
+act10_chara
+act10_kosmosM
+act10_shadow
+act10_shionM
+act10_sky
+act11_chara
+act11_kosmos
+act11_shion
+act12_kosmos
+act13_kosmos
+act13_shion
+act14_kosmos
+act14_shion
+act15_kosmos
+act16_kosmos
+act16_shion
+act17_kosmos
+act18_kosmos
+act18_shion
+act19_kosmos
+act19_shion
+act20_kosmos
+act20_shion
+act21_kosmos
+act5_kosmos
+act5_shion
+act6_chara
+act6_kosmos
+act6_shadow
+act6_shion
+act6_shionM
+act7_kosmos
+act7_shadow
+act7_shion
+act7_shionM
+act7_sky
+act8_kosmos
+act9_shion
+alpha max!!
+alpha min!!
+cam1.setFov(/[#0]f);
+cam1.setRotate   (/[#0]f,/[#1]f,/[#2]f);
+cam1.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+eventmovie/
+eyes20_shion
+eyes21_shion
+face11_kosmos
+face11_shion
+face13_shion
+face14_shion
+face14_shion2
+face16_shion
+face17_kosmos
+face18_kosmos2
+face18_shion
+face18_shion2
+face20_shion
+face21_kosmos
+face5_kosmos
+face5_shion0
+face5_shion2
+face6_kosmos
+face6_kosmos2
+face6_shion
+face6_shion2
+face7_shion
+face8_kosmos
+face9_shion2
+far Ratio Max!!
+far Ratio Min!!
+filter max!!
+filter min!!
+fov[] ={
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+lightSPL end.
+lightSPL start.
+lightSPL_main
+mouth close.
+mouth open.
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+msg_clear_thread
+pos[] ={
+ref-alpha min!!
+ref_alpha max!!
+reset_pos
+rot[] ={
+setFog(1,/[#0]f,/[#1]f,/[#2]f,/[#3]f,/[$4],/[$5],/[$6],/[$7]);
+setRotate   (/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+shake max!!
+shake min!!
+spl
+};
+“슬프다”고 표현할 필요성이 있다고<lf>제 프로그램이 판단했을 경우에 한하여
+…………
+【アレン】
+【シオン】
+【ＫＯＳ−ＭＯＳ】
+네가 깨어나서 기쁘면서도<lf>네가 다시 잠들 거라 생각하니 무척 쓸쓸해
+응，그렇게 할게<lf>들었지？ ＫＯＳ−ＭＯＳ
+안녕 ＫＯＳ−ＭＯＳ<lf>상태는 어때？
+안녕하세요 시온<lf>모든 것이 매우 순조롭습니다
+이해해 주셔서 감사합니다
+그럼 자기소개 부탁할게
+모처럼 일어나 주었지만……<lf>이번에도 기동 실험이야
+그래…… 언젠가 너도<lf>이해할 수 있게 되면 좋겠다
+그래…… 그렇겠지
+그렇습니까
+그렇게 행동하도록<lf>설정되어 있습니다
+그럼 시작하도록 하자 ＫＯＳ−ＭＯＳ
+그건 내가 누구보다<lf>제일 잘 알고 있어
+그래서 마음속 어딘가에선<lf>그런 날이 오지 않기를 바라고 있어
+하지만 현재<lf>그럴 필요성은 없는 것으로 판단됩니다
+하지만 네가 다음에<lf>눈을 뜰 때는…………
+하지만 말이지 ＫＯＳ−ＭＯＳ
+네
+응 아주 잘했어
+이제 그만해도 돼
+어쩌면 수많은 피가<lf>흐르는 때일지도 몰라
+이해가 돼？
+알렌，지난번에 이어서<lf>２７７단계부터 시작해 줘
+エフェクトサイドのフォルダを使用する
+엔세페론 각지에<lf>타깃 드론을 배치합니다
+オブジェのみキャプチャ
+オブジェ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+キャプチャモード
+キャラのみキャプチャ
+キャラ単体（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ０
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+コスモス
+シオン
+시온 우즈키와의 관계를<lf>원활하게 유지하기 위해서
+スタート
+スタート　０→９
+スタート　１０→１９
+スタート　１００→１０９
+スタート　１１０→１１９
+スタート　１２０→１２９
+スタート　１３０→１３９
+スタート　１４０→１４９
+スタート　１５０→１５９
+スタート　１６０→１６９
+スタート　１７０→１７９
+スタート　１８０→１８９
+スタート　１９０→１９９
+スタート　２０→２９
+スタート　２００→２０９
+スタート　２１０→２１９
+スタート　２２０→２２９
+スタート　２３０→２３９
+スタート　２４０→２４９
+スタート　２５０→２５９
+スタート　３０→３９
+スタート　４０→４９
+スタート　５０→５９
+スタート　６０→６９
+スタート　７０→７９
+スタート　８０→８９
+スタート　９０→９９
+テキスト（ＺＰＩＣなし）
+드론의 움직임은 랜덤 워크 및<lf>앰부시로 설정
+パーティクル（ＺＰＩＣあり）
+パーティクル（ＺＰＩＣなし）
+フォルダ選択
+ページ切り替え
+벡터 제１ 개발국 소속<lf>ＫＯＳ−ＭＯＳ 개발 계획 담당 주관 기술자
+일련의 체크가 끝난 이후에<lf>너는 또다시 잠들게 될 거야
+주임님，미션 개시 전에<lf>준비운동 하실 겁니까？
+라저
+알겠습니다
+예정되어 있는 병장 스펙은……
+난 지금 복잡한 기분이야
+이번 경우에서는 당신……
+企画サイドのフォルダを使用する
+全画面
+슬프다……는 생각은 안 들어？
+최선을 다하겠습니다
+현재는 모의전용 소체이기에 출력 한계값이<lf>정상 출력의 ２２％로 설정되어 있습니다
+약칭 ＫＯＳ−ＭＯＳ입니다
+제 감정 프로그램은 창조주인 인간이<lf>쓰기에 편리하도록 제작되어 있습니다
+저는 대그노시스 전용 사람형 소탕 병기<lf>시리얼 ＮＯ．００００００００１
+개발 명칭 ＫＰ−Ｘ
+난해한 인간의 사고，특히<lf>비논리적인 사고를 저는 이해할 수 없습니다
+ＢＧのみ（ＺＰＩＣあり）
+ＢＧのみ（ＺＰＩＣなし）
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（たけなか）
+ｍｏｖｉｅ０４（なかむら）
+ｍｏｖｉｅ０５（いけうち）
+ｍｏｖｉｅ０６（？？？？）
+ｍｏｖｉｅ０７（ふち）
+ｍｏｖｉｅ０８（ふち）
+ｍｏｖｉｅ０９（保存）
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（おの７６５）
+ｍｏｖｉｅ１７（うなかみ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）

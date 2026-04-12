@@ -1,0 +1,12 @@
+Apache 3.10.6(BETA)
+1. ISO 불러오기
+2. 교체할 파일 우클릭-Replace Selected File
+3. Browse For Updated File에 파일 지정
+4. Update TOC 해제, 
+	Ignore File Size Differences 체크
+5. Replace File
+6. 바꿀 파일 전부에 대해 같은 작업 실시
+7. 퍼펙트!
+
+주의: Apache3에는 Save as 같은 게 없으므로 원본롬은
+필히 백업해 둘 것
