@@ -1,0 +1,24 @@
+<< ps2strw.exe Version 1.05 >>
+
+1. ps2strw.exe로 원본 .pss 끌어와서 .m2v(비디오 스트림)랑 .ads(오디오 스트림) 추출
+	(이때 추출 내역 저장, 비트레이트랑 섹터 수 전부 나와 있으므로)
+2. (짜피 소리는 안 바꾸니까) .m2v만 영상 편집기로 요리조리 수정(mpg 7000kps쯤으로 했었나)
+3. 수정된 영상에 아래 커맨드
+ffmpeg -i 편집본.mpg -vcodec mpeg2video -s 512x448 -r 30000/1001 -b:v 2744k -maxrate 2744k -minrate 2744k -bufsize 1835k -bf 2 -g 18 -profile:v main -level:v main -pix_fmt yuv420p -an -f mpeg2video 편집본.m2v
+(이후 맨 마지막에 0x00 00 01 B9 헥스 에딧)
+4. ps2strw로 리먹싱
+ps2strw → Mux 탭 → Add New:
+편집본.m2v 등록 (Stream: Video 확인)
+원본_vag_0.ads 등록 (Stream: AD-PCM 확인)
+Bit Rate: 추출 시 나온 .txt 파일 참고
+Start
+5. 
+ps2str.exe i 원본.pss
+ps2str.exe i 새.pss
+
+각각 쳐서 number of pack 비교하여 
+(참고: 섹터 시작 값은 0x00 00 01 BA)
+헥스 에딧으로 원본 pss의 마지막 섹터의 데이터를
+상응하는 번호의 수정 pss 섹터에 덮어씌움(수정된 쪽이 더 크다면 아예 파일 크기 똑같게 맞춰 버리기)
+
+6. 나이쓰
