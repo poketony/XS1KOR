@@ -2,11 +2,11 @@ import os
 import shutil
 
 # --- 설정 ---
-LBA_ORIGIN_PATH = "LBA0.txt"
-BIG_ORIGIN_PATH = "xenosaga0.big"
-BIG_NEW_PATH = "xenosaga0.big.new"
-LBA_NEW_PATH = "xenosaga.00_LBA_new.txt"
-UNPACKED_DIR = "xenosaga0_UNPACKED"
+LBA_ORIGIN_PATH = "LBA1.txt"
+BIG_ORIGIN_PATH = "xenosaga1.big"
+BIG_NEW_PATH = "xenosaga1.big.new"
+LBA_NEW_PATH = "xenosaga.10_LBA_new.txt"
+UNPACKED_DIR = "xenosaga1_UNPACKED"
 
 def patch_archive():
     if not os.path.exists(UNPACKED_DIR):
