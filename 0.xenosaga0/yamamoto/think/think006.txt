@@ -1,0 +1,36 @@
+# think_patch extract: think006.bin
+# 총 7개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x1A(condition) flag=0x00 offset=0x0036
+INIT
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0178
+상황을 보고 있다
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x0272
+　확산 빔  Ｅ／Ｂ
+
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x02C4
+　낙뢰  Ｅ／번개
+
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x0306
+　힘을 모아 다음 턴에 중력파
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x0370
+　중력파  Ｅ
+
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x0492
+　모우 빔  Ｅ／Ｂ
+
+<<<

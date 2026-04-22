@@ -1,0 +1,18 @@
+# chunk 2 @ 0x5a0 cnum=406 total=16
+# bc_map: 0,11,10,1,12,13,15,2,6,3,4,5,14,8,9,7
+/[label(알렌)]
+주임님．<lf>
+타깃 드론을 변경했습니다．
+/[waitkey(64)]/[clear()]
+이번 타깃은 소리에만 반응합니다．<lf>
+큰 소리를 내면 다가오겠지만<lf>
+시야에 들어가도 안 들킬 거예요！　
+/[waitkey(64)]/[close()]
+KickEvent!!!!!!!!!!!!
+B01: /[$0]
+Event On
+Event Pass
+工事中です/[wait(30)]/[close()]
+enterd : /[$0]
+entrance: /[$0]
+Msg

@@ -1,0 +1,833 @@
+{
+  "think000.bin": [],
+  "think001.bin": [
+    {
+      "scene": "cf0210.a",
+      "offset": 2733824
+    }
+  ],
+  "think002.bin": [
+    {
+      "scene": "cf0230.a",
+      "offset": 2833536
+    },
+    {
+      "scene": "cf0231.a",
+      "offset": 2851776
+    },
+    {
+      "scene": "cf0239.a",
+      "offset": 2851776
+    }
+  ],
+  "think003.bin": [
+    {
+      "scene": "cf0240.a",
+      "offset": 3837184
+    },
+    {
+      "scene": "cf0241.a",
+      "offset": 3683072
+    },
+    {
+      "scene": "cf0249.a",
+      "offset": 3683072
+    }
+  ],
+  "think004.bin": [],
+  "think005.bin": [],
+  "think006.bin": [],
+  "think007.bin": [
+    {
+      "scene": "cf0320.a",
+      "offset": 3013824
+    },
+    {
+      "scene": "cf0321.a",
+      "offset": 2953600
+    },
+    {
+      "scene": "cf0324.a",
+      "offset": 4671360
+    },
+    {
+      "scene": "cf0325.a",
+      "offset": 4671360
+    },
+    {
+      "scene": "cf0329.a",
+      "offset": 4722368
+    }
+  ],
+  "think008.bin": [],
+  "think009.bin": [
+    {
+      "scene": "cf0381.a",
+      "offset": 5407616
+    },
+    {
+      "scene": "cf0382.a",
+      "offset": 5370816
+    }
+  ],
+  "think010.bin": [
+    {
+      "scene": "cf0411.a",
+      "offset": 5387456
+    },
+    {
+      "scene": "cf0413.a",
+      "offset": 4696640
+    },
+    {
+      "scene": "cf0419.a",
+      "offset": 4747648
+    }
+  ],
+  "think011.bin": [
+    {
+      "scene": "cf0810.a",
+      "offset": 3738816
+    },
+    {
+      "scene": "cf0819.a",
+      "offset": 3738816
+    }
+  ],
+  "think012.bin": [],
+  "think013.bin": [
+    {
+      "scene": "cf0840.a",
+      "offset": 3634880
+    },
+    {
+      "scene": "cf0849.a",
+      "offset": 1607872
+    }
+  ],
+  "think014.bin": [],
+  "think015.bin": [],
+  "think016.bin": [
+    {
+      "scene": "cf0680.a",
+      "offset": 3707712
+    }
+  ],
+  "think017.bin": [
+    {
+      "scene": "cf0690.a",
+      "offset": 2809472
+    }
+  ],
+  "think018.bin": [
+    {
+      "scene": "cf0700.a",
+      "offset": 3296128
+    }
+  ],
+  "think019.bin": [
+    {
+      "scene": "cf0730.a",
+      "offset": 3897728
+    }
+  ],
+  "think020.bin": [
+    {
+      "scene": "cf0740.a",
+      "offset": 6047936
+    }
+  ],
+  "think021.bin": [],
+  "think022.bin": [
+    {
+      "scene": "cf1040.a",
+      "offset": 3360640
+    },
+    {
+      "scene": "cf1049.a",
+      "offset": 2018112
+    }
+  ],
+  "think023.bin": [
+    {
+      "scene": "cf1050.a",
+      "offset": 3868992
+    },
+    {
+      "scene": "cf1059.a",
+      "offset": 1867840
+    },
+    {
+      "scene": "cf1060.a",
+      "offset": 3623360
+    }
+  ],
+  "think024.bin": [
+    {
+      "scene": "cf1050.a",
+      "offset": 3868992
+    },
+    {
+      "scene": "cf1059.a",
+      "offset": 1867840
+    },
+    {
+      "scene": "cf1060.a",
+      "offset": 3623360
+    }
+  ],
+  "think025.bin": [],
+  "think026.bin": [],
+  "think027.bin": [
+    {
+      "scene": "cf1420.a",
+      "offset": 2795648
+    },
+    {
+      "scene": "cf1429.a",
+      "offset": 2795648
+    }
+  ],
+  "think028.bin": [
+    {
+      "scene": "cf1430.a",
+      "offset": 2577728
+    },
+    {
+      "scene": "cf1439.a",
+      "offset": 2577728
+    }
+  ],
+  "think029.bin": [
+    {
+      "scene": "cf1440.a",
+      "offset": 3044032
+    },
+    {
+      "scene": "cf1449.a",
+      "offset": 3044032
+    }
+  ],
+  "think030.bin": [
+    {
+      "scene": "cf1450.a",
+      "offset": 2985216
+    },
+    {
+      "scene": "cf1459.a",
+      "offset": 2985216
+    }
+  ],
+  "think031.bin": [
+    {
+      "scene": "cf1460.a",
+      "offset": 2769344
+    },
+    {
+      "scene": "cf1469.a",
+      "offset": 2769344
+    }
+  ],
+  "think032.bin": [
+    {
+      "scene": "cf1470.a",
+      "offset": 1966784
+    },
+    {
+      "scene": "cf1479.a",
+      "offset": 1966784
+    }
+  ],
+  "think033.bin": [
+    {
+      "scene": "cf1480.a",
+      "offset": 2436672
+    },
+    {
+      "scene": "cf1489.a",
+      "offset": 2436672
+    }
+  ],
+  "think034.bin": [
+    {
+      "scene": "cf1500.a",
+      "offset": 2319808
+    },
+    {
+      "scene": "cf1509.a",
+      "offset": 2319808
+    }
+  ],
+  "think035.bin": [
+    {
+      "scene": "cf1510.a",
+      "offset": 2208320
+    },
+    {
+      "scene": "cf1519.a",
+      "offset": 2208320
+    }
+  ],
+  "think036.bin": [],
+  "think037.bin": [],
+  "think038.bin": [],
+  "think039.bin": [],
+  "think040.bin": [],
+  "think041.bin": [],
+  "think042.bin": [
+    {
+      "scene": "cf2480.a",
+      "offset": 2725312
+    },
+    {
+      "scene": "cf2489.a",
+      "offset": 2725312
+    }
+  ],
+  "think043.bin": [],
+  "think044.bin": [
+    {
+      "scene": "cf2500.a",
+      "offset": 3801600
+    },
+    {
+      "scene": "cf2509.a",
+      "offset": 3801600
+    }
+  ],
+  "think045.bin": [],
+  "think046.bin": [],
+  "think047.bin": [],
+  "think048.bin": [],
+  "think049.bin": [
+    {
+      "scene": "cf2170.a",
+      "offset": 3232384
+    },
+    {
+      "scene": "cf2171.a",
+      "offset": 4923520
+    }
+  ],
+  "think050.bin": [
+    {
+      "scene": "cf2180.a",
+      "offset": 3294144
+    }
+  ],
+  "think051.bin": [
+    {
+      "scene": "cf2190.a",
+      "offset": 3261312
+    }
+  ],
+  "think052.bin": [],
+  "think053.bin": [
+    {
+      "scene": "cf2210.a",
+      "offset": 3641856
+    },
+    {
+      "scene": "cf2211.a",
+      "offset": 5086016
+    }
+  ],
+  "think054.bin": [
+    {
+      "scene": "cf2220.a",
+      "offset": 2874752
+    },
+    {
+      "scene": "cf2221.a",
+      "offset": 3278464
+    }
+  ],
+  "think055.bin": [
+    {
+      "scene": "cf2230.a",
+      "offset": 3126336
+    }
+  ],
+  "think056.bin": [
+    {
+      "scene": "cf2240.a",
+      "offset": 3481408
+    },
+    {
+      "scene": "cf2241.a",
+      "offset": 4326336
+    }
+  ],
+  "think057.bin": [],
+  "think058.bin": [],
+  "think059.bin": [
+    {
+      "scene": "cf2730.a",
+      "offset": 2215552
+    },
+    {
+      "scene": "cf2739.a",
+      "offset": 2215552
+    },
+    {
+      "scene": "cf2740.a",
+      "offset": 1909440
+    },
+    {
+      "scene": "cf2749.a",
+      "offset": 1909440
+    },
+    {
+      "scene": "cf2750.a",
+      "offset": 1903104
+    },
+    {
+      "scene": "cf2759.a",
+      "offset": 1903104
+    },
+    {
+      "scene": "cf2780.a",
+      "offset": 2210944
+    },
+    {
+      "scene": "cf2789.a",
+      "offset": 2210944
+    }
+  ],
+  "think060.bin": [
+    {
+      "scene": "cf2730.a",
+      "offset": 2215552
+    },
+    {
+      "scene": "cf2739.a",
+      "offset": 2215552
+    },
+    {
+      "scene": "cf2740.a",
+      "offset": 1909440
+    },
+    {
+      "scene": "cf2749.a",
+      "offset": 1909440
+    },
+    {
+      "scene": "cf2750.a",
+      "offset": 1903104
+    },
+    {
+      "scene": "cf2759.a",
+      "offset": 1903104
+    },
+    {
+      "scene": "cf2780.a",
+      "offset": 2210944
+    },
+    {
+      "scene": "cf2789.a",
+      "offset": 2210944
+    }
+  ],
+  "think061.bin": [
+    {
+      "scene": "cf2730.a",
+      "offset": 2215552
+    },
+    {
+      "scene": "cf2739.a",
+      "offset": 2215552
+    },
+    {
+      "scene": "cf2740.a",
+      "offset": 1909440
+    },
+    {
+      "scene": "cf2749.a",
+      "offset": 1909440
+    },
+    {
+      "scene": "cf2750.a",
+      "offset": 1903104
+    },
+    {
+      "scene": "cf2759.a",
+      "offset": 1903104
+    },
+    {
+      "scene": "cf2780.a",
+      "offset": 2210944
+    },
+    {
+      "scene": "cf2789.a",
+      "offset": 2210944
+    }
+  ],
+  "think062.bin": [
+    {
+      "scene": "cf2730.a",
+      "offset": 2215552
+    },
+    {
+      "scene": "cf2739.a",
+      "offset": 2215552
+    },
+    {
+      "scene": "cf2740.a",
+      "offset": 1909440
+    },
+    {
+      "scene": "cf2749.a",
+      "offset": 1909440
+    },
+    {
+      "scene": "cf2750.a",
+      "offset": 1903104
+    },
+    {
+      "scene": "cf2759.a",
+      "offset": 1903104
+    },
+    {
+      "scene": "cf2780.a",
+      "offset": 2210944
+    },
+    {
+      "scene": "cf2789.a",
+      "offset": 2210944
+    }
+  ],
+  "think063.bin": [],
+  "think064.bin": [
+    {
+      "scene": "cf2730.a",
+      "offset": 2215552
+    },
+    {
+      "scene": "cf2739.a",
+      "offset": 2215552
+    },
+    {
+      "scene": "cf2740.a",
+      "offset": 1909440
+    },
+    {
+      "scene": "cf2749.a",
+      "offset": 1909440
+    },
+    {
+      "scene": "cf2750.a",
+      "offset": 1903104
+    },
+    {
+      "scene": "cf2759.a",
+      "offset": 1903104
+    },
+    {
+      "scene": "cf2780.a",
+      "offset": 2210944
+    },
+    {
+      "scene": "cf2789.a",
+      "offset": 2210944
+    }
+  ],
+  "think065.bin": [
+    {
+      "scene": "cf2790.a",
+      "offset": 2701632
+    },
+    {
+      "scene": "cf2799.a",
+      "offset": 2701632
+    }
+  ],
+  "think066.bin": [
+    {
+      "scene": "cf2800.a",
+      "offset": 2657024
+    },
+    {
+      "scene": "cf2809.a",
+      "offset": 2657024
+    }
+  ],
+  "think067.bin": [
+    {
+      "scene": "cf2830.a",
+      "offset": 2684160
+    },
+    {
+      "scene": "cf2839.a",
+      "offset": 2684160
+    }
+  ],
+  "think068.bin": [
+    {
+      "scene": "cf1751.a",
+      "offset": 6038272
+    },
+    {
+      "scene": "cf1752.a",
+      "offset": 3422144
+    },
+    {
+      "scene": "cf1753.a",
+      "offset": 3434624
+    }
+  ],
+  "think069.bin": [
+    {
+      "scene": "cf1800.a",
+      "offset": 4639552
+    },
+    {
+      "scene": "cf1801.a",
+      "offset": 3792640
+    },
+    {
+      "scene": "cf1802.a",
+      "offset": 5152832
+    }
+  ],
+  "think070.bin": [
+    {
+      "scene": "cf1821.a",
+      "offset": 2414720
+    },
+    {
+      "scene": "cf1831.a",
+      "offset": 2642624
+    },
+    {
+      "scene": "cf1841.a",
+      "offset": 2555840
+    },
+    {
+      "scene": "cf1842.a",
+      "offset": 4341248
+    },
+    {
+      "scene": "cf1843.a",
+      "offset": 4316224
+    },
+    {
+      "scene": "cf1851.a",
+      "offset": 2762368
+    }
+  ],
+  "think071.bin": [
+    {
+      "scene": "cf1821.a",
+      "offset": 2414720
+    },
+    {
+      "scene": "cf1831.a",
+      "offset": 2642624
+    },
+    {
+      "scene": "cf1841.a",
+      "offset": 2555840
+    },
+    {
+      "scene": "cf1842.a",
+      "offset": 4341248
+    },
+    {
+      "scene": "cf1843.a",
+      "offset": 4316224
+    },
+    {
+      "scene": "cf1851.a",
+      "offset": 2762368
+    }
+  ],
+  "think072.bin": [
+    {
+      "scene": "cf1821.a",
+      "offset": 2414720
+    },
+    {
+      "scene": "cf1831.a",
+      "offset": 2642624
+    },
+    {
+      "scene": "cf1841.a",
+      "offset": 2555840
+    },
+    {
+      "scene": "cf1842.a",
+      "offset": 4341248
+    },
+    {
+      "scene": "cf1843.a",
+      "offset": 4316224
+    },
+    {
+      "scene": "cf1851.a",
+      "offset": 2762368
+    }
+  ],
+  "think073.bin": [
+    {
+      "scene": "cf1821.a",
+      "offset": 2414720
+    },
+    {
+      "scene": "cf1831.a",
+      "offset": 2642624
+    },
+    {
+      "scene": "cf1841.a",
+      "offset": 2555840
+    },
+    {
+      "scene": "cf1842.a",
+      "offset": 4341248
+    },
+    {
+      "scene": "cf1843.a",
+      "offset": 4316224
+    },
+    {
+      "scene": "cf1851.a",
+      "offset": 2762368
+    }
+  ],
+  "think074.bin": [
+    {
+      "scene": "cf1861.a",
+      "offset": 2405888
+    }
+  ],
+  "think075.bin": [],
+  "think076.bin": [
+    {
+      "scene": "cf3021.a",
+      "offset": 3498176
+    }
+  ],
+  "think077.bin": [
+    {
+      "scene": "cf3030.a",
+      "offset": 3309504
+    },
+    {
+      "scene": "cf3040.a",
+      "offset": 2544768
+    }
+  ],
+  "think078.bin": [
+    {
+      "scene": "cf3030.a",
+      "offset": 3309504
+    },
+    {
+      "scene": "cf3040.a",
+      "offset": 2544768
+    }
+  ],
+  "think079.bin": [
+    {
+      "scene": "cf3070.a",
+      "offset": 6184448
+    },
+    {
+      "scene": "cf3080.a",
+      "offset": 5558080
+    },
+    {
+      "scene": "cf3140.a",
+      "offset": 6610816
+    }
+  ],
+  "think080.bin": [
+    {
+      "scene": "cf3070.a",
+      "offset": 6184448
+    },
+    {
+      "scene": "cf3080.a",
+      "offset": 5558080
+    },
+    {
+      "scene": "cf3140.a",
+      "offset": 6610816
+    }
+  ],
+  "think081.bin": [
+    {
+      "scene": "cf3070.a",
+      "offset": 6184448
+    },
+    {
+      "scene": "cf3080.a",
+      "offset": 5558080
+    },
+    {
+      "scene": "cf3140.a",
+      "offset": 6610816
+    }
+  ],
+  "think082.bin": [
+    {
+      "scene": "cf3070.a",
+      "offset": 6184448
+    },
+    {
+      "scene": "cf3080.a",
+      "offset": 5558080
+    },
+    {
+      "scene": "cf3140.a",
+      "offset": 6610816
+    }
+  ],
+  "think083.bin": [
+    {
+      "scene": "cf3070.a",
+      "offset": 6184448
+    },
+    {
+      "scene": "cf3080.a",
+      "offset": 5558080
+    },
+    {
+      "scene": "cf3140.a",
+      "offset": 6610816
+    }
+  ],
+  "think084.bin": [
+    {
+      "scene": "cf3130.a",
+      "offset": 4032704
+    }
+  ],
+  "think085.bin": [
+    {
+      "scene": "cf3070.a",
+      "offset": 6184448
+    },
+    {
+      "scene": "cf3080.a",
+      "offset": 5558080
+    },
+    {
+      "scene": "cf3140.a",
+      "offset": 6610816
+    }
+  ],
+  "think086.bin": [],
+  "think087.bin": [],
+  "think088.bin": [],
+  "think089.bin": [],
+  "think090.bin": [],
+  "think091.bin": [],
+  "think092.bin": [],
+  "think093.bin": [],
+  "think094.bin": [],
+  "think095.bin": [],
+  "think096.bin": [],
+  "think097.bin": [],
+  "think098.bin": [],
+  "think099.bin": []
+}

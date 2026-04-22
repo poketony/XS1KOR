@@ -1,0 +1,18 @@
+# chunk 0 @ 0x44 cnum=71 total=2
+# bc_map: 0,1
+Start Down
+Start Up
+
+# chunk 2 @ 0x614 cnum=378 total=11
+# bc_map: 10,1,8,7,2,9,3,5,6,0,4
+ＥＶＳ【環境シミュレーター】を終了します。
+/[waitkey(64)]/[close()]
+ボス戦が入ります。<lf>
+イベントにジャンプします<lf>
+Event Pass
+工事中です/[wait(30)]/[close()]
+enterd : /[$0]
+evsExitをコールしました
+はい<lf>いいえ
+*********全回復しました**************
+entrance: /[$0]

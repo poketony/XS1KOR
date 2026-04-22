@@ -1,0 +1,55 @@
+# think_patch extract: think003.bin
+# 총 11개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x1A(condition) flag=0x00 offset=0x0112
+INIT
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x014A
+＜부유하는 적에 대해＞
+　공중에 떠 있는 적은
+　\x1e\x1d로 직선 공격을 가하면 됩니다．
+　\x1e\x1c로 근접 공격은 안 되니 주의！
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x0278
+상황을 보고 있다
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x02D2
+　그레네이드  Ｅ／불꽃
+
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x0300
+상황을 보고 있다
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x0350
+　에너지 불릿  Ｅ／Ｂ
+
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x03BE
+　빔  Ｅ／Ｂ
+
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x03E8
+상황을 보고 있다
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x0442
+　쇼크 볼트  Ｅ／번개
+
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x0474
+상황을 보고 있다
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x04DA
+상황을 보고 있다
+<<<

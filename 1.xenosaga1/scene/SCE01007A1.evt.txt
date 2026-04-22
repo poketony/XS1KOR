@@ -1,0 +1,366 @@
+# chunk 17 @ 0x3a28 cnum=2337 total=365
+# bc_map: 201,153,175,11,76,13,78,66,77,258,335,344,343,261,260,256,255,329,68,73,74,69,70,71,72,75,331,262,269,286,303,320,321,322,323,324,325,263,264,265,266,267,268,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,259,254,330,333,345,346,347,348,349,350,351,352,353,354,181,182,183,184,185,186,187,188,189,190,253,355,356,357,358,359,360,361,362,363,364,191,192,193,194,195,196,197,198,199,200,67,10,12,79,94,113,114,92,93,62,63,60,61,122,0,4,5,6,9,14,15,16,18,19,21,22,23,24,26,27,28,29,30,32,34,35,37,39,40,41,42,43,45,48,171,57,59,55,54,238,116,80,115,98,7,172,58,117,173,118,52,64,65,81,82,83,84,88,91,95,96,97,99,101,102,104,50,210,53,217,162,141,142,90,89,120,119,163,164,165,166,49,139,155,223,212,140,156,224,211,100,87,103,112,123,108,111,106,109,110,107,105,124,125,36,222,220,221,128,129,20,17,25,205,204,150,208,214,169,170,230,203,207,215,154,202,235,167,168,237,152,177,178,231,148,149,179,176,47,38,151,121,146,143,158,159,147,145,157,144,3,1,2,33,31,229,232,46,44,226,225,234,219,161,216,213,233,218,160,227,85,209,126,127,228,180,86,130,133,327,239,206,337,247,339,252,257,244,131,242,245,132,240,134,236,332,241,334,341,336,250,135,243,248,328,340,136,246,338,137,56,251,249,342,138,326,174
+# bc_unmap: 8,51
+msg_clear_thread
+eventmovie/
+lightSPL_main
+*********Capture Start!!!*****************
+CaptureMode = /[$0]
+*********CaptureTool Standby*****************
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+キャプチャモード
+全画面
+ＢＧのみ（ＺＰＩＣなし）
+ＢＧのみ（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+オブジェ単体（ＺＰＩＣあり）
+テキスト（ＺＰＩＣなし）
+CaptureMODE ---All Screen.
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---SoftImage BG(pic+zpic)
+CaptureMODE ---Chr(pic)
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---TXT(pic)
+ページ切り替え
+キャラ０
+キャラ１
+キャラ２
+キャラ３
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラのみキャプチャ
+オブジェのみキャプチャ
+フォルダ選択
+企画サイドのフォルダを使用する
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（？？？？）
+ｍｏｖｉｅ０４（？？？？）
+ｍｏｖｉｅ０５（？？？？）
+ｍｏｖｉｅ０６（？？？？）
+ｍｏｖｉｅ０７（？？？？）
+ｍｏｖｉｅ０８（？？？？）
+ｍｏｖｉｅ０９（？？？？）
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+エフェクトサイドのフォルダを使用する
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（ひみつ）
+ｍｏｖｉｅ１７（ひみつ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+*********Capture End.*****************
+*********Capture Waiting...*****************
+ColorScreen  SetMode
+Layer = /[$0]
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode-------end
+  /[#0]f,/[#1]f
+  /[#0]fnc,/[#1]fnc,
+  /[#0]fnc,/[#1]fnc,/[#2]fnc,/[#3]fnc,
+*************ColorScreen Printout*************
+***********Objchk printout***********
+*********ManualCamera Replay*********
+*********Timechk Standby*****************
+-------------* ColorScreenSet() *-----------
+-------------* Debugprint5() *-----------
+-------------* Gnochk(gold) *-----------
+-------------* ManualCam_play_sub()start *-----------
+-------------* ManualCam_record()end *-----------
+-------------* ManualCam_record()start *-----------
+-------------* chr_look_end *-----------
+-------------* map_look_end *-----------
+-------------* map_look_start *-----------
+-------------* point_light()end *-----------
+-------------* point_light()start *-----------
+----------シーンは終了しました。(Total = /[$0])
+--------plus_one_write--------
+--------trans--------
+-------PATH_UP
+-----PATH_DOWN
+---PATH_DOWN---
+---PATH_LINEAR
+---PATH_LINEAR---
+---PATH_SPLINE
+---PATH_SPLINE---
+---SPL_CARDINAL---
+--alpha--
+int ColorScreenParam[] = {
+0,
+1,
+/[$1],
+/[$0],
+};
+Runtime.setDefocus(15, 1, ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], 1, ColorScreenParam);
+Layer not exist.
+*************ColorScreen Printout_temae*************
+int[] test_param0 = {
+0, 
+Runtime.setDefocus(15, 2, test_param0);
+int[] test_param1 = {
+Runtime.setDefocus(15, 3, test_param1);
+/[#0]f,/[#1]f,
+CUT1 START
+Cancel!!
+End(Button).
+End(TimeOver).
+Event Out
+FLSallen.fpk
+Focus SetMode
+Gnochk...
+Layer = Back
+Layer = Before
+Layer Not insight.
+MSGprint(with Face).
+ManualCam_record.
+ManualCamera MOVE to start.
+ManualCameraRecord START!!!
+--ref_alpha--
+pos[] ={
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+rot[] ={
+fov[] ={
+alpha_percent-/[#0]
+alpha_set-/[#0]
+Focus delta = /[$0](back)
+Focus SetMode-------end
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+--filter--
+alpha max!!
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+MSGprint.
+Face End.
+ManualCamera not Recorded.
+Record /[$0]
+Time = /[$0]
+Objchk......(Chr)
+Objchk......End
+Objchk(+Mtn)......
+Objchk......(Effect)
+Objchk......(Unit)
+Objchk......
+Mtn Frame = /[$0]
+Timechk_main
+Timerchk_srv_main
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+setRotate(/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+Xenvmainthreadmain
+Xenvplaythread
+-------------* ManualCam_play_sub()end *-----------
+-------------* ColorScreenSet()_temae *-----------
+-------------* chr_look_start *-----------
+objtool---------------------------scl
+objtool---------------------------ido
+camtool---------------------------cam
+one_scale-----------------/[#0]
+robo.setScale(/[#0]f,/[#1]f,/[#2]f);
+gold_number-------------------(/[#0])
+haba -----------------/[#0]
+takasa ---------------/[#1]
+noudo ----------------/[#2]
+one_scale ------------/[#3]
+robo.setScale(/[#4]f,/[#5]f,/[#6]f);
+f_speed--------------------------------------------------(/[#0])
+non_move_view-/[#1]|cap-/[#2]
+view-/[#1]|cap-/[#2]
+gold-no-/[#0]|view-/[#1]|cap-/[#2]
+gold-unit-no-/[#0]|view-/[#1]|cap-/[#2]
+write-/[#0]|now-/[#1]|cap-/[#2]
+erase-/[#1]|now-/[#1]|cap-/[#2]
+live-normal-cam
+live-normal-human
+time-/[#0]
+cam_time_tani++(/[#0])
+cam_time_tani--(/[#0])
+live-pretty-cam
+live-human-pretty-cam
+--SPL_CARDINAL
+----SPL_LINEAR
+change-/[#1]|now-/[#1]|cap-/[#2]
+STCam.setFov(/[#0]f);
+cam1.setFov(/[#0]f);
+cam0.setFov(/[#0]f);
+float pos00[] = {
+float rot00[] = {
+cam1.transSPL(pos00, SPL_CARDINAL);
+cam1.rotateSPL(rot00, SPL_CARDINAL);
+float fov00[] = {
+cam1.fovSPL(fov00, SPL_CARDINAL);
+  /[#0]f,/[#1]f,/[#2]f,/[#3]f,
+  /[#0]f,/[#1]f,
+  /[#0]f,/[#1]f,/[#2]f,/[#3]f
+--------rotate--------
+--------fov--------
+t_no_change-/[#0]-/[#1]/[#2]-/[#3]
+time_change-/[#0]-/[#1]/[#2]-/[#3]
+---SPL_LINEAR---
+---PATH_UP---
+shion.setTranslate(/[#0]fnc,/[#1]fnc,/[#2]fnc);
+shion.setRotate(/[#3]fnc,/[#4]fnc,/[#5]fnc);
+trans----/[#0]fnc,/[#1]fnc,/[#2]fnc
+rotate---/[#3]fnc,/[#4]fnc,/[#5]fnc
+fov------/[#6]fnc
+robo.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+robo.setRotate(/[#3]f,/[#4]f,/[#5]f);
+trans----/[#0]f,/[#1]f,/[#2]f
+rotate---/[#3]f,/[#4]f,/[#5]f
+fov------/[#6]f
+speed--------------------------------------------------(/[#0])
+FLSshion_h.fpk
+parts_nomber---------------(/[#0])
+XEVEFLAG:EV01007A1_F
+XEVEJNAME:CFJ1_40 XEVEJPOINT:POINT_40
+spl
+map_nomber---------------(/[#0])
+FLSvec_m1.fpk
+act1
+act4
+シオン
+……알겠습니다<lf>３０분 후에 그쪽으로 출두하겠습니다
+off_s
+바로 왔네요 출두 명령이
+내가 뭐랬어
+난 감이 제법 좋은 편이거든
+우즈키 주임님
+オペレータＤ
+여기 제출할 데이터입니다<lf>다른 건 필요 없으신가요？
+act2
+고마워
+이것만 있으면 돼
+act3
+나머진 내가 알아서 할게
+act5
+walk
+주임님
+저기，뭐 좀 여쭤봐도 되겠습니까？
+뭔데？
+군은 ＫＯＳ−ＭＯＳ의 실가동 데이터를<lf>원하고 있습니다
+新人
+괜찮은 겁니까？<lf>언제까지고 시뮬레이션 데이터만 쌓아도
+act6
+으음，<lf>너무 뼈아픈 소리인데 그건
+그치만 가능하다면 이 애는<lf>언제까지고 멋진 꿈을 꾸었으면 하거든
+시뮬레이션에서는 그렇게나 무리하시면서<lf>왜 그렇게 실가동을 꺼리시는 겁니까？
+저는 빨리 ＫＯＳ−ＭＯＳ가<lf>가동되는 모습을 보고 싶습니다
+act7
+적어도 페이즈 ３까지<lf>해 보는 건 어떻습니까？
+현 상태라면 충분히 가능합니다
+act8
+모의전 소체로 페이즈 ３까지 왜 가
+굳이 공주님을 깨울 필요는 없다고
+자 여기요 ２국에서 온<lf>ＫＯＳ−ＭＯＳ 장비 요항입니다
+놈들을 납득시키는 데 도움은 되겠죠
+act9
+땡큐<lf>센스 있는데
+light.setGlobalPointLightCol( 0, /[#0]f,/[#1]f,/[#2]f);

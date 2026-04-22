@@ -1,0 +1,48 @@
+# think_patch extract: think008.bin
+# 총 9개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x0200
+　애시드 핸드  Ｐ
+　물리 방어력 다운
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0296
+　에테르 반격률 상승
+　카운터 부스트율 ２０％
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x02D0
+　에테르 반격률 상승
+　카운터 부스트율 ４０％
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x030A
+　에테르 반격률 상승
+　카운터 부스트율 ６０％
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x0344
+　에테르 반격률 상승
+　카운터 부스트율 ８０％
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x037E
+　에테르 반격률 상승
+　카운터 부스트율 １００％
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x03D2
+　스프레드 빔  Ｅ／Ｂ
+
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x043A
+　에테르 공격에 반응！
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x04A4
+상황을 보고 있다
+
+<<<

@@ -7,8 +7,8 @@ think_patch.py - think*.bin 인플레이스 텍스트 패치 도구
 번역 텍스트가 원본보다 길면 잘라냄 (경고 출력).
 
 사용법:
-  python think_patch.py extract  input.bin  output.txt
-  python think_patch.py patch    input.bin  translated.txt  output.bin  [table.json]
+  python think_patch.py extract  input.bin.ori  output.txt
+  python think_patch.py patch    input.bin.ori  translated.txt  output.bin  [table.json]
 """
 
 import sys, os, json, struct, re

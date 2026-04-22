@@ -1,0 +1,77 @@
+# think_patch extract: think007.bin
+# 총 14개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x02D4
+상황을 보고 있다
+
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0376
+상황을 보고 있다
+
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x03C6
+상황을 보고 있다
+
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x042A
+　플레어 봄  Ｅ／불꽃
+
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x04C0
+　압축 기관에 대미지！
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x05F6
+　전투 모드 이행
+
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x067A
+　포스 웨이브  Ｅ／기공
+
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x06B2
+　메너스 캐넌  Ｐ
+
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x0716
+　스프레드 빔  Ｅ／Ｂ
+
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x076E
+　쿨 레인  Ｅ／냉기
+
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x080C
+「이쪽 세계에 실체를 고착시켜야
+　그노시스를
+　쓰러뜨릴 수 있을 텐데・・・．
+<<<
+
+>>> [011] op=0x21(display) flag=0x00 offset=0x0864
+「이래선 싸워도 의미가 없어．
+　ＫＯＳ−ＭＯＳ와 알렌이
+　있는 곳으로 서두르자！
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x0930
+「이쪽 세계에 실체를 고착시켜야
+　그노시스를
+　쓰러뜨릴 수 있어・・・．
+<<<
+
+>>> [013] op=0x21(display) flag=0x00 offset=0x09C6
+「이래선 싸워도 의미가 없어．
+　ＫＯＳ−ＭＯＳ와 알렌이
+　있는 곳으로 서두르자！
+<<<

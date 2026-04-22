@@ -1,11 +1,11 @@
 pss
 	rate 929850
 
-	stream adpcm:0
-		input "C:\Users\JO\XS1KOR\기타 자료\ps2str\ps2str\win32\10OP_vag_0.ads"
+	stream video:0
+		input "C:\Users\JO\Desktop\10OP_fixed.m2v"
 	end
 
-	stream video:0
-		input "C:\Users\JO\Desktop\XS1-10OP_fixed.m2v"
+	stream adpcm:0
+		input "C:\Users\JO\Desktop\10OP_vag_0.ads"
 	end
 end

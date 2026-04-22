@@ -1,0 +1,11 @@
+pss
+	rate 929850
+
+	stream video:0
+		input "C:\Users\JO\Desktop\1004_1_fixed.m2v"
+	end
+
+	stream adpcm:0
+		input "C:\Users\JO\Desktop\1004_1_vag_0.ads"
+	end
+end

@@ -1,0 +1,480 @@
+# think_patch extract: think000.bin
+# 총 116개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x0AA8
+もんすたー
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0ABA
+けいおす
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x0ACA
+もも
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x0AD6
+しおん
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x0C68
+　攻撃１　　？／？
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x0C88
+　攻撃２　　？／？
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x0CA8
+　攻撃３　　？／？
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x0CC8
+　攻撃４　　？／？
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x0CE8
+　攻撃５　　？／？
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x0D10
+　様子を見ている
+<<<
+
+>>> [010] op=0x1A(condition) flag=0x00 offset=0x0D90
+GUARD
+<<<
+
+>>> [011] op=0x1A(condition) flag=0x00 offset=0x0DA8
+MOVE1
+<<<
+
+>>> [012] op=0x1A(condition) flag=0x00 offset=0x0DC0
+MOVE2
+<<<
+
+>>> [013] op=0x1A(condition) flag=0x00 offset=0x0DD8
+MOVE3
+<<<
+
+>>> [014] op=0x1A(condition) flag=0x00 offset=0x0E62
+GUARD
+<<<
+
+>>> [015] op=0x1A(condition) flag=0x00 offset=0x0E86
+MOVE
+<<<
+
+>>> [016] op=0x21(display) flag=0x00 offset=0x0F3C
+仲間が復活した
+<<<
+
+>>> [017] op=0x21(display) flag=0x00 offset=0x1094
+仲間が復活した
+<<<
+
+>>> [018] op=0x1A(condition) flag=0x00 offset=0x1426
+ガードチェック
+<<<
+
+>>> [019] op=0x1A(condition) flag=0x00 offset=0x1452
+ガードチェック
+<<<
+
+>>> [020] op=0x21(display) flag=0x00 offset=0x148A
+攻撃１
+<<<
+
+>>> [021] op=0x21(display) flag=0x00 offset=0x14AC
+攻撃２
+<<<
+
+>>> [022] op=0x21(display) flag=0x00 offset=0x14CE
+攻撃３
+<<<
+
+>>> [023] op=0x21(display) flag=0x00 offset=0x14F0
+攻撃４
+<<<
+
+>>> [024] op=0x21(display) flag=0x00 offset=0x1512
+攻撃５
+<<<
+
+>>> [025] op=0x21(display) flag=0x00 offset=0x1528
+防御
+<<<
+
+>>> [026] op=0x21(display) flag=0x00 offset=0x158E
+攻撃
+<<<
+
+>>> [027] op=0x21(display) flag=0x00 offset=0x15AE
+魔法
+<<<
+
+>>> [028] op=0x21(display) flag=0x00 offset=0x168C
+魔法１
+<<<
+
+>>> [029] op=0x21(display) flag=0x00 offset=0x16AE
+魔法２
+<<<
+
+>>> [030] op=0x21(display) flag=0x00 offset=0x16D0
+魔法３
+<<<
+
+>>> [031] op=0x21(display) flag=0x00 offset=0x16F2
+魔法４
+<<<
+
+>>> [032] op=0x21(display) flag=0x00 offset=0x1714
+魔法５
+<<<
+
+>>> [033] op=0x21(display) flag=0x00 offset=0x1754
+超変身
+<<<
+
+>>> [034] op=0x21(display) flag=0x00 offset=0x1778
+魔法１
+<<<
+
+>>> [035] op=0x21(display) flag=0x00 offset=0x17B6
+呪われろ！
+<<<
+
+>>> [036] op=0x21(display) flag=0x00 offset=0x17DE
+これでも喰らえ！
+<<<
+
+>>> [037] op=0x21(display) flag=0x00 offset=0x1864
+ボルテッカーッ！
+<<<
+
+>>> [038] op=0x21(display) flag=0x00 offset=0x1892
+貴様、ブス好きだなッ！
+<<<
+
+>>> [039] op=0x21(display) flag=0x00 offset=0x18CC
+ナメクジのように死ね！
+<<<
+
+>>> [040] op=0x21(display) flag=0x00 offset=0x192C
+調子に乗るなッ！
+<<<
+
+>>> [041] op=0x21(display) flag=0x00 offset=0x1972
+超絶攻撃！
+<<<
+
+>>> [042] op=0x21(display) flag=0x00 offset=0x1998
+ぱわーあっぷ！
+<<<
+
+>>> [043] op=0x21(display) flag=0x00 offset=0x19C2
+ぱわーあっぷ！
+<<<
+
+>>> [044] op=0x21(display) flag=0x00 offset=0x19EC
+親分がてぇ〜へんだ！
+<<<
+
+>>> [045] op=0x21(display) flag=0x00 offset=0x1A64
+移動
+<<<
+
+>>> [046] op=0x21(display) flag=0x00 offset=0x1A8A
+攻撃
+<<<
+
+>>> [047] op=0x21(display) flag=0x00 offset=0x1AB8
+チュートリアル
+<<<
+
+>>> [048] op=0x1A(condition) flag=0x00 offset=0x1B2C
+パラゲットＥＰ
+<<<
+
+>>> [049] op=0x1A(condition) flag=0x00 offset=0x1B74
+ガードしていたか？
+<<<
+
+>>> [050] op=0x1A(condition) flag=0x00 offset=0x1BA4
+感電したか？
+<<<
+
+>>> [051] op=0x1A(condition) flag=0x00 offset=0x1BCE
+Ｍサイズ検索
+<<<
+
+>>> [052] op=0x1A(condition) flag=0x00 offset=0x1C08
+レーザーを選べ
+<<<
+
+>>> [053] op=0x1A(condition) flag=0x00 offset=0x1C2E
+ＡＧＷＳを選べ
+<<<
+
+>>> [054] op=0x1A(condition) flag=0x00 offset=0x1C5A
+レーザーは出たか？
+<<<
+
+>>> [055] op=0x21(display) flag=0x00 offset=0x1CA4
+レーザーライフル
+<<<
+
+>>> [056] op=0x21(display) flag=0x00 offset=0x1CD2
+激震
+<<<
+
+>>> [057] op=0x21(display) flag=0x00 offset=0x1CF4
+ソニックショット
+<<<
+
+>>> [058] op=0x21(display) flag=0x00 offset=0x1D2E
+自爆装置作動
+<<<
+
+>>> [059] op=0x21(display) flag=0x00 offset=0x1D6A
+防御
+<<<
+
+>>> [060] op=0x21(display) flag=0x00 offset=0x1D8C
+オートリペア
+<<<
+
+>>> [061] op=0x1A(condition) flag=0x00 offset=0x1DDE
+パラゲットＥＰ
+<<<
+
+>>> [062] op=0x1A(condition) flag=0x00 offset=0x1E22
+ガードチェック
+<<<
+
+>>> [063] op=0x1A(condition) flag=0x00 offset=0x1E48
+Ｍサイズ検索
+<<<
+
+>>> [064] op=0x21(display) flag=0x00 offset=0x1EC4
+レーザーライフル
+<<<
+
+>>> [065] op=0x21(display) flag=0x00 offset=0x1EF2
+激震
+<<<
+
+>>> [066] op=0x21(display) flag=0x00 offset=0x1F14
+ソニックショット
+<<<
+
+>>> [067] op=0x21(display) flag=0x00 offset=0x1F42
+自爆装置作動
+<<<
+
+>>> [068] op=0x21(display) flag=0x00 offset=0x1F6E
+防御
+<<<
+
+>>> [069] op=0x21(display) flag=0x00 offset=0x1F90
+オートリペア
+<<<
+
+>>> [070] op=0x21(display) flag=0x00 offset=0x1FE4
+　自爆装置作動
+
+<<<
+
+>>> [071] op=0x21(display) flag=0x00 offset=0x2008
+モーション
+<<<
+
+>>> [072] op=0x21(display) flag=0x00 offset=0x203C
+攻撃２
+<<<
+
+>>> [073] op=0x21(display) flag=0x00 offset=0x2078
+ふぬぅー！　鋼の肉体！
+<<<
+
+>>> [074] op=0x21(display) flag=0x00 offset=0x2100
+攻撃
+<<<
+
+>>> [075] op=0x21(display) flag=0x00 offset=0x212E
+ふぬぅー！　鋼の肉体！
+<<<
+
+>>> [076] op=0x21(display) flag=0x00 offset=0x2184
+ふぅ、疲れた・・・
+<<<
+
+>>> [077] op=0x21(display) flag=0x00 offset=0x21A8
+行動できない
+<<<
+
+>>> [078] op=0x21(display) flag=0x00 offset=0x2230
+仲間が復活した
+<<<
+
+>>> [079] op=0x21(display) flag=0x00 offset=0x228C
+侵入者の排除を開始！
+<<<
+
+>>> [080] op=0x21(display) flag=0x00 offset=0x2340
+緊急呼集！
+<<<
+
+>>> [081] op=0x21(display) flag=0x00 offset=0x23A0
+ガーディアン見参
+<<<
+
+>>> [082] op=0x21(display) flag=0x00 offset=0x2436
+　鳴けッ！
+メス豚めッ！
+<<<
+
+>>> [083] op=0x21(display) flag=0x00 offset=0x245A
+　モモたん
+ハァハァ・・・
+<<<
+
+>>> [084] op=0x21(display) flag=0x00 offset=0x2482
+かかってこいやッ！
+<<<
+
+>>> [085] op=0x21(display) flag=0x00 offset=0x249C
+ひどすぎるッ！
+<<<
+
+>>> [086] op=0x21(display) flag=0x00 offset=0x2532
+　反魂変化
+
+<<<
+
+>>> [087] op=0x1A(condition) flag=0x00 offset=0x2546
+チェックＰＯＳ１
+<<<
+
+>>> [088] op=0x21(display) flag=0x00 offset=0x258A
+　反魂変化
+
+<<<
+
+>>> [089] op=0x1A(condition) flag=0x00 offset=0x259E
+チェックＰＯＳ２
+<<<
+
+>>> [090] op=0x21(display) flag=0x00 offset=0x25E2
+　反魂変化
+
+<<<
+
+>>> [091] op=0x1A(condition) flag=0x00 offset=0x25F6
+チェックＰＯＳ３
+<<<
+
+>>> [092] op=0x21(display) flag=0x00 offset=0x263A
+　反魂変化
+
+<<<
+
+>>> [093] op=0x1A(condition) flag=0x00 offset=0x264E
+チェックＰＯＳ４
+<<<
+
+>>> [094] op=0x21(display) flag=0x00 offset=0x2692
+　反魂変化
+
+<<<
+
+>>> [095] op=0x1A(condition) flag=0x00 offset=0x26A6
+チェックＰＯＳ５
+<<<
+
+>>> [096] op=0x21(display) flag=0x00 offset=0x26DC
+　モデストカース
+　　混乱
+<<<
+
+>>> [097] op=0x21(display) flag=0x00 offset=0x2720
+　ソウルスフリング
+　　ＥＰオーバー
+<<<
+
+>>> [098] op=0x21(display) flag=0x00 offset=0x27AC
+　モデストカース
+　　混乱
+<<<
+
+>>> [099] op=0x1A(condition) flag=0x00 offset=0x27F6
+攻撃選択
+<<<
+
+>>> [100] op=0x21(display) flag=0x00 offset=0x2838
+　パワースイング　　体力低下
+<<<
+
+>>> [101] op=0x21(display) flag=0x00 offset=0x2876
+　パワーチャージ　　攻撃力ＵＰ
+<<<
+
+>>> [102] op=0x21(display) flag=0x00 offset=0x28C2
+　タックル
+<<<
+
+>>> [103] op=0x21(display) flag=0x00 offset=0x28EE
+　防御
+<<<
+
+>>> [104] op=0x21(display) flag=0x00 offset=0x2916
+　魔法１
+<<<
+
+>>> [105] op=0x21(display) flag=0x00 offset=0x2940
+　魔法２
+<<<
+
+>>> [106] op=0x21(display) flag=0x00 offset=0x296A
+　魔法３
+<<<
+
+>>> [107] op=0x21(display) flag=0x00 offset=0x2994
+　魔法４
+<<<
+
+>>> [108] op=0x21(display) flag=0x00 offset=0x29BE
+　魔法１
+<<<
+
+>>> [109] op=0x21(display) flag=0x00 offset=0x29E8
+　魔法２
+<<<
+
+>>> [110] op=0x21(display) flag=0x00 offset=0x2A12
+　魔法３
+<<<
+
+>>> [111] op=0x21(display) flag=0x00 offset=0x2A2C
+　【デススペル】
+　トラップの影響で発動失敗！
+<<<
+
+>>> [112] op=0x21(display) flag=0x00 offset=0x2AAE
+攻撃１
+<<<
+
+>>> [113] op=0x21(display) flag=0x00 offset=0x2AF2
+攻撃１
+<<<
+
+>>> [114] op=0x21(display) flag=0x00 offset=0x2B2A
+　様子を見ている
+<<<
+
+>>> [115] op=0x21(display) flag=0x00 offset=0x2B5C
+攻撃１
+<<<

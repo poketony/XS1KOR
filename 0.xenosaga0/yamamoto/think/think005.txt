@@ -1,0 +1,32 @@
+# think_patch extract: think005.bin
+# 총 6개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x0050
+
+　　　＜적의 상태에 대해＞
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x00C2
+　리벤지 콤보  Ｅ／Ｅ／Ｐ
+　복합 연속 공격
+<<<
+
+>>> [002] op=0x1A(condition) flag=0x00 offset=0x0112
+ＨＰ가 반보다 많다
+<<<
+
+>>> [003] op=0x1A(condition) flag=0x00 offset=0x01A0
+ＨＰ가 반보다 적다
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x027C
+　플라스마 샷  Ｅ／Ｂ
+
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x02B0
+　액티브 가드
+
+<<<

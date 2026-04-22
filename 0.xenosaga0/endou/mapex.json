@@ -1,0 +1,450 @@
+[
+  {
+    "idx": 0,
+    "offset": 0,
+    "end": 44,
+    "original": "奇妙な形のジャンクパーツ。何かに使えそうだ。",
+    "translation": "기묘한 정크 파츠．어딘가에 쓸 수 있을 것 같다．"
+  },
+  {
+    "idx": 1,
+    "offset": 47,
+    "end": 91,
+    "original": "どこかドラゴンの形に似ているジャンクパーツ。",
+    "translation": "어딘가 드래곤의 모습과 닮은 정크 파츠．"
+  },
+  {
+    "idx": 2,
+    "offset": 94,
+    "end": 138,
+    "original": "ジャンクパーツ。何かと対になっているようだ。",
+    "translation": "정크 파츠．무언가와 짝을 이루는 것 같다．"
+  },
+  {
+    "idx": 3,
+    "offset": 141,
+    "end": 173,
+    "original": "レアアイテム獲得率＋１０％アップ",
+    "translation": "레어 아이템 획득률이 １０％ 업"
+  },
+  {
+    "idx": 4,
+    "offset": 188,
+    "end": 216,
+    "original": "□○○、△○○の連続技が可能",
+    "translation": "□○○，△○○ 연속 기술이 가능"
+  },
+  {
+    "idx": 5,
+    "offset": 235,
+    "end": 255,
+    "original": "『クリティカル』防止",
+    "translation": "『크리티컬』 방지"
+  },
+  {
+    "idx": 6,
+    "offset": 282,
+    "end": 328,
+    "original": "ジャンクパーツ。ギミックが詰まっているようだ。",
+    "translation": "정크 파츠．기믹이 엄청 많은 것 같다．"
+  },
+  {
+    "idx": 7,
+    "offset": 329,
+    "end": 373,
+    "original": "ジャンクパーツ。何かと対になっているようだ。",
+    "translation": "정크 파츠．무언가와 짝을 이루는 것 같다．"
+  },
+  {
+    "idx": 8,
+    "offset": 376,
+    "end": 422,
+    "original": "ジャンクパーツ。ギミックが詰まっているようだ。",
+    "translation": "정크 파츠．기믹이 엄청 많은 것 같다．"
+  },
+  {
+    "idx": 9,
+    "offset": 423,
+    "end": 449,
+    "original": "味方単体  ブースト回数＋１",
+    "translation": "아군 １  부스트 횟수＋１"
+  },
+  {
+    "idx": 10,
+    "offset": 470,
+    "end": 496,
+    "original": "冷属性ダメージを１０％軽減",
+    "translation": "냉기 속성 대미지가 １０％ 감소"
+  },
+  {
+    "idx": 11,
+    "offset": 517,
+    "end": 543,
+    "original": "Ｂ系、Ｍ系に「混乱」の効果",
+    "translation": "Ｂ계，Ｍ계에 「혼란」 효과"
+  },
+  {
+    "idx": 12,
+    "offset": 564,
+    "end": 588,
+    "original": "カウンター＋１０％アップ",
+    "translation": "카운터＋１０％ 업"
+  },
+  {
+    "idx": 13,
+    "offset": 611,
+    "end": 631,
+    "original": "行動速度２５％アップ",
+    "translation": "행동 속도 ２５％ 업"
+  },
+  {
+    "idx": 14,
+    "offset": 658,
+    "end": 674,
+    "original": "ＥＰ消費×１／２",
+    "translation": "ＥＰ 소비×１／２"
+  },
+  {
+    "idx": 15,
+    "offset": 705,
+    "end": 737,
+    "original": "味方単体  武器攻撃力５０％アップ",
+    "translation": "아군 １  무기 공격력 ５０％ 업"
+  },
+  {
+    "idx": 16,
+    "offset": 752,
+    "end": 772,
+    "original": "最強と云われた伝説銃",
+    "translation": "최강이라 전해지는 전설의 총"
+  },
+  {
+    "idx": 17,
+    "offset": 799,
+    "end": 825,
+    "original": "雷属性ダメージを１０％軽減",
+    "translation": "번개 속성 대미지가 １０％ 감소"
+  },
+  {
+    "idx": 18,
+    "offset": 846,
+    "end": 886,
+    "original": "風を切り裂く無敵の翼。戦闘中に召喚可能。",
+    "translation": "바람을 가르는 무적의 날개．전투 중 소환 가능．"
+  },
+  {
+    "idx": 19,
+    "offset": 893,
+    "end": 929,
+    "original": "鋼の刃が敵を切る。戦闘中に召喚可能。",
+    "translation": "강철의 칼날이 적을 벤다．전투 중 소환 가능．"
+  },
+  {
+    "idx": 20,
+    "offset": 940,
+    "end": 980,
+    "original": "ジョイントパーツ。戦闘には参加できない。",
+    "translation": "조인트 파츠．전투에선 쓸 수 없다．"
+  },
+  {
+    "idx": 21,
+    "offset": 987,
+    "end": 1033,
+    "original": "大地を揺るがす脅威の重戦車。戦闘中に召喚可能。",
+    "translation": "땅을 흔드는 공포의 중전차．전투 중 소환 가능．"
+  },
+  {
+    "idx": 22,
+    "offset": 1034,
+    "end": 1072,
+    "original": "完全無敵の巨大ロボ。戦闘中に召喚可能。",
+    "translation": "완전 무적의 거대 로봇．전투 중 소환 가능．"
+  },
+  {
+    "idx": 23,
+    "offset": 1081,
+    "end": 1110,
+    "original": "ファウンデーション\n宿屋の屋上",
+    "translation": "파운데이션\n여관의 옥상"
+  },
+  {
+    "idx": 24,
+    "offset": 1125,
+    "end": 1160,
+    "original": "ドックコロニー\nジャンク屋の地下工房",
+    "translation": "격납고 콜로니\n정크 숍의 지하 공방"
+  },
+  {
+    "idx": 25,
+    "offset": 1169,
+    "end": 1208,
+    "original": "ファウンデーション\nクリーニング店・１Ｆ",
+    "translation": "파운데이션\n세탁소 １Ｆ"
+  },
+  {
+    "idx": 26,
+    "offset": 1213,
+    "end": 1250,
+    "original": "小惑星プレロマ\n聖堂の間への通路・２Ｆ",
+    "translation": "소행성 플레로마\n성당 내부로 가는 통로 ２Ｆ"
+  },
+  {
+    "idx": 27,
+    "offset": 1257,
+    "end": 1294,
+    "original": "エンセフェロン\n公園内地下道出入口付近",
+    "translation": "엔세페론\n공원 내 지하도 출입구 부근"
+  },
+  {
+    "idx": 28,
+    "offset": 1301,
+    "end": 1318,
+    "original": "天の車\n天体観測室",
+    "translation": "하늘의 바퀴\n천체 관측실"
+  },
+  {
+    "idx": 29,
+    "offset": 1345,
+    "end": 1378,
+    "original": "ヴォークリンデ\nスワガー曹長の正面",
+    "translation": "보클린데\n스왜거 상사의 정면"
+  },
+  {
+    "idx": 30,
+    "offset": 1389,
+    "end": 1408,
+    "original": "エルザ\n通路・Ｂ２Ｆ",
+    "translation": "엘자\n통로 Ｂ２Ｆ"
+  },
+  {
+    "idx": 31,
+    "offset": 1433,
+    "end": 1462,
+    "original": "巨大グノーシス内\n研究棟・３Ｆ",
+    "translation": "거대 그노시스 내부\n연구동 ３Ｆ"
+  },
+  {
+    "idx": 32,
+    "offset": 1477,
+    "end": 1508,
+    "original": "シミュレーター内\n廃屋内部・１Ｆ",
+    "translation": "시뮬레이터 내부\n폐가 내부 １Ｆ"
+  },
+  {
+    "idx": 33,
+    "offset": 1521,
+    "end": 1546,
+    "original": "Ｕ−ＴＩＣ戦艦\n兵士の部屋",
+    "translation": "Ｕ−ＴＩＣ 전함\n병사의 방"
+  },
+  {
+    "idx": 34,
+    "offset": 1565,
+    "end": 1598,
+    "original": "ネピリムの歌声\n第２の塔内部・３Ｆ",
+    "translation": "네피림의 노랫소리\n제２의 탑 내부 ３Ｆ"
+  },
+  {
+    "idx": 35,
+    "offset": 1609,
+    "end": 1646,
+    "original": "巨大グノーシス内\nデパート内倉庫・１Ｆ",
+    "translation": "거대 그노시스 내부\n백화점 내부 창고 １Ｆ"
+  },
+  {
+    "idx": 36,
+    "offset": 1653,
+    "end": 1676,
+    "original": "エルザ\nカタパルトデッキ",
+    "translation": "엘자\n캐터펄트 갑판"
+  },
+  {
+    "idx": 37,
+    "offset": 1697,
+    "end": 1728,
+    "original": "エンセフェロン\n地下鉄改札口付近",
+    "translation": "엔세페론\n지하철 개찰구 부근"
+  },
+  {
+    "idx": 38,
+    "offset": 1741,
+    "end": 1770,
+    "original": "ヴォークリンデ\n通信室前の通路",
+    "translation": "보클린데\n통신실 앞 통로"
+  },
+  {
+    "idx": 39,
+    "offset": 1785,
+    "end": 1806,
+    "original": "天の車\n研究棟・４３Ｆ",
+    "translation": "하늘의 바퀴\n연구동 ４３Ｆ"
+  },
+  {
+    "idx": 40,
+    "offset": 1829,
+    "end": 1864,
+    "original": "ヴォークリンデ\nシオン自室付近の通路",
+    "translation": "보클린데\n시온의 방 부근 통로"
+  },
+  {
+    "idx": 41,
+    "offset": 1873,
+    "end": 1885,
+    "original": "ロボパーツ頭",
+    "translation": "로봇 파츠 머리"
+  },
+  {
+    "idx": 42,
+    "offset": 1901,
+    "end": 1915,
+    "original": "ロボパーツ胴体",
+    "translation": "로봇 파츠 몸통"
+  },
+  {
+    "idx": 43,
+    "offset": 1929,
+    "end": 1943,
+    "original": "ロボパーツ右足",
+    "translation": "로봇 파츠 오른다리"
+  },
+  {
+    "idx": 44,
+    "offset": 1957,
+    "end": 1967,
+    "original": "盗賊の篭手",
+    "translation": "도적의 건틀릿"
+  },
+  {
+    "idx": 45,
+    "offset": 1985,
+    "end": 1999,
+    "original": "ダブルバスター",
+    "translation": "더블 버스터"
+  },
+  {
+    "idx": 46,
+    "offset": 2013,
+    "end": 2029,
+    "original": "見切りのバンダナ",
+    "translation": "간파의 반다나"
+  },
+  {
+    "idx": 47,
+    "offset": 2041,
+    "end": 2055,
+    "original": "ロボパーツ右腕",
+    "translation": "로봇 파츠 오른팔"
+  },
+  {
+    "idx": 48,
+    "offset": 2069,
+    "end": 2083,
+    "original": "ロボパーツ左足",
+    "translation": "로봇 파츠 왼다리"
+  },
+  {
+    "idx": 49,
+    "offset": 2097,
+    "end": 2111,
+    "original": "ロボパーツ左腕",
+    "translation": "로봇 파츠 왼팔"
+  },
+  {
+    "idx": 50,
+    "offset": 2125,
+    "end": 2135,
+    "original": "ボルテージ",
+    "translation": "볼티지"
+  },
+  {
+    "idx": 51,
+    "offset": 2153,
+    "end": 2163,
+    "original": "コート・冷",
+    "translation": "코트 아이스"
+  },
+  {
+    "idx": 52,
+    "offset": 2181,
+    "end": 2197,
+    "original": "Ｗハンマーロッド",
+    "translation": "Ｗ 해머 로드"
+  },
+  {
+    "idx": 53,
+    "offset": 2209,
+    "end": 2223,
+    "original": "サムライハート",
+    "translation": "사무라이 하트"
+  },
+  {
+    "idx": 54,
+    "offset": 2237,
+    "end": 2253,
+    "original": "スピードシューズ",
+    "translation": "스피드 슈즈"
+  },
+  {
+    "idx": 55,
+    "offset": 2265,
+    "end": 2281,
+    "original": "エンジェルリング",
+    "translation": "엔젤 링"
+  },
+  {
+    "idx": 56,
+    "offset": 2293,
+    "end": 2301,
+    "original": "武神の札",
+    "translation": "무신의 부적"
+  },
+  {
+    "idx": 57,
+    "offset": 2321,
+    "end": 2333,
+    "original": "ＢＬＯＯＤ９",
+    "translation": "ＢＬＯＯＤ９"
+  },
+  {
+    "idx": 58,
+    "offset": 2349,
+    "end": 2359,
+    "original": "コート・雷",
+    "translation": "코트 선더"
+  },
+  {
+    "idx": 59,
+    "offset": 2377,
+    "end": 2393,
+    "original": "セラフィムバード",
+    "translation": "세라핌 버드"
+  },
+  {
+    "idx": 60,
+    "offset": 2405,
+    "end": 2421,
+    "original": "トロネスブレード",
+    "translation": "토로네스 블레이드"
+  },
+  {
+    "idx": 61,
+    "offset": 2433,
+    "end": 2449,
+    "original": "ケルビムドラゴン",
+    "translation": "케루빔 드래곤"
+  },
+  {
+    "idx": 62,
+    "offset": 2461,
+    "end": 2477,
+    "original": "ドミニオンタンク",
+    "translation": "도미니온 탱크"
+  },
+  {
+    "idx": 63,
+    "offset": 2489,
+    "end": 2503,
+    "original": "エルデカイザー",
+    "translation": "엘데카이저"
+  }
+]
