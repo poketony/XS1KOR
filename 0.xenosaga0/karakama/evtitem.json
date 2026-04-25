@@ -1,0 +1,1787 @@
+[
+  {
+    "idx": 0,
+    "name_original": "ミッションキー",
+    "name_translation": "미션 키",
+    "desc_original": "エンセフェロン・ミッションを\nクリアするために必要",
+    "desc_translation": "엔세페론 미션을\n클리어하는 데 필요하다"
+  },
+  {
+    "idx": 1,
+    "name_original": "マスターキー",
+    "name_translation": "마스터키",
+    "desc_original": "独房棟の鍵",
+    "desc_translation": "독방 구역의 열쇠"
+  },
+  {
+    "idx": 2,
+    "name_original": "Ｎｏ．３カード",
+    "name_translation": "Ｎｏ．３ 카드",
+    "desc_original": "Ｎｏ．３と書かれたカードキー",
+    "desc_translation": "Ｎｏ．３이라고 적힌 카드키"
+  },
+  {
+    "idx": 3,
+    "name_original": "Ｕ−ＴＩＣカード",
+    "name_translation": "Ｕ−ＴＩＣ 카드",
+    "desc_original": "第５通路の電子ロックを\n解除することができる",
+    "desc_translation": "제５ 통로의 전자 록을\n해제할 수 있다"
+  },
+  {
+    "idx": 4,
+    "name_original": "花の種",
+    "name_translation": "花の種",
+    "desc_original": "アリアドネフラワーの種",
+    "desc_translation": "アリアドネフラワーの種"
+  },
+  {
+    "idx": 5,
+    "name_original": "船員部屋の鍵",
+    "name_translation": "船員部屋の鍵",
+    "desc_original": "ヴォークリンデの船員部屋の鍵",
+    "desc_translation": "ヴォークリンデの船員部屋の鍵"
+  },
+  {
+    "idx": 6,
+    "name_original": "破砕プラグイン",
+    "name_translation": "破砕プラグイン",
+    "desc_original": "コネクションギアの破砕プラグイン\nマップ上の障害物が破壊可能になる",
+    "desc_translation": "コネクションギアの破砕プラグイン\nマップ上の障害物が破壊可能になる"
+  },
+  {
+    "idx": 7,
+    "name_original": "調整用データ",
+    "name_translation": "調整用データ",
+    "desc_original": "レアリエンのメンタル調整用データ",
+    "desc_translation": "レアリエンのメンタル調整用データ"
+  },
+  {
+    "idx": 8,
+    "name_original": "危険宙域データ",
+    "name_translation": "危険宙域データ",
+    "desc_original": "危険宙域のポイントを示したデータ",
+    "desc_translation": "危険宙域のポイントを示したデータ"
+  },
+  {
+    "idx": 9,
+    "name_original": "Ｍ．Ｗ．Ｓ．",
+    "name_translation": "Ｍ．Ｗ．Ｓ．",
+    "desc_original": "ミユキが考案、制作した個人携行兵器\n本体のいたる所に隠し武器が内蔵されている",
+    "desc_translation": "ミユキが考案、制作した個人携行兵器\n本体のいたる所に隠し武器が内蔵されている"
+  },
+  {
+    "idx": 10,
+    "name_original": "セグメントＦ",
+    "name_translation": "セグメントＦ",
+    "desc_original": "隠し倉庫の情報を記したファイル\n○ボタンを押すことで情報を確認できる",
+    "desc_translation": "隠し倉庫の情報を記したファイル\n○ボタンを押すことで情報を確認できる"
+  },
+  {
+    "idx": 11,
+    "name_original": "バトルパスポート",
+    "name_translation": "バトルパスポート",
+    "desc_original": "所持しているＡ．Ｇ．Ｗ．Ｓ．で遊べるバトリング\nＥＶＳポイント上にて使用すると実行できる",
+    "desc_translation": "所持しているＡ．Ｇ．Ｗ．Ｓ．で遊べるバトリング\nＥＶＳポイント上にて使用すると実行できる"
+  },
+  {
+    "idx": 12,
+    "name_original": "カードパスポート",
+    "name_translation": "カードパスポート",
+    "desc_original": "カードゲームを遊べる（構築済みデッキ付き）\nＥＶＳポイント上にて使用すると実行できる",
+    "desc_translation": "カードゲームを遊べる（構築済みデッキ付き）\nＥＶＳポイント上にて使用すると実行できる"
+  },
+  {
+    "idx": 13,
+    "name_original": "カジノパスポート",
+    "name_translation": "カジノパスポート",
+    "desc_original": "スロット、ポーカーで遊べるカジノゲーム\nＥＶＳポイント上にて使用すると実行できる",
+    "desc_translation": "スロット、ポーカーで遊べるカジノゲーム\nＥＶＳポイント上にて使用すると実行できる"
+  },
+  {
+    "idx": 14,
+    "name_original": "ドリルパスポート",
+    "name_translation": "ドリルパスポート",
+    "desc_original": "ドリルゲームに参加するためのパスポート\nＥＶＳポイント上にて使用すると実行できる",
+    "desc_translation": "ドリルゲームに参加するためのパスポート\nＥＶＳポイント上にて使用すると実行できる"
+  },
+  {
+    "idx": 15,
+    "name_original": "デコーダ・１",
+    "name_translation": "デコーダ・１",
+    "desc_original": "『セグメント・アドレスＮｏ．１』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．１』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 16,
+    "name_original": "デコーダ・２",
+    "name_translation": "デコーダ・２",
+    "desc_original": "『セグメント・アドレスＮｏ．２』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．２』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 17,
+    "name_original": "デコーダ・３",
+    "name_translation": "デコーダ・３",
+    "desc_original": "『セグメント・アドレスＮｏ．３』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．３』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 18,
+    "name_original": "デコーダ・４",
+    "name_translation": "デコーダ・４",
+    "desc_original": "『セグメント・アドレスＮｏ．４』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．４』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 19,
+    "name_original": "デコーダ・５",
+    "name_translation": "デコーダ・５",
+    "desc_original": "『セグメント・アドレスＮｏ．５』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．５』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 20,
+    "name_original": "デコーダ・６",
+    "name_translation": "デコーダ・６",
+    "desc_original": "『セグメント・アドレスＮｏ．６』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．６』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 21,
+    "name_original": "デコーダ・７",
+    "name_translation": "デコーダ・７",
+    "desc_original": "『セグメント・アドレスＮｏ．７』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．７』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 22,
+    "name_original": "デコーダ・８",
+    "name_translation": "デコーダ・８",
+    "desc_original": "『セグメント・アドレスＮｏ．８』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．８』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 23,
+    "name_original": "デコーダ・９",
+    "name_translation": "デコーダ・９",
+    "desc_original": "『セグメント・アドレスＮｏ．９』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．９』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 24,
+    "name_original": "デコーダ・１０",
+    "name_translation": "デコーダ・１０",
+    "desc_original": "『セグメント・アドレスＮｏ．１０』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．１０』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 25,
+    "name_original": "デコーダ・１１",
+    "name_translation": "デコーダ・１１",
+    "desc_original": "『セグメント・アドレスＮｏ．１１』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．１１』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 26,
+    "name_original": "デコーダ・１２",
+    "name_translation": "デコーダ・１２",
+    "desc_original": "『セグメント・アドレスＮｏ．１２』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．１２』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 27,
+    "name_original": "デコーダ・１３",
+    "name_translation": "デコーダ・１３",
+    "desc_original": "『セグメント・アドレスＮｏ．１３』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．１３』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 28,
+    "name_original": "デコーダ・１４",
+    "name_translation": "デコーダ・１４",
+    "desc_original": "『セグメント・アドレスＮｏ．１４』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．１４』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 29,
+    "name_original": "デコーダ・１５",
+    "name_translation": "デコーダ・１５",
+    "desc_original": "『セグメント・アドレスＮｏ．１５』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．１５』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 30,
+    "name_original": "デコーダ・１６",
+    "name_translation": "デコーダ・１６",
+    "desc_original": "『セグメント・アドレスＮｏ．１６』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．１６』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 31,
+    "name_original": "デコーダ・１７",
+    "name_translation": "デコーダ・１７",
+    "desc_original": "『セグメント・アドレスＮｏ．１７』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．１７』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 32,
+    "name_original": "デコーダ・１８",
+    "name_translation": "デコーダ・１８",
+    "desc_original": "『セグメント・アドレスＮｏ．１８』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．１８』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 33,
+    "name_original": "デコーダ・１９",
+    "name_translation": "デコーダ・１９",
+    "desc_original": "『セグメント・アドレスＮｏ．１９』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．１９』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 34,
+    "name_original": "デコーダ・２０",
+    "name_translation": "デコーダ・２０",
+    "desc_original": "『セグメント・アドレスＮｏ．２０』の\nロックを解除するデコーダ",
+    "desc_translation": "『セグメント・アドレスＮｏ．２０』の\nロックを解除するデコーダ"
+  },
+  {
+    "idx": 35,
+    "name_original": "ＰＭカードＡ",
+    "name_translation": "ＰＭカードＡ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 36,
+    "name_original": "ＰＭカードＢ",
+    "name_translation": "ＰＭカードＢ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 37,
+    "name_original": "ＰＭカードＣ",
+    "name_translation": "ＰＭカードＣ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 38,
+    "name_original": "ＰＭカードＤ",
+    "name_translation": "ＰＭカードＤ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 39,
+    "name_original": "ＰＭカードＥ",
+    "name_translation": "ＰＭカードＥ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 40,
+    "name_original": "ＰＭカードＦ",
+    "name_translation": "ＰＭカードＦ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 41,
+    "name_original": "ＰＭカードＧ",
+    "name_translation": "ＰＭカードＧ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 42,
+    "name_original": "ＰＭカードＨ",
+    "name_translation": "ＰＭカードＨ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 43,
+    "name_original": "ＰＭカードＩ",
+    "name_translation": "ＰＭカードＩ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 44,
+    "name_original": "ＰＭカードＪ",
+    "name_translation": "ＰＭカードＪ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 45,
+    "name_original": "ＰＭカードＫ",
+    "name_translation": "ＰＭカードＫ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 46,
+    "name_original": "ＰＭカードＬ",
+    "name_translation": "ＰＭカードＬ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 47,
+    "name_original": "ＰＭカードＭ",
+    "name_translation": "ＰＭカードＭ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 48,
+    "name_original": "ＰＭカードＮ",
+    "name_translation": "ＰＭカードＮ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 49,
+    "name_original": "ＰＭカードＯ",
+    "name_translation": "ＰＭカードＯ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 50,
+    "name_original": "ＰＭカードＰ",
+    "name_translation": "ＰＭカードＰ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 51,
+    "name_original": "ＰＭカードＱ",
+    "name_translation": "ＰＭカードＱ",
+    "desc_original": "カードゲームのプロモーションカード",
+    "desc_translation": "カードゲームのプロモーションカード"
+  },
+  {
+    "idx": 52,
+    "name_original": "スターターセット",
+    "name_translation": "スターターセット",
+    "desc_original": "カードゲームのスターターセット",
+    "desc_translation": "カードゲームのスターターセット"
+  },
+  {
+    "idx": 53,
+    "name_original": "カードパック１弾",
+    "name_translation": "カードパック１弾",
+    "desc_original": "カードゲームのブースターパック第一弾",
+    "desc_translation": "カードゲームのブースターパック第一弾"
+  },
+  {
+    "idx": 54,
+    "name_original": "カードパック２弾",
+    "name_translation": "カードパック２弾",
+    "desc_original": "カードゲームのブースターパック第二弾",
+    "desc_translation": "カードゲームのブースターパック第二弾"
+  },
+  {
+    "idx": 55,
+    "name_original": "ロボパーツ頭",
+    "name_translation": "ロボパーツ頭",
+    "desc_original": "奇妙な形のジャンクパーツ\n何かに使えそうだ",
+    "desc_translation": "奇妙な形のジャンクパーツ\n何かに使えそうだ"
+  },
+  {
+    "idx": 56,
+    "name_original": "ロボパーツ右腕",
+    "name_translation": "ロボパーツ右腕",
+    "desc_original": "奇妙な形のジャンクパーツ\nギミックが詰まっているようだ",
+    "desc_translation": "奇妙な形のジャンクパーツ\nギミックが詰まっているようだ"
+  },
+  {
+    "idx": 57,
+    "name_original": "ロボパーツ左腕",
+    "name_translation": "ロボパーツ左腕",
+    "desc_original": "奇妙な形のジャンクパーツ\nギミックが詰まっているようだ",
+    "desc_translation": "奇妙な形のジャンクパーツ\nギミックが詰まっているようだ"
+  },
+  {
+    "idx": 58,
+    "name_original": "ロボパーツ胴",
+    "name_translation": "ロボパーツ胴",
+    "desc_original": "奇妙な形のジャンクパーツ\nどこかドラゴンの形に似ている",
+    "desc_translation": "奇妙な形のジャンクパーツ\nどこかドラゴンの形に似ている"
+  },
+  {
+    "idx": 59,
+    "name_original": "ロボパーツ右足",
+    "name_translation": "ロボパーツ右足",
+    "desc_original": "奇妙な形のジャンクパーツ\n何かと対になっているようだ",
+    "desc_translation": "奇妙な形のジャンクパーツ\n何かと対になっているようだ"
+  },
+  {
+    "idx": 60,
+    "name_original": "ロボパーツ左足",
+    "name_translation": "ロボパーツ左足",
+    "desc_original": "奇妙な形のジャンクパーツ\n何かと対になっているようだ",
+    "desc_translation": "奇妙な形のジャンクパーツ\n何かと対になっているようだ"
+  },
+  {
+    "idx": 61,
+    "name_original": "ＳキャロットＪ",
+    "name_translation": "ＳキャロットＪ",
+    "desc_original": "スーパーキャロットジュース\nうーくんの大好きな飲み物",
+    "desc_translation": "スーパーキャロットジュース\nうーくんの大好きな飲み物"
+  },
+  {
+    "idx": 62,
+    "name_original": "武器庫の鍵",
+    "name_translation": "武器庫の鍵",
+    "desc_original": "デュランダルの武器庫の鍵",
+    "desc_translation": "デュランダルの武器庫の鍵"
+  },
+  {
+    "idx": 63,
+    "name_original": "解除キー",
+    "name_translation": "解除キー",
+    "desc_original": "スライドデッキの解除コードが\n登録されたカードキー",
+    "desc_translation": "スライドデッキの解除コードが\n登録されたカードキー"
+  },
+  {
+    "idx": 64,
+    "name_original": "ドリルキー",
+    "name_translation": "ドリルキー",
+    "desc_original": "レアな景品をゲットするためのキー",
+    "desc_translation": "レアな景品をゲットするためのキー"
+  },
+  {
+    "idx": 65,
+    "name_original": "ドリルキー",
+    "name_translation": "ドリルキー",
+    "desc_original": "レアな景品をゲットするためのキー",
+    "desc_translation": "レアな景品をゲットするためのキー"
+  },
+  {
+    "idx": 66,
+    "name_original": "ドリルキー",
+    "name_translation": "ドリルキー",
+    "desc_original": "レアな景品をゲットするためのキー",
+    "desc_translation": "レアな景品をゲットするためのキー"
+  },
+  {
+    "idx": 67,
+    "name_original": "ドリルキー",
+    "name_translation": "ドリルキー",
+    "desc_original": "レアな景品をゲットするためのキー",
+    "desc_translation": "レアな景品をゲットするためのキー"
+  },
+  {
+    "idx": 68,
+    "name_original": "ドリルキー",
+    "name_translation": "ドリルキー",
+    "desc_original": "レアな景品をゲットするためのキー",
+    "desc_translation": "レアな景品をゲットするためのキー"
+  },
+  {
+    "idx": 69,
+    "name_original": "装備品",
+    "name_translation": "装備品",
+    "desc_original": "装備品ダミーデータ",
+    "desc_translation": "装備品ダミーデータ"
+  },
+  {
+    "idx": 70,
+    "name_original": "魚影探知器",
+    "name_translation": "魚影探知器",
+    "desc_original": "これさえあれば、素手で魚をつかまえることも…",
+    "desc_translation": "これさえあれば、素手で魚をつかまえることも…"
+  },
+  {
+    "idx": 71,
+    "name_original": "婚約指輪",
+    "name_translation": "婚約指輪",
+    "desc_original": "なくすと大変、怒られちゃうかも…",
+    "desc_translation": "なくすと大変、怒られちゃうかも…"
+  },
+  {
+    "idx": 72,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 73,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 74,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 75,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 76,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 77,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 78,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 79,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 80,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 81,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 82,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 83,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 84,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 85,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 86,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 87,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 88,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 89,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 90,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 91,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 92,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 93,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 94,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 95,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 96,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 97,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 98,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 99,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 100,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 101,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 102,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 103,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 104,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 105,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 106,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 107,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 108,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 109,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 110,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 111,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 112,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 113,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 114,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 115,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 116,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 117,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 118,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 119,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 120,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 121,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 122,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 123,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 124,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 125,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 126,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 127,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 128,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 129,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 130,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 131,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 132,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 133,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 134,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 135,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 136,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 137,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 138,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 139,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 140,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 141,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 142,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 143,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 144,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 145,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 146,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 147,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 148,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 149,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 150,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 151,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 152,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 153,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 154,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 155,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 156,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 157,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 158,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 159,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 160,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 161,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 162,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 163,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 164,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 165,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 166,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 167,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 168,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 169,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 170,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 171,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 172,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 173,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 174,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 175,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 176,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 177,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 178,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 179,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 180,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 181,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 182,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 183,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 184,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 185,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 186,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 187,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 188,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 189,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 190,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 191,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 192,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 193,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 194,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 195,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 196,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 197,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 198,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 199,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 200,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 201,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 202,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 203,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 204,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 205,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 206,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 207,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 208,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 209,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 210,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 211,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 212,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 213,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 214,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 215,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 216,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 217,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 218,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 219,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 220,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 221,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 222,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 223,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 224,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 225,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 226,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 227,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 228,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 229,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 230,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 231,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 232,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 233,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 234,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 235,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 236,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 237,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 238,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 239,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 240,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 241,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 242,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 243,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 244,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 245,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 246,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 247,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 248,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 249,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 250,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 251,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 252,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 253,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  },
+  {
+    "idx": 254,
+    "name_original": "",
+    "name_translation": "",
+    "desc_original": "",
+    "desc_translation": ""
+  }
+]

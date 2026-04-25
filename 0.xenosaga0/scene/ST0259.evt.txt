@@ -23,7 +23,7 @@
 Event Pass
 KickEvent!!!!!!!!!!!!
 B01: /[$0]
-工事中です/[wait(30)]/[close()]
+공사 중입니다/[wait(30)]/[close()]
 enterd : /[$0]
 entrance: /[$0]
 Msg

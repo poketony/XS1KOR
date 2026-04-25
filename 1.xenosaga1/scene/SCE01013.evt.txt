@@ -1,0 +1,30 @@
+# chunk 9 @ 0xf64 cnum=727 total=28
+# bc_map: 9,10,2,7,8,17,6,3,4,5,1,14,15,16,13,11,23,19,22,20,0,12,18,25,27,21,26,24
+Xenvmainthreadmain
+Xenvplaythread
+Event Out
+XEVEFLAG:EV01013_F
+XEVEJNAME:CFJ1_100 XEVEJPOINT:POINT_100
+rotate_sora
+FLSshion_h.fpk
+FLScommi.fpk
+FLSreal_m.fpk
+FLSreal_w.fpk
+CameraThread
+init_idle_m
+init_idle_w
+openLcloseR
+closeLopenR
+c2_3_2
+どうも　ヴェクターです
+ああ　ウヅキさん
+すみません　いつもいつも
+いいんですよ　大尉
+/[ruby(レアリエン/み　ん　な)]には<lf>いつも元気でいて欲しいですから
+c6_7
+――で　どうしたんですか　今日は
+はい　部隊の再編成にともなって
+新しい戦術アルゴリズムを<lf>学習させようとしたんですが
+うまく入力出来ないのですよ
+ホントだ　拒絶信号出てますね
+どれどれ──

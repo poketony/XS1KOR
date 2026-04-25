@@ -5,10 +5,10 @@ Start Up
 
 # chunk 2 @ 0x614 cnum=324 total=7
 # bc_map: 5,4,0,1,6,2,3
-ボス戦が入ります。<lf>
-イベントにジャンプします<lf>
+보스전에 들어갑니다．<lf>
+이벤트로 점프합니다．<lf>
 /[waitkey(64)]/[close()]
 Event Pass
-工事中です/[wait(30)]/[close()]
+공사 중입니다/[wait(30)]/[close()]
 enterd : /[$0]
 entrance: /[$0]

@@ -3,17 +3,18 @@
 slps_290.02 문자열 추출/리빌드 툴
 
 대상 범위: 0x1665e0 ~ EOF
-추출 조건: EUC-JIS-2004 디코딩 성공 + 일본어 바이트(0xa1 이상) 포함
+추출 조건:
+  - EUC-JIS-2004 디코딩 성공 + 일본어 바이트 포함: 전체 null-segment를 추출
+  - 디코딩 실패 segment: 내부에서 일본어 연속 run을 추출 (제어코드 앞뒤로 끼어있는 텍스트)
 
 txt 포맷: <hex_offset>|<orig_bytes>/<slack_bytes>|<text>
   ex)  002bf088|16/7|キャンセルする。
-         -> 원본 16바이트, 여유(trailing null) 7바이트 (최대 23바이트까지 쓸 수 있음)
 
 슬롯 구조: [문자열 바이트] [0x00 null terminator] [trailing 0x00]
   여유 공간 = trailing null 개수 (null terminator 자체는 제외)
+  리빌드 시 (원본+여유) 바이트 이내여야 적용 가능
 
-제어 코드 표기:
-  \\n = 0x0a,  \\r = 0x0d  (txt에서 이스케이프로 표기, 리빌드 시 원래 바이트로 복원)
+제어 코드 표기: \\n = 0x0a,  \\r = 0x0d
 
 사용법:
   추출: python3 slps_strings.py extract slps_290.02
@@ -24,12 +25,11 @@ txt 포맷: <hex_offset>|<orig_bytes>/<slack_bytes>|<text>
           -> 같은 폴더의 XENOSAGA_KOR-JPN.json 자동 인식, 한글->한자 치환 후 EUC-JIS-2004 인코딩
 """
 
-import sys
-import os
-import json
+import sys, os, json
 
 SCAN_START = 0x1665e0
 ENCODING   = 'euc_jis_2004'
+CTRL_OK    = frozenset([0x09, 0x0a, 0x0d, 0x19, 0x01, 0x02, 0x03, 0x08, 0x0c, 0x1f])
 
 
 # ── 공통 ──────────────────────────────────────────────────────────────────────
@@ -41,8 +41,8 @@ def load_replace_table(bin_path):
         print(f'[INFO] {json_path} 없음 - 한글 치환 없이 진행')
         return {}
     with open(json_path, encoding='utf-8-sig') as f:
-        data = json.load(f)
-    table = data.get('replace-table', {})
+        d = json.load(f)
+    table = d.get('replace-table', {})
     print(f'[INFO] replace-table 로드: {len(table)}개 ({json_path})')
     return table
 
@@ -53,46 +53,113 @@ def apply_replace_table(text, table):
     return ''.join(table.get(ch, ch) for ch in text)
 
 
-def to_display(decoded):
-    """디코딩된 문자열 -> txt 표기 (\\n, \\r 이스케이프)"""
-    return decoded.replace('\r', '\\r').replace('\n', '\\n')
+def to_display(s):
+    return s.replace('\r', '\\r').replace('\n', '\\n')
+
+def from_display(s):
+    return s.replace('\\r', '\r').replace('\\n', '\n')
 
 
-def from_display(text):
-    """txt 표기 -> 실제 문자열 (\\n, \\r 복원)"""
-    return text.replace('\\r', '\r').replace('\\n', '\n')
+def _jp_runs(seg, base_off):
+    """seg 내에서 일본어 포함 EUC 연속 구간 yield: (abs_offset, raw_bytes)"""
+    slen = len(seg)
+    i = 0
+    while i < slen:
+        b = seg[i]
+        if b >= 0xa1 or b in (0x8e, 0x8f):
+            run = bytearray()
+            j = i
+            while j < slen:
+                b2 = seg[j]
+                if 0xa1 <= b2 <= 0xfe and j+1 < slen and 0xa1 <= seg[j+1] <= 0xfe:
+                    run += seg[j:j+2]; j += 2
+                elif b2 == 0x8e and j+1 < slen and 0xa1 <= seg[j+1] <= 0xdf:
+                    run += seg[j:j+2]; j += 2
+                elif 0x20 <= b2 <= 0x7e or b2 in CTRL_OK:
+                    run.append(b2); j += 1
+                else:
+                    break
+            i = j if j > i else i + 1
+            if len(run) >= 4 and any(x >= 0xa1 for x in run):
+                yield (base_off + (i - len(run) if j > i else i - 1), bytes(run))
+                # run_start 정확히 계산
+        else:
+            i += 1
+
+
+def _jp_runs_fixed(seg, base_off):
+    """run_start 오프셋을 정확하게 추적하는 버전"""
+    slen = len(seg)
+    i = 0
+    while i < slen:
+        b = seg[i]
+        if b >= 0xa1 or b in (0x8e, 0x8f):
+            run_start = i
+            run = bytearray()
+            j = i
+            while j < slen:
+                b2 = seg[j]
+                if 0xa1 <= b2 <= 0xfe and j+1 < slen and 0xa1 <= seg[j+1] <= 0xfe:
+                    run += seg[j:j+2]; j += 2
+                elif b2 == 0x8e and j+1 < slen and 0xa1 <= seg[j+1] <= 0xdf:
+                    run += seg[j:j+2]; j += 2
+                elif 0x20 <= b2 <= 0x7e or b2 in CTRL_OK:
+                    run.append(b2); j += 1
+                else:
+                    break
+            i = j if j > i else i + 1
+            if len(run) >= 4 and any(x >= 0xa1 for x in run):
+                yield (base_off + run_start, bytes(run))
+        else:
+            i += 1
 
 
 def iter_strings(data, start):
     """
-    start ~ EOF 구간에서 EUC-JIS-2004 디코딩 가능 + 일본어 바이트 포함 문자열 yield.
-    yield: (offset, raw_bytes, trailing_nulls)
-      trailing_nulls = null terminator 이후 ~ 다음 non-null 직전까지의 0x00 개수
+    start~EOF 구간 스캔, yield: (offset, raw_bytes, trailing_nulls)
+    두 가지 추출 방식 통합:
+      1) null-segment 전체가 EUC 디코딩 성공 + 일본어 포함 -> 전체를 하나의 문자열로
+      2) 디코딩 실패 -> 내부에서 일본어 run 추출
     """
     end = len(data)
     pos = start
+    seen = set()
+
     while pos < end:
         if data[pos] == 0:
             pos += 1
             continue
-        null_pos = data.find(b'\x00', pos, end)
-        if null_pos == -1:
-            null_pos = end
-        raw = data[pos:null_pos]
 
-        scan = null_pos + 1
+        np = data.find(b'\x00', pos, end)
+        if np == -1:
+            np = end
+
+        scan = np + 1
         while scan < end and data[scan] == 0:
             scan += 1
-        trailing = scan - null_pos - 1
+        trailing = scan - np - 1
 
-        try:
-            raw.decode(ENCODING)
-            if any(b >= 0xa1 for b in raw):
-                yield (pos, raw, trailing)
-        except Exception:
-            pass
+        seg = data[pos:np]
 
-        pos = null_pos + 1
+        if any(b >= 0xa1 for b in seg):
+            try:
+                seg.decode(ENCODING)
+                # 방법1: 전체 성공
+                if pos not in seen:
+                    seen.add(pos)
+                    yield (pos, bytes(seg), trailing)
+                pos = np + 1
+                continue
+            except Exception:
+                pass
+
+            # 방법2: run 추출
+            for run_off, run_raw in _jp_runs_fixed(seg, pos):
+                if run_off not in seen:
+                    seen.add(run_off)
+                    yield (run_off, run_raw, trailing)
+
+        pos = np + 1
 
 
 # ── 추출 ──────────────────────────────────────────────────────────────────────
@@ -102,29 +169,26 @@ def extract(bin_path):
     base     = os.path.splitext(os.path.basename(bin_path))[0]
     out_path = os.path.join(os.path.dirname(os.path.abspath(bin_path)),
                             base + '_strings.txt')
-
     lines = [
-        f'# slps_290.02 string dump',
+        '# slps_290.02 string dump',
         f'# scan start: 0x{SCAN_START:x}',
-        f'# format: <hex_offset>|<orig_bytes>/<slack_bytes>|<text>',
-        f'#   orig  = 원본 문자열 바이트 수 (null terminator 제외)',
-        f'#   slack = 여유 공간 바이트 수 (trailing null 개수)',
-        f'#   max   = orig + slack = 번역 후 인코딩 결과가 이 값 이하여야 적용 가능',
-        f'# - \\\\n = 0x0a newline,  \\\\r = 0x0d carriage return (제어 코드)',
-        f'# - 그 외 \\x?? 제어 코드 포함 문자열은 수정 시 코드 보존 필요',
+        '# format: <hex_offset>|<orig_bytes>/<slack_bytes>|<text>',
+        '#   orig  = 원본 문자열 바이트 수 (null terminator 제외)',
+        '#   slack = 여유 공간 바이트 수 (trailing null 개수)',
+        '#   max   = orig + slack = 번역 후 인코딩 결과가 이 값 이하여야 적용 가능',
+        '# - \\\\n = 0x0a,  \\\\r = 0x0d  (제어 코드 이스케이프)',
+        '# - 의미 없는 행은 삭제해도 리빌드에 영향 없음',
         '',
     ]
-
     count = 0
-    for off, raw, trailing in iter_strings(data, SCAN_START):
-        decoded = raw.decode(ENCODING)
+    for off, raw, trailing in sorted(iter_strings(data, SCAN_START), key=lambda x: x[0]):
+        decoded = raw.decode(ENCODING, errors='replace')
         display = to_display(decoded)
         lines.append(f'{off:08x}|{len(raw)}/{trailing}|{display}')
         count += 1
 
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(lines))
-
     print(f'[OK] {count}개 문자열 추출 -> {out_path}')
 
 
@@ -138,7 +202,7 @@ def rebuild(bin_path, txt_path):
     for off, raw, trailing in iter_strings(bytes(data), SCAN_START):
         orig[off] = (raw, trailing)
 
-    edits   = {}
+    edits = {}
     skipped = 0
     with open(txt_path, encoding='utf-8') as f:
         for lineno, line in enumerate(f, 1):
@@ -147,7 +211,7 @@ def rebuild(bin_path, txt_path):
                 continue
             parts = line.split('|', 2)
             if len(parts) == 3:
-                hex_off, _size_info, text = parts
+                hex_off, _info, text = parts
             elif len(parts) == 2:
                 hex_off, text = parts
             else:
@@ -162,12 +226,9 @@ def rebuild(bin_path, txt_path):
             edits[offset] = from_display(text)
 
     if skipped:
-        print(f'[INFO] {skipped}개 라인 건너뜀 (주석/빈 줄 포함)')
+        print(f'[INFO] {skipped}개 라인 건너뜀')
 
-    patched    = 0
-    over_orig  = 0
-    over_slack = 0
-    errors     = 0
+    patched = over_orig = over_slack = errors = 0
 
     for offset, new_text in sorted(edits.items()):
         if offset not in orig:
@@ -184,33 +245,30 @@ def rebuild(bin_path, txt_path):
         try:
             new_raw = converted.encode(ENCODING)
         except Exception as e:
-            print(f'[ERR] 0x{offset:08x}: 인코딩 실패 ({e}): {converted!r}')
+            print(f'[ERR] 0x{offset:08x}: 인코딩 실패 ({e})')
             errors += 1
             continue
 
         new_len = len(new_raw)
-
         if new_raw == orig_raw:
             continue
 
         if new_len > max_len:
             orig_dec = orig_raw.decode(ENCODING, errors='replace')
             print(f'[여유 공간 초과하여 미적용] 0x{offset:08x} '
-                  f'원본={orig_len}B 여유={slack}B 신규={new_len}B '
-                  f'| {orig_dec!r}')
+                  f'원본={orig_len}B 여유={slack}B 신규={new_len}B | {orig_dec!r}')
             over_slack += 1
             continue
 
         if new_len > orig_len:
             orig_dec = orig_raw.decode(ENCODING, errors='replace')
             print(f'[원본 길이 초과] 0x{offset:08x} '
-                  f'원본={orig_len}B -> 신규={new_len}B (여유 {slack}B 내 적용) '
-                  f'| {orig_dec!r}')
+                  f'원본={orig_len}B -> 신규={new_len}B (여유 {slack}B 내 적용) | {orig_dec!r}')
             over_orig += 1
 
         slot_size = orig_len + 1 + trailing
-        data[offset : offset + slot_size] = b'\x00' * slot_size
-        data[offset : offset + new_len]   = new_raw
+        data[offset:offset + slot_size] = b'\x00' * slot_size
+        data[offset:offset + new_len]   = new_raw
         patched += 1
 
     base, ext = os.path.splitext(bin_path)

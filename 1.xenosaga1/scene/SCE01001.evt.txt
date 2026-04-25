@@ -343,10 +343,10 @@ act5_kosmos
 face5_shion0
 face5_kosmos
 【シオン】
-안녕 ＫＯＳ−ＭＯＳ<lf>상태는 어때？
+좋은 아침이네 ＫＯＳ−ＭＯＳ<lf>상태는 어때？
 face5_shion2
 【ＫＯＳ−ＭＯＳ】
-안녕하세요 시온<lf>모든 것이 매우 순조롭습니다
+좋은 아침입니다 시온<lf>모든 것이 매우 순조롭습니다
 act6_shadow
 act6_chara
 act6_kosmos

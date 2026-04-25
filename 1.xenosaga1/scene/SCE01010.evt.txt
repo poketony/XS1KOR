@@ -1,0 +1,31 @@
+# chunk 7 @ 0x11d0 cnum=655 total=29
+# bc_map: 8,9,13,16,14,17,3,6,7,4,5,2,0,25,10,15,11,12,21,28,23,26,27,19,22,18,24,20,1
+Xenvmainthreadmain
+Xenvplaythread
+ringL_sd
+ringR_sd
+ringL_st
+ringR_st
+Event Out
+XEVEFLAG:EV01010_F
+XEVEJNAME:CFJ1_80 XEVEJPOINT:POINT_80
+FLSshion_h.fpk
+FLSvan.fpk
+CameraThread
+1010_1
+위험해！
+c31
+ringR
+c32
+ringL
+해이해진 거냐 네놈！
+관계자 외에는 이것에 다가가지 말라고<lf>듣지 못한 거냐！
+이미 ３명이나<lf>사라져 버렸단 말이다
+꺼져라！
+너 같은 정신 산만한 녀석이<lf>서성거리면 병사들이 해이해진다！
+죄，죄송합니다
+대체 어디 멍청이야
+이 배에 민간인을 태운 건
+뭘 멍하니 보고 있는 거냐 네놈！
+정신이 해이해졌다！
+>>>>>>>>>> CUT /[$1]
