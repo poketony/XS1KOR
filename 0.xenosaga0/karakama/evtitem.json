@@ -30,478 +30,478 @@
   {
     "idx": 4,
     "name_original": "花の種",
-    "name_translation": "花の種",
+    "name_translation": "꽃의 씨앗",
     "desc_original": "アリアドネフラワーの種",
-    "desc_translation": "アリアドネフラワーの種"
+    "desc_translation": "아리아드네 플라워의 씨앗"
   },
   {
     "idx": 5,
     "name_original": "船員部屋の鍵",
-    "name_translation": "船員部屋の鍵",
+    "name_translation": "선원실 열쇠",
     "desc_original": "ヴォークリンデの船員部屋の鍵",
-    "desc_translation": "ヴォークリンデの船員部屋の鍵"
+    "desc_translation": "보클린데 선원실의 열쇠"
   },
   {
     "idx": 6,
     "name_original": "破砕プラグイン",
-    "name_translation": "破砕プラグイン",
+    "name_translation": "파쇄 플러그인",
     "desc_original": "コネクションギアの破砕プラグイン\nマップ上の障害物が破壊可能になる",
-    "desc_translation": "コネクションギアの破砕プラグイン\nマップ上の障害物が破壊可能になる"
+    "desc_translation": "커넥션 기어의 파쇄 플러그인\n맵상의 장애물을 파괴할 수 있게 된다"
   },
   {
     "idx": 7,
     "name_original": "調整用データ",
-    "name_translation": "調整用データ",
+    "name_translation": "조정용 데이터",
     "desc_original": "レアリエンのメンタル調整用データ",
-    "desc_translation": "レアリエンのメンタル調整用データ"
+    "desc_translation": "리얼리언의 멘탈 조정용 데이터"
   },
   {
     "idx": 8,
     "name_original": "危険宙域データ",
-    "name_translation": "危険宙域データ",
+    "name_translation": "위험 영역 데이터",
     "desc_original": "危険宙域のポイントを示したデータ",
-    "desc_translation": "危険宙域のポイントを示したデータ"
+    "desc_translation": "위험 우주 영역 포인트를 나타낸 데이터"
   },
   {
     "idx": 9,
     "name_original": "Ｍ．Ｗ．Ｓ．",
     "name_translation": "Ｍ．Ｗ．Ｓ．",
     "desc_original": "ミユキが考案、制作した個人携行兵器\n本体のいたる所に隠し武器が内蔵されている",
-    "desc_translation": "ミユキが考案、制作した個人携行兵器\n本体のいたる所に隠し武器が内蔵されている"
+    "desc_translation": "미유키가 고안 및 제작한 개인 휴대 병기\n본체 곳곳에 숨겨진 무기가 내장되어 있다"
   },
   {
     "idx": 10,
     "name_original": "セグメントＦ",
-    "name_translation": "セグメントＦ",
+    "name_translation": "세그먼트 Ｆ",
     "desc_original": "隠し倉庫の情報を記したファイル\n○ボタンを押すことで情報を確認できる",
-    "desc_translation": "隠し倉庫の情報を記したファイル\n○ボタンを押すことで情報を確認できる"
+    "desc_translation": "비밀 창고의 정보를 기록한 파일\n○ 버튼을 눌러서 정보를 확인할 수 있다"
   },
   {
     "idx": 11,
     "name_original": "バトルパスポート",
-    "name_translation": "バトルパスポート",
+    "name_translation": "배틀 패스포트",
     "desc_original": "所持しているＡ．Ｇ．Ｗ．Ｓ．で遊べるバトリング\nＥＶＳポイント上にて使用すると実行できる",
-    "desc_translation": "所持しているＡ．Ｇ．Ｗ．Ｓ．で遊べるバトリング\nＥＶＳポイント上にて使用すると実行できる"
+    "desc_translation": "소지하고 있는 Ａ．Ｇ．Ｗ．Ｓ．로 즐기는 배틀링\nＥＶＳ 포인트에서 사용하면 실행할 수 있다"
   },
   {
     "idx": 12,
     "name_original": "カードパスポート",
-    "name_translation": "カードパスポート",
+    "name_translation": "카드 패스포트",
     "desc_original": "カードゲームを遊べる（構築済みデッキ付き）\nＥＶＳポイント上にて使用すると実行できる",
-    "desc_translation": "カードゲームを遊べる（構築済みデッキ付き）\nＥＶＳポイント上にて使用すると実行できる"
+    "desc_translation": "카드 게임을 즐길 수 있다（구축 완료된 덱 포함）\nＥＶＳ 포인트에서 사용하면 실행할 수 있다"
   },
   {
     "idx": 13,
     "name_original": "カジノパスポート",
-    "name_translation": "カジノパスポート",
+    "name_translation": "카지노 패스포트",
     "desc_original": "スロット、ポーカーで遊べるカジノゲーム\nＥＶＳポイント上にて使用すると実行できる",
-    "desc_translation": "スロット、ポーカーで遊べるカジノゲーム\nＥＶＳポイント上にて使用すると実行できる"
+    "desc_translation": "슬롯머신과 포커를 즐길 수 있는 카지노 게임\nＥＶＳ 포인트에서 사용하면 실행할 수 있다"
   },
   {
     "idx": 14,
     "name_original": "ドリルパスポート",
-    "name_translation": "ドリルパスポート",
+    "name_translation": "드릴 패스포트",
     "desc_original": "ドリルゲームに参加するためのパスポート\nＥＶＳポイント上にて使用すると実行できる",
-    "desc_translation": "ドリルゲームに参加するためのパスポート\nＥＶＳポイント上にて使用すると実行できる"
+    "desc_translation": "드릴 게임에 참가하기 위한 패스포트\nＥＶＳ 포인트에서 사용하면 실행할 수 있다"
   },
   {
     "idx": 15,
     "name_original": "デコーダ・１",
-    "name_translation": "デコーダ・１",
+    "name_translation": "디코더 １",
     "desc_original": "『セグメント・アドレスＮｏ．１』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．１』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．１』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 16,
     "name_original": "デコーダ・２",
-    "name_translation": "デコーダ・２",
+    "name_translation": "디코더 ２",
     "desc_original": "『セグメント・アドレスＮｏ．２』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．２』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．２』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 17,
     "name_original": "デコーダ・３",
-    "name_translation": "デコーダ・３",
+    "name_translation": "디코더 ３",
     "desc_original": "『セグメント・アドレスＮｏ．３』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．３』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．３』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 18,
     "name_original": "デコーダ・４",
-    "name_translation": "デコーダ・４",
+    "name_translation": "디코더 ４",
     "desc_original": "『セグメント・アドレスＮｏ．４』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．４』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．４』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 19,
     "name_original": "デコーダ・５",
-    "name_translation": "デコーダ・５",
+    "name_translation": "디코더 ５",
     "desc_original": "『セグメント・アドレスＮｏ．５』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．５』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．５』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 20,
     "name_original": "デコーダ・６",
-    "name_translation": "デコーダ・６",
+    "name_translation": "디코더 ６",
     "desc_original": "『セグメント・アドレスＮｏ．６』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．６』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．６』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 21,
     "name_original": "デコーダ・７",
-    "name_translation": "デコーダ・７",
+    "name_translation": "디코더 ７",
     "desc_original": "『セグメント・アドレスＮｏ．７』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．７』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．７』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 22,
     "name_original": "デコーダ・８",
-    "name_translation": "デコーダ・８",
+    "name_translation": "디코더 ８",
     "desc_original": "『セグメント・アドレスＮｏ．８』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．８』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．８』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 23,
     "name_original": "デコーダ・９",
-    "name_translation": "デコーダ・９",
+    "name_translation": "디코더 ９",
     "desc_original": "『セグメント・アドレスＮｏ．９』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．９』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．９』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 24,
     "name_original": "デコーダ・１０",
-    "name_translation": "デコーダ・１０",
+    "name_translation": "디코더 １０",
     "desc_original": "『セグメント・アドレスＮｏ．１０』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．１０』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．１０』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 25,
     "name_original": "デコーダ・１１",
-    "name_translation": "デコーダ・１１",
+    "name_translation": "디코더 １１",
     "desc_original": "『セグメント・アドレスＮｏ．１１』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．１１』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．１１』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 26,
     "name_original": "デコーダ・１２",
-    "name_translation": "デコーダ・１２",
+    "name_translation": "디코더 １２",
     "desc_original": "『セグメント・アドレスＮｏ．１２』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．１２』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．１２』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 27,
     "name_original": "デコーダ・１３",
-    "name_translation": "デコーダ・１３",
+    "name_translation": "디코더 １３",
     "desc_original": "『セグメント・アドレスＮｏ．１３』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．１３』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．１３』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 28,
     "name_original": "デコーダ・１４",
-    "name_translation": "デコーダ・１４",
+    "name_translation": "디코더 １４",
     "desc_original": "『セグメント・アドレスＮｏ．１４』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．１４』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．１４』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 29,
     "name_original": "デコーダ・１５",
-    "name_translation": "デコーダ・１５",
+    "name_translation": "디코더 １５",
     "desc_original": "『セグメント・アドレスＮｏ．１５』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．１５』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．１５』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 30,
     "name_original": "デコーダ・１６",
-    "name_translation": "デコーダ・１６",
+    "name_translation": "디코더 １６",
     "desc_original": "『セグメント・アドレスＮｏ．１６』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．１６』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．１６』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 31,
     "name_original": "デコーダ・１７",
-    "name_translation": "デコーダ・１７",
+    "name_translation": "디코더 １７",
     "desc_original": "『セグメント・アドレスＮｏ．１７』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．１７』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．１７』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 32,
     "name_original": "デコーダ・１８",
-    "name_translation": "デコーダ・１８",
+    "name_translation": "디코더 １８",
     "desc_original": "『セグメント・アドレスＮｏ．１８』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．１８』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．１８』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 33,
     "name_original": "デコーダ・１９",
-    "name_translation": "デコーダ・１９",
+    "name_translation": "디코더 １９",
     "desc_original": "『セグメント・アドレスＮｏ．１９』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．１９』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．１９』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 34,
     "name_original": "デコーダ・２０",
-    "name_translation": "デコーダ・２０",
+    "name_translation": "디코더 ２０",
     "desc_original": "『セグメント・アドレスＮｏ．２０』の\nロックを解除するデコーダ",
-    "desc_translation": "『セグメント・アドレスＮｏ．２０』の\nロックを解除するデコーダ"
+    "desc_translation": "『세그먼트 어드레스 Ｎｏ．２０』의\n잠금을 해제하는 디코더"
   },
   {
     "idx": 35,
     "name_original": "ＰＭカードＡ",
-    "name_translation": "ＰＭカードＡ",
+    "name_translation": "ＰＭ 카드 Ａ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 36,
     "name_original": "ＰＭカードＢ",
-    "name_translation": "ＰＭカードＢ",
+    "name_translation": "ＰＭ 카드 Ｂ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 37,
     "name_original": "ＰＭカードＣ",
-    "name_translation": "ＰＭカードＣ",
+    "name_translation": "ＰＭ 카드 Ｃ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 38,
     "name_original": "ＰＭカードＤ",
-    "name_translation": "ＰＭカードＤ",
+    "name_translation": "ＰＭ 카드 Ｄ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 39,
     "name_original": "ＰＭカードＥ",
-    "name_translation": "ＰＭカードＥ",
+    "name_translation": "ＰＭ 카드 Ｅ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 40,
     "name_original": "ＰＭカードＦ",
-    "name_translation": "ＰＭカードＦ",
+    "name_translation": "ＰＭ 카드 Ｆ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 41,
     "name_original": "ＰＭカードＧ",
-    "name_translation": "ＰＭカードＧ",
+    "name_translation": "ＰＭ 카드 Ｇ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 42,
     "name_original": "ＰＭカードＨ",
-    "name_translation": "ＰＭカードＨ",
+    "name_translation": "ＰＭ 카드 Ｈ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 43,
     "name_original": "ＰＭカードＩ",
-    "name_translation": "ＰＭカードＩ",
+    "name_translation": "ＰＭ 카드 Ｉ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 44,
     "name_original": "ＰＭカードＪ",
-    "name_translation": "ＰＭカードＪ",
+    "name_translation": "ＰＭ 카드 Ｊ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 45,
     "name_original": "ＰＭカードＫ",
-    "name_translation": "ＰＭカードＫ",
+    "name_translation": "ＰＭ 카드 Ｋ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 46,
     "name_original": "ＰＭカードＬ",
-    "name_translation": "ＰＭカードＬ",
+    "name_translation": "ＰＭ 카드 Ｌ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 47,
     "name_original": "ＰＭカードＭ",
-    "name_translation": "ＰＭカードＭ",
+    "name_translation": "ＰＭ 카드 Ｍ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 48,
     "name_original": "ＰＭカードＮ",
-    "name_translation": "ＰＭカードＮ",
+    "name_translation": "ＰＭ 카드 Ｎ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 49,
     "name_original": "ＰＭカードＯ",
-    "name_translation": "ＰＭカードＯ",
+    "name_translation": "ＰＭ 카드 Ｏ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 50,
     "name_original": "ＰＭカードＰ",
-    "name_translation": "ＰＭカードＰ",
+    "name_translation": "ＰＭ 카드 Ｐ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 51,
     "name_original": "ＰＭカードＱ",
-    "name_translation": "ＰＭカードＱ",
+    "name_translation": "ＰＭ 카드 Ｑ",
     "desc_original": "カードゲームのプロモーションカード",
-    "desc_translation": "カードゲームのプロモーションカード"
+    "desc_translation": "카드 게임의 프로모션 카드"
   },
   {
     "idx": 52,
     "name_original": "スターターセット",
-    "name_translation": "スターターセット",
+    "name_translation": "스타터 세트",
     "desc_original": "カードゲームのスターターセット",
-    "desc_translation": "カードゲームのスターターセット"
+    "desc_translation": "카드 게임의 스타터 세트"
   },
   {
     "idx": 53,
     "name_original": "カードパック１弾",
-    "name_translation": "カードパック１弾",
+    "name_translation": "카드 팩 １탄",
     "desc_original": "カードゲームのブースターパック第一弾",
-    "desc_translation": "カードゲームのブースターパック第一弾"
+    "desc_translation": "카드 게임의 부스터 팩 제１탄"
   },
   {
     "idx": 54,
     "name_original": "カードパック２弾",
-    "name_translation": "カードパック２弾",
+    "name_translation": "카드 팩 ２탄",
     "desc_original": "カードゲームのブースターパック第二弾",
-    "desc_translation": "カードゲームのブースターパック第二弾"
+    "desc_translation": "카드 게임의 부스터 팩 제２탄"
   },
   {
     "idx": 55,
     "name_original": "ロボパーツ頭",
-    "name_translation": "ロボパーツ頭",
+    "name_translation": "로봇의 머리",
     "desc_original": "奇妙な形のジャンクパーツ\n何かに使えそうだ",
-    "desc_translation": "奇妙な形のジャンクパーツ\n何かに使えそうだ"
+    "desc_translation": "기묘한 정크 파츠\n어딘가에 쓸 수 있을 것 같다"
   },
   {
     "idx": 56,
     "name_original": "ロボパーツ右腕",
-    "name_translation": "ロボパーツ右腕",
+    "name_translation": "로봇의 오른팔",
     "desc_original": "奇妙な形のジャンクパーツ\nギミックが詰まっているようだ",
-    "desc_translation": "奇妙な形のジャンクパーツ\nギミックが詰まっているようだ"
+    "desc_translation": "기묘한 정크 파츠\n기믹이 엄청 많은 것 같다"
   },
   {
     "idx": 57,
     "name_original": "ロボパーツ左腕",
-    "name_translation": "ロボパーツ左腕",
+    "name_translation": "로봇의 왼팔",
     "desc_original": "奇妙な形のジャンクパーツ\nギミックが詰まっているようだ",
-    "desc_translation": "奇妙な形のジャンクパーツ\nギミックが詰まっているようだ"
+    "desc_translation": "기묘한 정크 파츠\n기믹이 엄청 많은 것 같다"
   },
   {
     "idx": 58,
     "name_original": "ロボパーツ胴",
-    "name_translation": "ロボパーツ胴",
+    "name_translation": "로봇의 몸통",
     "desc_original": "奇妙な形のジャンクパーツ\nどこかドラゴンの形に似ている",
-    "desc_translation": "奇妙な形のジャンクパーツ\nどこかドラゴンの形に似ている"
+    "desc_translation": "기묘한 정크 파츠\n어딘가 드래곤의 모습과 닮았다"
   },
   {
     "idx": 59,
     "name_original": "ロボパーツ右足",
-    "name_translation": "ロボパーツ右足",
+    "name_translation": "로봇의 오른다리",
     "desc_original": "奇妙な形のジャンクパーツ\n何かと対になっているようだ",
-    "desc_translation": "奇妙な形のジャンクパーツ\n何かと対になっているようだ"
+    "desc_translation": "기묘한 정크 파츠\n무언가와 짝을 이루는 것 같다"
   },
   {
     "idx": 60,
     "name_original": "ロボパーツ左足",
-    "name_translation": "ロボパーツ左足",
+    "name_translation": "로봇의 왼다리",
     "desc_original": "奇妙な形のジャンクパーツ\n何かと対になっているようだ",
-    "desc_translation": "奇妙な形のジャンクパーツ\n何かと対になっているようだ"
+    "desc_translation": "기묘한 정크 파츠\n무언가와 짝을 이루는 것 같다"
   },
   {
     "idx": 61,
     "name_original": "ＳキャロットＪ",
-    "name_translation": "ＳキャロットＪ",
+    "name_translation": "Ｓ 캐럿 Ｊ",
     "desc_original": "スーパーキャロットジュース\nうーくんの大好きな飲み物",
-    "desc_translation": "スーパーキャロットジュース\nうーくんの大好きな飲み物"
+    "desc_translation": "슈퍼 당근 주스\n토군이 아주 좋아하는 음료"
   },
   {
     "idx": 62,
     "name_original": "武器庫の鍵",
-    "name_translation": "武器庫の鍵",
+    "name_translation": "무기고 열쇠",
     "desc_original": "デュランダルの武器庫の鍵",
-    "desc_translation": "デュランダルの武器庫の鍵"
+    "desc_translation": "뒤랑달 무기고의 열쇠"
   },
   {
     "idx": 63,
     "name_original": "解除キー",
-    "name_translation": "解除キー",
+    "name_translation": "해제 키",
     "desc_original": "スライドデッキの解除コードが\n登録されたカードキー",
-    "desc_translation": "スライドデッキの解除コードが\n登録されたカードキー"
+    "desc_translation": "슬라이드 덱의 해제 코드가\n등록된 카드키"
   },
   {
     "idx": 64,
     "name_original": "ドリルキー",
-    "name_translation": "ドリルキー",
+    "name_translation": "드릴 키",
     "desc_original": "レアな景品をゲットするためのキー",
-    "desc_translation": "レアな景品をゲットするためのキー"
+    "desc_translation": "레어한 경품을 얻기 위한 키"
   },
   {
     "idx": 65,
     "name_original": "ドリルキー",
-    "name_translation": "ドリルキー",
+    "name_translation": "드릴 키",
     "desc_original": "レアな景品をゲットするためのキー",
-    "desc_translation": "レアな景品をゲットするためのキー"
+    "desc_translation": "레어한 경품을 얻기 위한 키"
   },
   {
     "idx": 66,
     "name_original": "ドリルキー",
-    "name_translation": "ドリルキー",
+    "name_translation": "드릴 키",
     "desc_original": "レアな景品をゲットするためのキー",
-    "desc_translation": "レアな景品をゲットするためのキー"
+    "desc_translation": "레어한 경품을 얻기 위한 키"
   },
   {
     "idx": 67,
     "name_original": "ドリルキー",
-    "name_translation": "ドリルキー",
+    "name_translation": "드릴 키",
     "desc_original": "レアな景品をゲットするためのキー",
-    "desc_translation": "レアな景品をゲットするためのキー"
+    "desc_translation": "레어한 경품을 얻기 위한 키"
   },
   {
     "idx": 68,
     "name_original": "ドリルキー",
-    "name_translation": "ドリルキー",
+    "name_translation": "드릴 키",
     "desc_original": "レアな景品をゲットするためのキー",
-    "desc_translation": "レアな景品をゲットするためのキー"
+    "desc_translation": "레어한 경품을 얻기 위한 키"
   },
   {
     "idx": 69,
     "name_original": "装備品",
-    "name_translation": "装備品",
+    "name_translation": "장비품",
     "desc_original": "装備品ダミーデータ",
-    "desc_translation": "装備品ダミーデータ"
+    "desc_translation": "장비품 더미 데이터"
   },
   {
     "idx": 70,
     "name_original": "魚影探知器",
-    "name_translation": "魚影探知器",
+    "name_translation": "어군 탐지기",
     "desc_original": "これさえあれば、素手で魚をつかまえることも…",
-    "desc_translation": "これさえあれば、素手で魚をつかまえることも…"
+    "desc_translation": "이것만 있으면 맨손으로\n물고기를 잡을 수 있을지도…"
   },
   {
     "idx": 71,
     "name_original": "婚約指輪",
-    "name_translation": "婚約指輪",
+    "name_translation": "약혼반지",
     "desc_original": "なくすと大変、怒られちゃうかも…",
-    "desc_translation": "なくすと大変、怒られちゃうかも…"
+    "desc_translation": "잃어버리면 큰일이 난다\n혼날지도 몰라…"
   },
   {
     "idx": 72,

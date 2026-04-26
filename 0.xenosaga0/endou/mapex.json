@@ -291,21 +291,21 @@
     "offset": 1873,
     "end": 1885,
     "original": "ロボパーツ頭",
-    "translation": "로봇 파츠 머리"
+    "translation": "로봇의 머리"
   },
   {
     "idx": 42,
     "offset": 1901,
     "end": 1915,
     "original": "ロボパーツ胴体",
-    "translation": "로봇 파츠 몸통"
+    "translation": "로봇의 몸통"
   },
   {
     "idx": 43,
     "offset": 1929,
     "end": 1943,
     "original": "ロボパーツ右足",
-    "translation": "로봇 파츠 오른다리"
+    "translation": "로봇의 오른다리"
   },
   {
     "idx": 44,
@@ -333,21 +333,21 @@
     "offset": 2041,
     "end": 2055,
     "original": "ロボパーツ右腕",
-    "translation": "로봇 파츠 오른팔"
+    "translation": "로봇의 오른팔"
   },
   {
     "idx": 48,
     "offset": 2069,
     "end": 2083,
     "original": "ロボパーツ左足",
-    "translation": "로봇 파츠 왼다리"
+    "translation": "로봇의 왼다리"
   },
   {
     "idx": 49,
     "offset": 2097,
     "end": 2111,
     "original": "ロボパーツ左腕",
-    "translation": "로봇 파츠 왼팔"
+    "translation": "로봇의 왼팔"
   },
   {
     "idx": 50,

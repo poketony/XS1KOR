@@ -1,0 +1,44 @@
+[
+  {
+    "idx": 0,
+    "name_original": "メールプラグイン",
+    "name_translation": "메일 플러그인",
+    "desc_original": "メール機能を実現する為のクライアント。\n（株）ヴェクター・コム社製。",
+    "desc_translation": "메일 기능을 구현하기 위한 클라이언트．\n（주）벡터 컴 개발．"
+  },
+  {
+    "idx": 1,
+    "name_original": "データベースプラグイン",
+    "name_translation": "데이터베이스 플러그인",
+    "desc_original": "データベースサービスを利用する為の\nクライアント。（株）ＯＢＳ社製。",
+    "desc_translation": "데이터베이스 서비스를 이용하기 위한\n클라이언트．（주）ＯＢＳ 개발．"
+  },
+  {
+    "idx": 2,
+    "name_original": "スプリンクル",
+    "name_translation": "스프링클",
+    "desc_original": "分散コンピューティングを行う為のクライアント。\n（株）マクネリシステムズ社製。",
+    "desc_translation": "분산 컴퓨팅을 실행하기 위한 클라이언트．\n（주）맥닐리 시스템스 개발．"
+  },
+  {
+    "idx": 3,
+    "name_original": "ＥＶＳ（環境シミュレーター）",
+    "name_translation": "ＥＶＳ（환경 시뮬레이터）",
+    "desc_original": "ＥＶＳ（環境シミュレーター）クライアント。\n（株）ヴェクター・インダストリー製。",
+    "desc_translation": "ＥＶＳ（환경 시뮬레이터） 클라이언트．\n（주）벡터 인더스트리 개발．"
+  },
+  {
+    "idx": 4,
+    "name_original": "暗号解除キープラグイン",
+    "name_translation": "암호 해제 키 플러그인",
+    "desc_original": "暗号文書解読の為のプラグイン。\n（株）ヴェクター・コム製。",
+    "desc_translation": "암호 문서 해독을 위한 플러그인．\n（주）벡터 컴 개발．"
+  },
+  {
+    "idx": 5,
+    "name_original": "暗号解除キー補完プラグイン",
+    "name_translation": "암호 해제 키 보완 플러그인",
+    "desc_original": "暗号解除キープラグインを補完するモジュール。\n（株）ヴェクター・ＮＳＳ製。",
+    "desc_translation": "암호 해제 키 플러그인을 보완하는 모듈．\n（주）벡터 ＮＳＳ 개발．"
+  }
+]
