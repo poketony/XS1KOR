@@ -1,0 +1,364 @@
+# chunk 12 @ 0x435c cnum=2848 total=364
+# bc_map: 152,166,78,80,66,79,43,42,45,123,46,82,5,7,60,9,62,47,61,247,325,326,343,342,250,249,246,245,315,317,316,50,49,57,51,53,59,55,56,319,251,258,275,292,309,310,311,312,313,314,252,253,254,255,256,257,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,248,244,318,322,344,345,346,347,348,349,350,351,352,353,170,171,172,173,174,175,176,177,178,179,243,354,355,356,357,358,359,360,361,362,363,180,181,182,183,184,185,186,187,188,189,48,6,8,63,85,111,112,75,76,39,40,34,35,117,1,64,32,33,31,30,207,114,65,113,89,10,4,190,27,195,155,26,11,84,0,17,12,77,41,14,13,91,90,108,106,109,107,118,71,86,87,73,72,2,116,115,88,156,157,158,159,74,22,23,25,24,148,153,199,192,149,154,200,191,81,97,95,96,98,110,68,67,119,102,105,100,103,104,101,99,16,94,93,92,38,37,36,238,15,120,19,18,20,121,21,3,198,196,197,122,126,127,70,124,125,193,194,202,201,203,162,44,83,69,204,165,164,206,161,167,168,128,235,328,160,138,228,334,233,141,237,338,142,225,242,143,208,218,144,205,150,163,320,169,341,212,145,151,226,221,339,146,236,147,209,219,332,129,220,333,130,329,327,217,241,131,331,330,223,132,323,340,133,224,337,227,134,230,210,336,216,135,231,215,239,229,240,136,213,234,324,222,211,137,335,232,139,214,321,140,28,29
+# bc_unmap: 52,54,58
+eventmovie/
+lightSPL_main
+HISTORY CLEAR
+HISTORYDELETE PTR=/[$0]
+ERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRROR!!
+HISTORY-SET /[$0]
+CameraHistory Overflow!!
+Camera instant test
+Cameratest_history
+WAIT=/[$0]
+Cancel!!
+History is Empty.
+*********CameraTool Standby*****************
+*********Capture Start!!!*****************
+CaptureMode = /[$0]
+*********CaptureTool Standby*****************
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+キャプチャモード
+全画面
+全画面（アルファ）
+ＢＧのみ（ＺＰＩＣなし）
+ＢＧのみ（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+オブジェ単体（ＺＰＩＣあり）
+テキスト（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣあり）
+CaptureMODE ---All Screen.
+CaptureMODE ---All Screen(alpha).
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---Chr(pic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---TXT(pic)
+CaptureMODE ---Particle(pic)
+CaptureMODE ---Particle(pic+zpic)
+ページ切り替え
+キャラ０
+キャラ１
+キャラ２
+キャラ３
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラのみキャプチャ
+オブジェのみキャプチャ
+フォルダ選択
+企画サイドのフォルダを使用する
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（たけなか）
+ｍｏｖｉｅ０４（なかむら）
+ｍｏｖｉｅ０５（いけうち）
+ｍｏｖｉｅ０６（いけうち）
+ｍｏｖｉｅ０７（ふち）
+ｍｏｖｉｅ０８（ふち）
+ｍｏｖｉｅ０９（保存）
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+エフェクトサイドのフォルダを使用する
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（おの７６５）
+ｍｏｖｉｅ１７（うなかみ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+*********Capture End.*****************
+*********Capture Waiting...*****************
+ColorScreen  SetMode
+Layer = /[$0]
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode-------end
+*************ColorScreen Printout*************
+ColorScreenParam = {
+0,
+1,
+/[$1],
+/[$0],
+};
+Runtime.setDefocus(15, 1, ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], 1, ColorScreenParam);
+Layer not exist.
+*********DEBUGPRINT*********
+*********CameraHistory SPL*********
+pos[] ={
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+*********DEBUGPRINT3*********
+LINKTABLE
+ 
+,
+*********DEBUGPRINT4*********
+HISPTR
+CAMHIS
+*********ManualCamera Replay*********
+*********DEBUGPRINT6*********
+MANUALCAMPTR
+MANUALCAMHIS
+PATH = SPLINE
+PATH = DOWN
+PATH = UP
+PATH = LINEAR
+ShakeRoutine_main
+Focus SetMode
+Layer = Back
+Layer = Before
+Focus delta = /[$0](back)
+Focus SetMode-------end
+*************Focus Printout*************
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+Gnochk...
+--alpha--
+--filter--
+--shake--
+--ref_alpha--
+alpha max!!
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+HISTORYLOOK PTR=/[$0]
+ManualCamera not Recorded.
+ManualCam_record.
+ManualCamera MOVE to start.
+ManualCameraRecord START!!!
+Record /[$0]
+End(TimeOver).
+End(Button).
+Time = /[$0]
+Objchk......(Chr)
+Objchk......End
+Objchk(+Mtn)......
+Objchk......(Effect)
+Objchk......(Unit)
+Objchk......
+Mtn Frame = /[$0]
+*********printout /[$0]***********
+ManualCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+ManualCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+ManualCam.setFov(/[#0]f);
+BaseCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setFov(/[#0]f);
+네，그쪽은 아직……
+*********Timechk Standby*****************
+Timechk_main
+----------シーンは終了しました。
+----------シーンは/[$0]フレームでした。
+----------シーンを開始します。
+Timerchk_srv_main
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])(RealTotal = /[$3])
+***********Objchk printout***********
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+setRotate(/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+VibRoutine_main
+Xenvmainthreadmain
+Xenvplaythread
+Event Out
+XEVEFLAG:EV01015_F
+XEVEJNAME:CFJ1_125 XEVEJPOINT:POINT_125
+ring_L
+ring_R
+sonar_ring_Large
+sonar_ring_L
+sonar_ring_R
+init2
+CameraThread
+INPUT Number!!
+End.(RETURN = /[$0])
+spl
+lightSPL start.
+lightSPL end.
+w_uti
+init
+m_uti
+mobj_133_act
+act
+과연
+기능과 무장은 대략 파악했습니다
+idou
+act2
+그래서，핵심인 실가동 데이터는<lf>어디 있죠？
+오늘 보여 드린 것은<lf>Ａ−７까지입니다
+없으시다……는 거군요/[wait(55)]
+act3
+네……
+조만간 모의체를 써서 실가동 시험을 할 예정인데<lf>시스템이 다소 불안정해서……
+act4
+그건 변명일 뿐이지 않습니까<lf>당신
+우즈키 주임
+act5
+여러분이 대체 뭘 위해서<lf>이 배에 타고 있는 건지
+그 이유를<lf>잘 생각해 봤으면 합니다/[wait(70)]
+act6
+star
+army_1
+kaeru
+일련의 장비가 쇄신되었다곤 하나<lf>급하게 편성된 함대입니다
+moni_d
+Ａ．Ｇ．Ｗ．Ｓ．만은 배치되어 있지만 그에 대응하는<lf>백식 관측기의 배치는 늦어지고 있죠
+이런 상황에서 만에 하나<lf>“놈들”에게 습격당하면 어떻게 되겠습니까？
+act7
+army_1_act2
+그걸 굳이 설명할 필요는 없겠죠
+그 때문에 ＫＯＳ−ＭＯＳ가 배치된 겁니다
+제 말이 틀렸습니까？
+act8
+아，아뇨……
+act9
+알겠습니까<lf>어찌 됐든 군함에 탔으니
+여기는 연구실이 아니라
+전장입니다
+act10
+그 전장에서<lf>선봉에 서야 할 ＫＯＳ−ＭＯＳ가
+아직 일어나지도 못한다는 게<lf>대체 무슨 말도 안 되는 일입니까
+act11
+누워만 있는 병기에<lf>존재 의의는 없습니다！
+병기는 가동될 때 비로소<lf>의의를 지니게 되는 것이란 말입니다
+그 사실을……！
+그만하게 중령
+act12
+우리가 급하게 편성된<lf>함대인 것과 마찬가지로
+그들 역시 급하게 개발을<lf>진행해야 하는 처지일세
+게다가 실가동 시험까지는<lf>앞으로 한 걸음 아닌가
+act13
+무엇보다 그런 물건을 움직이지 않고<lf>작전이 끝난다면 그보다 좋은 일은 없네
+내 말이 틀린가？
+act14
+그건 그렇지만 함장님
+저는 말입니다……
+대체 누구야 이런 때에……
+act16
+무슨 일 있나？
+아뇨
+긴급한 용건이……
+시，실례하겠습니다
+act17
+무슨 말을 하려고 했던 건지
+글쎄요……
+뭐，상관없겠지
+그럼 우즈키 주임도<lf>오늘은 이만 돌아가게나
+또 뭔가 진전이 있으면<lf>보고해 주게
+act18
+기대에 부응하지 못해<lf>죄송합니다
+뭘 그렇게까지，사과할 필요 없네
+쓰는 입장에 있어<lf>가장 중요한 것은
+그것이<lf>신뢰할 수 있는 시스템이냐는 것이지
+이런 일들은<lf>서두른다고 어떻게 될 일이 아닐세
+act19
+조바심 내지 않고<lf>착실히 진행해도 괜찮아
+어차피 자금을 대는 건<lf>정부기도 하고 말이야
+act20
+수고했네
+오늘은 이만 가서 쉬게나
+act21
+/[$0]
+/[$0](Cursor = /[$1])
