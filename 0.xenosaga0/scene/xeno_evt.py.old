@@ -11,11 +11,7 @@ xeno_evt.py  -  Xenosaga Episode 1 EVT / class 텍스트 추출·재조립
 규칙:
   - txt는 바이트코드 실행 순서로 출력됨. 이 순서 그대로 번역하면 됨.
   - 줄 수 변경 금지. 번역 안 할 줄은 원문 그대로.
-  - 기본: ', '→'，', '. '→'．', '!'→'！', '?'→'？' 적용 후,
-          표시 행별 반각 공백을 4로 나눈 뒤 올림한 수만큼 행 끝에 전각 공백 '　' 추가
-  - 반각 공백 자체는 치환하지 않음
-  - [raw] 태그: 줄 끝에 붙이면 기본 치환/패딩 없이 태그만 제거
-  - [sub] 태그: 줄 끝에 붙이면 기본 치환/패딩 후 반각→전각 변환
+  - [sub] 태그: 줄 끝에 붙이면 반각→전각 변환 + 반각 공백→、
   - XENOSAGA_KOR-JPN.json이 같은 폴더에 있으면 재조립 시 자동 적용.
 """
 
@@ -48,10 +44,8 @@ def to_fullwidth(s):
         else:
             converted = []
             for c in part:
-                # 반각 공백은 일본어 쉼표로 바꾸지 않는다.
-                # 공백 보정은 apply_text_rules()에서 리플레이스 이후 별도로 처리한다.
                 if c == ' ':
-                    converted.append(' ')
+                    converted.append('\u3001')
                 elif '!' <= c <= '~':
                     fw = chr(ord(c) + 0xFEE0)
                     converted.append(EUCJP_FIX.get(fw, fw))
@@ -60,103 +54,10 @@ def to_fullwidth(s):
             result.append(''.join(converted))
     return ''.join(result)
 
-def add_space_padding_per_visual_line(s):
-    """
-    <lf> 기준 표시 행별로 반각 공백 개수를 센 뒤,
-    반각 공백 개수를 4로 나눈 뒤 올림한 수만큼 전각 공백 '　'을 해당 표시 행 끝에 추가한다.
-
-    치환 순서:
-      1) 문장부호 리플레이스
-      2) 그 결과 기준으로 반각 공백 개수 계산
-      3) 표시 행 끝, 즉 <lf>가 있으면 <lf> 바로 전에 전각 공백 패딩 추가
-    """
-    parts = re.split(r'(<lf>)', s)
-    out = []
-
-    for part in parts:
-        if part == '<lf>':
-            out.append(part)
-            continue
-
-        pad_count = (part.count(' ') + 3) // 4
-        if pad_count:
-            part += '　' * pad_count
-        out.append(part)
-
-    return ''.join(out)
-
-def visible_text_length(s):
-    """
-    게임 화면에 실제로 보이는 글자 수를 대략 계산한다.
-
-    제외 대상:
-      - /[font(...)] 같은 제어 태그
-      - /[label(...)] 같은 제어 태그
-      - 그 외 /[...] 형태 제어 태그
-    """
-    visible = re.sub(r'/\[[^\]]*\]', '', s)
-    return len(visible), visible
-
-def warn_long_visual_lines(s, limit=23, context=''):
-    """
-    <lf> 기준 표시 행별 글자 수가 limit를 초과하면 경고를 출력한다.
-
-    주의:
-      - 이 검사는 process_sub_tag() 이후 결과를 기준으로 한다.
-      - 따라서 문장부호 치환, 공백 패딩, [sub] 전각화가 반영된 상태로 검사한다.
-      - [raw]는 태그만 제거된 원문 기준으로 검사한다.
-    """
-    for line_no, part in enumerate(s.split('<lf>'), start=1):
-        length, visible = visible_text_length(part)
-        if length > limit:
-            label = f" {context}" if context else ""
-            print(f"  [경고]{label} 표시행 {line_no}: {length}글자 > {limit}글자")
-            print(f"         {visible}")
-
-
-def apply_text_rules(s):
-    """
-    기본 텍스트 치환 규칙.
-
-    규칙:
-      - [raw] 태그가 붙은 줄은 아무 치환도 하지 않고 [raw]만 제거
-      - 리플레이스를 먼저 적용:
-          ', ' => '，'
-          '. ' => '．'
-          '!'  => '！'
-          '?'  => '？'
-      - 그 다음, 표시 행별 반각 공백을 4로 나눈 뒤 올림한 수만큼 행 끝에 전각 공백 '　' 추가
-      - 반각 공백 자체는 다른 문자로 치환하지 않음
-    """
-    if s.endswith('[raw]'):
-        return s[:-5]
-
-    # 1) 리플레이스 먼저 적용
-    s = s.replace(', ', '，')
-    s = s.replace('. ', '．')
-    s = s.replace('!', '！')
-    s = s.replace('?', '？')
-
-    # 2) 리플레이스 결과 기준으로 반각 공백 보정 패딩 적용
-    s = add_space_padding_per_visual_line(s)
-
-    return s
-
 def process_sub_tag(s):
-    """
-    재조립 직전 문자열 후처리.
-
-    우선순위:
-      [raw] : 아무 치환도 하지 않음. 태그만 제거.
-      [sub] : 기본 치환/패딩 적용 후 반각 문자를 전각으로 변환.
-      기본  : 기본 치환/패딩만 적용.
-    """
-    if s.endswith('[raw]'):
-        return s[:-5]
     if s.endswith('[sub]'):
-        return to_fullwidth(apply_text_rules(s[:-5]))
-    return apply_text_rules(s)
-
+        return to_fullwidth(s[:-5])
+    return s
 
 # ── CAFEBABE 파싱 ────────────────────────────────────────────────────────────
 def parse(chunk):
@@ -262,9 +163,7 @@ def rebuild(p, new_strs_bc, tbl):
         if new_str == EMPTY_MARKER:
             pool_new[str_pool_idx] = orig_raw
         else:
-            processed = process_sub_tag(new_str)
-            warn_long_visual_lines(processed, 23, f"bc {n}")
-            s = apply_table(processed.replace('<lf>','\n'), tbl)
+            s = apply_table(process_sub_tag(new_str).replace('<lf>','\n'), tbl)
             try:    enc = s.encode('euc-jp')
             except: enc = s.encode('euc-jp', errors='replace')
             pool_new[str_pool_idx] = enc + (b'\x00' if has_null else b'')
@@ -429,9 +328,7 @@ def apply_patches(data, chunks, tbl):
                 for k, (str_pool_idx, new_str) in enumerate(zip(p['tag8_order'], strs)):
                     orig_raw = p['pool'].get(str_pool_idx, b'')
                     has_null = orig_raw.endswith(b'\x00')
-                    processed = process_sub_tag(new_str)
-                    warn_long_visual_lines(processed, 23, f"tag8 {k}")
-                    s = apply_table(processed.replace('<lf>','\n'), tbl)
+                    s = apply_table(process_sub_tag(new_str).replace('<lf>','\n'), tbl)
                     try:    enc = s.encode('euc-jp')
                     except: enc = s.encode('euc-jp', errors='replace')
                     pool_new[str_pool_idx] = enc + (b'\x00' if has_null else b'')
