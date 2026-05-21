@@ -48,7 +48,7 @@ def apply_replace_table(text: str, table: dict) -> str:
 
 def encode_euc_jp(text: str, context: str = "") -> bytes:
     try:
-        return text.encode("euc-jp")
+        return text.encode("euc_jis_2004")
     except (UnicodeEncodeError, UnicodeDecodeError) as e:
         sys.exit(f"[오류] EUC-JP 인코딩 실패 ({context}): {e!r}\n  텍스트: {text!r}")
 
@@ -60,7 +60,7 @@ def read_field(rec: bytes, off: int, size: int) -> str:
     if not chunk:
         return ""
     try:
-        return chunk.decode("euc-jp")
+        return chunk.decode("euc_jis_2004")
     except Exception:
         return f"[ERR:{chunk.hex()}]"
 

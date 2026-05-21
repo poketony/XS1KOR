@@ -41,7 +41,7 @@ MAGIC       = b'UML\x00'
 FIXED_4     = b'@@@@'
 TEXT_START  = 0x60
 HEADER_SIZE = 0x60
-ENCODE_SRC  = 'euc-jp'
+ENCODE_SRC  = 'euc_jis_2004'
 
 # 텍스트에서 컨트롤 코드를 보존하기 위한 플레이스홀더 태그
 # <TAG:XXYYZZ>  – XX YY ZZ는 0x0C 이후 3바이트의 hex

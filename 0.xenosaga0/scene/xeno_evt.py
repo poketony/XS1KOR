@@ -223,7 +223,7 @@ def decode(raw):
     if raw == b'': return EMPTY_MARKER
     raw = raw.rstrip(b'\x00')
     if raw == b'': return EMPTY_MARKER
-    for enc in ('euc-jp','shift-jis','latin-1'):
+    for enc in ('euc_jis_2004','shift-jis','latin-1'):
         try: return raw.decode(enc)
         except: pass
     return raw.decode('latin-1', errors='replace')
@@ -265,8 +265,8 @@ def rebuild(p, new_strs_bc, tbl):
             processed = process_sub_tag(new_str)
             warn_long_visual_lines(processed, 23, f"bc {n}")
             s = apply_table(processed.replace('<lf>','\n'), tbl)
-            try:    enc = s.encode('euc-jp')
-            except: enc = s.encode('euc-jp', errors='replace')
+            try:    enc = s.encode('euc_jis_2004')
+            except: enc = s.encode('euc_jis_2004', errors='replace')
             pool_new[str_pool_idx] = enc + (b'\x00' if has_null else b'')
 
     out = bytearray(struct.pack('>IHHH', magic,vj,vn,cnum))
@@ -432,8 +432,8 @@ def apply_patches(data, chunks, tbl):
                     processed = process_sub_tag(new_str)
                     warn_long_visual_lines(processed, 23, f"tag8 {k}")
                     s = apply_table(processed.replace('<lf>','\n'), tbl)
-                    try:    enc = s.encode('euc-jp')
-                    except: enc = s.encode('euc-jp', errors='replace')
+                    try:    enc = s.encode('euc_jis_2004')
+                    except: enc = s.encode('euc_jis_2004', errors='replace')
                     pool_new[str_pool_idx] = enc + (b'\x00' if has_null else b'')
                 out = bytearray(struct.pack('>IHHH', *p['header']))
                 for tag, val in p['entries']:

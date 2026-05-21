@@ -44,7 +44,7 @@ def apply_replace_table(text: str, table: dict) -> str:
 def encode_euc_jp(text: str, context: str = "") -> bytes:
     """EUC-JP 인코딩. 실패 시 오류 메시지와 함께 종료."""
     try:
-        return text.encode("euc-jp")
+        return text.encode("euc_jis_2004")
     except (UnicodeEncodeError, UnicodeDecodeError) as e:
         sys.exit(f"[오류] EUC-JP 인코딩 실패 ({context}): {e!r}\n  텍스트: {text!r}")
 
@@ -75,7 +75,7 @@ def mapex_scan(data: bytes) -> list[dict]:
     entries = []
     for k, (off, end, chunk) in enumerate(raw):
         try:
-            text = chunk.decode("euc-jp")
+            text = chunk.decode("euc_jis_2004")
         except Exception:
             continue  # 바이너리 데이터 무시
         next_off = raw[k + 1][0] if k + 1 < len(raw) else len(data)
@@ -170,7 +170,7 @@ def savemap_read_field(data: bytes, base: int, off: int, size: int) -> str:
     if not chunk:
         return ""
     try:
-        return chunk.decode("euc-jp")
+        return chunk.decode("euc_jis_2004")
     except Exception:
         return f"[ERR:{chunk.hex()}]"
 

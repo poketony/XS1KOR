@@ -8,7 +8,7 @@ python headerlst_tool.py rebuild header.lst header.tsv
 
 import sys, os, json, struct
 
-ENCODE_SRC = 'euc-jp'
+ENCODE_SRC = 'euc_jis_2004'
 REC_HDR_SZ = 8 + 0x60   # META + UML헤더
 
 MAIL_SUBJ_PREFIX = '件名：'

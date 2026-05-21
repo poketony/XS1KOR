@@ -124,7 +124,7 @@ def decode(raw):
     if raw == b'': return EMPTY_MARKER
     raw = raw.rstrip(b'\x00')
     if raw == b'': return EMPTY_MARKER
-    for enc in ('euc-jp','shift-jis','latin-1'):
+    for enc in ('euc_jis_2004','shift-jis','latin-1'):
         try: return raw.decode(enc)
         except: pass
     return raw.decode('latin-1', errors='replace')
