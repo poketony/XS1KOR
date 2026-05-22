@@ -1,0 +1,6 @@
+# chunk 4 @ 0xe9c cnum=403 total=4
+# bc_map: 1,2,3
+# bc_unmap: 0
+enterd : /[$0]
+entrance: /[$0]
+idle

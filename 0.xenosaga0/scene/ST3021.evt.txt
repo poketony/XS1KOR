@@ -1,0 +1,13 @@
+# chunk 4 @ 0xcbc cnum=485 total=11
+# bc_map: 10,0,7,1,2,3,4,8,6,5,9
+フロアを移動しますか？
+/[waitkey(64)]/[close()]
+EOB****************************************************
+1st1st1st1st1st1st1st1st1st1st1st1st1st1st1st1st1st
+2nd2nd2nd2nd2nd2nd2nd2nd2nd2nd2nd2nd2nd2nd2nd2nd2nd
+3rd3rd3rd3rd3rd3rd3rd3rd3rd3rd3rd3rd3rd3rd3rd3rd3rd
+4th4th4th4th4th4th4th4th4th4th4th4th4th4th4th4th4th
+enterd : /[$0]
+Down
+Cam
+entrance: /[$0]

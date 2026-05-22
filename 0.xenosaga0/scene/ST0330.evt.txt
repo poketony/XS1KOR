@@ -1,0 +1,10 @@
+# chunk 1 @ 0x204 cnum=311 total=8
+# bc_map: 6,0,7,5,2,3,4
+# bc_unmap: 1
+休憩をとりますか？
+/[waitkey(64)]/[close()]
+ＨＰ・ＥＰが回復した！！
+はい<lf>いいえ
+enterd : /[$0]
+entrance: /[$0]
+shoot on

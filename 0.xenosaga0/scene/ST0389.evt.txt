@@ -1,0 +1,18 @@
+# chunk 4 @ 0x714 cnum=761 total=16
+# bc_map: 11,15,0,12,10,9,13,14,3,4,1,7,6,5,2
+# bc_unmap: 8
+エアロックはセーフティーモードで<lf>
+作動しています。
+/[waitkey(64)]/[close()]
+セグメント・アドレスＮｏ．７<lf>
+を発見した。
+と表示されている。
+セグメント・アドレスＮｏ．７の<lf>
+デコードを終了します。
+gunoyose_lgunoyose_lgunoyose_lgunoyose_lgunoyose_l
+gunoyose_rgunoyose_rgunoyose_rgunoyose_rgunoyose_r
+enterd : /[$0]
+【環境シミュレータ】・VOK13へjump！！
+【環境シミュレータ】・VOK12へjump！！
+【環境シミュレータ】・VOK07へjump！！
+entrance: /[$0]

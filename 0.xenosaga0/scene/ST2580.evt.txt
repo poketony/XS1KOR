@@ -1,0 +1,8 @@
+# chunk 4 @ 0x8e8 cnum=295 total=6
+# bc_map: 3,1,5,2,4
+# bc_unmap: 0
+lo:0
+enterd : /[$0]
+地下改札口【MC_KAS18】・６
+entrance: /[$0]
+はい<lf>いいえ

@@ -1,0 +1,11 @@
+# chunk 2 @ 0x554 cnum=298 total=9
+# bc_map: 8,0,1,2,3,5,6,4,7
+ＥＶＳ【環境シミュレーター】を終了します。
+/[waitkey(64)]/[close()]
+EOB !!!!!!!!
+Final_Init !!!!!
+enterd : /[$0]
+evsExitをコールしました
+はい<lf>いいえ
+entrance: /[$0]
+初期化終了

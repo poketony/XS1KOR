@@ -1,0 +1,9 @@
+# chunk 6 @ 0xe94 cnum=452 total=7
+# bc_map: 5,0,2,3,4,6
+# bc_unmap: 1
+→司令室
+/[waitkey(64)]/[close()]
+d
+enterd : /[$0]
+entrance: /[$0]
+はい<lf>いいえ

@@ -1,0 +1,12 @@
+# chunk 4 @ 0xec0 cnum=419 total=10
+# bc_map: 1,7,9,2,0,6,8,4,5,3
+/[label(モモ)]
+ここ……<lf>
+モモが生まれた部屋です。
+/[waitkey(64)]/[close()]
+/[label(シオン)]
+え？<lf>
+この部屋でモモちゃんが……？
+enterd : /[$0]
+entrance: /[$0]
+Momo

@@ -1,0 +1,11 @@
+# chunk 4 @ 0xbac cnum=583 total=9
+# bc_map: 8,0,7,1,2,3,4,5,6
+フロアーを移動しますか？
+/[waitkey(64)]/[close()]
+はい<lf>いいえ
+Move
+Move2
+Move3
+Move4
+enterd : /[$0]
+entrance: /[$0]

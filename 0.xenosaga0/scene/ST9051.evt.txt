@@ -1,0 +1,6 @@
+# chunk 3 @ 0x764 cnum=328 total=4
+# bc_map: 0,1,2,3
+enterd : /[$0]
+entrance: /[$0]
+idle
+はい<lf>いいえ

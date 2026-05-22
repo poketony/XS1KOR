@@ -1,0 +1,7 @@
+# chunk 4 @ 0x8e8 cnum=382 total=5
+# bc_map: 0,1,2,3,4
+enterd : /[$0]
+entrance: /[$0]
+super_getFlags: /[#1]
+super_setFlags: /[#1]
+はい<lf>いいえ

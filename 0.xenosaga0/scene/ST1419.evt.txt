@@ -1,0 +1,9 @@
+# chunk 4 @ 0xcf0 cnum=460 total=7
+# bc_map: 6,0,1,3,5,2,4
+ＥＶＳ【環境シミュレーター】を終了します。
+/[waitkey(64)]/[close()]
+enterd : /[$0]
+evsExitをコールしました
+はい<lf>いいえ
+entrance: /[$0]
+idle

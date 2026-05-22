@@ -1,0 +1,9 @@
+# chunk 4 @ 0x8e8 cnum=406 total=7
+# bc_map: 5,4,0,3,1,2,6
+「地下鉄ノースシティライン<lf>
+　ミルチアパーク・ステーション」
+/[waitkey(64)]/[close()]
+lo:0
+enterd : /[$0]
+entrance: /[$0]
+はい<lf>いいえ

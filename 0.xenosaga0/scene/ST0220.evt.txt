@@ -1,0 +1,6 @@
+# chunk 3 @ 0x500 cnum=192 total=4
+# bc_map: 0,1,2
+# bc_unmap: 3
+enterd : /[$0]
+entrance: /[$0]
+shoot on

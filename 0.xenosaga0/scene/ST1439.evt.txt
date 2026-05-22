@@ -1,0 +1,10 @@
+# chunk 4 @ 0x12e4 cnum=612 total=8
+# bc_map: 6,0,7,1,2,3,4,5
+エレベーターを作動させますか？
+/[waitkey(64)]/[close()]
+下に何か挟まっているようだ。
+1
+enterd : /[$0]
+entrance: /[$0]
+idle
+はい<lf>いいえ

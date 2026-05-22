@@ -1,0 +1,9 @@
+# chunk 4 @ 0x804 cnum=625 total=7
+# bc_map: 6,0,2,1,5,3,4
+飛び降りますか？
+/[waitkey(64)]/[close()]
+WINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWIN
+1
+はい<lf>いいえ
+enterd : /[$0]
+entrance: /[$0]

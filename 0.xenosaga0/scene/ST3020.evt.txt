@@ -1,0 +1,21 @@
+# chunk 0 @ 0x64 cnum=192 total=3
+# bc_map: 0,1,2
+GO
+nobiA
+nobiB
+
+# chunk 4 @ 0x17e0 cnum=554 total=13
+# bc_map: 12,0,11,2,3,6,9,10,1,7,5,4,8
+フロアを移動しますか？
+/[waitkey(64)]/[close()]
+はい<lf>いいえ
+Down
+Down2
+Up
+nobiA
+nobiB
+Agari
+enterd : /[$0]
+Sdown
+Evt
+entrance: /[$0]

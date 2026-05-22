@@ -1,0 +1,6 @@
+# chunk 4 @ 0x8e8 cnum=480 total=4
+# bc_map: 3,0,1,2
+イベント3050C1
+enterd : /[$0]
+entrance: /[$0]
+はい<lf>いいえ

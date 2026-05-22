@@ -1,0 +1,11 @@
+# chunk 4 @ 0x8e8 cnum=409 total=9
+# bc_map: 8,0,2,5,7,4,6,3,1
+ＥＶＳ【環境シミュレーター】を終了します。
+/[waitkey(64)]/[close()]
+enterd : /[$0]
+lo:0
+イベント3047A
+evsExitをコールしました
+はい<lf>いいえ
+entrance: /[$0]
+TalkNPC1

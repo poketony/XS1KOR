@@ -1,0 +1,25 @@
+# chunk 2 @ 0x4a8 cnum=606 total=23
+# bc_map: 17,4,18,21,19,2,16,0,3,1,7,5,6,8,13,14,9,10,11,12,22,15,20
+カードキーの差込口がある。<lf>
+/[waitkey(64)]/[close()]
+カードキーを使わないと<lf>
+扉は開かないようだ。<lf>
+側にあるカードリーダーに<lf>
+/[color(0x329bbe)]Ｕ−ＴＩＣカード/[color(0xffffff)]を通さないと…。
+カードキーの差込口がある<lf>
+/[color(0x329bbe)]Ｕ−ＴＩＣカード/[color(0xffffff)]が使えそうだ。
+/[waitkey(1)]/[clear()]
+/[color(0x329bbe)]Ｕ−ＴＩＣカード/[color(0xffffff)]を使いますか？<lf>
+EOB_Always !!!!!!!!!!!!!!!!!!!!!
+ENEMY_START!!!
+ENEMY_STOP!!!
+FINAL INIT !!!!!!!!!!!!!!!!!!!!!!!!!
+enterd : /[$0]
+entrance: /[$0]
+doorA の初期化
+doorB の初期化
+doorC の初期化
+doorD の初期化
+部屋４のカードリーダー（赤点灯）初期化
+カニメカ 初期化
+初期化終了

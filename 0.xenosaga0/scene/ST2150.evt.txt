@@ -1,0 +1,6 @@
+# chunk 1 @ 0x204 cnum=196 total=4
+# bc_map: 0,2,1
+# bc_unmap: 3
+enterd : /[$0]
+クリーニング屋・４
+entrance: /[$0]

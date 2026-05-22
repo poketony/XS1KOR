@@ -1,0 +1,19 @@
+# chunk 4 @ 0x14d4 cnum=842 total=17
+# bc_map: 16,0,15,11,14,3,2,4,5,7,6,8,9,1,12,13,10
+フロアを移動しますか？
+/[waitkey(64)]/[close()]
+スイッチを押しますか？
+WINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWIN
+はい<lf>いいえ
+AU
+AD
+BD
+BU
+CU
+CD
+DD
+DU
+152152152152152152152152152152152152152152152152152152152152152
+enterd : /[$0]
+entrance: /[$0]
+Evt

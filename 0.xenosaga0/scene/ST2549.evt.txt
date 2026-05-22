@@ -1,0 +1,12 @@
+# chunk 0 @ 0x64 cnum=154 total=1
+# bc_map: 0
+time: /[#1]
+
+# chunk 4 @ 0x1060 cnum=435 total=6
+# bc_map: 4,0,1,2,3,5
+lo:0
+broken:1
+enterd : /[$0]
+entrance: /[$0]
+idle
+はい<lf>いいえ

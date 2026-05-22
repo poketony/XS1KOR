@@ -1,0 +1,7 @@
+# chunk 4 @ 0x8e8 cnum=388 total=5
+# bc_map: 0,3,1,2,4
+EOB
+lo:0
+enterd : /[$0]
+entrance: /[$0]
+はい<lf>いいえ

@@ -1,0 +1,8 @@
+# chunk 3 @ 0x5d4 cnum=283 total=6
+# bc_map: 5,0,1,4,3,2
+死んでいる……
+/[waitkey(64)]/[close()]
+enterd : /[$0]
+【環境シミュレータ】・VOK14へjump！！
+【環境シミュレータ】・VOK04へjump！！
+entrance: /[$0]

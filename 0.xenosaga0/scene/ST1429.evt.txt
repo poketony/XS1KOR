@@ -1,0 +1,10 @@
+# chunk 4 @ 0xbe4 cnum=529 total=8
+# bc_map: 7,0,6,4,1,2,3,5
+自動車のような形をしている。
+/[waitkey(64)]/[close()]
+イベント2050:アリアドネショッピングモールじゃないの？
+lo:0
+enterd : /[$0]
+entrance: /[$0]
+idle
+はい<lf>いいえ

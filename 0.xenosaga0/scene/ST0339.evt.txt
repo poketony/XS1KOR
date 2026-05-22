@@ -1,0 +1,8 @@
+# chunk 1 @ 0x204 cnum=233 total=6
+# bc_map: 4,0,5,1,3,2
+休憩をとりますか？
+/[waitkey(64)]/[close()]
+ＨＰ・ＥＰが回復した！！
+enterd : /[$0]
+【環境シミュレータ】・VOK04へjump！！
+entrance: /[$0]

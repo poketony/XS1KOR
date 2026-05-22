@@ -1,0 +1,4 @@
+# chunk 1 @ 0x204 cnum=140 total=2
+# bc_map: 0,1
+enterd : /[$0]
+entrance: /[$0]

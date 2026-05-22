@@ -1,0 +1,8 @@
+# chunk 2 @ 0x368 cnum=220 total=6
+# bc_map: 4,2,0,3,1,5
+enterd : /[$0]
+57_OFF
+55_OFF
+58_OFF
+56_OFF
+entrance: /[$0]

@@ -1,0 +1,13 @@
+@echo off
+@chcp 65001
+echo .evt 파일 추출을 시작합니다...
+
+:: 현재 폴더의 모든 .evt 파일에 대해 루프 실행
+for %%f in (*.evt) do (
+    echo 처리 중: %%f
+    python xeno_evt.py "%%f"
+)
+
+echo.
+echo 모든 작업이 완료되었습니다!
+pause
