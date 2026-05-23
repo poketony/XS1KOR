@@ -1,8 +1,8 @@
 # chunk 3 @ 0x500 cnum=244 total=7
 # bc_map: 0,5,6,1,2,3,4
-/[label(シオン)]
-これって<lf>
-一体何なのかしら……。
+/[label(시온)]
+이걸로<lf>
+한숨 돌릴 수 있으려나……．
 /[waitkey(64)]/[close()]
 enterd : /[$0]
 entrance: /[$0]

@@ -1,0 +1,6 @@
+#SUBJECT:신형 스매시 코트 판매 중
+#FROM:ｎａｍｃｏ
+<CTL:0D00>
+
+
+<NUL><NUL><NUL><NUL><NUL><NUL><NUL>

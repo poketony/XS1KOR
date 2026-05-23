@@ -95,8 +95,8 @@ mtn_037
 mtn_028
 mtn_029
 mtn_030
-힘내세요
 힘내십쇼
+힘내세요
 door_open
 door_close
 mtn_031

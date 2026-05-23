@@ -3,3 +3,5 @@
 *.m2v
 *.mpg
 /codex-lab
+/0.xenosaga0/scene/__pycache__
+/0.xenosaga0/umn/__pycache__

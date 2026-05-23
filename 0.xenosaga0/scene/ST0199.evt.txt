@@ -1,5 +1,5 @@
 # chunk 3 @ 0x500 cnum=181 total=3
 # bc_map: 0,2,1
 enterd : /[$0]
-【環境シミュレータ】・VOK12へjump！！
+【환경 시뮬레이터】・VOK12로 jump！！
 entrance: /[$0]

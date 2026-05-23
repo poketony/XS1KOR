@@ -24,7 +24,7 @@ uml_tool.py  –  Xenosaga UMN 메일 파일(.uml) 추출/재삽입 도구
 추출 형식 (.txt):
   첫 줄: #SUBJECT:<제목>
   두번째 줄: #FROM:<발신자>
-  이후: 본문 (컨트롤 태그는 <TAG:XXYYZZ> 형태로 표시)
+  이후: 본문 (컨트롤 태그는 <TAG:XXYYZZ>, 단일 제어 바이트는 <BYTE:XX> 형태로 표시)
   이미지 영역: 별도 .jpg 파일로 저장
 """
 
@@ -46,10 +46,29 @@ ENCODE_SRC  = 'euc_jis_2004'
 # 텍스트에서 컨트롤 코드를 보존하기 위한 플레이스홀더 태그
 # <TAG:XXYYZZ>  – XX YY ZZ는 0x0C 이후 3바이트의 hex
 # <CTL:XXYY>    – XX YY는 0x0D / 0x19 이후 1바이트 + 그 값
+# <BYTE:XX>     – 단일 제어/비표준 바이트. <NUL>, <BS> 같은 별칭도 지원.
 
 TAG_PATTERN = re.compile(r'<TAG:([0-9A-Fa-f]{6})>')
 CTL_PATTERN = re.compile(r'<CTL:([0-9A-Fa-f]{4})>')
+BYTE_PATTERN = re.compile(r'<BYTE:([0-9A-Fa-f]{2})>')
 PBR_PATTERN = re.compile(r'<PBR>')   # @* 페이지 브레이크
+
+BYTE_NAME_TO_VALUE = {
+    'NUL': 0x00,
+    'BS':  0x08,
+    'SI':  0x0F,
+    'DLE': 0x10,
+    'DC2': 0x12,
+    'CAN': 0x18,
+}
+BYTE_VALUE_TO_NAME = {v:k for k,v in BYTE_NAME_TO_VALUE.items()}
+BYTE_NAME_PATTERN = re.compile(
+    r'<(' + '|'.join(re.escape(k) for k in BYTE_NAME_TO_VALUE) + r')>'
+)
+
+def byte_tag(b: int) -> str:
+    name = BYTE_VALUE_TO_NAME.get(b)
+    return f'<{name}>' if name else f'<BYTE:{b:02X}>'
 
 # ────────────────────────────────────────────────────────────
 # 치환표 로드 (한글 → EUC-JP 대응 한자)
@@ -146,11 +165,18 @@ def parse_text_bytes(raw: bytes) -> str:
 
         # 그 외 ASCII / 제어문자
         if b < 0x80:
-            # \n, \r은 그대로 통과
-            out.append(chr(b))
+            # 줄바꿈은 편집 편의상 그대로 통과시키고, 나머지 제어문자는
+            # 텍스트 에디터가 삼키거나 표시를 바꾸지 않도록 명시 태그로 보존한다.
+            if b in (0x0A, 0x0D):
+                out.append(chr(b))
+            elif b < 0x20 or b == 0x7F:
+                out.append(byte_tag(b))
+            else:
+                out.append(chr(b))
         else:
-            # 해석 불가 바이트 → hex 이스케이프
-            out.append(f'<CTL:{b:02X}00>')
+            # 해석 불가 바이트 → 단일 바이트 hex 이스케이프.
+            # 예전처럼 <CTL:XX00>로 쓰면 뒤따르는 0x00까지 중복 삽입될 수 있다.
+            out.append(byte_tag(b))
         i += 1
 
     return ''.join(out)
@@ -207,7 +233,26 @@ def encode_text(text: str, charmap: dict | None) -> bytes:
         m = CTL_PATTERN.match(text, i)
         if m:
             pair = bytes.fromhex(m.group(1))
-            out.extend(pair)
+            # 하위 호환: 구버전 추출기는 해석 불가 단일 바이트 XX를
+            # <CTL:XX00>로 표기했다. 0x0D/0x19가 아닌 CTL은 단일 바이트로 복원한다.
+            if pair[0] in (0x0D, 0x19):
+                out.extend(pair)
+            else:
+                out.append(pair[0])
+            i = m.end()
+            continue
+
+        # <BYTE:XX>
+        m = BYTE_PATTERN.match(text, i)
+        if m:
+            out.append(int(m.group(1), 16))
+            i = m.end()
+            continue
+
+        # <NUL>, <BS> 등 단일 제어 바이트 별칭
+        m = BYTE_NAME_PATTERN.match(text, i)
+        if m:
+            out.append(BYTE_NAME_TO_VALUE[m.group(1)])
             i = m.end()
             continue
 
@@ -232,7 +277,8 @@ def rebuild_header_body(subject: str, sender: str, body: str, charmap: dict | No
     header_text = f'件名：<CTL:0D02>{subject}\n差出人：{sender}\n'
     full_text = header_text + body
     # 텍스트 종료 마커 <CTL:0D00> 이 body 끝에 있어야 함
-    if not full_text.rstrip('\x00').endswith('<CTL:0D00>'):
+    terminator_re = re.compile(r'<CTL:0D00>(?:\s|\x00|<NUL>|<BYTE:00>)*\Z')
+    if not terminator_re.search(full_text):
         full_text = full_text.rstrip('\x00\n') + '<CTL:0D00>\n'
     return encode_text(full_text, charmap)
 
@@ -278,11 +324,32 @@ class UMLFile:
         """
         jpeg_block = new_jpeg if new_jpeg is not None else self.jpeg_and_tail
 
+        # The in-game mail viewer expects the JPEG block to stay on a stable
+        # aligned boundary. If translated text becomes shorter than the original
+        # section, preserve the original JPEG offset with NUL padding. If it
+        # grows, align the new JPEG start to 16 bytes.
+        orig_text_len = self.text_end - TEXT_START
+        if len(new_text_bytes) <= orig_text_len:
+            new_text_bytes += b'\x00' * (orig_text_len - len(new_text_bytes))
+        else:
+            pad = (- (TEXT_START + len(new_text_bytes))) % 16
+            if pad:
+                new_text_bytes += b'\x00' * pad
+
         new_text_end = TEXT_START + len(new_text_bytes)
 
         # 헤더 복사 후 0x20 값 업데이트
         hdr = bytearray(self.header)
         struct.pack_into('<I', hdr, 0x20, new_text_end)
+
+        # 0x28 is an absolute pointer into the image block. 0005.uml uses it
+        # for an embedded image that the mail viewer draws inside the body.
+        # When the text section size changes, the JPEG block moves, so this
+        # pointer must move by the same delta as the primary JPEG offset.
+        image_ptr = struct.unpack_from('<I', hdr, 0x28)[0]
+        delta = new_text_end - self.text_end
+        if self.text_end <= image_ptr < self.text_end + len(self.jpeg_and_tail):
+            struct.pack_into('<I', hdr, 0x28, image_ptr + delta)
 
         return bytes(hdr) + new_text_bytes + jpeg_block
 

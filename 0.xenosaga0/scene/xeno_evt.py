@@ -26,6 +26,108 @@ CONST_LENS = {5:8, 6:8, 7:2, 8:2, 16:2}
 
 def tag_len(tag): return CONST_LENS.get(tag, 4)
 
+# Java bytecode operand lengths. Variable-length switch instructions and wide
+# are handled separately in iter_ldc_refs().
+OP_LEN = {
+    0x10: 2, 0x11: 3, 0x12: 2, 0x13: 3, 0x14: 3,
+    0x15: 2, 0x16: 2, 0x17: 2, 0x18: 2, 0x19: 2,
+    0x36: 2, 0x37: 2, 0x38: 2, 0x39: 2, 0x3a: 2,
+    0x84: 3, 0x99: 3, 0x9a: 3, 0x9b: 3, 0x9c: 3,
+    0x9d: 3, 0x9e: 3, 0x9f: 3, 0xa0: 3, 0xa1: 3,
+    0xa2: 3, 0xa3: 3, 0xa4: 3, 0xa5: 3, 0xa6: 3,
+    0xa7: 3, 0xa8: 3, 0xa9: 2, 0xb2: 3, 0xb3: 3,
+    0xb4: 3, 0xb5: 3, 0xb6: 3, 0xb7: 3, 0xb8: 3,
+    0xb9: 5, 0xba: 5, 0xbb: 3, 0xbc: 2, 0xbd: 3,
+    0xc0: 3, 0xc1: 3, 0xc5: 4, 0xc6: 3, 0xc7: 3,
+    0xc8: 5, 0xc9: 5,
+}
+
+def iter_ldc_refs(code):
+    """Yield 0-based constant-pool indexes referenced by ldc/ldc_w in code."""
+    i = 0
+    n = len(code)
+    while i < n:
+        op = code[i]
+        if op == 0x12 and i + 1 < n:
+            yield code[i+1] - 1
+            i += 2
+        elif op in (0x13, 0x14) and i + 2 < n:
+            yield struct.unpack_from('>H', code, i+1)[0] - 1
+            i += 3
+        elif op == 0xaa:  # tableswitch
+            j = i + 1
+            while (j - i) % 4:
+                j += 1
+            if j + 12 > n:
+                break
+            low = struct.unpack_from('>i', code, j+4)[0]
+            high = struct.unpack_from('>i', code, j+8)[0]
+            count = max(0, high - low + 1)
+            i = j + 12 + count * 4
+        elif op == 0xab:  # lookupswitch
+            j = i + 1
+            while (j - i) % 4:
+                j += 1
+            if j + 8 > n:
+                break
+            npairs = struct.unpack_from('>i', code, j+4)[0]
+            i = j + 8 + max(0, npairs) * 8
+        elif op == 0xc4:  # wide
+            if i + 1 >= n:
+                break
+            i += 6 if code[i+1] == 0x84 else 4
+        else:
+            i += OP_LEN.get(op, 1)
+
+def code_blocks_from_rest(rest, pool):
+    """Extract Code attribute bytecode blocks from the class body."""
+    def u2(pos): return struct.unpack_from('>H', rest, pos)[0]
+    def u4(pos): return struct.unpack_from('>I', rest, pos)[0]
+    def attr_name(idx):
+        return decode(pool.get(idx - 1, b''))
+    def skip_attrs(pos, count):
+        for _ in range(count):
+            if pos + 6 > len(rest): return None
+            alen = u4(pos+2)
+            pos += 6 + alen
+        return pos
+    def skip_members(pos, count):
+        for _ in range(count):
+            if pos + 8 > len(rest): return None
+            ac = u2(pos+6)
+            pos = skip_attrs(pos+8, ac)
+            if pos is None: return None
+        return pos
+
+    pos = 0
+    if len(rest) < 8: return []
+    pos += 6  # access_flags, this_class, super_class
+    ic = u2(pos); pos += 2 + ic * 2
+    if pos + 2 > len(rest): return []
+    fc = u2(pos); pos += 2
+    pos = skip_members(pos, fc)
+    if pos is None or pos + 2 > len(rest): return []
+    mc = u2(pos); pos += 2
+
+    blocks = []
+    for _ in range(mc):
+        if pos + 8 > len(rest): return blocks
+        ac = u2(pos+6)
+        pos += 8
+        for _ in range(ac):
+            if pos + 6 > len(rest): return blocks
+            name_idx = u2(pos)
+            alen = u4(pos+2)
+            info = pos + 6
+            if attr_name(name_idx) == 'Code' and info + 8 <= len(rest):
+                clen = struct.unpack_from('>I', rest, info+4)[0]
+                cstart = info + 8
+                cend = cstart + clen
+                if cend <= len(rest):
+                    blocks.append(rest[cstart:cend])
+            pos = info + alen
+    return blocks
+
 def load_table(path):
     for enc in ('utf-8-sig', 'utf-8'):
         try:
@@ -186,20 +288,33 @@ def parse(chunk):
             pool_all[i] = (tag, None)
     rest = chunk[p:]
 
-    # 바이트코드에서 ldc/ldc_w 참조 순서 추출
+    # 바이트코드에서 ldc/ldc_w 참조 순서 추출.
+    # 예전 구현은 class body 전체를 바이트 단위로 훑어서 bipush 0x12 같은
+    # 피연산자를 ldc로 오인했고, 그 직후의 진짜 ldc를 건너뛰는 경우가 있었다.
+    # Code 속성의 실제 bytecode만 명령 길이에 맞춰 해석한다.
     bytecode_str_order = []  # str_pool_idx 목록 (중복 제거, 첫 참조 순서)
     seen = set()
-    i = 0
-    while i < len(rest):
-        op = rest[i]
-        if op == 0x12:   cidx = rest[i+1]-1; i+=2
-        elif op == 0x13: cidx = struct.unpack_from('>H',rest,i+1)[0]-1; i+=3
-        else: i+=1; continue
-        e = pool_all.get(cidx)
-        if e and e[0] == 8:
-            stridx = e[1]
-            if stridx not in seen and stridx in pool:
-                seen.add(stridx); bytecode_str_order.append(stridx)
+    for code in code_blocks_from_rest(rest, pool):
+        for cidx in iter_ldc_refs(code):
+            e = pool_all.get(cidx)
+            if e and e[0] == 8:
+                stridx = e[1]
+                if stridx not in seen and stridx in pool:
+                    seen.add(stridx); bytecode_str_order.append(stridx)
+
+    # 방어적 fallback: 비표준 class-like 청크에서는 기존 방식으로라도 추출한다.
+    if not bytecode_str_order:
+        i = 0
+        while i < len(rest):
+            op = rest[i]
+            if op == 0x12 and i+1 < len(rest):   cidx = rest[i+1]-1; i+=2
+            elif op == 0x13 and i+2 < len(rest): cidx = struct.unpack_from('>H',rest,i+1)[0]-1; i+=3
+            else: i+=1; continue
+            e = pool_all.get(cidx)
+            if e and e[0] == 8:
+                stridx = e[1]
+                if stridx not in seen and stridx in pool:
+                    seen.add(stridx); bytecode_str_order.append(stridx)
 
     # str_pool_idx -> tag8_k (tag8 선언 순서에서 몇 번째)
     str_to_k = {s:k for k,s in enumerate(tag8_order)}
@@ -240,14 +355,14 @@ def get_strings_tag8_order(p):
             for i in p['tag8_order'] if i in p['pool']]
 
 # ── 재조립 ───────────────────────────────────────────────────────────────────
-def rebuild(p, new_strs_bc, tbl):
+def rebuild(p, new_strs_bc, tbl, bc_to_tag8k=None):
     """
     new_strs_bc: 바이트코드 순서 문자열 목록
     내부적으로 tag8 선언 순서로 재매핑해서 패치.
     """
     magic,vj,vn,cnum = p['header']
     pool = p['pool']
-    bc_to_tag8k = p['bc_to_tag8k']
+    bc_to_tag8k = bc_to_tag8k if bc_to_tag8k is not None else p['bc_to_tag8k']
     tag8_order  = p['tag8_order']
 
     # tag8_k -> 새 bytes  (바이트코드 순서 txt에서 매핑)
@@ -415,10 +530,12 @@ def apply_patches(data, chunks, tbl):
 
             if bc_map is not None:
                 # 바이트코드 순서 모드
-                expected = len(p['bc_to_tag8k'])
+                # txt 헤더의 bc_map을 기준으로 재조립한다. 추출기 개선으로
+                # 새로 발견되는 문자열이 생겨도 기존 txt를 그대로 재조립 가능해야 한다.
+                expected = len(bc_map)
                 if len(strs) != expected:
                     print(f"  [오류] 청크 {ci}: 바이트코드 항목 {expected}개 ≠ txt {len(strs)}줄"); continue
-                rb = rebuild(p, strs, tbl)
+                rb = rebuild(p, strs, tbl, bc_map)
             else:
                 # 레거시: tag8 선언 순서
                 expected = len(p['tag8_order'])
@@ -458,7 +575,7 @@ def apply_patches(data, chunks, tbl):
         p = parse(data)
         if not p: return None
         if bc_map is not None:
-            rb = rebuild(p, strs, tbl)
+            rb = rebuild(p, strs, tbl, bc_map)
         else:
             if len(strs) != len(p['tag8_order']):
                 print(f"[오류] tag8 {len(p['tag8_order'])}개 ≠ txt {len(strs)}줄"); return None
