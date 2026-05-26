@@ -10,7 +10,7 @@ ffmpeg -i 편집본.mpg -vcodec mpeg2video -s 512x448 -r 30000/1001 -b:v 2744k -
 ps2strw → Mux 탭 → Add New:
 편집본.m2v 등록 (Stream: Video 확인)
 원본_vag_0.ads 등록 (Stream: AD-PCM 확인)
-Bit Rate: 추출 시 나온 .txt 파일 참고
+Bit Rate: 추출 시 나온 .txt 파일 참고(아마 929850)
 Start
 5. 
 ps2str.exe i 원본.pss
@@ -22,3 +22,7 @@ ps2str.exe i 새.pss
 상응하는 번호의 수정 pss 섹터에 덮어씌움(수정된 쪽이 더 크다면 아예 파일 크기 똑같게 맞춰 버리기)
 
 6. 나이쓰
+
+7. 참고. 마지막 구간에서 반복되는 등의 오류가 나면 
+마지막 섹터 1개가 아니라 0xff가 대량으로 나오는 구간이 있나 확인할 것.
+그 구간부터 덮어씌워야 정상적으로 다음 시퀀스로 넘어가진다.
