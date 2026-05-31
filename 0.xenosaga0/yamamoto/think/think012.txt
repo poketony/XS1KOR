@@ -1,0 +1,23 @@
+# think_patch extract: think012.bin.ori
+# 총 4개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x1A(condition) flag=0x00 offset=0x007E
+INIT
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0134
+상황을 보고 있다
+
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x017A
+　머스타드 봄  Ｅ／Ｓ
+　　독
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x01B0
+상황을 보고 있다
+
+<<<

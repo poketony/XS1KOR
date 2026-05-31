@@ -1,0 +1,73 @@
+# chunk 9 @ 0x1d64 cnum=868 total=71
+# bc_map: 9,10,2,7,8,46,4,3,5,6,1,27,36,37,38,30,31,32,28,29,33,34,35,41,42,44,43,45,63,20,56,58,40,21,61,59,70,23,24,22,66,67,25,26,68,55,11,48,49,12,51,57,14,15,13,62,50,53,65,54,60,16,17,47,64,39,18,19,52,69,0
+Xenvmainthreadmain
+Xenvplaythread
+Event Out
+XEVEFLAG:EV01021_F
+XEVEJNAME:SCE01022
+stars_inBridge
+FLSmoriyama.fpk
+FLSchaos.fpk
+FLSoff_w.fpk
+FLSoff_w1.fpk
+CameraThread
+initMTN_cap
+initMTN_op_upl
+initMTN_op_upr1
+initMTN_op_upr2
+initMTN_op_l1
+initMTN_op_l2
+initMTN_op_l3
+initMTN_ob_l
+initMTN_ob_r
+initMTN_op_r1
+initMTN_op_r2
+initMTN_op_r3
+ring_L
+ring_R
+sonar_ring_Large
+sonar_ring_L
+sonar_ring_R
+암초 구역을 벗어납니다
+c3_idle_ob_l
+좋았어
+게이트 점프를 준비해 주게
+ready_c5_4
+c4_3
+라저，모든 함이 어프로치에 들어갑니다
+칼럼 유효 범위까지<lf>１９분 ３０초 남았습니다
+Ｕ．Ｍ．Ｎ． 펄스를 수신했습니다
+c6_idle_r1
+c6_idle_r2
+c6_6
+현재 좌표 고정<lf>전이 벡터 수정 １０３
+목표 아센스 칼럼
+c7_7
+c9_8
+함장님，경계 신호가……
+설마 “그놈들”인가！
+c10_9
+아뇨，탐지 시스템에<lf>이상은 없습니다
+이봐，그쪽은 어때？
+c11_bgmtn
+이쪽도 마찬가지입니다
+에러 아닐까요？
+c12_idle_r1
+c12_idle_r2
+c12_13_11
+아니，그게 아니야
+이건……
+어떻게 된 건가
+본함 외부 영역을 대상으로 한<lf>경계 신호는 아닌 모양입니다
+그렇다면 어디서……
+검색해 보겠습니다
+c15_15
+c15_16
+……이상 원인을 특정했습니다
+본함 내부 제３ 구역！？
+moni_on
+c17_17
+c17_18
+이건……
+ＫＯＳ−ＭＯＳ입니다！
+>>>>>>> CUT /[$1]

@@ -14,7 +14,7 @@ txt 포맷: <hex_offset>|<orig_bytes>/<slack_bytes>|<text>
   여유 공간 = trailing null 개수 (null terminator 자체는 제외)
   리빌드 시 (원본+여유) 바이트 이내여야 적용 가능
 
-제어 코드 표기: \\n = 0x0a,  \\r = 0x0d
+제어 코드 표기: \\n = 0x0a,  \\r = 0x0d,  \\xNN = 기타 제어 바이트
 
 사용법:
   추출: python3 slps_strings.py extract slps_290.02
@@ -29,7 +29,7 @@ import sys, os, json
 
 SCAN_START = 0x1665e0
 ENCODING   = 'euc_jis_2004'
-CTRL_OK    = frozenset([0x09, 0x0a, 0x0d, 0x19, 0x01, 0x02, 0x03, 0x08, 0x0c, 0x1f])
+CTRL_OK    = frozenset(range(1, 0x20))
 
 
 # ── 공통 ──────────────────────────────────────────────────────────────────────
@@ -54,10 +54,54 @@ def apply_replace_table(text, table):
 
 
 def to_display(s):
-    return s.replace('\r', '\\r').replace('\n', '\\n')
+    out = []
+    for ch in s:
+        code = ord(ch)
+        if ch == '\r':
+            out.append('\\r')
+        elif ch == '\n':
+            out.append('\\n')
+        elif code < 0x20 or code == 0x7f:
+            out.append(f'\\x{code:02x}')
+        else:
+            out.append(ch)
+    return ''.join(out)
+
 
 def from_display(s):
-    return s.replace('\\r', '\r').replace('\\n', '\n')
+    out = []
+    i = 0
+    hexdigits = '0123456789abcdefABCDEF'
+    while i < len(s):
+        ch = s[i]
+        if ch == '\\' and i + 1 < len(s):
+            esc = s[i + 1]
+            if esc == 'n':
+                out.append('\n')
+                i += 2
+                continue
+            if esc == 'r':
+                out.append('\r')
+                i += 2
+                continue
+            if esc in ('x', 'X') and i + 3 < len(s):
+                hx = s[i + 2:i + 4]
+                if all(c in hexdigits for c in hx):
+                    out.append(chr(int(hx, 16)))
+                    i += 4
+                    continue
+        out.append(ch)
+        i += 1
+    return ''.join(out)
+
+
+def control_bytes(raw):
+    return bytes(b for b in raw if 0 < b < 0x20 and b not in (0x0a, 0x0d))
+
+
+def format_control_bytes(raw):
+    ctrl = control_bytes(raw)
+    return ' '.join(f'{b:02x}' for b in ctrl) if ctrl else '-'
 
 
 def _jp_runs(seg, base_off):
@@ -176,7 +220,7 @@ def extract(bin_path):
         '#   orig  = 원본 문자열 바이트 수 (null terminator 제외)',
         '#   slack = 여유 공간 바이트 수 (trailing null 개수)',
         '#   max   = orig + slack = 번역 후 인코딩 결과가 이 값 이하여야 적용 가능',
-        '# - \\\\n = 0x0a,  \\\\r = 0x0d  (제어 코드 이스케이프)',
+        '# - \\\\n = 0x0a,  \\\\r = 0x0d,  \\\\xNN = 기타 제어 바이트',
         '# - 의미 없는 행은 삭제해도 리빌드에 영향 없음',
         '',
     ]
@@ -228,7 +272,7 @@ def rebuild(bin_path, txt_path):
     if skipped:
         print(f'[INFO] {skipped}개 라인 건너뜀')
 
-    patched = over_orig = over_slack = errors = 0
+    patched = over_orig = over_slack = ctrl_warn = errors = 0
 
     for offset, new_text in sorted(edits.items()):
         if offset not in orig:
@@ -248,6 +292,12 @@ def rebuild(bin_path, txt_path):
             print(f'[ERR] 0x{offset:08x}: 인코딩 실패 ({e})')
             errors += 1
             continue
+
+        if control_bytes(orig_raw) != control_bytes(new_raw):
+            print(f'[WARN] 0x{offset:08x}: control bytes differ '
+                  f'orig={format_control_bytes(orig_raw)} '
+                  f'new={format_control_bytes(new_raw)}')
+            ctrl_warn += 1
 
         new_len = len(new_raw)
         if new_raw == orig_raw:
@@ -278,7 +328,7 @@ def rebuild(bin_path, txt_path):
 
     print()
     print(f'[완료] 패치={patched} (원본길이초과 포함 {over_orig})  '
-          f'여유초과(미적용)={over_slack}  오류={errors}')
+          f'여유초과(미적용)={over_slack}  control_warn={ctrl_warn}  오류={errors}')
     print(f'[OK] 출력: {out_path}')
 
 

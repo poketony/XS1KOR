@@ -1,0 +1,100 @@
+# think_patch extract: think011.bin.ori
+# 총 20개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x030A
+「여기까지다！」
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0382
+　천주검  Ｅ
+
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x03AC
+　무원살  Ｅ
+
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x040C
+　영령 강림：염룡
+　　불꽃 흡수（다음 턴까지）
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x046A
+　영령 강림：뇌조
+　　번개 흡수（다음 턴까지）
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x052E
+　대뇌격 실드 붕괴！
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x05E6
+　그레네이드 라이플  Ｐ
+
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x068C
+대장
+「누가 적 앞에서 자나！！
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x06DA
+부하 Ａ
+「죄，죄송합니다 대장님！！
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x0712
+부하 Ｂ
+「죄，죄송합니다 대장님！！
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x07F0
+　대뇌격 실드 붕괴！
+<<<
+
+>>> [011] op=0x1A(condition) flag=0x00 offset=0x093A
+ziggy
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x0AF2
+마굴리스
+「그걸로는 날 이길 수 없다．
+<<<
+
+>>> [013] op=0x21(display) flag=0x00 offset=0x0B2A
+마굴리스
+「포기하고 이쪽으로 와라！
+<<<
+
+>>> [014] op=0x21(display) flag=0x00 offset=0x0BB6
+마굴리스
+「결국은 인간도 아닌 존재．
+<<<
+
+>>> [015] op=0x21(display) flag=0x00 offset=0x0C12
+마굴리스
+「시간이 됐군！
+<<<
+
+>>> [016] op=0x21(display) flag=0x00 offset=0x0D1E
+　천주검  Ｅ
+
+<<<
+
+>>> [017] op=0x21(display) flag=0x00 offset=0x0D46
+　무원살  Ｅ
+　　후열로 날려 버린다
+<<<
+
+>>> [018] op=0x21(display) flag=0x00 offset=0x0DAC
+　뇌조
+　　번개 흡수（다음 턴까지）
+<<<
+
+>>> [019] op=0x21(display) flag=0x00 offset=0x0E12
+　염룡
+　　불꽃 흡수（다음 턴까지）
+<<<

@@ -135,20 +135,39 @@ def get_strings_bc_order(p):
     return [decode(pool[p['tag8_order'][k]]).replace('\n','<lf>')
             for k in p['bc_to_tag8k']]
 
+def get_export_tag8_map(p):
+    out = list(p['bc_to_tag8k'])
+    seen = set(out)
+    for k in p['unmapped']:
+        if k not in seen:
+            out.append(k)
+            seen.add(k)
+    return out
+
+def get_strings_by_tag8_map(p, tag8_map):
+    pool = p['pool']
+    out = []
+    for k in tag8_map:
+        if not (0 <= k < len(p['tag8_order'])):
+            out.append(EMPTY_MARKER)
+            continue
+        out.append(decode(pool.get(p['tag8_order'][k], b'')).replace('\n','<lf>'))
+    return out
+
 def get_strings_tag8_order(p):
     """tag8 선언 순서로 문자열 반환 (레거시)."""
     return [decode(p['pool'][i]).replace('\n','<lf>')
             for i in p['tag8_order'] if i in p['pool']]
 
 # ── 재조립 ───────────────────────────────────────────────────────────────────
-def rebuild(p, new_strs_bc, tbl):
+def rebuild(p, new_strs_bc, tbl, tag8_map=None):
     """
     new_strs_bc: 바이트코드 순서 문자열 목록
     내부적으로 tag8 선언 순서로 재매핑해서 패치.
     """
     magic,vj,vn,cnum = p['header']
     pool = p['pool']
-    bc_to_tag8k = p['bc_to_tag8k']
+    bc_to_tag8k = p['bc_to_tag8k'] if tag8_map is None else tag8_map
     tag8_order  = p['tag8_order']
 
     # tag8_k -> 새 bytes  (바이트코드 순서 txt에서 매핑)
@@ -232,10 +251,11 @@ def data_to_lines(data):
             if cnum==0: continue
             p = parse(data[off:off+sz])
             if not p: continue
-            strs = get_strings_bc_order(p)
+            export_map = get_export_tag8_map(p)
+            strs = get_strings_by_tag8_map(p, export_map)
             if strs:
                 # 헤더에 매핑 정보 삽입
-                bc_map   = ','.join(map(str, p['bc_to_tag8k']))
+                bc_map   = ','.join(map(str, export_map))
                 unmapped = ','.join(map(str, p['unmapped'])) if p['unmapped'] else ''
                 total    = len(p['tag8_order'])
                 lines.append(f"# chunk {i} @ {off:#x} cnum={cnum} total={total}")
@@ -246,7 +266,18 @@ def data_to_lines(data):
                 lines.append("")
     elif data[:4] == CAFEBABE:
         p = parse(data)
-        if p: lines.extend(get_strings_bc_order(p))
+        if p:
+            export_map = get_export_tag8_map(p)
+            strs = get_strings_by_tag8_map(p, export_map)
+            if strs:
+                bc_map   = ','.join(map(str, export_map))
+                unmapped = ','.join(map(str, p['unmapped'])) if p['unmapped'] else ''
+                total    = len(p['tag8_order'])
+                lines.append(f"# chunk 0 @ 0x0 cnum={p['header'][3]} total={total}")
+                lines.append(f"# bc_map: {bc_map}")
+                if unmapped:
+                    lines.append(f"# bc_unmap: {unmapped}")
+                lines.extend(strs)
     return lines
 
 # ── txt 파싱 ─────────────────────────────────────────────────────────────────
@@ -314,10 +345,10 @@ def apply_patches(data, chunks, tbl):
 
             if bc_map is not None:
                 # 바이트코드 순서 모드
-                expected = len(p['bc_to_tag8k'])
+                expected = len(bc_map)
                 if len(strs) != expected:
                     print(f"  [오류] 청크 {ci}: 바이트코드 항목 {expected}개 ≠ txt {len(strs)}줄"); continue
-                rb = rebuild(p, strs, tbl)
+                rb = rebuild(p, strs, tbl, bc_map)
             else:
                 # 레거시: tag8 선언 순서
                 expected = len(p['tag8_order'])
@@ -355,11 +386,13 @@ def apply_patches(data, chunks, tbl):
         p = parse(data)
         if not p: return None
         if bc_map is not None:
-            rb = rebuild(p, strs, tbl)
+            if len(strs) != len(bc_map):
+                print(f"[오류] 바이트코드 항목 {len(bc_map)}개 ≠ txt {len(strs)}줄"); return None
+            rb = rebuild(p, strs, tbl, bc_map)
         else:
             if len(strs) != len(p['tag8_order']):
                 print(f"[오류] tag8 {len(p['tag8_order'])}개 ≠ txt {len(strs)}줄"); return None
-            rb = rebuild(p, strs, tbl)  # fallback
+            rb = rebuild(p, strs, tbl, list(range(len(p['tag8_order']))))  # fallback
         return rb
     print(f"알 수 없는 포맷: {data[:4].hex()}"); return None
 
@@ -407,11 +440,11 @@ def do_verify(evt_path):
     rebuilt = apply_patches(data, parse_txt(lines), {})
     if rebuilt is None: return
     if data == rebuilt:
-        print(f"✓ 라운드트립 성공: {os.path.basename(evt_path)}")
+        print(f"[OK] roundtrip: {os.path.basename(evt_path)}")
     else:
-        print(f"✗ 라운드트립 실패: {len(data)}B / {len(rebuilt)}B")
+        print(f"[FAIL] roundtrip: {len(data)}B / {len(rebuilt)}B")
         for i,(a,b) in enumerate(zip(data,rebuilt)):
-            if a!=b: print(f"  첫 번째 차이: {i:#x}  원본={a:#04x}  재조립={b:#04x}"); break
+            if a!=b: print(f"  first diff: {i:#x}  orig={a:#04x}  rebuilt={b:#04x}"); break
 
 def do_list(evt_path):
     data = open(evt_path,'rb').read()
@@ -422,7 +455,7 @@ def do_list(evt_path):
     for i,(off,sz) in enumerate(toc):
         cnum = struct.unpack_from('>H',data,off+8)[0]
         p = parse(data[off:off+sz]) if cnum>0 else None
-        ns = len(get_strings_bc_order(p)) if p else 0
+        ns = len(get_export_tag8_map(p)) if p else 0
         print(f"{i:<4} {off:#012x} {sz:<10} {cnum:<6} {ns}")
 
 def main():

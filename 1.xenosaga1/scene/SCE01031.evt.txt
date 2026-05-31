@@ -1,0 +1,354 @@
+# chunk 5 @ 0x1a60 cnum=2743 total=351
+# bc_map: 161,172,79,81,67,80,44,43,46,127,47,83,5,7,61,9,63,48,62,233,314,315,330,329,236,235,232,231,302,304,303,51,50,58,52,54,60,56,57,307,237,244,261,278,295,296,297,298,299,300,238,239,240,241,242,243,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,234,230,306,313,331,332,333,334,335,336,337,338,339,340,175,176,177,178,179,180,181,182,183,184,229,341,342,343,344,345,346,347,348,349,350,185,186,187,188,189,190,191,192,193,194,49,6,8,64,86,113,114,76,77,40,41,35,36,121,1,65,33,34,31,30,220,118,66,117,90,10,4,195,27,198,164,26,11,85,0,17,12,78,42,14,13,93,92,110,108,111,109,122,72,87,88,74,73,2,120,119,89,165,166,167,168,75,22,23,25,24,133,162,202,197,134,163,203,196,82,99,97,98,100,112,69,68,123,104,107,102,105,106,103,101,16,96,95,94,39,38,37,15,124,19,18,20,125,21,3,201,199,200,126,130,131,173,174,71,128,129,45,132,91,116,115,84,70,204,171,170,209,144,139,169,207,205,228,216,140,151,158,206,208,305,328,159,308,224,141,217,152,160,226,310,321,225,327,142,322,316,222,320,325,143,218,153,312,324,318,219,154,210,145,135,323,301,221,223,211,146,32,309,136,212,147,155,319,326,227,213,148,311,137,317,156,138,214,149,215,150,157,28,29,53,55,59
+# bc_unmap: 53,55,59
+eventmovie/
+lightSPL_main
+HISTORY CLEAR
+HISTORYDELETE PTR=/[$0]
+ERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRROR!!
+HISTORY-SET /[$0]
+CameraHistory Overflow!!
+Camera instant test
+Cameratest_history
+WAIT=/[$0]
+Cancel!!
+History is Empty.
+*********CameraTool Standby*****************
+*********Capture Start!!!*****************
+CaptureMode = /[$0]
+*********CaptureTool Standby*****************
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+キャプチャモード
+全画面
+全画面（アルファ）
+ＢＧのみ（ＺＰＩＣなし）
+ＢＧのみ（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+オブジェ単体（ＺＰＩＣあり）
+テキスト（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣあり）
+CaptureMODE ---All Screen.
+CaptureMODE ---All Screen(alpha).
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---Chr(pic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---TXT(pic)
+CaptureMODE ---Particle(pic)
+CaptureMODE ---Particle(pic+zpic)
+ページ切り替え
+キャラ０
+キャラ１
+キャラ２
+キャラ３
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラのみキャプチャ
+オブジェのみキャプチャ
+フォルダ選択
+企画サイドのフォルダを使用する
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（たけなか）
+ｍｏｖｉｅ０４（なかむら）
+ｍｏｖｉｅ０５（いけうち）
+ｍｏｖｉｅ０６（いけうち）
+ｍｏｖｉｅ０７（ふち）
+ｍｏｖｉｅ０８（ふち）
+ｍｏｖｉｅ０９（保存）
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+エフェクトサイドのフォルダを使用する
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（おの７６５）
+ｍｏｖｉｅ１７（うなかみ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+*********Capture End.*****************
+*********Capture Waiting...*****************
+ColorScreen  SetMode
+Layer = /[$0]
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode-------end
+*************ColorScreen Printout*************
+ColorScreenParam = {
+0,
+1,
+/[$1],
+/[$0],
+};
+Runtime.setDefocus(15, 1, ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], 1, ColorScreenParam);
+Layer not exist.
+*********DEBUGPRINT*********
+*********CameraHistory SPL*********
+pos[] ={
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+*********DEBUGPRINT3*********
+LINKTABLE
+ 
+,
+*********DEBUGPRINT4*********
+HISPTR
+CAMHIS
+*********ManualCamera Replay*********
+*********DEBUGPRINT6*********
+MANUALCAMPTR
+MANUALCAMHIS
+PATH = SPLINE
+PATH = DOWN
+PATH = UP
+PATH = LINEAR
+ShakeRoutine_main
+Focus SetMode
+Layer = Back
+Layer = Before
+Focus delta = /[$0](back)
+Focus SetMode-------end
+*************Focus Printout*************
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+Gnochk...
+--alpha--
+--filter--
+--shake--
+--ref_alpha--
+alpha max!!
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+HISTORYLOOK PTR=/[$0]
+ManualCamera not Recorded.
+ManualCam_record.
+ManualCamera MOVE to start.
+ManualCameraRecord START!!!
+Record /[$0]
+End(TimeOver).
+End(Button).
+Time = /[$0]
+Objchk......(Chr)
+Objchk......End
+Objchk(+Mtn)......
+Objchk......(Effect)
+Objchk......(Unit)
+Objchk......
+Mtn Frame = /[$0]
+*********printout /[$0]***********
+ManualCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+ManualCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+ManualCam.setFov(/[#0]f);
+BaseCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setFov(/[#0]f);
+*********Timechk Standby*****************
+Timechk_main
+----------シーンは終了しました。
+----------シーンは/[$0]フレームでした。
+----------シーンを開始します。
+Timerchk_srv_main
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])(RealTotal = /[$3])
+***********Objchk printout***********
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+setRotate(/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+VibRoutine_main
+Xenvmainthreadmain
+Xenvplaythread
+mize_a = /[#0];	mize_b = /[#1];	mize_c = /[#2];
+mize_e = /[#3];	mize_f= /[#4];	mize_g = /[#5];
+Event Out
+XEVEFLAG:EV01031_F
+XEVEJNAME:SCE01035
+CameraThread
+__chracter_splne
+Lkaiten
+RkaitenU
+RkaitenD
+INPUT Number!!
+End.(RETURN = /[$0])
+spl
+lightSPL start.
+lightSPL end.
+van_act1
+eng1_act1
+andrew_act2
+helmet_act2
+usold2_act2
+usold1_act2
+상황은 어떻지？
+van_act3
+andrew_act3
+eng1_act3
+eng2_act3
+usold1_act3
+usold2_act3
+필드의 메인 제너레이터와 이 블록의<lf>서브 리액터를 직접 연결시켰습니다
+３분 동안이지만 지시하신 대로<lf>출력을 낼 수 있습니다
+eng2_act4
+로지컬 드라이브로의 바이패스를<lf>확보했습니다
+이쪽 단말기로 제어 가능합니다
+andrew_act5
+van_act5
+eng1_act5
+eng2_act5
+그거면 충분하지
+잘했다
+무모하십니다 중령님！
+이 블록째로 분리시키고 게이트 점프를<lf>강행하다니 자살이나 다름없습니다
+방호 필드 없이<lf>하이퍼스페이스에 들어가면
+andrew_act6
+맨몸의 인간이 어떻게 되는지는<lf>중령님도 잘 알고 계실 겁니다！
+사령관님께 닿기만 하면 된다
+이제 몇 분 뒤면<lf>다음 칼럼의 영향을 받게 되겠지
+시간이 없어
+네놈들은 포드로 탈출해라
+andrew_act7
+van_act7
+eng1_act7
+중령님，밖에는<lf>그노시스 대군이 있단 말입니다 
+탈출한다 해도 살아남을 확률은<lf>전혀 없습니다
+저희도 중령님과 함께……
+van_act9
+eng1_act9
+van_act10
+eng1_act10
+andrew_act12
+명령을 했으면 들어라！
+그노시스 따윈<lf>보잘것없는 존재에 불과하다/[wait(80)]
+“그것”이 눈을 뜨는 것에<lf>비하면 훨씬 나아
+알겠나
+van_act13
+eng1_act13
+라이프 포드를 사출하는 대로<lf>즉시 ＤＩＧ‐β를 ８ｍｇ 정도 피하 주사해라/[wait(120)]
+일시적으로 가사 상태가 되지만<lf>그들의 주의를 돌릴 수 있을 거다
+andrew_act14
+van_act14
+eng1_act14
+eng2_act14
+몇 시간 뒤에는<lf>사령관님의 증원 부대도 온다
+네놈들은 살아남아라
+그래야 내 충성심을 증명할 수 있으니
+van_act15
+eng1_act15
+중령님/[wait(28)]
+andrew_act16
+서둘러라！
+eng2_act17
+andrew_act17
+van_act18
+eng1_act18
+van_act19
+eng1_act19
+eng2_act19
+/[$0]
+/[$0](Cursor = /[$1])
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---SoftImage BG(pic+zpic)

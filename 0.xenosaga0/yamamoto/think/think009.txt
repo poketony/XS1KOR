@@ -1,0 +1,48 @@
+# think_patch extract: think009.bin.ori
+# 총 9개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x02C2
+지켜보고 있다
+
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x036A
+상황을 보고 있다
+
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x03CE
+　플레어 봄  Ｅ／불꽃
+
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x0464
+　압축 기관에 대미지！
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x059A
+　전투 모드 이행
+
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x061E
+　포스 웨이브  Ｅ／기공
+
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x0656
+　메너스 캐넌  Ｐ
+
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x06BA
+　스프레드 빔  Ｅ／Ｂ
+
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x0712
+　쿨 레인  Ｅ／냉기
+
+<<<
