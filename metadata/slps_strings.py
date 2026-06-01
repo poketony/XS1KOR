@@ -27,9 +27,29 @@ txt 포맷: <hex_offset>|<orig_bytes>/<slack_bytes>|<text>
 
 import sys, os, json
 
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, 'reconfigure'):
+        _stream.reconfigure(encoding='utf-8', errors='replace')
+
 SCAN_START = 0x1665e0
 ENCODING   = 'euc_jis_2004'
 CTRL_OK    = frozenset(range(1, 0x20))
+
+# A.G.W.S. 탑승자 등록/해제 메시지는 중간 0x00이 문자열 종료자가 아니라
+# 바로 앞 0x19 제어코드의 인자로 쓰이는 논리적 단일 문자열이다.
+# 일반 null-segment 스캔으로 나누면 번역문을 넣을 수 없으므로 이 두 곳만
+# 최종 종료 0x00 직전까지 하나의 슬롯으로 취급한다.
+LOGICAL_STRING_ENDS = {
+    # Save confirmation strings include the nested button text in one physical
+    # slot. Editing the inner offsets separately zero-fills the middle and
+    # makes the game stop after the question line.
+    0x002bc51f: 0x002bc56f,
+    0x002bc579: 0x002bc5db,
+    0x002bc621: 0x002bc663,
+
+    0x002c2640: 0x002c267d,
+    0x002c2680: 0x002c26bf,
+}
 
 
 # ── 공통 ──────────────────────────────────────────────────────────────────────
@@ -68,6 +88,54 @@ def to_display(s):
     return ''.join(out)
 
 
+def raw_to_display(raw):
+    out = []
+    i = 0
+    while i < len(raw):
+        b = raw[i]
+        if b == 0x0a:
+            out.append('\\n')
+            i += 1
+            continue
+        if b == 0x0d:
+            out.append('\\r')
+            i += 1
+            continue
+        if b < 0x20 or b == 0x7f or b == 0x80:
+            out.append(f'\\x{b:02x}')
+            i += 1
+            continue
+        if b < 0x80:
+            out.append(chr(b))
+            i += 1
+            continue
+
+        decoded = None
+        if b == 0x8f:
+            sizes = (3,)
+        elif b == 0x8e or 0xa1 <= b <= 0xfe:
+            sizes = (2,)
+        else:
+            sizes = ()
+        for size in sizes:
+            chunk = raw[i:i + size]
+            if len(chunk) != size:
+                continue
+            try:
+                decoded = chunk.decode(ENCODING)
+                i += size
+                break
+            except UnicodeDecodeError:
+                pass
+        if decoded is None:
+            out.append(f'\\x{b:02x}')
+            i += 1
+        else:
+            out.append(decoded)
+
+    return ''.join(out)
+
+
 def from_display(s):
     out = []
     i = 0
@@ -95,6 +163,47 @@ def from_display(s):
     return ''.join(out)
 
 
+def encode_display(s, table):
+    out = bytearray()
+    literal = []
+    hexdigits = '0123456789abcdefABCDEF'
+
+    def flush_literal():
+        if not literal:
+            return
+        converted = apply_replace_table(''.join(literal), table)
+        out.extend(converted.encode(ENCODING))
+        literal.clear()
+
+    i = 0
+    while i < len(s):
+        ch = s[i]
+        if ch == '\\' and i + 1 < len(s):
+            esc = s[i + 1]
+            if esc == 'n':
+                flush_literal()
+                out.append(0x0a)
+                i += 2
+                continue
+            if esc == 'r':
+                flush_literal()
+                out.append(0x0d)
+                i += 2
+                continue
+            if esc in ('x', 'X') and i + 3 < len(s):
+                hx = s[i + 2:i + 4]
+                if all(c in hexdigits for c in hx):
+                    flush_literal()
+                    out.append(int(hx, 16))
+                    i += 4
+                    continue
+        literal.append(ch)
+        i += 1
+
+    flush_literal()
+    return bytes(out)
+
+
 def control_bytes(raw):
     return bytes(b for b in raw if 0 < b < 0x20 and b not in (0x0a, 0x0d))
 
@@ -102,6 +211,33 @@ def control_bytes(raw):
 def format_control_bytes(raw):
     ctrl = control_bytes(raw)
     return ' '.join(f'{b:02x}' for b in ctrl) if ctrl else '-'
+
+
+def logical_string_end(offset):
+    return LOGICAL_STRING_ENDS.get(offset)
+
+
+def covering_logical_string(offset):
+    for start, end in LOGICAL_STRING_ENDS.items():
+        if start < offset < end:
+            return start
+    return None
+
+
+def logical_string_in_segment(pos, terminator_off):
+    matches = [
+        (start, end)
+        for start, end in LOGICAL_STRING_ENDS.items()
+        if pos <= start < terminator_off and end <= terminator_off
+    ]
+    return min(matches) if matches else None
+
+
+def trailing_nulls_after(data, terminator_off):
+    scan = terminator_off + 1
+    while scan < len(data) and data[scan] == 0:
+        scan += 1
+    return scan - terminator_off - 1
 
 
 def _jp_runs(seg, base_off):
@@ -170,6 +306,14 @@ def iter_strings(data, start):
     seen = set()
 
     while pos < end:
+        logical_end = logical_string_end(pos)
+        if logical_end is not None and logical_end < end:
+            if pos not in seen:
+                seen.add(pos)
+                yield (pos, bytes(data[pos:logical_end]), trailing_nulls_after(data, logical_end))
+            pos = logical_end + 1 + trailing_nulls_after(data, logical_end)
+            continue
+
         if data[pos] == 0:
             pos += 1
             continue
@@ -184,6 +328,19 @@ def iter_strings(data, start):
         trailing = scan - np - 1
 
         seg = data[pos:np]
+
+        logical_range = logical_string_in_segment(pos, np)
+        if logical_range is not None:
+            logical_start, logical_end = logical_range
+            if logical_start not in seen:
+                seen.add(logical_start)
+                yield (
+                    logical_start,
+                    bytes(data[logical_start:logical_end]),
+                    trailing_nulls_after(data, logical_end),
+                )
+            pos = logical_end + 1 + trailing_nulls_after(data, logical_end)
+            continue
 
         if any(b >= 0xa1 for b in seg):
             try:
@@ -226,8 +383,7 @@ def extract(bin_path):
     ]
     count = 0
     for off, raw, trailing in sorted(iter_strings(data, SCAN_START), key=lambda x: x[0]):
-        decoded = raw.decode(ENCODING, errors='replace')
-        display = to_display(decoded)
+        display = raw_to_display(raw)
         lines.append(f'{off:08x}|{len(raw)}/{trailing}|{display}')
         count += 1
 
@@ -267,7 +423,7 @@ def rebuild(bin_path, txt_path):
                 print(f'[WARN] line {lineno}: 오프셋 파싱 실패: {hex_off!r}')
                 skipped += 1
                 continue
-            edits[offset] = from_display(text)
+            edits[offset] = text
 
     if skipped:
         print(f'[INFO] {skipped}개 라인 건너뜀')
@@ -275,6 +431,10 @@ def rebuild(bin_path, txt_path):
     patched = over_orig = over_slack = ctrl_warn = errors = 0
 
     for offset, new_text in sorted(edits.items()):
+        cover_start = covering_logical_string(offset)
+        if cover_start is not None and cover_start in edits:
+            continue
+
         if offset not in orig:
             print(f'[WARN] 0x{offset:08x}: 원본에 없는 오프셋, 건너뜀')
             errors += 1
@@ -285,9 +445,8 @@ def rebuild(bin_path, txt_path):
         slack    = trailing
         max_len  = orig_len + slack
 
-        converted = apply_replace_table(new_text, table)
         try:
-            new_raw = converted.encode(ENCODING)
+            new_raw = encode_display(new_text, table)
         except Exception as e:
             print(f'[ERR] 0x{offset:08x}: 인코딩 실패 ({e})')
             errors += 1

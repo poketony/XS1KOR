@@ -121,13 +121,13 @@
 
 >>> [020] op=0x21(display) flag=0x00 offset=0x0B74
 
-　　　　＜서브 메뉴＞
+　　　　＜서브메뉴＞
 
 <<<
 
 >>> [021] op=0x21(display) flag=0x00 offset=0x0B9E
 　행동하지 않은 상태에서 　\x1e\x1e를 누르면
-　서브 메뉴가 열립니다．
+　서브메뉴가 열립니다．
 <<<
 
 >>> [022] op=0x21(display) flag=0x00 offset=0x0BF2

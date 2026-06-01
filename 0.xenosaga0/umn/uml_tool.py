@@ -46,6 +46,7 @@ MAGIC       = b'UML\x00'
 FIXED_4     = b'@@@@'
 TEXT_START  = 0x60
 HEADER_SIZE = 0x60
+LOCATION_FILENAME = 'image_location.txt'
 ENCODE_SRC  = 'euc_jis_2004'
 
 # 텍스트에서 컨트롤 코드를 보존하기 위한 플레이스홀더 태그
@@ -74,6 +75,58 @@ BYTE_NAME_PATTERN = re.compile(
 def byte_tag(b: int) -> str:
     name = BYTE_VALUE_TO_NAME.get(b)
     return f'<{name}>' if name else f'<BYTE:{b:02X}>'
+
+
+def parse_int_value(value: str) -> int:
+    value = value.strip()
+    if value.lower().startswith('0x'):
+        return int(value, 16)
+    return int(value, 10)
+
+
+def image_coord_offset(index: int) -> int:
+    return 0x24 + index * 8
+
+
+def read_image_locations(path: str) -> dict[int, int] | None:
+    if not os.path.exists(path):
+        return None
+
+    locations: dict[int, int] = {}
+    with open(path, 'r', encoding='utf-8') as f:
+        for lineno, line in enumerate(f, 1):
+            line = line.strip()
+            if not line or line.startswith('#'):
+                continue
+
+            parts = [p.strip() for p in line.split('|')]
+            if not parts:
+                continue
+
+            try:
+                index = parse_int_value(parts[0])
+            except ValueError as exc:
+                raise ValueError(f'{path}:{lineno}: invalid image index: {parts[0]}') from exc
+
+            values: dict[str, int] = {}
+            for part in parts[1:]:
+                if '=' not in part:
+                    continue
+                key, value = part.split('=', 1)
+                key = key.strip().lower()
+                try:
+                    values[key] = parse_int_value(value)
+                except ValueError as exc:
+                    raise ValueError(f'{path}:{lineno}: invalid {key} value: {value}') from exc
+
+            if 'x' in values and 'y' in values:
+                locations[index] = ((values['y'] & 0xffff) << 16) | (values['x'] & 0xffff)
+            elif 'raw' in values:
+                locations[index] = values['raw'] & 0xffffffff
+            else:
+                raise ValueError(f'{path}:{lineno}: missing x/y or raw coordinate')
+
+    return locations
 
 
 def _next_jpeg_marker(blob: bytes, pos: int, in_scan: bool) -> tuple[int, int] | None:
@@ -428,6 +481,27 @@ class UMLFile:
             print(f'  [JPG {idx:02d}] {part_path}  '
                   f'(offset 0x{start:x}, {end - start} bytes)')
 
+    def export_image_locations(self, out_dir: str, basename: str):
+        if not self.jpeg_streams:
+            return
+
+        loc_path = os.path.join(out_dir, LOCATION_FILENAME)
+        with open(loc_path, 'w', encoding='utf-8', newline='\n') as f:
+            f.write('# index|file|coord=header_offset|x=low16|y=high16|raw=stored_u32\n')
+            f.write('# Rebuild uses x/y first. If x/y are absent, raw is used.\n')
+            for idx, _stream in enumerate(self.jpeg_streams):
+                coord_off = image_coord_offset(idx)
+                if coord_off + 4 > HEADER_SIZE:
+                    break
+                coord = struct.unpack_from('<I', self.header, coord_off)[0]
+                x = coord & 0xffff
+                y = (coord >> 16) & 0xffff
+                f.write(
+                    f'{idx:02d}|{basename}_{idx:02d}.jpg|'
+                    f'coord=0x{coord_off:02X}|x=0x{x:04X}|y=0x{y:04X}|raw=0x{coord:08X}\n'
+                )
+        print(f'  [LOC] {loc_path}')
+
     def build_jpeg_block_from_parts(self, src_dir: str, basename: str) -> bytes | None:
         if not self.jpeg_streams:
             return None
@@ -457,7 +531,12 @@ class UMLFile:
         return bytes(block) if changed else None
 
     # ── 재조립 ───────────────────────────────────────────
-    def rebuild(self, new_text_bytes: bytes, new_jpeg: bytes | None = None) -> bytes:
+    def rebuild(
+        self,
+        new_text_bytes: bytes,
+        new_jpeg: bytes | None = None,
+        image_locations: dict[int, int] | None = None,
+    ) -> bytes:
         """
         new_text_bytes: 새 텍스트 바이너리 (0x60 이후 내용)
         new_jpeg      : None이면 원본 JPEG+테일 유지
@@ -495,6 +574,15 @@ class UMLFile:
             if self.text_end <= image_ptr < self.text_end + len(self.jpeg_and_tail):
                 struct.pack_into('<I', hdr, off, image_ptr + delta)
 
+        if image_locations:
+            for idx, coord in sorted(image_locations.items()):
+                coord_off = image_coord_offset(idx)
+                if coord_off + 4 > HEADER_SIZE:
+                    raise ValueError(f'image_location index {idx} has no header coordinate slot')
+                if idx >= len(self.jpeg_streams):
+                    raise ValueError(f'image_location index {idx} exceeds JPEG count {len(self.jpeg_streams)}')
+                struct.pack_into('<I', hdr, coord_off, coord & 0xffffffff)
+
         return bytes(hdr) + new_text_bytes + jpeg_block
 
 
@@ -517,6 +605,7 @@ def cmd_extract(args):
     u = UMLFile(uml_path)
     u.export_txt(txt_path)
     u.export_jpg_parts(out_dir, basename)
+    u.export_image_locations(out_dir, basename)
     print(f'  제목  : {u.subject}')
     print(f'  발신자: {u.sender}')
     print(f'  본문길이: {len(u.body)} chars')
@@ -591,7 +680,14 @@ def cmd_rebuild(args):
         if new_jpeg is not None:
             print('  새 이미지: 개별 JPG 슬롯 교체')
 
-    result = u.rebuild(new_text_bytes, new_jpeg)
+    image_locations = None
+    if src_dir and os.path.isdir(src_dir):
+        loc_path = os.path.join(src_dir, LOCATION_FILENAME)
+        image_locations = read_image_locations(loc_path)
+        if image_locations is not None:
+            print(f'  [LOC] {loc_path}: {len(image_locations)} entries')
+
+    result = u.rebuild(new_text_bytes, new_jpeg, image_locations)
 
     with open(out_path, 'wb') as f:
         f.write(result)

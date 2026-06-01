@@ -1,3 +1,6 @@
+<img width="1411" height="1058" alt="Image" src="https://github.com/user-attachments/assets/ef9cd2ae-ecfd-4f22-88ba-b86b903636b4" />
+
+
 # XS1KOR
 **제노사가 에피소드 I(Xenosaga Episode I)**의 한글패치 자료들입니다.  
 게임의 인코딩은 EUC_JIS_2004입니다.  
