@@ -1,0 +1,99 @@
+# chunk 5 @ 0x3a70 cnum=234 total=4
+# bc_map: 3,0,2,1
+누구든 좋습니다
+이 통신을 듣고 있는 분은<lf>제발 도와주십시오─！
+괜찮아
+그런 짓 안 해도<lf>곧 구조대가 올 테니까
+
+# chunk 6 @ 0x4ff8 cnum=1576 total=89
+# bc_map: 4,5,1,2,3,13,15,14,6,46,74,75,50,52,48,54,56,70,68,66,64,62,60,58,72,51,53,49,55,57,71,69,67,65,63,61,59,73,16,23,25,8,26,81,9,28,27,43,7,30,80,77,87,10,29,37,79,11,84,36,31,85,45,34,32,18,19,21,20,22,24,12,88,33,76,39,82,35,38,42,86,41,40,83,44,78,17,47,0
+# bc_unmap: 0
+Xenvmainthreadmain
+Xenvplaythread
+Event Out
+XEVEFLAG:EV01043_F
+XEVEJNAME:SCE01044A
+ita_light2
+iwa_light2
+iwa_light
+__chracter_splne
+sigamituki
+zangai_stone_spin1
+zangai_stone_spin2
+zangai_ita_spin2
+zangai_ita_spin5
+zangai_ita_spin1
+zangai_ita_spin6
+zangai_ita_spin8
+zangai_spin7
+zangai_spin6
+zangai_spin5
+zangai_spin4
+zangai_spin3
+zangai_spin2
+zangai_spin1
+zangai_spin8
+zangai_ita_spin2_cut2
+zangai_ita_spin5_cut2
+zangai_ita_spin1_cut2
+zangai_ita_spin6_cut2
+zangai_ita_spin8_cut2
+zangai_spin7_cut2
+zangai_spin6_cut2
+zangai_spin5_cut2
+zangai_spin4_cut2
+zangai_spin3_cut2
+zangai_spin2_cut2
+zangai_spin1_cut2
+zangai_spin8_cut2
+kara_stop
+motion_01
+motion_02
+allen_serifu_001
+motion_03
+자 주임님도요
+allen_serifu_002
+motion_05
+motion_04
+shion_serifu_003_0
+allen_moni_off
+motion_06_mae
+저기<lf>그보다 ＫＯＳ−ＭＯＳ는？
+그 애 어디로 간 걸까……
+몰라요
+allen_serifu_003_0
+motion_06
+motion_110_mae
+아무튼 위험하다고요<lf>이대로 있으면
+allen_serifu_003_2
+그노시스가<lf>아직 있을지도 모르는데
+motion_110
+motion_07
+지금은 그런 걸 따질 때가 아냐<lf>ＫＯＳ−ＭＯＳ를 서둘러 회수해야 해……
+shion_serifu_003__2
+motion_09_mae
+motion_09
+moni_15_on
+moni_sonotaon1
+moni_sonotaon3
+moni_sonotaon2
+moni_sonotaon4
+motion_010
+allen_serifu_003_7
+ＫＯＳ−ＭＯＳ보다<lf>구조가 먼저죠 구조가！
+motion_09_2
+하아…… 이렇게 될 줄 알았으면<lf>다른 녀석들을 먼저 보내지 말걸……
+motion_12_mae
+아직 근처에 없으려나…… 저기요？
+motion_11
+motion_12
+motion_14_mae
+제정신이야？
+motion_14
+motion_13
+알렌<lf>너 왜 그렇게 평온해？
+shion_serifu_003_9
+그런 일이 있었는데……
+mobj_052
+sraster_on_off
+1043_1
