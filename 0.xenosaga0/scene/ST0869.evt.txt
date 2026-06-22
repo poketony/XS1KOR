@@ -5,6 +5,6 @@ bottom
 top
 0
 1
-２周目？
+２회차？
 enterd : /[$0]
 entrance: /[$0]

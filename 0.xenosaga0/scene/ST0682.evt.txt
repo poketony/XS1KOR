@@ -1,10 +1,10 @@
 # chunk 3 @ 0xd80 cnum=543 total=10
 # bc_map: 8,1,0,7,9,5,6,4,2,3
-隔壁スイッチを押しますか？<lf>
+격벽 스위치를 누르겠습니까？<lf>
 /[waitkey(64)]/[close()]
-/[label(ケイオス)]
-この先は<lf>
-電磁床がある（仮）
+/[label(케이오스)]
+이 앞에는<lf>
+전자기 플로어가 있어（임시）
 enterd : /[$0]
 entrance: /[$0]
 TalkNPC1
