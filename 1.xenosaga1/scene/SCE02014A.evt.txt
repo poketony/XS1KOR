@@ -1,0 +1,43 @@
+# chunk 10 @ 0x1f40 cnum=724 total=41
+# bc_map: 7,8,0,5,6,1,4,3,2,17,18,31,9,13,33,36,10,19,20,21,14,35,37,11,40,12,38,29,22,23,24,15,32,25,26,16,39,27,28,30,34
+Xenvmainthreadmain
+Xenvplaythread
+Event Out
+XEVEFLAG:EV02014_F
+XEVEJNAME:CFJ2_110 XEVEJPOINT:POINT2_110
+FLSchaos.fpk
+FLSshion_h.fpk
+FLSmatehws.fpk
+FLShammer.fpk
+mtn_001
+mtn_002
+어라？ 또 이러네<lf>이상하다……
+hammr_serifu_02_1
+masyu_serifu_02
+왜 그래？
+캐터펄트 덱 말인데요<lf>해치 상태가 아무래도 이상한 것 같슴다
+hammr_serifu_02_2
+mtn_003
+mtn_004
+mtn_005
+masyu_serifu_03
+기압은？
+지금으로선 공기가 새는 곳은 없어요
+hammr_serifu_03_1
+전기 쪽 문제인가
+hammr_serifu_03_2
+제가 한번 보고 올까요？
+shion_serifu_03
+mtn_006
+mtn_007
+mtn_008
+masyu_serifu_04
+오오 그래 줄래？<lf>해 주면 고맙지
+mtn_009
+mtn_010
+masyu_serifu_05
+공기는 안 새는 모양이지만<lf>일단 조심해라
+mtn_011
+mtn_012
+shion_serifu_06
+알겠습니다

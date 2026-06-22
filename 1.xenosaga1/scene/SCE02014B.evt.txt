@@ -1,0 +1,16 @@
+# chunk 7 @ 0x1434 cnum=542 total=14
+# bc_map: 4,5,0,2,3,6,1,8,13,12,11,7,9,10
+Xenvmainthreadmain
+Xenvplaythread
+Event Out
+XEVEFLAG:EV02014B_F
+XEVEJNAME:CFJ2_120 XEVEJPOINT:POINT2_120
+__chracter_splne
+FLSshion_h.fpk
+mtn_001
+ＯＫ
+아무 일 없다면 그걸로 됐어
+수고했다，돌아와도 돼
+horo_last_off
+mtn_003
+mtn_007

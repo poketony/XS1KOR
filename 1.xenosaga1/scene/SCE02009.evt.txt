@@ -1,0 +1,488 @@
+# chunk 13 @ 0x9ea4 cnum=3145 total=485
+# bc_map: 301,216,278,65,66,67,69,70,71,73,74,75,76,77,78,79,63,84,85,86,88,89,90,91,92,94,95,96,97,98,99,100,101,82,93,47,26,46,48,143,49,477,6,345,8,62,10,64,50,361,454,463,462,364,363,359,358,444,446,445,52,59,60,53,54,55,56,61,57,58,448,365,372,389,406,423,424,425,426,427,428,366,367,368,369,370,371,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,362,357,447,451,465,466,467,468,469,470,471,472,473,474,281,282,283,284,285,286,287,288,289,290,356,475,476,478,479,480,481,482,483,484,291,292,293,294,295,296,297,298,299,300,51,7,9,42,38,129,130,43,44,36,37,137,2,68,32,30,314,132,33,29,134,133,131,105,11,5,302,306,271,25,12,1,18,13,45,15,14,107,106,126,124,127,125,138,117,279,280,83,102,103,3,136,135,104,87,267,268,115,116,307,272,273,274,275,21,22,23,211,269,311,304,212,270,312,303,109,108,81,112,110,111,113,128,72,139,31,4,120,123,118,121,122,119,114,17,215,214,213,41,40,39,27,28,34,35,16,140,19,141,20,310,308,309,142,146,147,148,144,145,0,313,277,276,80,431,432,436,437,438,439,440,441,442,443,433,434,435,430,355,429,185,189,183,184,188,187,186,256,255,190,257,317,316,192,191,258,229,319,346,455,193,196,195,194,230,322,449,339,459,199,197,198,259,231,352,344,203,200,202,201,261,260,232,349,347,205,204,262,233,234,453,461,353,207,206,264,263,235,236,328,329,341,456,209,210,208,266,265,237,218,458,460,151,153,150,149,305,152,238,219,220,340,457,348,318,360,154,155,239,221,324,158,157,159,156,240,222,332,325,161,162,160,241,335,450,165,163,164,166,167,243,242,223,217,351,350,327,170,171,169,168,249,248,247,224,320,338,343,331,246,244,245,336,337,315,452,174,173,172,251,250,226,225,333,176,177,175,252,228,227,464,323,321,342,330,354,181,180,182,178,179,254,253,326,334,24
+# bc_unmap: 24
+msg_clear_thread
+eventmovie/
+lightSPL_main
+ColorScreen  SetMode
+ColorScreenParam = {
+ColorScreenParamBack = {
+ColorScreenParam[2] = /[$1]
+ERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRROR!!
+End(Button).
+End.(RETURN = /[$0])
+Event Out
+F-/[$0]
+F-/[$0]/[$2] frame(/[$1])
+FLSallen.fpk
+FLSallen_h.fpk
+FLSchaos_h.fpk
+Capture_abrupt
+Focus SetMode
+Focus SetMode-------end
+Focus delta = /[$0](back)
+Fog SetMode-------end
+Gnochk...
+Green Max!!
+Green Min!!
+HISPTR
+HISTORY-SET /[$0]
+HISTORYDELETE PTR=/[$0]
+HISTORYLOOK PTR=/[$0]
+History is Empty.
+INPUT Number!!
+LINKTABLE
+Layer = /[$0]
+Layer = /[$3]
+Facechk...
+HISTORY CLEAR
+CameraHistory Overflow!!
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+Camera instant test
+Cameratest_history
+WAIT=/[$0]
+Cancel!!
+ｍｏｖｉｅ１２（すぎさわ）
+*********CameraTool Standby*****************
+무슨 일이야？
+*********Capture Start!!!*****************
+CaptureMode = /[$0]
+*********CaptureTool Standby*****************
+Capture_wait
+Capture Cancel.
+キャプチャモード
+全画面
+ＢＧのみ（ＺＰＩＣなし）
+ＢＧのみ（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+オブジェ単体（ＺＰＩＣあり）
+テキスト（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣあり）
+CaptureMODE ---All Screen.
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---SoftImage BG(pic+zpic)
+CaptureMODE ---Chr(pic)
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---TXT(pic)
+CaptureMODE ---Particle(pic)
+CaptureMODE ---Particle(pic+zpic)
+ページ切り替え
+キャラ０
+キャラ１
+キャラ２
+キャラ３
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラのみキャプチャ
+オブジェのみキャプチャ
+フォルダ選択
+企画サイドのフォルダを使用する
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（たけなか）
+ｍｏｖｉｅ０４（なかむら）
+ｍｏｖｉｅ０５（いけうち）
+ｍｏｖｉｅ０６（？？？？）
+ｍｏｖｉｅ０７（ふち）
+ｍｏｖｉｅ０８（ふち）
+ｍｏｖｉｅ０９（保存）
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+エフェクトサイドのフォルダを使用する
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（おの７６５）
+ｍｏｖｉｅ１７（うなかみ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+*********Capture End.*****************
+*********Capture Waiting...*****************
+Before.
+Back.
+Red Max!!
+Red Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode-------end
+*************ColorScreen Printout*************
+ColorScreenParamZ = {
+0,
+/[$1],
+};
+Runtime.setDefocus(0,2,ColorScreenParamZ);
+1,
+/[$0],
+Runtime.setDefocus(15, /[$2], ColorScreenParamBack);
+Runtime.setDefocus(15, /[$2], ColorScreenParam);
+Runtime.setDefocus(/[$2], /[$3], ColorScreenParam);
+Layer not exist.
+*********DEBUGPRINT*********
+*********CameraHistory SPL*********
+pos[] ={
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+*********DEBUGPRINT3*********
+ 
+,
+*********DEBUGPRINT4*********
+CAMHIS
+*********ManualCamera Replay*********
+*********DEBUGPRINT6*********
+MANUALCAMPTR
+MANUALCAMHIS
+PATH = SPLINE
+PATH = DOWN
+PATH = UP
+PATH = LINEAR
+ShakeRoutine_main
+No Face!!!
+mouth close.
+mouth open.
+Facechk...end.
+Layer = Back
+Layer = Before
+*************Focus Printout*************
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+Fog  SetMode
+far Ratio Max!!
+far Ratio Min!!
+Near Ratio Max!!
+Near Ratio Min!!
+setFog(1,/[#0]f,/[#1]f,/[#2]f,/[#3]f,/[$4],/[$5],/[$6],/[$7]);
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+--alpha--
+--filter--
+--ref_alpha--
+alpha max!!
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+MSGprint.
+MSGprint(with Face).
+Face End.
+ManualCamera not Recorded.
+ManualCam_record.
+ManualCamera MOVE to start.
+ManualCameraRecord START!!!
+Record /[$0]
+End(TimeOver).
+Time = /[$0]
+/[wait(CLOSEwin)]/[close()]
+***********Objchk printout***********
+Objchk......(Chr)
+Objchk......End
+Objchk(+Mtn)......
+Objchk......(Effect)
+Objchk......(Unit)
+Objchk......
+Mtn Frame = /[$0]
+*********printout /[$0]***********
+cam1.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+cam1.setRotate   (/[#0]f,/[#1]f,/[#2]f);
+cam1.setFov(/[#0]f);
+BaseCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setFov(/[#0]f);
+/[$0]
+/[$0](Cursor = /[$1])
+===
+==========================
+*********Timechk Standby*****************
+Timechk_main
+----------シーンは終了しました。
+Timerchk_srv_main
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+setRotate   (/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+VibRoutine_main
+Xenvmainthreadmain
+Xenvplaythread
+_MSGprint.
+XEVEFLAG:EV02009_F
+XEVEJNAME:CFJ2_80 XEVEJPOINT:POINT2_80
+<lf>
+spl
+lightSPL start.
+lightSPL end.
+FLSshion_h.fpk
+スタート　０→９
+スタート　１０→１９
+スタート　２０→２９
+スタート　３０→３９
+スタート　４０→４９
+スタート　５０→５９
+スタート　６０→６９
+スタート　７０→７９
+スタート　８０→８９
+スタート　９０→９９
+スタート　１００→１０９
+スタート　１１０→１０９
+スタート　１２０→１２９
+シオン
+アレン
+ケイオス
+act1_chara
+act1_shion
+act1_allen
+act1_chaos
+act1_dish_shion
+act1_dish_allen
+act1_dishB2
+face1_shion
+face1_allen
+act2_allen
+face2_allen
+【アレン】
+……그래서，어떡하실 겁니까？<lf>이제부터……
+act3_shion
+act3_dish_shion
+face3_shion
+eyes3_allen
+【シオン】
+어떡하냐니<lf>ＫＯＳ−ＭＯＳ를 내버려 둘 순 없잖아
+제멋대로 움직이고 있다고<lf>그 애
+act4_allen
+act4_shion
+act4_dish_shion
+act4_dish_allen
+eyes4_shion
+아〜아
+보클린데에서의 기동 시험이 끝나면<lf>제２ 미르치아에 있는 ２국에 인계하고
+그 뒤에 휴가 갈 예정이었는데……
+선장님 같은 소릴 하네
+act5_shion
+act5_allen
+act5_dish_shion
+face5_shion
+eyes5_shion
+뭐 어때，지난 일로 투덜대 봐야<lf>소용없대도
+어쨌든 본사에 연락해서 상황을 전하고<lf>지시를 기다려 보자
+act6_shion
+act6_allen
+act6_dish_allen
+act6_dishB3
+face6_shion
+face6_allen
+eyes6_shion
+하아…… 당분간은 여기 녀석들과<lf>함께 지내야 한다는 건가……
+음？<lf>무슨 소리야？
+act7_shion
+act7_allen
+face7_allen
+eyes7_allen
+eyes7_shion
+뭔가 수상쩍어서<lf>이 배의 선적을 조사해 봤거든요
+여기 놈들，쿠카이 파운데이션의<lf>관계자들입니다
+위험하다고요 거긴<lf>뮤턴트（이능자） 소굴이란 소문도 있어요
+act8_shion
+act8_allen
+face8_shion
+face8_allen
+eyes8_allen
+eyes8_shion
+아ー 인종적 편견인데 그거
+잘 들어 알렌
+확실히 쿠카이 파운데이션은<lf>미르치아 자치 정부에 의해 설립된
+특이한 무장 조직이긴 하지만<lf>그건 전후 처리가 끝날 때까지의 얘기야
+act9_shadow
+act9_shion
+act9_allen
+face9_shion
+face9_allen
+eyes9_allen
+eyes0_shion
+현재 형태로 바뀐 뒤로는<lf>멀쩡한 하나의 재단으로서 운영되고 있다구
+설립 경위상<lf>무장화가 해제되지는 않았지만 말이지
+act10_chara
+act10_shion
+act10_chaos
+act10_allenM
+reset_pos
+act10_door
+face10_shion
+eyes10_allen_middle
+eyes10_chaos
+원종 보호법 제정 전의 피해자들을<lf>보호하고 하나로 묶어세운
+현재 대표 이사의 수완은<lf>높게 평가받고 있다니까
+뭐였더라 이름이？<lf>으음……
+【ケイオス】
+가이난 쿠카이
+act11_chaos
+act11_door
+face11_chaos
+eyes11_allen_middle
+어머 케이오스
+act12_shadow
+act12_chara
+act12_shion
+act12_chaos
+face12_chaos
+eyes12_chaos
+아니，뭐 도울 일은 없을까 싶어서
+고마워
+act13_shadow
+act13_shion
+act13_chaos
+face13_shion
+그럼 그릇 좀 닦아 줄래？
+라저〜
+act14_chara
+act14_allen
+act14_chaos
+act14_dish_chaos
+act14_water
+face14_chaos
+face14_allen
+eyes14_chaos
+eyes0_allen
+휴우<lf>끝났다 끝났어
+자
+어라？ 이건……
+act15_chara
+act15_shion
+act15_chaos
+act15_allen
+face15_shion
+face15_chaos
+face15_allen
+eyes15_chaos
+아，그거 중령님 거……
+그러고 보니 중령님<lf>안 오셨었네요 식사하러
+분명히 불렀는데
+됐어<lf>내가 다시 데워서 갖다 줄게
+face15_1_shion
+face15_1_allen
+face15_1_chaos
+그럼 저희는 방으로 돌아가죠
+그러자
+……아
+뭐 깜빡한 거 있어？
+act16_chara
+act16_chaos
+act16_allen
+face16_chaos
+face16_allen
+eyes16_chaos
+eyes16_allen
+아니 그……<lf>ＫＯＳ−ＭＯＳ는？
+act17_chara
+act17_shion
+act17_chaos
+face17_shion
+eyes17_chaos
+eyes17_allen
+ＫＯＳ−ＭＯＳ라면 격납고에 있는<lf>조정 탱크에서 재조정 중이야
+앞으로 몇 시간은 더 걸릴걸
+아，혹시<lf>말동무라도 해 주려고？
+그렇다면 기쁠 텐데
+그래도 돼？
+물론이지
+act18_shadow
+act18_chara
+act18_shion
+act18_allen
+act18_chaos
+face18_shion
+face18_chaos
+고마워<lf>그럼 먼저 가 볼게
+수고했어
+--shake--

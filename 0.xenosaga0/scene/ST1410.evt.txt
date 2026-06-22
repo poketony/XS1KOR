@@ -1,5 +1,0 @@
-# chunk 4 @ 0xd08 cnum=400 total=3
-# bc_map: 0,1,2
-enterd : /[$0]
-entrance: /[$0]
-idle

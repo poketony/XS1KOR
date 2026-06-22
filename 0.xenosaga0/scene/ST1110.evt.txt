@@ -1,5 +1,0 @@
-# chunk 1 @ 0x204 cnum=182 total=3
-# bc_map: 0,1
-# bc_unmap: 2
-enterd : /[$0]
-entrance: /[$0]

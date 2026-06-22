@@ -1,0 +1,583 @@
+# chunk 22 @ 0xa208 cnum=3167 total=580
+# bc_map: 348,303,11,172,13,174,160,173,420,508,558,557,423,422,419,418,491,493,492,162,169,163,165,171,167,168,496,424,431,448,465,482,483,484,485,486,487,425,426,427,428,429,430,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,370,390,421,417,494,504,560,561,562,563,564,565,566,567,568,569,328,329,330,331,332,333,334,335,336,337,416,570,571,572,573,574,575,576,577,578,579,338,339,340,341,342,343,344,345,346,347,161,61,10,12,175,194,213,214,192,193,63,64,62,222,6,318,55,57,51,50,216,176,215,198,7,319,56,217,320,218,14,357,49,362,313,48,189,271,272,195,196,191,190,8,220,219,197,200,199,188,203,201,202,159,204,212,178,177,223,208,211,206,209,210,207,205,15,224,30,225,36,9,367,365,366,228,229,23,22,18,20,19,16,17,25,29,28,352,351,280,355,359,316,317,373,350,354,360,387,307,349,385,314,315,32,386,302,324,325,374,278,279,326,323,47,38,40,37,35,42,281,221,276,273,309,5,310,277,275,308,4,274,409,3,1,34,2,33,31,0,372,375,45,46,44,41,43,39,369,368,377,364,312,361,358,376,363,311,371,356,24,179,226,227,79,327,26,186,182,184,185,180,181,183,187,58,353,290,236,244,519,410,252,520,505,415,261,304,306,545,488,538,140,152,267,509,151,154,268,544,153,156,269,411,155,158,270,529,157,66,230,321,521,515,65,68,231,232,553,541,522,414,67,70,516,69,72,407,71,74,233,546,73,76,234,52,497,391,75,78,235,518,397,507,77,80,384,301,379,381,383,295,297,299,82,81,84,83,86,237,512,501,413,85,88,238,87,90,239,54,89,92,559,490,405,91,94,240,503,394,93,96,241,506,511,95,98,293,242,288,53,395,402,97,100,243,284,291,282,286,99,102,535,534,101,104,550,388,285,289,292,283,287,403,524,103,106,245,551,393,537,552,498,495,105,108,246,107,110,247,109,112,248,111,114,249,523,542,500,549,113,116,548,527,513,115,118,250,525,396,400,399,117,119,251,401,408,398,59,121,253,526,120,123,489,543,533,122,125,254,514,124,127,255,555,126,129,256,528,547,536,502,517,128,131,257,499,510,392,130,133,258,556,132,135,259,134,137,260,300,378,380,382,294,296,298,136,139,412,138,142,262,539,554,141,144,263,406,143,305,264,389,532,530,60,146,265,145,531,148,266,540,147,150,404,149,322,21,27,164,166,170
+# bc_unmap: 21,27,164,166,170
+msg_clear_thread
+eventmovie/
+*********Capture Start!!!*****************
+CaptureMode = /[$0]
+*********CaptureTool Standby*****************
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+キャプチャモード
+全画面
+ＢＧのみ（ＺＰＩＣなし）
+ＢＧのみ（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+オブジェ単体（ＺＰＩＣあり）
+テキスト（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣあり）
+CaptureMODE ---All Screen.
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---Chr(pic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---TXT(pic)
+CaptureMODE ---Particle(pic)
+CaptureMODE ---Particle(pic+zpic)
+ページ切り替え
+キャラ０
+キャラ１
+キャラ２
+キャラ３
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+sit
+};
+キャラのみキャプチャ
+オブジェのみキャプチャ
+フォルダ選択
+企画サイドのフォルダを使用する
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（？？？？）
+ｍｏｖｉｅ０４（？？？？）
+ｍｏｖｉｅ０５（？？？？）
+ｍｏｖｉｅ０６（？？？？）
+ｍｏｖｉｅ０７（？？？？）
+ｍｏｖｉｅ０８（？？？？）
+ｍｏｖｉｅ０９（？？？？）
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+エフェクトサイドのフォルダを使用する
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（ひみつ）
+ｍｏｖｉｅ１７（ひみつ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+Alpha Max!!
+*********Capture End.*****************
+*********Capture Waiting...*****************
+ColorScreen  SetMode
+Layer = /[$0]
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Min!!
+ScreenColor SetMode-------end
+*************ColorScreen Printout*************
+int ColorScreenParam[] = {
+0,
+1,
+/[$1],
+/[$0],
+Runtime.setDefocus(15, 1, ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], 1, ColorScreenParam);
+Layer not exist.
+*************ColorScreen Printout_temae*************
+int[] test_param0 = {
+0, 
+Runtime.setDefocus(15, 2, test_param0);
+int[] test_param1 = {
+Runtime.setDefocus(15, 3, test_param1);
+*********ManualCamera Replay*********
+pos[] ={
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+Focus SetMode
+alpha_percent-/[#0]
+alpha_set-/[#0]
+Layer = Back
+Layer = Before
+Focus delta = /[$0](back)
+Focus SetMode-------end
+*************Focus Printout*************
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+MSGprint.
+MSGprint(with Face).
+Face End.
+ManualCamera not Recorded.
+ManualCam_record.
+ManualCamera MOVE to start.
+Cancel!!
+ManualCameraRecord START!!!
+Record /[$0]
+End(TimeOver).
+End(Button).
+Time = /[$0]
+Objchk......(Chr)
+Objchk......End
+Objchk(+Mtn)......
+Objchk......(Effect)
+Objchk......(Unit)
+Objchk......
+Mtn Frame = /[$0]
+*********Timechk Standby*****************
+Timechk_main
+----------シーンは終了しました。(Total = /[$0])
+Timerchk_srv_main
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])
+***********Objchk printout***********
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+setRotate(/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+Xenvmainthreadmain
+Xenvplaythread
+-------------* ManualCam_record()start *-----------
+-------------* ManualCam_record()end *-----------
+-------------* Debugprint5() *-----------
+-------------* ManualCam_play_sub()end *-----------
+-------------* Gnochk(gold) *-----------
+-------------* ColorScreenSet() *-----------
+-------------* ColorScreenSet()_temae *-----------
+-------------* chr_look_start *-----------
+-------------* point_light()start *-----------
+-------------* point_light()end *-----------
+objtool---------------------------scl
+objtool---------------------------ido
+camtool---------------------------cam
+one_scale-----------------/[#0]
+robo.setScale(/[#0]f,/[#1]f,/[#2]f);
+gold_number-------------------(/[#0])
+haba -----------------/[#0]
+takasa ---------------/[#1]
+noudo ----------------/[#2]
+one_scale ------------/[#3]
+robo.setScale(/[#4]f,/[#5]f,/[#6]f);
+yuri_isu_r1
+f_speed--------------------------------------------------(/[#0])
+non_move_view-/[#1]|cap-/[#2]
+view-/[#1]|cap-/[#2]
+gold-no-/[#0]|view-/[#1]|cap-/[#2]
+gold-unit-no-/[#0]|view-/[#1]|cap-/[#2]
+--------plus_one_write--------
+write-/[#0]|now-/[#1]|cap-/[#2]
+erase-/[#1]|now-/[#1]|cap-/[#2]
+live-normal-cam
+live-normal-human
+time-/[#0]
+cam_time_tani++(/[#0])
+cam_time_tani--(/[#0])
+live-pretty-cam
+live-human-pretty-cam
+--SPL_CARDINAL
+----SPL_LINEAR
+---PATH_LINEAR
+-----PATH_DOWN
+-------PATH_UP
+---PATH_SPLINE
+change-/[#1]|now-/[#1]|cap-/[#2]
+STCam.setFov(/[#0]f);
+cam1.setFov(/[#0]f);
+cam0.setFov(/[#0]f);
+float pos00[] = {
+  /[#0]fnc,/[#1]fnc,/[#2]fnc,/[#3]fnc,
+float rot00[] = {
+cam1.transSPL(pos00, SPL_CARDINAL);
+cam1.rotateSPL(rot00, SPL_CARDINAL);
+float fov00[] = {
+  /[#0]fnc,/[#1]fnc,
+cam1.fovSPL(fov00, SPL_CARDINAL);
+그래서，임무를 맡아 줄 수 있겠나？
+  /[#0]f,/[#1]f,/[#2]f,/[#3]f,
+  /[#0]f,/[#1]f,
+--------trans--------
+  /[#0]f,/[#1]f,/[#2]f,/[#3]f
+--------rotate--------
+--------fov--------
+  /[#0]f,/[#1]f
+t_no_change-/[#0]-/[#1]/[#2]-/[#3]
+time_change-/[#0]-/[#1]/[#2]-/[#3]
+---SPL_CARDINAL---
+---SPL_LINEAR---
+---PATH_UP---
+---PATH_LINEAR---
+---PATH_SPLINE---
+---PATH_DOWN---
+shion.setTranslate(/[#0]fnc,/[#1]fnc,/[#2]fnc);
+shion.setRotate(/[#3]fnc,/[#4]fnc,/[#5]fnc);
+trans----/[#0]fnc,/[#1]fnc,/[#2]fnc
+rotate---/[#3]fnc,/[#4]fnc,/[#5]fnc
+fov------/[#6]fnc
+robo.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+robo.setRotate(/[#3]f,/[#4]f,/[#5]f);
+trans----/[#0]f,/[#1]f,/[#2]f
+rotate---/[#3]f,/[#4]f,/[#5]f
+fov------/[#6]f
+speed--------------------------------------------------(/[#0])
+parts_nomber---------------(/[#0])
+-------------* chr_look_end *-----------
+Event Out
+XEVEFLAG:EV02001A_F
+XEVEJNAME:SCE02001B
+CUT17 END
+map_nomber---------------(/[#0])
+-------------* map_look_end *-----------
+FLSyuri.fpk
+FLScommi2.fpk
+FLScommi4.fpk
+FLScommi5.fpk
+FLScommi.fpk
+FLScommi1.fpk
+FLScommi3.fpk
+FLSziggy.fpk
+2001A_1
+off
+com4_isu_reset
+act2
+act3
+委員０
+그나저나 어떤 인물인가？<lf>그 사내는
+act4
+委員２
+전 연방 경찰 부대의 특수 부대 대원입니다<lf>대테러 전문이었지요
+어디까지나 １００년도 지난<lf>이야기입니다만 말입니다
+act5
+f0
+f1
+현재는 헌체 사이보그로서<lf>다양한 임무를 수행하고 있습니다
+사이보그라니 고풍스럽군
+죽은 인간을 소생시켜
+CUT5 END
+CUT6 START
+act6
+재이용하던 시절의 유물입니다
+CUT6 END
+CUT7 START
+act7
+오늘날처럼 쓰기 편한 리얼리언이<lf>아직 없었으니까요
+CUT7 END
+CUT8 START
+act8
+제법 대단한 경력이지 않은가
+CUT8 END
+CUT9 START
+act9
+늘 성공 확률이 낮은 임무만을<lf>희망한다……는 소문이 있습니다
+CUT9 END
+CUT10 START
+act10
+kemuri
+委員３
+괴짜인가？<lf>아니면 전투 마니아라도 되는 건가？
+CUT10 END
+CUT11 START
+act11
+act12
+정신 감정상으론 정상이라더군요
+살인 선호 성향은 없는 듯합니다
+委員４
+흥！<lf>과학이 발전함에 따라
+CUT11 END
+CUT12 START
+수많은 의료 기관이 드러그스토어 매대에<lf>나열된 지 수 세기일세
+CUT12 END
+CUT13 START
+하지만 그럼에도 여전히<lf>세도를 부리는 것이 정신과 의사들이지
+CUT13 END
+CUT14 START
+act14
+생존을 위한 궤변만 늘어놓아서<lf>신용할 수가 없어
+CUT14 END
+CUT15 START
+act15
+임무 수행률은 매우 높군<lf>추천할 만해
+ポン
+”ポン”――インターホン――
+CUT15 END
+CUT16 START
+act16
+女
+데려왔습니다
+들어오게나
+CUT16 END
+CUT17 START
+up
+el_up
+tume1_o
+tume2_o
+tume3_o
+door1_o
+door2_o
+door3_o
+CUT18 START
+CUT18 END
+CUT19 START
+CUT19 END
+CUT20-21 START
+act20
+자네는 이제 가 봐도 좋네
+レアリエン女
+네<lf>실례하겠습니다
+CUT20-21 END
+CUT22 START
+act22
+CUT22 END
+CUT23 START
+act23
+Ｚｉｇｇｕｒａｔ８（지구라트 에이트）로군？
+CUT23 END
+CUT24 START
+Ｔ．Ｃ． ４６６７년 사망 후<lf>본인의 유지에 따라 헌체됨
+지구라트 인더스트리 제조
+말씀대로입니다
+CUT24 END
+CUT25 START
+act25
+이번 건에 대해 들은 바가 있나？
+아뇨
+CUT25 END
+CUT26 START
+act26
+얼마 전，모 무장 조직에<lf>부활의 조짐이 있다는 정보가 들어왔네
+１４년 전 그 사건을<lf>일으킨 조직이지
+CUT26 END
+CUT27-28 START
+cut27
+act27
+com4_isu_r1
+Ｕ−ＴＩＣ 기관……
+그래，우리가 독자적인 루트로<lf>입수한 정보에 따르면
+그 Ｕ−ＴＩＣ 기관이<lf>잠복해 있는 장소가 판명되었네
+CUT27-28 END
+CUT29 START
+act29
+com2_isu_r1
+com5_isu_r1
+com1_isu_r1
+com3_isu_r1
+CUT29 END
+CUT30 START
+구세기부터 이어져 온 고대 종교의<lf>예배당으로 기능했던 모양이더군
+방치된 이후 현재까지<lf>수 세기 동안 사람이 없었네
+CUT30 END
+CUT31 START
+저더러 그곳에 침투해<lf>정보를 수집하라는 말씀이시군요
+yuri_isu_r2
+com2_isu_r2
+com4_isu_r2
+com5_isu_r2
+com1_isu_r2
+com3_isu_r2
+그런 일은<lf>첩보국에 맡겨두면 되네
+실은 말이지……
+CUT31 END
+CUT32 START
+act32
+간단히 요약하자면
+어떤 자를 구출해 신속히<lf>적절한 장소로 송치해 주었으면 하네
+정확히 말하면 물건이지만……
+간결하게 부탁드립니다
+ユリ
+후훗
+CUT32 END
+CUT33 START
+act33
+CUT33 END
+CUT34 START
+act34
+CUT34 END
+CUT35 START
+act35
+CUT35 END
+CUT36 START
+act36
+아이……
+민간인입니까？
+리얼리언이라네<lf>백식 리얼리언
+알고 있는가？
+CUT36 END
+CUT37 START
+백식……
+대그노시스용으로 특별히<lf>제조되었다고 하는 관측용 리얼리언……
+소문을 들은 적은 있습니다만<lf>유년체 위장일 줄은 몰랐습니다
+CUT37 END
+CUT38 START
+act38
+실물을 보는 건 처음인가？
+예
+하지만 이미 벡터사에서<lf>양산 체제에 들어갔을 텐데요？
+이건 프로토타입이네
+CUT38 END
+CUT39 START
+act39
+모든 백식 관측기의 귀감이 되는<lf>원형이지
+즉<lf>다른 모든 사안들보다
+이 소녀를 확보하는 것을<lf>최우선으로 하라는 말씀이시군요
+39 END
+CUT40 START
+act40
+말귀가 밝아서 다행이군
+CUT40 END
+CUT41 START
+ジギー
+헌체 사이보그에게 인권은 없습니다<lf>거부할 권리는 없지요
+필요한 무기와 물자는<lf>상황을 분석한 뒤 요청하겠습니다
+CUT41 END
+CUT42 START
+act42
+보수라고 하긴 뭐합니다만<lf>하나 희망 사항을 말씀드려도 되겠습니까？
+CUT42 END
+CUT43 START
+act43
+말해 보게
+CUT43 END
+CUT44 START
+act44
+귀환 후<lf>제 생체뇌에 남아 있는
+생전의 기억 노이즈를<lf>제거해 주셨으면 합니다
+상관은 없네만 자네는 상당한 구형이라<lf>완전한 제거는 어려울지도 모르네
+인공 부품으로 환장해 주셔도 됩니다
+기묘한 요청이군
+CUT44 END
+CUT45 START
+act45
+리얼리언조차 인권을 주장하는 요즘 세상에<lf>기계가 되고 싶어 하는 인간이라니
+알겠네<lf>수배해 두지
+감사합니다
+CUT45 END
+CUT46 START
+act46
+자세한 사항은 이후에<lf>그녀…… 유리 미즈라히 박사에게 들으시길
+CUT46 END
+CUT47 START
+act47
+CUT47 END
+CUT48 START
+act48
+el_down
+tume1_c
+tume2_c
+tume3_c
+door1_c
+door2_c
+door3_c
+CUT48 END
+CUT49 START
+과연……<lf>그는 순직자가 아닙니다
+CUT49 END
+CUT50 START
+act50
+사인은 자살인 모양이군요<lf>애용하던 권총으로 머리를 한 발
+자살이라고！？
+CUT50 END
+CUT51 START
+act51
+그런 남자에게 백식을 맡겨도 되나！？<lf>자멸 경향이 나타나면 어쩌려고！
+CUT51 END
+f0_52
+act52
+yuri_isu_r3
+걱정 마시길
+그에겐 자해 행위와 임무 방임을 금지하는<lf>세이프티가 갖추어져 있습니다
+52 END
+CUT52-2 START
+act52_2
+CUT52-2 END
+그는 본인의 뜻에 반하여<lf>다시 부활당한 거예요
+CUT56 START
+act55
+남은 생체뇌를 인공 부품으로 환장하면<lf>그는 완전히 기계가 됩니다
+CUT56 END
+CUT57 START
+그때 비로소<lf>그는 합법적으로 “죽게” 되겠죠
+CUT57 END
+light.setGlobalPointLightCol( 0, /[#0]f,/[#1]f,/[#2]f);
+-------------* ManualCam_play_sub()start *-----------
+-------------* map_look_start *-----------
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---SoftImage BG(pic+zpic)

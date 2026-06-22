@@ -1,0 +1,33 @@
+# chunk 9 @ 0x1464 cnum=606 total=31
+# bc_map: 5,6,0,3,4,7,1,2,10,11,12,13,14,16,18,26,21,19,20,25,8,28,22,15,17,29,23,24,30,9,27
+Xenvmainthreadmain
+Xenvplaythread
+Event Out
+XEVEFLAG:EV02005_F
+XEVEJNAME:CFJ2_60 XEVEJPOINT:POINT2_60
+__chracter_splne
+FLSmarglis_h.fpk
+FLSpelegri.fpk
+mtn_001_1
+mtn_001_2
+mtn_001_3
+mtn_001_4
+mtn_002
+mtn_003
+mtn_004
+마굴리스 사령관님<lf>침입자의 목표는 백식입니다
+mtn_006_mae
+mtn_005
+mtn_006
+그런가<lf>보나 마나 정부의 개겠지
+magls_serifu_03
+침입자는 Ｄ 블록 부근을 경계로<lf>센서에서 사라졌습니다
+mtn_007
+mtn_002_b
+mtn_003_b
+현재 각 부대가<lf>모든 구역을 초계 중입니다
+mtn_008
+mtn_009
+Ｄ 블록을 포위하도록！<lf>앞뒤에서 협공해라
+magls_serifu_05
+알겠습니다
