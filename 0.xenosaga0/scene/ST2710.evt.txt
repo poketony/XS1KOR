@@ -1,7 +1,7 @@
 # chunk 4 @ 0x8e8 cnum=493 total=5
-# bc_map: 3,4,1,2,0
-はい<lf>いいえ
+# bc_map: 4,1,2,0,3
 イベント3050C1
 enterd : /[$0]
 entrance: /[$0]
 Talk_npc1
+はい<lf>いいえ

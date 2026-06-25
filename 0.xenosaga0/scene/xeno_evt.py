@@ -289,33 +289,99 @@ def parse(chunk):
             pool_all[i] = (tag, None)
     rest = chunk[p:]
 
-    # 바이트코드에서 ldc/ldc_w 참조 순서 추출.
-    # 예전 구현은 class body 전체를 바이트 단위로 훑어서 bipush 0x12 같은
-    # 피연산자를 ldc로 오인했고, 그 직후의 진짜 ldc를 건너뛰는 경우가 있었다.
-    # Code 속성의 실제 bytecode만 명령 길이에 맞춰 해석한다.
-    bytecode_str_order = []  # str_pool_idx 목록 (중복 제거, 첫 참조 순서)
-    seen = set()
-    for code in code_blocks_from_rest(rest, pool):
-        for cidx in iter_ldc_refs(code):
-            e = pool_all.get(cidx)
-            if e and e[0] == 8:
-                stridx = e[1]
-                if stridx not in seen and stridx in pool:
-                    seen.add(stridx); bytecode_str_order.append(stridx)
+    def collect_precise_order():
+        # Code attribute의 실제 bytecode만 명령 길이에 맞춰 해석한다.
+        order = []
+        seen = set()
+        for code in code_blocks_from_rest(rest, pool):
+            for cidx in iter_ldc_refs(code):
+                e = pool_all.get(cidx)
+                if e and e[0] == 8:
+                    stridx = e[1]
+                    if stridx not in seen and stridx in pool:
+                        seen.add(stridx); order.append(stridx)
+        return order
 
-    # 방어적 fallback: 비표준 class-like 청크에서는 기존 방식으로라도 추출한다.
-    if not bytecode_str_order:
+    def collect_legacy_order():
+        # 구버전 방식: class body 전체를 바이트 단위로 훑는다.
+        # 피연산자 0x12를 ldc로 오인할 수 있지만, 기존 번역 txt와의
+        # 줄 호환성을 위해 legacy-only 항목도 보수적으로 보존한다.
+        order = []
+        seen = set()
         i = 0
         while i < len(rest):
             op = rest[i]
-            if op == 0x12 and i+1 < len(rest):   cidx = rest[i+1]-1; i+=2
-            elif op == 0x13 and i+2 < len(rest): cidx = struct.unpack_from('>H',rest,i+1)[0]-1; i+=3
-            else: i+=1; continue
+            if op == 0x12 and i+1 < len(rest):
+                cidx = rest[i+1]-1; i+=2
+            elif op == 0x13 and i+2 < len(rest):
+                cidx = struct.unpack_from('>H',rest,i+1)[0]-1; i+=3
+            else:
+                i+=1; continue
             e = pool_all.get(cidx)
             if e and e[0] == 8:
                 stridx = e[1]
                 if stridx not in seen and stridx in pool:
-                    seen.add(stridx); bytecode_str_order.append(stridx)
+                    seen.add(stridx); order.append(stridx)
+        return order
+
+    def merge_preserve_legacy(precise, legacy):
+        # 목적:
+        #   1) precise-only: 구버전 누락을 추가한다.
+        #   2) legacy-only: 기존 추출 txt에 있던 줄을 제거하지 않는다.
+        # old-only를 무조건 삭제하면 기존 번역 줄이 잘려 나가므로,
+        # precise 순서를 기본으로 하되 legacy-only를 주변 legacy 공통 항목 근처에 삽입한다.
+        merged = list(precise)
+        merged_set = set(merged)
+        anchors = {}
+        for idx, x in enumerate(merged):
+            anchors[x] = idx
+        inserted_after = {}
+
+        for i, x in enumerate(legacy):
+            if x in merged_set:
+                continue
+
+            prev_anchor = None
+            for y in reversed(legacy[:i]):
+                if y in anchors:
+                    prev_anchor = y; break
+            next_anchor = None
+            for y in legacy[i+1:]:
+                if y in anchors:
+                    next_anchor = y; break
+
+            if prev_anchor is not None:
+                pos = inserted_after.get(prev_anchor, anchors[prev_anchor]) + 1
+                merged.insert(pos, x)
+                merged_set.add(x)
+                # 삽입 위치 뒤 anchor index 보정
+                for k, v in list(anchors.items()):
+                    if v >= pos:
+                        anchors[k] = v + 1
+                anchors[x] = pos
+                inserted_after[prev_anchor] = pos
+            elif next_anchor is not None:
+                pos = anchors[next_anchor]
+                merged.insert(pos, x)
+                merged_set.add(x)
+                for k, v in list(anchors.items()):
+                    if v >= pos:
+                        anchors[k] = v + 1
+                anchors[x] = pos
+            else:
+                anchors[x] = len(merged)
+                merged.append(x)
+                merged_set.add(x)
+        return merged
+
+    precise_order = collect_precise_order()
+    legacy_order  = collect_legacy_order()
+
+    # 비표준 class-like 청크에서 Code attribute 파싱이 실패하면 legacy 그대로 사용.
+    if precise_order:
+        bytecode_str_order = merge_preserve_legacy(precise_order, legacy_order)
+    else:
+        bytecode_str_order = legacy_order
 
     # str_pool_idx -> tag8_k (tag8 선언 순서에서 몇 번째)
     str_to_k = {s:k for k,s in enumerate(tag8_order)}

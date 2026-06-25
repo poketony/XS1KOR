@@ -1,8 +1,12 @@
+# chunk 0 @ 0x64 cnum=74 total=1
+# bc_map: 0
+move
+
 # chunk 4 @ 0xbac cnum=583 total=9
 # bc_map: 8,0,7,1,2,3,4,5,6
-플로어를 이동시키겠습니까？
+フロアーを移動しますか？
 /[waitkey(64)]/[close()]
-예<lf>아니요
+はい<lf>いいえ
 Move
 Move2
 Move3

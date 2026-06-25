@@ -1,8 +1,8 @@
 # chunk 2 @ 0x43c cnum=303 total=6
-# bc_map: 0,4,2,3,1
-# bc_unmap: 5
+# bc_map: 0,4,2,3,5,1
 enterd : /[$0]
 宿屋１Ｆ・２
 外観街１・５
 外観街１・９
+酒場２Ｆ・２
 entrance: /[$0]
