@@ -348,7 +348,7 @@ tonny_act15
 shion_act15
 allen_act15
 아，미안<lf>못 봤었어
-…………
+못 봤다니……
 /[$0]
 /[$0](Cursor = /[$1])
 CaptureMODE ---Chr(pic+zpic)

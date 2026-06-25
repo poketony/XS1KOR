@@ -1,0 +1,4 @@
+# index|file|coord=header_offset|x=low16|y=high16|raw=stored_u32
+# Rebuild uses x/y first. If x/y are absent, raw is used.
+00|0024_00.jpg|coord=0x24|x=0x0000|y=0x0000|raw=0x00000000
+01|0024_01.jpg|coord=0x2C|x=0x0070|y=0x003A|raw=0x003A0070

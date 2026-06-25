@@ -180,7 +180,8 @@ def add_space_padding_per_visual_line(s):
             out.append(part)
             continue
 
-        pad_count = (part.count(' ') + 3) // 4
+        pad_basis = re.sub(r'/\[label\([^\]]*\)\]', '', part)
+        pad_count = (pad_basis.count(' ') + 3) // 4
         if pad_count:
             part += '　' * pad_count
         out.append(part)

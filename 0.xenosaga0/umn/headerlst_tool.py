@@ -6,7 +6,11 @@ python headerlst_tool.py extract header.lst
 python headerlst_tool.py rebuild header.lst header.tsv
 """
 
-import sys, os, json, struct
+import sys, os, json, struct, re
+
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, 'reconfigure'):
+        _stream.reconfigure(errors='replace')
 
 ENCODE_SRC = 'euc_jis_2004'
 REC_HDR_SZ = 8 + 0x60   # META + UML헤더
@@ -17,6 +21,23 @@ MAIL_SUBJ_MARKER = b'\x0d\x02'
 DB_SUBJ_LEADER   = b'\x0d\x02'
 DB_SUBJ_TRAILER  = b'\x0d\x00'
 DB_IDX_MIN       = 9000
+
+BYTE_NAME_TO_VALUE = {
+    'NUL': 0x00, 'SOH': 0x01, 'STX': 0x02, 'ETX': 0x03,
+    'EOT': 0x04, 'ENQ': 0x05, 'ACK': 0x06, 'BEL': 0x07,
+    'BS': 0x08,  'VT': 0x0B,  'FF': 0x0C,  'CR': 0x0D,
+    'SO': 0x0E,  'SI': 0x0F,  'DLE': 0x10, 'DC1': 0x11,
+    'DC2': 0x12, 'DC3': 0x13, 'DC4': 0x14, 'NAK': 0x15,
+    'SYN': 0x16, 'ETB': 0x17, 'CAN': 0x18, 'EM': 0x19,
+    'SUB': 0x1A, 'ESC': 0x1B, 'FS': 0x1C,  'GS': 0x1D,
+    'RS': 0x1E,  'US': 0x1F,  'DEL': 0x7F,
+}
+BYTE_VALUE_TO_NAME = {v: k for k, v in BYTE_NAME_TO_VALUE.items()}
+CTL_PATTERN = re.compile(r'<CTL:([0-9A-Fa-f]{4})>')
+BYTE_PATTERN = re.compile(r'<BYTE:([0-9A-Fa-f]{2})>')
+BYTE_NAME_PATTERN = re.compile(
+    r'<(' + '|'.join(re.escape(k) for k in BYTE_NAME_TO_VALUE) + r')>'
+)
 
 
 # ── null 탐색 ──────────────────────────────────────────────
@@ -62,7 +83,52 @@ def apply_charmap(text, charmap):
 def encode_str(text, charmap):
     if charmap:
         text = apply_charmap(text, charmap)
-    return text.encode(ENCODE_SRC, errors='replace') + b'\x00'
+    return text.encode(ENCODE_SRC) + b'\x00'
+
+
+def escape_control_text(text):
+    out = []
+    i = 0
+    while i < len(text):
+        code = ord(text[i])
+        if code in (0x0D, 0x19) and i + 1 < len(text):
+            out.append(f'<CTL:{code:02X}{ord(text[i + 1]):02X}>')
+            i += 2
+            continue
+        if code < 0x20 or code == 0x7F:
+            out.append(f'<{BYTE_VALUE_TO_NAME.get(code, f"BYTE:{code:02X}")}>')
+        else:
+            out.append(text[i])
+        i += 1
+    return ''.join(out)
+
+
+def unescape_control_text(text):
+    out = []
+    i = 0
+    while i < len(text):
+        m = CTL_PATTERN.match(text, i)
+        if m:
+            pair = bytes.fromhex(m.group(1))
+            out.append(pair.decode('latin1'))
+            i = m.end()
+            continue
+
+        m = BYTE_PATTERN.match(text, i)
+        if m:
+            out.append(chr(int(m.group(1), 16)))
+            i = m.end()
+            continue
+
+        m = BYTE_NAME_PATTERN.match(text, i)
+        if m:
+            out.append(chr(BYTE_NAME_TO_VALUE[m.group(1)]))
+            i = m.end()
+            continue
+
+        out.append(text[i])
+        i += 1
+    return ''.join(out)
 
 
 # ── 레코드 ────────────────────────────────────────────────
@@ -96,13 +162,13 @@ class LSTRecord:
         else:
             if s.startswith(MAIL_SUBJ_PREFIX): s = s[len(MAIL_SUBJ_PREFIX):]
             if s.startswith('\r\x02'):         s = s[2:]
-        return s.rstrip('\r\x00')
+        return s
 
     @property
     def sndr_content(self):
         s = self.sndr_text
         if s.startswith(MAIL_SNDR_PREFIX): s = s[len(MAIL_SNDR_PREFIX):]
-        return s.rstrip('\r\x00')
+        return s
 
     @property
     def has_mail_marker(self):
@@ -189,9 +255,12 @@ def records_to_tsv(records):
     lines = [hdr]
     for r in records:
         if is_db:
-            lines.append(f'{r.idx}\t{r.subj_content}\n')
+            lines.append(f'{r.idx}\t{escape_control_text(r.subj_content)}\n')
         else:
-            lines.append(f'{r.idx}\t{r.subj_content}\t{r.sndr_content}\n')
+            lines.append(
+                f'{r.idx}\t{escape_control_text(r.subj_content)}'
+                f'\t{escape_control_text(r.sndr_content)}\n'
+            )
     return ''.join(lines)
 
 
@@ -202,7 +271,7 @@ def parse_tsv(tsv_text):
         if not line or line.startswith('index\t'): continue
         parts = line.split('\t')
         if len(parts) >= 2:
-            try:    result[int(parts[0])] = tuple(parts[1:])
+            try:    result[int(parts[0])] = tuple(unescape_control_text(p) for p in parts[1:])
             except: pass
     return result
 
@@ -214,7 +283,7 @@ def cmd_extract(args):
     tsv_path = args[1] if len(args) > 1 else lst_path.replace('.lst', '.tsv')
     data    = open(lst_path, 'rb').read()
     records = parse_lst(data)
-    open(tsv_path, 'w', encoding='utf-8').write(records_to_tsv(records))
+    open(tsv_path, 'w', encoding='utf-8', newline='\n').write(records_to_tsv(records))
     kind = 'dbheader' if records[0].is_db else 'header'
     print(f'[추출] {lst_path}  ({kind}, {len(records)}개)  →  {tsv_path}')
     for r in records[:5]:
@@ -231,7 +300,7 @@ def cmd_rebuild(args):
     out_path = args[2] if len(args) > 2 else lst_path.replace('.lst', '_new.lst')
     data    = open(lst_path, 'rb').read()
     records = parse_lst(data)
-    trans   = parse_tsv(open(tsv_path, 'r', encoding='utf-8').read())
+    trans   = parse_tsv(open(tsv_path, 'r', encoding='utf-8', newline='').read())
     charmap = load_charmap(lst_path)
     if charmap: print(f'  치환표 로드됨: {len(charmap)} 항목')
     else:       print('  치환표 없음')
