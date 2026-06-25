@@ -1,18 +1,18 @@
 # chunk 4 @ 0x714 cnum=761 total=16
 # bc_map: 11,15,0,12,10,9,13,14,3,4,1,7,6,5,8,2
-エアロックはセーフティーモードで<lf>
-作動しています。
+에어록은 세이프티 모드로<lf>
+작동 중입니다．
 /[waitkey(64)]/[close()]
-セグメント・アドレスＮｏ．７<lf>
-を発見した。
-と表示されている。
-セグメント・アドレスＮｏ．７の<lf>
-デコードを終了します。
+세그먼트 어드레스 Ｎｏ．７이라고<lf>
+적힌 문을 발견했다．
+표시되어 있다．
+세그먼트 어드레스 Ｎｏ．７의<lf>
+디코드를 종료합니다．
 gunoyose_lgunoyose_lgunoyose_lgunoyose_lgunoyose_l
 gunoyose_rgunoyose_rgunoyose_rgunoyose_rgunoyose_r
 enterd : /[$0]
-【環境シミュレータ】・VOK13へjump！！
-【環境シミュレータ】・VOK12へjump！！
-【環境シミュレータ】・VOK07へjump！！
-【環境シミュレータ】・VOK20へjump！！
+【환경 시뮬레이터】・VOK13로 jump！！
+【환경 시뮬레이터】・VOK12로 jump！！
+【환경 시뮬레이터】・VOK07로 jump！！
+【환경 시뮬레이터】・ＶＯＫ２０으로 점프！！
 entrance: /[$0]
