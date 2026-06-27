@@ -1,0 +1,81 @@
+# think_patch extract: think025.bin.ori
+# 총 16개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x00CA
+　　　Ａ\x19\x01．\x19\x02Ｇ\x19\x01．\x19\x02Ｗ\x19\x01．\x19\x02Ｓ\x19\x01．\x19\x02 탑승
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x016E
+　로열 소드　　Ｐ
+
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x019C
+　지켜본다
+
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x01C0
+　대기한다
+
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x0206
+　방어　　
+　카운터 부스트 １０％ＵＰ
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x02E0
+　  기동 무기에 탑승
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x0310
+　  기동 무기에 탑승
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x0372
+　서브머신건　　Ｐ
+
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x0398
+　플래시 그레네이드　　Ｅ
+
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x03CC
+　지켜본다
+
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x0482
+　드래곤 스케일　　Ｐ
+
+<<<
+
+>>> [011] op=0x21(display) flag=0x00 offset=0x04AA
+　６８식 미사일　　Ｐ
+
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x04D8
+　대기한다
+
+<<<
+
+>>> [013] op=0x21(display) flag=0x00 offset=0x052E
+　２０ｍｍ 블래스터　　Ｐ
+
+<<<
+
+>>> [014] op=0x21(display) flag=0x00 offset=0x055A
+　７１식 레일 캐넌　　Ｐ
+
+<<<
+
+>>> [015] op=0x21(display) flag=0x00 offset=0x058E
+　대기한다
+
+<<<

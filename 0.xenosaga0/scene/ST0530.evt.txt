@@ -148,7 +148,7 @@
 아，모모도 대단했슴다！
 # dup_of: line 15, tag8 10
 /[waitkey(1)]/[clear()]
-토니 그 쓸모없는 놈과는 딴판임다！
+쓸모없는 토니 놈과는 딴판임다！
 # dup_of: line 8, tag8 12
 /[waitkey(64)]/[close()]
 /[label(토니)]

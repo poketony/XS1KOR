@@ -1,0 +1,48 @@
+# think_patch extract: think021.bin.ori
+# 총 9개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x0274
+　래피드 빔 건　　Ｅ／Ｂ
+
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0314
+　사고 회로에 쇼트！
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x039C
+　빔 건　　Ｅ／Ｂ／Ｓ
+　　에테르 다운
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x03E2
+　가드
+
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x0460
+　빅토리 캐넌　　Ｅ／Ｂ
+
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x06F6
+　부스트 장치 ５０％ 출력 감소！
+（카운터 부스트 ５０％）
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x0748
+　부스트 장치 ２５％ 출력 감소！
+（카운터 부스트 ２５％）
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x079A
+　부스트 장치 고장！
+（카운터 부스트 불가능）
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x07E2
+　부스트 장치 ５０％ 복구！
+（카운터 부스트 ５０％）
+<<<

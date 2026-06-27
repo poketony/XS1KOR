@@ -66,7 +66,7 @@
 그렇게 말할 상황이 아니에요．
 # dup_of: line 11, tag8 3
 /[waitkey(1)]/[clear()]
-당신들을 쫓던 자들은 대체……？
+여러분을 쫓던 자들은 대체……？
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 5, tag8 1

@@ -97,22 +97,22 @@ EOB****************************************************
 enterd : /[$0]
 evsExitをコールしました
 예<lf>아니요
-イベント2004A:모모와 경비원의 대화
-イベント2004C:모모와 합류
+entrance: /[$0]
+TalkNPC1
 # dup_of: line 70, tag8 30
 예<lf>아니요
 # dup_of: line 71, tag8 11
-イベント2004A:모모와 경비원의 대화
+entrance: /[$0]
 # dup_of: line 72, tag8 9
-イベント2004C:모모와 합류
+TalkNPC1
 # dup_of: line 70, tag8 30
 예<lf>아니요
+イベント2004A:모모와 경비원의 대화
+イベント2004C:모모와 합류
 빨리 열쇠를 가져와！
 안내
 석판
 골치 아픈 녀석이 있군．
-entrance: /[$0]
-TalkNPC1
 # dup_of: line 68, tag8 10
 enterd : /[$0]
 # dup_of: line 69, tag8 12

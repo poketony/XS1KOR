@@ -80,20 +80,20 @@ KickEvent2F!!!!!!!!!!!!!!!!
 サブルート発見
 サブルート発見済＆鍵あり
 サブルート発見済＆鍵なし
-broken
-フォークリフトを壊しました。次回は生成しません。
 enterd : /[$0]
 フラグ立ってないよーーーーーー大丈夫？？
 서브 루트로
-# dup_of: line 62, tag8 15
-フラグ立ってないよーーーーーー大丈夫？？
 entrance: /[$0]
 ロックしてあるメッセージ
+# dup_of: line 62, tag8 15
+entrance: /[$0]
 ロックを解除するメッセージ
 잠금이 해제되었습니다　/[waitkey(64)]/[close()]
 処理を終了したメッセージ
 もうこのキックは無効にしてます
 KEYYYYY!!!!!!!!!
+サブルート
+高さが違うので抜けます
 # dup_of: line 55, tag8 49
 工事中です/[wait(30)]/[close()]
 # dup_of: line 56, tag8 32
@@ -102,11 +102,11 @@ KEYYYYY!!!!!!!!!
 サブルート発見済＆鍵あり
 # dup_of: line 58, tag8 34
 サブルート発見済＆鍵なし
-サブルート
-高さが違うので抜けます
-# dup_of: line 59, tag8 14
 broken
-# dup_of: line 60, tag8 41
 フォークリフトを壊しました。次回は生成しません。
-# dup_of: line 62, tag8 15
+# dup_of: line 59, tag8 14
+enterd : /[$0]
+# dup_of: line 60, tag8 41
 フラグ立ってないよーーーーーー大丈夫？？
+# dup_of: line 62, tag8 15
+entrance: /[$0]
