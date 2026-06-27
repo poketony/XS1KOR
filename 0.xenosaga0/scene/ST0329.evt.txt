@@ -1,50 +1,50 @@
 # chunk 4 @ 0x714 cnum=908 total=18
 # bc_map: 16,0,15,0,12,11,0,12,9,0,13,14,0,17,0,1,7,5,6,4,8,3,10,10,1,7,5,6,4,3,10,2,16
-隔壁スイッチを押しますか？<lf>
+격벽 스위치를 누르겠습니까？<lf>
 /[waitkey(64)]/[close()]
-反応が無い。
+반응이 없다．
 # dup_of: line 2, tag8 0
 /[waitkey(64)]/[close()]
-セグメント・アドレスＮｏ．１８<lf>
-を発見した。
+세그먼트 어드레스 Ｎｏ．１８이라고<lf>
+적힌 문을 발견했다．
 # dup_of: line 2, tag8 0
 /[waitkey(64)]/[close()]
 # dup_of: line 5, tag8 12
-セグメント・アドレスＮｏ．１８<lf>
-と表示されている。
+세그먼트 어드레스 Ｎｏ．１８이라고<lf>
+표시되어 있다．
 # dup_of: line 2, tag8 0
 /[waitkey(64)]/[close()]
-セグメント・アドレスＮｏ．１８の<lf>
-デコードを終了します。
+세그먼트 어드레스 Ｎｏ．１８의<lf>
+디코드를 종료합니다．
 # dup_of: line 2, tag8 0
 /[waitkey(64)]/[close()]
-ＥＶＳ【環境シミュレーター】を終了します。
+ＥＶＳ【환경 시뮬레이터】를 종료합니다．
 # dup_of: line 2, tag8 0
 /[waitkey(64)]/[close()]
 enterd : /[$0]
-【環境シミュレータ】・VOK12へjump！！
-【環境シミュレータ】・VOK05へjump！！
-【環境シミュレータ】・VOK06へjump！！
-【環境シミュレータ】・VOK03へjump！！
-【環境シミュレータ】・VOK18へjump！！
-evsExitをコールしました
-はい<lf>いいえ
+【환경 시뮬레이터】・VOK12로 jump！！
+【환경 시뮬레이터】・VOK05로 jump！！
+【환경 시뮬레이터】・VOK06로 jump！！
+【환경 시뮬레이터】・VOK03로 jump！！
+【환경 시뮬레이터】・ＶＯＫ１８으로 점프！！
+evsExit를 호출했습니다
+예<lf>아니요
 # dup_of: line 23, tag8 10
-はい<lf>いいえ
+예<lf>아니요
 # dup_of: line 16, tag8 1
 enterd : /[$0]
 # dup_of: line 17, tag8 7
-【環境シミュレータ】・VOK12へjump！！
+【환경 시뮬레이터】・VOK12로 jump！！
 # dup_of: line 18, tag8 5
-【環境シミュレータ】・VOK05へjump！！
+【환경 시뮬레이터】・VOK05로 jump！！
 # dup_of: line 19, tag8 6
-【環境シミュレータ】・VOK06へjump！！
+【환경 시뮬레이터】・VOK06로 jump！！
 # dup_of: line 20, tag8 4
-【環境シミュレータ】・VOK03へjump！！
+【환경 시뮬레이터】・VOK03로 jump！！
 # dup_of: line 22, tag8 3
-evsExitをコールしました
+evsExit를 호출했습니다
 # dup_of: line 23, tag8 10
-はい<lf>いいえ
+예<lf>아니요
 entrance: /[$0]
 # dup_of: line 1, tag8 16
-隔壁スイッチを押しますか？<lf>
+격벽 스위치를 누르겠습니까？<lf>

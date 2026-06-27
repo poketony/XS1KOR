@@ -1,33 +1,33 @@
 # chunk 4 @ 0x708 cnum=614 total=20
 # bc_map: 12,2,0,18,3,11,3,16,3,17,3,1,8,15,10,3,1,19,14,9,3,13,5,4,6,7
-すでに息絶えているようだ。
+이미 숨이 끊어진 것 같다．
 /[waitkey(64)]/[clear()]
-/[color(0x329bbe)]船員部屋の鍵/[color(0xffffff)]があります。<lf>
-取りますか？
+/[color(0x329bbe)]선원실 열쇠/[color(0xffffff)]가 있다．<lf>
+가져가겠습니까？
 /[waitkey(64)]/[close()]
-すでに息絶えている。
+이미 숨이 끊어졌다．
 # dup_of: line 5, tag8 3
 /[waitkey(64)]/[close()]
-ロックがかかっている。
+잠겨 있다．
 # dup_of: line 5, tag8 3
 /[waitkey(64)]/[close()]
-ロックが解除された。
+잠금이 해제되었다．
 # dup_of: line 5, tag8 3
 /[waitkey(64)]/[close()]
-/[label(バージル)]
-おいっ、役立たずがっ！！<lf>
-ボヤボヤしてないで<lf>
-さっさと逃げろ！！
+/[label(버질)]
+이봐，쓸모없는 녀석！！<lf>
+꾸물대지 말고<lf>
+빨리 도망쳐！！
 # dup_of: line 5, tag8 3
 /[waitkey(64)]/[close()]
 # dup_of: line 12, tag8 1
-/[label(バージル)]
-民間人のおまえに<lf>
-ウロチョロされてたら<lf>
-こっちまで巻き添え食っちまうんだ！！
+/[label(버질)]
+민간인인 네가<lf>
+얼쩡거리고 있으면<lf>
+이쪽까지 휘말린다고！！
 # dup_of: line 5, tag8 3
 /[waitkey(64)]/[close()]
-はい<lf>いいえ
+예<lf>아니요
 enterd : /[$0]
 TalkNPC1
 entrance: /[$0]

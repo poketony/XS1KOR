@@ -6,297 +6,297 @@ MoveU
 # chunk 4 @ 0x14ac cnum=1144 total=135
 # bc_map: 4,39,10,4,77,33,10,5,47,96,10,4,34,32,81,10,5,54,110,66,10,4,31,48,11,4,62,59,10,5,36,60,42,10,4,64,41,114,0,111,69,11,4,57,10,5,35,44,2,0,115,55,56,10,4,30,61,11,6,95,10,5,24,109,0,50,29,28,10,6,26,91,79,10,7,127,10,6,23,10,7,128,10,6,99,93,121,10,7,85,94,10,5,37,65,104,0,97,10,6,88,102,58,0,67,120,105,0,52,101,10,5,82,113,106,10,6,46,119,10,5,27,133,51,10,6,87,90,10,5,89,10,6,25,98,92,10,5,49,10,7,38,53,40,10,5,134,100,11,125,11,43,11,132,11,131,11,5,45,112,11,8,126,80,9,107,118,0,123,11,8,126,80,9,107,118,0,124,11,8,116,117,108,11,3,86,11,3,78,83,11,43,19,76,70,103,68,1,71,63,12,22,72,73,74,75,84,122,20,21,17,129,16,130,13,14,14,15
 # bc_unmap: 18
-/[label(ケイオス)]
-おはようシオン
+/[label(케이오스)]
+좋은 아침，시온
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 4
-/[label(ケイオス)]
-シオンって、<lf>
-いつも元気だね
+/[label(케이오스)]
+시온은<lf>
+늘 활기차네．
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
-/[label(シオン)]
-そうかな？<lf>
-変かしら。
+/[label(시온)]
+그래？<lf>
+좀 이상한가？
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 4
-/[label(ケイオス)]
-ううん、<lf>
-いいと思うよ。<lf>
-ボクは好きだな。
+/[label(케이오스)]
+아니，<lf>
+보기 좋은데 뭘．<lf>
+적어도 난 좋아．
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 8, tag8 5
-/[label(シオン)]
-だったら、ケイオス君も<lf>
-私より若いんだから<lf>
-もっと元気出さなきゃ！
+/[label(시온)]
+그럼 케이오스도<lf>
+나보다 어리니까<lf>
+좀 더 활기차게 지내 봐！
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 4
-/[label(ケイオス)]
-あはは、<lf>
-そうだね
+/[label(케이오스)]
+아하하，<lf>
+듣고 보니 맞는 말이네．
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 4
-/[label(ケイオス)]
-なんか、朝からあわただしいね<lf>
-どうかしたの？
+/[label(케이오스)]
+아침부터 좀 소란스럽네．<lf>
+무슨 일 있어？
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 8, tag8 5
-/[label(シオン)]
-うん、<lf>
-どうもカタパルトに異常があるみたい。<lf>
-これから調べにいくところなの。
+/[label(시온)]
+응，<lf>
+아무래도 캐터펄트에 이상이 있나 봐．<lf>
+지금 확인하러 가는 길이야．
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 4
-/[label(ケイオス)]
-ふーん<lf>
-この船のカタパルトって、<lf>
-船長やトニーが無茶な使い方するからなぁ。
+/[label(케이오스)]
+흐음……<lf>
+이 배의 캐터펄트는<lf>
+선장님이나 토니가 험하게 쓰니까．
 <lf>
-結構、あちこち<lf>
-ガタついてるのかもね。
+여기저기 꽤<lf>
+덜컹거릴지도 모르겠다．
 # dup_of: line 25, tag8 11
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 4
-/[label(ケイオス)]
-つきあおうか？
+/[label(케이오스)]
+같이 갈래？
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 8, tag8 5
-/[label(シオン)]
-ううん、大丈夫よ<lf>
-これでも一応、<lf>
-/[font(ＫＯＳ−ＭＯＳ)]の開発者なんだから！
+/[label(시온)]
+아니，괜찮아．<lf>
+이래 봬도 일단은<lf>
+/[font(ＫＯＳ−ＭＯＳ)]의 개발자거든！
 # dup_of: line 39, tag8 0
 <lf>
-貨客船の異常の一つや二つ<lf>
-ちょちょいのちょい！<lf>
-ってね
+화객선에 생긴 이상 한둘쯤은<lf>
+뚝딱！<lf>
+해치울 수 있어．
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 4
-/[label(ケイオス)]
-あはは<lf>
-なら、安心だね
+/[label(케이오스)]
+아하하<lf>
+그 말을 들으니 안심이 되네．
 # dup_of: line 25, tag8 11
 /[waitkey(64)]/[close()]
-/[label(ジギー)]
-君がこの船の責任者か？
+/[label(지기)]
+네가 이 배의 책임자인가？
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 8, tag8 5
-/[label(シオン)]
-あ、違います。<lf>
-私は単なる乗客ですよ。
+/[label(시온)]
+아，아닙니다．<lf>
+저는 그냥 승객이에요．
 # dup_of: line 39, tag8 0
 <lf>
-それより、<lf>
-あの船に乗ってたのは、<lf>
-あなた方二人だけですか？
+그보다<lf>
+그 배에 타고 있던 건<lf>
+여러분 둘뿐인가요？
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 59, tag8 6
-/[label(ジギー)]
-ああ、そうだ<lf>
-俺は連邦政府の献体サイボーグ、<lf>
-ジグラット…。
+/[label(지기)]
+그렇다．<lf>
+나는 연방 정부의 헌체 사이보그，<lf>
+지구라트……
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
-/[label(モモ)]
-（じー）
+/[label(모모)]
+（빤히）
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 59, tag8 6
-/[label(ジギー)]
-………ジギーだ。
+/[label(지기)]
+………지기다．
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 75, tag8 7
-/[label(モモ)]
-（ニコ！）
+/[label(모모)]
+（방긋！）
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 59, tag8 6
-/[label(ジギー)]
-彼女はモモ。<lf>
-俺同様、<lf>
-連邦政府に属するレアリエンだ。
+/[label(지기)]
+그녀는 모모．<lf>
+나와 마찬가지로<lf>
+연방 정부 소속 리얼리언이지．
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 75, tag8 7
-/[label(モモ)]
-モモです。<lf>
-助けていただいてありがとうございます。
+/[label(모모)]
+모모입니다．<lf>
+구해 주셔서 감사합니다．
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 8, tag8 5
-/[label(シオン)]
-うーん、お礼を言うのはまだ早いわよ。<lf>
-まだまだ、<lf>
-敵がこの船の中に入り込んでるのよ。
+/[label(시온)]
+으음，아직 고맙다고 하기엔 일러．<lf>
+적이 이 배 안에<lf>
+들어와 있는 상태니까．
 # dup_of: line 39, tag8 0
 <lf>
-彼らは、一体何者なの？
+그들은 대체 누구죠？
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 59, tag8 6
-/[label(ジギー)]
-侵入した敵機は、Ｕ−ＴＩＣ機関と呼ばれる組織が<lf>
-所有するオーテック。<lf>
-つまり無人機だ。
+/[label(지기)]
+침입한 적기는 Ｕ−ＴＩＣ 기관이라는<lf>
+조직이 소유한 오테크．<lf>
+즉 무인기다．
 # dup_of: line 39, tag8 0
 <lf>
-やつらの小惑星から脱出した俺達を<lf>
-追ってきた部隊の残存兵力だが、<lf>
-母機が転送システムを搭載している。
+놈들의 소행성에서 탈출한 우리를<lf>
+쫓아온 부대의 잔존 병력이지만，<lf>
+모함이 전송 시스템을 탑재하고 있지．
 # dup_of: line 39, tag8 0
 <lf>
-それを叩かない限り、<lf>
-戦闘端末が次々と転送されてくるだろう。
+그걸 공격하지 않는 한<lf>
+전투 단말기가 계속 올 거다．
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 8, tag8 5
-/[label(シオン)]
-マズイわね、放っておけば<lf>
-船中が敵だらけにされて、<lf>
-沈んじゃうわ。
+/[label(시온)]
+큰일이네요，그대로 두면<lf>
+배 안이 적으로 가득 차서<lf>
+가라앉고 말 거예요．
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 59, tag8 6
-/[label(ジギー)]
-すまない。<lf>
-迷惑をかける。
+/[label(지기)]
+미안하다．<lf>
+폐를 끼쳤군．
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 8, tag8 5
-/[label(シオン)]
-ああ、気にしないで。<lf>
-２人のせいじゃないわよ。<lf>
-それより、その母機を何とかしなきゃ！
+/[label(시온)]
+아，신경 쓰지 마세요．<lf>
+두 사람 탓이 아니잖아요．<lf>
+그보다 그 모함을 어떻게든 해야 해요！
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 59, tag8 6
-/[label(ジギー)]
-了解だ。<lf>
-俺たちも協力させてもらおう
+/[label(지기)]
+알았다．<lf>
+우리도 협력하지．
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 8, tag8 5
-/[label(シオン)]
-俺たちって、モモちゃんも！？
+/[label(시온)]
+우리라니，모모도요！？
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 59, tag8 6
-/[label(ジギー)]
-ああ、<lf>
-彼女はこう見えて<lf>
-俺より役に立つ
+/[label(지기)]
+그래，<lf>
+그녀는 이렇게 보여도<lf>
+나보다 도움이 될 거다．
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 8, tag8 5
-/[label(シオン)]
-そうなの？
+/[label(시온)]
+그래？
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 75, tag8 7
-/[label(モモ)]
-えーと<lf>
-そんなこと無いですけど<lf>
-がんばります！
+/[label(모모)]
+으음，<lf>
+그렇다고 생각하진 않지만<lf>
+열심히 할게요！
 # dup_of: line 3, tag8 10
 /[waitkey(64)]/[clear()]
 # dup_of: line 8, tag8 5
-/[label(シオン)]
-ＯＫ、<lf>
-急ぎましょう！<lf>
+/[label(시온)]
+ＯＫ，<lf>
+서두르자！<lf>
 # dup_of: line 25, tag8 11
 /[waitkey(64)]/[close()]
-隔壁スイッチを押しますか？<lf>
+격벽 스위치를 누르겠습니까？<lf>
 # dup_of: line 25, tag8 11
 /[waitkey(64)]/[close()]
-これが出たら間違いです！
+이게 나오면 오류입니다！
 # dup_of: line 25, tag8 11
 /[waitkey(64)]/[close()]
-１Ｆへ移動しますか？
+１Ｆ로 이동하겠습니까？
 # dup_of: line 25, tag8 11
 /[waitkey(64)]/[close()]
-１Ｆへ移動します。
+１Ｆ로 이동합니다．
 # dup_of: line 25, tag8 11
 /[waitkey(64)]/[close()]
 # dup_of: line 8, tag8 5
-/[label(シオン)]
-これは……。<lf>
-緊急用のスイッチのようね。
+/[label(시온)]
+이건……．<lf>
+비상용 스위치 같아．
 # dup_of: line 25, tag8 11
 /[waitkey(64)]/[close()]
-/[label(警告)]
-電磁フロアーの<lf>
-セーフティーロックを確認。
+/[label(경고)]
+전자기 플로어의<lf>
+세이프티 록을 확인．
 /[waitkey(1)]/[clear()]
-現在、対侵入者用プログラムを<lf>
-起動させる事はできません。
+현재 침입자 대응 프로그램을<lf>
+기동할 수 없습니다．
 # dup_of: line 39, tag8 0
 <lf>
-隔壁のみ閉鎖いたします。
+격벽만 폐쇄합니다．
 # dup_of: line 25, tag8 11
 /[waitkey(64)]/[close()]
 # dup_of: line 162, tag8 8
-/[label(警告)]
+/[label(경고)]
 # dup_of: line 163, tag8 126
-電磁フロアーの<lf>
+전자기 플로어의<lf>
 # dup_of: line 164, tag8 80
-セーフティーロックを確認。
+세이프티 록을 확인．
 # dup_of: line 165, tag8 9
 /[waitkey(1)]/[clear()]
 # dup_of: line 166, tag8 107
-現在、対侵入者用プログラムを<lf>
+현재 침입자 대응 프로그램을<lf>
 # dup_of: line 167, tag8 118
-起動させる事はできません。
+기동할 수 없습니다．
 # dup_of: line 39, tag8 0
 <lf>
-隔壁を開放いたします。
+격벽을 개방합니다．
 # dup_of: line 25, tag8 11
 /[waitkey(64)]/[close()]
 # dup_of: line 162, tag8 8
-/[label(警告)]
-貨物搬出入時以外の<lf>
-貨物用エレベーターの使用は、<lf>
-禁止されています。
+/[label(경고)]
+화물 반출입 시가 아닐 때<lf>
+화물용 엘리베이터는<lf>
+이용이 금지되어 있습니다．
 # dup_of: line 25, tag8 11
 /[waitkey(64)]/[close()]
 /[label()]
-下の階に降りますか？
+아래층으로 내려가겠습니까？
 # dup_of: line 25, tag8 11
 /[waitkey(64)]/[close()]
 # dup_of: line 185, tag8 3
 /[label()]
-シオン宛に<lf>
-メールが届いてるよ！！
+시온 앞으로<lf>
+메일이 도착했어！！
 # dup_of: line 25, tag8 11
 /[waitkey(64)]/[close()]
 # dup_of: line 152, tag8 43
-これが出たら間違いです！
+이게 나오면 오류입니다！
 bottom***********************
 キーコントロール奪いました８
 キーコントロール奪いました２
-押す<lf>押さない
-エレベーター
+누른다<lf>누르지 않는다
+엘리베이터
 **********************************
 キーコントロール奪いました３
-はい<lf>いいえ
+예<lf>아니요
 MoveD
 on!!
 キーコントロール奪いました４
 キーコントロール奪いました５
 キーコントロール奪いました６
 キーコントロール奪いました７
-メールを見る<lf>メールを見ない
-降りる<lf>降りない
+메일을 본다<lf>메일을 보지 않는다
+내려간다<lf>내려가지 않는다
 enterd : /[$0]
 entrance: /[$0]
 automatic_door

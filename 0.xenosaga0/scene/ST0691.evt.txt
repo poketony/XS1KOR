@@ -1,152 +1,152 @@
 # chunk 4 @ 0x1edc cnum=790 total=65
 # bc_map: 9,55,56,4,1,48,4,0,14,54,3,30,19,17,4,1,16,42,38,4,2,11,4,1,10,4,2,62,4,1,12,4,1,44,61,4,2,39,46,4,0,27,25,3,35,58,29,3,18,4,1,40,64,41,3,34,4,1,36,60,53,3,32,52,4,0,24,57,4,1,26,59,4,0,21,13,37,3,31,4,1,47,50,23,4,0,45,4,1,15,49,43,4,0,28,4,2,20,33,22,4,0,63,51,4,7,8,6,6,6,6,6,5
-××フロアを作動します。<lf>
-移動範囲内の作業員は<lf>
-至急、安全な場所まで待避して下さい。
+×× 플로어를 작동합니다．<lf>
+이동 범위 안에 있는 작업자는<lf>
+즉시 안전한 장소로 대피해 주십시오．
 /[waitkey(64)]/[close()]
-/[label(ジギー)]
-君がこの船の責任者か？
+/[label(지기)]
+네가 이 배의 책임자인가？
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
-/[label(シオン)]
-あ、違います。<lf>
-私は単なる乗客ですよ。
+/[label(시온)]
+아，아닙니다．<lf>
+저는 그냥 승객이에요．
 /[waitkey(1)]/[clear()]
-それより、<lf>
-あの船に乗っていたのは、<lf>
-あなた方二人だけですか？
+그보다<lf>
+그 배에 타고 있던 건<lf>
+여러분 둘뿐인가요？
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 5, tag8 1
-/[label(ジギー)]
-ああ、そうだ。<lf>
-俺は連邦政府の献体サイボーグ、<lf>
-ジグラット…
+/[label(지기)]
+그렇다．<lf>
+나는 연방 정부의 헌체 사이보그，<lf>
+지구라트……
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
-/[label(モモ)]
-……。
+/[label(모모)]
+……．
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 5, tag8 1
-/[label(ジギー)]
-………ジギーだ。
+/[label(지기)]
+………지기다．
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 21, tag8 2
-/[label(モモ)]
-（ニコ！）
+/[label(모모)]
+（방긋！）
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 5, tag8 1
-/[label(ジギー)]
-……彼女はモモ。
+/[label(지기)]
+……그녀는 모모．
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 5, tag8 1
-/[label(ジギー)]
-俺同様、<lf>
-連邦政府に属するレアリエンだ。
+/[label(지기)]
+나와 마찬가지로<lf>
+연방 정부 소속 리얼리언이지．
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 21, tag8 2
-/[label(モモ)]
-モモです。<lf>
-助けていただいてありがとうございます。
+/[label(모모)]
+모모입니다．<lf>
+구해 주셔서 감사합니다．
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 8, tag8 0
-/[label(シオン)]
-そうですか。<lf>
-ご無事でなにより……
+/[label(시온)]
+그렇군요．<lf>
+무사해서 다행……이라고
 # dup_of: line 11, tag8 3
 /[waitkey(1)]/[clear()]
-と言いたいところだけど、<lf>
-船内に敵機が侵入して、<lf>
-そうも言ってられない状況なんです。
+말하고 싶지만，<lf>
+선내에 적기가 침입해서<lf>
+그렇게 말할 상황이 아니에요．
 # dup_of: line 11, tag8 3
 /[waitkey(1)]/[clear()]
-あなた達を追ってた連中って一体……？
+당신들을 쫓던 자들은 대체……？
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 5, tag8 1
-/[label(ジギー)]
-侵入した敵機は、<lf>
-Ｕ−ＴＩＣ機関と呼ばれる組織が<lf>
-保有するオーテック。
+/[label(지기)]
+침입한 적기는<lf>
+Ｕ−ＴＩＣ 기관이라는 조직이<lf>
+보유한 오테크，
 # dup_of: line 11, tag8 3
 /[waitkey(1)]/[clear()]
-つまり無人戦闘機だ。
+즉 무인 전투기다．
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 5, tag8 1
-/[label(ジギー)]
-やつらの小惑星から脱出した俺達を<lf>
-追ってきた部隊の残存兵力だが、<lf>
-母機が転送システムを搭載している。
+/[label(지기)]
+놈들의 소행성에서 탈출한 우리를<lf>
+쫓아온 부대의 잔존 병력이지만，<lf>
+모함이 전송 시스템을 탑재하고 있지．
 # dup_of: line 11, tag8 3
 /[waitkey(1)]/[clear()]
-それを叩かない限り、<lf>
-戦闘端末が次々と転送されてくるだろう。
+그걸 공격하지 않는 한<lf>
+전투 단말기가 계속 올 거다．
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 8, tag8 0
-/[label(シオン)]
-このまま放っておけば<lf>
-船中敵だらけ……か。
+/[label(시온)]
+이대로 두면<lf>
+배 안이 적으로 가득…… 차겠네요．
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 5, tag8 1
-/[label(ジギー)]
-すまない。<lf>
-迷惑をかける。
+/[label(지기)]
+미안하다．<lf>
+폐를 끼쳤군．
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 8, tag8 0
-/[label(シオン)]
-え？<lf>
-あ、いえ、気にしないで下さい。<lf>
-ジギーさん達のせいじゃないですから。
+/[label(시온)]
+응？<lf>
+아，아뇨，신경 쓰지 마세요．<lf>
+지기 씨와 모모 탓이 아니잖아요．
 # dup_of: line 11, tag8 3
 /[waitkey(1)]/[clear()]
-それより、その母機を何とかしなくちゃ！
+그보다 그 모함을 어떻게든 해야 해요！
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 5, tag8 1
-/[label(ジギー)]
-同感だ。<lf>
-微力ながら俺達も協力させてもらおう<lf>
-けじめは付けたい。
+/[label(지기)]
+동감이다．<lf>
+미력하게나마 우리도 협력하지．<lf>
+마무리는 짓고 싶다．
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 8, tag8 0
-/[label(シオン)]
-俺達って、モモちゃんも！？
+/[label(시온)]
+우리라니，모모도요！？
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 5, tag8 1
-/[label(ジギー)]
-ああ、<lf>
-彼女はこう見えて<lf>
-俺より役に立つ。
+/[label(지기)]
+그래，<lf>
+그녀는 이렇게 보여도<lf>
+나보다 도움이 될 거다．
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 8, tag8 0
-/[label(シオン)]
-そうなの？
+/[label(시온)]
+그래？
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 21, tag8 2
-/[label(モモ)]
-えーと<lf>
-そんなこと無いですけど<lf>
-がんばります！
+/[label(모모)]
+으음，<lf>
+그렇다고 생각하진 않지만<lf>
+열심히 할게요！
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 8, tag8 0
-/[label(シオン)]
-ＯＫ、<lf>
-急ぎましょう！
+/[label(시온)]
+ＯＫ，<lf>
+서두르자！
 # dup_of: line 4, tag8 4
 /[waitkey(64)]/[close()]
 enterd : /[$0]

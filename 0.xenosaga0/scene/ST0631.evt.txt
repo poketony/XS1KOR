@@ -1,93 +1,93 @@
 # chunk 3 @ 0x648 cnum=508 total=37
 # bc_map: 1,14,4,3,11,16,10,0,31,4,1,9,33,4,1,22,17,34,4,3,25,4,2,35,36,4,3,13,18,4,1,12,23,5,2,21,4,1,24,27,4,2,29,19,4,1,20,28,26,4,2,8,32,30,5,15,5,14,19,24,29,34,6,7
-/[label(シオン)]
-ここは第二格納庫ね。
+/[label(시온)]
+여기는 제２ 격납고야．
 /[waitkey(64)]/[clear()]
-/[label(モモ)]
-あの……<lf>
-さっきの戦いで<lf>
-あちこち傷つけちゃいましたけど
+/[label(모모)]
+저기……<lf>
+아까 전투에서<lf>
+여기저기 상처를 냈는데
 <lf>
-大丈夫でしょうか？
+괜찮을까요？
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 1
-/[label(シオン)]
-ああ、<lf>
-気にしない気にしない
+/[label(시온)]
+아，<lf>
+신경 안 써도 돼．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 1
-/[label(シオン)]
-どうせ、<lf>
-そのうち借金の形に持ってかれちゃうんだから<lf>
-気にするだけ損よ
+/[label(시온)]
+어차피<lf>
+조만간 빚 대신 압류될 테니까<lf>
+신경 써 봐야 손해야．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[clear()]
 # dup_of: line 4, tag8 3
-/[label(モモ)]
-シャッキンノカタ？
+/[label(모모)]
+빚 대신？
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[clear()]
-/[label(ジギー)]
-船長がこの船を担保に、<lf>
-金を借りたと言うことだ
+/[label(지기)]
+선장이 이 배를 담보로<lf>
+돈을 빌렸다는 뜻이다．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[clear()]
 # dup_of: line 4, tag8 3
-/[label(モモ)]
-えー、<lf>
-そんなにお金に困ってるんですか？
+/[label(모모)]
+에，<lf>
+그렇게나 돈이 궁한 건가요？
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 1
-/[label(シオン)]
-うん、<lf>
-どうやらそうみたい。
+/[label(시온)]
+응，<lf>
+아무래도 그런가 봐．
 /[waitkey(64)]/[close()]
 # dup_of: line 23, tag8 2
-/[label(ジギー)]
-どうした？
+/[label(지기)]
+무슨 일이지？
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 1
-/[label(シオン)]
-アンドリュー中佐がいなくなったんです。<lf>
-一緒に探してくれませんか？
+/[label(시온)]
+앤드루 중령님이 사라졌어요．<lf>
+같이 찾아 주실 수 있나요？
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[clear()]
 # dup_of: line 23, tag8 2
-/[label(ジギー)]
-中佐なら大丈夫だろう<lf>
-そんなに心配する必要は無いと思うが。
+/[label(지기)]
+중령이라면 괜찮겠지．<lf>
+그리 걱정할 필요는 없다．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 1
-/[label(シオン)]
-でも、<lf>
-万が一ってこともありますし、<lf>
-ジギーさんがいれば心強いんで……
+/[label(시온)]
+그치만<lf>
+만약 무슨 일이 생겼을 수도 있고，<lf>
+지기 씨가 있으면 든든해서요……．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[clear()]
 # dup_of: line 23, tag8 2
-/[label(ジギー)]
-……わかった。<lf>
-彼のせいで出発が遅れても困るしな、<lf>
-協力しよう。
+/[label(지기)]
+……알았다．<lf>
+그 때문에 출발이 늦어져도 곤란하니<lf>
+협력하지．
 # dup_of: line 34, tag8 5
 /[waitkey(64)]/[close()]
-これが出たら間違いです！
+이게 나오면 오류입니다！
 # dup_of: line 34, tag8 5
 /[waitkey(64)]/[close()]
 # dup_of: line 2, tag8 14
-ここは第二格納庫ね。
+여기는 제２ 격납고야．
 # dup_of: line 44, tag8 19
-そんなに心配する必要は無いと思うが。
+그리 걱정할 필요는 없다．
 # dup_of: line 39, tag8 24
-アンドリュー中佐がいなくなったんです。<lf>
+앤드루 중령님이 사라졌어요．<lf>
 # dup_of: line 43, tag8 29
-中佐なら大丈夫だろう<lf>
+중령이라면 괜찮겠지．<lf>
 # dup_of: line 18, tag8 34
-気にするだけ損よ
+신경 써 봐야 손해야．
 enterd : /[$0]
 entrance: /[$0]

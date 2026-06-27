@@ -10,18 +10,18 @@ move
 
 # chunk 4 @ 0xbac cnum=583 total=9
 # bc_map: 8,0,7,1,7,2,7,3,7,4,5,6
-フロアーを移動しますか？
+플로어를 이동시키겠습니까？
 /[waitkey(64)]/[close()]
-はい<lf>いいえ
+예<lf>아니요
 Move
 # dup_of: line 3, tag8 7
-はい<lf>いいえ
+예<lf>아니요
 Move2
 # dup_of: line 3, tag8 7
-はい<lf>いいえ
+예<lf>아니요
 Move3
 # dup_of: line 3, tag8 7
-はい<lf>いいえ
+예<lf>아니요
 Move4
 enterd : /[$0]
 entrance: /[$0]

@@ -1,194 +1,194 @@
 # chunk 3 @ 0x648 cnum=735 total=80
 # bc_map: 3,16,39,57,0,27,6,2,13,33,7,2,78,0,77,71,24,0,79,7,3,18,72,44,7,2,73,76,7,3,66,42,38,7,2,74,75,49,7,2,34,6,3,47,53,61,6,2,20,14,6,3,22,64,6,2,19,52,46,0,41,7,3,43,56,69,6,2,12,50,6,3,31,54,70,6,2,11,7,3,29,6,3,51,28,6,5,17,65,6,3,15,62,67,0,21,26,6,3,40,6,4,58,59,60,6,3,35,6,3,32,7,3,55,37,7,3,23,7,3,45,25,7,30,7,1,68,63,7,66,36,48,36,48,9,10,8
-/[label(シオン)]
-あ、アレン君！？<lf>
-ちょっと、<lf>
-何してるの？
+/[label(시온)]
+아，알렌！？<lf>
+잠깐，<lf>
+뭐 하는 거야？
 <lf>
-ここ、女性の部屋よ
+여긴 여성용 방이라구．
 /[waitkey(64)]/[clear()]
-/[label(アレン)]
-あ、あの、<lf>
-しゅ、しゅ、しゅにん……
+/[label(알렌)]
+저，저기，<lf>
+주，주，주임님……
 /[waitkey(64)]/[close()]
 # dup_of: line 8, tag8 2
-/[label(アレン)]
-（行け！アレン）
+/[label(알렌)]
+（가라！ 알렌）
 # dup_of: line 5, tag8 0
 <lf>
-（今なら主任と二人きりだ、<lf>
-誰にも邪魔されずに<lf>
-お前の思いをぶつける事ができるんだぞ！）
+（지금은 주임님과 단둘이야，<lf>
+누구에게도 방해받지 않고<lf>
+네 마음을 전할 수 있어！）
 # dup_of: line 5, tag8 0
 <lf>
-（ＧＯ！アレンＧＯ！！）
+（ＧＯ！ 알렌 ＧＯ！！）
 # dup_of: line 11, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 3
-/[label(シオン)]
-あー<lf>
-部屋を間違えたのね<lf>
-まったく、そそっかしいなぁ
+/[label(시온)]
+아，<lf>
+방을 잘못 찾아왔구나？<lf>
+정말이지 엄청 덜렁댄다니까．
 # dup_of: line 11, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 8, tag8 2
-/[label(アレン)]
-（そうじゃない、違うんです）<lf>
-（主任を待っていたんです！）<lf>
+/[label(알렌)]
+（그게 아니에요，아닙니다！）<lf>
+（주임님을 기다리고 있었어요！）<lf>
 # dup_of: line 11, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 3
-/[label(シオン)]
-私だからいいようなものの<lf>
-ほかの女性だったら<lf>
-ただじゃ済まないわよぉ
+/[label(시온)]
+나라서 이 정도지，<lf>
+다른 여자였으면<lf>
+그냥 넘어가지 않았을걸．
 # dup_of: line 11, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 8, tag8 2
-/[label(アレン)]
-（ほかの女性なんかどうでもいいんです）<lf>
-（ボクは主任がいれば……、<lf>
-ボクのこの気持ち、受け止めてください！）
+/[label(알렌)]
+（다른 여자는 아무래도 좋습니다）<lf>
+（저는 주임님만 있으면……<lf>
+저의 이 마음을 받아 주세요！）
 # dup_of: line 11, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 8, tag8 2
-/[label(アレン)]
-しゅ、主任！<lf>
+/[label(알렌)]
+주，주임님！<lf>
 # dup_of: line 7, tag8 6
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 3
-/[label(シオン)]
-アレン君も<lf>
-一応、男なんだから、<lf>
-気をつけなきゃダメよ
+/[label(시온)]
+알렌도<lf>
+일단은 남자니까<lf>
+조심해야지．
 # dup_of: line 7, tag8 6
 /[waitkey(64)]/[clear()]
 # dup_of: line 8, tag8 2
-/[label(アレン)]
-え、は、はぁ？<lf>
-あ、あの、一応…ですか？
+/[label(알렌)]
+네，에，예？<lf>
+저，저기，일단…인가요？
 # dup_of: line 7, tag8 6
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 3
-/[label(シオン)]
-え？<lf>
-男じゃないの？
+/[label(시온)]
+응？<lf>
+남자 아니야？
 # dup_of: line 7, tag8 6
 /[waitkey(64)]/[clear()]
 # dup_of: line 8, tag8 2
-/[label(アレン)]
-いえ、<lf>
-一応……です。<lf>
-よね…
+/[label(알렌)]
+아뇨，<lf>
+일단…… 맞습니다．<lf>
+그렇죠…．
 # dup_of: line 5, tag8 0
 <lf>
-はぁ………
+하아………
 # dup_of: line 11, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 3
-/[label(シオン)]
-ほら、早く出ていった方がいいわよ<lf>
-他の人に見つかると<lf>
-色々うるさいだろうから
+/[label(시온)]
+자，빨리 나가는 게 좋겠어．<lf>
+다른 사람에게 들키면<lf>
+이래저래 시끄러워질 테니까．
 # dup_of: line 7, tag8 6
 /[waitkey(64)]/[clear()]
 # dup_of: line 8, tag8 2
-/[label(アレン)]
-あ、あぁ主任………<lf>
-ボクはですねぇ
+/[label(알렌)]
+아，아아 주임님………<lf>
+저는 말이죠……
 # dup_of: line 7, tag8 6
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 3
-/[label(シオン)]
-ごめん、ごめん<lf>
-今忙しいから<lf>
-話は後でね。
+/[label(시온)]
+미안 미안．<lf>
+지금은 바빠，<lf>
+이야기는 나중에 해 줘．
 # dup_of: line 7, tag8 6
 /[waitkey(64)]/[clear()]
 # dup_of: line 8, tag8 2
-/[label(アレン)]
-あ、あぁぁ……
+/[label(알렌)]
+아，아아아……
 # dup_of: line 11, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 3
-/[label(シオン)]
-ここは、女性用の部屋。<lf>
+/[label(시온)]
+여기는 여성용 방．<lf>
 # dup_of: line 7, tag8 6
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 3
-/[label(シオン)]
-モモちゃんは、<lf>
-ここで私と寝るのよ。
+/[label(시온)]
+모모는<lf>
+여기서 나랑 같이 자면 돼．
 # dup_of: line 7, tag8 6
 /[waitkey(64)]/[clear()]
-/[label(モモ)]
-あの、ジギーもダメですか？<lf>
-私、ジギーと一緒がいいです。
+/[label(모모)]
+저，지기도 오면 안 되나요？<lf>
+저는 지기랑 함께 있고 싶어요．
 # dup_of: line 7, tag8 6
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 3
-/[label(シオン)]
-あ、あのね<lf>
-気持ちはわかるけど、<lf>
-私にもいろいろ都合があるし……
+/[label(시온)]
+음，저기……<lf>
+마음은 알겠지만，<lf>
+나도 여러모로 사정이 있고……
 # dup_of: line 5, tag8 0
 <lf>
-えーと<lf>
-きっと、ジギーさんにも都合があるはずよ。
+음……<lf>
+분명 지기 씨도 사정이 있을 거야．
 # dup_of: line 7, tag8 6
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 3
-/[label(シオン)]
-ね、そうですよね！
+/[label(시온)]
+그렇죠 그렇죠！？
 # dup_of: line 7, tag8 6
 /[waitkey(64)]/[clear()]
-/[label(ジギー)]
-全身の９８％が機械とはいえ、一応男だ。<lf>
-同室では何かと問題もあるだろう。<lf>
-君の都合を優先するといい。
-# dup_of: line 7, tag8 6
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 3
-/[label(シオン)]
-そういっていただけると助かります。<lf>
+/[label(지기)]
+전신의 ９８％가 기계라도 난 남자다．<lf>
+같은 방을 쓰면 문제가 되겠지．<lf>
+네 사정을 우선하면 된다．
 # dup_of: line 7, tag8 6
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 3
-/[label(シオン)]
-ごめんね、モモちゃん。
+/[label(시온)]
+그렇게 말씀해 주시니 다행이네요．<lf>
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[clear()]
+# dup_of: line 1, tag8 3
+/[label(시온)]
+미안해 모모．
 # dup_of: line 11, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 3
-/[label(シオン)]
-今日はもう疲れたし、<lf>
-そろそろ、休んだほうがいいかしら？
+/[label(시온)]
+오늘은 이제 피곤하니까<lf>
+슬슬 쉬는 게 좋겠지？
 # dup_of: line 11, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 3
-/[label(シオン)]
-おやすみなさい。
+/[label(시온)]
+안녕히 주무세요．
 # dup_of: line 11, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 3
-/[label(シオン)]
-もう、夜更かしは<lf>
-お肌の敵なのに！
+/[label(시온)]
+정말，밤샘은<lf>
+피부의 적인데！
 # dup_of: line 11, tag8 7
 /[waitkey(64)]/[close()]
-これが出たら間違いです！
+이게 나오면 오류입니다！
 # dup_of: line 11, tag8 7
 /[waitkey(64)]/[close()]
 /[label()]
-船内ＭＡＰ<lf>
-現在地：第二キャビン
+선내 ＭＡＰ<lf>
+현재 위치：제２ 캐빈
 # dup_of: line 11, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 31, tag8 66
-私だからいいようなものの<lf>
-そうね、そろそろ眠くなってきたわ<lf>まだまだ、ちゃんと案内しなくちゃ！
+나라서 이 정도지，<lf>
+그래，슬슬 졸리네<lf>아직이야，제대로 안내해야지！
 フラグオン！
 # dup_of: line 131, tag8 36
-そうね、そろそろ眠くなってきたわ<lf>まだまだ、ちゃんと案内しなくちゃ！
+그래，슬슬 졸리네<lf>아직이야，제대로 안내해야지！
 # dup_of: line 132, tag8 48
 フラグオン！
 enterd : /[$0]

@@ -5,24 +5,24 @@
 
 # chunk 4 @ 0xdb4 cnum=470 total=18
 # bc_map: 0,11,12,2,10,3,1,15,13,2,17,3,0,9,14,3,7,16,8,5,6,4
-/[label(ジギー)]
-…ひとまずブリッジまで行き<lf>
-この船の責任者に事態を説明する。
+/[label(지기)]
+…우선 브리지까지 가서 이 배의<lf>
+책임자에게 상황을 설명하겠다．
 /[waitkey(1)]/[clear()]
-…ついてこれるか？
+…따라와 줄 수 있나？
 /[waitkey(64)]/[close()]
-/[label(モモ)]
-クスッ。<lf>
-さっきも言ったはずですよ？
+/[label(모모)]
+후훗．<lf>
+아까도 말했잖아요？
 # dup_of: line 4, tag8 2
 /[waitkey(1)]/[clear()]
-モモは見た目より丈夫に出来ているって。
+모모는 보기보다 튼튼하다고요．
 # dup_of: line 6, tag8 3
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 0
-/[label(ジギー)]
-…そうか。<lf>
-では、行くぞっ！！
+/[label(지기)]
+…그랬지．<lf>
+그럼 가자！！
 # dup_of: line 6, tag8 3
 /[waitkey(64)]/[close()]
 enterd : /[$0]

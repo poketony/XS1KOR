@@ -1,77 +1,77 @@
 # chunk 1 @ 0x204 cnum=823 total=52
 # bc_map: 4,22,6,4,25,21,6,4,17,20,5,4,19,0,6,4,18,43,6,4,27,6,4,16,5,3,29,50,6,3,46,47,6,39,23,6,1,6,36,28,6,36,24,6,37,38,6,3,9,2,10,8,12,35,49,32,33,34,14,41,31,15,44,15,45,42,48,26,11,30,51,49,32,33,34,13,40,14,41,15
 # bc_unmap: 7
-/[label(シオン)]
-これで扉のロックが解除できるわ！<lf>
+/[label(시온)]
+이제 문의 잠금을 해제할 수 있겠어！　<lf>
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 4
-/[label(シオン)]
-ははあ……<lf>
-この部屋ね……。<lf>
+/[label(시온)]
+하하하……<lf>
+이 방이구나……．<lf>
 # dup_of: line 3, tag8 6
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 4
-/[label(シオン)]
-ええと……<lf>
-この扉を開けるには……<lf>
+/[label(시온)]
+어디 보자……<lf>
+이 문을 열려면……<lf>
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 4
-/[label(シオン)]
-この扉を開けるには<lf>
-/[color(0x329bbe)]ミッションキー/[color(0xffffff)]が必要のようね！<lf>
+/[label(시온)]
+이 문을 열려면<lf>
+/[color(0x329bbe)]미션 키/[color(0xffffff)]가 필요한가 보네！<lf>
 # dup_of: line 3, tag8 6
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 4
-/[label(シオン)]
-こちら側からは開かないわ。<lf>
-ロックされているようね…<lf>
+/[label(시온)]
+이쪽에서는 열리지 않아．<lf>
+잠겨 있는 모양이네…<lf>
 # dup_of: line 3, tag8 6
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 4
-/[label(シオン)]
-もう何もないみたいね…<lf>
+/[label(시온)]
+이젠 아무것도 없는 것 같네…<lf>
 # dup_of: line 3, tag8 6
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 4
-/[label(シオン)]
-うわっ！？<lf>
+/[label(시온)]
+와앗！？<lf>
 # dup_of: line 11, tag8 5
 /[waitkey(64)]/[clear()]
-/[label(アレン)]
-カード差込口に/[color(0x329bbe)]ミッションキー/[color(0xffffff)]を<lf>
-挿入して下さい！
+/[label(알렌)]
+카드 삽입구에 /[color(0x329bbe)]미션 키/[color(0xffffff)]를<lf>
+삽입해 주세요！
 # dup_of: line 3, tag8 6
 /[waitkey(64)]/[close()]
 # dup_of: line 26, tag8 3
-/[label(アレン)]
-主任、コンテナの中にはアイテムが<lf>
-入っているとは限りませんよ！<lf>
+/[label(알렌)]
+주임님，컨테이너 안에 아이템이<lf>
+들어 있을 거라곤 장담 못 합니다！<lf>
 # dup_of: line 3, tag8 6
 /[waitkey(64)]/[close()]
-ナンバー１０<lf>
-と書かれている扉がある・・・。<lf>
+넘버 １０이라고<lf>
+적혀 있는 문이 있다…．<lf>
 # dup_of: line 3, tag8 6
 /[waitkey(64)]/[close()]
-/[color(0x329bbe)]ミッションキー/[color(0xffffff)]を差し込んだ！<lf>
+/[color(0x329bbe)]미션 키/[color(0xffffff)]를 꽂았다！<lf>
 # dup_of: line 3, tag8 6
 /[waitkey(64)]/[close()]
-セグメント・アドレスＮｏ．１０<lf>
-を発見した。
+세그먼트 어드레스 Ｎｏ．１０이라고<lf>
+적혀 있는 문을 발견했다．
 # dup_of: line 3, tag8 6
 /[waitkey(64)]/[close()]
 # dup_of: line 39, tag8 36
-セグメント・アドレスＮｏ．１０<lf>
-と表示されている。
+세그먼트 어드레스 Ｎｏ．１０이라고<lf>
+표시되어 있다．
 # dup_of: line 3, tag8 6
 /[waitkey(64)]/[close()]
-セグメント・アドレスＮｏ．１０の<lf>
-デコードを終了します。
+세그먼트 어드레스 Ｎｏ．１０의<lf>
+디코드를 종료합니다．
 # dup_of: line 3, tag8 6
 /[waitkey(64)]/[close()]
 # dup_of: line 26, tag8 3
-/[label(アレン)]
+/[label(알렌)]
 EOD****************************************************
-/[color(0x329bbe)]ミッションキー/[color(0xffffff)]を手に入れた！/[waitkey(64)]/[close()]
+/[color(0x329bbe)]미션 키/[color(0xffffff)]를 손에 넣었다！　/[waitkey(64)]/[close()]
 Effect!!!!!!!!!
 DOOR!!!!!!!!!
 KickEvent2F!!!!!!!!!!!!!!!!
@@ -80,20 +80,20 @@ KickEvent2F!!!!!!!!!!!!!!!!
 サブルート発見
 サブルート発見済＆鍵あり
 サブルート発見済＆鍵なし
+broken
+フォークリフトを壊しました。次回は生成しません。
 enterd : /[$0]
 フラグ立ってないよーーーーーー大丈夫？？
-サブルートへ
+서브 루트로
+# dup_of: line 62, tag8 15
+フラグ立ってないよーーーーーー大丈夫？？
 entrance: /[$0]
 ロックしてあるメッセージ
-# dup_of: line 62, tag8 15
-entrance: /[$0]
 ロックを解除するメッセージ
-ロックが解除されました/[waitkey(64)]/[close()]
+잠금이 해제되었습니다　/[waitkey(64)]/[close()]
 処理を終了したメッセージ
 もうこのキックは無効にしてます
 KEYYYYY!!!!!!!!!
-サブルート
-高さが違うので抜けます
 # dup_of: line 55, tag8 49
 工事中です/[wait(30)]/[close()]
 # dup_of: line 56, tag8 32
@@ -102,11 +102,11 @@ KEYYYYY!!!!!!!!!
 サブルート発見済＆鍵あり
 # dup_of: line 58, tag8 34
 サブルート発見済＆鍵なし
-broken
-フォークリフトを壊しました。次回は生成しません。
+サブルート
+高さが違うので抜けます
 # dup_of: line 59, tag8 14
-enterd : /[$0]
+broken
 # dup_of: line 60, tag8 41
-フラグ立ってないよーーーーーー大丈夫？？
+フォークリフトを壊しました。次回は生成しません。
 # dup_of: line 62, tag8 15
-entrance: /[$0]
+フラグ立ってないよーーーーーー大丈夫？？

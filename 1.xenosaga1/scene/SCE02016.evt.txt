@@ -10,19 +10,19 @@ FLSmomo_h.fpk
 FLSziggy_h.fpk
 mtn_001
 ziggy_001_serifu
-ここまで機動出来るものとは──
-正直驚いたよ
+이렇게까지 기동할 수 있을 줄이야……
+솔직히 놀랐다
 mtn_002_mae
 momo_002_serifu
 mtn_002
-機銃の制御をそちらに回します
+기관총 제어를 그쪽으로 돌리겠습니다
 mtn_003
 mtn_004
 momo_003_serifu
-射撃をお願い出来ますか
-了解した
+사격을 부탁드려도 될까요？
+알겠다
 ziggy_003_serifu
-その位しないと<lf>護衛の意味がないからな
+그 정도도 안 하면<lf>호위하는 의미가 없으니까
 c02s16_A.cam
 momo_face_005
 mtn_005

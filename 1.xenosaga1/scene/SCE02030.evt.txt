@@ -362,11 +362,11 @@ face1_tonny
 face1_matehws
 face1_hammer
 eyes1_shion
-どうぞ
-ありがとう　ＫＯＳ−ＭＯＳ
-もう──<lf>なに寝てるのよ　アレン君
-船長　お茶です
-おっ　すまんな<lf>そこ置いといてくれ
+여기 있습니다
+고마워 ＫＯＳ−ＭＯＳ
+정말……<lf>왜 자고 있는 거야 알렌
+선장님，차입니다
+오，고마워<lf>거기에 놔 줘
 act2_shadow
 act2_chara
 act2_ziggy
@@ -378,9 +378,9 @@ face2_ziggy
 face2_tonny
 face2_chaos
 eyes2_shion
-ホンっトにさぁ<lf>ヒヤヒヤしたよなぁ
-危ないところだったね
-しかし──<lf>なかなか悪かない逃げっぷりだったぜ　オッサン
+정말이지<lf>완전 간담이 서늘하지 않았어？
+하마터면 큰일 날 뻔했지
+그나저나……<lf>제법 도망치는 솜씨가 좋던데 아저씨？
 act3_chara
 act3_momo
 act3_ziggy
@@ -388,9 +388,9 @@ face3_momo
 face3_ziggy
 eyes3_ziggy
 【モモ】
-ありがとうございます
+감사합니다
 【トニー】
-お　おい<lf>あれ　嬢ちゃんの操縦か
+자，잠깐만<lf>그거 아가씨가 한 거야？
 act4_shion
 act4_tonny
 act4_momo
@@ -401,10 +401,10 @@ face4_ziggy
 face4_tonny
 face4_shion
 eyes4_ziggy
-操舵系統は　モモが制御してました
-マジかよ──<lf>──ったく参るぜ　最近のおコちゃまには
+조타 시스템은 모모가 제어했었어요
+이게 말이 돼……？<lf>……나 참 무섭네 요즘 애들은
 【シオン】
-レアリエンとはいえ凄いのねぇ
+리얼리언이라곤 해도 굉장하네
 act5_chara
 act5_shion
 act5_momo
@@ -418,30 +418,30 @@ act5_cup03
 face5_shion
 face5_momo
 face5_ziggy
-あっ<lf>そういえば　その制服のマーク──
-はい
-あなた──<lf>もしかしてミズラヒ研出身
-はい<lf>百──
-観測用──レアリエンです
+앗<lf>그러고 보니 그 제복에 있는 마크……
+네？
+너……<lf>혹시 미즈라히 연구소 출신이니？
+네<lf>백시……
+관측용…… 리얼리언이에요
 act6_chara
 act6_shion
 act6_tonny
 face6_shion
-大丈夫　心配しないで
-政府の機密関係だったら<lf>こっちのＫＯＳ−ＭＯＳも同じだから
-ミズラヒ研の百式観測用レアリエン
+괜찮아，걱정 안 해도 돼
+정부의 기밀이라는 점에선<lf>우리 ＫＯＳ−ＭＯＳ도 똑같거든
+미즈라히 연구소의 백식 관측용 리얼리언
 act7_chara
 act7_momo
 act7_ziggy
 face7_momo
-ヒルベルト実装型でしょ
+힐베르트 탑재형이지？
 act8_shion
 act8_ziggy
 face8_shion
 face8_momo
-ＫＯＳ−ＭＯＳにもね　流用されてるのよ<lf>ヒルベルト
-もっともこっちはヴェクターオリジナルだけど
-ヴェクターの方なんですか
+ＫＯＳ−ＭＯＳ에게도 장착되어 있거든<lf>힐베르트가
+물론 그건 벡터가 독자적으로 만든 거지만
+벡터 분이신가요？
 act9_chara
 act9_shion
 act9_tonny
@@ -449,34 +449,34 @@ act9_allen
 face9_shion
 face9_allen
 face9_tonny
-そ<lf>あっちのアレン君もね
+맞아<lf>저쪽에 있는 알렌도 그렇고
 act10_chara
 act10_chaos
 act10_tonny
 act10_allen
 face10_chaos
 【ケイオス】
-ねえ　ところで行き先はどこ
+저기，그런데 목적지는 어디야？
 act11_chara
 act11_chaos
 act11_matehws
 act11_hammer
 act11_cup02
 face11_chaos
-方向によっては　“有料”で<lf>送ってあげられるかもしれないよ
-ね　船長
+방향에 따라선 “유료”로<lf>보내 줄 수 있을지도 몰라
+그치 선장님？
 face12_matehws
 【マシューズ】
-そりゃそうだ
-俺達は運び屋だからな
+그야 그렇지
+우린 운반업자니까
 act13_chara
 act13_momo
 act13_ziggy
 act13_matehws
 face13_momo
 eyes13_matehws
-運び屋さん　ですか<lf>では　第二ミルチ──
-では　第二ミルチア太陽系圏まで
+운반업자……시군요<lf>그럼 제２ 미르치……
+그럼 제２ 미르치아 태양계권까지
 act14_chara
 act14_shion
 act14_momo
@@ -485,10 +485,10 @@ act14_tonny
 face14_shion
 face14_ziggy
 eyes14_matehws
-第二ミルチアへ
-あなた達も
+제２ 미르치아로？
+여러분도요？
 【ジギー】
-あなた達も　とは
+여러분도……라는 게 무슨 의미지？
 act15_shadow
 act15_chara
 act15_shion
@@ -497,10 +497,10 @@ act15_matehws
 act15_hammer
 face15_shion
 face15_chaos
-いえ──<lf>偶然だな　と思っただけです
-ＫＯＳ−ＭＯＳの新しい配備先も<lf>第二ミルチアなんです
-いいじゃない<lf>相乗りの方が安く済むよ　シオン
-まあ　それはそうだけど────
+아뇨 그게……<lf>신기한 우연이라고 생각한 것뿐이에요
+ＫＯＳ−ＭＯＳ의 새로운 배치 장소도<lf>제２ 미르치아거든요
+마침 잘됐네<lf>같이 타는 게 더 저렴해 시온
+뭐，그건 그렇지만……
 act16_shadow
 act16_chara
 act16_chaos
@@ -511,9 +511,9 @@ face16_matehws
 face16_hammer
 eyes16_chaos
 【ハマー】
-船長<lf>船体の修理は
-ああ　そっちのが先だな<lf>近くのドックに寄ろう
-それでいいか
+선장님<lf>선체 수리는요？
+아 그래，그쪽이 먼저지<lf>근처 격납고에 부탁하자고
+그래도 되겠나？
 act17_chara
 act17_momo
 act17_ziggy
@@ -523,29 +523,29 @@ act17_hammer
 act17_tonny
 face17_matehws
 face17_shion
-無論だ
-よろしくお願いします
-ま　ゆっくりしてくれ
-ネーチャン　案内してやれ
+물론이다
+잘 부탁드립니다！
+뭐，편안히 지내 달라고
+아가씨，안내 좀 해 줘
 act18_chara
 act18_shion
 face18_shion
 eyes18_shion
-なんか妙に優しいわね
+뭔가 이상하게 친절하네
 act19_chara
 act19_matehws
 act19_hammer
 face19_matehws
 eyes19_shion
-なんだ<lf>おれの顔になんかついてるか
+왜 그래<lf>내 얼굴에 뭐라도 묻었어？
 act20_chara
 act20_shion
 act20_momo
 act20_ziggy
 face20_shion
-え　い　いえ　別に
-それじゃいこうか
-モモちゃん　ジギーさん
+네？ 아，아뇨，안 묻었어요
+그럼 가 볼까요？
+모모，지기 씨
 /[$0]
 /[$0](Cursor = /[$1])
 --shake--

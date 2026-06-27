@@ -1,275 +1,275 @@
 # chunk 3 @ 0xf8c cnum=835 total=117
 # bc_map: 5,35,111,9,7,36,98,9,5,53,9,7,82,89,103,9,5,70,60,10,7,64,9,5,29,88,0,77,59,9,7,80,52,41,8,100,108,106,9,5,69,58,73,10,5,24,110,8,68,45,99,9,7,104,8,51,79,90,9,5,18,10,7,81,78,9,5,34,32,65,9,7,55,8,61,48,0,114,107,9,5,19,10,5,43,3,113,9,6,28,112,10,5,31,25,84,96,116,9,6,2,9,5,33,92,26,74,9,6,1,66,9,5,93,57,91,9,6,83,9,5,30,10,7,62,115,9,7,63,76,40,10,5,75,46,9,7,105,9,5,22,109,97,94,71,9,7,87,10,4,23,56,9,5,86,50,9,4,21,49,9,5,67,38,10,5,86,85,101,8,39,42,102,0,27,44,9,4,20,54,95,10,47,10,5,72,37,10,79,75,16,17,13,15,15,15,14,14,12,11,14
-/[label(シオン)]
-おはよう、/[font(ＫＯＳ−ＭＯＳ)]。<lf>
-調子はどう？
+/[label(시온)]
+좋은 아침，/[font(ＫＯＳ−ＭＯＳ)]．<lf>
+상태는 어때？
 /[waitkey(64)]/[clear()]
 /[label(ＫＯＳ−ＭＯＳ)]
-おはようございます、シオン。<lf>
-特に問題はありません。
+좋은 아침입니다，시온．<lf>
+특별한 문제는 없습니다．
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-そう、元気でなによりね。
+/[label(시온)]
+그래，건강해 보여서 다행이네．
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 5, tag8 7
 /[label(ＫＯＳ−ＭＯＳ)]
-システムが正常に機能しているだけです。<lf>
-元気という言葉は<lf>
-私には当てはまりません。
+시스템이 정상 작동 중일 뿐입니다．<lf>
+건강하다는 말은<lf>
+제게 해당되지 않습니다．
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-もう、朝の挨拶ぐらい<lf>
-つき合ってくれてもいいじゃない！
+/[label(시온)]
+정말，아침 인사 정도는<lf>
+적당히 응해 줘도 되잖아！
 /[waitkey(64)]/[close()]
 # dup_of: line 5, tag8 7
 /[label(ＫＯＳ−ＭＯＳ)]
-どうしました、シオン？
+무슨 일입니까，시온？
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-ううん<lf>
-何でもないわ。
+/[label(시온)]
+아니，<lf>
+아무것도 아니야．
 <lf>
-カタパルトに異常があるから、<lf>
-ちょっと調べにきただけよ。
+캐터펄트에 이상이 있어서<lf>
+잠깐 확인하러 왔어．
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 5, tag8 7
 /[label(ＫＯＳ−ＭＯＳ)]
-シオン<lf>
-すでに理解していると思いますが、<lf>
-ここは、カタパルトではありません。
+시온，<lf>
+이미 이해하고 있으리라 생각합니다만，<lf>
+여기는 캐터펄트가 아닙니다．
 /[waitkey(1)]/[clear()]
-異常のチェックならば、<lf>
-船首のカタパルトデッキに<lf>
-移動するべきなのでは？
+이상을 점검하려면<lf>
+뱃머리에 있는 캐터펄트 덱으로<lf>
+이동해야 하지 않겠습니까？
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-もう、<lf>
-そんなこと言われなくても<lf>
-わかってるって。
+/[label(시온)]
+정말，<lf>
+그런 말 안 해도<lf>
+알고 있다니까．
 # dup_of: line 20, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-あなたのことが気になって<lf>
-見に来たんじゃない。
+/[label(시온)]
+네가 신경 쓰여서<lf>
+보러 온 거 아냐．
 # dup_of: line 35, tag8 8
 /[waitkey(1)]/[clear()]
-まったく<lf>
-この私の親心をどうして<lf>
-理解できないかな……。
+정말이지<lf>
+이런 부모의 마음을 왜<lf>
+이해하지 못하는 걸까……．
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 5, tag8 7
 /[label(ＫＯＳ−ＭＯＳ)]
-私に対する気遣いには感謝いたします。
+저를 배려해 주신 점은 감사드립니다．
 # dup_of: line 35, tag8 8
 /[waitkey(1)]/[clear()]
-しかし、今は<lf>
-カタパルトの異常を調査することが<lf>
-先決だと思いますが？
+하지만 지금은<lf>
+캐터펄트의 이상을 조사하는 것이<lf>
+우선이라고 생각합니다만？
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-………。
+/[label(시온)]
+………．
 # dup_of: line 20, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 5, tag8 7
 /[label(ＫＯＳ−ＭＯＳ)]
-シオン、<lf>
-カタパルトの点検は終了したのですか？
+시온，<lf>
+캐터펄트 점검은 끝났습니까？
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-え？<lf>
-ええ、終わったわ。<lf>
-どうやら問題ないみたいよ。
+/[label(시온)]
+어？<lf>
+응，끝났어．<lf>
+아무래도 문제없는 것 같아．
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 5, tag8 7
 /[label(ＫＯＳ−ＭＯＳ)]
-そうですか。
+그렇습니까．
 # dup_of: line 35, tag8 8
 /[waitkey(1)]/[clear()]
-でしたら、<lf>
-こんな場所をウロウロせずに
+그렇다면<lf>
+이런 곳을 서성거리지 말고
 # dup_of: line 27, tag8 0
 <lf>
-速やかに、<lf>
-船長に報告を行うべきだと思いますが？
+신속히 선장에게<lf>
+보고해야 한다고 생각합니다만？
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-………わかってるわよ。
+/[label(시온)]
+………알고 있어．
 # dup_of: line 20, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-ここも空き部屋だったんだけど、<lf>
-/[font(ＫＯＳ−ＭＯＳ)]の調整室として<lf>
-貸してもらっているの。
+/[label(시온)]
+여기도 빈방이었지만，<lf>
+/[font(ＫＯＳ−ＭＯＳ)]의 조정실로<lf>
+빌려 쓰고 있어．
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
-/[label(モモ)]
-あれが/[font(ＫＯＳ−ＭＯＳ)]さんの<lf>
-調整ベッドですか？
+/[label(모모)]
+저게 /[font(ＫＯＳ−ＭＯＳ)] 씨의<lf>
+조정 베드인가요？
 # dup_of: line 20, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-ええ、一定時間活動した後は、<lf>
-あの中で眠ることによって<lf>
-データを本社にアップロードしているの。<lf>
-活動データをフィードバックさせて、<lf>
-ＯＳのアップデートをすることも出来るのよ。
+/[label(시온)]
+응，일정 시간 활동한 뒤에는<lf>
+저 안에서 수면을 취함으로써<lf>
+데이터를 본사에 업로드하고 있지．<lf>
+활동 데이터를 피드백해서<lf>
+ＯＳ 업데이트도 할 수 있어．
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 89, tag8 6
-/[label(モモ)]
-/[font(ＫＯＳ−ＭＯＳ)]さんも眠るんですか？<lf>
+/[label(모모)]
+/[font(ＫＯＳ−ＭＯＳ)] 씨도 잠을 자나요？<lf>
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-ええ。<lf>
-外界との接続をオフラインにしていても、<lf>
-あの子の中枢素子は<lf>
-アクティブのままだから。
+/[label(시온)]
+응．<lf>
+외부와의 접속을 오프라인으로 해도，<lf>
+저 애의 중추 소자는<lf>
+액티브 상태 그대로니까．
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 89, tag8 6
-/[label(モモ)]
-/[font(ＫＯＳ−ＭＯＳ)]さん、<lf>
-どんな夢を見るんでしょうか。
+/[label(모모)]
+/[font(ＫＯＳ−ＭＯＳ)] 씨는<lf>
+어떤 꿈을 꿀까요？
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-夢……か。<lf>
-それは/[font(ＫＯＳ−ＭＯＳ)]にしか<lf>
-判らないことかな。
+/[label(시온)]
+꿈……이라．<lf>
+그건 /[font(ＫＯＳ−ＭＯＳ)]만이<lf>
+알고 있겠지．
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 89, tag8 6
-/[label(モモ)]
-ステキな夢だといいですね。<lf>
+/[label(모모)]
+멋진 꿈이면 좋겠네요．<lf>
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-ええ、そうね。
+/[label(시온)]
+응，그러게．
 # dup_of: line 20, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 5, tag8 7
 /[label(ＫＯＳ−ＭＯＳ)]
-どうしたのですか、シオン。<lf>
-非常事態ですか？
+무슨 일입니까？ 시온．<lf>
+비상사태입니까？
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 5, tag8 7
 /[label(ＫＯＳ−ＭＯＳ)]
-どうしたのですか？<lf>
-アンドリュー中佐なら<lf>
-ここには居りませんが。
+무슨 일입니까？<lf>
+앤드루 중령이라면<lf>
+여기에는 없습니다만．
 # dup_of: line 20, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-アンドリュー中佐が居なくなったのよ。<lf>
-これから捜しに行くの。
+/[label(시온)]
+앤드루 중령님이 사라졌어．<lf>
+지금부터 찾으러 갈 거야．
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 5, tag8 7
 /[label(ＫＯＳ−ＭＯＳ)]
-私も捜索に参加しますか？
+저도 수색에 참가할까요？
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-あ、いいわ。<lf>
-街の中だから、<lf>
-派手なことも出来ないしね。<lf>
-必要なときは呼ぶから、<lf>
-ゆっくり休んでいて。
+/[label(시온)]
+아，괜찮아．<lf>
+시내라서<lf>
+요란하게 굴 수도 없으니까．<lf>
+필요하면 부를 테니<lf>
+편히 쉬고 있어．
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 5, tag8 7
 /[label(ＫＯＳ−ＭＯＳ)]
-了解しました。
+알겠습니다．
 # dup_of: line 20, tag8 10
 /[waitkey(64)]/[close()]
-/[label(アンドリュー)]
-あぁ、さっきのカレー<lf>
-その──おいしかったよ。
+/[label(앤드루)]
+자네인가，아까 그 카레<lf>
+그…… 맛있더군．
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-中佐、<lf>
-ご・ち・そ・う・さ・ま。
+/[label(시온)]
+중령님！<lf>
+잘・먹・었・습・니・다는요？
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 150, tag8 4
-/[label(アンドリュー)]
-あ、あぁ<lf>
-ご、ごちそう──さま。
+/[label(앤드루)]
+그，그래……<lf>
+자，잘 먹었……습니다．
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-はい、<lf>
-お粗末さまでした！
+/[label(시온)]
+네，<lf>
+서툴렀지만 잘하셨어요！
 # dup_of: line 20, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
+/[label(시온)]
 # dup_of: line 155, tag8 86
-中佐、<lf>
-ヴォークリンデの事は<lf>
-確かに大変な事だったと思います。
+중령님！<lf>
+보클린데 사건은<lf>
+정말 괴로운 일이었다고 생각해요．
 # dup_of: line 35, tag8 8
 /[waitkey(1)]/[clear()]
-けど<lf>
-ここは民間の貨客船で、<lf>
-私たちは単なるお客なんですから。
+하지만<lf>
+여기는 민간 화객선이고，<lf>
+저희는 그냥 손님이잖아요．
 # dup_of: line 27, tag8 0
 <lf>
-あまり軍とか軍人とかに<lf>
-こだわらなくていいと思いますよ。
+군대나 군인이라는 데<lf>
+너무 얽매이지 않아도 돼요．
 # dup_of: line 4, tag8 9
 /[waitkey(64)]/[clear()]
 # dup_of: line 150, tag8 4
-/[label(アンドリュー)]
-……そうか、<lf>
-そうだな。<lf>
-気をつけよう。
+/[label(앤드루)]
+……그런가．<lf>
+듣고 보니 그렇군．<lf>
+주의하지．
 # dup_of: line 20, tag8 10
 /[waitkey(64)]/[close()]
-これが出たら間違いです！
+이게 나오면 오류입니다！
 # dup_of: line 20, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 5
-/[label(シオン)]
-よく眠っているようね…。<lf>
-おやすみなさい、/[font(ＫＯＳ−ＭＯＳ)]。
+/[label(시온)]
+잘 자고 있는 것 같네……．<lf>
+잘 자，/[font(ＫＯＳ−ＭＯＳ)]．
 # dup_of: line 20, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 57, tag8 79
-カタパルトの異常を調査することが<lf>
+캐터펄트의 이상을 조사하는 것이<lf>
 # dup_of: line 134, tag8 75
-アンドリュー中佐が居なくなったのよ。<lf>
+앤드루 중령님이 사라졌어．<lf>
 enterd : /[$0]
 entrance: /[$0]
 Talk_npc8

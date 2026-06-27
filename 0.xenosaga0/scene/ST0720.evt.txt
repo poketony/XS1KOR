@@ -1,78 +1,78 @@
 # chunk 4 @ 0x940 cnum=469 total=21
 # bc_map: 0,14,9,1,15,2,0,14,9,1,15,2,0,14,9,1,15,2,0,14,9,1,15,2,0,10,1,8,12,1,13,16,2,18,2,17,2,20,2,19,2,11,3,3,11,4,4,6,7,5
-/[label(アンドリュー)]
-来たか、<lf>
-いいか、敵の母機がこの奥にいる。
+/[label(앤드루)]
+왔군．잘 들어라，<lf>
+적의 모함이 이 안쪽에 있다．
 /[waitkey(1)]/[clear()]
-気を抜かず、一気にしとめろ！
+방심하지 말고 단숨에 처리해라！
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 0
-/[label(アンドリュー)]
+/[label(앤드루)]
 # dup_of: line 2, tag8 14
-来たか、<lf>
+왔군．잘 들어라，<lf>
 # dup_of: line 3, tag8 9
-いいか、敵の母機がこの奥にいる。
+적의 모함이 이 안쪽에 있다．
 # dup_of: line 4, tag8 1
 /[waitkey(1)]/[clear()]
 # dup_of: line 5, tag8 15
-気を抜かず、一気にしとめろ！
+방심하지 말고 단숨에 처리해라！
 # dup_of: line 6, tag8 2
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 0
-/[label(アンドリュー)]
+/[label(앤드루)]
 # dup_of: line 2, tag8 14
-来たか、<lf>
+왔군．잘 들어라，<lf>
 # dup_of: line 3, tag8 9
-いいか、敵の母機がこの奥にいる。
+적의 모함이 이 안쪽에 있다．
 # dup_of: line 4, tag8 1
 /[waitkey(1)]/[clear()]
 # dup_of: line 5, tag8 15
-気を抜かず、一気にしとめろ！
+방심하지 말고 단숨에 처리해라！
 # dup_of: line 6, tag8 2
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 0
-/[label(アンドリュー)]
+/[label(앤드루)]
 # dup_of: line 2, tag8 14
-来たか、<lf>
+왔군．잘 들어라，<lf>
 # dup_of: line 3, tag8 9
-いいか、敵の母機がこの奥にいる。
+적의 모함이 이 안쪽에 있다．
 # dup_of: line 4, tag8 1
 /[waitkey(1)]/[clear()]
 # dup_of: line 5, tag8 15
-気を抜かず、一気にしとめろ！
+방심하지 말고 단숨에 처리해라！
 # dup_of: line 6, tag8 2
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 0
-/[label(アンドリュー)]
-なんだ、貴様は…？
+/[label(앤드루)]
+뭐냐，네놈은…？
 # dup_of: line 4, tag8 1
 /[waitkey(1)]/[clear()]
-…そうか、船長が救助した<lf>
-クルーザーの乗組員か。
+…그런가，선장이 구조한<lf>
+크루저의 승무원이군．
 # dup_of: line 4, tag8 1
 /[waitkey(1)]/[clear()]
-敵の母機がこの奥にいる。<lf>
-貴様の客だろう、丁寧にもてなしてこい。
+적의 모함이 이 안쪽에 있다．<lf>
+네놈 손님이니 정중히 접대하고 와라．
 # dup_of: line 6, tag8 2
 /[waitkey(64)]/[close()]
-電磁フロアーを解除しますか？
+전자기 플로어를 해제하겠습니까？
 # dup_of: line 6, tag8 2
 /[waitkey(64)]/[close()]
-電磁フロアーを解除します。
+전자기 플로어를 해제합니다．
 # dup_of: line 6, tag8 2
 /[waitkey(64)]/[close()]
-電磁フロアーを起動しますか？
+전자기 플로어를 기동하겠습니까？
 # dup_of: line 6, tag8 2
 /[waitkey(64)]/[close()]
-電磁フロアーを起動します。
+전자기 플로어를 기동합니다．
 # dup_of: line 6, tag8 2
 /[waitkey(64)]/[close()]
-はい<lf>いいえ
+예<lf>아니요
 Chibi
 # dup_of: line 43, tag8 3
 Chibi
 # dup_of: line 42, tag8 11
-はい<lf>いいえ
+예<lf>아니요
 Deka
 # dup_of: line 46, tag8 4
 Deka

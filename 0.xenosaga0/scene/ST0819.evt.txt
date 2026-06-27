@@ -1,78 +1,78 @@
 # chunk 5 @ 0xc98 cnum=760 total=42
 # bc_map: 20,7,3,19,7,3,26,7,4,27,7,4,18,7,4,30,6,29,7,5,0,28,23,36,7,1,31,32,38,7,2,21,37,35,7,1,24,22,34,40,7,5,33,39,7,41,7,24,9,13,20,14,16,25,15,10,10,11,12,17,25
 # bc_unmap: 8
-→司令室
+→사령실
 /[waitkey(64)]/[close()]
-/[label(兵士Ｃ)]
-…早く交代の時間がこないかな。
+/[label(병사 Ｃ)]
+…빨리 교대 시간이 안 오려나．
 # dup_of: line 2, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 3, tag8 3
-/[label(兵士Ｃ)]
-はーあ…　ねむい。
+/[label(병사 Ｃ)]
+하암…… 졸려．
 # dup_of: line 2, tag8 7
 /[waitkey(64)]/[close()]
-/[label(兵士Ｄ)]
-ん？
-# dup_of: line 2, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 9, tag8 4
-/[label(兵士Ｄ)]
-…ハエか？
+/[label(병사 Ｄ)]
+응？
 # dup_of: line 2, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 9, tag8 4
-/[label(兵士Ｄ)]
-パチ！
+/[label(병사 Ｄ)]
+…파리인가？
+# dup_of: line 2, tag8 7
+/[waitkey(64)]/[close()]
+# dup_of: line 9, tag8 4
+/[label(병사 Ｄ)]
+탁！
 /[waitkey(1)]/[clear()]
-チ…　逃がしたか。
+쳇…… 놓쳤나．
 # dup_of: line 2, tag8 7
 /[waitkey(64)]/[close()]
 /[label(Ｚｉｇｇｕｒａｔ８)]
-/[font(Ｕ−ＴＩＣ)]機関の汎用型/[font(Ａ．Ｇ．Ｗ．Ｓ．)]<lf>
-タイプメルクリオだ。<lf>
-さすがに１人でこいつを相手にするのは<lf>
-厳しいな…
+/[font(Ｕ−ＴＩＣ)] 기관의 범용형 /[font(Ａ．Ｇ．Ｗ．Ｓ．)]<lf>
+타입 메르쿠리오다．<lf>
+역시 혼자서 이놈을<lf>
+상대하기는 버겁겠군…．
 # dup_of: line 2, tag8 7
 /[waitkey(64)]/[close()]
-/[label(兵士Ａ)]
-マーグリス司令が確保された<lf>
-レアリエンだが、なんでも物凄い力を<lf>
-持っているという話だが……。
+/[label(병사 Ａ)]
+마굴리스 사령관님이 확보한<lf>
+리얼리언 말인데，엄청난 힘을<lf>
+갖고 있다는 얘기가 있어……．
 # dup_of: line 2, tag8 7
 /[waitkey(64)]/[close()]
-/[label(兵士Ｂ)]
-あんな子供のなりをしている<lf>
-合成人間がか？<lf>
-単なる噂に過ぎないさ。
+/[label(병사 Ｂ)]
+그런 아이 모습을 한<lf>
+합성 인간이？<lf>
+그냥 소문이겠지．
 # dup_of: line 2, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 26, tag8 1
-/[label(兵士Ａ)]
-しかし、マーグリス司令はかなり<lf>
-ご執心のようだぜ？<lf>
-今は聖堂の間の先の、独房錬に<lf>
-閉じ込められているはずだ。
+/[label(병사 Ａ)]
+하지만 마굴리스 사령관님은<lf>
+꽤 집착하시는 모양이던데？<lf>
+지금은 성당의 방 너머에 있는<lf>
+독방동에 갇혀 있댔어．
 # dup_of: line 2, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 20, tag8 5
 /[label(Ｚｉｇｇｕｒａｔ８)]
-二人乗りの小型艇か……<lf>
-脱出の時に使えそうだな。
+２인승 소형정인가……<lf>
+탈출할 때 쓸 수 있겠군．
 # dup_of: line 2, tag8 7
 /[waitkey(64)]/[close()]
-ＥＶＳ【環境シミュレーター】を終了します。
+ＥＶＳ 【환경 시뮬레이터】를 종료합니다．
 # dup_of: line 2, tag8 7
 /[waitkey(64)]/[close()]
 # dup_of: line 37, tag8 24
-しかし、マーグリス司令はかなり<lf>
+하지만 마굴리스 사령관님은<lf>
 FINAL_INIT
 d
 # dup_of: line 1, tag8 20
-→司令室
+→사령실
 enterd : /[$0]
 evsExitをコールしました
-はい<lf>いいえ
+예<lf>아니요
 entrance: /[$0]
 TalkNPC1
 # dup_of: line 56, tag8 10
@@ -81,4 +81,4 @@ TalkNPC3
 TalkNPC4
 idle
 # dup_of: line 54, tag8 25
-はい<lf>いいえ
+예<lf>아니요
