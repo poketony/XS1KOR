@@ -1,1481 +1,1481 @@
-# chunk 4 @ 0x148c cnum=2434 total=503
-# bc_map: 274,27,24,273,80,9,26,24,349,26,24,349,26,24,244,137,271,184,268,125,27,24,309,27,24,129,27,24,130,171,27,24,206,451,27,24,12,11,320,255,395,462,3,27,24,15,10,163,441,365,263,254,439,241,400,181,322,27,24,13,10,163,441,365,263,254,439,241,401,425,321,27,24,16,10,164,26,22,90,26,24,88,370,185,324,364,263,254,439,241,136,224,27,24,14,10,140,26,22,90,26,24,501,180,62,159,263,254,281,465,27,24,87,470,27,24,155,198,27,24,342,176,397,169,27,24,96,106,109,81,110,148,398,86,27,22,243,213,391,104,27,22,242,26,22,196,27,22,265,433,385,238,419,141,279,119,177,357,235,27,22,267,50,51,100,166,423,124,262,388,123,449,202,264,392,227,374,245,310,276,444,115,358,235,27,22,272,217,335,442,383,435,239,337,5,220,375,131,403,464,432,323,410,356,235,27,22,393,386,103,149,306,463,458,473,415,6,413,165,253,141,189,359,235,27,22,139,343,27,22,170,118,27,347,436,405,27,346,27,346,27,350,26,346,26,350,27,261,27,22,275,27,24,498,454,83,316,26,22,108,121,105,26,24,499,91,174,316,187,26,22,108,120,105,26,24,500,471,344,26,22,172,57,341,92,121,105,26,24,502,389,312,414,26,22,64,240,223,26,24,315,26,22,341,92,144,26,24,72,26,22,58,277,73,26,24,160,135,280,26,22,145,26,24,114,101,408,26,22,211,99,122,188,26,24,228,233,313,339,128,311,26,22,209,353,105,26,23,138,134,26,24,158,78,368,116,53,409,434,422,54,56,387,27,24,197,27,22,108,416,27,22,108,457,27,22,108,417,348,214,404,147,26,24,205,216,151,27,24,190,426,420,27,24,152,472,52,27,336,55,340,27,24,167,237,161,27,24,192,250,421,27,24,93,278,229,27,22,437,162,355,27,25,218,132,378,246,98,66,26,25,219,191,168,26,25,218,249,84,26,18,94,173,27,18,453,27,18,153,183,183,251,179,178,27,20,69,226,379,27,17,113,195,248,79,175,27,21,450,266,143,27,20,68,65,363,459,412,186,27,20,308,194,318,394,200,376,27,17,113,2,4,133,117,89,338,27,17,113,427,366,440,406,201,27,21,221,95,424,443,381,225,270,27,21,325,222,438,448,156,27,20,307,390,446,74,460,461,27,20,193,319,63,314,407,85,452,71,382,27,17,232,7,231,60,377,27,17,182,373,362,428,27,17,234,67,345,27,17,207,208,82,8,77,27,17,402,369,469,112,371,111,27,17,215,75,157,76,367,27,21,326,455,354,142,27,21,372,317,447,61,236,97,380,27,24,87,470,26,22,59,430,26,24,204,199,26,22,210,102,351,26,24,247,154,399,27,19,203,27,19,107,26,19,70,466,27,19,230,396,27,19,360,284,27,19,150,146,27,22,126,258,27,283,127,259,27,285,329,1,0,257,352,1,0,334,352,1,0,282,352,1,0,4,11,13,16,18,21,23,27,429,352,331,332,333,333,445,212,295,300,302,304,290,292,291,294,287,289,286,297,299,296,301,305,48,269,384,260,468,327,252,212,411,330,328,42,44,212,43,41,33,46,34,35,36,37,38,39,41,44,47,50,52,56,63,65,68,71,74,77,80,82,86,93,95,98,101,104,107,110,112,116,123,125,128,131,134,285,63,28,28,28,28,28,29,29,29,29,29,30,30,30,30,30,31,31,31,31,31,32,32,32,32,32,361,33,33,33,33,33,404,329,1,0,257,352,1,0,334,352,1,0,282,352,1,0,429,352,331,332,63,333,0,1,2,4,5,7,9,11,13,15,17,18,26,28,29,30,32,33,34,35,36,44,45,46,47,49,333,54,55,56,60,61,62,63,65,67,68,69,71,72,73,74,75,77,78,79,80,81,82,83,84,85,86,88,89,91,93,95,97,99,101,102,111,114,115,116,117,118,52,445,129,131,133,136,137,127,212,295,300,302,304,290,292,291,294,287,289,286,297,299,296,301,305,256,456,45,256,456,45,256,456,45,256,456,45,256,456,45,293,298,288,303,256,256,256,2,6,13,22,32,41,48,51,60,67,70,74,81,91,98,109,48,269,47,49,431,295,384,467,474,481,482,483,484,486,487,488,475,476,477,478,479,480,489,490,491,492,493,494,495,496,497,418,13,260,468,327,252,212,411,330,328,42,44,212,63,43,41,33,46,34,35,36,37,38,39,40
-# bc_unmap: 485
-드릴 게임을 종료합니다．
-/[waitkey(64)]/[close()]
-/[label(홀거)]
-드릴 게임에 온 걸 환영한다！！<lf>
-너희들，처음이지？<lf>
-/[color(0x329bbe)]드릴 패스포트/[color(0xffffff)]를 확인할게．
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-・・・・・・・・・
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-# dup_of: line 9, tag8 349
-・・・・・・・・・
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-좋아！ 확인 종료．<lf>
-이걸로 너희는 우리 손님이다．<lf>
-드릴 게임에 대한 설명은<lf>
-옆에 있는 호리안나에게서 들어 줘．<lf>
-드릴 게임으로 놀고 싶을 때는<lf>
-이쪽에 말을 걸어 주고．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-프리 모드를 설명해 줄까？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-이 미션을 설명해 줄까？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-이 미션은 이미 클리어했어．<lf>
-그래도 도전할 건가？<lf>
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-뭐야 뭐야，구경만 하는 건가．<lf>
-보기만 해선 경품은 못 얻는다고？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-/[color(0xfa3232)]제한 시간 없음．/[color(0xffffff)]<lf>
-/[color(0xfa3232)]드릴을 움직일 수 있는 횟수는 ５회．/[color(0xffffff)]<lf>
-박스를 부수면 아이템이 나온다．<lf>
-게임 종료 후 자유롭게 가져가．<lf>
-반드시 아이템이 들어 있다고는<lf>
-할 수 없지만，경우에 따라서는<lf>
-/[color(0x329bbe)]드릴 키/[color(0xffffff)]를 손에 넣을 수도 있어．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-/[color(0xfa3232)]제한 시간 ８０초！/[color(0xffffff)]<lf>
-/[color(0xfa3232)]드릴은 몇 번이든 움직일 수 있다．/[color(0xffffff)]<lf>
-그 사이에 모든 박스를<lf>
-파괴하는 미션이다．<lf>
-설령 박스를 전부 부순다 해도<lf>
-기둥이 처음 위치로 돌아올 때까지는<lf>
-클리어로 인정되지 않으니 주의해 줘．<lf>
-진정한 드릴러는 끝까지 확실하게<lf>
-해내는 법이라고．<lf>
-성공하면 호화로운 아이템을 선물할게．<lf>
-머리를 조금 쓰면<lf>
-그리 어렵지는 않은 미션이야．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-/[color(0xfa3232)]제한 시간 １２０초！/[color(0xffffff)]<lf>
-# dup_of: line 47, tag8 10
-/[color(0xfa3232)]드릴은 몇 번이든 움직일 수 있다．/[color(0xffffff)]<lf>
-# dup_of: line 48, tag8 163
-그 사이에 모든 박스를<lf>
-# dup_of: line 49, tag8 441
-파괴하는 미션이다．<lf>
-# dup_of: line 50, tag8 365
-설령 박스를 전부 부순다 해도<lf>
-# dup_of: line 51, tag8 263
-기둥이 처음 위치로 돌아올 때까지는<lf>
-# dup_of: line 52, tag8 254
-클리어로 인정되지 않으니 주의해 줘．<lf>
-# dup_of: line 53, tag8 439
-진정한 드릴러는 끝까지 확실하게<lf>
-# dup_of: line 54, tag8 241
-해내는 법이라고．<lf>
-성공하면 호화로운 아이템을 선물할게．<lf>
-정확성이 요구되는 미션이야．<lf>
-실수는 용납되지 않아．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-/[color(0xfa3232)]제한 시간 ９０초！/[color(0xffffff)]<lf>
-# dup_of: line 47, tag8 10
-/[color(0xfa3232)]드릴은 몇 번이든 움직일 수 있다．/[color(0xffffff)]<lf>
-그 사이에 돌아다니는 하얀 악마를
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-/[label(호리안나)]
-토군입니다！！
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-으，으음，그러니까……<lf>
-나는 하얀 악마라고 부르지만<lf>
-어쨌든 그걸 전부 파괴하면<lf>
-미션 클리어야．<lf>
-설령 모든 하얀 악마를 파괴한다 해도<lf>
-# dup_of: line 51, tag8 263
-기둥이 처음 위치로 돌아올 때까지는<lf>
-# dup_of: line 52, tag8 254
-클리어로 인정되지 않으니 주의해 줘．<lf>
-# dup_of: line 53, tag8 439
-진정한 드릴러는 끝까지 확실하게<lf>
-# dup_of: line 54, tag8 241
-해내는 법이라고．<lf>
-이 하얀 악마는 우리의 자랑이다．<lf>
-뭐，전부 파괴하는 건 무리겠지만．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-/[color(0xfa3232)]제한 시간 ５０초！/[color(0xffffff)]<lf>
-# dup_of: line 47, tag8 10
-/[color(0xfa3232)]드릴은 몇 번이든 움직일 수 있다．/[color(0xffffff)]<lf>
-이번 하얀 악마의 성능은
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-# dup_of: line 79, tag8 90
-토군입니다！！
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-ＭＩＳＳＩＯＮ ３의 ３배다．<lf>
-어지간한 드릴혼으로는<lf>
-저 녀석을 상대할 수 없을걸．<lf>
-그래그래，설령 하얀 악마를 파괴해도<lf>
-# dup_of: line 51, tag8 263
-기둥이 처음 위치로 돌아올 때까지는<lf>
-# dup_of: line 52, tag8 254
-클리어로 인정되지 않으니 주의해 줘．<lf>
-나이프를 내려놓기 전까지는<lf>
-식사가 끝나지 않는다는 뜻이지．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-어서 와！<lf>
-１회에 ２００Ｇ다．해 볼래？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-그래！ 할 거구나！<lf>
-어느 모드로 플레이할래？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-……안 하는 거냐！？<lf>
-조금은 드릴혼이 있는 녀석이라고<lf>
-생각했는데 말이지．<lf>
-마음이 생기면 언제든 와！
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-이런，<lf>
-돈이 부족한 모양이야．<lf>
-아ー！ ２００Ｇ만 있었으면！<lf>
-그런 좋은 물건이나 이런 레어한 물건이<lf>
-잔뜩 손에 들어왔을지도<lf>
-모르는데 말이지．<lf>
-미안하지만 다음에 와 줄래？<lf>
-아아 아쉽구만，후우．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-드릴 게임에 어서 오십시오！！<lf>
-처음 오신 분이시죠？<lf>
-왼쪽 카운터에서 /[color(0x329bbe)]드릴 패스포트/[color(0xffffff)] 확인을<lf>
-받아 주세요．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-드릴 게임에 어서 오십시오！！
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-어느 쪽 설명을 해 드릴까요？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-드릴을 움직여 여러 물건을 파괴하는<lf>
-상쾌함과 긴장감이 맞닿아 있는<lf>
-어른의 게임입니다．<lf>
-물론 부수기만 하는 것이 아니라，<lf>
-다양한 아이템과 레어한 경품들이<lf>
-준비되어 있습니다．<lf>
-드릴혼에 자신 있는 분들의 도전을<lf>
-진심으로 기다리고 있습니다．<lf>
-참고로 한 번에 ２００Ｇ입니다．<lf>
-이상이 드릴 게임의 설명입니다．<lf>
-다시 설명해 드릴까요？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-드릴 게임이 시작되면<lf>
-□ 버튼으로 드릴 기둥을 움직입니다．<lf>
-□ 버튼을 누르는 동안 이동합니다．<lf>
-원하는 위치에서 버튼을 떼시면<lf>
-그 자리에서 드릴 기둥이 멈추고<lf>
-다음은 드릴 부분이 이동하게 됩니다．<lf>
-이쪽도 □ 버튼으로 이동합니다．<lf>
-드릴 기둥，드릴 부분의 이동이<lf>
-완료되면 드릴 끝이 낙하합니다．<lf>
-이것은 자동으로 이루어집니다．<lf>
-낙하 지점에 박스가 있으면 파괴，<lf>
-아무것도 없으면 실패입니다．<lf>
-드릴이 멈춰 있다면 왼쪽 스틱으로<lf>
-시점을 바꿀 수 있습니다．<lf>
-또，Ｒ２ 버튼으로 시점을 순식간에<lf>
-전환할 수 있으니 잘 활용하시면<lf>
-보다 충실한 드릴 플레이가 가능합니다．<lf>
-플레이 도중 중단하려면 × 버튼으로<lf>
-드릴 게임을 종료할 수 있습니다．<lf>
-끝난 드릴 게임은 재개할 수 없습니다．<lf>
-부디 주의해 주십시오．<lf>
-이상이 조작 방법의 설명입니다．<lf>
-# dup_of: line 159, tag8 235
-다시 설명해 드릴까요？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-드릴 게임에는 ２가지 모드가 있습니다．<lf>
-하나는 프리 모드입니다．<lf>
-랜덤하게 놓인 박스를 겨냥해<lf>
-파괴하는 모드입니다．<lf>
-부서진 박스에서 나오는 아이템을<lf>
-노리는 드릴러들이 끊이지 않는<lf>
-가장 인기 있는 모드입니다．<lf>
-레어한 경품을 손에 넣기 위한<lf>
-/[color(0x329bbe)]드릴 키/[color(0xffffff)]는 여기서 얻을 수 있습니다．<lf>
-두 번째는 미션 모드입니다．<lf>
-제한 시간 안에 조건을 만족하면<lf>
-세상에 둘도 없는 호화 경품을<lf>
-손에 넣을 수 있는 모드입니다．<lf>
-어려운 저희 드릴 게임의 미션은<lf>
-숙련된 손님들께 호평을 받고 있습니다．<lf>
-미션은 추가될 때도 있습니다．<lf>
-가끔씩 놀러 와서 체크해 보세요．<lf>
-이상이 게임 모드의 설명입니다．<lf>
-# dup_of: line 159, tag8 235
-다시 설명해 드릴까요？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-저희 드릴 게임이 자랑하는<lf>
-대량의 레어 아이템！！<lf>
-손님의 드릴혼이 진짜라면<lf>
-모든 것이 마음먹은 대로입니다．<lf>
-프리 모드에는 /[color(0x329bbe)]드릴 키/[color(0xffffff)]가<lf>
-숨겨진 박스가 있습니다．<lf>
-운 좋게 /[color(0x329bbe)]드릴 키/[color(0xffffff)]를 손에 넣으시면<lf>
-Ｄ・Ｒ・Ｉ・Ｌ・Ｌ 네온사인 아래에 있는<lf>
-경품 전시소에서 사용해 주십시오．<lf>
-/[color(0x329bbe)]드릴 키/[color(0xffffff)] 하나당 경품 하나와<lf>
-교환해 드리겠습니다．<lf>
-또한 미션 모드를 클리어하신 경우에도<lf>
-호화로운 경품이 여럿<lf>
-# dup_of: line 154, tag8 141
-준비되어 있습니다．<lf>
-부디 많이 참가해 주십시오．<lf>
-이상이 경품에 관한 설명입니다．<lf>
-# dup_of: line 159, tag8 235
-다시 설명해 드릴까요？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-이것으로 설명을 마치겠습니다．<lf>
-……괜찮으신가요？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-그럼 저희 드릴 게임을<lf>
-마음껏 즐겨 주십시오．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-・・・・・・・．<lf>
-용도 불명의 버튼이 달려 있다……．<lf>
-눌러 보겠습니까？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-・・・・・・・．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 238, tag8 346
-・・・・・・・．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-・・・・・・！！
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 238, tag8 346
-・・・・・・・．
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 242, tag8 350
-・・・・・・！！
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-드릴의 천사는 파괴되어 있다．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-드릴 게임을 종료하겠습니까？<lf>
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-ＭＩＳＳＩＯＮ １　ＣＯＭＰＬＥＴＥ<lf>
-신속하고 정밀하다．<lf>
-좋은 드릴러의 조건을 만족하고 있어！<lf>
-호리안나！ 경품을 드려！！<lf>
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-알겠습니다．<lf>
-이쪽이 경품입니다．<lf>
-받아 주십시오．
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-ＭＩＳＳＩＯＮ ２　ＣＯＭＰＬＥＴＥ<lf>
-으음，훌륭해！！<lf>
-보기 드문 드릴혼이었어．<lf>
-# dup_of: line 257, tag8 316
-호리안나！ 경품을 드려！！<lf>
-최고로 레어한 녀석을 줘！！<lf>
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-# dup_of: line 260, tag8 108
-알겠습니다．<lf>
-이쪽이 최고로 레어한 경품입니다．<lf>
-# dup_of: line 262, tag8 105
-받아 주십시오．
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-ＭＩＳＳＩＯＮ ３　ＣＯＭＰＬＥＴＥ<lf>
-토군 ５기가 전멸했다고！？<lf>
-……호리안나，경품을 내 드려．
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-마，말도 안 돼……<lf>
-내，내 토군이……<lf>
-……앗！？ 죄송합니다！<lf>
-추，축하드립니다．<lf>
-# dup_of: line 261, tag8 121
-이쪽이 경품입니다．<lf>
-# dup_of: line 262, tag8 105
-받아 주십시오．
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-ＭＩＳＳＩＯＮ ４　ＣＯＭＰＬＥＴＥ<lf>
-완패다！<lf>
-호리안나，이걸로 속이 풀렸겠지．<lf>
-경품을 드려라！<lf>
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-내 토군이 질 리가……<lf>
-역시 그런 낡은 회로로는……<lf>
-중얼중얼중얼……
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-호리안나！
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-# dup_of: line 284, tag8 341
-……앗！？ 죄송합니다！<lf>
-# dup_of: line 285, tag8 92
-추，축하드립니다．<lf>
-하，하지만 무엇을 드리면……
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-그거 있잖아．
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-그，그거라면 요전<lf>
-드릴 선수권에서 막 획득한<lf>
-그것 말입니까……！？
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-그렇다．<lf>
-이분들은 그것을 가질 만한<lf>
-드릴혼을 지니고 계셔．
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-하지만…… 그것은……
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-말이 많다．<lf>
-손님께서 기다리신다고．<lf>
-빨리 드리지 못하겠냐！
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-아，실례했습니다．<lf>
-축하드립니다．<lf>
-이쪽입니다．<lf>
-부디 받아 주십시오．
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-또 클리어해 버린 거냐！？<lf>
-정말 대단하군．<lf>
-호리안나，경품을 드려！<lf>
-……라고 하고 싶지만<lf>
-이 미션의 경품은 다 떨어졌어．<lf>
-호리안나，대신할 걸 드려！
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-예，이쪽입니다．<lf>
-지금 유행하는 카드 게임 세트<lf>
-# dup_of: line 262, tag8 105
-받아 주십시오．
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-/[label(호리안나)]
-이것으로 모든 미션이<lf>
-이분들에 의해 클리어되었습니다．
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-그런가！ 마침내 해냈구나！<lf>
-네 드릴혼은 진짜다！<lf>
-내가 쓰던 거라 미안하지만，<lf>
-이 녀석을 가져가 줘．<lf>
-「최강의 드릴」이다！<lf>
-옛날에는 이걸 써서 눈에 띄는 것들을<lf>
-닥치는 대로 부수고 다녔지．<lf>
-다음 플레이부터는<lf>
-「최강의 드릴」과<lf>
-「보통 드릴」 중에서<lf>
-좋아하는 쪽을 골라 쓸 수 있어．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-어느 드릴로 플레이할 거지？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-# dup_of: line 260, tag8 108
-알겠습니다．<lf>
-최강의 드릴을 세팅합니다．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-# dup_of: line 260, tag8 108
-알겠습니다．<lf>
-보통 드릴을 세팅합니다．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-# dup_of: line 260, tag8 108
-알겠습니다．<lf>
-최강의 드릴을 세팅합니다．<lf>
-・・・・・・・・．<lf>
-앗！？ 죄송합니다！<lf>
-실수로 최약의 드릴을<lf>
-장착해 버렸습니다．
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-뭐라고！？ 윽，이，이건……．<lf>
-빠，빠지질 않아……．<lf>
-이번엔 최약의 드릴로 해 줘．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-왜 그래？ 드릴혼을 떠올려라！！<lf>
-유감상으로 아쿠아지스트를 줄게．<lf>
-다음엔 뜨거운 드릴혼을 보여 줘．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-모처럼 얻은 /[color(0x329bbe)]드릴 키/[color(0xffffff)]를 쓰지 않았잖아！<lf>
-Ｄ・Ｒ・Ｉ・Ｌ・Ｌ의 원하는 문 앞에서<lf>
-○ 버튼을 눌러 봐！
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-리본 달린 상자에<lf>
-「호화로운 경품이 들어 있습니다！」<lf>
-……라고 적혀 있다．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-그 문은 /[color(0x329bbe)]드릴 키/[color(0xffffff)]를 써야 열린다고！<lf>
-물론 /[color(0x329bbe)]드릴 키/[color(0xffffff)]만 있으면<lf>
-거기 있는 경품은 네 거야！！
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-어때？ 노린 먹잇감은 잡았어？<lf>
-아이템이 나와 있으면 챙겨 둬．<lf>
-다음 게임을 시작할 때 치울 거거든．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-어이어이，그만둘 거냐！？<lf>
-드릴혼은 이제 유행이 아닌 건가．<lf>
-또 놀러 와 줘……
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-죄송합니다．<lf>
-그쪽은 현재 준비 중입니다．<lf>
-다른 미션을 선택해 주십시오．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-/[label(은거 노인)]
-허허허．<lf>
-이 아이는 드릴 게임에서 아이템을<lf>
-못 얻는 바람에<lf>
-나더러 사 달라고 조르는구먼．<lf>
-자네들，남는 아이템이<lf>
-있으면 팔아 주지 않겠나？
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 423, tag8 25
-/[label(은거 노인)]
-허허허．아이템을 사겠네．<lf>
-이왕 팔 거면 많이 팔아 주게．<lf>
-그래야 탐도 기뻐할 테니．
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 423, tag8 25
-/[label(은거 노인)]
-# dup_of: line 424, tag8 218
-허허허．<lf>
-아이템이 남으면<lf>
-얼마든지 사겠네．
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-/[label(탐)]
-할아버지，<lf>
-많이 사 줘！
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 441, tag8 18
-/[label(탐)]
-사 줘ー！
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 441, tag8 18
-/[label(탐)]
-아이템을 하나도 못 얻겠어ー！<lf>
-재미없어．<lf>
-# dup_of: line 450, tag8 183
-재미없어．<lf>
-아이템 줘ー！<lf>
-줘！<lf>
-줘！
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-/[label(드릴을 좋아하는 여자)]
-당신，여기는 처음인가 보네．<lf>
-일단 접수부터 하지 그래？<lf>
-접수 카운터는 입구 근처에 있어．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-/[label(운 없는 남자)]
-젠장，젠장，젠장！<lf>
-어디 있는 거야，/[color(0x329bbe)]드릴 키/[color(0xffffff)]는！<lf>
-응！？ /[color(0x329bbe)]드릴 키/[color(0xffffff)]가 뭐냐고？<lf>
-당신 초보자인가？<lf>
-그럼 일단 접수부터 끝내．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-/[label(드릴을 좋아하는 남자)]
-못 보던 얼굴이군．<lf>
-드릴을 다루고 싶다면<lf>
-얼른 접수하는 게 좋을 거다．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 456, tag8 20
-/[label(드릴을 좋아하는 여자)]
-당신，어느 모드로 놀고 있어？<lf>
-난 당연히 프리 모드야．<lf>
-뭐가 나올지 두근거리거든．<lf>
-운 좋게 드릴 키를 얻으면<lf>
-경품도 손에 넣을 수 있고．<lf>
-아무튼 프리 모드를 추천할게．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 456, tag8 20
-/[label(드릴을 좋아하는 여자)]
-프리 모드 박스의 내용물은<lf>
-아무래도 규칙이 있는 것 같아……<lf>
-박스도 여러 종류가 있잖아．<lf>
-반드시 돈이 들어 있는 박스라든가．<lf>
-어느 것에 뭐가 들었는지 알면<lf>
-좋은 걸 빠르게 얻을 수 있을 텐데．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 461, tag8 17
-/[label(운 없는 남자)]
-# dup_of: line 462, tag8 113
-젠장，젠장，젠장！<lf>
-/[color(0x329bbe)]드릴 키/[color(0xffffff)]가 전혀 안 나와！！<lf>
-/[color(0x329bbe)]드릴 키/[color(0xffffff)]만 있으면<lf>
-이 문을 열 수 있을 텐데 말이야！！！<lf>
-여기 경품은 전부 １개 한정이야．<lf>
-으으，빼앗기고 싶지 않아．<lf>
-……당신，가로채면 안 된다！？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 461, tag8 17
-/[label(운 없는 남자)]
-# dup_of: line 462, tag8 113
-젠장，젠장，젠장！<lf>
-마음이 놓이질 않아．<lf>
-내가 드릴 키를 찾는 사이에<lf>
-모르는 누군가가 경품을<lf>
-가져가 버리는 건 아닐까 해서．<lf>
-이봐 당신，가로채지 마라！？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 468, tag8 21
-/[label(드릴을 좋아하는 남자)]
-흥．릴겜은 미션이 최고지．<lf>
-이런，미안 미안．<lf>
-정확히는 드릴 게임이었지．<lf>
-나 같은 숙련자는 릴겜이라고<lf>
-부르거든．<lf>
-뭐，너 같은 초보자는<lf>
-드릴 게임이라고 부르더라고．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 468, tag8 21
-/[label(드릴을 좋아하는 남자)]
-미션 클리어의 비결을 알려 달라고？<lf>
-흥．바보 같은 소리．<lf>
-진정한 드릴러라는 건<lf>
-자기만의 공략법을 갖고 있는 법이야．<lf>
-그리 쉽게 남에게 알려 줄 수는 없지．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 456, tag8 20
-/[label(드릴을 좋아하는 여자)]
-프리 모드 박스의 내용물을<lf>
-조금 알게 됐어．<lf>
-초록색의 가늘고 긴 박스 있지？<lf>
-그걸 부수면 돈이 나오는 것 같아．<lf>
-금액에는 차이가 있지만<lf>
-틀림없어．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 456, tag8 20
-/[label(드릴을 좋아하는 여자)]
-아무래도 /[color(0x329bbe)]드릴 키/[color(0xffffff)]가 들어 있는<lf>
-박스도 정해져 있는 것 같아．<lf>
-어디까지나 소문이지만．<lf>
-호리안나는 친구인 나한테도<lf>
-가르쳐 주질 않더라．<lf>
-아무리 물어봐도 토군 이야기밖에<lf>
-안 하더라니까……．<lf>
-그 애의 토군 사랑도<lf>
-참 어지간해．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 461, tag8 17
-/[label(운 없는 남자)]
-아직도 못 찾겠어……．<lf>
-/[color(0x329bbe)]드릴 키/[color(0xffffff)]……．<lf>
-아직 문이 안 열렸으니 괜찮지만，<lf>
-아아〜 빨리 찾아야 해．
-빼앗겨 버려，빼앗겨 버린다고．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 461, tag8 17
-/[label(운 없는 남자)]
-마침내 /[color(0x329bbe)]드릴 키/[color(0xffffff)]를 찾아낸 녀석이<lf>
-나오고 말았어！<lf>
-뭐가 들어 있었을까．<lf>
-신경 쓰여서 밤에 잠도 못 자겠어．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 461, tag8 17
-/[label(운 없는 남자)]
-벌써 문이 두 개나 열려 버렸어……．<lf>
-이제 셋밖에 안 남았다고．<lf>
-・・・・・・．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 461, tag8 17
-/[label(운 없는 남자)]
-뭐야！？ 당신！<lf>
-생글생글 웃고……．<lf>
-아！ 당신이구나！？<lf>
-/[color(0x329bbe)]드릴 키/[color(0xffffff)]를 가져간 게<lf>
-당신이지！？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 461, tag8 17
-/[label(운 없는 남자)]
-남은 문은 이제 하나……．<lf>
-나는 훨씬 전부터 찾고 있었어．<lf>
-하나 정도는 얻고 말 거야．<lf>
-분명 다른 네 개에는 대단한 물건이<lf>
-들어 있지 않았을 거야．<lf>
-그랬을 게 틀림없어．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 461, tag8 17
-/[label(운 없는 남자)]
-하하…… 문이 전부 열렸나……．<lf>
-당신이 전부 연 거지？<lf>
-그런가……．<lf>
-당신 정도의 드릴혼이<lf>
-나에게도 있었다면……．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 468, tag8 21
-/[label(드릴을 좋아하는 남자)]
-미션 모드에 새로운 미션이<lf>
-추가됐다고 해．<lf>
-이번에는 먹잇감이 움직이고 있어．<lf>
-나도 이건 곤란하더군．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 468, tag8 21
-/[label(드릴을 좋아하는 남자)]
-모든 미션을 클리어하면<lf>
-홀거가 보상을 줄 생각이라고<lf>
-들은 적이 있어．<lf>
-그 녀석은 「최강의 드릴」의 소유자지．<lf>
-혹시 그걸……．<lf>
-어이쿠，잊어 줘．<lf>
-너하곤 관계없는 이야기였어．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-# dup_of: line 113, tag8 87
-어서 와！<lf>
-# dup_of: line 114, tag8 470
-１회에 ２００Ｇ다．해 볼래？
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-아，홀거 님．<lf>
-준비가 아직……
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-뭐라고！？<lf>
-얼마나 걸리지？？
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-네，좀 오래 걸릴 듯합니다．<lf>
-손님께는 죄송하지만<lf>
-나중에 다시 와 주셨으면 합니다．
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 3, tag8 24
-/[label(홀거)]
-으으음〜 미안해．<lf>
-상황이 꼬여 버렸네．<lf>
-미안하지만 나중에 와 줄래？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-/[label(디버그녀)]
-무엇을 해 드릴까요？
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 618, tag8 19
-/[label(디버그녀)]
-돈을 드리겠습니다．
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 618, tag8 19
-/[label(디버그녀)]
-당신은 ２００００Ｇ를 획득！<lf>
-（저는 ２００００Ｇ를 상실！）
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 618, tag8 19
-/[label(디버그녀)]
-아직 많이 가지고 계시잖아요．<lf>
-필요 없습니다！！
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 618, tag8 19
-/[label(디버그녀)]
-가상으로 토군과 만난<lf>
-플래그를 세웠습니다．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 618, tag8 19
-/[label(디버그녀)]
-모든 미션을 클리어한<lf>
-플래그를 세웠습니다．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-이 드릴 게임의 밸런스와<lf>
-대사는 모두 임시입니다．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-패턴 Ｄ의 결과를 얻었습니다<lf>
-이 패턴은 상정하지 않았습니다<lf>
-소스를 체크합시다．
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-프리 플레이(Freeplay)
-미션성공처리(SUCCESS==true)
-/[color(0x329bbe)]카드 팩 ２탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-/[color(0x329bbe)]카드 팩 １탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-스피드 스타를 손에 넣었다！/[waitkey(64)]/[close()]
-두 번째는 없어
-# dup_of: line 650, tag8 1
-/[color(0x329bbe)]카드 팩 ２탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 651, tag8 0
-/[color(0x329bbe)]카드 팩 １탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-야마토 벨트를 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 653, tag8 352
-두 번째는 없어
-# dup_of: line 650, tag8 1
-/[color(0x329bbe)]카드 팩 ２탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 651, tag8 0
-/[color(0x329bbe)]카드 팩 １탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-헌터 아이를 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 653, tag8 352
-두 번째는 없어
-# dup_of: line 650, tag8 1
-/[color(0x329bbe)]카드 팩 ２탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 651, tag8 0
-/[color(0x329bbe)]카드 팩 １탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 492, tag8 4
-/[color(0x329bbe)]드릴 키/[color(0xffffff)]만 있으면<lf>
-# dup_of: line 38, tag8 11
-/[color(0xfa3232)]드릴을 움직일 수 있는 횟수는 ５회．/[color(0xffffff)]<lf>
-# dup_of: line 60, tag8 13
-/[color(0xfa3232)]제한 시간 １２０초！/[color(0xffffff)]<lf>
-# dup_of: line 74, tag8 16
-/[color(0xfa3232)]제한 시간 ９０초！/[color(0xffffff)]<lf>
-# dup_of: line 441, tag8 18
-/[label(탐)]
-# dup_of: line 468, tag8 21
-/[label(드릴을 좋아하는 남자)]
-# dup_of: line 348, tag8 23
-/[label(호리안나)]
-# dup_of: line 2, tag8 27
-/[waitkey(64)]/[close()]
-수영복을 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 653, tag8 352
-두 번째는 없어
-미션 １(Mission 1)
-미션 ２(Mission 2)
-미션 ３(Mission 3)
-# dup_of: line 676, tag8 333
-미션 ３(Mission 3)
-결과 처리(Result_free)
-예<lf>아니요
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ２<lf>ＭＩＳＳＩＯＮ ３<lf>ＭＩＳＳＩＯＮ ４
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ３<lf>ＭＩＳＳＩＯＮ ４
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>ＭＩＳＳＩＯＮ ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ４
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>ＭＩＳＳＩＯＮ ２<lf>ＭＩＳＳＩＯＮ ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ３<lf>ＭＩＳＳＩＯＮ ４
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ４
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ２<lf>ＭＩＳＳＩＯＮ ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ４
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ４
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>ＭＩＳＳＩＯＮ ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>ＭＩＳＳＩＯＮ ２<lf>ＭＩＳＳＩＯＮ ３<lf>ＭＩＳＳＩＯＮ ４
-while 의 선두
-드릴 게임이란？<lf>조작 방법에 대해<lf>게임 모드에 대해<lf>경품에 대해<lf>설명 종료
-파괴물 파괴(broken)
-드릴 게임 종료(drill_end)
-１턴 종료(drill_stanby)
-미션 성공(SUCCESS == true)
-취소 희망(drill_stop)
-# dup_of: line 679, tag8 212
-예<lf>아니요
-타임오버(drill_timeover)
-미션미성공(SUCCESS==false)
-미션성공완료(SUCCESS==true)
-enterd : /[$0]
-evsExit를 호출했습니다
-# dup_of: line 679, tag8 212
-예<lf>아니요
-entrance: /[$0]
-Tenmetu
-Kaiten1
-shoot on
-Talk_npc1
-Talk_npc2
-Talk_npc3
-Talk_npc4
-Talk_npc5
-Talk_npc6
-# dup_of: line 711, tag8 41
-Tenmetu
-# dup_of: line 708, tag8 44
-evsExit를 호출했습니다
-ugauga에 false를 넘겼다
-# dup_of: line 163, tag8 50
-□ 버튼으로 드릴 기둥을 움직입니다．<lf>
-# dup_of: line 397, tag8 52
-○ 버튼을 눌러 봐！
-# dup_of: line 362, tag8 56
-「보통 드릴」 중에서<lf>
-# dup_of: line 533, tag8 63
-어디까지나 소문이지만．<lf>
-# dup_of: line 475, tag8 65
-난 당연히 프리 모드야．<lf>
-# dup_of: line 474, tag8 68
-당신，어느 모드로 놀고 있어？<lf>
-# dup_of: line 538, tag8 71
-그 애의 토군 사랑도<lf>
-# dup_of: line 526, tag8 74
-그걸 부수면 돈이 나오는 것 같아．<lf>
-# dup_of: line 564, tag8 77
-당신이지！？
-# dup_of: line 5, tag8 80
-너희들，처음이지？<lf>
-# dup_of: line 562, tag8 82
-아！ 당신이구나！？<lf>
-# dup_of: line 134, tag8 86
-아아 아쉽구만，후우．
-# dup_of: line 414, tag8 93
-어이어이，그만둘 거냐！？<lf>
-# dup_of: line 508, tag8 95
-이런，미안 미안．<lf>
-# dup_of: line 428, tag8 98
-자네들，남는 아이템이<lf>
-# dup_of: line 326, tag8 101
-손님께서 기다리신다고．<lf>
-# dup_of: line 140, tag8 104
-받아 주세요．
-# dup_of: line 622, tag8 107
-돈을 드리겠습니다．
-# dup_of: line 131, tag8 110
-잔뜩 손에 들어왔을지도<lf>
-# dup_of: line 570, tag8 112
-분명 다른 네 개에는 대단한 물건이<lf>
-# dup_of: line 356, tag8 116
-이 녀석을 가져가 줘．<lf>
-# dup_of: line 171, tag8 123
-이것은 자동으로 이루어집니다．<lf>
-# dup_of: line 20, tag8 125
-이쪽에 말을 걸어 주고．
-# dup_of: line 340, tag8 128
-이 미션의 경품은 다 떨어졌어．<lf>
-# dup_of: line 198, tag8 131
-세상에 둘도 없는 호화 경품을<lf>
-# dup_of: line 350, tag8 134
-이분들에 의해 클리어되었습니다．
-# dup_of: line 648, tag8 285
-프리 플레이(Freeplay)
-# dup_of: line 533, tag8 63
-어디까지나 소문이지만．<lf>
-Dkaiten01
-# dup_of: line 751, tag8 28
-Dkaiten01
-# dup_of: line 751, tag8 28
-Dkaiten01
-# dup_of: line 751, tag8 28
-Dkaiten01
-# dup_of: line 751, tag8 28
-Dkaiten01
-Dkaiten02
-# dup_of: line 756, tag8 29
-Dkaiten02
-# dup_of: line 756, tag8 29
-Dkaiten02
-# dup_of: line 756, tag8 29
-Dkaiten02
-# dup_of: line 756, tag8 29
-Dkaiten02
-Dkaiten03
-# dup_of: line 761, tag8 30
-Dkaiten03
-# dup_of: line 761, tag8 30
-Dkaiten03
-# dup_of: line 761, tag8 30
-Dkaiten03
-# dup_of: line 761, tag8 30
-Dkaiten03
-Dkaiten04
-# dup_of: line 766, tag8 31
-Dkaiten04
-# dup_of: line 766, tag8 31
-Dkaiten04
-# dup_of: line 766, tag8 31
-Dkaiten04
-# dup_of: line 766, tag8 31
-Dkaiten04
-Dkaiten05
-# dup_of: line 771, tag8 32
-Dkaiten05
-# dup_of: line 771, tag8 32
-Dkaiten05
-# dup_of: line 771, tag8 32
-Dkaiten05
-# dup_of: line 771, tag8 32
-Dkaiten05
-저속 회전<lf>통상 회전<lf>고속 회전<lf>초고속 회전
-# dup_of: line 712, tag8 33
-Kaiten1
-# dup_of: line 712, tag8 33
-Kaiten1
-# dup_of: line 712, tag8 33
-Kaiten1
-# dup_of: line 712, tag8 33
-Kaiten1
-# dup_of: line 712, tag8 33
-Kaiten1
-# dup_of: line 381, tag8 404
-실수로 최약의 드릴을<lf>
-# dup_of: line 649, tag8 329
-미션성공처리(SUCCESS==true)
-# dup_of: line 650, tag8 1
-/[color(0x329bbe)]카드 팩 ２탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 651, tag8 0
-/[color(0x329bbe)]카드 팩 １탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 652, tag8 257
-스피드 스타를 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 653, tag8 352
-두 번째는 없어
-# dup_of: line 650, tag8 1
-/[color(0x329bbe)]카드 팩 ２탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 651, tag8 0
-/[color(0x329bbe)]카드 팩 １탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 656, tag8 334
-야마토 벨트를 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 653, tag8 352
-두 번째는 없어
-# dup_of: line 650, tag8 1
-/[color(0x329bbe)]카드 팩 ２탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 651, tag8 0
-/[color(0x329bbe)]카드 팩 １탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 660, tag8 282
-헌터 아이를 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 653, tag8 352
-두 번째는 없어
-# dup_of: line 650, tag8 1
-/[color(0x329bbe)]카드 팩 ２탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 651, tag8 0
-/[color(0x329bbe)]카드 팩 １탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 672, tag8 429
-수영복을 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 653, tag8 352
-두 번째는 없어
-# dup_of: line 674, tag8 331
-미션 １(Mission 1)
-# dup_of: line 675, tag8 332
-미션 ２(Mission 2)
-# dup_of: line 533, tag8 63
-어디까지나 소문이지만．<lf>
-# dup_of: line 676, tag8 333
-미션 ３(Mission 3)
-# dup_of: line 651, tag8 0
-/[color(0x329bbe)]카드 팩 １탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 650, tag8 1
-/[color(0x329bbe)]카드 팩 ２탄/[color(0xffffff)]을 ５개 손에 넣었다！/[waitkey(64)]/[close()]
-# dup_of: line 491, tag8 2
-/[color(0x329bbe)]드릴 키/[color(0xffffff)]가 전혀 안 나와！！<lf>
-# dup_of: line 492, tag8 4
-/[color(0x329bbe)]드릴 키/[color(0xffffff)]만 있으면<lf>
-# dup_of: line 195, tag8 5
-/[color(0x329bbe)]드릴 키/[color(0xffffff)]는 여기서 얻을 수 있습니다．<lf>
-# dup_of: line 543, tag8 7
-/[color(0x329bbe)]드릴 키/[color(0xffffff)]……．<lf>
-# dup_of: line 6, tag8 9
-/[color(0x329bbe)]드릴 패스포트/[color(0xffffff)]를 확인할게．
-# dup_of: line 38, tag8 11
-/[color(0xfa3232)]드릴을 움직일 수 있는 횟수는 ５회．/[color(0xffffff)]<lf>
-# dup_of: line 60, tag8 13
-/[color(0xfa3232)]제한 시간 １２０초！/[color(0xffffff)]<lf>
-# dup_of: line 46, tag8 15
-/[color(0xfa3232)]제한 시간 ８０초！/[color(0xffffff)]<lf>
-# dup_of: line 461, tag8 17
-/[label(운 없는 남자)]
-# dup_of: line 441, tag8 18
-/[label(탐)]
-# dup_of: line 7, tag8 26
-/[waitkey(64)]/[clear()]
-# dup_of: line 751, tag8 28
-Dkaiten01
-# dup_of: line 756, tag8 29
-Dkaiten02
-# dup_of: line 761, tag8 30
-Dkaiten03
-# dup_of: line 771, tag8 32
-Dkaiten05
-# dup_of: line 712, tag8 33
-Kaiten1
-# dup_of: line 714, tag8 34
-Talk_npc1
-# dup_of: line 715, tag8 35
-Talk_npc2
-# dup_of: line 716, tag8 36
-Talk_npc3
-# dup_of: line 708, tag8 44
-evsExit를 호출했습니다
-mau의 값은： /[$0]
-# dup_of: line 713, tag8 46
-shoot on
-# dup_of: line 722, tag8 47
-ugauga에 false를 넘겼다
-while의 마지막
-# dup_of: line 676, tag8 333
-미션 ３(Mission 3)
-# dup_of: line 361, tag8 54
-「최강의 드릴」과<lf>
-# dup_of: line 400, tag8 55
-「호화로운 경품이 들어 있습니다！」<lf>
-# dup_of: line 362, tag8 56
-「보통 드릴」 중에서<lf>
-# dup_of: line 545, tag8 60
-아아〜 빨리 찾아야 해．
-# dup_of: line 591, tag8 61
-그 녀석은 「최강의 드릴」의 소유자지．<lf>
-# dup_of: line 105, tag8 62
-저 녀석을 상대할 수 없을걸．<lf>
-# dup_of: line 533, tag8 63
-어디까지나 소문이지만．<lf>
-# dup_of: line 475, tag8 65
-난 당연히 프리 모드야．<lf>
-# dup_of: line 556, tag8 67
-이제 셋밖에 안 남았다고．<lf>
-# dup_of: line 474, tag8 68
-당신，어느 모드로 놀고 있어？<lf>
-# dup_of: line 457, tag8 69
-당신，여기는 처음인가 보네．<lf>
-# dup_of: line 538, tag8 71
-그 애의 토군 사랑도<lf>
-# dup_of: line 309, tag8 72
-그거 있잖아．
-# dup_of: line 314, tag8 73
-그것 말입니까……！？
-# dup_of: line 526, tag8 74
-그걸 부수면 돈이 나오는 것 같아．<lf>
-# dup_of: line 576, tag8 75
-당신이 전부 연 거지？<lf>
-# dup_of: line 564, tag8 77
-당신이지！？
-# dup_of: line 354, tag8 78
-네 드릴혼은 진짜다！<lf>
-# dup_of: line 465, tag8 79
-당신 초보자인가？<lf>
-# dup_of: line 5, tag8 80
-너희들，처음이지？<lf>
-# dup_of: line 130, tag8 81
-그런 좋은 물건이나 이런 레어한 물건이<lf>
-# dup_of: line 562, tag8 82
-아！ 당신이구나！？<lf>
-# dup_of: line 256, tag8 83
-좋은 드릴러의 조건을 만족하고 있어！<lf>
-# dup_of: line 439, tag8 84
-얼마든지 사겠네．
-# dup_of: line 536, tag8 85
-아무리 물어봐도 토군 이야기밖에<lf>
-# dup_of: line 134, tag8 86
-아아 아쉽구만，후우．
-# dup_of: line 82, tag8 88
-으，으음，그러니까……<lf>
-# dup_of: line 495, tag8 89
-으으，빼앗기고 싶지 않아．<lf>
-# dup_of: line 266, tag8 91
-으음，훌륭해！！<lf>
-# dup_of: line 414, tag8 93
-어이어이，그만둘 거냐！？<lf>
-# dup_of: line 508, tag8 95
-이런，미안 미안．<lf>
-# dup_of: line 593, tag8 97
-어이쿠，잊어 줘．<lf>
-# dup_of: line 331, tag8 99
-축하드립니다．<lf>
-# dup_of: line 326, tag8 101
-손님께서 기다리신다고．<lf>
-# dup_of: line 610, tag8 102
-손님께는 죄송하지만<lf>
-# dup_of: line 572, tag8 111
-그랬을 게 틀림없어．
-# dup_of: line 325, tag8 114
-말이 많다．<lf>
-# dup_of: line 182, tag8 115
-부디 주의해 주십시오．<lf>
-# dup_of: line 356, tag8 116
-이 녀석을 가져가 줘．<lf>
-# dup_of: line 494, tag8 117
-여기 경품은 전부 １개 한정이야．<lf>
-# dup_of: line 232, tag8 118
-마음껏 즐겨 주십시오．
-# dup_of: line 397, tag8 52
-○ 버튼을 눌러 봐！
-# dup_of: line 678, tag8 445
-결과 처리(Result_free)
-# dup_of: line 26, tag8 129
-이 미션을 설명해 줄까？
-# dup_of: line 198, tag8 131
-세상에 둘도 없는 호화 경품을<lf>
-# dup_of: line 493, tag8 133
-이 문을 열 수 있을 텐데 말이야！！！<lf>
-# dup_of: line 91, tag8 136
-이 하얀 악마는 우리의 자랑이다．<lf>
-# dup_of: line 16, tag8 137
-이걸로 너희는 우리 손님이다．<lf>
-# dup_of: line 645, tag8 127
-이 패턴은 상정하지 않았습니다<lf>
-# dup_of: line 679, tag8 212
-예<lf>아니요
-# dup_of: line 680, tag8 295
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ２<lf>ＭＩＳＳＩＯＮ ３<lf>ＭＩＳＳＩＯＮ ４
-# dup_of: line 681, tag8 300
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ３<lf>ＭＩＳＳＩＯＮ ４
-# dup_of: line 682, tag8 302
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>ＭＩＳＳＩＯＮ ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ４
-# dup_of: line 683, tag8 304
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>ＭＩＳＳＩＯＮ ２<lf>ＭＩＳＳＩＯＮ ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-# dup_of: line 684, tag8 290
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ３<lf>ＭＩＳＳＩＯＮ ４
-# dup_of: line 685, tag8 292
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ４
-# dup_of: line 686, tag8 291
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-# dup_of: line 687, tag8 294
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ２<lf>ＭＩＳＳＩＯＮ ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-# dup_of: line 688, tag8 287
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ４
-# dup_of: line 689, tag8 289
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-# dup_of: line 690, tag8 286
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-# dup_of: line 691, tag8 297
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ４
-# dup_of: line 692, tag8 299
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-# dup_of: line 693, tag8 296
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-# dup_of: line 694, tag8 301
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>ＭＩＳＳＩＯＮ ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ４/[color(0xffffff)]
-# dup_of: line 695, tag8 305
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>ＭＩＳＳＩＯＮ ２<lf>ＭＩＳＳＩＯＮ ３<lf>ＭＩＳＳＩＯＮ ４
-게임 시작<lf>설명을 듣는다<lf>역시 하지 않는다
-일반 드릴<lf>최강 드릴
-# dup_of: line 826, tag8 45
-mau의 값은： /[$0]
-# dup_of: line 897, tag8 256
-게임 시작<lf>설명을 듣는다<lf>역시 하지 않는다
-# dup_of: line 898, tag8 456
-일반 드릴<lf>최강 드릴
-# dup_of: line 826, tag8 45
-mau의 값은： /[$0]
-# dup_of: line 897, tag8 256
-게임 시작<lf>설명을 듣는다<lf>역시 하지 않는다
-# dup_of: line 898, tag8 456
-일반 드릴<lf>최강 드릴
-# dup_of: line 826, tag8 45
-mau의 값은： /[$0]
-# dup_of: line 897, tag8 256
-게임 시작<lf>설명을 듣는다<lf>역시 하지 않는다
-# dup_of: line 898, tag8 456
-일반 드릴<lf>최강 드릴
-# dup_of: line 826, tag8 45
-mau의 값은： /[$0]
-# dup_of: line 897, tag8 256
-게임 시작<lf>설명을 듣는다<lf>역시 하지 않는다
-# dup_of: line 898, tag8 456
-일반 드릴<lf>최강 드릴
-# dup_of: line 826, tag8 45
-mau의 값은： /[$0]
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ２<lf>□　준비 중　□<lf>□　준비 중　□
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>□　준비 중　□<lf>□　준비 중　□
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ ２/[color(0xffffff)]<lf>□　준비 중　□<lf>□　준비 중　□
-프리 모드<lf>ＭＩＳＳＩＯＮ １<lf>ＭＩＳＳＩＯＮ ２<lf>□　준비 중　□<lf>□　준비 중　□
-# dup_of: line 897, tag8 256
-게임 시작<lf>설명을 듣는다<lf>역시 하지 않는다
-# dup_of: line 897, tag8 256
-게임 시작<lf>설명을 듣는다<lf>역시 하지 않는다
-# dup_of: line 897, tag8 256
-게임 시작<lf>설명을 듣는다<lf>역시 하지 않는다
-# dup_of: line 491, tag8 2
-/[color(0x329bbe)]드릴 키/[color(0xffffff)]가 전혀 안 나와！！<lf>
-# dup_of: line 217, tag8 6
-/[color(0x329bbe)]드릴 키/[color(0xffffff)] 하나당 경품 하나와<lf>
-# dup_of: line 60, tag8 13
-/[color(0xfa3232)]제한 시간 １２０초！/[color(0xffffff)]<lf>
-# dup_of: line 78, tag8 22
-/[label(호리안나)]
-# dup_of: line 771, tag8 32
-Dkaiten05
-# dup_of: line 711, tag8 41
-Tenmetu
-# dup_of: line 696, tag8 48
-while 의 선두
-# dup_of: line 164, tag8 51
-□ 버튼을 누르는 동안 이동합니다．<lf>
-# dup_of: line 545, tag8 60
-아아〜 빨리 찾아야 해．
-# dup_of: line 556, tag8 67
-이제 셋밖에 안 남았다고．<lf>
-# dup_of: line 625, tag8 70
-당신은 ２００００Ｇ를 획득！<lf>
-# dup_of: line 526, tag8 74
-그걸 부수면 돈이 나오는 것 같아．<lf>
-# dup_of: line 130, tag8 81
-그런 좋은 물건이나 이런 레어한 물건이<lf>
-# dup_of: line 266, tag8 91
-으음，훌륭해！！<lf>
-# dup_of: line 428, tag8 98
-자네들，남는 아이템이<lf>
-# dup_of: line 129, tag8 109
-아ー！ ２００Ｇ만 있었으면！<lf>
-# dup_of: line 696, tag8 48
-while 의 선두
-# dup_of: line 697, tag8 269
-드릴 게임이란？<lf>조작 방법에 대해<lf>게임 모드에 대해<lf>경품에 대해<lf>설명 종료
-# dup_of: line 722, tag8 47
-ugauga에 false를 넘겼다
-# dup_of: line 829, tag8 49
-while의 마지막
-무사히 종료한 것 같다
-# dup_of: line 680, tag8 295
-프리 모드<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ １/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ ２<lf>ＭＩＳＳＩＯＮ ３<lf>ＭＩＳＳＩＯＮ ４
-# dup_of: line 698, tag8 384
-파괴물 파괴(broken)
-０번째 파괴
-Ｍ１＿１번째 파괴
-Ｍ１＿２번째 파괴
-Ｍ１＿３번째 파괴
-Ｍ１＿４번째 파괴
-Ｍ１＿５번째 파괴
-Ｍ１＿７번째 파괴
-Ｍ１＿８번째 파괴
-Ｍ１＿９번째 파괴
-Ｍ１＿１０번째 파괴
-Ｍ１＿１１번째 파괴
-Ｍ１＿１２번째 파괴
-Ｍ１＿１３번째 파괴
-Ｍ１＿１４번째 파괴
-Ｍ１＿１５번째 파괴
-Ｍ２＿１번째 파괴
-Ｍ２＿２번째 파괴
-Ｍ２＿３번째 파괴
-Ｍ２＿４번째 파괴
-Ｍ２＿５번째 파괴
-Ｍ２＿６번째 파괴
-Ｍ２＿７번째 파괴
-Ｍ２＿８번째 파괴
-Ｍ２＿９번째 파괴
-미등록 파괴
-# dup_of: line 60, tag8 13
-/[color(0xfa3232)]제한 시간 １２０초！/[color(0xffffff)]<lf>
-# dup_of: line 699, tag8 260
-드릴 게임 종료(drill_end)
-# dup_of: line 700, tag8 468
-１턴 종료(drill_stanby)
-# dup_of: line 701, tag8 327
-미션 성공(SUCCESS == true)
-# dup_of: line 702, tag8 252
-취소 희망(drill_stop)
-# dup_of: line 679, tag8 212
-예<lf>아니요
-# dup_of: line 704, tag8 411
-타임오버(drill_timeover)
-# dup_of: line 705, tag8 330
-미션미성공(SUCCESS==false)
-# dup_of: line 706, tag8 328
-미션성공완료(SUCCESS==true)
-# dup_of: line 707, tag8 42
-enterd : /[$0]
-# dup_of: line 708, tag8 44
-evsExit를 호출했습니다
-# dup_of: line 679, tag8 212
-예<lf>아니요
-# dup_of: line 533, tag8 63
-어디까지나 소문이지만．<lf>
-# dup_of: line 710, tag8 43
-entrance: /[$0]
-# dup_of: line 711, tag8 41
-Tenmetu
-# dup_of: line 712, tag8 33
-Kaiten1
-# dup_of: line 713, tag8 46
-shoot on
-# dup_of: line 714, tag8 34
-Talk_npc1
-# dup_of: line 715, tag8 35
-Talk_npc2
-# dup_of: line 716, tag8 36
-Talk_npc3
-# dup_of: line 717, tag8 37
-Talk_npc4
-# dup_of: line 718, tag8 38
-Talk_npc5
-# dup_of: line 719, tag8 39
-Talk_npc6
-Talk_npc7
+# chunk 4 @ 0x148c cnum=2434 total=503
+# bc_map: 274,27,24,273,80,9,26,24,349,26,24,349,26,24,244,137,271,184,268,125,27,24,309,27,24,129,27,24,130,171,27,24,206,451,27,24,12,11,320,255,395,462,3,27,24,15,10,163,441,365,263,254,439,241,400,181,322,27,24,13,10,163,441,365,263,254,439,241,401,425,321,27,24,16,10,164,26,22,90,26,24,88,370,185,324,364,263,254,439,241,136,224,27,24,14,10,140,26,22,90,26,24,501,180,62,159,263,254,281,465,27,24,87,470,27,24,155,198,27,24,342,176,397,169,27,24,96,106,109,81,110,148,398,86,27,22,243,213,391,104,27,22,242,26,22,196,27,22,265,433,385,238,419,141,279,119,177,357,235,27,22,267,50,51,100,166,423,124,262,388,123,449,202,264,392,227,374,245,310,276,444,115,358,235,27,22,272,217,335,442,383,435,239,337,5,220,375,131,403,464,432,323,410,356,235,27,22,393,386,103,149,306,463,458,473,415,6,413,165,253,141,189,359,235,27,22,139,343,27,22,170,118,27,347,436,405,27,346,27,346,27,350,26,346,26,350,27,261,27,22,275,27,24,498,454,83,316,26,22,108,121,105,26,24,499,91,174,316,187,26,22,108,120,105,26,24,500,471,344,26,22,172,57,341,92,121,105,26,24,502,389,312,414,26,22,64,240,223,26,24,315,26,22,341,92,144,26,24,72,26,22,58,277,73,26,24,160,135,280,26,22,145,26,24,114,101,408,26,22,211,99,122,188,26,24,228,233,313,339,128,311,26,22,209,353,105,26,23,138,134,26,24,158,78,368,116,53,409,434,422,54,56,387,27,24,197,27,22,108,416,27,22,108,457,27,22,108,417,348,214,404,147,26,24,205,216,151,27,24,190,426,420,27,24,152,472,52,27,336,55,340,27,24,167,237,161,27,24,192,250,421,27,24,93,278,229,27,22,437,162,355,27,25,218,132,378,246,98,66,26,25,219,191,168,26,25,218,249,84,26,18,94,173,27,18,453,27,18,153,183,183,251,179,178,27,20,69,226,379,27,17,113,195,248,79,175,27,21,450,266,143,27,20,68,65,363,459,412,186,27,20,308,194,318,394,200,376,27,17,113,2,4,133,117,89,338,27,17,113,427,366,440,406,201,27,21,221,95,424,443,381,225,270,27,21,325,222,438,448,156,27,20,307,390,446,74,460,461,27,20,193,319,63,314,407,85,452,71,382,27,17,232,7,231,60,377,27,17,182,373,362,428,27,17,234,67,345,27,17,207,208,82,8,77,27,17,402,369,469,112,371,111,27,17,215,75,157,76,367,27,21,326,455,354,142,27,21,372,317,447,61,236,97,380,27,24,87,470,26,22,59,430,26,24,204,199,26,22,210,102,351,26,24,247,154,399,27,19,203,27,19,107,26,19,70,466,27,19,230,396,27,19,360,284,27,19,150,146,27,22,126,258,27,283,127,259,27,285,329,1,0,257,352,1,0,334,352,1,0,282,352,1,0,4,11,13,16,18,21,23,27,429,352,331,332,333,333,445,212,295,300,302,304,290,292,291,294,287,289,286,297,299,296,301,305,48,269,384,260,468,327,252,212,411,330,328,42,44,212,43,41,33,46,34,35,36,37,38,39,41,44,47,50,52,56,63,65,68,71,74,77,80,82,86,93,95,98,101,104,107,110,112,116,123,125,128,131,134,285,63,28,28,28,28,28,29,29,29,29,29,30,30,30,30,30,31,31,31,31,31,32,32,32,32,32,361,33,33,33,33,33,404,329,1,0,257,352,1,0,334,352,1,0,282,352,1,0,429,352,331,332,63,333,0,1,2,4,5,7,9,11,13,15,17,18,26,28,29,30,32,33,34,35,36,44,45,46,47,49,333,54,55,56,60,61,62,63,65,67,68,69,71,72,73,74,75,77,78,79,80,81,82,83,84,85,86,88,89,91,93,95,97,99,101,102,111,114,115,116,117,118,52,445,129,131,133,136,137,127,212,295,300,302,304,290,292,291,294,287,289,286,297,299,296,301,305,256,456,45,256,456,45,256,456,45,256,456,45,256,456,45,293,298,288,303,256,256,256,2,6,13,22,32,41,48,51,60,67,70,74,81,91,98,109,48,269,47,49,431,295,384,467,474,481,482,483,484,486,487,488,475,476,477,478,479,480,489,490,491,492,493,494,495,496,497,418,13,260,468,327,252,212,411,330,328,42,44,212,63,43,41,33,46,34,35,36,37,38,39,40
+# bc_unmap: 485
+ドリルゲームを終了します。
+/[waitkey(64)]/[close()]
+/[label(ホルガー)]
+ドリルゲームへようこそ！！<lf>
+あんた方、初めてだね？<lf>
+/[color(0x329bbe)]ドリルパスポート/[color(0xffffff)]の確認をさせてもらうよ。
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+・・・・・・・・・
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+# dup_of: line 9, tag8 349
+・・・・・・・・・
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+よし！確認終了。<lf>
+これであんた方はうちのお客さんだ。<lf>
+ドリルゲームについての説明は<lf>
+となりのホリアンナに聞いてくんな。<lf>
+ドリルゲームで遊びたいときは<lf>
+こっちに話し掛けてくれ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+フリーモードの説明をしようか？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+このミッションの説明をしようか？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+このミッションはクリア済みだ。<lf>
+それでも挑戦するのかい？<lf>
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+なんだなんだ、冷やかしか。<lf>
+見てるだけじゃ景品は手に入らないぜ？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+/[color(0xfa3232)]制限時間は無し。/[color(0xffffff)]<lf>
+/[color(0xfa3232)]ドリルを動かせる回数は５回。/[color(0xffffff)]<lf>
+ボックスを壊すとアイテムが出てくる。<lf>
+ゲーム終了後に自由に取ってくれ。<lf>
+必ずアイテムが入っているとは<lf>
+限らないが、場合によっては<lf>
+/[color(0x329bbe)]ドリルキー/[color(0xffffff)]が手に入ることもあるぞ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+/[color(0xfa3232)]制限時間８０秒！/[color(0xffffff)]<lf>
+/[color(0xfa3232)]ドリルは何度でも動かせる。/[color(0xffffff)]<lf>
+そのあいだにすべてのボックスを<lf>
+破壊するミッションだ。<lf>
+例え全部ボックスを壊しても<lf>
+ドリルの支柱が最初の位置に戻るまでは<lf>
+クリアとみなされないから注意してくれ。<lf>
+真のドリラーは終わりまできっちり<lf>
+やるもんなのさ。<lf>
+成功すれば豪華アイテムプレゼント。<lf>
+ちょっと頭を使えばそんなに難しくはない<lf>
+ミッションだな。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+/[color(0xfa3232)]制限時間１２０秒！/[color(0xffffff)]<lf>
+# dup_of: line 47, tag8 10
+/[color(0xfa3232)]ドリルは何度でも動かせる。/[color(0xffffff)]<lf>
+# dup_of: line 48, tag8 163
+そのあいだにすべてのボックスを<lf>
+# dup_of: line 49, tag8 441
+破壊するミッションだ。<lf>
+# dup_of: line 50, tag8 365
+例え全部ボックスを壊しても<lf>
+# dup_of: line 51, tag8 263
+ドリルの支柱が最初の位置に戻るまでは<lf>
+# dup_of: line 52, tag8 254
+クリアとみなされないから注意してくれ。<lf>
+# dup_of: line 53, tag8 439
+真のドリラーは終わりまできっちり<lf>
+# dup_of: line 54, tag8 241
+やるもんなのさ。<lf>
+成功すれば豪華アイテムプレゼントだ。<lf>
+正確さが要求されるミッションだ。<lf>
+ミスは許されないぞ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+/[color(0xfa3232)]制限時間９０秒！/[color(0xffffff)]<lf>
+# dup_of: line 47, tag8 10
+/[color(0xfa3232)]ドリルは何度でも動かせる。/[color(0xffffff)]<lf>
+そのあいだに動き回る白い悪魔を
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+/[label(ホリアンナ)]
+うーくんです！！
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+う、うむ、その・・・<lf>
+俺は白い悪魔と呼んでるんだが<lf>
+とにかくそれをすべて破壊すれば<lf>
+ミッションクリアだ。<lf>
+例え全ての白い悪魔を破壊しても<lf>
+# dup_of: line 51, tag8 263
+ドリルの支柱が最初の位置に戻るまでは<lf>
+# dup_of: line 52, tag8 254
+クリアとみなされないから注意してくれ。<lf>
+# dup_of: line 53, tag8 439
+真のドリラーは終わりまできっちり<lf>
+# dup_of: line 54, tag8 241
+やるもんなのさ。<lf>
+この白い悪魔はうちの自慢の機械人形だ。<lf>
+まぁ全て破壊するのは無理だろうな。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+/[color(0xfa3232)]制限時間５０秒！/[color(0xffffff)]<lf>
+# dup_of: line 47, tag8 10
+/[color(0xfa3232)]ドリルは何度でも動かせる。/[color(0xffffff)]<lf>
+こんどの白い悪魔は
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+# dup_of: line 79, tag8 90
+うーくんです！！
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+ＭＩＳＳＩＯＮ３の３倍の性能だ。<lf>
+ちょっとやそっとのドリル魂じゃ<lf>
+あいつは落とせないぜ。<lf>
+そうそう、例え白い悪魔を破壊しても<lf>
+# dup_of: line 51, tag8 263
+ドリルの支柱が最初の位置に戻るまでは<lf>
+# dup_of: line 52, tag8 254
+クリアとみなされないから注意してくれ。<lf>
+ナイフを置くまでは<lf>
+食事は終わらないってことだな。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+いらっしゃい！<lf>
+１回２００Ｇだ。やってくかい？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+そうかい！やってくかい！<lf>
+どのモードで遊んでいくんだい？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+・・・やらないのかっ！？<lf>
+ちっとはドリル魂のある奴かと<lf>
+思ったんだがなぁ。<lf>
+その気になったらいつでも来いよ！
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+おっとと、<lf>
+お金が足りないみたいだ。<lf>
+かーっ！２００Ｇありゃぁなぁ！<lf>
+あんないいものや、こんなレアものが<lf>
+がっぽり手に入ったかも<lf>
+しれね−のになぁ。<lf>
+悪いが出直してくれるかい？<lf>
+いやぁ残念だねぇ、うんうん。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+ようこそ！ドリルゲームへ！！<lf>
+はじめてのお客様でございますね？<lf>
+左のカウンターで/[color(0x329bbe)]ドリルパスポート/[color(0xffffff)]の確認を<lf>
+お済ませ下さい。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+ようこそ！ドリルゲームへ！！
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+どちらのご説明をいたしましょうか？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+ドリルを動かし様々なものを破壊する<lf>
+爽快感と緊張感が隣り合わせになった<lf>
+大人のゲームでございます。<lf>
+もちろん、ただ壊すだけでなく、<lf>
+様々なアイテムやレアな景品を<lf>
+ご用意しております。<lf>
+ドリル魂に自身のある方の挑戦を<lf>
+こころよりお待ちしております。<lf>
+ちなみに１プレイ２００Ｇでございます。<lf>
+以上がドリルゲームの説明でございます。<lf>
+もう一度ご説明いたしましょうか？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+ドリルゲームが開始されましたら<lf>
+□ボタンでドリルの支柱を動かします。<lf>
+□ボタンを押している間は移動を続けます。<lf>
+お好みの場所でボタンを離して頂きますと<lf>
+その場でドリルの支柱は停止し<lf>
+次はドリル部分の移動になります。<lf>
+こちらも□ボタンで移動になります。<lf>
+ドリルの支柱、ドリル部分の移動が<lf>
+完了しますと、ドリル先端が落下します。<lf>
+こちらは自動で行われます。<lf>
+落下地点にボックスがあれば見事破壊となり<lf>
+なにもなければ失敗でございます。<lf>
+ドリルを動かしている間でなければ、<lf>
+左スティックで自由に視点が変更できます。<lf>
+また、Ｒ２ボタンで３つの視点を瞬時に<lf>
+切り替えられますので上手く活用されますと<lf>
+より充実したドリルプレイが可能です。<lf>
+プレイ中に中断したい場合は×ボタンで<lf>
+ドリルゲームを終了できます。<lf>
+終了したドリルゲームはやりなおせません。<lf>
+くれぐれもお気をつけ下さい。<lf>
+以上が操作方法の説明でございます。<lf>
+# dup_of: line 159, tag8 235
+もう一度ご説明いたしましょうか？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+ドリルゲームには２つのモードがあります。<lf>
+ひとつはフリーモードでございます。<lf>
+ランダムに置かれたボックスに狙いを定め<lf>
+破壊するモードでございます。<lf>
+壊れたボックスから出てくるアイテムを<lf>
+狙ったドリラーたちがあとを絶たない<lf>
+もっとも人気のあるモードでございます。<lf>
+レアな景品を手に入れるための<lf>
+/[color(0x329bbe)]ドリルキー/[color(0xffffff)]はここで入手します。<lf>
+ふたつめはミッションモードでございます。<lf>
+制限時間内に条件を満たせば<lf>
+この世にふたつとない豪華な景品が<lf>
+手に入るモードです。<lf>
+難度の高い当ドリルゲームのミッションは<lf>
+熟練したお客様からご好評頂いております。<lf>
+ミッションは追加になることもございます。<lf>
+時々遊びに来てチェックしてみて下さいね。<lf>
+以上がゲームモードの説明でございます。<lf>
+# dup_of: line 159, tag8 235
+もう一度ご説明いたしましょうか？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+当ドリルゲーム自慢の<lf>
+大量のレアアイテム！！<lf>
+お客様のドリル魂が本物なら<lf>
+すべてが思いのままでございます。<lf>
+フリーモードには/[color(0x329bbe)]ドリルキー/[color(0xffffff)]が<lf>
+隠されているボックスがございます。<lf>
+運よく/[color(0x329bbe)]ドリルキー/[color(0xffffff)]が手に入りましたら<lf>
+Ｄ・Ｒ・Ｉ・Ｌ・Ｌの星型ネオン下の<lf>
+景品展示所でお使いください。<lf>
+/[color(0x329bbe)]ドリルキー/[color(0xffffff)]ひとつにつき一品の<lf>
+景品と交換させていただきます。<lf>
+その他にも、ミッションモードを<lf>
+クリアされた場合にも豪華景品を<lf>
+# dup_of: line 154, tag8 141
+ご用意しております。<lf>
+どうか奮ってご参加くださいませ。<lf>
+以上が景品についての説明でございます。<lf>
+# dup_of: line 159, tag8 235
+もう一度ご説明いたしましょうか？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+これにて説明を終わらせていただきます。<lf>
+・・・よろしいでしょうか？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+それでは当ドリルゲームで<lf>
+こころゆくまでお楽しみくださいませ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+・・・・・・・。<lf>
+用途不明のボタンがついている・・・。<lf>
+押してみますか？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+・・・・・・・。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 238, tag8 346
+・・・・・・・。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+・・・・・・！！
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 238, tag8 346
+・・・・・・・。
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 242, tag8 350
+・・・・・・！！
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+ドリルの天使は破壊されている。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+ドリルゲームを終了しますか？<lf>
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+ＭＩＳＳＩＯＮ１　ＣＯＭＰＬＥＴＥ<lf>
+迅速かつ精密。<lf>
+いいドリラーの条件を満たしている！<lf>
+ホリアンナ！景品を出してやんな！！<lf>
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+かしこまりました。<lf>
+こちらが景品になります。<lf>
+お納めくださいませ。
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+ＭＩＳＳＩＯＮ２　ＣＯＭＰＬＥＴＥ<lf>
+うーむすばらしい！！<lf>
+たぐいまれなドリル魂だったよ。<lf>
+# dup_of: line 257, tag8 316
+ホリアンナ！景品を出してやんな！！<lf>
+とびきりレアな奴をな！！<lf>
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+# dup_of: line 260, tag8 108
+かしこまりました。<lf>
+こちらがとびきりレアな景品になります。<lf>
+# dup_of: line 262, tag8 105
+お納めくださいませ。
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+ＭＩＳＳＩＯＮ３　ＣＯＭＰＬＥＴＥ<lf>
+５体のうーくんが全滅だと！？<lf>
+・・・ホリアンナ、景品を出せ。
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+そんな、ば、ばかな・・・<lf>
+あ、あたしのうーくんが・・・<lf>
+・・・は！？申し訳ありません！<lf>
+お、おめでとうございます。<lf>
+# dup_of: line 261, tag8 121
+こちらが景品になります。<lf>
+# dup_of: line 262, tag8 105
+お納めくださいませ。
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+ＭＩＳＳＩＯＮ４　ＣＯＭＰＬＥＴＥ<lf>
+完敗だ！<lf>
+ホリアンナ、これで気が済んだろう<lf>
+景品をお出しするんだ！<lf>
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+あたしのうーくんが負けるはずが・・・<lf>
+やはり、あんな古い回路じゃ・・・<lf>
+ぶつぶつぶつ・・・
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+ホリアンナ！
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+# dup_of: line 284, tag8 341
+・・・は！？申し訳ありません！<lf>
+# dup_of: line 285, tag8 92
+お、おめでとうございます。<lf>
+し、しかし何をお渡ししたら・・・
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+あれがあるだろう
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+あ、あれとは、先日の<lf>
+ドリル選手権で獲得したばかりの<lf>
+あれでございますか・・！？
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+そうだ。<lf>
+この方々はあれを持つにふさわしい<lf>
+ドリル魂をお持ちだ。
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+しかし・・・あれは・・・
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+くどい。<lf>
+お客様がお待ちだ。<lf>
+早くお渡しせんか！
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+は、失礼いたしました。<lf>
+おめでとうございます。<lf>
+こちらになります。<lf>
+どうかお納めくださいませ。
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+またクリアしちまったのか！？<lf>
+まったくたいしたもんだ。<lf>
+ホリアンナ、景品をお出ししな！<lf>
+・・・っと、出してやりたいところだが<lf>
+このミッションの景品は切れちまってんだ。<lf>
+ホリアンナ、かわりをお出ししな！
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+は、こちらになります。<lf>
+今、流行のカードゲームのセット<lf>
+# dup_of: line 262, tag8 105
+お納めくださいませ。
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+/[label(ホリアンナ]
+これで全てのミッションが<lf>
+この方々によってクリアされました。
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+そうか！ついにやりやがったな！<lf>
+あんたのドリル魂は本物だ！<lf>
+俺の使い古しで悪いんだが、<lf>
+こいつをもっていってくれ。<lf>
+「最強のドリル」だ！<lf>
+昔はこれを使って、目に付くものを<lf>
+片っ端から壊してまわったもんさ。<lf>
+次のプレイからは<lf>
+「最強のドリル」と<lf>
+「通常のドリル」の<lf>
+好きなほうを選んで使えるぜ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+どのドリルで遊ぶんだ？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+# dup_of: line 260, tag8 108
+かしこまりました。<lf>
+最強のドリルをセットします。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+# dup_of: line 260, tag8 108
+かしこまりました。<lf>
+通常のドリルをセットします。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+# dup_of: line 260, tag8 108
+かしこまりました。<lf>
+最強のドリルをセットします。<lf>
+・・・・・・・・。<lf>
+はっ！？申し訳ありません！<lf>
+手違いで最弱のドリルを装着して<lf>
+しまいましたっ。
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+なに！？ぬっ、こ・これは・・・。<lf>
+は・外れん・・・。<lf>
+すまんが今回は最弱のドリルでやってくれ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+どうした？ドリル魂を思い出せ！！<lf>
+残念賞のアクアジストだ。<lf>
+次こそ、熱いドリル魂を見せてくれ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+せっかくの/[color(0x329bbe)]ドリルキー/[color(0xffffff)]を使ってないぞ！<lf>
+Ｄ・Ｒ・Ｉ・Ｌ・Ｌの好きな扉の前で<lf>
+○ボタンを押してみてくれ！
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+リボンのついた箱に<lf>
+「豪華な景品入ってます！」<lf>
+・・・と書いてある。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+その扉は/[color(0x329bbe)]ドリルキー/[color(0xffffff)]以外じゃ開かねぇ！<lf>
+もちろん/[color(0x329bbe)]ドリルキー/[color(0xffffff)]さえありゃあ<lf>
+そこの景品はあんたのものだぜ！！
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+どうだい？狙った獲物はしとめたかい？<lf>
+アイテムが出てたら取っておきなよ。<lf>
+次のゲームをはじめたら片付けっからな。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+おいおい、やめちまったのか！？<lf>
+ドリル魂ってのはもう流行らねえのかねぇ。<lf>
+また遊んでくれよな・・・。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+申し訳ございません。<lf>
+そちらはただいま準備中でございます。<lf>
+他のミッションをお選びください。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+/[label(隠居)]
+ふぉふぉふぉ。<lf>
+この子はドリルゲームでアイテムが<lf>
+取れんもんじゃから<lf>
+わしに買ってくれといいよる。<lf>
+おまえさん方、あまっちょるアイテムが<lf>
+あったら売ってくれんかのう？
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 423, tag8 25
+/[label(隠居)]
+ふぉふぉふぉ。アイテム買うぞい。<lf>
+どうせ売るならたくさん売っておくれ<lf>
+その方がタムも喜ぶからのう。
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 423, tag8 25
+/[label(隠居)]
+# dup_of: line 424, tag8 218
+ふぉふぉふぉ。<lf>
+アイテムがあまったら<lf>
+いくらでも買うからのう？
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+/[label(タム)]
+おじいちゃん、<lf>
+たくさん買ってよ！
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 441, tag8 18
+/[label(タム)]
+買うよーーーー！
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 441, tag8 18
+/[label(タム)]
+ぜんぜんアイテムとれないよーー！<lf>
+つまんない<lf>
+# dup_of: line 450, tag8 183
+つまんない<lf>
+アイテムちょうだいよーーー！<lf>
+ちょうだい！<lf>
+ちょうだい！
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+/[label(ドリル好きの女)]
+あなたここは初めてみたいね。<lf>
+まずは受付を済ませたら？<lf>
+受付カウンターは入り口のそばよ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+/[label(ついてない男)]
+くそっくそっくそっ<lf>
+どこにあるんだ、/[color(0x329bbe)]ドリルキー/[color(0xffffff)]は！<lf>
+ん！？/[color(0x329bbe)]ドリルキー/[color(0xffffff)]が何かって？<lf>
+あんた初心者かい？<lf>
+だったらまず受付を済ませなよ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+/[label(ドリル好きの男)]
+見かけない顔だな。<lf>
+ドリルを扱いたいのなら<lf>
+さっさと受付を済ますんだな。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 456, tag8 20
+/[label(ドリル好きの女)]
+あなた、どのモードで遊んでる？<lf>
+あたしは断然フリーモードね。<lf>
+何が出てくるかわくわくしちゃうのよ。<lf>
+運良くドリルキーをゲットしたら<lf>
+景品だって手に入るしね。<lf>
+とにかくフリーモードがおすすめよ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 456, tag8 20
+/[label(ドリル好きの女)]
+フリーモードのボックスの中身って<lf>
+どうも決まりがあるみたいなのよね・・・<lf>
+ボックスって、いろいろ種類があるけど、<lf>
+必ずお金が入っているものボックスとかね。<lf>
+どれに何が入っているかわかれば<lf>
+効率よくいいものをゲット出来るんだけど。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 461, tag8 17
+/[label(ついてない男)]
+# dup_of: line 462, tag8 113
+くそっくそっくそっ<lf>
+/[color(0x329bbe)]ドリルキー/[color(0xffffff)]が、全然出てこねぇ！！<lf>
+/[color(0x329bbe)]ドリルキー/[color(0xffffff)]さえありゃぁ<lf>
+この扉を開けられるってのによぉ！！！<lf>
+ここの景品は全部１個限りなんだ。<lf>
+うう、取られたくねえよぉ。<lf>
+・・・あんた、横取りすんなよ！？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 461, tag8 17
+/[label(ついてない男)]
+# dup_of: line 462, tag8 113
+くそっくそっくそっ<lf>
+気が気じゃねぇんだ。<lf>
+俺がドリルキーを探している間に<lf>
+知らねぇ誰かが景品を<lf>
+持って行っちまうんじゃねぇかって。<lf>
+なぁあんた、横取りすんなよ！？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 468, tag8 21
+/[label(ドリル好きの男)]
+ふん。ドリゲーはミッションに限る。<lf>
+おっとっと、すまんすまん<lf>
+正しくはドリルゲームだったね。<lf>
+私のような熟練者はドリゲーと<lf>
+呼んでいるもんでね。<lf>
+まぁ君のような、いかにもな初心者は<lf>
+ドリルゲームと呼びたまえよ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 468, tag8 21
+/[label(ドリル好きの男)]
+ミッションクリアの秘訣を教えろ？<lf>
+ふん。馬鹿言っちゃいかん。<lf>
+真のドリラーってのは<lf>
+自分の攻略法をもっているんだ。<lf>
+そうかんたんに人には教えられんよ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 456, tag8 20
+/[label(ドリル好きの女)]
+フリーモードのボックスの中身が<lf>
+少しわかってきたのよ。<lf>
+緑色の細長いボックスあるでしょ？<lf>
+あれを壊すと必ずお金が出るみたいね。<lf>
+金額にばらつきはあるけど、<lf>
+間違いないわ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 456, tag8 20
+/[label(ドリル好きの女)]
+どうも/[color(0x329bbe)]ドリルキー/[color(0xffffff)]が入っている<lf>
+ボックスも決まっているみたいなの。<lf>
+あくまでも噂だけどね。<lf>
+ホリアンナったら友達のあたしにも<lf>
+教えてくれないのよ。<lf>
+いくら聞いても、うーくんのことしか<lf>
+話さないのよね・・・。<lf>
+あの子のうーくん好きにも<lf>
+困ったもんだわ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 461, tag8 17
+/[label(ついてない男)]
+まだ見つからないんだ・・・。<lf>
+/[color(0x329bbe)]ドリルキー/[color(0xffffff)]・・・。<lf>
+まだ扉がひとつも開いてないからいいけど、<lf>
+ああ〜早くみつけないと。
+取られちまう、取られちまうよ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 461, tag8 17
+/[label(ついてない男)]
+ついに/[color(0x329bbe)]ドリルキー/[color(0xffffff)]を見つけた奴が<lf>
+出てきちまった！<lf>
+何が入ってたんだろうなぁ。<lf>
+気になって夜も眠れねぇよ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 461, tag8 17
+/[label(ついてない男)]
+もうふたつも扉が開いちまった・・・。<lf>
+あとみっつしかねぇよ。<lf>
+・・・・・・。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 461, tag8 17
+/[label(ついてない男)]
+なんだよ！？あんた！<lf>
+にこにこして・・・。<lf>
+あ！あんたなんだな！？<lf>
+/[color(0x329bbe)]ドリルキー/[color(0xffffff)]取ったの<lf>
+あんたなんだろ！？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 461, tag8 17
+/[label(ついてない男)]
+扉の残り、あとひとつ・・・。<lf>
+俺はずっと前から探してたんだ。<lf>
+１個くらいは取ってやるさ。<lf>
+きっと他のよっつは、たいしたものは<lf>
+入っていなかったのさ。<lf>
+きっとそうさ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 461, tag8 17
+/[label(ついてない男)]
+はは・・・。扉が全部開いたか・・・。<lf>
+あんたが全部開けたんだろ？<lf>
+そうか・・・。<lf>
+あんたぐらいのドリル魂が<lf>
+俺にもあればな・・・。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 468, tag8 21
+/[label(ドリル好きの男)]
+ミッションモードに新しいミッションが<lf>
+追加されたそうだ。<lf>
+今度は獲物が動いているんだ。<lf>
+さすがの私もこれには参ったよ。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 468, tag8 21
+/[label(ドリル好きの男)]
+全てのミッションをクリアすると<lf>
+ホルガーがご褒美を渡すつもりだと<lf>
+聞いたことがある。<lf>
+あいつは「最強のドリル」の持ち主だ。<lf>
+もしや、それを・・・。<lf>
+おっと忘れてくれ。<lf>
+君には関係のない話だったね。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+# dup_of: line 113, tag8 87
+いらっしゃい！<lf>
+# dup_of: line 114, tag8 470
+１回２００Ｇだ。やってくかい？
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+あ、ホルガーさま<lf>
+準備のほうがまだ・・・
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+なに！？<lf>
+どれくらいかかるんだ？？
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+は、しばらくはかかるかと。<lf>
+お客様には申し訳ありませんが、<lf>
+一度出直して来て頂きたく思います。
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 3, tag8 24
+/[label(ホルガー)]
+んーーすまねぇ。<lf>
+そういうわけなんだ。<lf>
+悪いが出直して来てくれるかい？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+/[label(デバ子)]
+なにをいたしましょうか？
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 618, tag8 19
+/[label(デバ子)]
+お金を差し上げましょう
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 618, tag8 19
+/[label(デバ子)]
+あなたは２００００Ｇを獲得！<lf>
+（わたしは２００００Ｇの損害！）
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 618, tag8 19
+/[label(デバ子)]
+まだまだたくさんお持ちじゃないですか。<lf>
+必要ありません！！
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 618, tag8 19
+/[label(デバ子)]
+仮想でうーくんと出会っている<lf>
+フラグを立てました。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 618, tag8 19
+/[label(デバ子)]
+すべてのミッションをクリア<lf>
+したフラグを立てました。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+このドリルゲームのバランス、<lf>
+セリフはすべて仮となります。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+パターンＤの結果を得ました<lf>
+このパターンは想定していません<lf>
+ソースをチェックしましょう。
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+フリープレイ(Freeplay)
+ミッション成功結果処理(SUCCESS == true)
+/[color(0x329bbe)]カードパック２弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+/[color(0x329bbe)]カードパック１弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+スピードスターを手に入れた！/[waitkey(64)]/[close()]
+二回目はなしだよ
+# dup_of: line 650, tag8 1
+/[color(0x329bbe)]カードパック２弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 651, tag8 0
+/[color(0x329bbe)]カードパック１弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+ヤマトベルトを手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 653, tag8 352
+二回目はなしだよ
+# dup_of: line 650, tag8 1
+/[color(0x329bbe)]カードパック２弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 651, tag8 0
+/[color(0x329bbe)]カードパック１弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+ハンターアイを手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 653, tag8 352
+二回目はなしだよ
+# dup_of: line 650, tag8 1
+/[color(0x329bbe)]カードパック２弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 651, tag8 0
+/[color(0x329bbe)]カードパック１弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 492, tag8 4
+/[color(0x329bbe)]ドリルキー/[color(0xffffff)]さえありゃぁ<lf>
+# dup_of: line 38, tag8 11
+/[color(0xfa3232)]ドリルを動かせる回数は５回。/[color(0xffffff)]<lf>
+# dup_of: line 60, tag8 13
+/[color(0xfa3232)]制限時間１２０秒！/[color(0xffffff)]<lf>
+# dup_of: line 74, tag8 16
+/[color(0xfa3232)]制限時間９０秒！/[color(0xffffff)]<lf>
+# dup_of: line 441, tag8 18
+/[label(タム)]
+# dup_of: line 468, tag8 21
+/[label(ドリル好きの男)]
+# dup_of: line 348, tag8 23
+/[label(ホリアンナ]
+# dup_of: line 2, tag8 27
+/[waitkey(64)]/[close()]
+水着を手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 653, tag8 352
+二回目はなしだよ
+ミッション１(Mission1)
+ミッション２(Mission2)
+ミッション３(Mission3)
+# dup_of: line 676, tag8 333
+ミッション３(Mission3)
+結果処理(Result_free)
+はい<lf>いいえ
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ２<lf>ＭＩＳＳＩＯＮ３<lf>ＭＩＳＳＩＯＮ４
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ３<lf>ＭＩＳＳＩＯＮ４
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>ＭＩＳＳＩＯＮ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ４
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>ＭＩＳＳＩＯＮ２<lf>ＭＩＳＳＩＯＮ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ３<lf>ＭＩＳＳＩＯＮ４
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ４
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ２<lf>ＭＩＳＳＩＯＮ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ４
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ４
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>ＭＩＳＳＩＯＮ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>ＭＩＳＳＩＯＮ２<lf>ＭＩＳＳＩＯＮ３<lf>ＭＩＳＳＩＯＮ４
+while の 先頭
+ドリルゲームとは？<lf>操作方法について<lf>ゲームモードについて<lf>景品について<lf>説明おわり
+壊れ物破壊(broken)
+ドリゲー終了(drill_end)
+１ターン終了(drill_stanby)
+ミッション成功(SUCCESS == true)
+キャンセル希望(drill_stop)
+# dup_of: line 679, tag8 212
+はい<lf>いいえ
+時間切れスレッド開始(drill_timeover)
+ミッション未成功(SUCCESS == false)
+ミッション成功済み(SUCCESS == true)
+enterd : /[$0]
+evsExitをコールしました
+# dup_of: line 679, tag8 212
+はい<lf>いいえ
+entrance: /[$0]
+Tenmetu
+Kaiten1
+shoot on
+Talk_npc1
+Talk_npc2
+Talk_npc3
+Talk_npc4
+Talk_npc5
+Talk_npc6
+# dup_of: line 711, tag8 41
+Tenmetu
+# dup_of: line 708, tag8 44
+evsExitをコールしました
+ugaugaにfalseを渡した
+# dup_of: line 163, tag8 50
+□ボタンでドリルの支柱を動かします。<lf>
+# dup_of: line 397, tag8 52
+○ボタンを押してみてくれ！
+# dup_of: line 362, tag8 56
+「通常のドリル」の<lf>
+# dup_of: line 533, tag8 63
+あくまでも噂だけどね。<lf>
+# dup_of: line 475, tag8 65
+あたしは断然フリーモードね。<lf>
+# dup_of: line 474, tag8 68
+あなた、どのモードで遊んでる？<lf>
+# dup_of: line 538, tag8 71
+あの子のうーくん好きにも<lf>
+# dup_of: line 526, tag8 74
+あれを壊すと必ずお金が出るみたいね。<lf>
+# dup_of: line 564, tag8 77
+あんたなんだろ！？
+# dup_of: line 5, tag8 80
+あんた方、初めてだね？<lf>
+# dup_of: line 562, tag8 82
+あ！あんたなんだな！？<lf>
+# dup_of: line 134, tag8 86
+いやぁ残念だねぇ、うんうん。
+# dup_of: line 414, tag8 93
+おいおい、やめちまったのか！？<lf>
+# dup_of: line 508, tag8 95
+おっとっと、すまんすまん<lf>
+# dup_of: line 428, tag8 98
+おまえさん方、あまっちょるアイテムが<lf>
+# dup_of: line 326, tag8 101
+お客様がお待ちだ。<lf>
+# dup_of: line 140, tag8 104
+お済ませ下さい。
+# dup_of: line 622, tag8 107
+お金を差し上げましょう
+# dup_of: line 131, tag8 110
+がっぽり手に入ったかも<lf>
+# dup_of: line 570, tag8 112
+きっと他のよっつは、たいしたものは<lf>
+# dup_of: line 356, tag8 116
+こいつをもっていってくれ。<lf>
+# dup_of: line 171, tag8 123
+こちらは自動で行われます。<lf>
+# dup_of: line 20, tag8 125
+こっちに話し掛けてくれ。
+# dup_of: line 340, tag8 128
+このミッションの景品は切れちまってんだ。<lf>
+# dup_of: line 198, tag8 131
+この世にふたつとない豪華な景品が<lf>
+# dup_of: line 350, tag8 134
+この方々によってクリアされました。
+# dup_of: line 648, tag8 285
+フリープレイ(Freeplay)
+# dup_of: line 533, tag8 63
+あくまでも噂だけどね。<lf>
+Dkaiten01
+# dup_of: line 751, tag8 28
+Dkaiten01
+# dup_of: line 751, tag8 28
+Dkaiten01
+# dup_of: line 751, tag8 28
+Dkaiten01
+# dup_of: line 751, tag8 28
+Dkaiten01
+Dkaiten02
+# dup_of: line 756, tag8 29
+Dkaiten02
+# dup_of: line 756, tag8 29
+Dkaiten02
+# dup_of: line 756, tag8 29
+Dkaiten02
+# dup_of: line 756, tag8 29
+Dkaiten02
+Dkaiten03
+# dup_of: line 761, tag8 30
+Dkaiten03
+# dup_of: line 761, tag8 30
+Dkaiten03
+# dup_of: line 761, tag8 30
+Dkaiten03
+# dup_of: line 761, tag8 30
+Dkaiten03
+Dkaiten04
+# dup_of: line 766, tag8 31
+Dkaiten04
+# dup_of: line 766, tag8 31
+Dkaiten04
+# dup_of: line 766, tag8 31
+Dkaiten04
+# dup_of: line 766, tag8 31
+Dkaiten04
+Dkaiten05
+# dup_of: line 771, tag8 32
+Dkaiten05
+# dup_of: line 771, tag8 32
+Dkaiten05
+# dup_of: line 771, tag8 32
+Dkaiten05
+# dup_of: line 771, tag8 32
+Dkaiten05
+低速回転<lf>通常回転<lf>高速回転<lf>超高速回転
+# dup_of: line 712, tag8 33
+Kaiten1
+# dup_of: line 712, tag8 33
+Kaiten1
+# dup_of: line 712, tag8 33
+Kaiten1
+# dup_of: line 712, tag8 33
+Kaiten1
+# dup_of: line 712, tag8 33
+Kaiten1
+# dup_of: line 381, tag8 404
+手違いで最弱のドリルを装着して<lf>
+# dup_of: line 649, tag8 329
+ミッション成功結果処理(SUCCESS == true)
+# dup_of: line 650, tag8 1
+/[color(0x329bbe)]カードパック２弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 651, tag8 0
+/[color(0x329bbe)]カードパック１弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 652, tag8 257
+スピードスターを手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 653, tag8 352
+二回目はなしだよ
+# dup_of: line 650, tag8 1
+/[color(0x329bbe)]カードパック２弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 651, tag8 0
+/[color(0x329bbe)]カードパック１弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 656, tag8 334
+ヤマトベルトを手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 653, tag8 352
+二回目はなしだよ
+# dup_of: line 650, tag8 1
+/[color(0x329bbe)]カードパック２弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 651, tag8 0
+/[color(0x329bbe)]カードパック１弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 660, tag8 282
+ハンターアイを手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 653, tag8 352
+二回目はなしだよ
+# dup_of: line 650, tag8 1
+/[color(0x329bbe)]カードパック２弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 651, tag8 0
+/[color(0x329bbe)]カードパック１弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 672, tag8 429
+水着を手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 653, tag8 352
+二回目はなしだよ
+# dup_of: line 674, tag8 331
+ミッション１(Mission1)
+# dup_of: line 675, tag8 332
+ミッション２(Mission2)
+# dup_of: line 533, tag8 63
+あくまでも噂だけどね。<lf>
+# dup_of: line 676, tag8 333
+ミッション３(Mission3)
+# dup_of: line 651, tag8 0
+/[color(0x329bbe)]カードパック１弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 650, tag8 1
+/[color(0x329bbe)]カードパック２弾/[color(0xffffff)]を５個手に入れた！/[waitkey(64)]/[close()]
+# dup_of: line 491, tag8 2
+/[color(0x329bbe)]ドリルキー/[color(0xffffff)]が、全然出てこねぇ！！<lf>
+# dup_of: line 492, tag8 4
+/[color(0x329bbe)]ドリルキー/[color(0xffffff)]さえありゃぁ<lf>
+# dup_of: line 195, tag8 5
+/[color(0x329bbe)]ドリルキー/[color(0xffffff)]はここで入手します。<lf>
+# dup_of: line 543, tag8 7
+/[color(0x329bbe)]ドリルキー/[color(0xffffff)]・・・。<lf>
+# dup_of: line 6, tag8 9
+/[color(0x329bbe)]ドリルパスポート/[color(0xffffff)]の確認をさせてもらうよ。
+# dup_of: line 38, tag8 11
+/[color(0xfa3232)]ドリルを動かせる回数は５回。/[color(0xffffff)]<lf>
+# dup_of: line 60, tag8 13
+/[color(0xfa3232)]制限時間１２０秒！/[color(0xffffff)]<lf>
+# dup_of: line 46, tag8 15
+/[color(0xfa3232)]制限時間８０秒！/[color(0xffffff)]<lf>
+# dup_of: line 461, tag8 17
+/[label(ついてない男)]
+# dup_of: line 441, tag8 18
+/[label(タム)]
+# dup_of: line 7, tag8 26
+/[waitkey(64)]/[clear()]
+# dup_of: line 751, tag8 28
+Dkaiten01
+# dup_of: line 756, tag8 29
+Dkaiten02
+# dup_of: line 761, tag8 30
+Dkaiten03
+# dup_of: line 771, tag8 32
+Dkaiten05
+# dup_of: line 712, tag8 33
+Kaiten1
+# dup_of: line 714, tag8 34
+Talk_npc1
+# dup_of: line 715, tag8 35
+Talk_npc2
+# dup_of: line 716, tag8 36
+Talk_npc3
+# dup_of: line 708, tag8 44
+evsExitをコールしました
+mauの値は: /[$0]
+# dup_of: line 713, tag8 46
+shoot on
+# dup_of: line 722, tag8 47
+ugaugaにfalseを渡した
+while の 最後尾
+# dup_of: line 676, tag8 333
+ミッション３(Mission3)
+# dup_of: line 361, tag8 54
+「最強のドリル」と<lf>
+# dup_of: line 400, tag8 55
+「豪華な景品入ってます！」<lf>
+# dup_of: line 362, tag8 56
+「通常のドリル」の<lf>
+# dup_of: line 545, tag8 60
+ああ〜早くみつけないと。
+# dup_of: line 591, tag8 61
+あいつは「最強のドリル」の持ち主だ。<lf>
+# dup_of: line 105, tag8 62
+あいつは落とせないぜ。<lf>
+# dup_of: line 533, tag8 63
+あくまでも噂だけどね。<lf>
+# dup_of: line 475, tag8 65
+あたしは断然フリーモードね。<lf>
+# dup_of: line 556, tag8 67
+あとみっつしかねぇよ。<lf>
+# dup_of: line 474, tag8 68
+あなた、どのモードで遊んでる？<lf>
+# dup_of: line 457, tag8 69
+あなたここは初めてみたいね。<lf>
+# dup_of: line 538, tag8 71
+あの子のうーくん好きにも<lf>
+# dup_of: line 309, tag8 72
+あれがあるだろう
+# dup_of: line 314, tag8 73
+あれでございますか・・！？
+# dup_of: line 526, tag8 74
+あれを壊すと必ずお金が出るみたいね。<lf>
+# dup_of: line 576, tag8 75
+あんたが全部開けたんだろ？<lf>
+# dup_of: line 564, tag8 77
+あんたなんだろ！？
+# dup_of: line 354, tag8 78
+あんたのドリル魂は本物だ！<lf>
+# dup_of: line 465, tag8 79
+あんた初心者かい？<lf>
+# dup_of: line 5, tag8 80
+あんた方、初めてだね？<lf>
+# dup_of: line 130, tag8 81
+あんないいものや、こんなレアものが<lf>
+# dup_of: line 562, tag8 82
+あ！あんたなんだな！？<lf>
+# dup_of: line 256, tag8 83
+いいドリラーの条件を満たしている！<lf>
+# dup_of: line 439, tag8 84
+いくらでも買うからのう？
+# dup_of: line 536, tag8 85
+いくら聞いても、うーくんのことしか<lf>
+# dup_of: line 134, tag8 86
+いやぁ残念だねぇ、うんうん。
+# dup_of: line 82, tag8 88
+う、うむ、その・・・<lf>
+# dup_of: line 495, tag8 89
+うう、取られたくねえよぉ。<lf>
+# dup_of: line 266, tag8 91
+うーむすばらしい！！<lf>
+# dup_of: line 414, tag8 93
+おいおい、やめちまったのか！？<lf>
+# dup_of: line 508, tag8 95
+おっとっと、すまんすまん<lf>
+# dup_of: line 593, tag8 97
+おっと忘れてくれ。<lf>
+# dup_of: line 331, tag8 99
+おめでとうございます。<lf>
+# dup_of: line 326, tag8 101
+お客様がお待ちだ。<lf>
+# dup_of: line 610, tag8 102
+お客様には申し訳ありませんが、<lf>
+# dup_of: line 572, tag8 111
+きっとそうさ。
+# dup_of: line 325, tag8 114
+くどい。<lf>
+# dup_of: line 182, tag8 115
+くれぐれもお気をつけ下さい。<lf>
+# dup_of: line 356, tag8 116
+こいつをもっていってくれ。<lf>
+# dup_of: line 494, tag8 117
+ここの景品は全部１個限りなんだ。<lf>
+# dup_of: line 232, tag8 118
+こころゆくまでお楽しみくださいませ。
+# dup_of: line 397, tag8 52
+○ボタンを押してみてくれ！
+# dup_of: line 678, tag8 445
+結果処理(Result_free)
+# dup_of: line 26, tag8 129
+このミッションの説明をしようか？
+# dup_of: line 198, tag8 131
+この世にふたつとない豪華な景品が<lf>
+# dup_of: line 493, tag8 133
+この扉を開けられるってのによぉ！！！<lf>
+# dup_of: line 91, tag8 136
+この白い悪魔はうちの自慢の機械人形だ。<lf>
+# dup_of: line 16, tag8 137
+これであんた方はうちのお客さんだ。<lf>
+# dup_of: line 645, tag8 127
+このパターンは想定していません<lf>
+# dup_of: line 679, tag8 212
+はい<lf>いいえ
+# dup_of: line 680, tag8 295
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ２<lf>ＭＩＳＳＩＯＮ３<lf>ＭＩＳＳＩＯＮ４
+# dup_of: line 681, tag8 300
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ３<lf>ＭＩＳＳＩＯＮ４
+# dup_of: line 682, tag8 302
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>ＭＩＳＳＩＯＮ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ４
+# dup_of: line 683, tag8 304
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>ＭＩＳＳＩＯＮ２<lf>ＭＩＳＳＩＯＮ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+# dup_of: line 684, tag8 290
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ３<lf>ＭＩＳＳＩＯＮ４
+# dup_of: line 685, tag8 292
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ４
+# dup_of: line 686, tag8 291
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+# dup_of: line 687, tag8 294
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ２<lf>ＭＩＳＳＩＯＮ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+# dup_of: line 688, tag8 287
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ４
+# dup_of: line 689, tag8 289
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+# dup_of: line 690, tag8 286
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+# dup_of: line 691, tag8 297
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ４
+# dup_of: line 692, tag8 299
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ３<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+# dup_of: line 693, tag8 296
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+# dup_of: line 694, tag8 301
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>ＭＩＳＳＩＯＮ２<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ３/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ４/[color(0xffffff)]
+# dup_of: line 695, tag8 305
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>ＭＩＳＳＩＯＮ２<lf>ＭＩＳＳＩＯＮ３<lf>ＭＩＳＳＩＯＮ４
+ゲーム開始<lf>説明を聞く<lf>やっぱりやらない
+通常のドリル<lf>最強のドリル
+# dup_of: line 826, tag8 45
+mauの値は: /[$0]
+# dup_of: line 897, tag8 256
+ゲーム開始<lf>説明を聞く<lf>やっぱりやらない
+# dup_of: line 898, tag8 456
+通常のドリル<lf>最強のドリル
+# dup_of: line 826, tag8 45
+mauの値は: /[$0]
+# dup_of: line 897, tag8 256
+ゲーム開始<lf>説明を聞く<lf>やっぱりやらない
+# dup_of: line 898, tag8 456
+通常のドリル<lf>最強のドリル
+# dup_of: line 826, tag8 45
+mauの値は: /[$0]
+# dup_of: line 897, tag8 256
+ゲーム開始<lf>説明を聞く<lf>やっぱりやらない
+# dup_of: line 898, tag8 456
+通常のドリル<lf>最強のドリル
+# dup_of: line 826, tag8 45
+mauの値は: /[$0]
+# dup_of: line 897, tag8 256
+ゲーム開始<lf>説明を聞く<lf>やっぱりやらない
+# dup_of: line 898, tag8 456
+通常のドリル<lf>最強のドリル
+# dup_of: line 826, tag8 45
+mauの値は: /[$0]
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ２<lf>□　準備中　□<lf>□　準備中　□
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>□　準備中　□<lf>□　準備中　□
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ２/[color(0xffffff)]<lf>□　準備中　□<lf>□　準備中　□
+フリーモード<lf>ＭＩＳＳＩＯＮ１<lf>ＭＩＳＳＩＯＮ２<lf>□　準備中　□<lf>□　準備中　□
+# dup_of: line 897, tag8 256
+ゲーム開始<lf>説明を聞く<lf>やっぱりやらない
+# dup_of: line 897, tag8 256
+ゲーム開始<lf>説明を聞く<lf>やっぱりやらない
+# dup_of: line 897, tag8 256
+ゲーム開始<lf>説明を聞く<lf>やっぱりやらない
+# dup_of: line 491, tag8 2
+/[color(0x329bbe)]ドリルキー/[color(0xffffff)]が、全然出てこねぇ！！<lf>
+# dup_of: line 217, tag8 6
+/[color(0x329bbe)]ドリルキー/[color(0xffffff)]ひとつにつき一品の<lf>
+# dup_of: line 60, tag8 13
+/[color(0xfa3232)]制限時間１２０秒！/[color(0xffffff)]<lf>
+# dup_of: line 78, tag8 22
+/[label(ホリアンナ)]
+# dup_of: line 771, tag8 32
+Dkaiten05
+# dup_of: line 711, tag8 41
+Tenmetu
+# dup_of: line 696, tag8 48
+while の 先頭
+# dup_of: line 164, tag8 51
+□ボタンを押している間は移動を続けます。<lf>
+# dup_of: line 545, tag8 60
+ああ〜早くみつけないと。
+# dup_of: line 556, tag8 67
+あとみっつしかねぇよ。<lf>
+# dup_of: line 625, tag8 70
+あなたは２００００Ｇを獲得！<lf>
+# dup_of: line 526, tag8 74
+あれを壊すと必ずお金が出るみたいね。<lf>
+# dup_of: line 130, tag8 81
+あんないいものや、こんなレアものが<lf>
+# dup_of: line 266, tag8 91
+うーむすばらしい！！<lf>
+# dup_of: line 428, tag8 98
+おまえさん方、あまっちょるアイテムが<lf>
+# dup_of: line 129, tag8 109
+かーっ！２００Ｇありゃぁなぁ！<lf>
+# dup_of: line 696, tag8 48
+while の 先頭
+# dup_of: line 697, tag8 269
+ドリルゲームとは？<lf>操作方法について<lf>ゲームモードについて<lf>景品について<lf>説明おわり
+# dup_of: line 722, tag8 47
+ugaugaにfalseを渡した
+# dup_of: line 829, tag8 49
+while の 最後尾
+無事終了したくさい
+# dup_of: line 680, tag8 295
+フリーモード<lf>/[color(0xfa3232)]ＭＩＳＳＩＯＮ１/[color(0xffffff)]<lf>ＭＩＳＳＩＯＮ２<lf>ＭＩＳＳＩＯＮ３<lf>ＭＩＳＳＩＯＮ４
+# dup_of: line 698, tag8 384
+壊れ物破壊(broken)
+０番目破壊
+Ｍ１＿１番目破壊
+Ｍ１＿２番目破壊
+Ｍ１＿３番目破壊
+Ｍ１＿４番目破壊
+Ｍ１＿５番目破壊
+Ｍ１＿７番目破壊
+Ｍ１＿８番目破壊
+Ｍ１＿９番目破壊
+Ｍ１＿１０番目破壊
+Ｍ１＿１１番目破壊
+Ｍ１＿１２番目破壊
+Ｍ１＿１３番目破壊
+Ｍ１＿１４番目破壊
+Ｍ１＿１５番目破壊
+Ｍ２＿１番目破壊
+Ｍ２＿２番目破壊
+Ｍ２＿３番目破壊
+Ｍ２＿４番目破壊
+Ｍ２＿５番目破壊
+Ｍ２＿６番目破壊
+Ｍ２＿７番目破壊
+Ｍ２＿８番目破壊
+Ｍ２＿９番目破壊
+未登録破壊
+# dup_of: line 60, tag8 13
+/[color(0xfa3232)]制限時間１２０秒！/[color(0xffffff)]<lf>
+# dup_of: line 699, tag8 260
+ドリゲー終了(drill_end)
+# dup_of: line 700, tag8 468
+１ターン終了(drill_stanby)
+# dup_of: line 701, tag8 327
+ミッション成功(SUCCESS == true)
+# dup_of: line 702, tag8 252
+キャンセル希望(drill_stop)
+# dup_of: line 679, tag8 212
+はい<lf>いいえ
+# dup_of: line 704, tag8 411
+時間切れスレッド開始(drill_timeover)
+# dup_of: line 705, tag8 330
+ミッション未成功(SUCCESS == false)
+# dup_of: line 706, tag8 328
+ミッション成功済み(SUCCESS == true)
+# dup_of: line 707, tag8 42
+enterd : /[$0]
+# dup_of: line 708, tag8 44
+evsExitをコールしました
+# dup_of: line 679, tag8 212
+はい<lf>いいえ
+# dup_of: line 533, tag8 63
+あくまでも噂だけどね。<lf>
+# dup_of: line 710, tag8 43
+entrance: /[$0]
+# dup_of: line 711, tag8 41
+Tenmetu
+# dup_of: line 712, tag8 33
+Kaiten1
+# dup_of: line 713, tag8 46
+shoot on
+# dup_of: line 714, tag8 34
+Talk_npc1
+# dup_of: line 715, tag8 35
+Talk_npc2
+# dup_of: line 716, tag8 36
+Talk_npc3
+# dup_of: line 717, tag8 37
+Talk_npc4
+# dup_of: line 718, tag8 38
+Talk_npc5
+# dup_of: line 719, tag8 39
+Talk_npc6
+Talk_npc7
