@@ -1,8 +1,10 @@
 # chunk 1 @ 0x204 cnum=233 total=6
-# bc_map: 4,0,5,1,3,2
-휴식을 취하겠습니까？
+# bc_map: 4,0,5,0,1,3,2
+休憩をとりますか？
 /[waitkey(64)]/[close()]
-ＨＰ・ＥＰ가 회복됐다！！
+ＨＰ・ＥＰが回復した！！
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 enterd : /[$0]
-【환경 시뮬레이터】・VOK04로 jump！！
+【環境シミュレータ】・VOK04へjump！！
 entrance: /[$0]

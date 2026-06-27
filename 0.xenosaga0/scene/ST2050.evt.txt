@@ -1,66 +1,164 @@
 # chunk 2 @ 0x43c cnum=717 total=71
-# bc_map: 1,47,37,55,45,4,48,56,26,3,44,63,30,53,23,17,58,40,32,18,68,33,46,51,49,21,69,57,62,29,27,42,14,43,50,24,16,39,13,41,34,31,38,36,61,52,22,28,35,54,12,65,19,20,60,2,25,15,67,0,70,59,10,64,66,11,5,6,8,9,7
+# bc_map: 1,47,37,55,45,4,1,48,56,4,1,26,3,44,63,30,53,4,1,23,3,17,58,40,3,32,4,1,23,3,18,68,33,46,4,1,51,49,21,69,57,62,3,29,27,42,3,14,32,4,1,40,4,1,43,50,4,1,24,16,3,58,39,4,1,24,3,18,68,33,46,4,1,13,41,34,4,1,31,38,3,36,61,3,52,22,4,1,28,35,54,4,1,12,65,3,19,20,60,4,2,25,3,15,67,0,4,70,4,45,59,10,64,66,11,5,6,8,9,5,7
 /[label()]
 なんだ？客かよ？<lf>
 こんな所に来ても、<lf>
 ろくなもの何も売ってやしねぇぜ。<lf>
 それでも、なんか買うのかい？
 /[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label()]
 ほらな、<lf>
 ろくなもん売ってなかったろう？
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label()]
 おい、その金庫にさわんじゃねえよ！
 /[waitkey(1)]/[clear()]
 その中には俺とカミさんが<lf>
 命より大事にしている物が入ってるんだ。<lf>
 おまえらが気軽にさわっていいような<lf>
 ものじゃないんだよ！
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label()]
 いらっしゃいませ！
+# dup_of: line 13, tag8 3
+/[waitkey(1)]/[clear()]
 あ、ガイナン理事のお客さんですね。<lf>
 代金はガイナン理事からいただいてますので<lf>
 ごゆっくりどうぞ。
+# dup_of: line 13, tag8 3
+/[waitkey(1)]/[clear()]
 お休みになりますか？
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label()]
+# dup_of: line 20, tag8 23
+いらっしゃいませ！
+# dup_of: line 13, tag8 3
+/[waitkey(1)]/[clear()]
 あ、Ｊｒ．様。<lf>
 見回りですか？<lf>
 お疲れでしたら、<lf>
 どうぞ休んでいって下さい。
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label()]
 まったく、<lf>
 ほんと、困ったおとーさんなんですよ。<lf>
 あんな大きな金庫ばかり大事にして。<lf>
 金庫ばかり大きくても、<lf>
 中に入るものが無いんですから。<lf>
 単なる、見栄っ張りなんですよ。
+# dup_of: line 13, tag8 3
+/[waitkey(1)]/[clear()]
 おとーさんのことゆるしてくださいね。<lf>
 おかーさんが死んでから<lf>
 ずっと、あんな感じで……。
+# dup_of: line 13, tag8 3
+/[waitkey(1)]/[clear()]
 あ、そんな事はどうでもいいですね。<lf>
+# dup_of: line 26, tag8 32
+お休みになりますか？
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label()]
+# dup_of: line 24, tag8 40
+ごゆっくりどうぞ。
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label()]
 そうですか？<lf>
 また、いらしてくださいね。
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label()]
 いらっしゃいませ！<lf>
 あ、ガイナン理事のお客さんですね。
+# dup_of: line 13, tag8 3
+/[waitkey(1)]/[clear()]
+# dup_of: line 23, tag8 58
+代金はガイナン理事からいただいてますので<lf>
 ごゆっくりお休みください。
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label()]
+# dup_of: line 59, tag8 24
+いらっしゃいませ！<lf>
+# dup_of: line 13, tag8 3
+/[waitkey(1)]/[clear()]
+# dup_of: line 31, tag8 18
+あ、Ｊｒ．様。<lf>
+# dup_of: line 32, tag8 68
+見回りですか？<lf>
+# dup_of: line 33, tag8 33
+お疲れでしたら、<lf>
+# dup_of: line 34, tag8 46
+どうぞ休んでいって下さい。
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label()]
 あ、お客さん！<lf>
 すみません、<lf>
 かってに奥にはいらないでくださいね。
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label()]
 おやおや、お客さんかい？<lf>
 こんな辺ぴな場所にめずらしいねぇ。
+# dup_of: line 13, tag8 3
+/[waitkey(1)]/[clear()]
 この市街区には観光といっても、<lf>
 何も珍しいものはないよぉ。
+# dup_of: line 13, tag8 3
+/[waitkey(1)]/[clear()]
 みーんな新しくできた３６区の方に<lf>
 いっちまうからね。
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label()]
 おっと、名物といえばね、<lf>
 ここの親子喧嘩は、この街の名物さね。<lf>
 ゆっくり見学してくといいよ。
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label()]
 あ、お客さんかい！<lf>
 大丈夫、恐くはないよ。
+# dup_of: line 13, tag8 3
+/[waitkey(1)]/[clear()]
 あの親子ならいつもの事さ、<lf>
 あれでスキンシップをとってるんだ。<lf>
 何も心配いらないよ。
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
 /[label(シオン)]
 うん、すっきりしたわ！<lf>
+# dup_of: line 13, tag8 3
+/[waitkey(1)]/[clear()]
 あ、アレン君待ってるだろうなぁ。<lf>
 早くエルザに戻って、<lf>
 /[font(ＫＯＳ−ＭＯＳ)]の調整を始めなくちゃ。
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
 ＨＰ・ＥＰが回復した！！
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 5, tag8 45
+それでも、なんか買うのかい？
 休む<lf>休まない
 enterd : /[$0]
 外概観１・３
@@ -70,4 +168,6 @@ Talk_npc1
 Talk_npc2
 Talk_npc3
 Talk_npc4
+# dup_of: line 116, tag8 5
+Talk_npc1
 Talk_npc21

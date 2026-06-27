@@ -1,6 +1,12 @@
 # chunk 1 @ 0x204 cnum=196 total=4
-# bc_map: 0,2,3,1
+# bc_map: 0,0,0,2,3,2,1
+enterd : /[$0]
+# dup_of: line 1, tag8 0
+enterd : /[$0]
+# dup_of: line 1, tag8 0
 enterd : /[$0]
 クリーニング屋・４
 襲撃後外観街１・８
+# dup_of: line 4, tag8 2
+クリーニング屋・４
 entrance: /[$0]

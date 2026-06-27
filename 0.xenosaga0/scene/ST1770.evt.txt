@@ -1,5 +1,5 @@
 # chunk 4 @ 0x808 cnum=828 total=111
-# bc_map: 25,4,63,41,101,5,34,43,94,22,104,100,91,47,88,24,51,42,78,31,79,92,99,21,102,90,50,87,110,97,33,40,26,28,37,62,84,23,45,72,32,67,71,77,27,57,105,52,35,38,39,93,73,82,1,48,75,83,89,49,109,65,80,44,95,108,46,106,3,103,68,98,29,2,0,30,61,76,64,53,107,86,36,74,54,55,56,81,59,60,96,85,58,66,69,70,18,6,19,10,12,14,16,11,13,15,17,7,9,8,20
+# bc_map: 25,4,63,41,101,5,34,43,94,5,22,104,4,100,91,5,47,88,4,24,51,5,42,78,5,31,4,79,92,99,5,21,102,5,90,50,87,110,97,5,33,40,5,26,28,37,5,62,84,4,23,45,72,32,5,67,4,71,77,5,27,57,4,105,52,5,35,4,38,39,93,73,82,5,1,48,75,4,83,89,49,4,109,65,80,5,1,44,95,108,4,46,106,5,3,103,4,68,98,29,5,2,0,4,30,61,5,76,64,53,107,4,86,5,36,4,74,54,55,4,56,81,5,59,60,96,4,85,5,58,5,66,69,5,70,70,70,18,6,19,10,12,14,16,11,13,15,70,70,70,18,6,19,10,12,14,16,11,13,15,17,7,9,8,20
 ……Ｊｒ．様。
 /[waitkey(1)]/[clear()]
 やはり私には<lf>
@@ -9,92 +9,174 @@
 いつかは私にも、<lf>
 この景色を美しいと思える時が<lf>
 来るでしょうか？
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 ……この景色、<lf>
 美しいとはどういう事なのでしょうか？
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 私の目には<lf>
 数値とデータの集合にしか認識できません。
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 すべての事象を観測することが、<lf>
 我々に与えられた任務です。
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 ……はたして、<lf>
 それ以外の感情が必要なのでしょうか？
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 この景色を美しいとおもえない私は、<lf>
 他の者よりも劣っているのでしょうか？
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 ありゃ、ちび様。
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 何ですか？またナンパですか？<lf>
 最近、<lf>
 百式に手を出してるそうじゃないですか。
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 ……いいっすなぁ。<lf>
 私もあやかりたいっすよぉ。
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 我々レアリエンは、<lf>
 それぞれのおかれた環境によって<lf>
 性格が固定化されるんですよ。<lf>
 軍にいるものは軍人らしく、<lf>
 民間にいるものはより民間人らしくってね。
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 いいなぁ……Ｊｒ．様はモテモテで。<lf>
 この俺には誰一人よりつかないんだぁよ？
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 あ、じゅ、Ｊｒ．様！<lf>
 あははは、お、お散歩ですか？<lf>
 え、えーと、アメでも食べます？
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 やっぱここは、<lf>
 彼女と二人で来るべきところだよなぁ。
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 ……でも、<lf>
 この艦に乗ってるのは<lf>
 レアリエンばっかりだしなぁ……。<lf>
 あーあ、彼女ほしーなぁー
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 ブリッジの百式でも誘うかなぁ。
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 レアリエンの彼女ってのも<lf>
 今風っぽいからなぁ。
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 あ、Ｊｒ．様？<lf>
 まったく、きちんと食べてますか？
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 育ち盛りなんだから、<lf>
 ちゃんと食べないと駄目ですよぉ。
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 いやぁ、すごいじゃない。
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 ここの景色を見るとさ、<lf>
 このデュランダルで働いていて<lf>
 本当によかったって思うよね。<lf>
 一度、<lf>
 子供にも見せてやりたいもんですよぉ。
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 /[label(アレン)]
 そう言えば主任。<lf>
 主任も疲れてるんじゃないですか？
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 居住区の一室を<lf>
 我々の為に解放してくれたそうなので<lf>
 そこならゆっくり休めますよ。
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 赤いカーペットの部屋だそうです。<lf>
 シェリィさんからは<lf>
 入ればすぐ分かるって聞いてますけど……。
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 75, tag8 1
+/[label(アレン)]
 この艦すごいですよね。<lf>
 武装は連邦戦艦以上。<lf>
 設備は豪華客船ですからね。
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 これならゆったりとした<lf>
 船旅が楽しめますよ！
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 /[label(ＫＯＳ−ＭＯＳ)]
 私もシオンの意見に同感です。
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 ミズラヒ博士の研究無くしては、<lf>
 現在の科学の発展は<lf>
 ありえなかったと思います。
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 /[label(モモ)]
 /[font(ＫＯＳ−ＭＯＳ)]さんて優しいんですね。
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 ありがとう。モモを元気づけてくれて<lf>
 もう大丈夫です。
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 人を探しているのですか？<lf>
 アレンさんですね、<lf>
 でしたらファウンデーションの方に<lf>
 行かれたはずです。
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 急げば追いつけると思いますよ！
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 いやー、いい加減な性格も困りものですな。
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 一度サボると、<lf>
 なかなか仕事をする気に<lf>
 ならないんですから。
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 まったく、<lf>
 厄介な性格を植え付けられたものです。
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 まったく、冷や汗もんだぜ。<lf>
 もうちょっとで連邦の奴等に<lf>
 殺されるところだったよ。
+# dup_of: line 2, tag8 4
+/[waitkey(1)]/[clear()]
 彼女もいねえのに死にたかねぇよな！
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 まったく、だから軍人はいやなんだ！
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
 シオン宛てに<lf>
 メールが届いてるよ！！
+# dup_of: line 6, tag8 5
+/[waitkey(64)]/[close()]
+メールを見る<lf>メールを見ない
+# dup_of: line 135, tag8 70
+メールを見る<lf>メールを見ない
+# dup_of: line 135, tag8 70
 メールを見る<lf>メールを見ない
 enterd : /[$0]
 MOGUMOGUMOGUMOGUMOGUMOGUMOGUMOGUMOGUMOGU
@@ -105,6 +187,32 @@ TalkNPC3
 TalkNPC4
 TalkNPC11
 TalkNPC22
+TalkNPC33
+# dup_of: line 135, tag8 70
+メールを見る<lf>メールを見ない
+# dup_of: line 135, tag8 70
+メールを見る<lf>メールを見ない
+# dup_of: line 135, tag8 70
+メールを見る<lf>メールを見ない
+# dup_of: line 138, tag8 18
+enterd : /[$0]
+# dup_of: line 139, tag8 6
+MOGUMOGUMOGUMOGUMOGUMOGUMOGUMOGUMOGUMOGU
+# dup_of: line 140, tag8 19
+entrance: /[$0]
+# dup_of: line 141, tag8 10
+TalkNPC1
+# dup_of: line 142, tag8 12
+TalkNPC2
+# dup_of: line 143, tag8 14
+TalkNPC3
+# dup_of: line 144, tag8 16
+TalkNPC4
+# dup_of: line 145, tag8 11
+TalkNPC11
+# dup_of: line 146, tag8 13
+TalkNPC22
+# dup_of: line 147, tag8 15
 TalkNPC33
 TalkNPC44
 TalkALLEN

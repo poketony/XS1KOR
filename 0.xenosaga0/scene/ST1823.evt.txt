@@ -6,24 +6,44 @@ Nobi
 Chijimi
 
 # chunk 4 @ 0x13d8 cnum=629 total=26
-# bc_map: 25,1,15,11,16,10,13,24,20,0,18,23,22,12,19,21,5,2,14,17,8,9,7,3,4
+# bc_map: 25,1,15,1,11,1,16,1,10,1,13,1,24,1,20,1,0,18,23,22,1,12,1,19,21,1,5,2,14,17,8,9,7,3,4
 # bc_unmap: 6
 移動先の入力をお願いします。
 /[waitkey(64)]/[close()]
 【揚陸待機エリア】に移動します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 【パークエリア】に移動します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 【隔離格納庫エリア】に移動します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 【ドックエリア】に移動します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 【居住エリア】に移動します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 ブリッジに移動しますか？
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 /[label(シオン)]
 アレン君に酷い事言っちゃったし……。<lf>
 直接会って謝らないと<lf>
 気持ちが悪いな……。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 【ブリッジエリア駅】
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 シオン宛てに<lf>
 メールが届いてるよ！！
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 Nobi
 Chijimi
 【揚陸待機エリア】<lf>【パークエリア】<lf>【隔離格納庫エリア】<lf>【ドックエリア】<lf>【居住エリア】<lf>　キャンセル

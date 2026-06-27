@@ -1,42 +1,130 @@
 # chunk 3 @ 0x8d8 cnum=666 total=48
-# bc_map: 0,32,35,39,4,13,28,2,30,34,3,29,1,40,42,33,37,45,46,47,41,36,19,18,17,16,27,26,25,24,23,22,21,20,15,38,31,14,5,6,7,8,11,43,44,12,9,10
+# bc_map: 0,32,35,39,4,13,4,0,28,2,30,30,34,3,0,29,1,40,4,42,33,4,37,45,4,37,46,4,37,47,4,41,36,4,0,19,4,0,18,4,0,17,4,0,16,4,0,27,4,0,26,4,0,25,4,0,24,4,0,23,4,0,22,4,0,21,4,0,20,4,0,15,4,0,38,4,31,31,14,14,14,14,5,6,7,8,11,43,44,12,9,9,10
 /[label()]
 き、金庫を、中に俺の宝が……。<lf>
 ナンバー…は……、<lf>
 写真…誕生…日………。
 /[waitkey(64)]/[close()]
 …………。
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label()]
 うわーん、こわかったよぉ〜。
 /[waitkey(1)]/[clear()]
 おとーさんが、<lf>
+# dup_of: line 11, tag8 30
+おとーさんが、<lf>
 グノーシスにやられちゃったのぉ〜。
 /[waitkey(64)]/[clear()]
+# dup_of: line 1, tag8 0
+/[label()]
 うわーん！
 /[wait(30)]/[close()]
 暗証番号を入力して下さい。
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
 番号が無効です。<lf>
 はじめから入力し直してください。
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
 入力を確認しました。<lf>
 ２桁目の数字を入力してください。
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 23, tag8 37
+入力を確認しました。<lf>
 ３桁目の数字を入力してください。
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 23, tag8 37
+入力を確認しました。<lf>
 ４桁目の数字を入力してください。
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
 暗証番号を確認しました。<lf>
 ロックを解除します。
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label()]
 あと１３人！
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label()]
 あと１２人！
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label()]
 あと１１人！
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label()]
 あと１０人！
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label()]
 あと９人！
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label()]
 あと８人！
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label()]
 あと７人！
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label()]
 あと６人！
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label()]
 あと５人！
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label()]
 あと４人！
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label()]
 あと３人！
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label()]
 あと２人！
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label()]
 あと１人！
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label()]
 全員救出！
+# dup_of: line 5, tag8 4
+/[waitkey(64)]/[close()]
 おやじ死亡中
+# dup_of: line 77, tag8 31
+おやじ死亡中
+『０』<lf>『１』<lf>『２』<lf>『３』<lf>『４』<lf>『５』<lf>『６』<lf>『７』<lf>『８』<lf>『９』
+# dup_of: line 79, tag8 14
+『０』<lf>『１』<lf>『２』<lf>『３』<lf>『４』<lf>『５』<lf>『６』<lf>『７』<lf>『８』<lf>『９』
+# dup_of: line 79, tag8 14
+『０』<lf>『１』<lf>『２』<lf>『３』<lf>『４』<lf>『５』<lf>『６』<lf>『７』<lf>『８』<lf>『９』
+# dup_of: line 79, tag8 14
 『０』<lf>『１』<lf>『２』<lf>『３』<lf>『４』<lf>『５』<lf>『６』<lf>『７』<lf>『８』<lf>『９』
 1111111111
 2222222222
@@ -46,5 +134,7 @@ enterd : /[$0]
 襲撃後外概観１・３
 襲撃後宿屋２Ｆ・１
 entrance: /[$0]
+Talk_npc1
+# dup_of: line 91, tag8 9
 Talk_npc1
 Talk_npc2

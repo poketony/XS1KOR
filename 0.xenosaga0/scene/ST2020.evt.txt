@@ -1,5 +1,5 @@
 # chunk 3 @ 0xcfc cnum=740 total=66
-# bc_map: 3,36,1,9,44,52,10,4,33,55,62,29,59,60,53,51,38,0,45,27,30,34,11,2,57,56,43,61,25,65,64,6,26,8,41,5,32,7,39,48,46,40,63,31,54,37,58,28,35,47,50,23,42,24,22,20,49,21,13,14,15,16,17,18,19,12
+# bc_map: 3,36,1,9,44,52,10,4,33,55,9,62,29,10,3,52,10,4,59,60,53,51,38,0,10,3,45,9,27,9,30,10,4,34,11,2,57,11,2,56,11,2,43,11,2,61,11,2,25,65,9,64,11,6,26,8,4,41,10,5,32,10,7,39,48,46,10,5,40,63,10,4,31,54,10,5,37,58,28,10,4,35,11,2,47,50,11,0,23,42,24,22,20,49,21,13,14,15,16,17,18,19,19,12
 /[label(アレン)]
 じゃ、ボクはエルザに戻って<lf>
 /[font(ＫＯＳ−ＭＯＳ)]の様子を見てきますけど……。<lf>
@@ -10,47 +10,121 @@
 /[label(シオン)]
 うん……ごめんね。<lf>
 取り乱しちゃって。
+# dup_of: line 4, tag8 9
+/[waitkey(1)]/[clear()]
 雷には……、<lf>
 あまりいい思い出ないから……。
+# dup_of: line 7, tag8 10
+/[waitkey(64)]/[clear()]
+# dup_of: line 1, tag8 3
+/[label(アレン)]
+# dup_of: line 6, tag8 52
+主任……。
+# dup_of: line 7, tag8 10
+/[waitkey(64)]/[clear()]
+# dup_of: line 8, tag8 4
+/[label(シオン)]
 私、少し疲れちゃったから、<lf>
 第２７市街区画のホテルで<lf>
 休んでいこうかな……。<lf>
 一休みしたら、そっちに行くから。<lf>
 それまでの間、<lf>
 /[font(ＫＯＳ−ＭＯＳ)]のことよろしく。
+# dup_of: line 7, tag8 10
+/[waitkey(64)]/[clear()]
+# dup_of: line 1, tag8 3
+/[label(アレン)]
 わかりました。
+# dup_of: line 4, tag8 9
+/[waitkey(1)]/[clear()]
 あの、主任？
+# dup_of: line 4, tag8 9
+/[waitkey(1)]/[clear()]
 あんまり無理しちゃダメですよ。
+# dup_of: line 7, tag8 10
+/[waitkey(64)]/[clear()]
+# dup_of: line 8, tag8 4
+/[label(シオン)]
 うん、わかってる。
 /[waitkey(64)]/[close()]
 /[label()]
 小さい魚を捕まえた！
+# dup_of: line 35, tag8 11
+/[waitkey(64)]/[close()]
+# dup_of: line 36, tag8 2
+/[label()]
 大きい魚を捕まえた！
+# dup_of: line 35, tag8 11
+/[waitkey(64)]/[close()]
+# dup_of: line 36, tag8 2
+/[label()]
 はずれ…。
+# dup_of: line 35, tag8 11
+/[waitkey(64)]/[close()]
+# dup_of: line 36, tag8 2
+/[label()]
 見覚えのある魚を捕まえた。
+# dup_of: line 35, tag8 11
+/[waitkey(64)]/[close()]
+# dup_of: line 36, tag8 2
+/[label()]
 「/[color(0x329bbe)]魚影探知器/[color(0xffffff)]」を使用すれば、<lf>
 魚を捕まえる事ができます。
+# dup_of: line 4, tag8 9
+/[waitkey(1)]/[clear()]
 魚を捕まえますか？
+# dup_of: line 35, tag8 11
+/[waitkey(64)]/[close()]
 /[label(モモ)]
 あ、ジギー！
 /[wait(30)]/[close()]
+# dup_of: line 8, tag8 4
+/[label(シオン)]
 どうしたんですか？
+# dup_of: line 7, tag8 10
+/[waitkey(64)]/[clear()]
 /[label(ジギー)]
 いや、様子を見に来ただけだが…。
+# dup_of: line 7, tag8 10
+/[waitkey(64)]/[clear()]
 /[label(Ｊｒ．)]
 そんな事いって、<lf>
 ホントは、<lf>
 オッサンも遊びたかったんじゃねぇの？
+# dup_of: line 7, tag8 10
+/[waitkey(64)]/[clear()]
+# dup_of: line 60, tag8 5
+/[label(ジギー)]
 どうしたんだ、<lf>
 顔色が良くないようだが？
+# dup_of: line 7, tag8 10
+/[waitkey(64)]/[clear()]
+# dup_of: line 8, tag8 4
+/[label(シオン)]
 いえ、たいした事ないんです。<lf>
 全然大丈夫ですよ。
+# dup_of: line 7, tag8 10
+/[waitkey(64)]/[clear()]
+# dup_of: line 60, tag8 5
+/[label(ジギー)]
 そうか、<lf>
 本人がそう言うのならかまわないが、<lf>
 あまり、無理はしない方がいい。
+# dup_of: line 7, tag8 10
+/[waitkey(64)]/[clear()]
+# dup_of: line 8, tag8 4
+/[label(シオン)]
 ええ、わかってます。
+# dup_of: line 35, tag8 11
+/[waitkey(64)]/[close()]
+# dup_of: line 36, tag8 2
+/[label()]
 シオン宛に<lf>
 メールが届いてるよ！！
+# dup_of: line 35, tag8 11
+/[waitkey(64)]/[close()]
+# dup_of: line 24, tag8 0
+/[font(ＫＯＳ−ＭＯＳ)]のことよろしく。
 sakana!!
 はい<lf>いいえ
 sakana2!!
@@ -64,5 +138,7 @@ Talk_npc12
 Talk_npc13
 Talk_npc14
 Talk_npc15
+Talk_npc2
+# dup_of: line 102, tag8 19
 Talk_npc2
 BAYBAY

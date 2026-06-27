@@ -1,12 +1,20 @@
 # chunk 4 @ 0x1434 cnum=648 total=18
-# bc_map: 14,0,11,9,7,12,13,16,10,15,6,1,17,2,3,4,5,8
+# bc_map: 14,0,11,9,0,11,7,0,12,13,0,16,10,15,6,1,17,2,17,3,4,5,8
 ボタンがあります。押してみますか？
 /[waitkey(64)]/[close()]
 セグメント・アドレスＮｏ．１２<lf>
 を発見した。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 11
+セグメント・アドレスＮｏ．１２<lf>
 と表示されている。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 セグメント・アドレスＮｏ．１２の<lf>
 デコードを終了します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 下
 サブルート
 上
@@ -14,6 +22,8 @@ lo2 = true
 1
 両方壊れた
 2
+# dup_of: line 17, tag8 17
+両方壊れた
 enterd : /[$0]
 entrance: /[$0]
 idle

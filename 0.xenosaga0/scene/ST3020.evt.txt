@@ -5,13 +5,17 @@ nobiA
 nobiB
 
 # chunk 4 @ 0x17e0 cnum=554 total=13
-# bc_map: 12,0,11,2,3,6,9,10,1,7,5,4,8
+# bc_map: 12,0,11,2,3,11,6,11,9,10,1,7,5,4,8
 フロアを移動しますか？
 /[waitkey(64)]/[close()]
 はい<lf>いいえ
 Down
 Down2
+# dup_of: line 3, tag8 11
+はい<lf>いいえ
 Up
+# dup_of: line 3, tag8 11
+はい<lf>いいえ
 nobiA
 nobiB
 Agari

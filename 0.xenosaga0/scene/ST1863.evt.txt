@@ -6,36 +6,78 @@ Nobi
 Chijimi
 
 # chunk 4 @ 0x1070 cnum=738 total=38
-# bc_map: 34,3,16,20,14,18,17,33,25,30,35,13,2,23,21,37,22,24,27,26,28,32,31,36,0,1,29,19,6,4,15,11,12,8,9,10,5
+# bc_map: 34,3,16,3,20,3,14,3,18,3,17,3,33,3,25,30,35,3,13,2,23,21,37,3,22,24,3,27,26,2,28,3,32,31,3,27,26,2,28,3,36,3,0,3,1,29,3,19,3,6,4,15,11,12,8,9,10,5
 # bc_unmap: 7
 移動先の入力をお願いします。
 /[waitkey(64)]/[close()]
 【パークエリア】に移動します。
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
 【隔離格納庫エリア】に移動します。
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
 【ドックエリア】に移動します。
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
 【居住エリア】に移動します。
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
 【ブリッジエリア】に移動します。
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
 ご苦労様です！<lf>
 今のところこの武器庫には<lf>
 誰一人通しておりません！
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
 ……なんだ？<lf>
 /[waitkey(1)]/[clear()]
 ここは武器庫だ。<lf>
 おまえ達のような客人には<lf>
 関係の無い場所だよ。
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
 くそ、戻ってきてもすぐ出撃だぁ〜<lf>
 これじゃ、直すヒマなんかありゃしねえ。
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
 ちび様！ちび様の/[font(Ａ．Ｇ．Ｗ．Ｓ．)]<lf>
 せっかく直したんですからね〜！
+# dup_of: line 20, tag8 2
+/[waitkey(1)]/[clear()]
 もう、簡単に壊さないで下さいよぉ。
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
 外の戦闘はかなり激しくなってます。<lf>
 十分気をつけて下さい。
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
+# dup_of: line 28, tag8 27
+ちび様！ちび様の/[font(Ａ．Ｇ．Ｗ．Ｓ．)]<lf>
+# dup_of: line 29, tag8 26
+せっかく直したんですからね〜！
+# dup_of: line 20, tag8 2
+/[waitkey(1)]/[clear()]
+# dup_of: line 31, tag8 28
+もう、簡単に壊さないで下さいよぉ。
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
 鍵がかかっている。
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
 /[color(0x329bbe)]武器庫の鍵/[color(0xffffff)]を使った。
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
 /[label(仮人)]
 ラスダン前です。【仮】
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
 【揚陸待機エリア駅】
+# dup_of: line 2, tag8 3
+/[waitkey(64)]/[close()]
 Nobi
 Chijimi
 【パークエリア】<lf>【隔離格納庫エリア】<lf>【ドックエリア】<lf>【居住エリア】<lf>【ブリッジエリア】<lf>　キャンセル

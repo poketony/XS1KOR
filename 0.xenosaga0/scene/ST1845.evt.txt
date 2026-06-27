@@ -6,7 +6,7 @@ Nobi
 Chijimi
 
 # chunk 4 @ 0x1050 cnum=851 total=93
-# bc_map: 76,33,90,5,31,80,6,32,81,25,61,50,45,23,40,46,58,48,85,38,68,53,83,67,41,60,91,87,84,37,92,59,69,39,82,78,24,77,86,54,22,26,42,44,35,43,75,73,79,49,66,1,56,63,88,36,2,29,71,30,0,28,74,52,4,62,57,65,64,70,3,27,51,55,72,89,34,47,10,7,8,20,21,12,13,14,15,16,17,18,19,9
+# bc_map: 76,33,90,5,31,80,6,32,6,81,6,25,61,6,50,45,6,23,40,6,46,58,48,6,85,38,6,68,53,83,5,67,6,41,60,91,6,87,84,6,37,92,59,69,5,39,82,78,6,24,77,5,86,54,6,22,6,26,42,6,22,6,44,35,43,6,75,73,6,79,49,66,6,1,56,63,5,88,36,6,2,29,71,5,30,6,0,28,5,74,52,6,4,62,57,5,65,64,70,6,3,27,5,51,55,72,6,89,6,34,6,44,47,10,7,8,20,21,12,13,14,15,16,17,18,19,12,9,88,4,4
 # bc_unmap: 11
 現在本線は避難路の確保の為<lf>
 【ドックエリア】以外の<lf>
@@ -16,75 +16,145 @@ Chijimi
 移動しますか？
 /[waitkey(64)]/[close()]
 【ドックエリア】に移動します。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 ……うぅぅ、<lf>
 メアリー！！早く逃げるんだ！！
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 やっ、やめろーっ！！<lf>
 その子には手を出すなぁっ！！
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 ……あんた、<lf>
 こいつの子供を見なかったかい？
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 どうやら、<lf>
 ファウンデーションのランチ乗り場で<lf>
 はぐれちまったらしいんだ。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 誰かケガをしている人は<lf>
 いませんか！？
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 全くなんてこった！！<lf>
 グノーシスがファウンデーションを<lf>
 襲うなんて……。
+# dup_of: line 4, tag8 5
+/[waitkey(1)]/[clear()]
 今までに無かった事だぜ！？
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 この先の居住区に<lf>
 ファウンデーションの人達が<lf>
 避難してるんだ。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 誰か人を探してるんだったら<lf>
 覗いてみるのもいいかもしれないな。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 いくらデュランダルが<lf>
 都市としての機能を持っていたとしても<lf>
 ファウンデーションの人たち全部は<lf>
 収容しきれない……。
+# dup_of: line 4, tag8 5
+/[waitkey(1)]/[clear()]
 かといって<lf>
 街の人たちを見捨てるなんて<lf>
 私には出来ない……。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 ……いけない！！<lf>
 私がここで弱気になってどうするの！！<lf>
+# dup_of: line 4, tag8 5
+/[waitkey(1)]/[clear()]
 誰かーッ！！<lf>
 ケガをしている人はいませんかー！？
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 ……。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 ……ごめん。<lf>
 しばらくほっといてくれないか……。<lf>
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 56, tag8 22
+……。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 せっかく裸一貫から築いた財産が<lf>
 あのバケモンのせいで、<lf>
 すべてパーになっちまった！！
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 現在、ブリッジでも<lf>
 状況の分析に全力を注いでいます。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 私はデータを分析するより<lf>
 もっとじかに<lf>
 人の役に立ちたかったんです。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 /[label(シオン)]
 ファウンデーションに残してきた<lf>
 モモちゃんが気がかりね……。
+# dup_of: line 4, tag8 5
+/[waitkey(1)]/[clear()]
 迎えに行った方が<lf>
 いいかも知れないわ。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 /[label(ジギー)]
 ……モモか、<lf>
 果たして独りきりにしてよいものか？
+# dup_of: line 4, tag8 5
+/[waitkey(1)]/[clear()]
 ……様子を見に行ってみるか。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 /[label(ケイオス)]
 ……モモ。
+# dup_of: line 4, tag8 5
+/[waitkey(1)]/[clear()]
 独りで大丈夫かな？<lf>
 やっぱり迎えに行こう！！
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 /[label(ＫＯＳ−ＭＯＳ)]
 モモが<lf>
 ファウンデーションに残ったままです。
+# dup_of: line 4, tag8 5
+/[waitkey(1)]/[clear()]
 事態が悪化する前に<lf>
 モモを救出するのが<lf>
 最善の選択でしょう……。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 /[label(Ｊｒ．)]
 ……ちっ！！
+# dup_of: line 4, tag8 5
+/[waitkey(1)]/[clear()]
 やっぱりモモを<lf>
 ファウンデーションに<lf>
 残してきたのは失敗だったな？<lf>
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 迎えに行ってやるとするか！？
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 【居住エリア駅】
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 63, tag8 44
+せっかく裸一貫から築いた財産が<lf>
 はい<lf>いいえ
 Nobi
 Chijimi
@@ -99,4 +169,12 @@ TalkNPC5
 TalkNPC6
 TalkNPC7
 TalkNPC8
+# dup_of: line 119, tag8 12
+TalkNPC1
 Evt
+# dup_of: line 78, tag8 88
+迎えに行った方が<lf>
+# dup_of: line 93, tag8 4
+/[label(ＫＯＳ−ＭＯＳ)]
+# dup_of: line 93, tag8 4
+/[label(ＫＯＳ−ＭＯＳ)]

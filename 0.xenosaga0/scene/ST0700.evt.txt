@@ -1,10 +1,20 @@
 # chunk 2 @ 0x368 cnum=581 total=8
-# bc_map: 5,4,0,3,6,7,1,2
-세그먼트 어드레스 Ｎｏ．１４라고<lf>
-적힌 문을 발견했다．
+# bc_map: 5,4,0,5,3,0,6,7,0,1,2,1,2
+セグメント・アドレスＮｏ．１４<lf>
+を発見した。
 /[waitkey(64)]/[close()]
-표시되어 있다．
-세그먼트 어드레스 Ｎｏ．１４의<lf>
-디코드를 종료합니다．
+# dup_of: line 1, tag8 5
+セグメント・アドレスＮｏ．１４<lf>
+と表示されている。
+# dup_of: line 3, tag8 0
+/[waitkey(64)]/[close()]
+セグメント・アドレスＮｏ．１４の<lf>
+デコードを終了します。
+# dup_of: line 3, tag8 0
+/[waitkey(64)]/[close()]
 enterd : /[$0]
+entrance: /[$0]
+# dup_of: line 10, tag8 1
+enterd : /[$0]
+# dup_of: line 11, tag8 2
 entrance: /[$0]

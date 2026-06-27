@@ -1,24 +1,40 @@
 # chunk 0 @ 0x44 cnum=121 total=1
-# bc_map: 0
-가져간다<lf>그냥 둔다
+# bc_map: 0,0
+とる<lf>そっとしておく
+# dup_of: line 1, tag8 0
+とる<lf>そっとしておく
 
 # chunk 2 @ 0xb04 cnum=275 total=18
-# bc_map: 0,10,3,12,14,4,16,17,2,15,1,8,11,13,7,9,5,6
-/[label(해병（Ｅ）)]
-그냥 시체인 것 같다……
+# bc_map: 0,10,3,12,14,4,0,16,4,17,2,4,15,4,1,8,11,4,1,13,7,9,4,5,6
+/[label(水兵（Ｅ）)]
+ただの屍のようだ……
 /[waitkey(1)]/[clear()]
-열쇠가 있다．<lf>
-가져가겠습니까？
+カギがあります。<lf>
+取りますか？
 /[waitkey(64)]/[close()]
-죽어 있다……
-잠겨 있다
+# dup_of: line 1, tag8 0
+/[label(水兵（Ｅ）)]
+死んでいる……
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+鍵がかかっている
 /[wait(256)]
-문이 열렸다
-/[label(해병（Ｆ）)]
-아아아아，오지 마요！<lf>
-저리 가 달라고요！！
-난 아직 죽고 싶지 않아요！<lf>
-「급할수록 돌아가라」고<lf>
-하지 않습니까！！
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+扉が開いた
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+/[label(水兵（Ｆ）)]
+ああぁぁぁ、こないでー！<lf>
+どっかにいってくれー！！
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 15, tag8 1
+/[label(水兵（Ｆ）)]
+俺はまだ死にたくないんですよー！<lf>
+「急がば回れ」って<lf>
+いうじゃないですかぁ！！
+# dup_of: line 6, tag8 4
+/[waitkey(64)]/[close()]
 enterd : /[$0]
 entrance: /[$0]

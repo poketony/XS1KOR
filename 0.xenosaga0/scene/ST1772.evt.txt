@@ -1,5 +1,5 @@
 # chunk 4 @ 0x710 cnum=681 total=97
-# bc_map: 61,76,73,1,94,80,81,2,93,55,66,31,90,68,27,20,91,43,85,44,79,29,52,41,15,32,47,50,86,36,14,34,49,54,38,65,74,53,48,60,45,26,83,16,37,75,84,17,21,13,19,30,72,92,95,23,24,87,70,25,39,88,33,40,22,28,18,69,46,56,63,64,71,35,82,51,42,57,77,58,96,78,67,89,0,62,59,11,12,3,5,7,9,4,6,8,10
+# bc_map: 61,76,73,1,94,80,81,2,93,55,1,66,31,1,90,68,2,61,76,73,1,94,80,81,2,2,93,55,1,66,31,1,90,68,2,27,20,91,1,43,85,1,44,79,2,29,52,41,1,15,32,2,47,50,1,86,36,2,14,34,1,49,54,38,2,65,1,74,53,1,48,60,45,1,26,83,2,16,37,1,75,84,2,17,21,13,1,19,30,1,72,92,2,95,23,1,24,87,1,70,25,2,39,88,1,33,40,22,2,28,1,18,69,2,46,1,56,63,64,2,71,35,1,82,51,2,42,57,1,77,58,2,96,78,1,67,89,2,0,62,2,0,59,2,45,11,12,3,5,7,9,4,6,8,10
 ファウンデーション内に<lf>
 多数のグノーシスが<lf>
 取り付いているようです。
@@ -10,83 +10,199 @@
 /[waitkey(64)]/[close()]
 美しい景色が、<lf>
 グノーシスに破壊されていく……。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 人間ならば、<lf>
 ここで感傷的になるのでしょうか？
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 私には数値で処理する事以外、<lf>
 何の感情も起らないようです。
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 61
+ファウンデーション内に<lf>
+# dup_of: line 2, tag8 76
+多数のグノーシスが<lf>
+# dup_of: line 3, tag8 73
+取り付いているようです。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
+# dup_of: line 5, tag8 94
+連邦艦隊と、デュランダルの<lf>
+# dup_of: line 6, tag8 80
+戦力だけではそう長くは<lf>
+# dup_of: line 7, tag8 81
+持ちこたえられないでしょう……。
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
+# dup_of: line 9, tag8 93
+美しい景色が、<lf>
+# dup_of: line 10, tag8 55
+グノーシスに破壊されていく……。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
+# dup_of: line 12, tag8 66
+人間ならば、<lf>
+# dup_of: line 13, tag8 31
+ここで感傷的になるのでしょうか？
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
+# dup_of: line 15, tag8 90
+私には数値で処理する事以外、<lf>
+# dup_of: line 16, tag8 68
+何の感情も起らないようです。
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
 いやぁ、大変な事になりましたな！<lf>
 あれだけのグノーシスが出現するなんて、<lf>
 私も初めて見ましたよ！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 でも、まぁ、<lf>
 焦っても仕方ないですよね。<lf>
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 どの道、<lf>
 成るようにしか成らないんですから……。
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
 おや、ちび様も見学ですか？<lf>
 わかりますよ。これだけのもの、<lf>
 そうそう見られる物ではないですからな！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 あ、でもこの場所は駄目ですよ。<lf>
 ここは私の指定席ですからね。
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
 まいったねこりゃ！？<lf>
 まるで夢でも見てるようだわ。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 百鬼夜行ってのは、<lf>
 こんな感じなんだろうな……。
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
 あ、ちび様。<lf>
 こりゃ一体どうなってるんです？
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 まさかちび様、<lf>
 グノーシスに恨みをかうような事<lf>
 しちまったんじゃ……。
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
 一体どうなってるんだい！？
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 外にはバケモノが<lf>
 ウヨウヨしているじゃないか！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 まさか、あれ、<lf>
 ファウンデーションを狙ってるんじゃ<lf>
 ないだろうね？
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 あんた、兵隊さんなんだろ？<lf>
 早く何とかしておくれよ！
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
 あ、Ｊｒ．様！<lf>
 こんな所にいたら危ないですよ！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 外にはバケモノがウヨウヨしてます。<lf>
 早く安全な所に逃げて下さい！！
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
 あの巨大な建造物……。<lf>
 あれは、ミルチア紛争の元凶となった<lf>
 「ネピリムの歌声」ですね。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 あの歌声が、レアリエン達の暴走の<lf>
 きっかけとなったとか。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 再び、あの悲劇が<lf>
 繰り返されるのでしょうか……。
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
 Ｊｒ．様、<lf>
 あれは「ネピリムの歌声」ですよね。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 あれはミルチア紛争の時、<lf>
 破棄されたのではないのですか？
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 何故今ごろ、一体誰が<lf>
 あれを動かしているのですか？
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
 すごいですよねー！あの巨大なコロニー、<lf>
 確かヴェクターの曙光って言うんですよね。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 このクーカイ・ファウンデーションも<lf>
 すごいと思いますけど、<lf>
 あれは、桁が違いますよね。
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
 いやー、ちび様も見ました？
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 あの曙光、すごいですよね。<lf>
 何もかも桁違いって感じですよね。
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
 なんか、ものすごい事になってきたね……。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 グノーシスに連邦に<lf>
 ヴェクターさんまでお出ましだぜ。<lf>
 一体どうなっちまうのかね？
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
 何故曙光がわざわざ<lf>
 こんな宙域に現れたんでしょうか。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 救援にしては、本社ごと<lf>
 やって来るってのも何か変な話ですよね。
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
 ちょっと、<lf>
 コロニーの方は大丈夫だったんだろうね！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 帰ったら家が無くなってたなんて、<lf>
 ゴメンだからね。
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
 Ｊｒ．様、大丈夫でしたか？<lf>
 怪我はないですか？
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 今、あちこちウロウロすると大変だから。<lf>
 私と一緒に、ここにいたほうがいいですよ。
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
 /[label(仮人)]
 ファウンデーション前です。【仮】
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
+# dup_of: line 139, tag8 0
+/[label(仮人)]
 ネピリムの歌声前です。【仮】
+# dup_of: line 8, tag8 2
+/[waitkey(64)]/[close()]
+# dup_of: line 73, tag8 45
+ないだろうね？
 enterd : /[$0]
 entrance: /[$0]
 TalkNPC1

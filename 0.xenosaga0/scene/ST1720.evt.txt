@@ -1,0 +1,13 @@
+# chunk 5 @ 0xeac cnum=337 total=3
+# bc_map: 0,1,2,2,2,2,2
+enterd : /[$0]
+entrance: /[$0]
+fl
+# dup_of: line 3, tag8 2
+fl
+# dup_of: line 3, tag8 2
+fl
+# dup_of: line 3, tag8 2
+fl
+# dup_of: line 3, tag8 2
+fl

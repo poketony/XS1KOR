@@ -1,17 +1,41 @@
 # chunk 1 @ 0x204 cnum=299 total=15
-# bc_map: 7,0,8,6,5,4,9,11,13,14,12,10,1,2,3
+# bc_map: 7,0,8,0,6,0,5,4,0,9,11,9,11,9,11,13,11,14,11,12,11,10,11,1,11,2,3
 「ランチ発着場」
 /[waitkey(64)]/[close()]
 「第２６・２７市街区画」
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 「ガイナン・プライベートビーチ」
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 「/[font(Ａ．Ｇ．Ｗ．Ｓ．)]パーツショップ<lf>
 　ファウンデーション・ロボットアカデミー」
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 ランチ発着場【MC_KUK16】・１
 入る<lf>入らない
+# dup_of: line 10, tag8 9
+ランチ発着場【MC_KUK16】・１
+# dup_of: line 11, tag8 11
+入る<lf>入らない
+# dup_of: line 10, tag8 9
+ランチ発着場【MC_KUK16】・１
+# dup_of: line 11, tag8 11
+入る<lf>入らない
 外観２【MC_KUK03】・２
+# dup_of: line 11, tag8 11
+入る<lf>入らない
 襲撃後外観１【MC_KUK03B】・２
+# dup_of: line 11, tag8 11
+入る<lf>入らない
 外観１【MC_KUK03】・２
+# dup_of: line 11, tag8 11
+入る<lf>入らない
 人工ビーチ【MC_KUK02】・１
+# dup_of: line 11, tag8 11
+入る<lf>入らない
 AGWSパーツショップ【MC_KUK12】・１
+# dup_of: line 11, tag8 11
+入る<lf>入らない
 enterd : /[$0]
 entrance: /[$0]

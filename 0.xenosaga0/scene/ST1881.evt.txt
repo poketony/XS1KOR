@@ -1,33 +1,67 @@
 # chunk 4 @ 0x710 cnum=550 total=33
-# bc_map: 1,13,2,32,27,31,11,28,3,22,14,18,25,15,12,30,19,23,24,16,17,0,26,21,4,29,6,20,7,8,9,5,10
+# bc_map: 1,13,2,32,27,31,2,11,28,3,1,22,2,14,3,1,18,2,25,15,3,1,12,2,30,19,23,2,24,3,1,16,17,3,0,26,3,0,21,3,4,29,6,20,0,7,8,9,5,10
 /[label(グレイト・ジョー)]
 ……ガンマンの少年？
 /[waitkey(1)]/[clear()]
 銃の勝負の世界、<lf>
 敗北の後に何が待つかは<lf>
 知っているはず！！
+# dup_of: line 3, tag8 2
+/[waitkey(1)]/[clear()]
 ……それでもなお、<lf>
 敢えてオレに戦いを挑むか？
 /[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label(グレイト・ジョー)]
 丁度いい暇つぶしだ。
+# dup_of: line 3, tag8 2
+/[waitkey(1)]/[clear()]
 おとなしく死ぬがいい！！
+# dup_of: line 10, tag8 3
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label(グレイト・ジョー)]
 その銃はただの飾りか？
+# dup_of: line 3, tag8 2
+/[waitkey(1)]/[clear()]
 弱者に用はない。<lf>
 この場を立ち去れ！！
+# dup_of: line 10, tag8 3
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label(グレイト・ジョー)]
 ……オレの負けだ。
+# dup_of: line 3, tag8 2
+/[waitkey(1)]/[clear()]
 油断していたとはいえ、<lf>
 なかなかの銃さばき。<lf>
 友と呼ぶにふさわしい男だ。
+# dup_of: line 3, tag8 2
+/[waitkey(1)]/[clear()]
 友の証として、これを贈ろう。
+# dup_of: line 10, tag8 3
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 1
+/[label(グレイト・ジョー)]
 さらばだ、友よ。<lf>
 その『水着』はしばらく預けておくぞ。
+# dup_of: line 10, tag8 3
+/[waitkey(64)]/[close()]
 <lf>
 必殺技『魂の狂詩曲』を覚えた。
+# dup_of: line 10, tag8 3
+/[waitkey(64)]/[close()]
+# dup_of: line 35, tag8 0
+<lf>
 エーテル『マグナムジョー』を覚えた。
+# dup_of: line 10, tag8 3
+/[waitkey(64)]/[close()]
 EOB****************************************************
 新技ＧＥＴなのか！？
 broken1111111111111111111111111111
 もちろんやってやるぜ！！<lf>オイオイ、付き合ってらんねーぜ！！
+# dup_of: line 35, tag8 0
+<lf>
 broken22222222222222222222222222
 enterd : /[$0]
 entrance: /[$0]

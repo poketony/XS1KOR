@@ -1,18 +1,30 @@
 # chunk 4 @ 0x714 cnum=761 total=16
-# bc_map: 11,15,0,12,10,9,13,14,3,4,1,7,6,5,8,2
-에어록은 세이프티 모드로<lf>
-작동 중입니다．
+# bc_map: 11,15,0,12,10,0,12,9,0,13,14,0,3,4,1,1,7,6,6,5,8,2
+エアロックはセーフティーモードで<lf>
+作動しています。
 /[waitkey(64)]/[close()]
-세그먼트 어드레스 Ｎｏ．７이라고<lf>
-적힌 문을 발견했다．
-표시되어 있다．
-세그먼트 어드레스 Ｎｏ．７의<lf>
-디코드를 종료합니다．
+セグメント・アドレスＮｏ．７<lf>
+を発見した。
+# dup_of: line 3, tag8 0
+/[waitkey(64)]/[close()]
+# dup_of: line 4, tag8 12
+セグメント・アドレスＮｏ．７<lf>
+と表示されている。
+# dup_of: line 3, tag8 0
+/[waitkey(64)]/[close()]
+セグメント・アドレスＮｏ．７の<lf>
+デコードを終了します。
+# dup_of: line 3, tag8 0
+/[waitkey(64)]/[close()]
 gunoyose_lgunoyose_lgunoyose_lgunoyose_lgunoyose_l
 gunoyose_rgunoyose_rgunoyose_rgunoyose_rgunoyose_r
 enterd : /[$0]
-【환경 시뮬레이터】・VOK13로 jump！！
-【환경 시뮬레이터】・VOK12로 jump！！
-【환경 시뮬레이터】・VOK07로 jump！！
-【환경 시뮬레이터】・ＶＯＫ２０으로 점프！！
+# dup_of: line 15, tag8 1
+enterd : /[$0]
+【環境シミュレータ】・VOK13へjump！！
+【環境シミュレータ】・VOK12へjump！！
+# dup_of: line 18, tag8 6
+【環境シミュレータ】・VOK12へjump！！
+【環境シミュレータ】・VOK07へjump！！
+【環境シミュレータ】・VOK20へjump！！
 entrance: /[$0]

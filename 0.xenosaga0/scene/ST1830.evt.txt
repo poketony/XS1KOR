@@ -6,42 +6,78 @@ Nobi
 Chijimi
 
 # chunk 4 @ 0x1074 cnum=696 total=44
-# bc_map: 39,1,15,18,17,19,16,38,21,31,24,42,0,28,26,41,22,34,12,23,35,40,43,25,13,32,27,33,11,37,36,20,29,30,4,2,14,9,10,6,8,7,3
+# bc_map: 39,1,15,1,18,1,17,1,19,1,16,1,38,1,21,31,1,24,42,0,28,26,41,1,22,34,1,12,23,0,35,40,1,43,25,1,13,0,32,27,33,1,11,0,37,36,1,20,1,29,30,1,4,2,14,9,10,6,8,7,6,3
 # bc_unmap: 5
 移動先の入力をお願いします。
 /[waitkey(64)]/[close()]
 【ドックエリア】に移動します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 【居住エリア】に移動します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 【ブリッジエリア】に移動します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 【揚陸待機エリア】に移動します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 【パークエリア】に移動します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 あ、Ｊｒ．様。<lf>
 今のところ異常はありません！
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 この先は<lf>
 重要機密の保管庫になっております。
 /[waitkey(1)]/[clear()]
 ガイナン様、<lf>
 もしくはＪｒ．様の許可のある方以外は<lf>
 通行する事はできません。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 あ、ＶＩＰの方でしたか！？<lf>
 失礼いたしました！！
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 ……Ｊｒ．様。<lf>
 この中には一体何があるのですか？
+# dup_of: line 20, tag8 0
+/[waitkey(1)]/[clear()]
 実は、中が気になって、<lf>
 警備に身が入らないのですが……。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 ＶＩＰの方ですね。<lf>
 どうぞお通りください。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 ……Ｊｒ．様のお連れの方ですね？
+# dup_of: line 20, tag8 0
+/[waitkey(1)]/[clear()]
 先ほど一緒におられた女の子が<lf>
 エリアトレインに乗って<lf>
 出て行かれましたが……。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 ……何やら悲し気でしたが。
+# dup_of: line 20, tag8 0
+/[waitkey(1)]/[clear()]
 放って置くのは<lf>
 少々心配ですね……。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 【隔離格納庫エリア駅】
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 シオン宛てに<lf>
 メールが届いてるよ！！
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 Nobi
 Chijimi
 【ドックエリア】<lf>【居住エリア】<lf>【ブリッジエリア】<lf>【揚陸待機エリア】<lf>【パークエリア】<lf>　キャンセル
@@ -50,4 +86,6 @@ entrance: /[$0]
 TalkNPC1
 TalkNPC2a
 TalkNPC2
+# dup_of: line 58, tag8 6
+TalkNPC1
 Evt

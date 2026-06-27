@@ -1,13 +1,23 @@
 # chunk 4 @ 0x1428 cnum=661 total=20
-# bc_map: 15,0,12,10,8,13,14,19,17,11,16,7,1,18,2,3,5,9,4,6
+# bc_map: 15,0,12,10,0,12,8,0,13,14,0,19,0,17,11,16,7,1,18,2,18,3,5,9,4,6,9
 ボタンがあります。押してみますか？
 /[waitkey(64)]/[close()]
 セグメント・アドレスＮｏ．１２<lf>
 を発見した。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 12
+セグメント・アドレスＮｏ．１２<lf>
 と表示されている。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 セグメント・アドレスＮｏ．１２の<lf>
 デコードを終了します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 ＥＶＳ【環境シミュレーター】を終了します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 下
 サブルート
 上
@@ -15,8 +25,12 @@ lo2 = true
 1
 両方壊れた
 2
+# dup_of: line 19, tag8 18
+両方壊れた
 enterd : /[$0]
 evsExitをコールしました
 はい<lf>いいえ
 entrance: /[$0]
 idle
+# dup_of: line 24, tag8 9
+はい<lf>いいえ

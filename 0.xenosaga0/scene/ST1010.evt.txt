@@ -1,9 +1,11 @@
 # chunk 1 @ 0x204 cnum=369 total=10
-# bc_map: 0,9,2,1,3,4,5,6,7,8
+# bc_map: 0,9,2,1,2,3,4,5,6,7,8
 /[color(0x329bbe)]Ｎｏ．３カード/[color(0xffffff)]がある。<lf>
 カードキーを取りますか？<lf>
 /[waitkey(64)]/[close()]
 /[color(0x329bbe)]Ｎｏ．３カード/[color(0xffffff)]を手に入れた<lf>
+# dup_of: line 3, tag8 2
+/[waitkey(64)]/[close()]
 A - Type
 B - Type
 C - Type

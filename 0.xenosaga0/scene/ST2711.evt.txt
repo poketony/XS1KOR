@@ -1,5 +1,5 @@
 # chunk 4 @ 0x8e8 cnum=689 total=53
-# bc_map: 3,32,29,50,38,24,6,39,40,16,4,21,48,46,19,22,42,44,41,26,33,2,23,43,36,31,0,14,1,27,51,17,34,18,25,47,52,15,28,35,5,49,20,45,37,12,13,7,8,9,10,11,30
+# bc_map: 3,32,29,50,38,24,6,3,39,40,16,6,4,21,48,46,19,6,4,22,42,44,41,6,4,26,33,6,2,23,43,36,31,6,0,14,6,1,27,51,6,0,17,34,6,1,18,25,47,6,0,52,6,1,15,28,35,6,0,14,6,5,49,6,5,20,45,37,6,14,12,13,7,8,9,10,11,30
 /[label(モモ)]
 キルシュヴァッサーは、モモの妹たち<lf>
 なんです。<lf>
@@ -7,44 +7,94 @@
 ママから話だけは聞いていて…。<lf>
 ずっと、会いたいって想ってた…。<lf>
 /[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 3
+/[label(モモ)]
 モモは…。<lf>
 モモはもう大丈夫です。<lf>
 ありがとう、シオンさん。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 /[label(Ｊｒ．)]
 これだけの規模の装置だ。<lf>
 爆弾の十個や二十個仕掛けたところで破壊は不可能だ。<lf>
 戻ってファウンデーションの主砲を使った方がいいな。<lf>
 こいつは…存在してはいけないものなんだ。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 13, tag8 4
+/[label(Ｊｒ．)]
 しかし何故、突然歌声の機能が<lf>
 停止したんだ？<lf>
 奴らがいなくなったからなのか…？<lf>
 何か、引っかかるな…。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 13, tag8 4
+/[label(Ｊｒ．)]
 とにかくファウンデーションに戻ろう、<lf>
 シオン。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 /[label(ジギー)]
 すでに敵の気配はないようだ。<lf>
 外部の状況も気になる。<lf>
 ファウンデーションに戻った方が<lf>
 よさそうだな。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 /[label(ケイオス)]
 ………。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 /[label(シオン)]
 どうしたの？ケイオス君。<lf>
 難しい顔して。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 35, tag8 0
+/[label(ケイオス)]
 いや、なんでもないよ。<lf>
 シオンこそ。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 38, tag8 1
+/[label(シオン)]
 うん…。<lf>
 ちょっとね…。<lf>
 気にかかることがあって…。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 35, tag8 0
+/[label(ケイオス)]
 ？
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 38, tag8 1
+/[label(シオン)]
 あの人の声…。<lf>
 どこかで聞いた覚えがあるの。<lf>
 ハッキリとは思い出せないんだけど…。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 35, tag8 0
+/[label(ケイオス)]
+# dup_of: line 36, tag8 14
+………。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
 /[label(ＫＯＳ−ＭＯＳ)]
 現在、ネピリムの歌声はその全機能を停止させています。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 62, tag8 5
+/[label(ＫＯＳ−ＭＯＳ)]
 この場所に留まっていても<lf>
 意味はありません。<lf>
 ファウンデーションへの帰還を提案します。
+# dup_of: line 7, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 36, tag8 14
+………。
 enterd : /[$0]
 entrance: /[$0]
 Talk_npc1

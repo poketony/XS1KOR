@@ -1,13 +1,23 @@
 # chunk 4 @ 0xa14 cnum=520 total=15
-# bc_map: 12,1,0,14,10,8,7,2,6,3,11,13,4,5,9
+# bc_map: 12,1,0,14,10,8,1,0,7,1,2,6,6,6,3,11,13,4,5,9
 公園のマスコット像が転がっている。
 /[waitkey(64)]/[close()]
 /[label(シオン)]
 私、昔からこのキャラクターが好きなのよね。
 パッと見、とってもカワユイんだけど、<lf>
 この子の魅力はそれだけじゃないのよ。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 0
+/[label(シオン)]
 …いつ見ても怖いわね。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 EOB:0
+lo:0
+# dup_of: line 12, tag8 6
+lo:0
+# dup_of: line 12, tag8 6
 lo:0
 enterd : /[$0]
 公園【MC_KAS31】・１

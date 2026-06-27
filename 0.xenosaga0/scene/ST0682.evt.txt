@@ -1,12 +1,16 @@
 # chunk 3 @ 0xd80 cnum=543 total=10
-# bc_map: 8,1,0,7,9,5,6,4,2,3
-격벽 스위치를 누르겠습니까？<lf>
+# bc_map: 8,1,0,7,9,1,5,6,4,2,4,3
+隔壁スイッチを押しますか？<lf>
 /[waitkey(64)]/[close()]
-/[label(케이오스)]
-이 앞에는<lf>
-전자기 플로어가 있어（임시）
+/[label(ケイオス)]
+この先は<lf>
+電磁床がある（仮）
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 enterd : /[$0]
 entrance: /[$0]
 TalkNPC1
 Stop
+# dup_of: line 9, tag8 4
+TalkNPC1
 Stop2

@@ -1,5 +1,5 @@
 # chunk 4 @ 0x8e8 cnum=458 total=24
-# bc_map: 16,1,11,20,23,0,10,17,8,7,21,13,14,15,12,2,3,4,22,6,19,18,5,9
+# bc_map: 16,1,11,20,23,0,10,17,8,0,7,21,13,0,14,15,12,1,2,4,22,6,19,6,18,5,2,3,4,22,5,2,9
 マンホールに入りますか？
 /[waitkey(64)]/[close()]
 もう、あいつったら何時まで<lf>
@@ -9,18 +9,36 @@
 ふう、まあいいか、<lf>
 久しぶりのデートなんだし。<lf>
 ああ、それにしても楽しみだわ…。
+# dup_of: line 6, tag8 0
+/[waitkey(1)]/[clear()]
 ………、<lf>
 楽しみ…、<lf>
 タノシミ…、
+# dup_of: line 6, tag8 0
+/[waitkey(1)]/[clear()]
 ダッタ…ノ…ニ…、<lf>
 ニイィィー…、<lf>
 グガーーーーーーッ！！
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 Talk_npc1
-broken:1
 enterd : /[$0]
 瓦礫１【MC_KAS12】・２
 lo:0
 地下水同【MC_KAS14 ・４
+# dup_of: line 22, tag8 6
+lo:0
 地下水同【MC_KAS14 ・２
 entrance: /[$0]
+# dup_of: line 19, tag8 2
+Talk_npc1
+broken:1
+# dup_of: line 20, tag8 4
+enterd : /[$0]
+# dup_of: line 21, tag8 22
+瓦礫１【MC_KAS12】・２
+# dup_of: line 26, tag8 5
+entrance: /[$0]
+# dup_of: line 19, tag8 2
+Talk_npc1
 はい<lf>いいえ

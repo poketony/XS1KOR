@@ -1,19 +1,43 @@
 # chunk 4 @ 0x14d4 cnum=842 total=17
-# bc_map: 16,0,15,11,14,3,2,4,5,7,6,8,9,1,12,13,10
+# bc_map: 16,0,15,0,11,14,3,14,2,14,4,14,5,14,7,14,6,14,8,14,9,14,1,12,13,12,10,2,11
 フロアを移動しますか？
 /[waitkey(64)]/[close()]
 スイッチを押しますか？
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 WINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWIN
 はい<lf>いいえ
 AU
+# dup_of: line 6, tag8 14
+はい<lf>いいえ
 AD
+# dup_of: line 6, tag8 14
+はい<lf>いいえ
 BD
+# dup_of: line 6, tag8 14
+はい<lf>いいえ
 BU
+# dup_of: line 6, tag8 14
+はい<lf>いいえ
 CU
+# dup_of: line 6, tag8 14
+はい<lf>いいえ
 CD
+# dup_of: line 6, tag8 14
+はい<lf>いいえ
 DD
+# dup_of: line 6, tag8 14
+はい<lf>いいえ
 DU
+# dup_of: line 6, tag8 14
+はい<lf>いいえ
 152152152152152152152152152152152152152152152152152152152152152
 enterd : /[$0]
 entrance: /[$0]
+# dup_of: line 24, tag8 12
+enterd : /[$0]
 Evt
+# dup_of: line 9, tag8 2
+AD
+# dup_of: line 5, tag8 11
+WINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWIN

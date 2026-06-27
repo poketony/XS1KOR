@@ -1,6 +1,10 @@
 # chunk 1 @ 0x1ec cnum=137 total=5
-# bc_map: 4,0,1,2,3
+# bc_map: 4,0,4,0,1,2,3
 ボス戦闘後後処理
+0に勝利
+# dup_of: line 1, tag8 4
+ボス戦闘後後処理
+# dup_of: line 2, tag8 0
 0に勝利
 1に勝利
 FUJI_11 ON 

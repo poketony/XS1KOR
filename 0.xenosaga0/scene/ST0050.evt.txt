@@ -1,38 +1,86 @@
 # chunk 3 @ 0x91c cnum=554 total=38
-# bc_map: 2,34,21,22,5,3,13,0,12,26,23,24,36,33,29,25,17,4,19,31,15,16,20,14,35,32,28,27,37,18,30,1,8,9,11,7,6,10
+# bc_map: 2,34,21,22,5,3,13,0,12,26,5,2,23,5,2,24,5,2,36,5,2,33,5,3,29,25,5,3,17,4,19,31,5,2,15,5,3,16,20,5,3,14,35,4,32,28,5,27,5,37,5,18,30,1,18,8,4,9,11,7,6,10
 /[label()]
-현재 아이템은 임시입니다．<lf>
-아이템을 획득하면<lf>
-미유키에게서 메일이 올 예정입니다．
+現在アイテムは仮のものです。<lf>
+アイテムをとると、<lf>
+ミユキからメールがくる予定です。
 /[waitkey(64)]/[close()]
-/[label(시온)]
-아，메일！
+/[label(シオン)]
+あ、メール！
 <lf>
-…미유키한테서 온 거네．<lf>
-대체 무슨 일일까……？
-메일이 오지 않았습니다．<lf>
-이미 메일을 받았습니다．
-볼 수 없다오！
-유감……．
-장대한 계획이라니……<lf>
-대체 뭔 생각을 하는 걸까 그 애는…
-조금 피곤해졌어．
+…ミユキからだわ。<lf>
+一体何かしら……？
+# dup_of: line 5, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
+メールきてません。<lf>
+# dup_of: line 5, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
+メールはすでに受け取りました。
+# dup_of: line 5, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
+見れませんのだ！
+# dup_of: line 5, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
+残念……。
+# dup_of: line 5, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 6, tag8 3
+/[label(シオン)]
+壮大な計画って……、<lf>
+一体、何考えてるのかしらあの子…。
+# dup_of: line 5, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 6, tag8 3
+/[label(シオン)]
+ちょっと、疲れちゃったわね。
 /[waitkey(1)]/[clear()]
-모두에겐 미안하지만，<lf>
-잠깐 쉬도록 할까…．
-안녕히 주무세요．
-맞다，자기 전에<lf>
-모두의 상태를 보러 가야 했었지ー！<lf>
-<lf>
-짐이 도착해 있었어．
-빨리 /[font(Ａ．Ｇ．Ｗ．Ｓ．)] 격납고로<lf>
-가야 해！
-휴식하겠습니까？
-ＨＰ・ＥＰ가 회복되었다！！
-예<lf>아니요
-잠깐 낮잠을 자자<lf>아직 안 돼，모두가 걱정돼
+みんなには悪いけど、<lf>
+少し休もうかしら…。
+# dup_of: line 5, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
+おやすみなさい。
+# dup_of: line 5, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 6, tag8 3
+/[label(シオン)]
+そうよね、寝る前に<lf>
+みんなの様子を見に行かなくちゃ
+# dup_of: line 5, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 6, tag8 3
+/[label(シオン)]
+いっけなーい！<lf>
+荷物が届いてたんだ。
+# dup_of: line 30, tag8 4
+/[waitkey(1)]/[clear()]
+早く、/[font(Ａ．Ｇ．Ｗ．Ｓ．)]格納庫に<lf>
+取りに行かなくちゃ！
+# dup_of: line 5, tag8 5
+/[waitkey(64)]/[close()]
+休憩をとりますか？
+# dup_of: line 5, tag8 5
+/[waitkey(64)]/[close()]
+ＨＰ・ＥＰが回復した！！
+# dup_of: line 5, tag8 5
+/[waitkey(64)]/[close()]
+はい<lf>いいえ
+少し仮眠をとろうかな<lf>まだダメよ、みんなの事が心配だわ
 *********全回復しました**************
+# dup_of: line 52, tag8 18
+はい<lf>いいえ
 enterd : /[$0]
+# dup_of: line 30, tag8 4
+/[waitkey(1)]/[clear()]
 entrance: /[$0]
 shoot on
 Talk_npc1

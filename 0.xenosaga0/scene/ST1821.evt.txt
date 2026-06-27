@@ -6,21 +6,45 @@ Nobi
 Chijimi
 
 # chunk 4 @ 0x12f4 cnum=671 total=22
-# bc_map: 21,0,15,11,16,10,13,20,18,19,17,12,4,1,14,5,8,9,6,2,7,3
+# bc_map: 21,0,15,0,11,0,16,0,10,0,13,0,20,0,18,0,19,17,0,12,0,4,1,14,4,1,14,5,8,9,6,2,7,3
 移動先の入力をお願いします。
 /[waitkey(64)]/[close()]
 【揚陸待機エリア】に移動します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 【パークエリア】に移動します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 【隔離格納庫エリア】に移動します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 【ドックエリア】に移動します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 【居住エリア】に移動します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 ブリッジに移動しますか？
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 現在、非常事態につき<lf>
 これより先のエリアは封鎖中です。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 【ブリッジエリア駅】
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 Nobi
 Chijimi
+【揚陸待機エリア】<lf>【パークエリア】<lf>【隔離格納庫エリア】<lf>【ドックエリア】<lf>【居住エリア】<lf>　キャンセル
+# dup_of: line 22, tag8 4
+Nobi
+# dup_of: line 23, tag8 1
+Chijimi
+# dup_of: line 24, tag8 14
 【揚陸待機エリア】<lf>【パークエリア】<lf>【隔離格納庫エリア】<lf>【ドックエリア】<lf>【居住エリア】<lf>　キャンセル
 PPPPPPPPPPPPPPPPPPPPPPP
 enterd : /[$0]

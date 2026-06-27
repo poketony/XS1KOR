@@ -1,24 +1,48 @@
 # chunk 4 @ 0x8e8 cnum=651 total=32
-# bc_map: 31,0,24,1,22,25,10,11,12,13,14,15,28,16,17,2,3,4,5,6,7,9,18,27,26,30,29,19,20,21,23
+# bc_map: 31,0,24,0,1,22,1,25,10,25,11,25,12,25,13,25,14,25,15,28,16,28,17,28,2,28,3,28,4,28,5,6,7,9,18,27,26,30,29,19,20,21,23
 # bc_unmap: 8
 穴があります。落ちてみますか？
 /[waitkey(64)]/[close()]
 上に何かあって、これ以上登れない。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 1
 time: /[#1]
+# dup_of: line 5, tag8 1
+1
 右
 2
+# dup_of: line 8, tag8 25
+右
 3
+# dup_of: line 8, tag8 25
+右
 4
+# dup_of: line 8, tag8 25
+右
 5
+# dup_of: line 8, tag8 25
+右
 6
+# dup_of: line 8, tag8 25
+右
 7
 左
 8
+# dup_of: line 20, tag8 28
+左
 9
+# dup_of: line 20, tag8 28
+左
 10
+# dup_of: line 20, tag8 28
+左
 11
+# dup_of: line 20, tag8 28
+左
 12
+# dup_of: line 20, tag8 28
+左
 13
 14
 15

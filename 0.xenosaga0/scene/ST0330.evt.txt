@@ -1,10 +1,12 @@
 # chunk 1 @ 0x204 cnum=311 total=8
-# bc_map: 6,0,7,5,2,3,4
+# bc_map: 6,0,7,0,5,2,3,4
 # bc_unmap: 1
-휴식을 취하겠습니까？
+休憩をとりますか？
 /[waitkey(64)]/[close()]
-ＨＰ・ＥＰ가 회복됐다！！
-예<lf>아니요
+ＨＰ・ＥＰが回復した！！
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
+はい<lf>いいえ
 enterd : /[$0]
 entrance: /[$0]
 shoot on

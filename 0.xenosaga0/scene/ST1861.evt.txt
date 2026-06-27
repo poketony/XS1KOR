@@ -6,20 +6,40 @@ Nobi
 Chijimi
 
 # chunk 4 @ 0x1114 cnum=670 total=21
-# bc_map: 18,1,11,15,9,13,12,17,20,16,19,0,14,4,2,10,5,7,8,3,6
+# bc_map: 18,1,11,1,15,1,9,1,13,1,12,1,17,1,20,16,1,19,1,0,1,14,1,4,2,10,5,7,8,3,6
 移動先の入力をお願いします。
 /[waitkey(64)]/[close()]
 【パークエリア】に移動します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 【隔離格納庫エリア】に移動します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 【ドックエリア】に移動します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 【居住エリア】に移動します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 【ブリッジエリア】に移動します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 非常警戒レベル『ＡＡＡ』。<lf>
 これより先の立ち入りを禁止します。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 鍵がかかっている。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 /[color(0x329bbe)]武器庫の鍵/[color(0xffffff)]を使った。
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 【揚陸待機エリア駅】
+# dup_of: line 2, tag8 1
+/[waitkey(64)]/[close()]
 Nobi
 Chijimi
 【パークエリア】<lf>【隔離格納庫エリア】<lf>【ドックエリア】<lf>【居住エリア】<lf>【ブリッジエリア】<lf>　キャンセル

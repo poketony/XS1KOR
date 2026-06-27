@@ -1,30 +1,56 @@
 # chunk 4 @ 0x9b0 cnum=692 total=29
-# bc_map: 15,4,16,14,11,17,18,2,25,1,21,9,3,27,0,10,20,19,28,13,26,8,24,23,22,12,5,6,7
+# bc_map: 15,4,16,14,4,16,11,4,17,18,4,2,25,4,1,21,9,3,27,4,0,10,3,20,19,28,4,2,13,26,4,0,8,4,24,23,22,4,12,5,6,7
 スイッチを押しますか？
 /[waitkey(64)]/[close()]
 セグメント・アドレスＮｏ．１７<lf>
 を発見した。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 3, tag8 16
+セグメント・アドレスＮｏ．１７<lf>
 と表示されている。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 セグメント・アドレスＮｏ．１７の<lf>
 デコードを終了します。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 /[label(Ｊｒ．)]
 天の車全体のモニタリングルームか……。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 /[label(ジギー)]
 全コントロールが<lf>
 ここに集中しているようだな。
 /[waitkey(1)]/[clear()]
 炉心の場所は分かるか？
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 /[label(シオン)]
 ここより遙か下層のようね。
+# dup_of: line 18, tag8 3
+/[waitkey(1)]/[clear()]
 何本かエレベーターシャフトを<lf>
 乗り継いでいかないと<lf>
 辿り着けないみたい。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 12, tag8 2
+/[label(Ｊｒ．)]
 まだまだかかりそうだな。<lf>
 急ごう、シオン。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 21, tag8 0
+/[label(シオン)]
 ええ。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 天の車のホロオブジェだ。<lf>
 多層構造の建造物で<lf>
 各所がパージ可能となっている。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 はい<lf>いいえ
 Open
 enterd : /[$0]

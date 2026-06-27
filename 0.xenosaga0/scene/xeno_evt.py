@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-xeno_evt.py  -  Xenosaga Episode 1 EVT / class 텍스트 추출·재조립
+xeno_evt.py  -  Xenosaga Episode 1 EVT / class 텍스트 추출·재조립 (v4 duplicate-safe)
 
 사용법:
   python xeno_evt.py <file.evt>            추출 → <file.evt>.txt  (바이트코드 실행 순서)
@@ -269,7 +269,7 @@ def parse(chunk):
     vj    = struct.unpack_from('>H',chunk,p)[0]; p+=2
     vn    = struct.unpack_from('>H',chunk,p)[0]; p+=2
     cnum  = struct.unpack_from('>H',chunk,p)[0]; p+=2
-    entries=[]; tag8_order=[]; pool={}; pool_all={}
+    entries=[]; tag8_order=[]; pool={}; pool_all={}; tag8_cp_to_k={}
     for i in range(cnum-1):
         if p >= len(chunk): break
         tag = chunk[p]; p+=1
@@ -281,6 +281,8 @@ def parse(chunk):
         elif tag == 8:
             ref = struct.unpack_from('>H',chunk,p)[0]; p+=2
             str_idx = ref-1
+            tag8_k = len(tag8_order)
+            tag8_cp_to_k[i] = tag8_k
             pool_all[i] = (8, str_idx)
             entries.append((8, str_idx)); tag8_order.append(str_idx)
         else:
@@ -291,23 +293,22 @@ def parse(chunk):
 
     def collect_precise_order():
         # Code attribute의 실제 bytecode만 명령 길이에 맞춰 해석한다.
+        # v3: 같은 tag8/string이 여러 번 호출되면 그 occurrence를 모두 보존한다.
         order = []
-        seen = set()
         for code in code_blocks_from_rest(rest, pool):
             for cidx in iter_ldc_refs(code):
                 e = pool_all.get(cidx)
-                if e and e[0] == 8:
+                if e and e[0] == 8 and cidx in tag8_cp_to_k:
+                    tag8_k = tag8_cp_to_k[cidx]
                     stridx = e[1]
-                    if stridx not in seen and stridx in pool:
-                        seen.add(stridx); order.append(stridx)
+                    if stridx in pool:
+                        order.append(tag8_k)
         return order
 
     def collect_legacy_order():
         # 구버전 방식: class body 전체를 바이트 단위로 훑는다.
-        # 피연산자 0x12를 ldc로 오인할 수 있지만, 기존 번역 txt와의
-        # 줄 호환성을 위해 legacy-only 항목도 보수적으로 보존한다.
+        # v3: 기존에 구버전에서 잡히던 occurrence도 제거하지 않는다.
         order = []
-        seen = set()
         i = 0
         while i < len(rest):
             op = rest[i]
@@ -318,60 +319,81 @@ def parse(chunk):
             else:
                 i+=1; continue
             e = pool_all.get(cidx)
-            if e and e[0] == 8:
+            if e and e[0] == 8 and cidx in tag8_cp_to_k:
+                tag8_k = tag8_cp_to_k[cidx]
                 stridx = e[1]
-                if stridx not in seen and stridx in pool:
-                    seen.add(stridx); order.append(stridx)
+                if stridx in pool:
+                    order.append(tag8_k)
         return order
+
+    def is_subsequence(needle, haystack):
+        j = 0
+        for x in haystack:
+            if j < len(needle) and x == needle[j]:
+                j += 1
+        return j == len(needle)
 
     def merge_preserve_legacy(precise, legacy):
         # 목적:
         #   1) precise-only: 구버전 누락을 추가한다.
-        #   2) legacy-only: 기존 추출 txt에 있던 줄을 제거하지 않는다.
-        # old-only를 무조건 삭제하면 기존 번역 줄이 잘려 나가므로,
-        # precise 순서를 기본으로 하되 legacy-only를 주변 legacy 공통 항목 근처에 삽입한다.
+        #   2) legacy-only: 기존 추출 txt에 있던 occurrence를 제거하지 않는다.
+        #   3) duplicate occurrence: 같은 tag8이 여러 번 호출되면 여러 줄로 유지한다.
+        #
+        # 대부분의 경우 legacy는 precise의 부분수열이므로 precise를 그대로 쓰면 된다.
+        # 그렇지 않은 경우에만 legacy occurrence를 보수적으로 끼워 넣는다.
+        if not legacy:
+            return list(precise)
+        if not precise:
+            return list(legacy)
+        if is_subsequence(legacy, precise):
+            return list(precise)
+
         merged = list(precise)
-        merged_set = set(merged)
-        anchors = {}
-        for idx, x in enumerate(merged):
-            anchors[x] = idx
-        inserted_after = {}
+        used = [False] * len(merged)
+        missing = []
 
-        for i, x in enumerate(legacy):
-            if x in merged_set:
-                continue
-
-            prev_anchor = None
-            for y in reversed(legacy[:i]):
-                if y in anchors:
-                    prev_anchor = y; break
-            next_anchor = None
-            for y in legacy[i+1:]:
-                if y in anchors:
-                    next_anchor = y; break
-
-            if prev_anchor is not None:
-                pos = inserted_after.get(prev_anchor, anchors[prev_anchor]) + 1
-                merged.insert(pos, x)
-                merged_set.add(x)
-                # 삽입 위치 뒤 anchor index 보정
-                for k, v in list(anchors.items()):
-                    if v >= pos:
-                        anchors[k] = v + 1
-                anchors[x] = pos
-                inserted_after[prev_anchor] = pos
-            elif next_anchor is not None:
-                pos = anchors[next_anchor]
-                merged.insert(pos, x)
-                merged_set.add(x)
-                for k, v in list(anchors.items()):
-                    if v >= pos:
-                        anchors[k] = v + 1
-                anchors[x] = pos
+        # legacy occurrence를 precise occurrence에 순서대로 매칭한다.
+        pos = 0
+        for li, x in enumerate(legacy):
+            found = None
+            for mi in range(pos, len(merged)):
+                if (not used[mi]) and merged[mi] == x:
+                    found = mi
+                    break
+            if found is not None:
+                used[found] = True
+                pos = found + 1
             else:
-                anchors[x] = len(merged)
+                missing.append((li, x))
+
+        # 매칭되지 않은 legacy occurrence를 주변 legacy anchor 기준으로 삽입한다.
+        for li, x in missing:
+            prev_anchor_pos = None
+            for prev_li in range(li-1, -1, -1):
+                y = legacy[prev_li]
+                for mi in range(len(merged)-1, -1, -1):
+                    if merged[mi] == y:
+                        prev_anchor_pos = mi
+                        break
+                if prev_anchor_pos is not None:
+                    break
+
+            next_anchor_pos = None
+            for next_li in range(li+1, len(legacy)):
+                y = legacy[next_li]
+                for mi in range(0, len(merged)):
+                    if merged[mi] == y:
+                        next_anchor_pos = mi
+                        break
+                if next_anchor_pos is not None:
+                    break
+
+            if prev_anchor_pos is not None:
+                merged.insert(prev_anchor_pos + 1, x)
+            elif next_anchor_pos is not None:
+                merged.insert(next_anchor_pos, x)
+            else:
                 merged.append(x)
-                merged_set.add(x)
         return merged
 
     precise_order = collect_precise_order()
@@ -379,24 +401,18 @@ def parse(chunk):
 
     # 비표준 class-like 청크에서 Code attribute 파싱이 실패하면 legacy 그대로 사용.
     if precise_order:
-        bytecode_str_order = merge_preserve_legacy(precise_order, legacy_order)
+        bc_to_tag8k = merge_preserve_legacy(precise_order, legacy_order)
     else:
-        bytecode_str_order = legacy_order
-
-    # str_pool_idx -> tag8_k (tag8 선언 순서에서 몇 번째)
-    str_to_k = {s:k for k,s in enumerate(tag8_order)}
-
-    # 바이트코드 순서 -> tag8_k 매핑
-    bc_to_tag8k = [str_to_k[s] for s in bytecode_str_order if s in str_to_k]
+        bc_to_tag8k = legacy_order
 
     # tag8에만 있고 바이트코드에 없는 항목 (원본 유지 대상)
-    bc_str_set = set(bytecode_str_order)
-    unmapped = [k for k,s in enumerate(tag8_order) if s not in bc_str_set]
+    bc_tag8_set = set(bc_to_tag8k)
+    unmapped = [k for k in range(len(tag8_order)) if k not in bc_tag8_set]
 
     return dict(header=(magic,vj,vn,cnum),
                 entries=entries, rest=rest, pool=pool,
                 tag8_order=tag8_order,       # tag8 선언 순서 str_pool_idx 목록
-                bc_to_tag8k=bc_to_tag8k,     # 바이트코드 순서 n -> tag8_k
+                bc_to_tag8k=bc_to_tag8k,     # 바이트코드 occurrence 순서 n -> tag8_k
                 unmapped=unmapped)           # 바이트코드에 없는 tag8_k 목록
 
 EMPTY_MARKER = '[empty]'
@@ -411,10 +427,35 @@ def decode(raw):
     return raw.decode('latin-1', errors='replace')
 
 def get_strings_bc_order(p):
-    """바이트코드 실행 순서로 문자열 반환."""
+    """바이트코드 occurrence 순서로 문자열 반환. 같은 tag8이 반복되어도 모두 반환한다."""
     pool = p['pool']
     return [decode(pool[p['tag8_order'][k]]).replace('\n','<lf>')
             for k in p['bc_to_tag8k']]
+
+def get_bc_order_lines_with_duplicate_notes(p):
+    """추출용 라인 생성. 중복 occurrence를 comment로 표시한다.
+
+    comment는 rebuild 시 무시되므로 본문 줄 수와 bc_map은 유지된다.
+    - dup_of: 같은 tag8_k가 다시 호출된 경우. 실제 같은 원문 풀 항목을 공유한다.
+    - same_text_as: 텍스트는 같지만 tag8_k가 다른 경우. 독립 항목일 수 있다.
+    """
+    lines = []
+    first_tag8_line = {}
+    first_text_line = {}
+    for out_i, tag8_k in enumerate(p['bc_to_tag8k'], start=1):
+        text = decode(p['pool'][p['tag8_order'][tag8_k]]).replace('\n','<lf>')
+        notes = []
+        if tag8_k in first_tag8_line:
+            notes.append(f"dup_of: line {first_tag8_line[tag8_k]}, tag8 {tag8_k}")
+        elif text in first_text_line:
+            prev_line, prev_tag8 = first_text_line[text]
+            notes.append(f"same_text_as: line {prev_line}, tag8 {prev_tag8}")
+        for note in notes:
+            lines.append(f"# {note}")
+        lines.append(text)
+        first_tag8_line.setdefault(tag8_k, out_i)
+        first_text_line.setdefault(text, (out_i, tag8_k))
+    return lines
 
 def get_strings_tag8_order(p):
     """tag8 선언 순서로 문자열 반환 (레거시)."""
@@ -449,7 +490,10 @@ def rebuild(p, new_strs_bc, tbl, bc_to_tag8k=None):
             s = apply_table(processed.replace('<lf>','\n'), tbl)
             try:    enc = s.encode('euc_jis_2004')
             except: enc = s.encode('euc_jis_2004', errors='replace')
-            pool_new[str_pool_idx] = enc + (b'\x00' if has_null else b'')
+            new_raw = enc + (b'\x00' if has_null else b'')
+        if str_pool_idx in pool_new and pool_new[str_pool_idx] != new_raw:
+            print(f"  [경고] 같은 tag8/string 중복 항목에 서로 다른 번역이 들어갔습니다: bc {n}, tag8 {tag8_k}. 같은 원문 풀을 공유하므로 마지막 번역으로 덮어씁니다.")
+        pool_new[str_pool_idx] = new_raw
 
     out = bytearray(struct.pack('>IHHH', magic,vj,vn,cnum))
     for tag, val in p['entries']:
@@ -515,8 +559,8 @@ def data_to_lines(data):
             if cnum==0: continue
             p = parse(data[off:off+sz])
             if not p: continue
-            strs = get_strings_bc_order(p)
-            if strs:
+            body_lines = get_bc_order_lines_with_duplicate_notes(p)
+            if body_lines:
                 # 헤더에 매핑 정보 삽입
                 bc_map   = ','.join(map(str, p['bc_to_tag8k']))
                 unmapped = ','.join(map(str, p['unmapped'])) if p['unmapped'] else ''
@@ -525,11 +569,11 @@ def data_to_lines(data):
                 lines.append(f"# bc_map: {bc_map}")
                 if unmapped:
                     lines.append(f"# bc_unmap: {unmapped}")
-                lines.extend(strs)
+                lines.extend(body_lines)
                 lines.append("")
     elif data[:4] == CAFEBABE:
         p = parse(data)
-        if p: lines.extend(get_strings_bc_order(p))
+        if p: lines.extend(get_bc_order_lines_with_duplicate_notes(p))
     return lines
 
 # ── txt 파싱 ─────────────────────────────────────────────────────────────────
@@ -568,6 +612,9 @@ def parse_txt(lines):
         elif line.startswith('# bc_unmap:'):
             s = line.split(':',1)[1].strip()
             cur_unmapped = list(map(int, s.split(','))) if s else []
+        elif line.startswith('# '):
+            # dup_of / same_text_as 같은 추출 주석은 rebuild에서 무시한다.
+            continue
         elif line == '':
             continue
         else:

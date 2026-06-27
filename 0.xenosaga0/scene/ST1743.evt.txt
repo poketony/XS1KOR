@@ -1,120 +1,280 @@
 # chunk 4 @ 0x898 cnum=820 total=130
-# bc_map: 58,109,112,1,62,111,51,108,2,26,28,56,42,30,27,114,73,76,124,107,129,121,69,50,68,95,57,55,63,36,97,59,100,119,37,96,113,49,80,31,64,32,35,54,77,48,72,0,89,92,94,19,44,122,20,98,23,125,103,87,45,117,110,29,67,74,106,39,43,52,105,34,66,102,65,21,101,40,91,127,115,88,81,84,41,128,116,25,104,24,38,118,86,33,78,83,47,90,53,85,82,18,75,79,99,46,61,71,70,120,123,93,22,60,126,16,3,5,4,17,10,12,13,14,15,6,7,8,9,11
+# bc_map: 58,109,112,1,62,111,1,51,108,2,26,1,28,56,42,2,30,2,27,114,1,42,2,73,76,1,124,107,2,129,121,1,69,50,2,68,95,1,57,55,1,63,2,68,95,1,57,55,1,63,2,36,97,1,59,100,1,119,2,37,96,113,1,49,80,2,31,64,2,32,35,1,54,77,1,48,72,2,31,64,2,32,35,1,54,77,1,48,72,2,0,89,2,92,94,1,19,2,44,122,1,20,98,2,23,125,1,103,2,87,45,1,117,110,2,29,67,1,74,2,106,39,1,43,52,105,2,34,1,66,102,2,65,1,21,101,2,40,91,1,127,115,2,88,81,84,2,41,128,2,41,128,2,116,25,2,104,24,2,38,118,1,86,33,78,1,83,47,90,2,53,1,85,82,2,18,75,79,2,99,46,61,2,71,70,120,2,123,93,1,22,60,126,2,45,16,3,5,4,17,10,12,13,14,15,16,116,3,5,4,17,10,12,13,14,15,6,7,8,9,11,102
 なんか、<lf>
 外のでかい奴を破壊しないと<lf>
 大変な事になるらしいじゃない！
 /[waitkey(1)]/[clear()]
 ま、こっちはこっちで、<lf>
 大変な事になってるんだけどさ
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 せめて、帰りの電車賃ぐらい<lf>
 取り返さなくっちゃ……。
 /[waitkey(64)]/[close()]
 あ、Ｊｒ．ちゃ〜ん。ちょっといい？
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 あぁ、忙しいのはわかってるのぉ。<lf>
 でもちょっとだけ話を聞いて、<lf>
 お・ね・が・い
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 あのねぇ〜、お金貸してくんない？
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 あ〜ん、<lf>
 帰るお金も無くなっちゃったのよぉ〜！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
+# dup_of: line 15, tag8 42
+お・ね・が・い
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 やったー！<lf>
 やりましたよ、見て下さい！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 軍人さんの言ったとおりにやったら、<lf>
 勝ちまくりですよ！
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 Ｊｒ．様ー！<lf>
 私やりました！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 もう、目押しもバッチリです！<lf>
 これで訓練は卒業ですね。
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 もう、いいよ。<lf>
 今日はついてなかったんだ。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 なぁーに、また明日出直せばいいしな！<lf>
 そろそろ帰ろうかなぁ
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 ま、その前に一勝負っと！
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
+# dup_of: line 36, tag8 68
+もう、いいよ。<lf>
+# dup_of: line 37, tag8 95
+今日はついてなかったんだ。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
+# dup_of: line 39, tag8 57
+なぁーに、また明日出直せばいいしな！<lf>
+# dup_of: line 40, tag8 55
+そろそろ帰ろうかなぁ
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
+# dup_of: line 42, tag8 63
+ま、その前に一勝負っと！
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 いやー、よかった。<lf>
 今日は本当にいい日ですな！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 なんか、一生分のツキを<lf>
 使ってしまったようですわ。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 生きてるって、素晴らしいですな！
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 いやー、Ｊｒ．さん。<lf>
 今日はよかった。<lf>
 実に充実してましたよ！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 これからもよろしくと、<lf>
 ガイナンさんに伝えて下さい。
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 あの百式って奴、なかなかスジがいいぜ。<lf>
 まぁ、俺の教え方も良いんだけどよ。
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 あ？連邦艦隊に戻らないのかって？<lf>
 いやぁー、もう海兵なんかヤメヤメ！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 それより、この艦で働いたほうが<lf>
 よっぽどいいぜ！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 この場所の警備を任された日には、<lf>
 もう遊び放題だからな！
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
+# dup_of: line 67, tag8 31
+あの百式って奴、なかなかスジがいいぜ。<lf>
+# dup_of: line 68, tag8 64
+まぁ、俺の教え方も良いんだけどよ。
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
+# dup_of: line 70, tag8 32
+あ？連邦艦隊に戻らないのかって？<lf>
+# dup_of: line 71, tag8 35
+いやぁー、もう海兵なんかヤメヤメ！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
+# dup_of: line 73, tag8 54
+それより、この艦で働いたほうが<lf>
+# dup_of: line 74, tag8 77
+よっぽどいいぜ！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
+# dup_of: line 76, tag8 48
+この場所の警備を任された日には、<lf>
+# dup_of: line 77, tag8 72
+もう遊び放題だからな！
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 /[label(仮人)]
 ラスダン前です。【仮】
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 三角のがいなくなったと思ったら、<lf>
 今度はなんだい？あのお皿は？
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 ……ったく、クソ忙しい艦だねぇ？
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 こう忙しくちゃ、あれでしょ？<lf>
 艦長も遊ぶ暇なんてないんでしょ？
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 ……ったく、ストレスの溜まる<lf>
 仕事でさぁね？
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 ……金がなくなるまでギャンブル！！<lf>
 金があったらあったでギャンブル！！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 俺はそんな自分が好きなんだ！！
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 ファウンデーションの連中が<lf>
 ここに避難してくるはずだったよなぁ！？
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 最強のギャンブラーと勝負するのを<lf>
 夢見てたのに……。
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 あっ！！ちび様？<lf>
 またお会いしましたね！？
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 やっぱり、俺の事を？
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 分かってます！！<lf>
 ええ、分かってますとも……。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 けどね、今の俺は<lf>
 その気持ちに答える事は<lf>
 出来ないんですよ。
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 いやぁ、参ったよ実際！！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 まさか、ちび艦長が<lf>
 俺のことをねぇ？
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 まぁ恋愛に性別なんて関係ないんだよ！！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 ……と、いっても<lf>
 俺にそのケはないけどな！！
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 お、ちび様！？<lf>
 一難去ってまた一難ですか？
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 頑張ってください。<lf>
 戦果、期待してますよ！！
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 ホントは一肌脱ぎたいんですけどねぇ、<lf>
 ガキの頃から<lf>
 ケンカだけはからっきしで……。
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 おうっ、またアンタ達か！！<lf>
 頼りにしてるぜ！！
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
+# dup_of: line 148, tag8 41
+おうっ、またアンタ達か！！<lf>
+# dup_of: line 149, tag8 128
+頼りにしてるぜ！！
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 昔どこかの博士が言ったそうです。<lf>
 『神はサイコロ遊びをしない』って。
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 僕なんか<lf>
 『サイコロ遊び』しかしてませんがね？
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 うんうん、<lf>
 最近悟ったんですよ。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 ファウンデーションから<lf>
 いくら人が流れてきたって<lf>
 カジノのメンツは変わらない。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 ギャンブルをやらない人は<lf>
 このままその魅力を知らずに<lf>
 一生を終えてしまうのかって……。
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 その点、僕は幸せ者ですよ！！
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 デュランダルを知り尽くしてるおかげで<lf>
 ギャンブルに巡り合う事が出来た！！
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 ……ちび様！！<lf>
 やっぱりこの間言ってた<lf>
 カジノの閉鎖の嘆願は撤回します！！
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 何か……こう、<lf>
 ここを叩きつづけている間に<lf>
 ひらめいてきたんです！！
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 もうちょっと！！<lf>
 もうちょっとですヨォ！！<lf>
 私はもうじきスパークします！！
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
 見ていて下さい！！<lf>
 今はバネを縮めているのです。
+# dup_of: line 4, tag8 1
+/[waitkey(1)]/[clear()]
 ……と言っても<lf>
 ばねが縮まったまま<lf>
 錆びちゃった人も大勢いますけどね……。
+# dup_of: line 10, tag8 2
+/[waitkey(64)]/[close()]
+# dup_of: line 111, tag8 45
+ここに避難してくるはずだったよなぁ！？
 enterd : /[$0]
 L1
 R1
@@ -125,8 +285,32 @@ TalkNPC2
 TalkNPC3
 TalkNPC4
 TalkNPC5
+# dup_of: line 196, tag8 16
+enterd : /[$0]
+# dup_of: line 154, tag8 116
+昔どこかの博士が言ったそうです。<lf>
+# dup_of: line 197, tag8 3
+L1
+# dup_of: line 198, tag8 5
+R1
+# dup_of: line 199, tag8 4
+L2
+# dup_of: line 200, tag8 17
+entrance: /[$0]
+# dup_of: line 201, tag8 10
+TalkNPC1
+# dup_of: line 202, tag8 12
+TalkNPC2
+# dup_of: line 203, tag8 13
+TalkNPC3
+# dup_of: line 204, tag8 14
+TalkNPC4
+# dup_of: line 205, tag8 15
+TalkNPC5
 TalkNPC06
 TalkNPC07
 TalkNPC08
 TalkNPC09
 TalkNPC10
+# dup_of: line 131, tag8 102
+俺のことをねぇ？

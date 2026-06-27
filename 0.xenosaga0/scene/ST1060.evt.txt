@@ -1,17 +1,43 @@
 # chunk 2 @ 0x460 cnum=838 total=40
-# bc_map: 18,33,3,1,39,19,36,20,2,17,21,35,4,5,6,7,9,34,22,8,10,0,13,14,15,16,25,26,27,28,29,11,12,24,30,31,38,37,23,32
+# bc_map: 18,33,3,1,39,19,3,1,36,36,20,2,17,3,1,36,36,20,2,17,21,3,1,35,3,4,5,6,7,9,34,22,8,10,0,13,14,15,16,25,26,27,28,29,11,12,24,30,31,38,37,23,32,1,3,7,9,13,14,18,20,24,26,30,31,35,37
 『Ｎｏ．５扉　開閉スイッチ』<lf>
 操作しますか？<lf>
 /[waitkey(64)]/[close()]
 /[label(Ｊｒ．)]
 Ｎｏ．５の扉か。<lf>
 くそっ、ロックが掛かってやがる<lf>
+# dup_of: line 3, tag8 3
+/[waitkey(64)]/[close()]
+# dup_of: line 4, tag8 1
+/[label(Ｊｒ．)]
+緊急事態発生！<lf>
+# dup_of: line 9, tag8 36
 緊急事態発生！<lf>
 ただちに臨戦態勢を整えてください。
 /[waitkey(1)]/[clear()]
 …だってさ。<lf>
+# dup_of: line 3, tag8 3
+/[waitkey(64)]/[close()]
+# dup_of: line 4, tag8 1
+/[label(Ｊｒ．)]
+# dup_of: line 9, tag8 36
+緊急事態発生！<lf>
+# dup_of: line 9, tag8 36
+緊急事態発生！<lf>
+# dup_of: line 11, tag8 20
+ただちに臨戦態勢を整えてください。
+# dup_of: line 12, tag8 2
+/[waitkey(1)]/[clear()]
+# dup_of: line 13, tag8 17
+…だってさ。<lf>
 もういいだろ、読まなくても。
+# dup_of: line 3, tag8 3
+/[waitkey(64)]/[close()]
+# dup_of: line 4, tag8 1
+/[label(Ｊｒ．)]
 緊急事態発生だってさ。
+# dup_of: line 3, tag8 3
+/[waitkey(64)]/[close()]
 EOB *********************
 HEISHI1_LIFE = END
 HEISHI2_LIFE = END
@@ -40,3 +66,31 @@ entrance: /[$0]
 部屋前通路にいる兵士（右）　初期化
 カニメカ　初期化
 初期化終了
+# dup_of: line 4, tag8 1
+/[label(Ｊｒ．)]
+# dup_of: line 3, tag8 3
+/[waitkey(64)]/[close()]
+# dup_of: line 29, tag8 7
+HEISHI3_LIFE = END
+# dup_of: line 30, tag8 9
+NO5 コンソール前
+# dup_of: line 36, tag8 13
+id = 11
+# dup_of: line 37, tag8 14
+id = 12
+# dup_of: line 1, tag8 18
+『Ｎｏ．５扉　開閉スイッチ』<lf>
+# dup_of: line 11, tag8 20
+ただちに臨戦態勢を整えてください。
+# dup_of: line 47, tag8 24
+コンソールスイッチ & モニターを点滅
+# dup_of: line 41, tag8 26
+パターンB
+# dup_of: line 48, tag8 30
+兵士１(AGWS)　初期化
+# dup_of: line 49, tag8 31
+兵士１(索敵)　初期化
+# dup_of: line 24, tag8 35
+緊急事態発生だってさ。
+# dup_of: line 51, tag8 37
+部屋前通路にいる兵士（右）　初期化

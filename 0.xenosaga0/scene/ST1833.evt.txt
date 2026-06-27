@@ -6,35 +6,63 @@ Nobi
 Chijimi
 
 # chunk 4 @ 0x1074 cnum=659 total=36
-# bc_map: 31,2,13,16,15,17,14,30,19,27,22,34,1,25,24,33,20,28,11,21,29,32,35,23,0,26,18,5,3,12,9,10,7,8,4
+# bc_map: 31,2,13,2,16,2,15,2,17,2,14,2,30,2,19,27,2,22,34,1,25,24,33,2,20,28,2,11,21,1,29,32,2,35,23,2,0,26,2,18,2,5,3,12,9,10,7,8,7,4
 # bc_unmap: 6
 移動先の入力をお願いします。
 /[waitkey(64)]/[close()]
 【ドックエリア】に移動します。
+# dup_of: line 2, tag8 2
+/[waitkey(64)]/[close()]
 【居住エリア】に移動します。
+# dup_of: line 2, tag8 2
+/[waitkey(64)]/[close()]
 【ブリッジエリア】に移動します。
+# dup_of: line 2, tag8 2
+/[waitkey(64)]/[close()]
 【揚陸待機エリア】に移動します。
+# dup_of: line 2, tag8 2
+/[waitkey(64)]/[close()]
 【パークエリア】に移動します。
+# dup_of: line 2, tag8 2
+/[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
+# dup_of: line 2, tag8 2
+/[waitkey(64)]/[close()]
 あ、Ｊｒ．様。<lf>
 今のところ異常はありません！
+# dup_of: line 2, tag8 2
+/[waitkey(64)]/[close()]
 この先は<lf>
 重要機密の保管庫になっております。
 /[waitkey(1)]/[clear()]
 ガイナン様、<lf>
 もしくはＪｒ．様の許可のある方以外は<lf>
 通行する事はできません。
+# dup_of: line 2, tag8 2
+/[waitkey(64)]/[close()]
 あ、ＶＩＰの方でしたか！？<lf>
 失礼いたしました！！
+# dup_of: line 2, tag8 2
+/[waitkey(64)]/[close()]
 ……Ｊｒ．様。<lf>
 この中には一体何があるのですか？
+# dup_of: line 20, tag8 1
+/[waitkey(1)]/[clear()]
 実は、中が気になって、<lf>
 警備に身が入らないのですが……。
+# dup_of: line 2, tag8 2
+/[waitkey(64)]/[close()]
 ＶＩＰの方ですね。<lf>
 どうぞお通りください。
+# dup_of: line 2, tag8 2
+/[waitkey(64)]/[close()]
 /[label(仮人)]
 ラスダン前です。【仮】
+# dup_of: line 2, tag8 2
+/[waitkey(64)]/[close()]
 【隔離格納庫エリア駅】
+# dup_of: line 2, tag8 2
+/[waitkey(64)]/[close()]
 Nobi
 Chijimi
 【ドックエリア】<lf>【居住エリア】<lf>【ブリッジエリア】<lf>【揚陸待機エリア】<lf>【パークエリア】<lf>　キャンセル
@@ -42,4 +70,6 @@ enterd : /[$0]
 entrance: /[$0]
 TalkNPC1
 TalkNPC2
+# dup_of: line 47, tag8 7
+TalkNPC1
 Evt

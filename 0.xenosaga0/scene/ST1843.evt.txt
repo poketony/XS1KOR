@@ -6,71 +6,153 @@ Nobi
 Chijimi
 
 # chunk 4 @ 0x105c cnum=780 total=80
-# bc_map: 70,4,24,26,22,27,21,69,0,60,3,66,53,34,74,39,62,68,2,41,42,72,47,30,56,54,33,71,64,50,61,43,79,36,37,67,44,55,1,51,65,76,48,59,57,35,40,73,75,31,58,20,32,77,28,63,78,46,29,38,49,52,45,25,7,5,23,8,18,19,10,11,12,13,14,15,16,17,9,6
+# bc_map: 70,4,24,4,26,4,22,4,27,4,21,4,69,4,0,60,3,66,3,53,3,34,4,0,74,3,39,3,62,3,68,4,2,41,42,72,4,2,47,30,56,4,54,33,71,64,4,50,61,43,4,79,36,3,37,67,4,44,55,4,1,51,65,76,4,1,48,59,3,57,35,4,40,73,75,31,58,4,20,3,32,77,4,28,3,63,78,46,4,28,3,63,78,46,4,29,38,4,49,52,45,4,25,4,42,7,5,23,8,18,19,10,11,12,13,14,15,16,17,9,6
 移動先の入力をお願いします。
 /[waitkey(64)]/[close()]
 【ブリッジエリア】に移動します。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 【揚陸待機エリア】に移動します。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 【パークエリア】に移動します。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 【隔離格納庫エリア】に移動します。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 【ドックエリア】に移動します。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 /[label(アクセル)]
 俺達警備団はぁぁぁぁッ！！
 /[waitkey(1)]/[clear()]
 持てるものの全てをぉぉぉぉッ！！
+# dup_of: line 17, tag8 3
+/[waitkey(1)]/[clear()]
 デュランダルに捧げる事をぉぉぉぉッ！！
+# dup_of: line 17, tag8 3
+/[waitkey(1)]/[clear()]
 ここに誓うぅぅぅぅッ！！
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 15, tag8 0
+/[label(アクセル)]
 警備団の心得ぇぇぇぇッ！！
+# dup_of: line 17, tag8 3
+/[waitkey(1)]/[clear()]
 それはぁぁぁぁッ！！
+# dup_of: line 17, tag8 3
+/[waitkey(1)]/[clear()]
 全ての困っている人をぉぉぉぉッ！！
+# dup_of: line 17, tag8 3
+/[waitkey(1)]/[clear()]
 救済する事にあ〜るッ！！
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 /[label(リッグス)]
 ちび艦長？<lf>
 ちょっとリーダー張り切り過ぎなんで、<lf>
 諭してやってくださいよ……。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 33, tag8 2
+/[label(リッグス)]
 よう！！<lf>
 あんたからも言ってやってくれよ！！<lf>
 リーダー張り切り過ぎだって……。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 ファウンデーションの人が<lf>
 ここに来てからというもの<lf>
 艦に活気がついたのはいいんですが、<lf>
 変な人が増えたのも事実ですね……。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 スットコ老人の次はお色気迷子だ。<lf>
 全く今までファウンデーションは<lf>
 どうなってたんだ？
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 Ｊｒ．様！！<lf>
 このマセガキを何とかして下さい！！
+# dup_of: line 17, tag8 3
+/[waitkey(1)]/[clear()]
 この私を色仕掛けで<lf>
 挑発するんです！！
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 まったく、<lf>
 ファウンデーションの将来が少し不安です。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 /[label(マクレーン)]
 チワッス！！<lf>
 我々の取り柄は体力だけだから<lf>
 鍛練の手をゆるめる事は出来ません。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 61, tag8 1
+/[label(マクレーン)]
 ん？<lf>
 何？事件発生だって！？
+# dup_of: line 17, tag8 3
+/[waitkey(1)]/[clear()]
 今度は迷子の子供？<lf>
 ここの乗組員も大変だよな……。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 ちび様！？<lf>
 警備団の人たち、結構いい人ですね。<lf>
 買い物から排水管の修理まで、<lf>
 お願いすると<lf>
 何でもやってくれますよ！！
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 ……警備団の人ですか？
+# dup_of: line 17, tag8 3
+/[waitkey(1)]/[clear()]
 きっと嫌とは言えない人たちなんでしょう。<lf>
 頼みごとを断られた事が無いです。
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 あそこの警備団の人達いるでしょ？
+# dup_of: line 17, tag8 3
+/[waitkey(1)]/[clear()]
 前に私が見たときは<lf>
 ４人いたはずなの。<lf>
 もう１人は何処にいるんでしょ？
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 84, tag8 28
+あそこの警備団の人達いるでしょ？
+# dup_of: line 17, tag8 3
+/[waitkey(1)]/[clear()]
+# dup_of: line 86, tag8 63
+前に私が見たときは<lf>
+# dup_of: line 87, tag8 78
+４人いたはずなの。<lf>
+# dup_of: line 88, tag8 46
+もう１人は何処にいるんでしょ？
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 あらぁ？あなたアタチの好みよ！！<lf>
 こんどいっちょにお茶ちない？
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 アタチここにカレチを探しに来たの！！<lf>
 デュランダルで働いてる人ってステキ。<lf>
 みんなアタチの好みなの！！
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
 【居住エリア駅】
+# dup_of: line 2, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 35, tag8 42
+ちょっとリーダー張り切り過ぎなんで、<lf>
 Nobi
 Chijimi
 【ブリッジエリア】<lf>【揚陸待機エリア】<lf>【パークエリア】<lf>【隔離格納庫エリア】<lf>【ドックエリア】<lf>　キャンセル

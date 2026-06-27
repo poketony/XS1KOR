@@ -1,11 +1,19 @@
 # chunk 4 @ 0x8e8 cnum=436 total=14
-# bc_map: 12,0,5,4,10,13,3,1,11,8,7,9,2,6
+# bc_map: 12,0,5,4,0,10,13,0,3,3,3,1,11,8,7,9,2,6
 鍵が掛かっている。
 /[waitkey(64)]/[close()]
 「←森<lf>
 　→教会」
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 時空のゆがみがあります。
 飛び込みますか？
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
+lo:0
+# dup_of: line 9, tag8 3
+lo:0
+# dup_of: line 9, tag8 3
 lo:0
 enterd : /[$0]
 森２【MC_KAS17】・３

@@ -1,0 +1,7 @@
+# chunk 4 @ 0x710 cnum=344 total=5
+# bc_map: 2,3,0,1,4
+enterd : /[$0]
+entrance: /[$0]
+TalkNPC1
+TalkNPC2
+shoot on

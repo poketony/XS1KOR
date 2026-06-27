@@ -1,46 +1,92 @@
 # chunk 4 @ 0x7fc cnum=722 total=45
-# bc_map: 32,6,31,30,24,23,20,25,26,2,18,4,41,1,40,5,12,15,27,3,39,0,29,17,43,35,34,16,19,22,14,44,38,42,11,36,13,37,28,33,21,9,8,10
+# bc_map: 32,6,31,6,30,6,24,23,6,24,20,6,25,26,6,2,18,6,4,41,6,1,40,5,12,5,15,27,6,3,39,6,0,29,6,1,17,6,0,43,35,34,16,19,5,22,14,6,3,44,38,42,5,11,36,6,1,13,6,37,28,33,6,21,9,8,10
 # bc_unmap: 7
 ロックを解除しますか？
 /[waitkey(64)]/[close()]
 ロックを解除しました。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 ロスト・エルサレムの解説（仮）。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 セグメント・アドレスＮｏ．６<lf>
 を発見した。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 7, tag8 24
+セグメント・アドレスＮｏ．６<lf>
 と表示されている。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 セグメント・アドレスＮｏ．６の<lf>
 デコードを終了します。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 /[label(モモ)]
 すごいホログラムですね。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 /[label(ＫＯＳ−ＭＯＳ)]
 観測可能な全宙域が投影されているようです。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 /[label(シオン)]
 観測可能な全宙域……。
 /[waitkey(1)]/[clear()]
 ……？
+# dup_of: line 24, tag8 5
+/[waitkey(1)]/[clear()]
 あの黒い部分は何かしら？<lf>
 ブラックホールじゃなさそうだけど……。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 /[label(Ｊｒ．)]
 観測不能領域……て訳じゃなさそうだな。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 /[label(ケイオス)]
 ロスト・エルサレム……。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 22, tag8 1
+/[label(シオン)]
 え？
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 33, tag8 0
+/[label(ケイオス)]
 遙かな昔、<lf>
 僕らの故郷だったロスト・エルサレムは<lf>
 今では誰も近づけない、<lf>
 いや、<lf>
 その場所すら分からないと言われている。<lf>
+# dup_of: line 24, tag8 5
+/[waitkey(1)]/[clear()]
 もしかすると、<lf>
 あの漆黒の部分はそれなのかもしれない。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 30, tag8 3
+/[label(Ｊｒ．)]
 随分以前から、<lf>
 政府内でロスト・エルサレムの探索計画が<lf>
 進行してるって話は聞いたことがある……。
+# dup_of: line 24, tag8 5
+/[waitkey(1)]/[clear()]
 ……にしても、あの黒い領域。<lf>
 半径にして数億光年はあるんじゃないか？
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
+# dup_of: line 22, tag8 1
+/[label(シオン)]
 あの中に私達の故郷が……。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 座標軸/[font(０，０，０)]……。<lf>
 ロスト・エルサレム<lf>
 一体何があるのだろう……。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 はい<lf>いいえ
 enterd : /[$0]
 KAITEN

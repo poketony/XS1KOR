@@ -6,57 +6,103 @@ Nobi
 Chijimi
 
 # chunk 4 @ 0x1100 cnum=813 total=62
-# bc_map: 56,6,24,22,25,21,26,55,18,42,5,31,36,52,33,57,61,32,35,40,1,45,53,58,28,2,19,39,44,0,48,54,51,59,27,41,3,46,17,49,37,4,47,50,43,29,30,60,20,38,10,8,23,34,7,11,15,16,12,13,9,14
+# bc_map: 56,6,24,6,22,6,25,6,21,6,26,6,55,6,18,42,5,31,36,6,52,33,57,6,61,32,6,35,40,6,1,45,5,53,58,28,6,2,19,39,44,6,0,48,5,54,51,59,5,27,41,6,3,46,5,17,49,37,6,4,47,5,50,43,29,6,30,60,6,20,38,6,10,10,8,23,34,7,11,15,16,12,12,13,9,14
 移動先の入力をお願いします。
 /[waitkey(64)]/[close()]
 【居住エリア】に移動します。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 【ブリッジエリア】に移動します。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 【揚陸待機エリア】に移動します。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 【パークエリア】に移動します。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 【隔離格納庫エリア】に移動します。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 ……ん？<lf>
 何のようだ？
 /[waitkey(1)]/[clear()]
 ここは貴様等の様な連中が<lf>
 ウロチョロする場所じゃないぞ！
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 本部からの連絡によると、<lf>
 どうやらこの艦の連中が<lf>
 脱走したらしい……。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 ！！<lf>
 さては貴様等！！
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 ん！？<lf>
 何だ貴様！！
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 /[label(シオン)]
 内側からロックされているみたいね……。
+# dup_of: line 17, tag8 5
+/[waitkey(1)]/[clear()]
 確かエルザには<lf>
 資材搬入用のエレベーターが<lf>
 あったはず……。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 /[label(ジギー)]
 ……ん？内側から施錠しているのか？<lf>
 他にエルザ内に<lf>
 侵入可能な場所といえば……。
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 /[label(ケイオス)]
 内側からロックしてるのか……。
+# dup_of: line 17, tag8 5
+/[waitkey(1)]/[clear()]
 確か前に船長と２人で<lf>
 屋上の資材搬入庫から荷物を<lf>
 降ろした覚えがあるな。
+# dup_of: line 17, tag8 5
+/[waitkey(1)]/[clear()]
 あそこを使えば<lf>
 何とかエルザに入れるかも！？
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 /[label(モモ)]
 内側からロックされてるみたいですね。
+# dup_of: line 17, tag8 5
+/[waitkey(1)]/[clear()]
 ……あら？<lf>
 向こう側に、エルザの屋上に続いている<lf>
 デッキが見える！！
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 /[label(Ｊｒ．)]
 内側からロックされてんのか！？
+# dup_of: line 17, tag8 5
+/[waitkey(1)]/[clear()]
 多少荒っぽくてもいいから<lf>
 何処かにエルザに入れるところが<lf>
 あるはずだ！！
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 ここからエルザの上部に行けそうだ……。<lf>
 飛び移りますか？
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
 【ドックエリア駅】<lf>
 ファウンデーション直行ランチ乗り場
+# dup_of: line 2, tag8 6
+/[waitkey(64)]/[close()]
+Nobi
+# dup_of: line 73, tag8 10
 Nobi
 Chijimi
 【居住エリア】<lf>【ブリッジエリア】<lf>【揚陸待機エリア】<lf>【パークエリア】<lf>【隔離格納庫エリア】<lf>　キャンセル
@@ -65,6 +111,8 @@ Chijimi
 PPPPPPPPPPPPPPPPPPPPPPP
 enterd : /[$0]
 entrance: /[$0]
+TalkNPC2
+# dup_of: line 82, tag8 12
 TalkNPC2
 TalkNPC4
 Evt

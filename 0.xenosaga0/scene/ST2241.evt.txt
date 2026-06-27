@@ -1,101 +1,237 @@
 # chunk 2 @ 0x43c cnum=844 total=105
-# bc_map: 69,5,68,0,58,94,38,57,91,99,55,3,33,36,73,62,31,72,52,83,32,35,81,49,1,37,54,28,4,34,25,92,48,93,46,30,65,39,26,66,104,80,2,19,20,22,78,24,23,60,76,77,43,85,42,44,89,53,74,70,61,64,63,67,84,45,50,90,51,41,87,96,79,86,75,56,59,40,21,88,71,97,27,82,29,98,95,47,17,102,103,101,13,14,15,16,100,18,7,8,9,10,11,12,6
+# bc_map: 69,5,68,5,0,58,94,38,5,0,57,94,91,99,5,0,55,3,33,3,36,5,0,73,62,31,5,0,72,3,52,83,32,5,0,35,81,49,5,1,37,54,28,4,0,34,5,1,25,92,3,48,93,46,4,0,30,65,39,5,0,26,66,104,5,0,80,5,2,19,5,2,20,5,2,22,78,5,2,24,23,60,3,76,77,3,43,85,42,3,44,89,3,53,5,2,74,70,61,5,2,64,63,5,2,67,84,45,50,90,51,5,2,41,87,96,4,2,79,4,2,86,75,5,2,56,5,2,59,40,5,2,21,5,2,88,5,2,71,97,27,5,2,82,29,5,61,98,95,47,47,17,102,103,101,101,13,14,15,16,17,102,103,101,100,18,7,8,9,10,11,12,6
 スイッチを押しますか？
 /[waitkey(64)]/[close()]
 ジャンプする？<lf>
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
 /[label()]
 まったく、グノーシスの奴らめ、<lf>
 手当たり次第になんでも壊しやがって！<lf>
 これじゃぁ、修理が追いつかねぇよ…。
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 5, tag8 0
+/[label()]
 まったく、<lf>
+# dup_of: line 7, tag8 94
+手当たり次第になんでも壊しやがって！<lf>
 少しは修理する人間の事を<lf>
 考えてみたらどうなんだ？
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 5, tag8 0
+/[label()]
 ふらんそわーず！お手！
 /[waitkey(1)]/[clear()]
 おすわり！
+# dup_of: line 18, tag8 3
+/[waitkey(1)]/[clear()]
 この猫ださーい、何も芸しないー！
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 5, tag8 0
+/[label()]
 ダンス！ダンス！<lf>
 イヤなことはダンスを踊って忘れちまいな！<lf>
 うっはっは！
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 5, tag8 0
+/[label()]
 ダンス、ダンス、ダンス！
+# dup_of: line 18, tag8 3
+/[waitkey(1)]/[clear()]
 どうだい、あんたも踊りたくなったかい？<lf>
 一度見たら、忘れられない踊りだぜ！<lf>
 うは！うは！うは！
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 5, tag8 0
+/[label()]
 きゃはははは、だんすーだんすー！<lf>
 ヘンテコおやじー！<lf>
 でもこれおもしろーい！
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
 /[label(キング)]
 こらガキ！<lf>
 ふらんそわーずちゃんを<lf>
 いじめるな！
 /[waitkey(64)]/[clear()]
+# dup_of: line 5, tag8 0
+/[label()]
 きゃははは、キングがおこったー！
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 40, tag8 1
+/[label(キング)]
 あ、いや、そうじゃねぇんだよぉ。<lf>
 怒ったんじゃないの。
+# dup_of: line 18, tag8 3
+/[waitkey(1)]/[clear()]
 ちょっと猫ちゃんがかわいそうかなぁって、<lf>
 思っただけなのぉ。<lf>
 だから、おいたしちゃダメよぉ〜。
+# dup_of: line 44, tag8 4
+/[waitkey(64)]/[clear()]
+# dup_of: line 5, tag8 0
+/[label()]
 うあああああー、<lf>
 キングがおかまになったー！<lf>
 こわいーーー！
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 5, tag8 0
+/[label()]
 あのなぁ、<lf>
 サンドバックもタダじゃねぇんだぞ。<lf>
 請求書送るぞ？マジで！
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 5, tag8 0
+/[label()]
 フーー！
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
 /[label(ピンク・バグ)]
 ………………。
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 69, tag8 2
+/[label(ピンク・バグ)]
 …………トムに会いたいよぉ。
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 69, tag8 2
+/[label(ピンク・バグ)]
 ……トムは元気かなぁ…。<lf>
 ドックコロニーに帰りたいよぉ……。
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 69, tag8 2
+/[label(ピンク・バグ)]
 ……君、僕を壊さないの？<lf>
 ……君、僕に話し掛けてくれるの？<lf>
 もしかして君、トムの友達かい！
+# dup_of: line 18, tag8 3
+/[waitkey(1)]/[clear()]
 トムの友達なら、僕の友達だ！<lf>
 トムは元気だったかい？
+# dup_of: line 18, tag8 3
+/[waitkey(1)]/[clear()]
 そうか、よかった。トムは元気なんだね！<lf>
 僕、トムにお別れが言えなかったから、<lf>
 すっごく、気になってたんだ！
+# dup_of: line 18, tag8 3
+/[waitkey(1)]/[clear()]
 そうだ、友情の証に<lf>
 君にいい事を教えてあげるよ！<lf>
+# dup_of: line 18, tag8 3
+/[waitkey(1)]/[clear()]
 どんな話が聞きたいんだい？
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 69, tag8 2
+/[label(ピンク・バグ)]
 デュランダルの展望室の植木の陰に<lf>
 セグメントの鍵が落ちてるんだ。<lf>
 よく探して見るといいよ。
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 69, tag8 2
+/[label(ピンク・バグ)]
 カードゲームを遊ぶのに必要なパスポートは<lf>
 エルザのバーテンロボが持ってるよ。
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 69, tag8 2
+/[label(ピンク・バグ)]
 シオンちゃんがミユキちゃんと共に協力して<lf>
 作っているモノがあるよね？<lf>
 それは/[font(ＫＯＳ−ＭＯＳ)]の武器なんだよね？<lf>
 でもね、どうやらその武器は、<lf>
 完成できないみたいだよ。<lf>
 とっても、とっても、残念だね…。
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 69, tag8 2
+/[label(ピンク・バグ)]
 じゃ、友達になった記念に<lf>
 写真を撮ってあげるね<lf>
 準備はいいかい？
+# dup_of: line 44, tag8 4
+/[waitkey(64)]/[clear()]
+# dup_of: line 69, tag8 2
+/[label(ピンク・バグ)]
 ハイ、チーズ！
+# dup_of: line 44, tag8 4
+/[waitkey(64)]/[clear()]
+# dup_of: line 69, tag8 2
+/[label(ピンク・バグ)]
 写真がデキあがったら送るからね。<lf>
 トムによろしくね！
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 69, tag8 2
+/[label(ピンク・バグ)]
 まだ何か教えてほしい事があるのかい？
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 69, tag8 2
+/[label(ピンク・バグ)]
 もういいのかい？<lf>
 じゃ、トムによろしくね！
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 69, tag8 2
+/[label(ピンク・バグ)]
 ……トムは元気かなぁ…。
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 69, tag8 2
+/[label(ピンク・バグ)]
 友達だと思ったのに、ひどいよぉ！
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 69, tag8 2
+/[label(ピンク・バグ)]
 セグメントの鍵は、<lf>
 特定の敵が持っていることも<lf>
 あるみたいだよ。
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 69, tag8 2
+/[label(ピンク・バグ)]
 メールはこまめに読んでおくと、<lf>
 いろいろ得するみたいだよ。
+# dup_of: line 2, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 99, tag8 61
+よく探して見るといいよ。
 移動棚
 押す<lf>押さない<lf>
+ちょっといい話<lf>かなりいい話<lf>グッといい話<lf>とっておきの話<lf>特に聞きたくない
+# dup_of: line 150, tag8 47
 ちょっといい話<lf>かなりいい話<lf>グッといい話<lf>とっておきの話<lf>特に聞きたくない
 enterd : /[$0]
 襲撃後外観街２・３
 襲撃後外観街２・４
 襲撃後外観街２・１４
+# dup_of: line 155, tag8 101
+襲撃後外観街２・１４
 case1
 case2
 case3
 case4
+# dup_of: line 152, tag8 17
+enterd : /[$0]
+# dup_of: line 153, tag8 102
+襲撃後外観街２・３
+# dup_of: line 154, tag8 103
+襲撃後外観街２・４
+# dup_of: line 155, tag8 101
+襲撃後外観街２・１４
 襲撃後外観街２・１２
 entrance: /[$0]
 Talk_npc4

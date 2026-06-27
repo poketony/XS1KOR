@@ -6,22 +6,38 @@ Nobi
 Chijimi
 
 # chunk 4 @ 0x1100 cnum=618 total=18
-# bc_map: 17,0,12,14,10,15,9,16,13,3,1,11,4,7,8,5,2,6
+# bc_map: 17,0,12,0,14,0,10,0,15,0,9,0,16,0,13,0,3,1,11,4,7,8,0,5,2,6
 移動先の入力をお願いします。
 /[waitkey(64)]/[close()]
 【ブリッジエリア】に移動します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 【揚陸待機エリア】に移動します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 【パークエリア】に移動します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 【隔離格納庫エリア】に移動します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 【ドックエリア】に移動します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 【居住エリア駅】
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 Nobi
 Chijimi
 【ブリッジエリア】<lf>【揚陸待機エリア】<lf>【パークエリア】<lf>【隔離格納庫エリア】<lf>【ドックエリア】<lf>　キャンセル
 PPPPPPPPPPPPPPPPPPPPPPP
 enterd : /[$0]
 entrance: /[$0]
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 TalkNPC1
 Evt
 algo

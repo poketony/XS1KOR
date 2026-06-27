@@ -1,8 +1,10 @@
 # chunk 4 @ 0x12f8 cnum=617 total=8
-# bc_map: 6,0,7,1,2,3,4,5
+# bc_map: 6,0,7,0,1,2,3,4,5
 エレベーターを作動させますか？
 /[waitkey(64)]/[close()]
 下に何か挟まっているようだ。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 1
 enterd : /[$0]
 entrance: /[$0]

@@ -1,23 +1,39 @@
 # chunk 4 @ 0x710 cnum=432 total=23
-# bc_map: 0,8,2,10,14,9,13,21,22,19,12,1,20,17,16,18,15,11,5,6,3,7
+# bc_map: 0,8,2,0,10,14,2,0,9,13,2,21,2,22,2,19,12,1,20,17,2,16,18,15,2,11,5,6,3,7
 # bc_unmap: 4
 /[label(シオン)]
 『今日は疲れたしもう休もうかしら……。』
 /[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label(シオン)]
 『無理は体に毒ね。<lf>
 もう休みましょう……。』
+# dup_of: line 3, tag8 2
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 0
+/[label(シオン)]
 『広い艦だったし、<lf>
 もうちょっと遊んでみようかな。』
+# dup_of: line 3, tag8 2
+/[waitkey(64)]/[close()]
 休憩をとりますか？
+# dup_of: line 3, tag8 2
+/[waitkey(64)]/[close()]
 ＨＰ・ＥＰが回復した！！
+# dup_of: line 3, tag8 2
+/[waitkey(64)]/[close()]
 ナンダカ！？<lf>
 ぴんちミタイダナ……。
 /[waitkey(1)]/[clear()]
 ナンナラ<lf>
 タスケテヤロウカ？？
+# dup_of: line 3, tag8 2
+/[waitkey(64)]/[close()]
 オー、コワイコワイ！！<lf>
 テッポウモッタ、ヘイタイナンカ<lf>
 オレハキライダネ！！
+# dup_of: line 3, tag8 2
+/[waitkey(64)]/[close()]
 はい<lf>いいえ
 enterd : /[$0]
 entrance: /[$0]

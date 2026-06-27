@@ -3,7 +3,7 @@
 フラグオン！
 
 # chunk 4 @ 0x124c cnum=1895 total=436
-# bc_map: 2,56,95,7,145,51,307,0,205,237,9,94,356,329,150,47,180,107,241,93,413,225,430,183,182,319,368,137,340,263,314,336,283,343,61,98,362,350,264,324,429,294,379,395,227,31,406,271,354,408,392,407,160,89,232,71,418,317,142,210,170,85,337,260,381,74,233,434,60,215,212,58,284,36,231,45,177,342,308,24,223,257,432,433,96,213,80,120,348,300,197,105,207,252,37,287,76,147,387,88,422,388,417,157,311,44,313,54,386,134,169,415,242,49,303,247,229,316,193,99,57,276,338,108,92,355,53,405,48,171,114,259,109,81,305,236,42,339,375,358,423,349,402,393,341,159,135,90,327,424,352,186,118,404,91,320,370,258,421,131,224,285,68,155,141,187,154,70,50,253,369,101,325,296,138,376,216,67,172,63,420,59,297,41,360,298,188,347,245,288,425,65,346,401,286,185,43,385,345,391,46,126,125,217,124,218,282,102,162,100,83,363,64,189,40,149,151,144,312,198,278,235,110,279,292,226,249,323,365,228,86,163,136,209,371,121,132,390,428,275,270,431,161,269,293,255,26,87,203,301,322,206,378,184,27,181,302,291,200,79,335,25,344,427,254,139,152,426,389,201,28,133,334,273,238,396,62,127,112,289,55,35,122,366,384,130,221,72,128,173,277,234,167,34,168,435,29,195,123,194,33,119,32,332,230,374,52,111,214,299,410,243,382,116,190,315,290,380,220,204,129,414,250,219,73,208,419,143,394,416,331,309,222,310,5,38,117,148,328,367,274,8,3,30,306,333,398,202,359,140,351,403,6,304,265,211,176,240,251,113,178,399,383,411,97,248,4,412,115,397,295,165,281,66,262,357,166,191,199,84,239,1,39,78,318,326,146,244,82,158,280,153,361,179,400,174,164,261,77,409,373,256,175,104,372,377,106,321,156,364,75,246,353,103,272,196,69,266,268,330,192,267,22,23,15,10,14,16,17,18,19,20,21,11,12,13
+# bc_map: 2,56,95,7,145,51,307,0,205,237,9,2,94,356,0,329,150,47,9,2,180,107,241,7,93,413,225,0,430,9,2,183,182,7,319,368,137,9,2,340,263,314,7,336,283,0,343,61,9,2,98,362,0,350,264,7,324,429,0,294,379,9,2,395,227,9,2,31,406,271,7,354,408,0,392,407,7,160,89,232,9,2,71,418,7,317,142,210,0,170,85,7,337,260,381,9,2,74,233,9,2,434,9,2,60,215,0,212,58,284,9,2,36,231,7,71,45,7,177,342,308,9,2,434,9,2,24,9,2,223,257,432,0,433,96,7,213,80,9,2,120,348,300,0,197,105,7,207,252,9,2,37,287,7,76,147,7,387,88,422,388,9,2,417,157,311,44,313,9,2,54,386,7,134,169,415,242,9,2,49,303,7,247,229,316,0,193,99,57,9,2,276,338,108,7,92,355,0,53,405,9,2,48,303,7,171,114,259,9,2,109,81,0,305,236,9,2,42,339,375,7,358,423,0,349,402,393,341,7,159,135,9,2,90,327,424,352,9,2,186,118,404,7,91,320,0,370,258,421,7,131,224,285,9,2,68,155,0,141,187,154,7,70,50,253,9,2,369,101,325,7,296,138,376,0,216,67,9,2,172,63,7,420,59,297,9,2,41,360,298,9,2,188,347,9,2,245,288,0,425,65,0,346,401,0,286,185,9,2,43,385,0,345,391,9,2,46,126,7,125,217,9,2,46,126,7,124,218,9,2,282,102,0,162,100,0,83,363,64,9,2,189,40,149,9,2,151,144,312,9,2,198,278,235,9,2,110,279,0,292,226,9,2,216,249,323,365,228,7,86,163,136,209,371,9,2,121,132,390,428,275,270,431,7,161,269,9,2,293,255,26,87,7,203,301,322,206,378,9,2,184,27,9,2,181,302,0,291,200,9,2,79,335,0,25,344,0,427,254,139,9,2,152,426,9,2,389,201,0,28,0,133,334,273,9,2,238,7,396,62,9,2,127,112,289,0,55,9,2,35,122,366,0,384,130,7,221,9,2,72,7,128,173,0,277,234,167,9,2,34,168,9,2,435,9,2,29,9,2,195,123,194,9,2,33,119,7,32,332,9,2,230,374,9,2,435,9,2,29,9,2,181,52,7,111,214,299,9,2,410,243,0,382,116,9,2,190,9,2,315,290,380,0,220,9,2,204,129,0,414,250,219,9,2,73,208,9,2,31,406,271,7,392,407,7,160,89,232,9,2,71,419,7,317,143,394,7,337,260,381,9,2,216,416,331,0,309,222,9,2,417,157,310,7,44,313,9,5,38,117,0,148,328,0,367,274,8,3,30,0,306,333,8,5,398,0,202,359,9,5,140,0,351,403,9,6,304,265,0,211,176,9,6,240,251,113,9,6,240,251,113,9,6,178,399,7,216,383,411,0,97,248,9,4,181,412,7,115,397,295,9,6,165,7,281,66,0,262,357,9,6,166,191,199,9,6,84,2,190,239,0,1,39,9,6,78,318,0,326,146,0,244,82,158,9,6,166,280,0,153,361,9,6,179,400,174,9,6,164,261,9,6,77,409,0,414,250,219,220,373,256,175,9,104,9,6,372,377,9,6,216,416,331,0,309,222,106,321,9,6,181,156,364,9,6,75,246,353,103,9,5,5,38,117,0,148,328,0,367,274,8,3,30,0,306,333,8,5,140,0,398,0,351,403,9,6,304,265,0,211,176,9,6,240,251,113,9,6,240,251,113,9,6,178,399,7,202,359,2,2,2,2,2,2,2,417,157,310,7,71,419,7,31,406,271,7,392,407,7,317,143,394,7,216,383,411,0,97,248,9,4,181,412,7,115,397,295,9,6,165,7,281,66,0,262,357,9,6,166,191,199,9,6,84,239,0,1,39,9,6,78,318,0,326,146,0,244,82,158,9,6,166,280,0,153,361,9,6,179,400,174,9,6,164,261,9,6,77,409,0,373,256,175,9,104,9,6,372,377,9,6,216,106,321,9,6,181,156,364,9,6,75,246,353,103,9,50,6,8,44,313,337,260,381,160,89,232,73,208,204,129,315,290,380,272,272,196,272,69,272,266,268,330,192,272,192,272,267,22,23,15,10,14,16,17,18,19,20,21,11,14,17,20,23,25,29,37,39,42,44,47,50,53,55,58,61,64,67,71,74,78,80,84,91,93,96,98,102,109,111,114,117,120,123,126,128,132,139,141,144,147,150,166,272,272,72,72,196,272,69,272,266,268,272,330,272,272,272,192,272,192,272,267,272,272,3,72,72,72,72,22,23,15,210,10,14,16,17,18,19,20,21,11,12,13
 /[label()]
 あんたら見かけない顔だな、<lf>
 ここは初めてかい？
@@ -15,230 +15,512 @@
 まぁ、<lf>
 ゆっくり休んでいってくれ。
 /[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ここはな、<lf>
 政府の目のあまり届かない宙域だ。
+# dup_of: line 8, tag8 0
+<lf>
 大抵の事には目をつむれるが、<lf>
 だからといって、<lf>
 あまり羽目を外すなよ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 なんだい、あんたら？<lf>
 こんな寂れたドックにくるとは、<lf>
 よほどの物好きなんだな。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 ここは、ミルチア紛争の時に<lf>
 軍の奴等に<lf>
 むちゃくちゃにされちまったんだ。
+# dup_of: line 8, tag8 0
+<lf>
 面白いものなんかなにもないぜ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 なんで施設がターゲットになったのかって？<lf>
 なんだアンタ知らねぇのか？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 十四年前、星団中で使役レアリエンが<lf>
 暴走したじゃねぇか。<lf>
 それでだよ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 後で、紛争の首謀者が仕掛けた<lf>
 トロイの木馬だって報道されてたけど、<lf>
 俺は違うと思うね。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 当時、<lf>
 レアリエンの人権問題が発生してたろ？
+# dup_of: line 8, tag8 0
+<lf>
 快く思わない連中、<lf>
 いたんじゃねぇか、政府ン中によ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 このコロニー、<lf>
 昔はレアリエンの育成施設だったんですよ。
+# dup_of: line 8, tag8 0
+<lf>
 戦後に当時の桟橋を<lf>
 ドックに改造したんです。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 場所柄、<lf>
 難民が数多く流れてきてからでしょうか。
+# dup_of: line 8, tag8 0
+<lf>
 今ではまるで、<lf>
 無法者の巣窟みたいな扱いなんです。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 育成施設ですか？<lf>
 もう廃棄されてありませんよ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あ、こんにちは！<lf>
 観光ですか？<lf>
 フフフ、そんなわけ無いですね。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 政府からも見捨てられたような場所に、<lf>
 観光客が訪れるわけ無いですから。
+# dup_of: line 8, tag8 0
+<lf>
 第一、ここには、<lf>
 観光名所なんてありませんもの。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 でも、<lf>
 ここにいる人たちは皆いい人なんですよ。<lf>
 もちろん、この私もね。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 え！？<lf>
 軍人を捜してる？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 冗談じゃないわよ！<lf>
 そんなろくでなしの事なんて知らないわよ。<lf>
 まぁ、知ってたって教えないけど。
+# dup_of: line 8, tag8 0
+<lf>
 どうせ、そこら辺の路地裏で<lf>
 くたばってるんじゃない？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 役人や、軍人なんて<lf>
 ゴミよゴミ！<lf>
 生ゴミと同じよ！！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 おい、そこ！<lf>
 もっと慎重にやらねぇとぶつけちまうぞ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 （がっしゃーん！）
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あーあ。<lf>
 また、やっちまったよ……。
+# dup_of: line 8, tag8 0
+<lf>
 まぁいいか。<lf>
 あんだけ傷ついてるんだ、<lf>
 一つぐらい増えたってわかりゃしねーか。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あ。<lf>
 もしかして、見てた？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
+# dup_of: line 83, tag8 71
+え！？<lf>
 あの船、おたくらの？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 な、なーに、<lf>
 心配いりやせんよ。<lf>
 俺たちに任せておけば大丈夫ですから！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 102, tag8 434
+（がっしゃーん！）
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ………。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 まーたく、惑星が消えただとか<lf>
 グノーシスが出ただとか<lf>
 騒がしい世の中だっぺや。
+# dup_of: line 8, tag8 0
+<lf>
 騒ぎのせいでよ、<lf>
 こちとら休むヒマなんかありゃせんだよ。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 まぁー、そんおかげで<lf>
 おらも飯が食えとるんだどもな。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 しっかし、連邦もひでえもんだぁ<lf>
 戦争さ終わっちまったら、<lf>
 他のことなんぞ、知らんぷりだぁ。
+# dup_of: line 8, tag8 0
+<lf>
 ひでぇ目にあったオラ達の事なんぞ、<lf>
 これっぽっちも考えとらんで。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 まぁ、そのおかげで<lf>
 オラ達も好き勝手できとるんだわなぁ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あぁん？<lf>
 中佐を知らねぇかだって？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 おいおい、ここで<lf>
 そんな物騒な話をするもんじゃねぇよ！
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 知らねぇのか？<lf>
 ここがレアリエンの育成施設だっただけで、<lf>
 連中、見境なく何もかも<lf>
 破壊していきやがったんだぜ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 軍人や役人なんぞ人間のクズだね。<lf>
 てめえらで勝手に始めた戦争に<lf>
 俺たちを勝手に巻き込みやがってよ。<lf>
 あの役立たず共のせいで、<lf>
 俺はこんな生活してんだからな。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あんたらもしつこいな？<lf>
 知らねぇって言ってるだろう！
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 その中佐とか言うのも<lf>
 どうせ、そこら辺で野垂れ死んでるだろ。<lf>
 軍人なんて、<lf>
 ろくな死に方しねぇんだよ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あら、見かけない顔ね<lf>
 何か用？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 アンドリュー中佐？<lf>
 もしかして、<lf>
 兵隊さがしてるのね？
+# dup_of: line 8, tag8 0
+<lf>
 はっ、バッカじゃない！？<lf>
 このコロニーで軍人を探そうなんて、<lf>
 あんた正気？
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ミルチアでの紛争以降、<lf>
 役人や軍人は私たちをゴミのように扱って、<lf>
 こんな辺境に見捨てていったんだよ？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 ここの人達はみんな<lf>
 政府の人間を憎んでるのさ。
+# dup_of: line 8, tag8 0
+<lf>
 あんたらも、軍人の仲間だって言うなら<lf>
 覚悟しといた方がいいよ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あら、さっき軍人を探していた人ね。<lf>
+# dup_of: line 181, tag8 303
+何か用？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 どうせ見つからなかったんでしょ？<lf>
 さっさとあきらめて、<lf>
 コロニーから出て行きなさいよ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 こんにちは、<lf>
 お仕事か何かですか？
+# dup_of: line 8, tag8 0
+<lf>
 何もないところですけど<lf>
 ゆっくりしていってくださいね。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あの、気を悪くしないでください。<lf>
 彼女、ミルチアの紛争の時に<lf>
 海兵隊に家族を殺されたんですよ。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 施設の関係者は、例外なく<lf>
 連邦反逆罪で連行されてしまって…。
+# dup_of: line 8, tag8 0
+<lf>
 戦後、自治州ルートで<lf>
 補償請求したんですが、<lf>
 結局、一部隊の独走って形で片づけられて、<lf>
 後は何にもナシ。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 ですから、軍人とか役人とか、<lf>
 その手の話を聞くとあの調子で……。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ここにいる人達は、<lf>
 多かれ少なかれ、<lf>
 連邦政府に不満や恨みを<lf>
 持っているんですよ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 なんや、あんた？<lf>
 しけた面して！<lf>
 見なはれ、ここの連中を。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 ここにおる奴はな、<lf>
 十四年前の紛争や、
+# dup_of: line 8, tag8 0
+<lf>
 最近頻発している<lf>
 グノーシス現象から<lf>
 逃げてきた連中ばっかなんやで。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 そないなえらい目におうてもな、<lf>
 みな自分の力で<lf>
 一生懸命生きとるんや。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 うちもな、<lf>
 つろうなったらここに来るんよ。
+# dup_of: line 8, tag8 0
+<lf>
 そんでな、皆の顔を見とるとな、<lf>
 なんや、ガンバらなぁあかん！<lf>
 って気になるんよ。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 ええか、<lf>
 あんたも<lf>
 ガンバらなぁあかんで！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 最近、グノーシスとの戦闘で、<lf>
 このドックにやってくる宇宙船が<lf>
 増えたんですよねぇ。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 今は民間の船でさえ、<lf>
 それなりの武装を施さないと<lf>
 満足に移動することも出来ないんですから。
+# dup_of: line 8, tag8 0
+<lf>
 まったく、<lf>
 いやな世の中ですよぉ・・・
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 どうでもいいけど、あそこのご婦人<lf>
 いつまでいるつもりなんでしょうねぇ？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 迷惑なんですよね、<lf>
 あんな所にいられちゃ。<lf>
 仕事の邪魔なんですよぉ……。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あの、あなたも<lf>
 早くそこをどいてくれません？<lf>
 仕事の邪魔なんですよねぇ……。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ねぇ、<lf>
 惑星消失事件って知ってます？
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 アリアドネという惑星が、<lf>
 丸ごと消えてしまったんですよ。
+# dup_of: line 8, tag8 0
+<lf>
 連邦政府は<lf>
 いまだにその原因さえつかめず、
+# dup_of: line 8, tag8 0
+<lf>
 惑星と共に消えてしまった人も<lf>
 行方不明のままなんです。
+# dup_of: line 8, tag8 0
+<lf>
 一説にはグノーシスの仕業だとも言われてますし、<lf>
 なんにせよ、恐ろしい事件ですよ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あの事件、いまだに、<lf>
 真相は謎のままなんですってよ。
+# dup_of: line 8, tag8 0
+<lf>
 惑星が一つ消えてしまうなんて、<lf>
 私には信じられませんよ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あの診療所のルーティって子さぁ<lf>
 ぜんぜん話しないんだぜ！
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 せっかく遊んでやるって言ってるのによ。<lf>
 まったく、かわいくない奴ぅ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 317, tag8 46
+あの診療所のルーティって子さぁ<lf>
+# dup_of: line 318, tag8 126
+ぜんぜん話しないんだぜ！
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 ずっと花瓶ばっかりいじっててさ、<lf>
 まったく、つまんない奴ぅ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ルーティってね、<lf>
 この前まで、アリアドネに住んでたの。
+# dup_of: line 8, tag8 0
+<lf>
 でもね、星が無くなっちゃったから<lf>
 このコロニーまでお引っ越ししてきたのよ。
+# dup_of: line 8, tag8 0
+<lf>
 お父さんも、お母さんも<lf>
 星と一緒に居なくなったから、<lf>
 いま、先生と一緒にくらしてるの。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ねぇねぇ<lf>
 あいつさ、ルーティに気があるんだぜ！<lf>
 だから、いっつも意地悪してるんだ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ち、ちがうよ。<lf>
 そんなんじゃねぇ！<lf>
 俺は、あんなの好きじゃないからな！！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 へへ、<lf>
 ムキになるところが怪しい〜。<lf>
 やーい、やーい。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ごめんね<lf>
 メールのネタ用の台詞に修正中なのよ<lf>
+# dup_of: line 8, tag8 0
+<lf>
 今、話し掛けても何もおきないから<lf>
 もうちょっと、待ってておくれ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 276, tag8 216
+まったく、<lf>
 ウチの亭主の釣り好きにも<lf>
 困ったもんだよ。<lf>
 暇があれば釣り釣りって、<lf>
 もう病気だねあれは。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 けど、この間「/[color(0x329bbe)]魚影探知器/[color(0xffffff)]」<lf>
 とかっていう道具を無くしちまってさぁ。<lf>
 そりゃもう、ひどく落ち込んじゃったのよ。<lf>
 まぁ、当分釣りの話を聞かなくてすむから、<lf>
 有り難いけどね。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 じつは、<lf>
 その「/[color(0x329bbe)]魚影探知器/[color(0xffffff)]」なんだけどさ。<lf>
 私がなくしちゃったのよぉ。<lf>
@@ -246,185 +528,915 @@
 ポケットの中に入れたまま、<lf>
 ファウンデーションのクリーニング屋に<lf>
 預けちゃったのさぁ。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 でも、これはウチの亭主には内緒だよ。<lf>
 バレたら何されるか、わかんないからね。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 今からでも、ファウンデーションの<lf>
 クリーニング屋に行けば<lf>
 「/[color(0x329bbe)]魚影探知器/[color(0xffffff)]」が見つかるんだろうけど、<lf>
 ここからじゃ、遠いしね。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 ほんと、<lf>
 何かのついでじゃなきゃ、<lf>
 取りに行けないよね。<lf>
 まぁ、「/[color(0x329bbe)]タキシード/[color(0xffffff)]」も「/[color(0x329bbe)]魚影探知器/[color(0xffffff)]」も<lf>
 滅多に使わないから良いんだけどさ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 なんなんだろうね、あの店長。<lf>
 「○○○」の事が嫌いなのかね？
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 なんだよ、<lf>
 何か文句があるのかよ？
+# dup_of: line 8, tag8 0
+<lf>
 今、メールのネタ用の台詞に修正中なんだよ。<lf>
 ほっといてくれよ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 おまえか、<lf>
 店長の紹介というのは？
+# dup_of: line 8, tag8 0
+<lf>
 ………なるほどな。<lf>
 悪そうな面してやがるぜ。
+# dup_of: line 8, tag8 0
+<lf>
 金は用意できるのか？<lf>
 キャッシュで○○○○Ｇ。<lf>
 それ以外は受付ねぇよ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ちぇ、しけてやがるぜ<lf>
 金が払えねぇんなら、とっとと消えちまいな！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 確かに。<lf>
 ほらよ！
+# dup_of: line 8, tag8 0
+<lf>
 「隠し通路のカギ」を入手
+# dup_of: line 8, tag8 0
+<lf>
 そのカギで、<lf>
 店の奥の通路を開けることが出来る<lf>
 ブツはその中にあるぜ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 よぉ、楽しんでるかい？<lf>
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 船の修理は終わってるぜ、<lf>
 いつでも発進できるよ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 そうそう、<lf>
 さっきそこの路地裏で、<lf>
 人が襲われたらしいんだよ。
+# dup_of: line 8, tag8 0
+<lf>
 あんたらも気をつけた方がいいぜ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あ、聞きました？<lf>
 すぐそこの路地裏で、<lf>
 暴漢が出たらしいんですよ。
+# dup_of: line 8, tag8 0
+<lf>
 男の人が数人襲われたらしくて、<lf>
 そこの診療所に運ばれたようです。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 まったく物騒な世の中ですよね……。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 え？犯人？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 そうなのよ、その暴漢って<lf>
 どうやら軍人だって話なの！
+# dup_of: line 8, tag8 0
+<lf>
 ムカツクわよねぇ。<lf>
 やっぱり軍人って野蛮で、<lf>
 どうしようもないろくでなしよね！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あ、修理の方は終わりました。<lf>
 どうすか、完璧でしょう！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 （がっしゃーん）
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あ…。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ははは、大丈夫、大丈夫<lf>
 すぐになおしますから！<lf>
 ははは……。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あ、また修理ですか？<lf>
 しっかし、よく壊れる艦ですねぇ。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 あ、そんな顔しなくても大丈夫ですよ。<lf>
 完璧に修理しときますから。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 もしかして、何か期待してますか？<lf>
 残念ですけど、何もおきませんよ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 474, tag8 435
+（がっしゃーん）
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 477, tag8 29
+あ…。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 405, tag8 181
+なんだよ、<lf>
 あんたらまだ居たのか？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 さっきそこで人が襲われたんだが、<lf>
 まさか、あんたらの<lf>
 仕業じゃないだろうな？
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 言っとくがな、ここで騒ぎを起こせば、<lf>
 ろくな目にあわねぇぜ。
+# dup_of: line 8, tag8 0
+<lf>
 用がねぇなら、<lf>
 さっさと出発するこったな。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ねぇねぇ、知ってます？
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 先ほど、そこの路地で<lf>
 人が襲われたんですよ。<lf>
 犯人はどうやら連邦の兵隊だったとか。
+# dup_of: line 8, tag8 0
+<lf>
 まったく、物騒な世の中ですよね。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ほんと、物騒ですよね。<lf>
 そこで襲われた人、重体らしいですよ。
+# dup_of: line 8, tag8 0
+<lf>
 軍人がウロウロしていたって<lf>
 ウワサもあるし、<lf>
 まったく、安心して外を歩けないですよ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 お、また修理かい？<lf>
 まぁ、ゆっくりしていってくれよ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 68, tag8 31
+あ、こんにちは！<lf>
+# dup_of: line 69, tag8 406
+観光ですか？<lf>
+# dup_of: line 70, tag8 271
+フフフ、そんなわけ無いですね。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
+# dup_of: line 75, tag8 392
+第一、ここには、<lf>
+# dup_of: line 76, tag8 407
+観光名所なんてありませんもの。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
+# dup_of: line 78, tag8 160
+でも、<lf>
+# dup_of: line 79, tag8 89
+ここにいる人たちは皆いい人なんですよ。<lf>
+# dup_of: line 80, tag8 232
+もちろん、この私もね。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 83, tag8 71
+え！？<lf>
 軍人？<lf>
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
+# dup_of: line 86, tag8 317
+冗談じゃないわよ！<lf>
 そんなろくでなしの話なんて<lf>
 聞きたくないわよ。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
+# dup_of: line 93, tag8 337
+役人や、軍人なんて<lf>
+# dup_of: line 94, tag8 260
+ゴミよゴミ！<lf>
+# dup_of: line 95, tag8 381
+生ゴミと同じよ！！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 276, tag8 216
+まったく、<lf>
 軍人なんてなぁ、<lf>
 威張り散らすばかりでよ、
+# dup_of: line 8, tag8 0
+<lf>
 俺たちの生活の事なんて<lf>
 まるでわかっちゃいねぇんだよ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 164, tag8 417
+軍人や役人なんぞ人間のクズだね。<lf>
+# dup_of: line 165, tag8 157
+てめえらで勝手に始めた戦争に<lf>
 俺たちを勝手に巻き込みやがってよ。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
+# dup_of: line 167, tag8 44
+あの役立たず共のせいで、<lf>
+# dup_of: line 168, tag8 313
+俺はこんな生活してんだからな。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
 /[label(ハマー)]
 あぁ！？<lf>
 し、し、し、し、し、オンさん！
+# dup_of: line 8, tag8 0
+<lf>
 た、た、た、たいへんっす！<lf>
 大変なんっす！！
+# dup_of: line 8, tag8 0
+<lf>
 暴漢で路地裏が<lf>
 ボコボコの中佐なんっすよ！！<lf>
 /[waitkey(64)]/[clear()]
 /[label(シオン)]
 あ、あの、ハマーさん？<lf>
+# dup_of: line 8, tag8 0
+<lf>
 何を言ってるわからないから、<lf>
 少し落ち着いて……。
+# dup_of: line 587, tag8 8
+/[waitkey(64)]/[clear()]
+# dup_of: line 578, tag8 5
+/[label(ハマー)]
 落ち着いてる場合じゃないっすよ！<lf>
+# dup_of: line 8, tag8 0
+<lf>
 ほら急いで、<lf>
 早くこっちに来るっす！！<lf>
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 578, tag8 5
+/[label(ハマー)]
 そんじゃ、中佐の捜索を開始するっす。<lf>
+# dup_of: line 8, tag8 0
+<lf>
 手分けして探したほうがいいっすね。<lf>
 見つけたらすぐに知らせるっすよ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
 /[label(マシューズ)]
 何だよ、<lf>
 ドックコロニーに戻るって言うのか？
+# dup_of: line 8, tag8 0
+<lf>
 まぁ、金さえ払ってもらえるんなら、<lf>
 どこへでも連れてってやるけどな。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
 よし、<lf>
 エルザ発進だ。<lf>
 さっさと、乗り込めよ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 614, tag8 240
+よし、<lf>
+# dup_of: line 615, tag8 251
+エルザ発進だ。<lf>
+# dup_of: line 616, tag8 113
+さっさと、乗り込めよ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
 なんだ、<lf>
 行かねぇのか？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
+# dup_of: line 276, tag8 216
+まったく、<lf>
 用もねぇのに、<lf>
 話し掛けるんじゃねぇよ。
+# dup_of: line 8, tag8 0
+<lf>
 こっちはろくな仕事が無くて、<lf>
 イライラしてんだからな。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
 /[label(トニー)]
+# dup_of: line 405, tag8 181
+なんだよ、<lf>
 買い忘れでもあるのかい？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 さっさとしてくれよ。<lf>
 船長の奴、<lf>
 今にも暴れ出しそうなんだから。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
 どうした、何かあったのか？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
 モモ？<lf>
 いや、こっちには来てないぜ。<lf>
+# dup_of: line 8, tag8 0
+<lf>
 デュランダルの中でも<lf>
 散歩してるんじゃないのか？
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
 どうした？<lf>
 ねーちゃんが一人なんて珍しいな。<lf>
 ほかの連中はどうしたんだ？
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
 お！ねーちゃんじゃねぇか！？<lf>
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 517, tag8 190
+ねぇねぇ、知ってます？
 よく入ってこれたな。
+# dup_of: line 8, tag8 0
+<lf>
 /[font(ＫＯＳ−ＭＯＳ)]？<lf>
 ああ、調整室なら今の所無事だぜ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
 おいおい！まさか<lf>
 出かけるとか言うんじゃないだろうな！？
+# dup_of: line 8, tag8 0
+<lf>
 外はグノーシスでいっぱいなんだ！<lf>
 そんな悠長なことやってる場合じゃねぇだろう？
+# dup_of: line 8, tag8 0
+<lf>
 わかった、わかった、<lf>
 お前さんに常識を語っても仕方ねぇか。<lf>
 で、どこに行きたいんだ？
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 652, tag8 166
+どうした？<lf>
 モモは助け出せたのか？
+# dup_of: line 8, tag8 0
+<lf>
 ちゃんと待っててやるから、<lf>
 早く助け出してこいよ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
 なんだ、どこかに行きたいのか？<lf>
 行きたい言ってみな、<lf>
 どこにでも連れてってやるぜ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
 どうした、<lf>
 デュランダルに戻りたいのか？
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
 おいおい、またどこかに運べって<lf>
 言うんじゃねぇだろうな？
+# dup_of: line 8, tag8 0
+<lf>
+# dup_of: line 530, tag8 414
+軍人がウロウロしていたって<lf>
+# dup_of: line 531, tag8 250
+ウワサもあるし、<lf>
+# dup_of: line 532, tag8 219
+まったく、安心して外を歩けないですよ。
+# dup_of: line 524, tag8 220
+まったく、物騒な世の中ですよね。
 残念だが、<lf>
 クーカイ・ファウンデーションに着くまでは<lf>
 どこにも出かけられねぇよ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
 これが出たら間違いです！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
 歌声に行くんだろ？<lf>
 準備はできてるぜ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 276, tag8 216
+まったく、<lf>
+# dup_of: line 564, tag8 416
+軍人なんてなぁ、<lf>
+# dup_of: line 565, tag8 331
+威張り散らすばかりでよ、
+# dup_of: line 8, tag8 0
+<lf>
+# dup_of: line 567, tag8 309
+俺たちの生活の事なんて<lf>
+# dup_of: line 568, tag8 222
+まるでわかっちゃいねぇんだよ！
 こんな事に付き合う羽目になるとはな。<lf>
 危険手当、はずんでもらうぜ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 405, tag8 181
+なんだよ、<lf>
 てめぇの準備ができてねぇのか？<lf>
 時間がねぇんだろ、早くしろよ！！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
 おいおい、<lf>
 アルベドって奴を<lf>
 放っておいていいのかよ！？<lf>
 この非常時に、まったく呑気なもんだな。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 578, tag8 5
+/[label(ハマー)]
+# dup_of: line 578, tag8 5
+/[label(ハマー)]
+# dup_of: line 579, tag8 38
+あぁ！？<lf>
+# dup_of: line 580, tag8 117
+し、し、し、し、し、オンさん！
+# dup_of: line 8, tag8 0
+<lf>
+# dup_of: line 582, tag8 148
+た、た、た、たいへんっす！<lf>
+# dup_of: line 583, tag8 328
+大変なんっす！！
+# dup_of: line 8, tag8 0
+<lf>
+# dup_of: line 585, tag8 367
+暴漢で路地裏が<lf>
+# dup_of: line 586, tag8 274
+ボコボコの中佐なんっすよ！！<lf>
+# dup_of: line 587, tag8 8
+/[waitkey(64)]/[clear()]
+# dup_of: line 588, tag8 3
+/[label(シオン)]
+# dup_of: line 589, tag8 30
+あ、あの、ハマーさん？<lf>
+# dup_of: line 8, tag8 0
+<lf>
+# dup_of: line 591, tag8 306
+何を言ってるわからないから、<lf>
+# dup_of: line 592, tag8 333
+少し落ち着いて……。
+# dup_of: line 587, tag8 8
+/[waitkey(64)]/[clear()]
+# dup_of: line 578, tag8 5
+/[label(ハマー)]
+# dup_of: line 601, tag8 140
+そんじゃ、中佐の捜索を開始するっす。<lf>
+# dup_of: line 8, tag8 0
+<lf>
+# dup_of: line 595, tag8 398
+落ち着いてる場合じゃないっすよ！<lf>
+# dup_of: line 8, tag8 0
+<lf>
+# dup_of: line 603, tag8 351
+手分けして探したほうがいいっすね。<lf>
+# dup_of: line 604, tag8 403
+見つけたらすぐに知らせるっすよ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 607, tag8 304
+何だよ、<lf>
+# dup_of: line 608, tag8 265
+ドックコロニーに戻るって言うのか？
+# dup_of: line 8, tag8 0
+<lf>
+# dup_of: line 610, tag8 211
+まぁ、金さえ払ってもらえるんなら、<lf>
+# dup_of: line 611, tag8 176
+どこへでも連れてってやるけどな。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 614, tag8 240
+よし、<lf>
+# dup_of: line 615, tag8 251
+エルザ発進だ。<lf>
+# dup_of: line 616, tag8 113
+さっさと、乗り込めよ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 614, tag8 240
+よし、<lf>
+# dup_of: line 615, tag8 251
+エルザ発進だ。<lf>
+# dup_of: line 616, tag8 113
+さっさと、乗り込めよ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 624, tag8 178
+なんだ、<lf>
+# dup_of: line 625, tag8 399
+行かねぇのか？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
+# dup_of: line 597, tag8 202
+ほら急いで、<lf>
+# dup_of: line 598, tag8 359
+早くこっちに来るっす！！<lf>
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 1, tag8 2
+/[label()]
+# dup_of: line 164, tag8 417
+軍人や役人なんぞ人間のクズだね。<lf>
+# dup_of: line 165, tag8 157
+てめえらで勝手に始めた戦争に<lf>
+# dup_of: line 573, tag8 310
+俺たちを勝手に巻き込みやがってよ。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
+# dup_of: line 83, tag8 71
+え！？<lf>
+# dup_of: line 552, tag8 419
+軍人？<lf>
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
+# dup_of: line 68, tag8 31
+あ、こんにちは！<lf>
+# dup_of: line 69, tag8 406
+観光ですか？<lf>
+# dup_of: line 70, tag8 271
+フフフ、そんなわけ無いですね。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
+# dup_of: line 75, tag8 392
+第一、ここには、<lf>
+# dup_of: line 76, tag8 407
+観光名所なんてありませんもの。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
+# dup_of: line 86, tag8 317
+冗談じゃないわよ！<lf>
+# dup_of: line 555, tag8 143
+そんなろくでなしの話なんて<lf>
+# dup_of: line 556, tag8 394
+聞きたくないわよ。
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
+# dup_of: line 276, tag8 216
+まったく、<lf>
+# dup_of: line 628, tag8 383
+用もねぇのに、<lf>
+# dup_of: line 629, tag8 411
+話し掛けるんじゃねぇよ。
+# dup_of: line 8, tag8 0
+<lf>
+# dup_of: line 631, tag8 97
+こっちはろくな仕事が無くて、<lf>
+# dup_of: line 632, tag8 248
+イライラしてんだからな。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 634, tag8 4
+/[label(トニー)]
+# dup_of: line 405, tag8 181
+なんだよ、<lf>
+# dup_of: line 636, tag8 412
+買い忘れでもあるのかい？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
+# dup_of: line 638, tag8 115
+さっさとしてくれよ。<lf>
+# dup_of: line 639, tag8 397
+船長の奴、<lf>
+# dup_of: line 640, tag8 295
+今にも暴れ出しそうなんだから。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 643, tag8 165
+どうした、何かあったのか？
+# dup_of: line 4, tag8 7
+/[waitkey(1)]/[clear()]
+# dup_of: line 645, tag8 281
+モモ？<lf>
+# dup_of: line 646, tag8 66
+いや、こっちには来てないぜ。<lf>
+# dup_of: line 8, tag8 0
+<lf>
+# dup_of: line 648, tag8 262
+デュランダルの中でも<lf>
+# dup_of: line 649, tag8 357
+散歩してるんじゃないのか？
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 652, tag8 166
+どうした？<lf>
+# dup_of: line 653, tag8 191
+ねーちゃんが一人なんて珍しいな。<lf>
+# dup_of: line 654, tag8 199
+ほかの連中はどうしたんだ？
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 657, tag8 84
+お！ねーちゃんじゃねぇか！？<lf>
+# dup_of: line 660, tag8 239
+よく入ってこれたな。
+# dup_of: line 8, tag8 0
+<lf>
+# dup_of: line 662, tag8 1
+/[font(ＫＯＳ−ＭＯＳ)]？<lf>
+# dup_of: line 663, tag8 39
+ああ、調整室なら今の所無事だぜ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 666, tag8 78
+おいおい！まさか<lf>
+# dup_of: line 667, tag8 318
+出かけるとか言うんじゃないだろうな！？
+# dup_of: line 8, tag8 0
+<lf>
+# dup_of: line 669, tag8 326
+外はグノーシスでいっぱいなんだ！<lf>
+# dup_of: line 670, tag8 146
+そんな悠長なことやってる場合じゃねぇだろう？
+# dup_of: line 8, tag8 0
+<lf>
+# dup_of: line 672, tag8 244
+わかった、わかった、<lf>
+# dup_of: line 673, tag8 82
+お前さんに常識を語っても仕方ねぇか。<lf>
+# dup_of: line 674, tag8 158
+で、どこに行きたいんだ？
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 652, tag8 166
+どうした？<lf>
+# dup_of: line 678, tag8 280
+モモは助け出せたのか？
+# dup_of: line 8, tag8 0
+<lf>
+# dup_of: line 680, tag8 153
+ちゃんと待っててやるから、<lf>
+# dup_of: line 681, tag8 361
+早く助け出してこいよ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 684, tag8 179
+なんだ、どこかに行きたいのか？<lf>
+# dup_of: line 685, tag8 400
+行きたい言ってみな、<lf>
+# dup_of: line 686, tag8 174
+どこにでも連れてってやるぜ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 689, tag8 164
+どうした、<lf>
+# dup_of: line 690, tag8 261
+デュランダルに戻りたいのか？
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 693, tag8 77
+おいおい、またどこかに運べって<lf>
+# dup_of: line 694, tag8 409
+言うんじゃねぇだろうな？
+# dup_of: line 8, tag8 0
+<lf>
+# dup_of: line 700, tag8 373
+残念だが、<lf>
+# dup_of: line 701, tag8 256
+クーカイ・ファウンデーションに着くまでは<lf>
+# dup_of: line 702, tag8 175
+どこにも出かけられねぇよ。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 704, tag8 104
+これが出たら間違いです！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 707, tag8 372
+歌声に行くんだろ？<lf>
+# dup_of: line 708, tag8 377
+準備はできてるぜ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 276, tag8 216
+まったく、<lf>
+# dup_of: line 717, tag8 106
+こんな事に付き合う羽目になるとはな。<lf>
+# dup_of: line 718, tag8 321
+危険手当、はずんでもらうぜ！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 405, tag8 181
+なんだよ、<lf>
+# dup_of: line 722, tag8 156
+てめぇの準備ができてねぇのか？<lf>
+# dup_of: line 723, tag8 364
+時間がねぇんだろ、早くしろよ！！
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 726, tag8 75
+おいおい、<lf>
+# dup_of: line 727, tag8 246
+アルベドって奴を<lf>
+# dup_of: line 728, tag8 353
+放っておいていいのかよ！？<lf>
+# dup_of: line 729, tag8 103
+この非常時に、まったく呑気なもんだな。
+# dup_of: line 11, tag8 9
+/[waitkey(64)]/[close()]
+# dup_of: line 264, tag8 50
+あんたも<lf>
+# dup_of: line 606, tag8 6
+/[label(マシューズ)]
+# dup_of: line 587, tag8 8
+/[waitkey(64)]/[clear()]
+# dup_of: line 167, tag8 44
+あの役立たず共のせいで、<lf>
+# dup_of: line 168, tag8 313
+俺はこんな生活してんだからな。
+# dup_of: line 93, tag8 337
+役人や、軍人なんて<lf>
+# dup_of: line 94, tag8 260
+ゴミよゴミ！<lf>
+# dup_of: line 95, tag8 381
+生ゴミと同じよ！！
+# dup_of: line 78, tag8 160
+でも、<lf>
+# dup_of: line 79, tag8 89
+ここにいる人たちは皆いい人なんですよ。<lf>
+# dup_of: line 80, tag8 232
+もちろん、この私もね。
+# dup_of: line 535, tag8 73
+お、また修理かい？<lf>
+# dup_of: line 536, tag8 208
+まぁ、ゆっくりしていってくれよ。
+# dup_of: line 527, tag8 204
+ほんと、物騒ですよね。<lf>
+# dup_of: line 528, tag8 129
+そこで襲われた人、重体らしいですよ。
+# dup_of: line 520, tag8 315
+先ほど、そこの路地で<lf>
+# dup_of: line 521, tag8 290
+人が襲われたんですよ。<lf>
+# dup_of: line 522, tag8 380
+犯人はどうやら連邦の兵隊だったとか。
+フラグオン！
+# dup_of: line 915, tag8 272
 フラグオン！
 はらう<lf>はらわない
+# dup_of: line 915, tag8 272
+フラグオン！
 ええ、お願いします<lf>いえ、今はいいです
+# dup_of: line 915, tag8 272
+フラグオン！
 ドックコロニーに行きたい<lf>いえ、今はいいです
 ネピリムの歌声に行く<lf>デュランダルに行く<lf>どこにも行かない
 天の車に直行！<lf>ドックコロニーへ行きたい<lf>いえ、今はいいです
 はい、お願いします！<lf>いえ、まだいいです
+# dup_of: line 915, tag8 272
+フラグオン！
+# dup_of: line 924, tag8 192
+はい、お願いします！<lf>いえ、まだいいです
+# dup_of: line 915, tag8 272
+フラグオン！
 ドックコロニーへ行きたい<lf>デュランダルに行きたい<lf>いえ、今はいいです
 enterd : /[$0]
 entrance: /[$0]
@@ -437,6 +1449,172 @@ Talk_npc6
 Talk_npc7
 Talk_npc8
 Talk_npc9
+Talk_npc10
+# dup_of: line 933, tag8 14
+Talk_npc2
+# dup_of: line 935, tag8 17
+Talk_npc5
+# dup_of: line 938, tag8 20
+Talk_npc8
+# dup_of: line 930, tag8 23
+entrance: /[$0]
+# dup_of: line 415, tag8 25
+………なるほどな。<lf>
+# dup_of: line 477, tag8 29
+あ…。
+# dup_of: line 152, tag8 37
+あぁん？<lf>
+# dup_of: line 663, tag8 39
+ああ、調整室なら今の所無事だぜ。
+# dup_of: line 218, tag8 42
+あの、気を悪くしないでください。<lf>
+# dup_of: line 167, tag8 44
+あの役立たず共のせいで、<lf>
+# dup_of: line 18, tag8 47
+あまり羽目を外すなよ。
+# dup_of: line 264, tag8 50
+あんたも<lf>
+# dup_of: line 199, tag8 53
+あんたらも、軍人の仲間だって言うなら<lf>
+# dup_of: line 447, tag8 55
+あんたらも気をつけた方がいいぜ。
+# dup_of: line 109, tag8 58
+あんだけ傷ついてるんだ、<lf>
+# dup_of: line 48, tag8 61
+いたんじゃねぇか、政府ン中によ。
+# dup_of: line 339, tag8 64
+いま、先生と一緒にくらしてるの。
+# dup_of: line 277, tag8 67
+いやな世の中ですよぉ・・・
+# dup_of: line 83, tag8 71
+え！？<lf>
+# dup_of: line 98, tag8 74
+おい、そこ！<lf>
+# dup_of: line 666, tag8 78
+おいおい！まさか<lf>
+# dup_of: line 138, tag8 80
+おらも飯が食えとるんだどもな。
+# dup_of: line 657, tag8 84
+お！ねーちゃんじゃねぇか！？<lf>
+# dup_of: line 244, tag8 91
+ここにおる奴はな、<lf>
+# dup_of: line 25, tag8 93
+ここは、ミルチア紛争の時に<lf>
+# dup_of: line 135, tag8 96
+こちとら休むヒマなんかありゃせんだよ。
+# dup_of: line 51, tag8 98
+このコロニー、<lf>
+# dup_of: line 332, tag8 102
+この前まで、アリアドネに住んでたの。
+# dup_of: line 211, tag8 109
+こんにちは、<lf>
+# dup_of: line 505, tag8 111
+さっきそこで人が襲われたんだが、<lf>
+# dup_of: line 207, tag8 114
+さっさとあきらめて、<lf>
+# dup_of: line 580, tag8 117
+し、し、し、し、し、オンさん！
+# dup_of: line 141, tag8 120
+しっかし、連邦もひでえもんだぁ<lf>
+# dup_of: line 481, tag8 123
+すぐになおしますから！<lf>
+# dup_of: line 318, tag8 126
+ぜんぜん話しないんだぜ！
+# dup_of: line 462, tag8 128
+そうなのよ、その暴漢って<lf>
+# dup_of: line 378, tag8 132
+その「/[color(0x329bbe)]魚影探知器/[color(0xffffff)]」なんだけどさ。<lf>
+# dup_of: line 420, tag8 139
+それ以外は受付ねぇよ。
+# dup_of: line 259, tag8 141
+そんでな、皆の顔を見とるとな、<lf>
+# dup_of: line 348, tag8 144
+そんなんじゃねぇ！<lf>
+# dup_of: line 156, tag8 147
+そんな物騒な話をするもんじゃねぇよ！
+# dup_of: line 17, tag8 150
+だからといって、<lf>
+# dup_of: line 652, tag8 166
+どうした？<lf>
+# dup_of: line 915, tag8 272
+フラグオン！
+# dup_of: line 915, tag8 272
+フラグオン！
+# dup_of: line 460, tag8 72
+え？犯人？
+# dup_of: line 460, tag8 72
+え？犯人？
+# dup_of: line 917, tag8 196
+はらう<lf>はらわない
+# dup_of: line 915, tag8 272
+フラグオン！
+# dup_of: line 919, tag8 69
+ええ、お願いします<lf>いえ、今はいいです
+# dup_of: line 915, tag8 272
+フラグオン！
+# dup_of: line 921, tag8 266
+ドックコロニーに行きたい<lf>いえ、今はいいです
+# dup_of: line 922, tag8 268
+ネピリムの歌声に行く<lf>デュランダルに行く<lf>どこにも行かない
+# dup_of: line 915, tag8 272
+フラグオン！
+# dup_of: line 923, tag8 330
+天の車に直行！<lf>ドックコロニーへ行きたい<lf>いえ、今はいいです
+# dup_of: line 915, tag8 272
+フラグオン！
+# dup_of: line 915, tag8 272
+フラグオン！
+# dup_of: line 915, tag8 272
+フラグオン！
+# dup_of: line 924, tag8 192
+はい、お願いします！<lf>いえ、まだいいです
+# dup_of: line 915, tag8 272
+フラグオン！
+# dup_of: line 924, tag8 192
+はい、お願いします！<lf>いえ、まだいいです
+# dup_of: line 915, tag8 272
+フラグオン！
+# dup_of: line 928, tag8 267
+ドックコロニーへ行きたい<lf>デュランダルに行きたい<lf>いえ、今はいいです
+# dup_of: line 915, tag8 272
+フラグオン！
+# dup_of: line 915, tag8 272
+フラグオン！
+# dup_of: line 588, tag8 3
+/[label(シオン)]
+# dup_of: line 460, tag8 72
+え？犯人？
+# dup_of: line 460, tag8 72
+え？犯人？
+# dup_of: line 460, tag8 72
+え？犯人？
+# dup_of: line 460, tag8 72
+え？犯人？
+# dup_of: line 929, tag8 22
+enterd : /[$0]
+# dup_of: line 930, tag8 23
+entrance: /[$0]
+# dup_of: line 931, tag8 15
+Talk_npc20
+# dup_of: line 88, tag8 210
+まぁ、知ってたって教えないけど。
+# dup_of: line 932, tag8 10
+Talk_npc1
+# dup_of: line 933, tag8 14
+Talk_npc2
+# dup_of: line 934, tag8 16
+Talk_npc3
+# dup_of: line 935, tag8 17
+Talk_npc5
+# dup_of: line 936, tag8 18
+Talk_npc6
+# dup_of: line 937, tag8 19
+Talk_npc7
+# dup_of: line 938, tag8 20
+Talk_npc8
+# dup_of: line 939, tag8 21
+Talk_npc9
+# dup_of: line 940, tag8 11
 Talk_npc10
 Talk_npc14
 Talk_npc17

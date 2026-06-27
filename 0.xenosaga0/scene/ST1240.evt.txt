@@ -1,9 +1,11 @@
 # chunk 3 @ 0x648 cnum=769 total=86
-# bc_map: 2,42,68,5,50,56,4,84,16,0,67,79,55,80,41,14,75,66,77,17,63,1,52,71,59,15,45,21,24,53,62,46,25,23,70,31,54,13,69,65,81,64,27,39,22,43,60,57,74,48,44,32,82,51,47,35,33,83,28,20,34,40,26,85,3,19,73,78,38,30,72,29,58,36,61,49,18,37,76,11,12,6,7,8,9,10
+# bc_map: 2,42,68,5,2,50,56,4,84,16,0,67,79,4,55,80,41,5,2,14,75,0,66,77,5,2,17,4,63,1,52,0,71,4,59,5,2,15,45,21,5,2,24,53,62,46,5,2,25,23,0,70,31,54,5,2,13,4,69,65,81,5,2,64,4,27,39,22,5,2,43,5,2,60,57,74,4,48,5,2,44,32,4,82,51,47,5,2,35,33,83,0,28,20,4,34,40,5,2,26,85,5,3,19,4,73,78,38,0,30,72,5,3,29,58,4,36,61,0,49,18,4,37,5,76,76,76,79,11,12,6,7,8,9,10,6
 /[label()]
 ねぇ、<lf>
 惑星消失事件って知ってます？
 /[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 アリアドネという惑星が、<lf>
 丸ごと消えてしまったんですよ。
 /[waitkey(1)]/[clear()]
@@ -12,73 +14,169 @@
 <lf>
 惑星と共に消えてしまった人も<lf>
 行方不明のままなんです。
+# dup_of: line 8, tag8 4
+/[waitkey(1)]/[clear()]
 一説にはグノーシスの仕業だとも<lf>
 言われてますし、<lf>
 なんにせよ、恐ろしい事件ですよ。
+# dup_of: line 4, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あの事件、いまだに、<lf>
 真相は謎のままなんですってよ。
+# dup_of: line 11, tag8 0
+<lf>
 惑星が一つ消えてしまうなんて、<lf>
 私には信じられませんよ。
+# dup_of: line 4, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 いらっしゃいませ〜。
+# dup_of: line 8, tag8 4
+/[waitkey(1)]/[clear()]
 当店には<lf>
 /[font(Ａ．Ｇ．Ｗ．Ｓ．)]のビーム砲から<lf>
 トイレットペーパーまで
+# dup_of: line 11, tag8 0
+<lf>
 手に入らない物はありませ〜ん！
+# dup_of: line 8, tag8 4
+/[waitkey(1)]/[clear()]
 何をお求めですか〜？
+# dup_of: line 4, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ありがとうございました〜。<lf>
 またのご来店<lf>
 おまちしてま〜す。
+# dup_of: line 4, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ここの品揃えは、<lf>
 ドックコロニーの中で一番だね。<lf>
 孫のオムツなんかも手に入るんだ。<lf>
 まったく、いい世の中になったもんだよ。
+# dup_of: line 4, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ここも、戦争中は<lf>
 かなり非道い目にあったけどさ。
+# dup_of: line 11, tag8 0
+<lf>
 戦後、ミルチア憲章が制定されたのが<lf>
 せめてもの救いだね。<lf>
 レアリエンを加害者にしちゃいけないよ。
+# dup_of: line 4, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 あ、そうそう、
+# dup_of: line 8, tag8 4
+/[waitkey(1)]/[clear()]
 憲章は、<lf>
 当時の連邦政府枢機院議長の後押しで<lf>
 議会を通ったらしいね。
+# dup_of: line 4, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 当時の議長？
+# dup_of: line 8, tag8 4
+/[waitkey(1)]/[clear()]
 さあ…、<lf>
 どっかのデカイ企業の<lf>
 おエライさんだった筈だけど…。
+# dup_of: line 4, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ねぇねぇ、知ってます？
+# dup_of: line 4, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 先ほど、そこの路地で<lf>
 人が襲われたんです。<lf>
 犯人はどうやら連邦の兵隊だったとか。
+# dup_of: line 8, tag8 4
+/[waitkey(1)]/[clear()]
 まったく、物騒な世の中ですよね。
+# dup_of: line 4, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ほんと、物騒ですよね。<lf>
 そこで襲われた人、重体らしいですよ。
+# dup_of: line 8, tag8 4
+/[waitkey(1)]/[clear()]
 軍人がウロウロしてたって<lf>
 ウワサもあるし、<lf>
 まったく、安心して外を歩けないですよ。
+# dup_of: line 4, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 ちょっと、知ってるかい？<lf>
 そこの路地で、<lf>
 軍人がケンカ騒ぎを起こしたらしいんだよ。
+# dup_of: line 11, tag8 0
+<lf>
 しかも、相手は重体なんだってさ。
 おっそろしいねぇ〜。
+# dup_of: line 8, tag8 4
+/[waitkey(1)]/[clear()]
 そんな危険な兵隊、<lf>
 なんで野放しにしてるんだろうね〜。
+# dup_of: line 4, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label()]
 この状態を見て見ぬフリってんだから、<lf>
 連邦政府もどうしようもないわね。
+# dup_of: line 4, tag8 5
+/[waitkey(64)]/[close()]
 /[label(トム)]
 おっかしーなー？<lf>
+# dup_of: line 8, tag8 4
+/[waitkey(1)]/[clear()]
 昔さぁ、このお店にピンクのお化けの人形が<lf>
 置いてあったんだけど。<lf>
 どこ行っちゃったのかなぁ……。
+# dup_of: line 11, tag8 0
+<lf>
 すっごく、壊れやすかったから、<lf>
 捨てられちゃったのかなぁ。
+# dup_of: line 4, tag8 5
+/[waitkey(64)]/[close()]
+# dup_of: line 103, tag8 3
+/[label(トム)]
 じつはね、そのピンクの人形ってさ、<lf>
 人の言葉をしゃべれるんだよ。
+# dup_of: line 8, tag8 4
+/[waitkey(1)]/[clear()]
 とっても傷つきやすくて、<lf>
 壊れやすい奴だけど、
+# dup_of: line 11, tag8 0
+<lf>
 やさしく話し掛けると、<lf>
 いろんな事を教えてくれるよ！
+# dup_of: line 8, tag8 4
+/[waitkey(1)]/[clear()]
 どこかで見かけたら仲良くしてあげてね！
+# dup_of: line 4, tag8 5
+/[waitkey(64)]/[close()]
 知ってる<lf>知らない
+# dup_of: line 125, tag8 76
+知ってる<lf>知らない
+# dup_of: line 125, tag8 76
+知ってる<lf>知らない
+# dup_of: line 13, tag8 79
+行方不明のままなんです。
 enterd : /[$0]
 entrance: /[$0]
 Talk_npc1
@@ -86,3 +184,5 @@ Talk_npc2
 Talk_npc3
 Talk_npc4
 Talk_npc5
+# dup_of: line 131, tag8 6
+Talk_npc1

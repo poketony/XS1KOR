@@ -6,18 +6,34 @@ Nobi
 Chijimi
 
 # chunk 4 @ 0x1100 cnum=627 total=20
-# bc_map: 18,0,15,9,12,11,13,17,19,16,10,3,1,14,4,7,8,5,2,6
+# bc_map: 18,0,15,0,9,0,12,0,11,0,13,0,17,0,19,16,0,10,0,3,1,14,4,7,8,5,2,6
 移動先の入力をお願いします。
 /[waitkey(64)]/[close()]
 【隔離格納庫エリア】に移動します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 【ドックエリア】に移動します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 【居住エリア】に移動します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 【ブリッジエリア】に移動します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 【揚陸待機エリア】に移動します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 非常警戒レベル『ＡＡＡ』。<lf>
 これより先の立ち入りを禁止します。
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 【パークエリア駅】
+# dup_of: line 2, tag8 0
+/[waitkey(64)]/[close()]
 Nobi
 Chijimi
 【隔離格納庫エリア】<lf>【ドックエリア】<lf>【居住エリア】<lf>【ブリッジエリア】<lf>【揚陸待機エリア】<lf>　キャンセル

@@ -1,43 +1,83 @@
 # chunk 1 @ 0x204 cnum=792 total=47
-# bc_map: 2,17,4,20,16,11,14,3,15,34,13,38,21,12,1,42,35,41,43,32,18,36,29,22,19,30,31,0,7,28,39,40,37,44,23,46,45,25,26,27,8,33,9,24,6,10
+# bc_map: 2,17,4,2,20,16,4,2,11,14,3,2,15,34,4,2,13,38,4,2,21,4,2,12,3,1,42,35,4,1,41,43,4,32,18,4,36,4,29,22,4,29,19,4,30,31,4,0,7,28,39,40,37,44,23,46,45,25,26,27,8,33,9,24,6,10,45,45,45
 # bc_unmap: 5
-/[label(시온)]
-이제 문의 잠금을 해제할 수 있겠어！　<lf>
+/[label(シオン)]
+これで扉のロックが解除できるわ！<lf>
 /[waitkey(64)]/[close()]
-하하하……<lf>
-이 방이구나……<lf>
-어머……<lf>
-이 문，안 열리네．<lf>
+# dup_of: line 1, tag8 2
+/[label(シオン)]
+ははあ……<lf>
+この部屋ね……<lf>
+# dup_of: line 3, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label(シオン)]
+あら……<lf>
+この扉、開かないわ。<lf>
 /[waitkey(64)]/[clear()]
-이 문을 열려면<lf>
-미션 키가 필요한가 보네！　<lf>
-이쪽에서는 열리지 않아．<lf>
-잠겨 있는 모양이네…　<lf>
-이젠 아무것도 없는 것 같네…<lf>
-와앗！？<lf>
-/[label(알렌)]
-주임님！<lf>
-미션 키가 없으면 열 수 없으십니다！<lf>
-주임님，컨테이너 안에 아이템이<lf>
-들어 있을 거라곤 장담 못 합니다！<lf>
-넘버 １０이라고<lf>
-적혀 있는 문이 있다…．<lf>
-미션 키를 꽂았다！<lf>
-세그먼트 어드레스 Ｎｏ．１０이라고<lf>
-적혀 있는 문을 발견했다．
-표시되어 있다．
-세그먼트 어드레스 Ｎｏ．１０의<lf>
-디코드를 종료합니다．
-/[color(0x329bbe)]미션 키/[color(0xffffff)]를 손에 넣었다！　/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label(シオン)]
+この扉を開けるには<lf>
+ミッションキーが必要のようね！<lf>
+# dup_of: line 3, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label(シオン)]
+こちら側からは開かないわ。<lf>
+ロックされているようね…<lf>
+# dup_of: line 3, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label(シオン)]
+もう何もないみたいね…<lf>
+# dup_of: line 3, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 1, tag8 2
+/[label(シオン)]
+うわっ！？<lf>
+# dup_of: line 11, tag8 3
+/[waitkey(64)]/[clear()]
+/[label(アレン)]
+主任！<lf>
+ミッションキーが無いと開きませんよ！<lf>
+# dup_of: line 3, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 26, tag8 1
+/[label(アレン)]
+主任、コンテナの中にはアイテムが<lf>
+入っているとは限りませんよ！<lf>
+# dup_of: line 3, tag8 4
+/[waitkey(64)]/[close()]
+ナンバー１０<lf>
+と書かれている扉がある・・・。<lf>
+# dup_of: line 3, tag8 4
+/[waitkey(64)]/[close()]
+ミッションキーを差し込んだ！<lf>
+# dup_of: line 3, tag8 4
+/[waitkey(64)]/[close()]
+セグメント・アドレスＮｏ．１０<lf>
+を発見した。
+# dup_of: line 3, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 39, tag8 29
+セグメント・アドレスＮｏ．１０<lf>
+と表示されている。
+# dup_of: line 3, tag8 4
+/[waitkey(64)]/[close()]
+セグメント・アドレスＮｏ．１０の<lf>
+デコードを終了します。
+# dup_of: line 3, tag8 4
+/[waitkey(64)]/[close()]
+/[color(0x329bbe)]ミッションキー/[color(0xffffff)]を手に入れた！/[waitkey(64)]/[close()]
 KickEvent2F!!!!!!!!!!!!!!!!
 スイッチＯＮのため何もせずに終了
 ロックしてあるメッセージ
 ロックを解除するメッセージ
-잠금이 해제되었습니다　/[waitkey(64)]/[close()]
+ロックが解除されました/[waitkey(64)]/[close()]
 処理を終了したメッセージ
 サブルート
 高さが違うので抜けます
-공사 중입니다/[wait(30)]/[close()]
+工事中です/[wait(30)]/[close()]
 サブルート発見
 サブルート発見済＆鍵あり
 サブルート発見済＆鍵なし
@@ -47,3 +87,9 @@ enterd : /[$0]
 サブルートへ
 FUJI_25セット
 entrance: /[$0]
+# dup_of: line 57, tag8 45
+工事中です/[wait(30)]/[close()]
+# dup_of: line 57, tag8 45
+工事中です/[wait(30)]/[close()]
+# dup_of: line 57, tag8 45
+工事中です/[wait(30)]/[close()]
