@@ -1,0 +1,552 @@
+# chunk 18 @ 0xc2e0 cnum=3143 total=549
+# bc_map: 342,255,319,97,99,69,98,46,45,47,147,48,101,6,8,61,10,63,49,62,398,502,525,524,401,400,397,396,487,490,489,51,58,59,52,53,54,55,60,56,57,493,402,409,426,443,460,461,462,463,464,465,403,404,405,406,407,408,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,399,395,492,500,529,530,531,532,533,534,535,536,537,538,322,323,324,325,326,327,328,329,330,331,394,539,540,541,542,543,544,545,546,547,548,332,333,334,335,336,337,338,339,340,341,50,346,7,9,64,104,41,37,133,134,94,95,42,43,35,36,141,2,67,31,30,356,136,66,32,29,138,105,65,137,68,135,109,11,5,343,26,347,312,25,92,12,103,1,18,13,96,44,15,14,111,110,130,128,131,129,142,86,74,121,320,321,75,87,106,107,90,89,3,140,139,108,91,305,306,119,120,348,313,314,315,316,93,21,22,23,250,307,352,345,251,308,353,344,100,113,112,85,514,515,516,517,518,519,520,521,522,523,116,114,115,117,132,71,70,143,124,127,122,125,126,123,118,17,254,253,252,40,39,38,16,144,19,145,20,4,351,349,350,146,150,151,152,73,148,149,0,33,34,153,102,72,355,243,318,317,528,82,81,84,76,79,77,80,83,78,466,467,478,480,481,482,483,484,485,486,468,469,470,471,472,473,474,475,476,477,479,203,198,204,196,200,197,201,205,199,202,207,309,310,311,206,354,283,281,279,284,282,280,261,382,369,391,511,375,216,213,218,212,217,214,215,288,287,286,262,494,503,376,219,220,221,289,290,263,363,370,360,374,224,225,223,226,222,291,294,293,292,264,505,495,358,498,228,234,233,236,227,235,232,231,229,230,296,295,297,365,387,366,388,512,237,238,239,298,504,506,496,240,241,242,299,491,244,245,301,300,526,392,499,247,248,249,246,303,302,304,377,156,155,157,154,265,357,386,159,158,162,161,160,266,507,385,267,362,378,501,163,165,166,164,268,256,513,381,167,169,168,171,170,269,270,257,509,367,359,368,176,173,177,172,175,174,272,271,372,527,371,390,183,179,178,182,181,180,274,273,258,361,510,364,380,184,187,190,186,188,185,189,275,276,508,393,389,488,191,192,277,259,383,193,195,194,278,260,384,208,210,209,211,285,373,379,497,27,28,24,88
+# bc_unmap: 24,88
+msg_clear_thread
+eventmovie/
+lightSPL_main
+HISTORY CLEAR
+HISTORYDELETE PTR=/[$0]
+ERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRROR!!
+HISTORY-SET /[$0]
+CameraHistory Overflow!!
+Camera instant test
+Cameratest_history
+WAIT=/[$0]
+Cancel!!
+History is Empty.
+*********CameraTool Standby*****************
+*********Capture Start!!!*****************
+CaptureMode = /[$0]
+*********CaptureTool Standby*****************
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+キャプチャモード
+全画面
+ＢＧのみ（ＺＰＩＣなし）
+ＢＧのみ（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+オブジェ単体（ＺＰＩＣあり）
+テキスト（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣあり）
+CaptureMODE ---All Screen.
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---SoftImage BG(pic+zpic)
+CaptureMODE ---Chr(pic)
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---TXT(pic)
+CaptureMODE ---Particle(pic)
+CaptureMODE ---Particle(pic+zpic)
+ページ切り替え
+キャラ０
+キャラ１
+キャラ２
+キャラ３
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラのみキャプチャ
+オブジェのみキャプチャ
+フォルダ選択
+企画サイドのフォルダを使用する
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（たけなか）
+ｍｏｖｉｅ０４（なかむら）
+ｍｏｖｉｅ０５（いけうち）
+ｍｏｖｉｅ０６（？？？？）
+ｍｏｖｉｅ０７（ふち）
+ｍｏｖｉｅ０８（ふち）
+ｍｏｖｉｅ０９（保存）
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+エフェクトサイドのフォルダを使用する
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（おの７６５）
+ｍｏｖｉｅ１７（うなかみ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+reset_pos
+*********Capture End.*****************
+*********Capture Waiting...*****************
+ColorScreen  SetMode
+Layer = /[$0]
+Before.
+Back.
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode-------end
+*************ColorScreen Printout*************
+ColorScreenParamZ = {
+0,
+/[$1],
+};
+Runtime.setDefocus(0,2,ColorScreenParamZ);
+ColorScreenParamBack = {
+1,
+/[$0],
+Runtime.setDefocus(15, /[$2], ColorScreenParamBack);
+Layer = /[$3]
+ColorScreenParam = {
+Runtime.setDefocus(15, /[$2], ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], /[$3], ColorScreenParam);
+Layer not exist.
+*********DEBUGPRINT*********
+*********CameraHistory SPL*********
+pos[] ={
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+Fog SetMode-------end
+*********DEBUGPRINT3*********
+LINKTABLE
+ 
+,
+*********DEBUGPRINT4*********
+HISPTR
+CAMHIS
+*********ManualCamera Replay*********
+*********DEBUGPRINT6*********
+MANUALCAMPTR
+MANUALCAMHIS
+PATH = SPLINE
+PATH = DOWN
+PATH = UP
+PATH = LINEAR
+ShakeRoutine_main
+Facechk...
+F-/[$0]
+No Face!!!
+mouth close.
+mouth open.
+F-/[$0]/[$2] frame(/[$1])
+Facechk...end.
+Layer = Back
+Layer = Before
+Focus delta = /[$0](back)
+Focus SetMode-------end
+*************Focus Printout*************
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+Fog  SetMode
+far Ratio Max!!
+far Ratio Min!!
+Near Ratio Max!!
+Near Ratio Min!!
+setFog(1,/[#0]f,/[#1]f,/[#2]f,/[#3]f,/[$4],/[$5],/[$6],/[$7]);
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+Gnochk...
+--alpha--
+--filter--
+--ref_alpha--
+alpha max!!
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+HISTORYLOOK PTR=/[$0]
+MSGprint.
+MSGprint(with Face).
+Face End.
+０
+１
+２
+３
+４
+５
+６
+７
+８
+９
+ManualCamera not Recorded.
+ManualCam_record.
+ManualCamera MOVE to start.
+ManualCameraRecord START!!!
+Record /[$0]
+End(TimeOver).
+End(Button).
+Time = /[$0]
+Objchk......(Chr)
+Objchk......End
+Objchk(+Mtn)......
+Objchk......(Effect)
+Objchk......(Unit)
+Objchk......
+Mtn Frame = /[$0]
+*********printout /[$0]***********
+cam1.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+cam1.setRotate   (/[#0]f,/[#1]f,/[#2]f);
+cam1.setFov(/[#0]f);
+BaseCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setFov(/[#0]f);
+*********Timechk Standby*****************
+Timechk_main
+----------シーンは終了しました。
+Timerchk_srv_main
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])
+***********Objchk printout***********
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+setRotate   (/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+VibRoutine_main
+Xenvmainthreadmain
+Xenvplaythread
+_MSGprint.
+Event Out
+XEVEFLAG:EV02030_F
+XEVEJNAME:CFJ2_140 XEVEJPOINT:POINT2_140
+<lf>
+===
+==========================
+__win_thread
+INPUT Number!!
+End.(RETURN = /[$0])
+spl
+act8_momo
+lightSPL start.
+lightSPL end.
+ＯＫ
+FLSshion.fpk
+FLSmomo.fpk
+FLSziggy.fpk
+FLSallen.fpk
+FLSkosmos.fpk
+FLSchaos.fpk
+FLSmatehws.fpk
+FLStonny.fpk
+FLShammer.fpk
+スタート　０→９
+スタート　１０→１９
+スタート　２０→２９
+スタート　３０→３９
+スタート　４０→４９
+スタート　５０→５９
+スタート　６０→６９
+スタート　７０→７９
+スタート　８０→８９
+スタート　９０→９９
+スタート　１００→１０９
+スタート　１１０→１０９
+スタート　１２０→１２９
+スタート　１３０→１３９
+スタート　１４０→１４９
+スタート　１５０→１５９
+スタート　１６０→１６９
+スタート　１７０→１７９
+スタート　１８０→１８９
+スタート　１９０→１９９
+スタート　２００→２０９
+act1_shadow
+act1_chara
+act1_shion
+act1_allen
+act1_kosmos
+act1_chaos
+act1_matehws
+act1_tonny
+act1_hammer
+act1_momo
+act1_ziggy
+fish1_act
+fish2_act
+fish3_act
+act1_tray
+space_move
+face1_shion
+face1_kosmos
+face1_allen
+face1_tonny
+face1_matehws
+face1_hammer
+eyes1_shion
+どうぞ
+ありがとう　ＫＯＳ−ＭＯＳ
+もう──<lf>なに寝てるのよ　アレン君
+船長　お茶です
+おっ　すまんな<lf>そこ置いといてくれ
+act2_shadow
+act2_chara
+act2_ziggy
+act2_chaos
+act2_tonny
+act2_cup01
+act2_cup02
+face2_ziggy
+face2_tonny
+face2_chaos
+eyes2_shion
+ホンっトにさぁ<lf>ヒヤヒヤしたよなぁ
+危ないところだったね
+しかし──<lf>なかなか悪かない逃げっぷりだったぜ　オッサン
+act3_chara
+act3_momo
+act3_ziggy
+face3_momo
+face3_ziggy
+eyes3_ziggy
+【モモ】
+ありがとうございます
+【トニー】
+お　おい<lf>あれ　嬢ちゃんの操縦か
+act4_shion
+act4_tonny
+act4_momo
+act4_ziggy
+act4_cup03
+face4_momo
+face4_ziggy
+face4_tonny
+face4_shion
+eyes4_ziggy
+操舵系統は　モモが制御してました
+マジかよ──<lf>──ったく参るぜ　最近のおコちゃまには
+【シオン】
+レアリエンとはいえ凄いのねぇ
+act5_chara
+act5_shion
+act5_momo
+act5_ziggy
+act5_allen
+act5_tonny
+act5_matehws
+act5_hammer
+act5_cup02
+act5_cup03
+face5_shion
+face5_momo
+face5_ziggy
+あっ<lf>そういえば　その制服のマーク──
+はい
+あなた──<lf>もしかしてミズラヒ研出身
+はい<lf>百──
+観測用──レアリエンです
+act6_chara
+act6_shion
+act6_tonny
+face6_shion
+大丈夫　心配しないで
+政府の機密関係だったら<lf>こっちのＫＯＳ−ＭＯＳも同じだから
+ミズラヒ研の百式観測用レアリエン
+act7_chara
+act7_momo
+act7_ziggy
+face7_momo
+ヒルベルト実装型でしょ
+act8_shion
+act8_ziggy
+face8_shion
+face8_momo
+ＫＯＳ−ＭＯＳにもね　流用されてるのよ<lf>ヒルベルト
+もっともこっちはヴェクターオリジナルだけど
+ヴェクターの方なんですか
+act9_chara
+act9_shion
+act9_tonny
+act9_allen
+face9_shion
+face9_allen
+face9_tonny
+そ<lf>あっちのアレン君もね
+act10_chara
+act10_chaos
+act10_tonny
+act10_allen
+face10_chaos
+【ケイオス】
+ねえ　ところで行き先はどこ
+act11_chara
+act11_chaos
+act11_matehws
+act11_hammer
+act11_cup02
+face11_chaos
+方向によっては　“有料”で<lf>送ってあげられるかもしれないよ
+ね　船長
+face12_matehws
+【マシューズ】
+そりゃそうだ
+俺達は運び屋だからな
+act13_chara
+act13_momo
+act13_ziggy
+act13_matehws
+face13_momo
+eyes13_matehws
+運び屋さん　ですか<lf>では　第二ミルチ──
+では　第二ミルチア太陽系圏まで
+act14_chara
+act14_shion
+act14_momo
+act14_ziggy
+act14_tonny
+face14_shion
+face14_ziggy
+eyes14_matehws
+第二ミルチアへ
+あなた達も
+【ジギー】
+あなた達も　とは
+act15_shadow
+act15_chara
+act15_shion
+act15_chaos
+act15_matehws
+act15_hammer
+face15_shion
+face15_chaos
+いえ──<lf>偶然だな　と思っただけです
+ＫＯＳ−ＭＯＳの新しい配備先も<lf>第二ミルチアなんです
+いいじゃない<lf>相乗りの方が安く済むよ　シオン
+まあ　それはそうだけど────
+act16_shadow
+act16_chara
+act16_chaos
+act16_matehws
+act16_hammer
+act16_cup02
+face16_matehws
+face16_hammer
+eyes16_chaos
+【ハマー】
+船長<lf>船体の修理は
+ああ　そっちのが先だな<lf>近くのドックに寄ろう
+それでいいか
+act17_chara
+act17_momo
+act17_ziggy
+act17_matehws
+act17_shion
+act17_hammer
+act17_tonny
+face17_matehws
+face17_shion
+無論だ
+よろしくお願いします
+ま　ゆっくりしてくれ
+ネーチャン　案内してやれ
+act18_chara
+act18_shion
+face18_shion
+eyes18_shion
+なんか妙に優しいわね
+act19_chara
+act19_matehws
+act19_hammer
+face19_matehws
+eyes19_shion
+なんだ<lf>おれの顔になんかついてるか
+act20_chara
+act20_shion
+act20_momo
+act20_ziggy
+face20_shion
+え　い　いえ　別に
+それじゃいこうか
+モモちゃん　ジギーさん
+/[$0]
+/[$0](Cursor = /[$1])
+--shake--
+Focus SetMode

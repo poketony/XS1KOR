@@ -239,7 +239,7 @@
 파괴 체크
 breakflg[0] = 1
 드릴 낙하 종료
-예<lf>아니오
+예<lf>아니요
 enterd : /[$0]
 entrance: /[$0]
 shoot on

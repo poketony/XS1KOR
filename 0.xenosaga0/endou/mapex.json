@@ -186,14 +186,14 @@
     "offset": 1213,
     "end": 1250,
     "original": "小惑星プレロマ\n聖堂の間への通路・２Ｆ",
-    "translation": "소행성 플레로마\n성당 내부로 가는 통로 ２Ｆ"
+    "translation": "소행성 플레로마\n성당 내부 통로 ２Ｆ"
   },
   {
     "idx": 27,
     "offset": 1257,
     "end": 1294,
     "original": "エンセフェロン\n公園内地下道出入口付近",
-    "translation": "엔세페론\n공원 내 지하도 출입구 부근"
+    "translation": "엔세페론\n공원 지하도 출입구 부근"
   },
   {
     "idx": 28,
@@ -242,7 +242,7 @@
     "offset": 1565,
     "end": 1598,
     "original": "ネピリムの歌声\n第２の塔内部・３Ｆ",
-    "translation": "네피림의 노랫소리\n제２의 탑 내부 ３Ｆ"
+    "translation": "네피림의 노랫소리\n제２의 탑 ３Ｆ"
   },
   {
     "idx": 35,
@@ -256,7 +256,7 @@
     "offset": 1653,
     "end": 1676,
     "original": "エルザ\nカタパルトデッキ",
-    "translation": "엘자\n캐터펄트 갑판"
+    "translation": "엘자\n캐터펄트 덱"
   },
   {
     "idx": 37,

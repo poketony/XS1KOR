@@ -1,0 +1,22 @@
+# chunk 7 @ 0xb50 cnum=608 total=20
+# bc_map: 8,9,2,6,7,3,4,1,5,17,16,12,18,15,14,19,13,10,11,0
+Xenvmainthreadmain
+Xenvplaythread
+Event Out
+XEVEFLAG:EV02037_F
+XEVEJNAME:CFJ2_150 XEVEJPOINT:POINT2_150
+FLSjr_h.fpk
+FLSmary.fpk
+CameraThread
+L_open
+目標は敵艦メインフレーム
+各端末からマルチアプローチをかけて<lf>プロテクトブロック
+sold2_c3
+直後にターミナルから<lf>トライを試みる
+各班　行け
+じゃ　ウチらは艦橋へ向かいまひょか<lf>ちび様
+ＯＫ
+さっさと済ませて帰ろうぜ
+j_c8
+m_c8
+>>>>>>> CUT /[$1]
