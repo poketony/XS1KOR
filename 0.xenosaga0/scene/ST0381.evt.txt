@@ -177,7 +177,7 @@ TalkNPC1
 읽었어？
 TalkNPC2
 # dup_of: line 129, tag8 83
-TalkNPC2
+읽었어？
 # dup_of: line 130, tag8 12
 TalkNPC2
 TalkNPC5
