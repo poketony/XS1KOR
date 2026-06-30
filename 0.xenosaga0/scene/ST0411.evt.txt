@@ -11,7 +11,7 @@
 # dup_of: line 3, tag8 4
 /[waitkey(1)]/[clear()]
 이대로라면 저 괴물들에게<lf>
-그녀가 잡아먹히고 말 거야！！
+여자 친구가 잡아먹히고 말 거야！！
 # dup_of: line 6, tag8 5
 /[waitkey(64)]/[close()]
 이，이런 괴물이……<lf>

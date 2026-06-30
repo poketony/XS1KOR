@@ -294,7 +294,7 @@
 /[waitkey(64)]/[close()]
 # dup_of: line 199, tag8 2
 /[label()]
-매번 감사합니다！
+매번 감사하다고！
 # dup_of: line 4, tag8 0
 <lf>
 나는 초일류 바텐더 로봇이다！<lf>

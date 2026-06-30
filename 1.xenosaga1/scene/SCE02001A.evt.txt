@@ -452,7 +452,7 @@ com4_isu_r2
 com5_isu_r2
 com1_isu_r2
 com3_isu_r2
-그런 일은<lf>첩보국에 맡겨두면 되네
+그런 일은<lf>첩보국에 맡겨 두면 되네
 실은 말이지……
 CUT31 END
 CUT32 START
