@@ -1,0 +1,1222 @@
+#
+# equip ???-??-??? は装備設定です。
+# ? は 'o'(小文字のオー)なら装備可能
+# 'x'(小文字エックス)なら装備不可能をあらわします。
+# フォーマットは以下のとおりです
+#
+# ？？？−？？−？？？
+# 左左左　背背　右右右
+# 手肘肩　中中　肩肘手
+# 　　　　左右
+#
+# つまり人を後ろから見ている感じです。
+# 左肘と右手に装備できる（？）武器は
+#  xox-xx-xxo
+# となります。equip を指定しないときはディフォルトで
+#  oxx-xx-xxo  (両手だけ)
+# となります。
+
+#
+# 各武器タイプによるモーションのディフォルト
+#
+# shottype
+# enetype   -> mot shot_left_handgun  shot_right_handgun  nul
+#
+# atktype   -> mot brade_left         brade_right         nul
+#
+
+# use は無指定のときは全キャラ使用可能になります。
+
+sudetype UNARMED
+  default
+  name 미장착
+
+  vshotsnd 14    0.5       #剣音
+  vhitsnd 22     1.0       #実弾ヒット
+  vbgsnd 36      1.0       #BG破壊
+
+
+  occupy LEFT xxx-xx-xxx
+  occupy RIGHT xxx-xx-xxx
+  occupy BACK xxx-xx-xxx
+  damage 13
+  lock -20   80      # ロックできる範囲(度)
+  hiteff eff05.ptcl # ＨＩＴエフェクト
+# sudetype SUDE_VX01 damage 3 use vx01 . name 素手 equip oxx-xx-xxo
+# sudetype SUDE_VX02 damage 3 use vx02 . name 素手 equip oxx-xx-xxo
+# sudetype SUDE_VX06 damage 3 use vx06 . name 素手 equip oxx-xx-xxo
+# sudetype SUDE_AG05 damage 3 use ag05 . name 素手 equip oxx-xx-xxo
+# sudetype SUDE_AG02 damage 3 use ag02 . name 素手 equip oxx-xx-xxo
+# sudetype SUDE_AG04 damage 3 use ag04 . name 素手 equip oxx-xx-xxo
+  
+# 　１話-------------------------------------------------------
+
+# ブレード０         SWD21AG
+atktype SWD21AG
+  name 소드
+  default
+  model bd00
+  damage 25.0
+
+  vshotsnd 14    0.7       #剣音
+  vhitsnd 15     1.0       #剣ヒット
+  vbgsnd 36      1.0       #BG破壊
+
+  equip oxx-xx-xxo   # 両手
+  lock -50   50      # ロックできる範囲(度)
+  use vx01 ag02 vx06 vx02 ag05 .
+  weight 65.0       # 重量(rg_robot_spec.info の weight も参照)
+
+# ライフル０         LG24VX
+shottype LG24VX
+  name 빔　라이플
+  1wa
+  model rf01
+
+  vshotsnd 28   1.0        #ビームライフル音
+  vhitsnd 29    1.0        #ビームライフルヒット
+  vbgsnd 36     1.0        #BG破壊
+
+  equip oxx-xx-xxo   # 両手
+  shot T_LG24VX      # ショット(rg_shot.info 参照)
+  num 20             # ショット数(弾数)
+  busy 0.6           # ショット後の busy 時間(sec)
+  lock -15   45      # ロックできる範囲(度)
+  weight 175.0       # 重量
+
+  # 使用キャラクタ
+  use vx01 ag02 vx02 ag05 .
+
+  # ライフル０初期位置モーション
+  basemot-all (
+    def   nul nul nul          # ag02 以外
+	ag02  wmot_21 wmot_25 nul  # ag02 
+  )
+
+  # ライフル０攻撃モーション
+  selfmot-all (
+    def   nul nul nul          # ag02 以外
+	ag02  wmot_22 wmot_26 nul  # ag02 
+  )
+
+# ハンドガン         HG45VX
+shottype HG45VX
+  name 핸드건
+  1wa
+  model hg00
+
+  vshotsnd 28  0.8         #ビームライフル音
+  vhitsnd 24   0.7         #マシンガンヒット
+  vbgsnd 36    1.0         #BG破壊
+
+  equip oxx-xx-xxo   # 両手
+  shot T_HG45VX      # ショット(rg_shot.info 参照)
+  num  65            # ショット数(弾数)
+  busy 0.30          # ショット後の busy 時間(sec)
+  lock -15   75      # ロックできる範囲(度)
+  weight 75.0        # 重量
+  
+  # 使用キャラ
+  use vx01 ag02 vx06 vx02 ag05 .
+
+  # ハンドガンロボットモーション
+  mot mot_40 mot_41 nul
+
+  # ハンドガン攻撃モーション
+  selfmot-all (
+    def   nul nul nul         # ag02 以外
+	ag02  wmot_27 wmot_24 nul # ag02 
+  )
+
+# ライフル０         LG10AG
+shottype LG10AG
+  name 라이플
+  1wa
+  model rf00
+
+  vshotsnd 21   1.0        #銃（実弾）音
+  vhitsnd 22    1.0        #銃ビームヒット
+  vbgsnd 36     1.0        #BG破壊
+
+  equip oxx-xx-xxo   # 両手
+  use vx01 ag02 vx02 ag05 .
+  shot T_LG10AG      # ショット(rg_shot.info 参照)
+  num   6            # ショット数(弾数)
+  busy 1.5           # ショット後の busy 時間(sec)
+  lock -15    30     # ロックできる範囲(度)
+  weight 250.0       # 重量
+
+  # ライフル０初期位置モーション
+  basemot-all (
+    def   nul nul nul          # ag02 以外
+	ag02  wmot_21 wmot_25 nul  # ag02 
+  )
+
+  # ライフル０攻撃モーション
+  selfmot-all (
+    def   nul nul nul          # ag02 以外
+	ag02  wmot_22 wmot_26 nul  # ag02 
+  )
+
+
+# サブマシンガン     SMG99AG
+shottype SMG99AG
+  name 서브머신건
+  default
+  model mg00
+
+  vshotsnd 23   0.6        #マシンガン音
+  vhitsnd 24    0.6        #マシンガンヒット
+  vbgsnd 36     1.0        #BG破壊
+
+
+  equip oxx-xx-xxo   # 両手
+  use vx01 ag02 vx06 vx02 ag05 .
+  shot T_SMG99AG     # ショット(rg_shot.info 参照)
+  num 225            # ショット数(弾数)
+  busy 0.100         # ショット後の busy 時間(sec)
+  lock -20   75      # ロックできる範囲(度)
+  weight 115.0       # 重量
+
+# グレネード０       GRD20AG
+shottype GRD20AG
+  name 그레네이드　론처
+  1wa
+  model gnd00
+
+  vshotsnd 21   1.0        #実弾音
+  vhitsnd 36    1.0        #ミサイル2ヒット
+  vbgsnd 36     1.0        #BG破壊
+  vlifesnd 36   1.0        #時間切れ爆発音
+
+  equip xox-xx-xox   # 両肘
+  use vx01 ag02 vx02 .
+  shot T_GRD20AG     # ショット(rg_shot.info 参照)
+  num  6             # ショット数(弾数)
+  busy 1.7           # ショット後の busy 時間(sec)
+  lock -15   15      # ロックできる範囲(度)
+  weight 275.0       # 重量
+
+
+# 　２話-------------------------------------------------------
+
+# ミサイルポッド     HMP33AG
+shottype HMP33AG
+  name 핸드　미사일　포드
+  2wa
+  model msp00
+
+  vshotsnd 37   1.0        #ミサイル2音
+  vhitsnd 36    1.0        #ミサイル2ヒット
+  vbgsnd 36     1.0        #BG破壊
+  vlifesnd 36   1.0        #時間切れ爆発音
+
+
+  equip xox-xx-xox   # 両肘
+  use vx01 ag02 vx02  .
+  shot T_HMP33AG     # ショット(rg_shot.info 参照)
+  num 20             # ショット数(弾数)
+  busy 0.8           # ショット後の busy 時間(sec)
+  lock -30   30      # ロックできる範囲(度)
+  cont notlock .
+  mot pod_left pod_right nul        # ミサイルポッドのモーション(左、右、背中)
+  weight 265.0       # 重量
+
+  # ショット位置。１６個まで。半角１から８までを羅列
+  shot-pnt 2143
+
+  # ショット方向補正(ロックオン時は無効)
+  v-dir 12
+  h-dir -2.5
+
+
+##########################################
+# パイルバンカー	PB55AG	
+atktype PB55AG
+  name 파일　벙커
+  2wa
+  model pbk00
+damage 50.0
+
+  vshotsnd 14    0.7       #剣音
+  vhitsnd 15     1.0       #剣ヒット
+  vbgsnd 36      1.0       #BG破壊
+
+  equip xox-xx-xox   # 両腕
+  lock -40   40      # ロックできる範囲(度)
+  weight 85.0       # 重量
+
+  # 使用キャラ
+  use vx01 ag02 vx02 .
+
+  # パイルバンカーロボットモーション
+  mot mot_52 mot_56 nul # パイルバンカーヒットせずモーション
+
+  # パイルバンカー初期モーション
+  basemot-all (
+    vx01  wmot_40 wmot_33 nul
+	vx02  wmot_54 wmot_47 nul
+	ag02  wmot_16 wmot_3 nul
+  )
+
+  # パイルバンカー攻撃モーション
+  selfmot-all (
+    vx01  wmot_41 wmot_34 nul
+	vx02  wmot_55 wmot_48 nul
+	ag02  wmot_17 wmot_4 nul
+  )
+
+  hiteff eff18.ptcl # ＨＩＴエフェクト
+
+##########################################
+# シールド０         SHD02AG
+sldtype SHD02AG
+  name 실드
+  default
+  model fsd00
+  hardness 45          # 耐久力。単位は通常のダメージ
+  weight 55.0         # 重量
+  # equip xxo-xx-xxx   # 左肩
+  occupy left  xxm-xx-xxx
+  occupy back  xxm-xx-xxx
+
+  # 使用キャラ
+  use vx01 ag02 vx02 .
+
+  mot mot_46 nul mot_46 # シールドモーション
+  cont not-adv .
+
+
+
+# シールド０         SHD12VX
+sldtype SHD12VX
+  name 실드
+  default
+  model vsd00
+  hardness 65          # 耐久力。単位は通常のダメージ
+  weight 75.0       # 重量
+# equip xxo-xx-xxx   # 左肩
+occupy left  xxm-xx-xxx
+occupy back  xxm-xx-xxx
+mot mot_46 nul mot_46 # シールドモーション
+  use vx01 ag02 vx02 .
+  cont not-adv .
+
+
+
+# Ｂライフル１         LG100VX	両手持ちらしいぞ
+shottype LG100VX
+  name 롱　빔　라이플
+  2wa
+  model rf02
+
+
+  vshotsnd 28   1.0        #ビーム１音
+  vhitsnd 29    1.0        #ビーム１ヒット
+  vbgsnd 36     1.0        #BG破壊
+
+  cont notlock full-mot .       #ロックオンしない
+  occupy right  oox-xx-xom
+
+  shot T_LG100VX     # ショット（ビームです）
+  num  20            # ショット数(弾数)
+  busy 1.0           # ショット後の busy 時間(秒)
+  lock -50   50      # ロックできる範囲(度)
+  weight 220.0       # 重量
+
+  # 使用キャラ
+  use vx01 ag02 vx02 .
+
+  # Ｂライフルロボットモーション
+  mot nul mot_60 nul   # 両手もちライフル
+
+  # Ｂライフル１初期位置モーション
+  # キャラ名(def ならディフォルト) 左モーション 右モーション 背中モーション
+  basemot-all (
+    ag02 nul wmot_7   nul
+    vx01 nul wmot_36  nul
+    vx02 nul wmot_50  nul
+  )
+
+  # Ｂライフル１攻撃時モーション
+  selfmot-all (
+    vx01 wmot_37 nul nul
+    ag02 wmot_8 nul nul
+    vx02 wmot_51 nul nul
+  )
+
+  # 少しだけ下右向きに撃つ
+  v-dir -0.0
+  h-dir -0.5
+
+# ブレード０         SWD34AG	←AGでなくVXに替えねばならない
+atktype SWD34VX
+  name 소드
+  2wa
+  model bd01
+damage 29.0
+
+  vshotsnd 14   0.7        #剣音
+  vhitsnd 15    1.0        #剣ヒット
+  vbgsnd 36     1.0        #BG破壊
+
+  equip oxx-xx-xxo   # 両手
+  lock -40   40      # ロックできる範囲(度)
+  weight 95.0       # 重量
+  use vx01 ag02 vx06 vx02 ag05 .
+
+# ハンマー０         HMR55AG
+atktype HMR55AG
+  name 해머
+  2wa
+  model hmr00
+  damage 24.0
+
+  vshotsnd 14   0.7        #剣音
+  vhitsnd 15    1.0        #剣ヒット
+  vbgsnd 36     1.0        #BG破壊
+
+
+  equip oxx-xx-xxo   # 両手
+  lock -35   35      # ロックできる範囲(度)
+  weight 110.0       # 重量
+  use vx01 ag02 vx06 vx02 ag05 .
+
+  hiteff eff17.ptcl # ＨＩＴエフェクト
+
+####################################
+# チャフＢＯＸ       CB85VX
+shottype CB85VX
+  name 채프　박스
+  2wa
+  model cb00
+
+  vshotsnd 35   1.0        #ミサイル１音
+  vhitsnd 29    1.0        #ビーム１2ヒット
+  vbgsnd 36     1.0        #BG破壊
+  vlifesnd 39   1.0        #時間切れ爆発音(無音）
+
+
+  shot T_CG85VX      # ショット(rg_shot.info 参照)
+  num  12            # ショット数(弾数)
+  busy 0.5           # ショット後の busy 時間(sec)
+  weight 140.0       # 重量
+  lock -45   45      # ロックできる範囲(度)
+
+  occupy right xxx-xo-mxx
+  occupy back  xxx-xo-mxx
+
+  # 使用キャラ
+  use vx01 ag02 vx06 vx02 ag05 ag04 .
+
+  # チャフ初期モーション
+  basemot-all (
+    #ag02  nul wmot_59 nul
+    #ag04  nul wmot_62 nul
+    #ag05  nul wmot_65 nul
+    #vx01  nul wmot_68 nul
+    #vx02  nul wmot_71 nul
+    #vx06  nul wmot_76 nul
+    ag02  nul wmot_59 wmot_59
+    ag04  nul wmot_62 wmot_62
+    ag05  nul wmot_65 wmot_65
+    vx01  nul wmot_68 wmot_68
+    vx02  nul wmot_71 wmot_71
+    vx06  nul wmot_76 wmot_76
+  )
+
+####################################
+# 電子兵器           ECM1-VX
+shottype ECM1-VX
+  name ＥＣＭ　포드
+  2wa
+  model ecm01
+
+  vshotsnd 35   1.0        #ミサイル１音
+  vhitsnd 29    1.0        #ビーム１2ヒット
+  vbgsnd 36     1.0        #BG破壊
+  vlifesnd 39   1.0        #時間切れ爆発音(無音）
+
+
+  shot T_ECM1-VX     # ショット(rg_shot.info 参照)
+  num  16            # ショット数(弾数)
+  busy 1.2           # ショット後の busy 時間(sec)
+  lock -25   25      # ロックできる範囲(度)
+  equip xxx-xo-xxx   # 右肩
+  weight 132.0       # 重量
+
+  # 使用キャラ
+  use vx06 .
+
+  # 電子兵器初期位置モーション
+  basemot-all (
+    vx06 nul nul wmot_79
+  )
+
+  # 電子兵器攻撃時モーション
+  selfmot-all (
+    vx06 nul nul wmot_80
+  )
+
+####################################
+#電磁ロッド          ER-VX
+shottype ER-VX
+  name 일렉　슈터
+  2wa
+  model wire00
+
+  vshotsnd 28   0.7        #ビーム音
+  vhitsnd 24    0.6        #マシンガンヒット
+  vbgsnd 36     1.0        #BG破壊
+
+
+  equip oxx-xx-xxo   # 両手
+  lock -45   45      # ロックできる範囲(度)
+  weight 102.0       # 重量
+  mot mot_72 mot_73 nul # 電磁ロッド
+  use vx06 .
+  cont full-mot notlock .
+  shot T_ER-VX
+  num inf
+
+cont full-mot notlock adv wth-target .	#前進しながら攻撃
+
+  #hiteff eff18.ptcl # ＨＩＴエフェクト
+
+
+# 　３話-------------------------------------------------------
+
+# 拡散ビームポッド   BMP45VX
+shottype BMP45VX
+  name 와이드　빔　포드
+  3wa
+  model bp00
+
+  vshotsnd 28   1.0        #ビーム音
+  vhitsnd 29    1.0        #ビームヒット
+  vbgsnd 36     1.0        #BG破壊
+
+
+
+  occupy right  xxx-xo-mxx
+  occupy back  xxx-xo-mxx
+  lock -25   25      # ロックできる範囲(度)
+
+  # full-mot の有り無しについては、下の注）を参照
+  #cont notlock full-mot .
+  cont notlock .
+
+  shot T_BMP45VX     # ショット(rg_shot.info 参照)
+  num  50            # ショット数(弾数)
+  busy 1.0           # ショット後の busy 時間(sec)
+  weight 220.0       # 重量
+
+# ショット方向補正(ロックオン時は無効)
+  v-dir  -1.6
+  h-dir  -0.7
+
+
+  # 使用キャラ
+  use vx01 ag02 vx02 ag04 ag05 vx06 .
+
+  # ビームポッド初期モーション
+  basemot-all (
+    ag02  nul wmot_60 wmot_60
+    ag04  nul wmot_63 wmot_63
+    ag05  nul wmot_66 wmot_66
+    vx01  nul wmot_69 wmot_69
+    vx02  nul wmot_72 wmot_72
+    vx06  nul wmot_77 wmot_77
+  )
+
+  # ビームポッド攻撃モーション
+  selfmot-all (
+    ag02  nul wmot_61 wmot_61
+    ag04  nul wmot_64 wmot_64
+    ag05  nul wmot_67 wmot_67
+    vx01  nul wmot_70 wmot_70
+    vx02  nul wmot_73 wmot_73
+    vx06  nul wmot_78 wmot_78
+  )
+
+  # 注）
+  # ロボットモーションがない場合の、shottype (enetype) の挙動について
+  #
+  # full-mot なし
+  #   ロボットモーションは再生されない(手は動かない)。通常の移動攻撃と同じ。
+  #   武器モーションが指定されていれば武器モーションのみが再生される。
+  #   射出開始フレームはテキトウな値(0.2秒後から射出 0.4 秒後に終了)
+  #   
+  # full-mot あり
+  #   立ちモーションで硬直する。硬直時間は「立ちモーション１回分」
+  #
+  #
+  #
+  # 拡散ビームポッドはロボットモーションがない。これは
+  #
+  #  モーションがない、モーションの情報がない
+  #  →基本的に硬直ができない(硬直情報がない)
+  #  →移動と同時に合成再生するべきモーションもない
+  #
+  #  拡散ビームポッドは「腕でも背中」でも装備できる
+  #  →モーションがないので、普通のショット系武器のように移動モーションに
+  #    合成できない
+  #  →ロボットモーションがあったとしても背中装備時は片手通常武器のように
+  #    合成はできない（合成再生が、背中で対応しないため）
+  #
+  # という shottype(enetype) でも atktype でもシステマティックな解消が難しい
+  # ジレンマが発生する。
+  #  
+  # こういった場合、full-mot の指定のあるなしで挙動がわけて強引に解消する
+  # ようにした
+  #
+  # ちなみに、notlock が指定されていないと、ロックオン処理をしてしまうので、
+  # 話はかなりややこしくなる。ロックオン指定をした場合はディフォルトの
+  # ショットモーションでもいいから、ロボットモーションを指定するほうが良い。
+
+# ハンドガン１       HG75VX
+shottype HG75VX
+  name 핸드건
+  3wa
+  model hg01
+
+
+  vshotsnd 28    0.8       #ビームライフル音
+  vhitsnd 24     0.7       #マシンガンヒット
+  vbgsnd 36      1.0       #BG破壊
+
+
+  use vx01 ag02 vx06 vx02 ag05 .
+  equip oxx-xx-xxo   # 両手
+  shot T_HG75VX      # ショット(rg_shot.info 参照)
+  num  60            # ショット数(弾数)
+  busy 0.35          # ショット後の busy 時間(sec)
+  lock -30   70      # ロックできる範囲(度)
+  weight 85.0        # 重量
+
+
+# ガトリング砲       GLG76AG
+enetype GLG76AG
+  name 개틀링　건
+  3wa
+  modelall glg00 glg00r glg00r
+
+  vshotsnd 21   1.0        #銃（実弾）音
+  vhitsnd 24    1.0        #マシンガンヒット
+  vbgsnd 36     1.0        #BG破壊
+
+
+  equip xox-xx-xox   # 両肘
+  use vx01 ag02 vx02 .
+
+  shot T_GLG76AG     # ショット(rg_shot.info 参照)
+  lock -10    15     # ロックできる範囲(度)
+  energy 16          # 初期エネルギー
+  shot-energy 1.0    # １秒撃つとでどれだけエネルギーを使うか
+  limit-temp 100     # ヒートアップしてしまう限界温度
+  up-temp   100      # １秒撃つとどれだけ温度が上がるか
+  down-temp 100      # １秒撃たないとどれだけ温度が下がるか
+  weight 185.0       # 重量
+
+  # ガトリング初期位置
+  basemot-all ()
+    def   nul nul nul         # ag02 以外
+	ag02  wmot_13 wmot_6 nul # ag02
+  )
+
+# フレームランチャー FLM64AG
+enetype FLM64AG
+  name 플레임　론처
+  3wa
+  model fl00
+
+  vshotsnd 42   1.0        #フレームランチャー音（ループ）
+  vhitsnd 36    1.0        #ミサイル2ヒット
+  vbgsnd 36     1.0        #BG破壊
+
+  equip xox-xx-xox   # 両腕
+  use vx01 ag02 vx02 .
+
+  shot T_FLM64AG
+  lock -15    35     # ロックできる範囲(度)
+  energy 6.5         # 初期エネルギー
+  shot-energy 1.0    # １秒撃つとでどれだけエネルギーを使うか
+  limit-temp 200     # ヒートアップしてしまう限界温度			(変更)
+  up-temp 100        # １秒撃つとどれだけ温度が上がるか
+  down-temp 100      # １秒撃たないとどれだけ温度が下がるか
+  weight 155.0       # 重量
+
+
+# ドリルクロー       SWD02AG4
+atktype DLC02AG4
+  name 드릴　클로
+  3wa
+  model dlc00
+
+  vshotsnd 18    0.8       #ドリル音
+  vhitsnd 22     1.0       #実弾ヒット
+  vbgsnd 36      1.0       #BG破壊
+
+
+  damage 40.0
+  equip xox-xx-xox   # 両手
+  lock  -35   35     # ロックできる範囲(度)
+  use ag04 .         # ag04 しか使えない
+  weight 65.0       # 重量
+  hiteff eff06.ptcl # ＨＩＴエフェクト
+
+  # ドリルクローロボットモーション
+  mot drill_left drill_right nul  # ドリルモーション
+
+  # ドリルクロー初期モーション
+  # basemot-all (
+  # )
+
+  # ドリルクロー攻撃モーション
+  #selfmot mot_37 mot_38 nul       # ドリル本体モーション
+  selfmot-all (
+    ag04  wmot_30 wmot_29 nul
+  )
+
+
+########################################（これは作らない）
+# ジャイロ       ジャイロ　　　HMR02AG4
+
+
+
+# 盾ビーム       SHB67AG
+shottype SHB67AG
+  name 실드　빔　라이플
+  3wa
+  model shb00
+
+  vshotsnd 28   1.0        #ビーム音
+  vhitsnd 29    1.0        #ビームヒット
+  vbgsnd 36     1.0        #BG破壊
+
+
+
+occupy left oom-xx-xxx
+occupy back oom-xx-xxx
+
+  cont notlock full-mot .       #ロックオンしない
+
+  shot T_SHB67AG     # ショット(rg_shot.info 参照)
+  num  15            # ショット数(弾数)
+  busy 0.3           # ショット後の busy 時間(sec)
+  lock -30   30      # ロックできる範囲(度)
+  weight 155.0       # 重量
+  # ショット方向補正(ロックオン時は無効)
+  #v-dir  5
+  h-dir   0.2
+
+
+
+
+  # 盾ビームロボットモーション
+  mot     mot_66 nul mot_66       # 盾ロボビームモーション
+
+  basemot wmot_19 nul wmot_19	#1/12追加
+  selfmot wmot_20 nul wmot_20	#1/12追加
+
+  use ag02 .
+
+########################################
+# ビーム剣       
+atktype BSW13AG
+  name 빔　소드
+  3wa
+  model bs00
+
+damage 31.0
+
+  vshotsnd 14   0.7        #剣音
+  vhitsnd 15    1.0        #剣ヒット
+  vbgsnd 36     1.0        #BG破壊
+
+
+  equip xox-xx-xox
+  lock -65    65     # ロックできる範囲(度)
+  weight 95.0       # 重量
+
+   mot mot_68 mot_70 nul    # ビーム剣モーション（ロボ）
+  #mot mot_69 mot_71 nul       #　ビーム剣本体モーション
+
+  # 使用キャラ
+  use vx01 ag02 vx02 .
+
+  # ビーム剣初期モーション
+  basemot-all (
+     ag02  wmot_14 wmot_9 nul
+	 vx01  wmot_38 wmot_31 nul
+	 vx02  wmot_52 wmot_45 nul
+  )
+
+  # ビーム剣攻撃モーション
+  selfmot-all (
+    ag02  wmot_15 wmot_10 nul
+	vx01  wmot_39 wmot_32 nul
+	vx02  wmot_53 wmot_46 nul
+  )
+
+########################################
+# ビームランチャー      
+shottype BL24AG
+  model bl00
+  name 빔　론처
+  3wa
+
+  vshotsnd 28   1.0        #ビーム音
+  vhitsnd 29    1.0        #ビームヒット
+  vbgsnd 36     1.0        #BG破壊
+
+
+
+  #equip xox-xx-xox
+  #occupy LEFT xom-xx-xxx
+  occupy RIGHT xxx-xo-moo
+  occupy BACK xxx-xo-moo
+
+  lock -30   30      # ロックできる範囲(度)
+  shot T_BL24AG      # ショット(rg_shot.info 参照)
+  num  15            # ショット数(弾数)
+  busy 1.5           # ショット後の busy 時間(sec)
+  lock -30   30      # ロックできる範囲(度)
+  weight 215.0       # 重量
+
+  # ショット方向補正(ロックオン時は無効)
+  v-dir  -1.6
+  h-dir  -0.7
+
+  cont notlock full-mot .
+
+  # 使用キャラ
+  use vx01 ag02 vx02 .
+
+  # ビームランチャーロボットモーション
+  mot nul mot_64 mot_64   # ビームランチャモーション
+
+  # ビームランチャー初期モーション
+  basemot-all (
+    ag02  nul wmot_11 wmot_11
+    vx01  nul wmot_43 wmot_43
+    vx02  nul wmot_57 wmot_57
+  )
+
+  # ビームランチャー攻撃モーション
+  # selfmot mot_65 nul nul       #　ビームランチャー本体モーション
+  selfmot-all (
+    ag02  nul wmot_12 wmot_12
+    vx01  nul wmot_44 wmot_44
+    vx02  nul wmot_58 wmot_58
+  )
+
+########################################
+# 斧       
+ atktype AXE11AG
+  model ax00
+damage 27.0
+  name 도끼
+  3wa
+
+  vshotsnd 14   0.7        #剣音
+  vhitsnd 15    1.0        #剣ヒット
+  vbgsnd 38     1.0        #BG破壊
+
+  equip oxx-xx-xxo
+  lock -38    38     # ロックできる範囲(度)
+  use vx01 ag02 vx02 ag05 VX06 .
+  weight 120.0       # 重量(rg_robot_spec.info の weight も参照)
+
+
+
+########################################
+# ミサイルポッド      
+shottype SMP53AG
+  model smp01
+  name 미사일　포드
+  3wa
+
+  vshotsnd 37   1.0        #ミサイル2音
+  vhitsnd 36    1.0        #ミサイル2ヒット
+  vbgsnd 36     1.0        #BG破壊
+  vlifesnd 36   1.0        #時間切れ爆発音
+
+  occupy right xxx-xo-mxx
+  occupy back  xxx-xo-mxx
+  shot T_SMP53AG     # ショット(rg_shot.info 参照)
+  num 30             # ショット数(弾数)
+  busy 0.48          # ショット後の busy 時間(sec)
+  lock -25   35      # ロックできる範囲(度)
+  cont notlock .
+
+#  mot pod_left pod_right nul        # ミサイルポッドのモーション(左、右、背中)
+  #mot nul nul nul		        # ミサイルポッドのモーション(左、右、背中)
+  basemot-all (
+    vx06  nul wmot_86 wmot_86
+  )
+
+  use vx01 ag02 vx06 vx02 ag05 ag04 .
+
+  weight 275.0       # 重量
+
+
+
+
+########################################
+# マシンガン
+shottype SMG32VX
+  model mg01
+  name 서브머신건
+  3wa
+
+  vshotsnd 23  0.6         #マシンガン音
+  vhitsnd 24   0.6         #マシンガンヒット
+  vbgsnd 36    1.0         #BG破壊
+
+  equip oxx-xx-xxo   # 両手
+  use vx01 ag02 vx06 vx02 ag05 .
+  shot T_SMG32VX     # ショット(rg_shot.info 参照)
+  num 160            # ショット数(弾数)
+  busy 0.125         # ショット後の busy 時間(sec)
+  lock -20   75      # ロックできる範囲(度)
+  weight 125.0       # 重量
+
+########################################
+# 電子兵器２
+
+shottype ECM2-VX
+  model ecm02
+  name ＥＣＭ　포드
+  3wa
+
+  vshotsnd 35   1.0        #ミサイル１音
+  vhitsnd 29    1.0        #ビーム１2ヒット
+  vbgsnd 36     1.0        #BG破壊
+
+
+  shot T_ECM2-VX      # ショット(rg_shot.info 参照)
+  num  8             # ショット数(弾数)
+  busy 5.0           # ショット後の busy 時間(sec)
+  lock -80   80      # ロックできる範囲(度)
+
+  weight 148.0       # 重量
+  equip xxx-oo-xxx  # 背中
+  cont notlock .
+
+  # 使用キャラ
+  use vx06 .
+
+  # 電子兵器２初期モーション
+  basemot-all (
+    vx06  nul nul wmot_81
+  )
+
+  # 電子兵器２攻撃モーション
+  selfmot-all (
+    vx06  nul nul wmot_82
+  )
+
+########################################
+# ランサー
+atktype LM11VX
+  model lsr00
+  name 랜서　암
+  3wa
+  equip xox-xx-xox
+  damage 29.0
+
+  vshotsnd 14  0.7         #剣音
+  vhitsnd 15   1.0         #剣ヒット
+  vbgsnd 36    1.0         #BG破壊
+
+
+  lock -25    25    # ロックできる範囲(度)
+ weight 85.0       # 重量
+ hiteff eff18.ptcl # ＨＩＴエフェクト
+
+mot mot_62 mot_63 nul
+  use vx01 vx02 .
+
+
+# ビームアーム       BA15VX
+shottype BA15VX
+  name 빔　암
+  3wa
+  model bam00
+
+  vshotsnd 28   1.0        #ビーム音
+  vhitsnd 29    1.0        #ビームヒット
+  vbgsnd 36     1.0        #BG破壊
+
+
+  equip xox-xx-xox   # 両肘
+  shot T_BA15VX      # ショット（ビームです）
+  num  10            # ショット数(弾数)
+  busy 1.2           # ショット後の busy 時間(秒)
+  lock -15   75      # ロックできる範囲(度)
+  weight 225.0       # 重量
+
+  use vx01 vx02 .
+
+
+########################################
+# エアッド
+shottype AIRD-AG2
+  model ead00
+  name 에어드
+  3wa
+
+  vshotsnd 28   1.0        #ビーム音
+  vhitsnd 29    1.0        #ビームヒット
+  vbgsnd 36     1.0        #BG破壊
+
+
+  #occupy LEFT xxo-xm-xxx
+  occupy BACK xxo-xm-xxx
+  #equip xxo-xm-xxx   # 背中
+  shot T_AIRD-AG02   # ショット（ビームです）
+  num  80            # ショット数(弾数)
+  busy 0.0          # ショット後の busy 時間(秒)
+  lock -45   45      # ロックできる範囲(度)
+  weight 450.0       # 重量
+
+# ショット位置。１６個まで。半角１から８までを羅列
+  shot-pnt 1432
+
+
+  # notlock    : ロックオンしない
+  # full-mot   : 体全体モーション
+  # wth-target : モーションと同時にターゲッティング（アクションフレームまで）
+  cont notlock full-mot . #wth-target .
+
+  # 使用キャラ
+  use ag02 .
+
+  # ロボットのモーション
+  mot nul nul mot_78
+
+  # 通常状態の武器のモーション
+  basemot-all (
+    ag02  nul nul wmot_83
+  )
+
+  # 攻撃時の武器のモーション
+  selfmot-all (
+    ag02  nul nul wmot_84
+  )
+
+
+########################################(やめ)
+# ハンマー          HMR-AG5
+
+########################################（やめ）
+# エアッドクロー
+
+########################################
+# 大型ミサイルポッド
+shottype BMP-AG5
+  model amp02
+  name 대형　미사일　포드
+  3wa
+
+  vshotsnd 37   1.0        #ミサイル2音
+  vhitsnd 36    1.0        #ミサイル2ヒット
+  vbgsnd 36     1.0        #BG破壊
+  vlifesnd 36   1.0        #時間切れ爆発音
+
+
+  occupy BACK  xxx-om-oxx
+  occupy RIGHT xxx-om-oxx
+
+  mot nul nul nul
+
+  shot T_BMP-AG5     # ショット(rg_shot.info 参照)
+  num   5            # ショット数(弾数)
+  busy 3.2           # ショット後の busy 時間(sec)
+  lock -25   35      # ロックできる範囲(度)
+  cont notlock .
+  weight 455.0       # 重量
+
+# ショット位置。１６個まで。半角１から８までを羅列
+  shot-pnt 1234
+
+  # ショット方向補正(ロックオン時は無効)
+  v-dir  75
+  #h-dir 45
+
+  
+  use ag05 .
+
+########################################
+# マイクロミサイルポッド
+shottype HMP-AG5
+#  model msp02
+  modelall msp02 msp02r msp02r
+  name 핸드　미사일　포드
+  3wa
+
+  vshotsnd 37   1.0        #ミサイル2音
+  vhitsnd 36    1.0        #ミサイル2ヒット
+  vbgsnd 36     1.0        #BG破壊
+  vlifesnd 36   1.0        #時間切れ爆発音
+
+  equip oxx-xx-xxo  # 手
+
+ mot mot_42 mot_43 nul
+
+  shot T_HMP33AG     # ショット(rg_shot.info 参照)
+  num 45             # ショット数(弾数)
+  busy 1.1           # ショット後の busy 時間(sec)
+  lock -15   15      # ロックできる範囲(度)
+  cont notlock .
+  weight 205.0       # 重量
+
+# ショット位置。１６個まで。半角１から８までを羅列
+  shot-pnt 2143
+
+  # ショット方向補正(ロックオン時は無効)
+  v-dir  5
+  #h-dir 45
+
+  use ag05 .
+
+########################################
+# ハンドバルカン
+shottype HGG-AG5
+  modelall hb00 hb00r hb00r
+  name 개틀링　건
+  3wa
+
+  vshotsnd 21  1.0         #銃（実弾）音
+  vhitsnd 24   1.0         #マシンガンヒット
+  vbgsnd 36    1.0         #BG破壊
+
+
+  equip oxx-xx-xxo  # 腕
+
+  shot T_HGG-AG5     # ショット(rg_shot.info 参照)
+  num 145            # ショット数(弾数)
+  busy 0.160         # ショット後の busy 時間(sec)	(変更)
+  lock -15   30       # ロックできる範囲(度)
+  weight 180.0       # 重量
+
+  use ag05 .
+
+########################################なし
+# 大型ビームカノン
+#shottype BBC-AG5
+#  model bbc00
+#  name 대형　빔　캐넌
+  #occupy BACK xxx-xm-ooo
+  #use ag05 .
+
+########################################
+# 長射程カノン
+shottype LC-AG5
+  model lgc00
+  name 롱　캐넌
+  3wa
+
+  vshotsnd 21   1.0        #実弾音
+  vhitsnd 36    1.0        #ミサイル1ヒット
+  vbgsnd 36     1.0        #BG破壊
+
+
+
+  occupy RIGHT xxx-xm-ooo
+  occupy BACK xxx-xm-ooo
+ shot T_LCAG6        # ショット(rg_shot.info 参照)
+  num 5              # ショット数(弾数)
+  busy 3.0           # ショット後の busy 時間(sec)
+  lock -10   10      # ロックできる範囲(度)
+  cont notlock .
+  weight 420.0       # 重量
+
+# ショット方向補正(ロックオン時は無効)
+  v-dir  -1.5
+  h-dir  -1.0
+
+ cont notlock full-mot .
+
+  use ag05 .
+
+  # 長射程カノンロボットモーション
+  mot nul mot_74 mot_74
+
+  # 長射程カノン初期モーション
+  basemot-all (
+    ag05 nul wmot_1 wmot_1
+  )
+
+  # 長射程カノン攻撃モーション
+  # selfmot mot_75 nul nul  
+  selfmot-all (
+    ag05 nul wmot_2 wmot_2
+  )
+
+########################################
+# ソルビアンカ砲          止め！
+#shottype LW-VX2
+#  model solb
+#  name 스프레드　랜스
+  #occupy BACK xxx-xm-oxx
+#
+#  shot T_BA15VX      # ショット（ビームです）
+#  num  50            # ショット数(弾数)
+#  busy 1.0           # ショット後の busy 時間(秒)
+#  lock -15   75      # ロックできる範囲(度)
+#  weight 550.0       # 重量
+#
+#  # 使用キャラ
+#  use vx02 .
+#
+#  # ソルビアンカ砲モーション
+#  #mot mot_21 nul nul
+#  mot mot_77 nul nul   # あっているのかな？(by nis)
+#
+#  # ソルビアンカ砲初期モーション
+#  basemot-all (
+#    vx02  nul wmot_74 nul
+#  )
+#
+#  # ソルビアンカ砲攻撃モーション
+#  # selfmot mot_77 nul nul  
+#  selfmot-all (
+#    vx02  nul wmot_75 nul
+#  )
+
+
+########################################（なし）
+# ディフェンサー
+
+shottype DEF-VX
+  fake
+  equip xxx-xo-xxx
+  use vx06 .
+
+shottype BBC-AG5
+  fake
+  occupy BACK xxx-xm-xxx
+  use ag05 .
+
+#shottype AIRC-AG2
+#  fake
+#  equip xxo-xx-oxx 
+#  use ag02 .
+
+shottype HMR-AG5
+  fake
+  equip oxx-xx-xxo
+  use ag05 .
+
+shottype WCT02AG4
+  fake
+  equip oxx-xx-xxo
+  use ag04 .
+
+shottype LW-VX2
+  fake
+  use vx02 .
+  occupy BACK xxx-xm-oxx
+

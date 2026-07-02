@@ -55,6 +55,94 @@ def apply_replace_table(text, table):
     return ''.join(table.get(ch, ch) for ch in text)
 
 
+def raw_to_display(raw):
+    out = []
+    i = 0
+    while i < len(raw):
+        b = raw[i]
+        if b == 0x0a:
+            out.append('\\n')
+            i += 1
+            continue
+        if b == 0x0d:
+            out.append('\\r')
+            i += 1
+            continue
+        if b < 0x20 or b == 0x7f or b == 0x80:
+            out.append(f'\\x{b:02x}')
+            i += 1
+            continue
+        if b < 0x80:
+            out.append(chr(b))
+            i += 1
+            continue
+
+        decoded = None
+        if b == 0x8f:
+            sizes = (3,)
+        elif b == 0x8e or 0xa1 <= b <= 0xfe:
+            sizes = (2,)
+        else:
+            sizes = ()
+        for size in sizes:
+            chunk = raw[i:i + size]
+            if len(chunk) != size:
+                continue
+            try:
+                decoded = chunk.decode(ENCODING)
+                i += size
+                break
+            except UnicodeDecodeError:
+                pass
+        if decoded is None:
+            out.append(f'\\x{b:02x}')
+            i += 1
+        else:
+            out.append(decoded)
+    return ''.join(out)
+
+
+def encode_display(s, table):
+    out = bytearray()
+    literal = []
+    hexdigits = '0123456789abcdefABCDEF'
+
+    def flush_literal():
+        if not literal:
+            return
+        converted = apply_replace_table(''.join(literal), table)
+        out.extend(converted.encode(ENCODING))
+        literal.clear()
+
+    i = 0
+    while i < len(s):
+        ch = s[i]
+        if ch == '\\' and i + 1 < len(s):
+            esc = s[i + 1]
+            if esc == 'n':
+                flush_literal()
+                out.append(0x0a)
+                i += 2
+                continue
+            if esc == 'r':
+                flush_literal()
+                out.append(0x0d)
+                i += 2
+                continue
+            if esc in ('x', 'X') and i + 3 < len(s):
+                hx = s[i + 2:i + 4]
+                if all(c in hexdigits for c in hx):
+                    flush_literal()
+                    out.append(int(hx, 16))
+                    i += 4
+                    continue
+        literal.append(ch)
+        i += 1
+
+    flush_literal()
+    return bytes(out)
+
+
 def iter_strings(data, start, end):
     """
     start~end 구간의 null-terminated 문자열을 순서대로 yield.
@@ -104,11 +192,7 @@ def extract(ovl_path):
     for block_start, block_end in BLOCKS:
         lines.append(f'## BLOCK 0x{block_start:x}-0x{block_end:x}')
         for off, raw, trailing in iter_strings(data, block_start, block_end):
-            try:
-                decoded = raw.decode(ENCODING)
-            except Exception:
-                decoded = f'[DECODE_ERR:{raw.hex()}]'
-            display = decoded.replace('\n', '\\n')
+            display = raw_to_display(raw)
             lines.append(f'{off:06x}|{len(raw)}/{trailing}|{display}')
             count += 1
         lines.append('')
@@ -155,7 +239,7 @@ def rebuild(ovl_path, txt_path):
                 print(f'[WARN] line {lineno}: 오프셋 파싱 실패: {hex_off!r}')
                 skipped += 1
                 continue
-            edits[offset] = text.replace('\\n', '\n')
+            edits[offset] = text
 
     if skipped:
         print(f'[INFO] {skipped}개 라인 건너뜀 (주석/빈 줄 포함)')
@@ -176,11 +260,10 @@ def rebuild(ovl_path, txt_path):
         slack    = trailing
         max_len  = orig_len + slack
 
-        converted = apply_replace_table(new_text, table)
         try:
-            new_raw = converted.encode(ENCODING)
+            new_raw = encode_display(new_text, table)
         except Exception as e:
-            print(f'[ERR] 0x{offset:06x}: 인코딩 실패 ({e}): {converted!r}')
+            print(f'[ERR] 0x{offset:06x}: 인코딩 실패 ({e}): {new_text!r}')
             errors += 1
             continue
 

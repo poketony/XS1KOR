@@ -1,0 +1,298 @@
+# ----------------------------------------------------------------------
+%  デリミタ。消去禁止
+# ----------------------------------------------------------------------
+
+# engine-power          エンジン出力(移動：kg * m/sec^2)
+#                       500Kg のものを秒速50mに３秒でする出力は 500 * 50 / 3
+# roll-power M RV TIME  エンジン出力(回転：kg * 1回転/sec^2)
+#                       ５００Ｋｇのものを秒速２回転に３秒でできる出力は M=500 RV=2 TIME=3
+# move-spd-max          移動最高速(m/sec)。実はrot-spd-bottom-rate でしか使っていない
+# rot-spd-max           回転最高速(１回転に必要な秒数 sec)
+# rot-spd-bottom-rate   (移動速度÷移動最高速)に対する回転最高速の割合(０から１まで）
+# weight                質量(kg)
+
+# dash-time             ダッシュ時間
+# dash-power            ダッシュ時のエンジンパワー倍率
+# dash-cooldown         ダッシュのクールダウン時間
+
+# move-resist			運動（移動）抵抗
+# rot-resist			運動（回転）抵抗
+
+# life                  初期ライフ値
+# damage-stiff-time     ダメージに対する硬直時間(sec/1damage)
+
+
+# ＶＸ−１００００（赤いの）
+character	vx01
+
+	body-attack-damage  16.0
+
+	move-spd-max        22.0
+	dash-spd-max        40.0
+	engine-power        1100000.0
+
+	roll-power          2000.0 1.0 0.2
+	rot-spd-max          2.0
+	rot-spd-bottom-rate 0.2
+	weight              1000.0
+
+    #dash-mode normal
+	dash-time         0.3
+	dash-power        2.0
+	dash-cooldown     10.0
+
+    dash-mode neo2		# normal:最初のダッシュ vr:ＶＲダッシュ neo:ニュータイプダッシュ
+	dash-time         4.0
+        dash-power        2.2
+	dash-cooldown     20.0
+  
+	move-resist			9.0
+	rot-resist			9.0
+
+	life				115.0
+	damage-stiff-time	0.02
+
+	# auto-homing           自動ターゲッティング（ホーミング）設定。２つまで
+	#
+	#                         書式 auto-homing  ホーミング速度 条件 条件 … .
+	#                  
+	#                       最後に . （半角ピリオド）が必要です。条件に使用できるもの。
+	#                         see-target : 敵機が隠れていない（背景の向こう側にいない）
+	#                         lock-on    : ロックオン中
+	#                         shot       : ショット中（攻撃中ではない）
+	#                         in-scrn    : 画面内にいる
+	#
+	#                       自動ターゲッティングは２つ以上設定できません
+
+	auto-homing         0.03 lock-on see-target .         # ロックオン且つ遮蔽物が無い時
+	auto-homing         0.44 lock-on shot .               # ロックオン且つショットしたとき
+
+	# エフェクト
+	jet-eff eff04.ptcl      # ジェット
+	dash-eff eff01.ptcl     # ダッシュ
+
+# ----------------------------------------------------------------------
+%  デリミタ。消去禁止
+# ----------------------------------------------------------------------
+
+# 重装備連邦（ずんぐりむっくりムラサキ）
+character	ag05
+
+	body-attack-damage  15.0
+
+	move-spd-max        19.0
+	dash-spd-max        37.0
+	engine-power        1100000.0
+
+	#engine-power        180000.0
+	roll-power           6000.0 1.0 0.2
+	#move-spd-max        20.0
+	rot-spd-max          1.9
+	rot-spd-bottom-rate 0.1
+	weight              1500.0
+
+	dash-time         0.25
+	dash-power        3.5
+	dash-cooldown     2.5
+
+	move-resist			12.0
+	rot-resist			6.3
+
+	life				180.0
+	damage-stiff-time	0.02
+
+	auto-homing         0.03 lock-on see-target .         # ロックオン且つ遮蔽物が無い時
+	auto-homing         0.2  lock-on shot .               # ロックオン且つショットしたとき
+
+    dash-mode neo2		# normal:最初のダッシュ vr:ＶＲダッシュ neo:ニュータイプダッシュ
+	dash-time 2.5
+    #dash-mode normal
+	#dash-time         0.3
+	dash-power        4.0
+	dash-cooldown     5.0
+
+
+
+	# エフェクト
+	jet-eff eff04.ptcl      # ジェット
+	dash-eff eff01.ptcl     # ダッシュ
+# ----------------------------------------------------------------------
+%  デリミタ。消去禁止
+# ----------------------------------------------------------------------
+
+# 近接連邦（タイヤ）
+character	ag04
+
+	body-attack-damage  20.0
+
+	move-spd-max        28.0
+	dash-spd-max        48.0
+	engine-power        1100000.0
+
+	#engine-power        177000.0
+	roll-power          2500.0 1.0 0.2
+	#move-spd-max        30.0
+	rot-spd-max          2.3
+	rot-spd-bottom-rate 0.1
+	weight              1000.0
+
+	dash-time           0.1
+	dash-power          3.0
+	dash-cooldown       15.0
+
+	move-resist			5.0
+	rot-resist			9.0
+
+	life				95.0
+	damage-stiff-time	0.02
+
+	auto-homing         0.03 lock-on see-target .         # ロックオン且つ遮蔽物が無い時
+	auto-homing         0.5  lock-on shot .               # ロックオン且つショットしたとき
+
+    dash-mode neo2		# normal:最初のダッシュ vr:ＶＲダッシュ neo:ニュータイプダッシュ
+	dash-time 8.0
+    #dash-mode normal
+	#dash-time         0.2
+        dash-power        2.5
+	dash-cooldown     25.0
+
+	# エフェクト
+	jet-eff eff04.ptcl      # ジェット
+	dash-eff eff01.ptcl     # ダッシュ
+# ----------------------------------------------------------------------
+%  デリミタ。消去禁止
+# ----------------------------------------------------------------------
+
+# ＶＸ−７０００Ｊｒ
+character	vx02
+
+	body-attack-damage  15.0
+
+	move-spd-max        24.0
+	dash-spd-max        45.0
+	engine-power        1100000.0
+
+	#engine-power        175000.0
+	roll-power          2000.0 1.0 0.2
+	#move-spd-max        30.0
+	rot-spd-max          2.4
+	rot-spd-bottom-rate 0.1
+	weight              1000.0
+
+	dash-time         0.1
+	dash-power        3.0
+	dash-cooldown     12.0
+
+	move-resist			2.0
+	rot-resist			9.0
+
+	life				100.0
+	damage-stiff-time	0.02
+
+	auto-homing         0.03 lock-on see-target .         # ロックオン且つ遮蔽物が無い時
+	auto-homing         0.34 lock-on shot .               # ロックオン且つショットしたとき
+    dash-mode neo2		# normal:最初のダッシュ vr:ＶＲダッシュ neo:ニュータイプダッシュ
+	dash-time 6.0
+    #dash-mode normal
+	#dash-time         0.3
+	dash-power        3.2
+	dash-cooldown     15.0
+
+	# エフェクト
+	jet-eff eff04.ptcl      # ジェット
+	dash-eff eff01.ptcl     # ダッシュ
+# ----------------------------------------------------------------------
+%  デリミタ。消去禁止
+# ----------------------------------------------------------------------
+
+# ＶＸ−４０００
+character	vx06
+
+	body-attack-damage  23.0
+
+	move-spd-max        25.0
+	dash-spd-max        43.0
+	engine-power        1100000.0
+
+	#engine-power        170000.0
+	roll-power          2000.0 1.0 0.2
+	#move-spd-max        20.0
+	rot-spd-max          2.9
+	rot-spd-bottom-rate 0.1
+	weight              1000.0
+
+	dash-time         0.25
+	dash-power        2.2
+	dash-cooldown     20.0
+
+	move-resist			4.0
+	rot-resist			9.0
+
+	life				85.0
+	damage-stiff-time	0.02
+
+	auto-homing         0.03 lock-on see-target .         # ロックオン且つ遮蔽物が無い時
+	auto-homing         0.5  lock-on shot .               # ロックオン且つショットしたとき
+
+
+    dash-mode neo2		# normal:最初のダッシュ vr:ＶＲダッシュ neo:ニュータイプダッシュ
+	dash-time 4.5
+    #dash-mode normal
+	#dash-time         0.3
+	dash-power        2.5
+	dash-cooldown     30.0
+
+
+	# エフェクト
+	jet-eff eff04.ptcl      # ジェット
+	dash-eff eff01.ptcl     # ダッシュ
+# ----------------------------------------------------------------------
+%  デリミタ。消去禁止
+# ----------------------------------------------------------------------
+
+# 連邦（ヒーロー）
+character	ag02
+
+	body-attack-damage  18.0
+
+	move-spd-max        23.0
+	dash-spd-max        42.0
+	engine-power        1100000.0
+
+	#engine-power        180000.0
+	roll-power          2000.0 1.0 0.2
+	#move-spd-max        30.0
+	rot-spd-max          2.2
+	rot-spd-bottom-rate 0.1
+	weight              1000.0
+
+	dash-time         0.3
+	dash-power        2.5
+	dash-cooldown     13.0
+
+	move-resist			11.0
+	rot-resist			5.0
+
+	life				110.0
+	damage-stiff-time	0.02
+
+	auto-homing         0.03 lock-on see-target .         # ロックオン且つ遮蔽物が無い時
+	auto-homing         0.35  lock-on shot .               # ロックオン且つショットしたとき
+
+
+    dash-mode neo2		# normal:最初のダッシュ vr:ＶＲダッシュ neo:ニュータイプダッシュ
+	dash-time 5.0
+    #dash-mode normal
+	#dash-time         0.3
+	dash-power        3.0
+	dash-cooldown     18.0
+
+
+
+	# エフェクト
+	jet-eff eff04.ptcl      # ジェット
+	dash-eff eff01.ptcl     # ダッシュ
+# ----------------------------------------------------------------------
+%  デリミタ。消去禁止
+# ----------------------------------------------------------------------
+

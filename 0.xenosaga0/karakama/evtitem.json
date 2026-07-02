@@ -25,7 +25,7 @@
     "name_original": "Ｕ−ＴＩＣカード",
     "name_translation": "Ｕ−ＴＩＣ 카드",
     "desc_original": "第５通路の電子ロックを\n解除することができる",
-    "desc_translation": "제５ 통로의 전자 록을\n해제할 수 있다"
+    "desc_translation": "제５ 통로의 전자 잠금을\n해제할 수 있다"
   },
   {
     "idx": 4,
@@ -60,7 +60,7 @@
     "name_original": "危険宙域データ",
     "name_translation": "위험 영역 데이터",
     "desc_original": "危険宙域のポイントを示したデータ",
-    "desc_translation": "위험 우주 영역 포인트를 나타낸 데이터"
+    "desc_translation": "위험 우주 영역 포인트를 표시한 데이터"
   },
   {
     "idx": 9,
@@ -88,7 +88,7 @@
     "name_original": "カードパスポート",
     "name_translation": "카드 패스포트",
     "desc_original": "カードゲームを遊べる（構築済みデッキ付き）\nＥＶＳポイント上にて使用すると実行できる",
-    "desc_translation": "카드 게임을 즐길 수 있다（구축 완료된 덱 포함）\nＥＶＳ 포인트에서 사용하면 실행할 수 있다"
+    "desc_translation": "카드 게임을 할 수 있다（구축 완료된 덱 포함）\nＥＶＳ 포인트에서 사용하면 실행할 수 있다"
   },
   {
     "idx": 13,

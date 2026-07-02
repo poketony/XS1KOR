@@ -1,0 +1,629 @@
+# ===========================================================
+# ＢＧのデータの定義
+#
+
+#near   フォグが始まる距離
+#far    フォグが最強になる距離
+#near rate  フォグが始まる距離までのフォグの強さ（０〜１）
+#far rate   フォグが最強になる距離より向こうのフォグの強さ（０〜１）
+#red, green, blue  色
+
+
+
+# ＶＳ１面
+DATA BG_DATA_VS1
+  file vs1.rbg
+  tray 150.0 150.0  BL05
+
+   posbox -60 -60 2.5 2.5 *001
+   posbox -50 -50 2.5 2.5 *002
+   posbox -40 -40 2.5 2.5 *003
+   posbox -30 -30 2.5 2.5 *004
+   posbox -20 -20 2.5 2.5 *005
+   posbox -60  60 2.5 2.5 *006
+   posbox -50  50 2.5 2.5 *007
+   posbox -40  40 2.5 2.5 *008
+   posbox -30  30 2.5 2.5 *009
+   posbox -20  20 2.5 2.5 *010
+   posbox  60  60 2.5 2.5 *011
+   posbox  50  50 2.5 2.5 *012
+   posbox  40  40 2.5 2.5 *013
+   posbox  30  30 2.5 2.5 *014
+   posbox  20  20 2.5 2.5 *015
+   posbox  60 -60 2.5 2.5 *016
+   posbox  50 -50 2.5 2.5 *017
+   posbox  40 -40 2.5 2.5 *018
+   posbox  30 -30 2.5 2.5 *019
+   posbox  20 -20 2.5 2.5 *020
+
+
+   posbox -10 -10 2.5 2.5 *021
+   posbox -10  10 2.5 2.5 *022
+   posbox  10 -10 2.5 2.5 *023
+   posbox  10  10 2.5 2.5 *024
+
+
+   posbox -75 -75 2.5 2.5 *1001
+   posbox -75  75 2.5 2.5 *1002
+   posbox  75 -75 2.5 2.5 *1003
+   posbox  75  75 2.5 2.5 *1004
+
+
+# ----------------------------------------------------
+%	# デリミタ消去禁止
+# ----------------------------------------------------
+
+# リング面
+DATA BG_DATA_COL
+  file col.rbg
+  tray 150.0 150.0  *1
+
+   box  2.5 2.5  BL04_box
+   box  2.5 2.5  BL04_tek
+
+
+   posbox -75 -75 2.5 2.5 *0001
+   posbox -75  75 2.5 2.5 *0002
+   posbox  75 -75 2.5 2.5 *0003
+   posbox  75  75 2.5 2.5 *0004
+
+# ----------------------------------------------------
+%	# デリミタ消去禁止
+# ----------------------------------------------------
+
+
+
+# 空母（データ名 BG_DATA_AIRCAR）
+# 最初の面の箱データも入ってます
+DATA BG_DATA_AIRCAR
+  file ship.rbg
+
+   # 甲板全体のコリジョン
+   tray 100.0 200.0    *1
+
+   # 箱
+   box  5.0 5.0      BL03_box
+
+   # 甲板上のオブジェクト
+   posbox   0    82.28    3.0 10.0  BL03_rad
+   posbox -25   -32.5     6.0 16.0  BL03_in2
+   posbox  25   -32.5     6.0 16.0  BL03_in1
+   posbox -37.5 -68      10.0 60.0  BL03_bri
+   posbox  37.5 -54.75   10.0 35.0  BL03_lau
+
+   # 甲板上のでこぼこしたところ
+   posbox   0.0 -800.0   1000.0 1410.0 *6
+
+   posbox -50.0  -1084.0   4.0   2014.0 *7
+   posbox  50.0  -1084.0   4.0   2014.0 *8
+   posbox -140.0  -1092.0   220.0  2010.0 *9
+   posbox  140.0  -1092.0   220.0  2010.0 *10
+
+   posbox  -37.5  -99.0   10.0  120.0 *11	#追加抜け防止コリジョン（1/7）
+
+
+
+# ----------------------------------------------------
+%	# デリミタ消去禁止
+# ----------------------------------------------------
+
+# 市街地(データ名 BG_DATA_TOWN)
+# 今は１枚のべたっとした背景みたいです
+DATA BG_DATA_TOWN
+  file town.rbg		# データファイル名
+
+  tray 198.0 198.0  BL02
+#  box  50.0 47.5      BL02_bil1
+#  box  60.0 27.5      BL02_bil2
+#  box  20.0 60.0      BL02_bil3
+#  box  30.0 50.0      BL02_bil4
+   posbox   50.0 -53.75  50.0 47.5 BL02_bil1      # posbox x y w h -> box に位置あり
+   posbox   40.0  63.75  60.0 27.5 BL02_bil2
+   posbox  -70.0 -60.0   20.0 60.0 BL02_bil3
+   posbox  -35.0  52.5   30.0 50.0 BL02_bil4
+  box  5.0 15.0      BL02_bus1
+  box  5.0 15.0      BL02_bus2
+  box  1.0 1.0      BL02_light
+#  box  0.5 0.5      BL02_sky
+  box  4.5 4.5      BL02_tree
+  box  5.0 5.0      BL02_tv
+
+
+
+# ----------------------------------------------------
+%	# デリミタ消去禁止
+# ----------------------------------------------------
+
+# ブロックいっぱい(データ名 BG_DATA_BLOCK)
+DATA BG_DATA_BLOCK
+  file souko.rbg	# データファイル名
+
+
+  tray 199.0 199.0   BL01
+  box  5.0  5.0      BL01_box1
+  box  7.5  7.5      BL01_box2
+  box 10.0 10.0      BL01_box3
+  box  2.5  2.5      BL01_box4
+  box  2.5  2.5      BL01_box5
+  box  5.0  5.0      BL01_boxr1
+  box 10.0  5.0      BL01_boxr2
+  box  5.0  2.5      BL01_fork1
+
+
+  posbox -101.0    0.0       1.0 210.0     BL01_kabe1
+  posbox    0.0 -101.0     210.0   1.0     BL01_kabe2
+  posbox  101.0    0.0       1.0 210.0     BL01_kabe3
+  posbox    0.0  101.0     210.0   1.0     BL01_kabe4
+
+
+
+
+  box 0.0 0.0      BL01_kure1
+  box 0.0 0.0      BL01_kure2
+  box 0.0 0.0      BL01_kure3
+  box 0.0 0.0      BL01_kure4
+
+# ----------------------------------------------------
+%	# デリミタ消去禁止
+# ----------------------------------------------------
+
+#
+# ＢＧの定義その１（市街地）
+#
+BG BG_TOWN BG_DATA_TOWN		# BG ＢＧ名 ＢＧデータ名
+#  put all_obj	
+#  pos     55.0 -53.75 *B1
+#  pos    -70.0 -60.0  *B2
+#  pos    -35.0  55.0  *B3
+#  pos     40.0  64.0  *B4
+   -nohide put BL02                 # -nohide -> カメラで表示切替やらない
+   -nohide -nofog put BL02_sky
+
+#   pos   50.0 -53.75  BL02_bil1
+#   pos   40.0  63.75  BL02_bil2
+#   pos  -70.0 -60.0   BL02_bil3
+#   pos  -35.0  52.5   BL02_bil4
+   -hitbody pos*1 -95.0 -92.5     BL02_tree
+   -hitbody pos*1 -95.0 -35.0     BL02_tree
+   -hitbody pos*1 -95.0 -25.0     BL02_tree
+
+   -hitbody pos*1 -85.0 -92.5     BL02_tree
+   -hitbody pos*1 -85.0 -35.0     BL02_tree
+   -hitbody pos*1 -85.0 -25.0     BL02_tree
+
+   -hitbody pos*1 -72.5 -25.0     BL02_tree
+
+   -hitbody pos*1 -55.0 -97.5     BL02_tree
+   -hitbody pos*1 -55.0 -87.5     BL02_tree
+   -hitbody pos*1 -55.0 -72.5     BL02_tree
+   -hitbody pos*1 -55.0 -62.5     BL02_tree
+   -hitbody pos*1 -55.0 -52.5     BL02_tree
+   -hitbody pos*1 -55.0 -42.5     BL02_tree
+   -hitbody pos*1 -55.0 -32.5     BL02_tree
+
+   -hitbody pos*1 -25.0 -70.0     BL02_tree
+   -hitbody pos*1 -25.0 -60.0     BL02_tree
+   -hitbody pos*1 -25.0 -50.0     BL02_tree
+   -hitbody pos*1 -25.0 -40.0     BL02_tree
+   -hitbody pos*1 -25.0 -30.0     BL02_tree
+
+   -hitbody pos*1 -17.5 -70.0     BL02_tree
+   -hitbody pos*1 -17.5 -60.0     BL02_tree
+   -hitbody pos*1 -17.5 -50.0     BL02_tree
+   -hitbody pos*1 -17.5 -40.0     BL02_tree
+   -hitbody pos*1 -17.5 -30.0     BL02_tree
+
+   -hitbody pos*1  12.5 -62.5     BL02_tree
+   -hitbody pos*1  12.5 -52.5     BL02_tree
+   -hitbody pos*1  12.5 -42.5     BL02_tree
+   -hitbody pos*1  12.5 -32.5     BL02_tree
+
+   -hitbody pos*1  27.5 -25.0     BL02_tree
+   -hitbody pos*1  40.0 -25.0     BL02_tree
+   -hitbody pos*1  60.0 -25.0     BL02_tree
+   -hitbody pos*1  72.5 -25.0     BL02_tree
+
+
+   -hitbody pos*1 -72.5  25.0     BL02_tree
+   -hitbody pos*1 -72.5  35.0     BL02_tree
+   -hitbody pos*1 -72.5  45.0     BL02_tree
+   -hitbody pos*1 -72.5  55.0     BL02_tree
+   -hitbody pos*1 -72.5  65.0     BL02_tree
+
+   -hitbody pos*1 -62.5  75.0     BL02_tree
+
+   -hitbody pos*1 -60.0  10.0     BL02_tree
+   -hitbody pos*1 -52.5  10.0     BL02_tree
+   -hitbody pos*1 -45.0  10.0     BL02_tree
+
+   -hitbody pos*1 -17.5  20.0     BL02_tree
+   -hitbody pos*1 -17.5  35.0     BL02_tree
+   -hitbody pos*1 -17.5  70.0     BL02_tree
+
+   -hitbody pos*1  12.5  22.5     BL02_tree
+   -hitbody pos*1  12.5  32.5     BL02_tree
+   -hitbody pos*1  12.5  42.5     BL02_tree
+
+   -hitbody pos*1  22.5  10.0     BL02_tree
+   -hitbody pos*1  32.5  10.0     BL02_tree
+   -hitbody pos*1  42.5  10.0     BL02_tree
+   -hitbody pos*1  52.5  10.0     BL02_tree
+   -hitbody pos*1  62.5  10.0     BL02_tree
+
+   -hitbody pos*1  72.5  22.5     BL02_tree
+   -hitbody pos*1  72.5  32.5     BL02_tree
+   -hitbody pos*1  72.5  42.5     BL02_tree
+   -hitbody pos*1  72.5  52.5     BL02_tree
+   -hitbody pos*1  72.5  75.0     BL02_tree
+
+
+   -hitbody pos*1  -25.0 -75.0     BL02_light
+   -hitbody pos*1  -17.5 -75.0     BL02_light
+   -hitbody pos*1  -25.0 -25.0     BL02_light
+   -hitbody pos*1  -17.5 -25.0     BL02_light
+
+   -hitbody pos*1   20.0 -67.5     BL02_light
+   -hitbody pos*1   20.0 -57.5     BL02_light
+   -hitbody pos*1   20.0 -47.5     BL02_light
+   -hitbody pos*1   20.0 -37.5     BL02_light
+
+   -hitbody pos*1  -72.5  15.0     BL02_light
+   -hitbody pos*1  -55.0  75.0     BL02_light
+   -hitbody pos*1  -50.0  20.0     BL02_light
+
+   -hitbody pos*1  -22.5  10.0     BL02_light
+   -hitbody pos*1  -17.5  30.0     BL02_light
+   -hitbody pos*1  -17.5  40.0     BL02_light
+   -hitbody pos*1  -17.5  65.0     BL02_light
+   -hitbody pos*1  -17.5  75.0     BL02_light
+
+   -hitbody pos*1   27.5  42.5     BL02_light
+   -hitbody pos*1   40.0  42.5     BL02_light
+   -hitbody pos*1   52.5  42.5     BL02_light
+
+   pos*4  -55.0 -25.0     BL02_tv
+   pos*4   12.5 -75.0     BL02_tv
+   pos*4   12.5 -25.0     BL02_tv
+   pos*4  -72.5  10.0     BL02_tv
+   pos*4  -72.5  75.0     BL02_tv
+   pos*4  -17.5  10.0     BL02_tv
+   pos*4   12.5  10.0     BL02_tv
+   pos*4   72.5  10.0     BL02_tv
+
+   put  BL02_bil1   # ビルは素のまま表示 -> posbox でコリジョンだけあわせている(62-65 行)
+   put  BL02_bil2
+   put  BL02_bil3
+   put  BL02_bil4
+
+  # 半透明のものはあとに置いたほうがいいらしい
+  pos*5    7.447 -55     BL02_bus1
+  pos*5  -12.447 -55     BL02_bus2
+
+
+   fog 77.0 183.0 0.0 0.80
+   fogcol 197 205 255
+
+  light0 -0.5  1.0  0.5   0.85  0.85  0.80 
+  light1 -0.2  3.0  0.5   0.25  0.25  0.25 
+  light2  0.5 -1.0 -0.5   0.05  0.05  0.08 
+
+  amb 0.18 0.18 0.28
+
+
+
+# ----------------------------------------------------
+%	# デリミタ消去禁止
+# ----------------------------------------------------
+
+#
+# ＢＧの定義その２（ブロックいっぱい）
+#
+BG BG_BLOCK BG_DATA_BLOCK		# BG ＢＧ名 ＢＧデータ名
+
+
+  light0 -0.5  1.0  0.5   0.40  0.40  0.40 
+  light1  0.5 -1.0 -0.5   0.15  0.15  0.20 
+#  light2 -0.2  3.0  0.5   0.25  0.25  0.25 
+
+  amb 0.08 0.10 0.09
+
+
+
+   #fog 68.0 300.0 0.0 0.80
+   #fogcol 0 0 24
+   fog 15.0 183.0 0.0 1.00
+   fogcol 96 96 96
+   
+-nohide  put BL01
+  put BL01_kabe1
+  put BL01_kabe2
+  put BL01_kabe3
+  put BL01_kabe4
+
+ put  BL01_kure1
+ put  BL01_kure2
+ put  BL01_kure3
+ put  BL01_kure4
+
+-nohide  pos*5 0.0 40.0     BL01_fork1
+
+
+-nohide  pos*1   11.735 -55.0 BL01_box4
+-nohide  pos*1  -10.766  55.0 BL01_box4
+-nohide  pos*1   76.498   0.0 BL01_box5
+
+  pos*1 -40.0  -82.0  BL01_box1
+  pos*1   0.0  -88.0  BL01_box1
+  pos*1  15.0  -90.0  BL01_box1
+  pos*15  30.0  -87.0  BL01_box3
+  pos*1  60.0  -88.0  BL01_box1
+  pos*1  80.0  -90.0  BL01_box1
+
+  pos*1 -90.0  -65.0  BL01_box1
+  pos*1 -65.0  -62.0  BL01_box1
+  pos*15 -40.0  -62.0  BL01_box3
+  pos*1   0.0  -65.0  BL01_box1
+  pos*1  30.0  -65.0  BL01_box1
+  pos*5  60.0  -65.0  BL01_box3
+  pos*1  80.0  -60.0  BL01_box1
+
+  pos*1 -65.0  -45.0  BL01_box1
+  pos*15 -40.0  -40.0  BL01_box3
+  pos*1  30.0  -45.0  BL01_box1
+  pos*1  80.0  -30.0  BL01_box1
+
+  pos*1 -88.0  -10.0  BL01_box1
+  pos*15 -62.0  -15.0  BL01_box3
+  pos*1 -44.0  -10.0  BL01_box1
+  pos*1   5.0   -5.0  BL01_box1
+  pos*5  10.0  -15.0  BL01_box2
+  pos*1  35.0  -25.0  BL01_box1
+  pos*1  87.0  -10.0  BL01_box1
+
+  pos*1 -85.0   10.0  BL01_box1
+  pos*15 -44.0   10.0  BL01_box3
+  pos*5 -10.0   10.0  BL01_box2
+  pos*1   5.0    5.0  BL01_box1
+  pos*1  35.0   15.0  BL01_box1
+  pos*15  65.0   15.0  BL01_box3
+
+  pos*1 -90.0   40.0  BL01_box1
+  pos*1 -65.0   45.0  BL01_box1
+  pos*15 -40.0   40.0  BL01_box3
+  pos*15  60.0   35.0  BL01_box3
+  pos*1  80.0   30.0  BL01_box2
+
+  pos*15 -63.0   63.0  BL01_box3
+  pos*1   3.0   60.0  BL01_box1
+  pos*5  31.0   55.0  BL01_box2
+  pos*1  63.0   55.0  BL01_box1
+  pos*15  82.0   60.0  BL01_box3
+
+  pos*1 -90.0   71.0  BL01_box1
+  pos*15 -65.0   73.0  BL01_box3
+  pos*1 -40.0   70.0  BL01_box1
+  pos*5 -15.0   70.0  BL01_box2
+  pos*1  15.0   65.0  BL01_box1
+  pos*1  30.0   75.0  BL01_box1
+  pos*15  60.0   72.0  BL01_box3
+
+  pos*15 -65.0   86.0  BL01_box3
+  pos*1 -40.0   82.0  BL01_box1
+  pos*5 -15.0   85.0  BL01_box2
+  pos*1  15.0   90.0  BL01_box1
+  pos*15  30.0   87.0  BL01_box3
+  pos*1  80.0   90.0  BL01_box1
+
+
+# ----------------------------------------------------
+%	# デリミタ消去禁止
+# ----------------------------------------------------
+
+#
+# ＢＧの定義その３（空母）
+#
+BG BG_AIRCAR BG_DATA_AIRCAR		# BG ＢＧ名 BG_DATA_AIRCAR 
+  put BL03
+  put BL03_51
+
+  -nofog put BL03_star
+  -nofog put BL03_ship
+
+  put BL03_ale      # alert -> ぴこぴこ光っているスクリーン
+  put BL03_bri      # bridge -> 一番大きいブリッジ
+  put BL03_in1      # 小さめの出っ張り
+  put BL03_in2      # 小さめの出っ張り
+  put BL03_lau      # launge -> ２番目に大きいやつ
+  put BL03_rad      # radar -> 真中の端にあるレーダー
+
+  -nofog put BL03_ship     # ほかの千巻
+
+
+-nohide  pos*5  22.5   25.0      BL03_box
+-nohide  pos*5 -22.5    5.0      BL03_box
+-nohide  pos*5 -22.5  -15.0      BL03_box
+-nohide  pos*5   0.0  -15.0      BL03_box
+-nohide  pos*5  22.5  -15.0      BL03_box
+-nohide  pos*5 -15.0  -57.5      BL03_box
+-nohide  pos*5   0.0  -57.5      BL03_box
+-nohide  pos*5  15.0  -57.5      BL03_box
+-nohide  pos*5 -15.0  -85.0      BL03_box
+-nohide  pos*5   0.0  -85.0      BL03_box
+-nohide  pos*5  15.0  -85.0      BL03_box
+
+
+  put *11  #後で付け足した追い出しコリジョン（１／７）
+
+
+  put *1   # 甲板全体のコリジョン
+  put *6   # 以下甲板のでこぼこ部分のコリジョン
+  put *7
+  put *8
+  put *9
+  put *10
+
+
+
+
+  fog 77.0 183.0 0.0 0.80
+  fogcol 0 0 0
+
+  light0 -0.5  1.0  0.5   0.40  0.40  0.40 
+  light1  0.5 -1.0 -0.5   0.15  0.15  0.20 
+#  light2 -0.2  3.0  0.5   0.25  0.25  0.25 
+
+  amb 0.08 0.08 0.11
+
+# ----------------------------------------------------
+%	# デリミタ消去禁止
+# ----------------------------------------------------
+
+#
+# ＢＧの定義リング面
+#
+BG BG_VS1 BG_DATA_VS1
+    -nohide put BL05
+
+
+put *001
+put *002
+put *003
+put *004
+put *005
+put *006
+put *007
+put *008
+put *009
+put *010
+put *011
+put *012
+put *013
+put *014
+put *015
+put *016
+put *017
+put *018
+put *019
+put *020
+put *021
+put *022
+put *023
+put *024
+
+   put *1001
+   put *1002
+   put *1003
+   put *1004
+
+#2002年1月21日追加--ここから
+  light0  0.5  1.0  0.5   0.35  0.30  0.30 
+  light1  0.5 -1.0 -0.5   0.65  0.65  0.85 
+  light2 -0.5 -1.0  0.5   0.35  0.35  0.45 
+
+  amb 0.08 0.08 0.10
+
+   fog 68.0 300.0 0.0 0.80
+   fogcol 0 0 24
+#2002年1月21日追加--ここまで
+
+
+
+# ----------------------------------------------------
+%	# デリミタ消去禁止
+# ----------------------------------------------------
+
+#
+# ＢＧの定義リング面
+#
+BG BG_COL BG_DATA_COL
+
+   # コリジョン
+   put *1
+
+   put *0001
+   put *0002
+   put *0003
+   put *0004
+
+
+
+   # リング
+   put BL04
+
+   # リングサイド
+   put BL04_co1
+   put BL04_co2
+   put BL04_co3
+   put BL04_co4
+
+
+
+   # 箱と柱
+-nohide   pos -60 -60 BL04_tek
+-nohide   pos -50 -50 BL04_box
+-nohide   pos -40 -40 BL04_box
+-nohide   pos -30 -30 BL04_box
+-nohide   pos -20 -20 BL04_box
+-nohide   pos -60  60 BL04_tek
+-nohide   pos -50  50 BL04_box
+-nohide   pos -40  40 BL04_box
+-nohide   pos -30  30 BL04_box
+-nohide   pos -20  20 BL04_box
+-nohide   pos  60  60 BL04_tek
+-nohide   pos  50  50 BL04_box
+-nohide   pos  40  40 BL04_box
+-nohide   pos  30  30 BL04_box
+-nohide   pos  20  20 BL04_box
+-nohide   pos  60 -60 BL04_tek
+-nohide   pos  50 -50 BL04_box
+-nohide   pos  40 -40 BL04_box
+-nohide   pos  30 -30 BL04_box
+-nohide   pos  20 -20 BL04_box
+
+
+-nohide   pos -10 -10  BL04_tek
+-nohide   pos -10  10  BL04_tek
+-nohide   pos  10 -10  BL04_tek
+-nohide   pos  10  10  BL04_tek
+
+
+
+
+  light0  0.5  1.0  0.5   0.35  0.30  0.30 
+  light1  0.5 -1.0 -0.5   0.65  0.65  0.85 
+  light2 -0.5 -1.0  0.5   0.35  0.35  0.45 
+
+  amb 0.08 0.08 0.10
+
+
+
+   fog 68.0 300.0 0.0 0.80
+   fogcol 0 0 24
+
+# ----------------------------------------------------
+%	# デリミタ消去禁止
+# ----------------------------------------------------
+
+#
+# ＢＧの定義その？（データなしで出せるモデル）
+#
+BG BG_TEST_TEST *		# BG ＢＧ名 * (* はデータなし)
+  put GROUND
+  pos 0.0 0.0 BUILDING
+  grid -8 -8  BUILDING
+  grid -6 -6  BUILDING
+  rand 4 8 4 8 TREE
+  rand 4 8 4 8 TREE
+  rand 4 8 4 8 TREE
+  rand 8 4 8 4 TREE
+  rand 8 4 8 4 TREE
+  rand 8 4 8 4 TREE
+
+# ----------------------------------------------------
+%	# デリミタ消去禁止
+# ----------------------------------------------------
+
+ USE_BG	BG_TOWN
+# USE_BG	BG_BLOCK
+# USE_BG	BG_AIRCAR
+

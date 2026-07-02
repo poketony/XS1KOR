@@ -1,0 +1,21 @@
+
+player
+  type vx01
+  pos 0.0 2.0 -10.0            # 位置
+  control 0                    # コントロールパッド番号０
+  camera on                    # カメラ対象かどうか
+  weapon left GLG76AG
+  weapon right HMP33AG 
+
+player
+  type ag05
+  pos 0.0 2.0 10.0             # 位置
+  control enemy                # エネミーコントロール
+  camera off                   # カメラ対象かどうか
+  weapon left LG10AG
+  weapon right LG24VX
+
+
+#  weapon left handgun
+#  weapon right missile
+

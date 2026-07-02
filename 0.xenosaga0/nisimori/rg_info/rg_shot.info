@@ -1,0 +1,483 @@
+
+# 普通の弾
+normal s-tama      # normal 名前 : ただ飛んでいくだけの弾
+  #model de_mss     # 表示モデル
+  puttex beam.bmp # テクスチャで直接弾表示
+  spd 145.0        # 速度(m/sec)
+  damage 3.0       # ダメージ
+  life 2.0         # 生きている時間
+
+# 普通の弾よりダメージが大きい
+normal s-tama-L    # normal 名前 : ただ飛んでいくだけの弾
+  #model de_mss     # 表示モデル
+  puttex beam.bmp # テクスチャで直接弾表示
+  spd 145.0        # 速度(m/sec)
+  damage 5.0       # ダメージ
+  life 2.0         # 生きている時間
+
+# 普通の弾より小さくて早い（ダメージ小）(ガトリング用)
+normal s-tama-S  # normal 名前 : ただ飛んでいくだけの弾
+  #model de_mss     # 表示モデル
+  puttex beam.bmp # テクスチャで直接弾表示
+  spd 165.0      # 速度(m/sec)
+  damage 0.2     # ダメージ
+  life 2.0       # 生きている時間
+
+  not-dam-time  1.5   # 1.5 秒の間に…
+  not-dam-limit 5.0   # 5.0 以上のダメージを受けたらやられアクションが出る。
+  slow-time     0.3   # 上記でないときのダメージＨＩＴは、0.5 秒の間…
+  slow-rate     0.3   # 通常の約３割程度の速度で時間が進む
+
+# ホーミングミサイル
+homing s-homing  # homing 名前 : ホーミングの弾
+  #model de_mss     # 表示モデル
+  puttex beam.bmp # テクスチャで直接弾表示
+  spd 35.0       # 速度(m/sec)
+  aim 2.5        # ターゲット方向を向く角速度(１８０度方向転換するのに必要な時間 sec)
+  accuracy 4.0   # ホーミング精度(度)。この角度以下ならホーミングをやめる
+  wait 0.2       # 発射後ホーミングしない時間(sec)
+  damage 5.0     # ダメージ
+  life 2.0       # 生きている時間
+
+# 仮パンチ弾
+normal s-punch     # normal 名前 : ただ飛んでいくだけの弾
+  #model de_mss     # 表示モデル
+  puttex beam.bmp # テクスチャで直接弾表示
+  spd 30.0         # 速度(m/sec)
+  damage 15.0      # ダメージ
+  life 0.05        # 生きている時間
+
+
+
+# 中島使用　
+############################################################################
+# ライフル０         LG24VX
+normal   T_LG24VX  # normal 名前 : ただ飛んでいくだけの弾
+  #model de_mss     # 表示モデル
+  puttex beam.bmp # テクスチャで直接弾表示
+  spd 185.0        # 速度(m/sec)
+  damage  7.0      # ダメージ
+  life 2.0         # 生きている時間
+
+  break-ptcl eff11.ptcl
+  damage-ptcl eff05.ptcl
+
+# ハンドガン         HG45VX
+normal   T_HG45VX  # normal 名前 : ただ飛んでいくだけの弾
+  #model de_mss       # 表示モデル
+  #puttex beam.bmp # テクスチャで直接弾表示
+  puttex-all beam2.bmp 0.5 0.1   128 128 50  # beam2.bmp 使用 長さscale=0.5 幅=0.1 色=128,128,128(rgb)
+  spd 130.0        # 速度(m/sec)
+  damage  2.0      # ダメージ
+  life 0.6         # 生きている時間
+
+  not-dam-time  1.0   # 1.0 秒の間に…
+  not-dam-limit 7     # 7.0 以上のダメージを受けたらやられアクションが出る。
+  slow-time     0.3   # 上記でないときのダメージＨＩＴは、0.3 秒の間…
+  slow-rate     0.5   # 通常の約5割程度の速度で時間が進む
+
+  break-ptcl eff11.ptcl
+  damage-ptcl eff05.ptcl
+
+# ハンドガン         HG75VX
+normal   T_HG75VX  # normal 名前 : ただ飛んでいくだけの弾
+  #model de_mss     # 表示モデル
+  #puttex beam.bmp # テクスチャで直接弾表示
+  puttex-all beam2.bmp 0.7 0.1   128 50 50  # beam2.bmp 使用 長さscale=0.7 幅=0.1 色=128,50,50(rgb)
+  spd 138.0        # 速度(m/sec)
+  damage  2.5      # ダメージ
+  life 0.5         # 生きている時間
+
+  not-dam-time  1.0   # 1.0 秒の間に…
+  not-dam-limit 7     # 7.0 以上のダメージを受けたらやられアクションが出る。
+  slow-time     0.5   # 上記でないときのダメージＨＩＴは、0.5 秒の間…
+  slow-rate     0.7   # 通常の約7割程度の速度で時間が進む
+
+  break-ptcl eff11.ptcl
+  damage-ptcl eff05.ptcl
+
+
+# ライフル０         LG10AG
+normal   T_LG10AG  # normal 名前 : ただ飛んでいくだけの弾
+  #model de_mss     # 表示モデル
+  puttex beam.bmp # テクスチャで直接弾表示
+  #puttex-all beam2.bmp 1.0 0.15    128 0 128
+  spd 195.0        # 速度(m/sec)
+  damage  22.0     # ダメージ
+  life 2.0         # 生きている時間
+
+  break-ptcl eff11.ptcl
+  damage-ptcl eff06.ptcl
+
+# サブマシンガン     SMG99AG
+normal   T_SMG99AG # normal 名前 : ただ飛んでいくだけの弾
+  puttex-all beam3.bmp 0.5 0.08   60 60 128  # beam3.bmp 使用 長さscale=0.5 幅=0.08 色=60,60,128(rgb)
+  spd 155.0        # 速度(m/sec)
+  damage  0.5      # ダメージ
+  life 0.5         # 生きている時間
+
+  not-dam-time  3.0   # 3.0 秒の間に…
+  not-dam-limit 3.0   # 9.0 以上のダメージを受けたらやられアクションが出る。
+  slow-time     0.1   # 上記でないときのダメージＨＩＴは、0.1 秒の間…
+  slow-rate     0.6   # 通常の約6割程度の速度で時間が進む
+
+  break-ptcl eff11.ptcl
+  damage-ptcl eff05.ptcl
+
+# マシンガン     SMG32VX
+normal   T_SMG32VX # normal 名前 : ただ飛んでいくだけの弾
+  puttex-all beam3.bmp 0.5 0.08   45 128 90  # beam3.bmp 使用 長さscale=0.5 幅=0.08 色=90,128,30(rgb)
+  spd 165.0        # 速度(m/sec)
+  damage  0.8      # ダメージ
+  life 0.4         # 生きている時間
+
+  not-dam-time  3.0   # 3.0 秒の間に…
+  not-dam-limit 9.0   # 9.0 以上のダメージを受けたらやられアクションが出る。
+  slow-time     0.2   # 上記でないときのダメージＨＩＴは、0.2 秒の間…
+  slow-rate     0.8   # 通常の約8割程度の速度で時間が進む
+
+  break-ptcl eff11.ptcl
+  damage-ptcl eff05.ptcl
+
+# グレネード０       GRD20AG
+gre T_GRD20AG   # 消滅時にダメージ判定付き爆風とかあるといいなぁ。
+  #model gre    # 表示モデル
+  #puttex beam.bmp # テクスチャで直接弾表示
+  puttex-all beam.bmp 0.8   0.4   88 44 22  # 長さscale=0.8 幅=0.4 色=128,128,128(rgb)
+  spd  115.0       # 速度(m/sec)
+  damage  18.0     # ダメージ
+  life 0.5         # 生きている時間
+  wait 99.0        # ９９秒ホーミングしない（つまりホーミングしない）
+  bom-size  8.0    # 爆風サイズ
+  bom-time  1.4    # 爆風時間
+  bom-dist  0.0    # ターゲットがどのくらいの距離なら自動爆発するか(0なら自動爆発はなし)
+
+  break-ptcl eff12.ptcl
+  damage-ptcl eff06.ptcl
+
+# ミサイルポッド     HMP33AG
+gre T_HMP33AG # homing 名前 : ホーミングの弾(爆発するのでグレネード仕様）
+  #model de_mss     # 表示モデル
+  puttex beam.bmp # テクスチャで直接弾表示
+  ptcl eff03.ptcl
+  spd 45.0       # 速度(m/sec)
+  aim 1.4        # ターゲット方向を向く角速度(１８０度方向転換するのに必要な時間 sec)
+  accuracy 4.0   # ホーミング精度(度)。この角度以下ならホーミングをやめる
+  wait 0.20      # 発射後ホーミングしない時間(sec)
+  damage 4.5     # ダメージ
+  life 2.0       # 生きている時間
+  bom-size  5.0   # 爆風サイズ
+  bom-time  0.6    # 爆風時間
+  bom-dist  2.0    # ターゲットがどのくらいの距離なら自動爆発するか(0なら自動爆発はなし)
+
+  break-ptcl eff12.ptcl
+  damage-ptcl eff06.ptcl
+
+# ミサイルポッド     SMP53AG
+gre T_SMP53AG    # homing 名前 : ホーミングの弾(爆発するのでグレネード仕様）
+  #model de_mss     # 表示モデル
+  puttex beam.bmp # テクスチャで直接弾表示
+  ptcl eff03.ptcl
+  spd 100.0       # 速度(m/sec)
+  aim 1.0        # ターゲット方向を向く角速度(１８０度方向転換するのに必要な時間 sec)
+  accuracy 4.0   # ホーミング精度(度)。この角度以下ならホーミングをやめる
+  wait 0.05      # 発射後ホーミングしない時間(sec)
+  damage 5.0     # ダメージ
+  life 0.25      # 生きている時間
+  bom-size  3.0   # 爆風サイズ
+  bom-time  1.2    # 爆風時間
+  bom-dist  1.0    # ターゲットがどのくらいの距離なら自動爆発するか(0なら自動爆発はなし)
+
+  break-ptcl eff12.ptcl
+  damage-ptcl eff06.ptcl
+
+# 両手もちビーム LG100VX
+beam T_LG100VX
+  puttex-all beam2.bmp 1.0 0.17  128 30 90  
+  life 4.0        # 生きている最大時間(秒)
+  spd 155.0       # 速度(m/秒)
+  damage  250.0   # ビームのダメージの単位は damage/秒。つまり１秒あたりのダメージ
+  attach-time 1.0 # ビームが射出されつづける時間。この時間の間は武器は busy になる
+
+  not-dam-time  1.0   # 1.0 秒の間に…
+  not-dam-limit 13.5  # 13.5 以上のダメージを受けたらやられ
+                      # つまりビーム１発全体の９０％があたったら。
+
+  slow-time     0.1   # 上記でないときのダメージＨＩＴは、0.1 秒の間…
+  slow-rate     0.5   # 通常の半分程度の速度で時間が進む
+
+  break-ptcl eff12.ptcl
+  damage-ptcl eff06.ptcl
+
+
+
+normal T_GLG76AG  # normal 名前 : ガトリング用
+  #model de_mss     # 表示モデル
+  puttex-all beam.bmp 0.3   0.2   128 70 70  # 長さscale=0.7 幅=0.1 色=128,128,128(rgb)
+  spd 165.0        # 速度(m/sec)
+  damage 0.35      # ダメージ
+  life 0.5         # 生きている時間
+
+  break-ptcl eff11.ptcl
+  damage-ptcl eff05.ptcl
+
+normal T_HGG-AG5  # normal 名前 : ハンドバルカン
+  #model de_mss     # 表示モデル
+  puttex-all beam3.bmp 0.5   0.10   98 72 32  # 長さscale=0.5 幅=0.1 色=98,98,32(rgb)
+  spd 165.0        # 速度(m/sec)
+  damage 0.65      # ダメージ
+  life 0.45         # 生きている時間
+
+  break-ptcl eff11.ptcl
+  damage-ptcl eff05.ptcl
+
+
+# フレームランチャー FLM64AG
+# fire タイプ。fire タイプは life にまったく意味がない
+#normal T_FLM64AG
+fire T_FLM64AG
+  ptcl eff19.ptcl  # ファイアエフェクト(made by nis)
+  damage  20.0     # ビームのダメージの単位は damage/秒。つまり１秒あたりのダメージ
+  length  25.0     # これはコリジョンの長さ。エフェクトの長さではない
+  attach-time 99.0 # フレームランチャーがエネルギータイプなのでそれにあわせるため
+                   # ショットのほうは無限に武器に張り付いているようにする
+				   # （武器からヒートアップでショットが終了される）
+
+#  break-ptcl eff05.ptcl
+#  damage-ptcl eff06.ptcl
+
+# 電磁ロッド
+fire T_ER-VX
+  ptcl eff21.ptcl  # 電磁ロッドエフェクト(made by nis)
+  damage  38.0     # ビームのダメージの単位は damage/秒。つまり１秒あたりのダメージ
+  length  7.0      # これはコリジョンの長さ。エフェクトの長さではない
+  attach-time 99.0 # フレームランチャーがエネルギータイプなのでそれにあわせるため
+                   # ショットのほうは無限に武器に張り付いているようにする
+				   # （武器からヒートアップでショットが終了される）
+  imm-dead         # 死ぬときはいきなり死ぬ。フレーむランチャーはだんだん死ぬ
+
+
+ 
+
+
+# ビームアーム BA15VX
+beam T_BA15VX
+  puttex-all beam2.bmp 1.0 0.12   60 60 128
+  life 2.0        # 生きている最大時間(秒)
+  spd 128.0       # 速度(m/秒)
+  damage  56.0    # ビームのダメージの単位は damage/秒。つまり１秒あたりのダメージ
+  attach-time 0.2 # ビームが射出されつづける時間。この時間の間は武器は busy になる
+
+  not-dam-time  0.2   # 0.2 秒の間に…
+  not-dam-limit 5.0   # 5.0 以上のダメージを受けたらやられ
+                      # つまりビーム１発全体の９０％があたったら。
+
+  slow-time     0.1   # 上記でないときのダメージＨＩＴは、0.1 秒の間…
+  slow-rate     0.85   # 通常の8割5分程度の速度で時間が進む
+
+  break-ptcl eff11.ptcl
+  damage-ptcl eff05.ptcl
+
+# 盾ビーム SHB67AG
+beam T_SHB67AG
+  puttex-all beam2.bmp 1.0 0.12   45 55 128
+  life 2.0        # 生きている最大時間(秒)
+  spd 185.0       # 速度(m/秒)
+  damage  180.0   # ビームのダメージの単位は damage/秒。つまり１秒あたりのダメージ
+  attach-time 0.7 # ビームが射出されつづける時間。この時間の間は武器は busy になる
+
+  not-dam-time  0.7   # 0.7 秒の間に…
+  not-dam-limit 9.0  # 9.0 以上のダメージを受けたらやられ
+                      # つまりビーム１発全体の９０％があたったら。
+
+  slow-time     0.1   # 上記でないときのダメージＨＩＴは、0.1 秒の間…
+  slow-rate     0.5   # 通常の半分程度の速度で時間が進む
+
+  break-ptcl eff11.ptcl
+  damage-ptcl eff05.ptcl
+
+# マイクロミサイルポッド     HMP-AG5
+gre T_HMP-AG5 # homing 名前 : ホーミングの弾(爆発するのでグレネード仕様）
+  #model de_mss     # 表示モデル
+  puttex beam.bmp # テクスチャで直接弾表示
+  ptcl eff03.ptcl
+  spd  120.0     # 速度(m/sec)
+  aim  3.0       # ターゲット方向を向く角速度(１８０度方向転換するのに必要な時間 sec)
+  accuracy 4.0   # ホーミング精度(度)。この角度以下ならホーミングをやめる
+  wait 0.8       # 発射後ホーミングしない時間(sec)
+  damage 2.5     # ダメージ
+  life 2.0       # 生きている時間
+  bom-size  1.0    # 爆風サイズ
+  bom-time  0.4    # 爆風時間
+  bom-dist  0.0    # ターゲットがどのくらいの距離なら自動爆発するか(0なら自動爆発はなし)
+
+  break-ptcl eff12.ptcl
+  damage-ptcl eff06.ptcl
+
+# 大型ミサイルポッド     BMP-AG5
+gre T_BMP-AG5 # homing 名前 : ホーミングの弾(爆発するのでグレネード仕様）
+  #model de_mss     # 表示モデル
+  puttex beam.bmp # テクスチャで直接弾表示
+  ptcl eff03.ptcl
+  spd  10.0      # 速度(m/sec)
+  aim  0.25      # ターゲット方向を向く角速度(１８０度方向転換するのに必要な時間 sec)
+  accuracy 1.0   # ホーミング精度(度)。この角度以下ならホーミングをやめる
+  wait 0.4       # 発射後ホーミングしない時間(sec)
+  damage 20.0    # ダメージ
+  life 7.0       # 生きている時間
+  bom-size 15.0    # 爆風サイズ
+  bom-time  1.0    # 爆風時間
+  bom-dist  0.0    # ターゲットがどのくらいの距離なら自動爆発するか(0なら自動爆発はなし)
+
+  break-ptcl eff12.ptcl
+  damage-ptcl eff06.ptcl
+
+
+# 長距離キャノン         T_LCAG6 
+gre   T_LCAG6   # normal 名前 : ただ飛んでいくだけの弾（爆発するのでグレネド仕様）
+  puttex-all beam.bmp 0.5   0.3   80 80 128  # 長さscale=0.5 幅=0.3 色=128,128,128(rgb)
+  spd 200.0        # 速度(m/sec)
+  damage  45.0     # ダメージ
+  life 2.0         # 生きている時間
+  wait 99.0        # ９９秒ホーミングしない（つまりホーミングしない）
+  bom-size 22.0    # 爆風サイズ
+  bom-time  2.0    # 爆風時間
+  bom-dist  0.0    # ターゲットがどのくらいの距離なら自動爆発するか(0なら自動爆発はなし)
+
+  break-ptcl eff12.ptcl
+  damage-ptcl eff06.ptcl
+
+
+# エアッド ＡＩＲＤ−ＡＧ２
+beam T_AIRD-AG02
+  puttex-all beam2.bmp 1.0 0.12   128 128 40
+  life 2.0        # 生きている最大時間(秒)
+  spd 190.0       # 速度(m/秒)
+  damage  40.0    # ビームのダメージの単位は damage/秒。つまり１秒あたりのダメージ
+  attach-time 0.04 # ビームが射出されつづける時間。この時間の間は武器は busy になる
+
+  not-dam-time  0.2   # 0.2 秒の間に…
+  not-dam-limit 5.0   # 5.0 以上のダメージを受けたらやられ
+                      # つまりビーム１発全体の９０％があたったら。
+
+  slow-time     0.1   # 上記でないときのダメージＨＩＴは、0.1 秒の間…
+  slow-rate     0.7   # 通常の7割程度の速度で時間が進む
+
+  break-ptcl eff11.ptcl
+  damage-ptcl eff05.ptcl
+
+# ビームランチャー BL24AG
+beam T_BL24AG
+  puttex-all beam2.bmp 1.0 0.25   60 85 128
+  life 2.0        # 生きている最大時間(秒)
+  spd 195.0       # 速度(m/秒)
+  damage  600.0   # ビームのダメージの単位は damage/秒。つまり１秒あたりのダメージ
+  attach-time 0.3 # ビームが射出されつづける時間。この時間の間は武器は busy になる
+
+  not-dam-time  0.2   # 0.2 秒の間に…
+  not-dam-limit 5.0   # 5.0 以上のダメージを受けたらやられ
+                      # つまりビーム１発全体の９０％があたったら。
+
+  slow-time     0.1   # 上記でないときのダメージＨＩＴは、0.1 秒の間…
+  slow-rate     0.7   # 通常の7割程度の速度で時間が進む
+
+  break-ptcl eff12.ptcl
+  damage-ptcl eff06.ptcl
+
+# 拡散ビームポッド BMP45VX
+beam T_BMP45VX
+  puttex-all beam2.bmp 1.0 0.5   5 25 45
+  life 0.25        # 生きている最大時間(秒)
+  spd 185.0       # 速度(m/秒)
+  damage  100.0    # ビームのダメージの単位は damage/秒。つまり１秒あたりのダメージ
+  attach-time 0.08 # ビームが射出されつづける時間。この時間の間は武器は busy になる
+
+  not-dam-time  0.2   # 0.2 秒の間に…
+  not-dam-limit 5.0   # 5.0 以上のダメージを受けたらやられ
+                      # つまりビーム１発全体の９０％があたったら。
+
+  slow-time     0.1   # 上記でないときのダメージＨＩＴは、0.1 秒の間…
+  slow-rate     0.7   # 通常の7割程度の速度で時間が進む
+  
+  
+  
+###################これよりチャフ系#########################
+  # チャフのミサイル。基本的にグレネード設定
+gre T_CG85VX 
+
+  # 表示指定。他と同じ
+  puttex beam.bmp  # テクスチャで直接弾表示
+  ptcl eff03.ptcl  # ショット自身のエフェクト（煙）
+
+  # グレネードなのでホーミングの指定
+  spd  50.0        # 速度(m/sec)
+  aim  1.0         # ターゲット方向を向く角速度(１８０度方向転換するのに必要な時間 sec)
+  accuracy 4.0     # ホーミング精度(度)。この角度以下ならホーミングをやめる
+  wait 0.5         # 発射後ホーミングしない時間(sec)
+  life 0.8         # 生きている時間
+
+  # グレネードの指定。あたり範囲はこの範囲
+  bom-size  6.0   # 爆風サイズ
+  bom-time  0.6    # 爆風時間
+  bom-dist  3.0    # ターゲットがどのくらいの距離なら自動爆発するか(0なら自動爆発はなし)
+
+  # チャフ特有 ----------------------------
+  chaff  4.0      # チャフの指定。数値は当たったときにどのぐらい混乱するか(秒)
+  break-ptcl eff20.ptcl    # チャフ壊れエフェクト
+
+  # チャフで意味のなくなるもの ------------
+  damage 2.5       # ダメージ
+  damage-ptcl eff06.ptcl   # やられエフェクト
+
+
+gre T_ECM1-VX       #電子兵器１
+
+  # 表示指定。他と同じ
+  puttex beam.bmp  # テクスチャで直接弾表示
+  ptcl eff03.ptcl  # ショット自身のエフェクト（煙）
+
+  # グレネードなのでホーミングの指定
+  spd  120.0        # 速度(m/sec)
+  aim  1.0         # ターゲット方向を向く角速度(１８０度方向転換するのに必要な時間 sec)
+  accuracy 4.0     # ホーミング精度(度)。この角度以下ならホーミングをやめる
+  wait 0.8         # 発射後ホーミングしない時間(sec)
+  life 0.8         # 生きている時間
+
+  # グレネードの指定。あたり範囲はこの範囲
+  bom-size  0.1   # 爆風サイズ
+  bom-time  0.1   # 爆風時間
+  bom-dist  0.0   # ターゲットがどのくらいの距離なら自動爆発するか(0なら自動爆発はなし)
+
+  # チャフ特有 ----------------------------
+  chaff  5.0      # チャフの指定。数値は当たったときにどのぐらい混乱するか(秒)
+  break-ptcl eff20.ptcl    # チャフ壊れエフェクト
+
+  # チャフで意味のなくなるもの ------------
+  damage 2.5       # ダメージ
+  damage-ptcl eff06.ptcl   # やられエフェクト
+
+gre T_ECM2-VX      #電子兵器２
+
+  # 表示指定。他と同じ
+  puttex beam.bmp  # テクスチャで直接弾表示
+  ptcl eff03.ptcl  # ショット自身のエフェクト（煙）
+
+  # グレネードなのでホーミングの指定
+  spd  1.0        # 速度(m/sec)
+  aim  1.0         # ターゲット方向を向く角速度(１８０度方向転換するのに必要な時間 sec)
+  accuracy 4.0     # ホーミング精度(度)。この角度以下ならホーミングをやめる
+  wait 0.1         # 発射後ホーミングしない時間(sec)
+  life 0.1         # 生きている時間
+
+  # グレネードの指定。あたり範囲はこの範囲
+  bom-size  30     # 爆風サイズ
+  bom-time  1.0    # 爆風時間
+  bom-dist  1.0    # ターゲットがどのくらいの距離なら自動爆発するか(0なら自動爆発はなし)
+
+  # チャフ特有 ----------------------------
+  chaff  3.5       # チャフの指定。数値は当たったときにどのぐらい混乱するか(秒)
+  break-ptcl eff20.ptcl    # チャフ壊れエフェクト
+
+  # チャフで意味のなくなるもの ------------
+  damage 2.5       # ダメージ
+  damage-ptcl eff06.ptcl   # やられエフェクト

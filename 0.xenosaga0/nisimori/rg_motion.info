@@ -1,0 +1,94 @@
+#
+# モーションフレーム設定
+# 
+
+# ハンドガンショット(適当 by nis)
+mot_49	action 0.15 0.2
+mot_50	action 0.15 0.2
+
+# 素手攻撃
+attack_left		action-f 8 10
+attack_right	action-f 8 10
+attack_left		char ag05	action-f 10 12
+attack_right	char ag05	action-f 10 12
+
+# ブレード
+brade_left		char ag02	action-f 9 10
+brade_right		char ag02	action-f 8 11
+brade_left		char vx01	action-f 9 10
+brade_right		char vx01	action-f 8 11
+brade_left		char vx02	action-f 9 10
+brade_right		char vx02	action-f 8 11
+brade_left		char vx06	action-f 7 11
+brade_right		char vx06	action-f 8 10
+
+# ビーム剣(ソード)
+# mot_70:右 mot_68:左
+mot_70	char ag02	action-f 13 15
+mot_68	char ag02	action-f 10 15
+mot_70	char vx01	action-f 12 15
+mot_68	char vx01	action-f 12 15
+mot_70	char vx02	action-f 12 15
+mot_68	char vx02	action-f 12 15
+
+# パイルバンカー左
+mot_52  char ag02   action-f 18 20  hit-shift-f 18 99 mot_54 wmot_18
+mot_52  char vx01   action-f 18 20  hit-shift-f 18 99 mot_54 wmot_42
+mot_52  char vx02   action-f 18 20  hit-shift-f 18 99 mot_54 wmot_56
+mot_54  # フォローモーション（パイルバンカーＨＩＴ後）なので特になにも指定なし
+# パイルバンカー右
+mot_56  char ag02   action-f 18 20  hit-shift-f 18 99 mot_58 wmot_5
+mot_56  char vx01   action-f 18 20  hit-shift-f 18 99 mot_58 wmot_35
+mot_56  char vx02   action-f 18 20  hit-shift-f 18 99 mot_58 wmot_49
+mot_58  # フォローモーション（パイルバンカーＨＩＴ後）なので特になにも指定なし
+
+# 電磁ロッド。vx06 のみなので char 指定は必要ないかも
+# mot_73:右 mot_72:左
+mot_72  char vx06   action-f 13 30
+mot_73	char vx06	action-f 13 30
+
+# ドリル
+drill_left			action-f 8 20
+drill_right			action-f 8 20
+
+# ビームランチャー。全キャラ２６フレームでした。
+mot_64				action-f 26 28
+
+# 長距離カノン。ag05 のみ
+mot_74	char ag05	action-f 30 32
+
+# エアッド。ag02 のみ
+mot_78	char ag02	action-f 8 38
+
+# ソルビアンカ砲。vx02 のみ
+mot_77	char vx02	action-f 15 25
+
+# 両手持ちライフル
+mot_60	char ag02	action-f 25 28
+mot_60	char vx01	action-f 25 28
+mot_60	char vx02	action-f 25 28
+
+# シールド
+mot_46  next mot_48 nul    event mot_47 nul
+
+# 拡散ビームポッド
+
+# ランさー
+mot_62  char vx01  action-f 11 25
+mot_62  char vx02  action-f 12 25
+mot_63  char vx01  action-f 12 25
+mot_63  char vx02  action-f 13 25
+
+# 盾ビーム
+mot_66  char ag02  action-f 20 22
+
+# 必殺技
+mot_79  char ag02  action-f 13 16 action-f 25 30 action-f 46 47
+mot_79  char ag04  action-f 7 28
+mot_79  char ag05  action-f 7 10  action-f 16 20 action-f 39 40
+mot_79  char vx01  action-f 5 20  action-f 22 35
+mot_79  char vx02  action-f 14 47
+mot_79  char vx06  action-f 9 14  hit-shift-f 9 14 mot_80 nul
+mot_80  char vx06  action-f 20 21 action-f 24 25 action-f 28 29 action-f 48 50
+#mot_80  char vx06  action-f 18 31 action-f 48 50
+

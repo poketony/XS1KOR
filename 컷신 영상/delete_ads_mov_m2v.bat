@@ -1,0 +1,47 @@
+@echo off
+setlocal
+
+set "TARGET=%~dp0"
+set "FOUND=0"
+set "DELETED=0"
+
+echo Target folder:
+echo   "%TARGET%"
+echo.
+echo Searching for *.ads, *.mov, and *.m2v files under the target folder...
+
+for /r "%TARGET%" %%F in (*.ads *.mov *.m2v) do (
+  set /a FOUND+=1
+)
+
+echo Found %FOUND% matching file(s).
+echo.
+
+if "%FOUND%"=="0" (
+  echo Nothing to delete.
+  pause
+  exit /b 0
+)
+
+echo This will permanently delete every matching file under the target folder.
+choice /C YN /M "Continue"
+if errorlevel 2 (
+  echo Cancelled.
+  pause
+  exit /b 0
+)
+
+echo.
+for /r "%TARGET%" %%F in (*.ads *.mov *.m2v) do (
+  del /f /q "%%F"
+  if exist "%%F" (
+    echo Failed: "%%F"
+  ) else (
+    set /a DELETED+=1
+    echo Deleted: "%%F"
+  )
+)
+
+echo.
+echo Done. Deleted %DELETED% file(s).
+pause

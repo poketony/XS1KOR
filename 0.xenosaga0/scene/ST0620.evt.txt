@@ -62,7 +62,7 @@
 /[waitkey(64)]/[clear()]
 # dup_of: line 16, tag8 4
 /[label(시온)]
-『/[color(0x329bbe)]위험 우주 영역 데이터/[color(0xffffff)]』 말이죠．<lf>
+『/[color(0x329bbe)]위험 영역 데이터/[color(0xffffff)]』 말이죠．<lf>
 알겠습니다，찾아볼게요．
 # dup_of: line 15, tag8 9
 /[waitkey(64)]/[clear()]
@@ -91,7 +91,7 @@
 찾았어？
 # dup_of: line 5, tag8 8
 /[waitkey(1)]/[clear()]
-『/[color(0x329bbe)]위험 우주 영역 데이터/[color(0xffffff)]』야．<lf>
+『/[color(0x329bbe)]위험 영역 데이터/[color(0xffffff)]』야．<lf>
 제대로 찾아 달라고！
 # dup_of: line 31, tag8 10
 /[waitkey(64)]/[close()]
