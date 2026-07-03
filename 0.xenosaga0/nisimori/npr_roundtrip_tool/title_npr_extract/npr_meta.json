@@ -1,0 +1,413 @@
+{
+  "tool": "npr_roundtrip_tool",
+  "version": 4,
+  "source_npr_name": "title.npr",
+  "source_npr_path": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\title.npr",
+  "source_npr_size": 786012,
+  "source_npr_sha256": "e35f3b130f0db1f610b51d40787fd09b5c12a82a320d99b951fba0a617a6c8be",
+  "payload_size": 4774256,
+  "payload_sha256": "f9848d41eca3fcbf2710d4fec4bba303ab5ebabea3407f7ab4d2b0f3431f18bf",
+  "payload_container": {
+    "magic": "NLNK",
+    "name_size": 32,
+    "offset_table": 320,
+    "count": 9
+  },
+  "entries": [
+    {
+      "index": 0,
+      "name": "top_b1h.bxx",
+      "offset": 368,
+      "end": 530800,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/00_top_b1h/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "top_b1h.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "top_base.bxx",
+      "offset": 530800,
+      "end": 1061232,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/01_top_base/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "top_base.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "top_base_ag02.bxx",
+      "offset": 1061232,
+      "end": 1591664,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/02_top_base_ag02/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "top_base_ag02.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "top_base_vx01.bxx",
+      "offset": 1591664,
+      "end": 2122096,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/03_top_base_vx01/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "top_base_vx01.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "top_cur_1e.bxx",
+      "offset": 2122096,
+      "end": 2652528,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/04_top_cur_1e/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "top_cur_1e.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "top_cur_vh.bxx",
+      "offset": 2652528,
+      "end": 3182960,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/05_top_cur_vh/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "top_cur_vh.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "top_red.bxx",
+      "offset": 3182960,
+      "end": 3713392,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/06_top_red/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "top_red.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "top_title.bxx",
+      "offset": 3713392,
+      "end": 4243824,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/07_top_title/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "top_title.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "top_ve.bxx",
+      "offset": 4243824,
+      "end": 4774256,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/08_top_ve/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "top_ve.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    }
+  ],
+  "xtx_items": [
+    {
+      "top_entry_index": 0,
+      "top_entry_name": "top_b1h.bxx",
+      "top_entry_offset": 368,
+      "nested_entry_index": 1,
+      "nested_entry_name": "top_b1h.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 2528,
+      "folder": "entries/00_top_b1h/xtx_01_top_b1h"
+    },
+    {
+      "top_entry_index": 1,
+      "top_entry_name": "top_base.bxx",
+      "top_entry_offset": 530800,
+      "nested_entry_index": 1,
+      "nested_entry_name": "top_base.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 532960,
+      "folder": "entries/01_top_base/xtx_01_top_base"
+    },
+    {
+      "top_entry_index": 2,
+      "top_entry_name": "top_base_ag02.bxx",
+      "top_entry_offset": 1061232,
+      "nested_entry_index": 1,
+      "nested_entry_name": "top_base_ag02.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 1063392,
+      "folder": "entries/02_top_base_ag02/xtx_01_top_base_ag02"
+    },
+    {
+      "top_entry_index": 3,
+      "top_entry_name": "top_base_vx01.bxx",
+      "top_entry_offset": 1591664,
+      "nested_entry_index": 1,
+      "nested_entry_name": "top_base_vx01.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 1593824,
+      "folder": "entries/03_top_base_vx01/xtx_01_top_base_vx01"
+    },
+    {
+      "top_entry_index": 4,
+      "top_entry_name": "top_cur_1e.bxx",
+      "top_entry_offset": 2122096,
+      "nested_entry_index": 1,
+      "nested_entry_name": "top_cur_1e.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 2124256,
+      "folder": "entries/04_top_cur_1e/xtx_01_top_cur_1e"
+    },
+    {
+      "top_entry_index": 5,
+      "top_entry_name": "top_cur_vh.bxx",
+      "top_entry_offset": 2652528,
+      "nested_entry_index": 1,
+      "nested_entry_name": "top_cur_vh.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 2654688,
+      "folder": "entries/05_top_cur_vh/xtx_01_top_cur_vh"
+    },
+    {
+      "top_entry_index": 6,
+      "top_entry_name": "top_red.bxx",
+      "top_entry_offset": 3182960,
+      "nested_entry_index": 1,
+      "nested_entry_name": "top_red.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 3185120,
+      "folder": "entries/06_top_red/xtx_01_top_red"
+    },
+    {
+      "top_entry_index": 7,
+      "top_entry_name": "top_title.bxx",
+      "top_entry_offset": 3713392,
+      "nested_entry_index": 1,
+      "nested_entry_name": "top_title.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 3715552,
+      "folder": "entries/07_top_title/xtx_01_top_title"
+    },
+    {
+      "top_entry_index": 8,
+      "top_entry_name": "top_ve.bxx",
+      "top_entry_offset": 4243824,
+      "nested_entry_index": 1,
+      "nested_entry_name": "top_ve.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 4245984,
+      "folder": "entries/08_top_ve/xtx_01_top_ve"
+    }
+  ],
+  "rebuild_rules": [
+    "original_payload.bin is the structural base.",
+    "Only XTX folders with modified PSMT4.png or PSMT8.png are rewritten.",
+    "No offsets, sizes, names, xtxinfo blocks, or entry tables are regenerated.",
+    "No-edit rebuild copies original.npr byte-for-byte."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "top_entry_index": 6,
+  "top_entry_name": "top_red.bxx",
+  "top_entry_offset": 3182960,
+  "nested_entry_index": 1,
+  "nested_entry_name": "top_red.xtx",
+  "nested_entry_offset": 2160,
+  "payload_xtx_offset": 3185120,
+  "tool_version": 4,
+  "xtx_size": 528272,
+  "xtx_sha256": "228b564d46e2faf5c5c99a28bc60a30eb62fe892c4bee64f139877a73c1f3ded",
+  "image_count": 2,
+  "images": [
+    {
+      "index": 0,
+      "width": 512,
+      "height": 128,
+      "bw": 8,
+      "bw_eff": 8,
+      "offset": 0,
+      "img_size": 16386,
+      "img_addr": 64,
+      "x0": 0,
+      "y0": 0,
+      "pstart": 96,
+      "pend": 262240,
+      "valid": true
+    },
+    {
+      "index": 1,
+      "width": 512,
+      "height": 128,
+      "bw": 8,
+      "bw_eff": 8,
+      "offset": 65536,
+      "img_size": 16386,
+      "img_addr": 262240,
+      "x0": 0,
+      "y0": 128,
+      "pstart": 262272,
+      "pend": 524416,
+      "valid": true
+    }
+  ],
+  "edit_files": {
+    "PSMT4": {
+      "path": "PSMT4.png",
+      "sha256": "d094895ac3fdb3dc56b37188117b5f95bae80adc194cfc309f59daac45397e01",
+      "size": [
+        1024,
+        1024
+      ],
+      "max_index": 15,
+      "config": {
+        "profile": "full_atlas_psmt4",
+        "width": 1024,
+        "height": 1024,
+        "dbp": 0,
+        "dbw4": 64,
+        "dbw32": 512,
+        "source": "default",
+        "notes": [
+          "PSMT4 is a logical GS interpretation of the same XTX upload bytes.",
+          "Edit exact index values 0..15 only.",
+          "Known profiles are applied by the tool on extract and rebuild.",
+          "If this geometry is wrong for a specific texture, set manual_config=true in this config before rebuilding."
+        ]
+      }
+    },
+    "PSMT8": {
+      "path": "PSMT8.png",
+      "sha256": "9ce0a5d428ceb7df2a2ec76b18221231d8843cf8e6340b9fe365d4e31ece3126",
+      "size": [
+        1024,
+        1024
+      ],
+      "max_index": 255
+    }
+  },
+  "rebuild_rule": [
+    "Only PSMT4.png and PSMT8.png are edit inputs.",
+    "If neither PNG changed, this XTX is copied byte-for-byte.",
+    "If exactly one PNG changed, that interpretation is rebuilt.",
+    "If both PNGs changed, rebuild stops to avoid ambiguous overwrite.",
+    "PNG pixels are index values. RGB/RGBA color quantization is not used."
+  ]
+}

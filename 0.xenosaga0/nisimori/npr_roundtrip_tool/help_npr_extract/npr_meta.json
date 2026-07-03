@@ -1,0 +1,843 @@
+{
+  "tool": "npr_roundtrip_tool",
+  "version": 4,
+  "source_npr_name": "help.npr",
+  "source_npr_path": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help.npr",
+  "source_npr_size": 1239184,
+  "source_npr_sha256": "1485e53196a52ed3d9ca8f092d485a3ca2c737d448f1fcef27cfc2cf12a020b4",
+  "payload_size": 10078928,
+  "payload_sha256": "70a16efbd1c049bf21f9331b878ac4630f2b9be82c90e49c8fa2b75b784d37d5",
+  "payload_container": {
+    "magic": "NLNK",
+    "name_size": 32,
+    "offset_table": 640,
+    "count": 19
+  },
+  "entries": [
+    {
+      "index": 0,
+      "name": "help_01_01.bxx",
+      "offset": 720,
+      "end": 531152,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/00_help_01_01/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_01_01.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "help_01_02.bxx",
+      "offset": 531152,
+      "end": 1061584,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/01_help_01_02/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_01_02.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "help_01_03_high.bxx",
+      "offset": 1061584,
+      "end": 1592016,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/02_help_01_03_high/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_01_03_high.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "help_01_03_high2.bxx",
+      "offset": 1592016,
+      "end": 2122448,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/03_help_01_03_high2/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_01_03_high2.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "help_01_03_low.bxx",
+      "offset": 2122448,
+      "end": 2652880,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/04_help_01_03_low/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_01_03_low.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "help_01_03_mid.bxx",
+      "offset": 2652880,
+      "end": 3183312,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/05_help_01_03_mid/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_01_03_mid.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "help_02_03_09.bxx",
+      "offset": 3183312,
+      "end": 3713744,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/06_help_02_03_09/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_02_03_09.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "help_02_03_high.bxx",
+      "offset": 3713744,
+      "end": 4244176,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/07_help_02_03_high/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_02_03_high.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "help_02_03_low.bxx",
+      "offset": 4244176,
+      "end": 4774608,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/08_help_02_03_low/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_02_03_low.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "help_02_03_low2.bxx",
+      "offset": 4774608,
+      "end": 5305040,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/09_help_02_03_low2/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_02_03_low2.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "help_02_03_mid.bxx",
+      "offset": 5305040,
+      "end": 5835472,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/10_help_02_03_mid/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_02_03_mid.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "help_02_03_mid2.bxx",
+      "offset": 5835472,
+      "end": 6365904,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/11_help_02_03_mid2/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_02_03_mid2.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "help_03_01.bxx",
+      "offset": 6365904,
+      "end": 6896336,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/12_help_03_01/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_03_01.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "help_03_02.bxx",
+      "offset": 6896336,
+      "end": 7426768,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/13_help_03_02/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_03_02.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "help_03_03_high.bxx",
+      "offset": 7426768,
+      "end": 7957200,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/14_help_03_03_high/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_03_03_high.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "help_03_03_high2.bxx",
+      "offset": 7957200,
+      "end": 8487632,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/15_help_03_03_high2/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_03_03_high2.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "help_03_03_low.bxx",
+      "offset": 8487632,
+      "end": 9018064,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/16_help_03_03_low/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_03_03_low.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "help_bg_grad.bxx",
+      "offset": 9018064,
+      "end": 9548496,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/17_help_bg_grad/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_bg_grad.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "help_bg_pad.bxx",
+      "offset": 9548496,
+      "end": 10078928,
+      "size": 530432,
+      "magic": "NBXX",
+      "original_bin": "entries/18_help_bg_pad/original.bin",
+      "nested_container": {
+        "magic": "NBXX",
+        "name_size": 32,
+        "offset_table": 96,
+        "count": 2
+      },
+      "nested_entries": [
+        {
+          "index": 0,
+          "name": "xtxinfo",
+          "offset": 112,
+          "end": 2160,
+          "size": 2048,
+          "magic": "...."
+        },
+        {
+          "index": 1,
+          "name": "help_bg_pad.xtx",
+          "offset": 2160,
+          "end": 530432,
+          "size": 528272,
+          "magic": "XTX."
+        }
+      ]
+    }
+  ],
+  "xtx_items": [
+    {
+      "top_entry_index": 0,
+      "top_entry_name": "help_01_01.bxx",
+      "top_entry_offset": 720,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_01_01.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 2880,
+      "folder": "entries/00_help_01_01/xtx_01_help_01_01"
+    },
+    {
+      "top_entry_index": 1,
+      "top_entry_name": "help_01_02.bxx",
+      "top_entry_offset": 531152,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_01_02.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 533312,
+      "folder": "entries/01_help_01_02/xtx_01_help_01_02"
+    },
+    {
+      "top_entry_index": 2,
+      "top_entry_name": "help_01_03_high.bxx",
+      "top_entry_offset": 1061584,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_01_03_high.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 1063744,
+      "folder": "entries/02_help_01_03_high/xtx_01_help_01_03_high"
+    },
+    {
+      "top_entry_index": 3,
+      "top_entry_name": "help_01_03_high2.bxx",
+      "top_entry_offset": 1592016,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_01_03_high2.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 1594176,
+      "folder": "entries/03_help_01_03_high2/xtx_01_help_01_03_high2"
+    },
+    {
+      "top_entry_index": 4,
+      "top_entry_name": "help_01_03_low.bxx",
+      "top_entry_offset": 2122448,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_01_03_low.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 2124608,
+      "folder": "entries/04_help_01_03_low/xtx_01_help_01_03_low"
+    },
+    {
+      "top_entry_index": 5,
+      "top_entry_name": "help_01_03_mid.bxx",
+      "top_entry_offset": 2652880,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_01_03_mid.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 2655040,
+      "folder": "entries/05_help_01_03_mid/xtx_01_help_01_03_mid"
+    },
+    {
+      "top_entry_index": 6,
+      "top_entry_name": "help_02_03_09.bxx",
+      "top_entry_offset": 3183312,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_02_03_09.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 3185472,
+      "folder": "entries/06_help_02_03_09/xtx_01_help_02_03_09"
+    },
+    {
+      "top_entry_index": 7,
+      "top_entry_name": "help_02_03_high.bxx",
+      "top_entry_offset": 3713744,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_02_03_high.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 3715904,
+      "folder": "entries/07_help_02_03_high/xtx_01_help_02_03_high"
+    },
+    {
+      "top_entry_index": 8,
+      "top_entry_name": "help_02_03_low.bxx",
+      "top_entry_offset": 4244176,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_02_03_low.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 4246336,
+      "folder": "entries/08_help_02_03_low/xtx_01_help_02_03_low"
+    },
+    {
+      "top_entry_index": 9,
+      "top_entry_name": "help_02_03_low2.bxx",
+      "top_entry_offset": 4774608,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_02_03_low2.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 4776768,
+      "folder": "entries/09_help_02_03_low2/xtx_01_help_02_03_low2"
+    },
+    {
+      "top_entry_index": 10,
+      "top_entry_name": "help_02_03_mid.bxx",
+      "top_entry_offset": 5305040,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_02_03_mid.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 5307200,
+      "folder": "entries/10_help_02_03_mid/xtx_01_help_02_03_mid"
+    },
+    {
+      "top_entry_index": 11,
+      "top_entry_name": "help_02_03_mid2.bxx",
+      "top_entry_offset": 5835472,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_02_03_mid2.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 5837632,
+      "folder": "entries/11_help_02_03_mid2/xtx_01_help_02_03_mid2"
+    },
+    {
+      "top_entry_index": 12,
+      "top_entry_name": "help_03_01.bxx",
+      "top_entry_offset": 6365904,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_03_01.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 6368064,
+      "folder": "entries/12_help_03_01/xtx_01_help_03_01"
+    },
+    {
+      "top_entry_index": 13,
+      "top_entry_name": "help_03_02.bxx",
+      "top_entry_offset": 6896336,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_03_02.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 6898496,
+      "folder": "entries/13_help_03_02/xtx_01_help_03_02"
+    },
+    {
+      "top_entry_index": 14,
+      "top_entry_name": "help_03_03_high.bxx",
+      "top_entry_offset": 7426768,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_03_03_high.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 7428928,
+      "folder": "entries/14_help_03_03_high/xtx_01_help_03_03_high"
+    },
+    {
+      "top_entry_index": 15,
+      "top_entry_name": "help_03_03_high2.bxx",
+      "top_entry_offset": 7957200,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_03_03_high2.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 7959360,
+      "folder": "entries/15_help_03_03_high2/xtx_01_help_03_03_high2"
+    },
+    {
+      "top_entry_index": 16,
+      "top_entry_name": "help_03_03_low.bxx",
+      "top_entry_offset": 8487632,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_03_03_low.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 8489792,
+      "folder": "entries/16_help_03_03_low/xtx_01_help_03_03_low"
+    },
+    {
+      "top_entry_index": 17,
+      "top_entry_name": "help_bg_grad.bxx",
+      "top_entry_offset": 9018064,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_bg_grad.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 9020224,
+      "folder": "entries/17_help_bg_grad/xtx_01_help_bg_grad"
+    },
+    {
+      "top_entry_index": 18,
+      "top_entry_name": "help_bg_pad.bxx",
+      "top_entry_offset": 9548496,
+      "nested_entry_index": 1,
+      "nested_entry_name": "help_bg_pad.xtx",
+      "nested_entry_offset": 2160,
+      "payload_xtx_offset": 9550656,
+      "folder": "entries/18_help_bg_pad/xtx_01_help_bg_pad"
+    }
+  ],
+  "rebuild_rules": [
+    "original_payload.bin is the structural base.",
+    "Only XTX folders with modified PSMT4.png or PSMT8.png are rewritten.",
+    "No offsets, sizes, names, xtxinfo blocks, or entry tables are regenerated.",
+    "No-edit rebuild copies original.npr byte-for-byte."
+  ]
+}

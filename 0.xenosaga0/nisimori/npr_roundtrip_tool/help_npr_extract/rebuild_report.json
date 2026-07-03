@@ -1,0 +1,171 @@
+{
+  "tool": "npr_roundtrip_tool",
+  "version": 4,
+  "source_extract_folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract",
+  "output_npr": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\help_rebuilt.npr",
+  "output_npr_size": 1239712,
+  "original_payload_size": 10078928,
+  "rebuilt_payload_size": 10078928,
+  "payload_size_equal": true,
+  "payload_changed_bytes": 7187,
+  "payload_changed_range_count": 3223,
+  "arx_roundtrip_payload_equal": true,
+  "xtx_reports": [
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\00_help_01_01\\xtx_01_help_01_01",
+      "mode": "PSMT4",
+      "payload_xtx_offset": 2880,
+      "xtx_size": 528272,
+      "changed_bytes": 4295,
+      "changed_range_count": 2271,
+      "old_sha256": "8f0406d95723ae37aa55c000a8993761865eb43df52890215106bb073f8b7388",
+      "new_sha256": "3a490cc066e6bf36c49290eac246a1095b9f952a0d1c7e54ba1724d3707c31c7"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\01_help_01_02\\xtx_01_help_01_02",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "bb86ce679121144155621fc10292a97699b8f4e64313b7fe0ccd3172a10098f4",
+      "new_sha256": "bb86ce679121144155621fc10292a97699b8f4e64313b7fe0ccd3172a10098f4"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\02_help_01_03_high\\xtx_01_help_01_03_high",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "17b4ca86789845c45ddd9bae399631e0ff432b322e123900aac6c109ca90702d",
+      "new_sha256": "17b4ca86789845c45ddd9bae399631e0ff432b322e123900aac6c109ca90702d"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\03_help_01_03_high2\\xtx_01_help_01_03_high2",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "316ea0c87dc285a51cdd3e5f42286128a9924c26ccd26abfb8d7b5748fb0a38c",
+      "new_sha256": "316ea0c87dc285a51cdd3e5f42286128a9924c26ccd26abfb8d7b5748fb0a38c"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\04_help_01_03_low\\xtx_01_help_01_03_low",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "59e9564729d84d93540690d7ae416bd98a426d8c4d645e23695b4353007683ab",
+      "new_sha256": "59e9564729d84d93540690d7ae416bd98a426d8c4d645e23695b4353007683ab"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\05_help_01_03_mid\\xtx_01_help_01_03_mid",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "83de473f971f56d9e540fda91a0dd8f2e846efde6f2a2d92e3eb8c78af9c3905",
+      "new_sha256": "83de473f971f56d9e540fda91a0dd8f2e846efde6f2a2d92e3eb8c78af9c3905"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\06_help_02_03_09\\xtx_01_help_02_03_09",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "6c1d13a26a2582bb0920c0e2ec4993a38aafacb8a31cf128b5ccb66d8aaa598a",
+      "new_sha256": "6c1d13a26a2582bb0920c0e2ec4993a38aafacb8a31cf128b5ccb66d8aaa598a"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\07_help_02_03_high\\xtx_01_help_02_03_high",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "5ec02490896ac5f100c8f2bece5dac662418120436c91bd42a4ff2f86bd8de0d",
+      "new_sha256": "5ec02490896ac5f100c8f2bece5dac662418120436c91bd42a4ff2f86bd8de0d"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\08_help_02_03_low\\xtx_01_help_02_03_low",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "6918785f5514715b39bdfd46a973d26537abf6aedb8a59f6eac2034447297139",
+      "new_sha256": "6918785f5514715b39bdfd46a973d26537abf6aedb8a59f6eac2034447297139"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\09_help_02_03_low2\\xtx_01_help_02_03_low2",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "a31060f6e2829410f2905a9420cc10f8e672d1d28428e408696100c7ce44f392",
+      "new_sha256": "a31060f6e2829410f2905a9420cc10f8e672d1d28428e408696100c7ce44f392"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\10_help_02_03_mid\\xtx_01_help_02_03_mid",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "0ca0a3f811b7a22b9705b29fdae64faedde4ead7b67169db69eb2c72bcdf4af8",
+      "new_sha256": "0ca0a3f811b7a22b9705b29fdae64faedde4ead7b67169db69eb2c72bcdf4af8"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\11_help_02_03_mid2\\xtx_01_help_02_03_mid2",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "2552f8be99fac8122d59a607ff17d040a333d2d41e50ceff9f7f2d188e9c4236",
+      "new_sha256": "2552f8be99fac8122d59a607ff17d040a333d2d41e50ceff9f7f2d188e9c4236"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\12_help_03_01\\xtx_01_help_03_01",
+      "mode": "PSMT4",
+      "payload_xtx_offset": 6368064,
+      "xtx_size": 528272,
+      "changed_bytes": 2892,
+      "changed_range_count": 952,
+      "old_sha256": "c9d9138a4742fc3c85445128f483161afbf97c281c77decce62176e9c760e6c7",
+      "new_sha256": "f937dcc13631ca30177aa488b00f7153262014478f872b8b7f256090cb79f127"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\13_help_03_02\\xtx_01_help_03_02",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "c69305bd640e97ded638ea2341d939561a82667903771e754948f195fee66003",
+      "new_sha256": "c69305bd640e97ded638ea2341d939561a82667903771e754948f195fee66003"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\14_help_03_03_high\\xtx_01_help_03_03_high",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "c25bbeab1322903c85bfe3f3b2e5249aa4fefef8da08ae5e9651cf3a60fb1330",
+      "new_sha256": "c25bbeab1322903c85bfe3f3b2e5249aa4fefef8da08ae5e9651cf3a60fb1330"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\15_help_03_03_high2\\xtx_01_help_03_03_high2",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "e3d1b8a374c226b856dc12447c764fe44a79452ea31ff1efd0f5970ec5001028",
+      "new_sha256": "e3d1b8a374c226b856dc12447c764fe44a79452ea31ff1efd0f5970ec5001028"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\16_help_03_03_low\\xtx_01_help_03_03_low",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "878641a2fb486119183e5e2056cc04e12be23f471dd6e01a1c4b506e4c956bb6",
+      "new_sha256": "878641a2fb486119183e5e2056cc04e12be23f471dd6e01a1c4b506e4c956bb6"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\17_help_bg_grad\\xtx_01_help_bg_grad",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "609cf92608fa5a92479fc8df4110985907235c2091926993565fb2d252d3fe75",
+      "new_sha256": "609cf92608fa5a92479fc8df4110985907235c2091926993565fb2d252d3fe75"
+    },
+    {
+      "folder": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\nisimori\\npr_roundtrip_tool\\help_npr_extract\\entries\\18_help_bg_pad\\xtx_01_help_bg_pad",
+      "mode": "unchanged",
+      "changed_bytes": 0,
+      "changed_range_count": 0,
+      "old_sha256": "fdfbd1885f5b8e366d65e4df0b766b9076c311802b3abce7c36171ceb5f3a0b6",
+      "new_sha256": "fdfbd1885f5b8e366d65e4df0b766b9076c311802b3abce7c36171ceb5f3a0b6"
+    }
+  ]
+}
