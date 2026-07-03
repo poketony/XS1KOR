@@ -50,7 +50,7 @@ arx_tool = load_module("xs1kor_arx_tool", XTX_DIR / "arx_tool.py")
 xtx_tool = load_module("xs1kor_xtx_tool", XTX_DIR / "xtx_tool_ver7_fixed_palette_formula.py")
 psmt4_tool = load_module(
     "xs1kor_psmt4_codec",
-    ROOT / "codex-lab" / "nisimori_text_workflow" / "scripts" / "help_psmt4_codec.py",
+    TOOL_DIR / "help_psmt4_codec.py",
 )
 
 
