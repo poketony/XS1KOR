@@ -1,0 +1,8 @@
+#SUBJECT:
+#FROM:
+<CTL:0D02>第二種装備<CTL:0D00>
+――――――――――――――――――――――――
+ <CTL:1901>ＫＯＳАＭＯＳ<CTL:1900>の実戦装備の一つ。
+ 現行の筐体のフレーム材質や一次装甲の
+ 素材置換などを意味すると思われる。
+<NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL>

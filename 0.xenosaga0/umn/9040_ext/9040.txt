@@ -1,0 +1,7 @@
+#SUBJECT:
+#FROM:
+<CTL:0D02>エンヴァイラメンタル・バグ<CTL:0D00>
+――――――――――――――――――――――――
+ 閉塞した空間をクリーンに保つナノマシン。
+ ヨアキム・ミズラヒの遺した技術の一つ。
+<NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL>

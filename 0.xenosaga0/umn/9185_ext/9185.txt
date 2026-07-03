@@ -1,0 +1,7 @@
+#SUBJECT:
+#FROM:
+<CTL:0D02>プライマー・ウォーキング<CTL:0D00>
+――――――――――――――――――――――――
+ ゾハル残存波動を検出する技術。
+ 語源は塩基配列解析方法の一名称。
+<NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL>

@@ -1,0 +1,7 @@
+#SUBJECT:
+#FROM:
+<CTL:0D02>絶対座標<CTL:0D00>
+――――――――――――――――――――――――
+ 宇宙の超球面構造を基に算出される、宙域
+ 座標のこと。
+<NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL>

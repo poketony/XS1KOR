@@ -1,0 +1,8 @@
+#SUBJECT:
+#FROM:
+<CTL:0D02>セニル<CTL:0D00>
+――――――――――――――――――――――――
+ 星団連邦所属の惑星の一つ。
+ アンドリューの台詞から推察するに、<CTL:1901>ＵАＴＩＣ<CTL:1900>
+ 機関に関係ある施設があるとみられる。
+<NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL>

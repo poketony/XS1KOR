@@ -1,0 +1,8 @@
+#SUBJECT:
+#FROM:
+<CTL:0D02>ネロ<CTL:0D00>
+――――――――――――――――――――――――
+ 第<CTL:1901>５<CTL:1900>代ローマ皇帝。
+ 「ネロは地獄の湖で釣りをしているそうだ」
+ はシェイクスピア作「リア王」より。
+<NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL>

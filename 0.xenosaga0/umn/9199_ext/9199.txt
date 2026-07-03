@@ -1,0 +1,9 @@
+#SUBJECT:
+#FROM:
+<CTL:0D02>ボロメオ大<CTL:0D00>
+――――――――――――――――――――――――
+ 星団連邦の最高学府の一つ。
+ 科学、工学系の大学で、ヴェクターには
+ ここの出身者が多い。
+ アレンもその内の一人。
+<NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL>

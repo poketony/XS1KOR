@@ -1,0 +1,7 @@
+#SUBJECT:
+#FROM:
+<CTL:0D02>テロメラーゼ<CTL:0D00>
+――――――――――――――――――――――――
+ テロメア（染色体の両端にある<CTL:1901>ＤＮＡ<CTL:1900>の配列）
+ を修復する酵素。
+<NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL>

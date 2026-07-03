@@ -1,0 +1,7 @@
+#SUBJECT:
+#FROM:
+<CTL:0D02>本<CTL:0D00>
+――――――――――――――――――――――――
+ この時代では骨董品となった、紙で製本
+ された書物を指す。
+<NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL>
