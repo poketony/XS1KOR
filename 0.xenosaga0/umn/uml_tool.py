@@ -340,19 +340,23 @@ def split_header_body(text: str):
     body_start = 0
 
     for idx, line in enumerate(lines):
-        # 件名：<CTL:0D02>...
-        if line.startswith('件名：'):
-            raw_subj = line[len('件名：'):]
+        # 件名：<CTL:0D02>... / 제목：<CTL:0D02>...
+        if line.startswith(('件名：', '제목：')):
+            raw_subj = line.split('：', 1)[1]
             # <CTL:0D02> 마커 제거
             raw_subj = re.sub(r'<CTL:[0-9A-Fa-f]{4}>', '', raw_subj)
             subject = raw_subj.strip()
-        elif line.startswith('差出人：'):
-            sender = line[len('差出人：'):].strip()
+        elif line.startswith(('差出人：', '발신인：')):
+            sender = line.split('：', 1)[1].strip()
             body_start = idx + 1
             break
 
     body = '\n'.join(lines[body_start:])
     return subject, sender, body
+
+
+def normalize_rebuild_labels(text: str) -> str:
+    return text.replace('件名：', '제목：').replace('差出人：', '발신인：')
 
 
 # ────────────────────────────────────────────────────────────
@@ -421,9 +425,9 @@ def encode_text(text: str, charmap: dict | None) -> bytes:
 
 def rebuild_header_body(subject: str, sender: str, body: str, charmap: dict | None) -> bytes:
     """제목/발신자/본문을 원본 형식대로 바이너리로 조합"""
-    # 件名：<CTL:0D02>제목\n差出人：발신자\n
-    header_text = f'件名：<CTL:0D02>{subject}\n差出人：{sender}\n'
-    full_text = header_text + body
+    # 제목：<CTL:0D02>제목\n발신인：발신자\n
+    header_text = f'제목：<CTL:0D02>{subject}\n발신인：{sender}\n'
+    full_text = header_text + normalize_rebuild_labels(body)
     # 텍스트 종료 마커 <CTL:0D00> 이 body 끝에 있어야 함
     terminator_re = re.compile(r'<CTL:0D00>(?:\s|\x00|<NUL>|<BYTE:00>)*\Z')
     if not terminator_re.search(full_text):
