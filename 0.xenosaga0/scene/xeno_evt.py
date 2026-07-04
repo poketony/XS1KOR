@@ -483,7 +483,7 @@ def rebuild(p, new_strs_bc, tbl, bc_to_tag8k=None):
         orig_raw = pool.get(str_pool_idx, b'')
         has_null = orig_raw.endswith(b'\x00')
         if new_str == EMPTY_MARKER:
-            pool_new[str_pool_idx] = orig_raw
+            new_raw = orig_raw
         else:
             processed = process_sub_tag(new_str)
             warn_long_visual_lines(processed, 23, f"bc {n}")
