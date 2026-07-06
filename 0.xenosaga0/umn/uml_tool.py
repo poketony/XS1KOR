@@ -22,9 +22,8 @@ uml_tool.py  –  Xenosaga UMN 메일 파일(.uml) 추출/재삽입 도구
   0x40 0x2A      : @* 페이지 브레이크
 
 추출 형식 (.txt):
-  첫 줄: #SUBJECT:<제목>
-  두번째 줄: #FROM:<발신자>
-  이후: 본문 (컨트롤 태그는 <TAG:XXYYZZ>, 단일 제어 바이트는 <BYTE:XX> 형태로 표시)
+  텍스트 섹션 전체를 그대로 추출
+  컨트롤 태그는 <TAG:XXYYZZ>, 단일 제어 바이트는 <BYTE:XX> 형태로 표시
   이미지 영역:
     <basename>_00.jpg... : 블록 안의 개별 JPEG 스트림
 """
@@ -355,10 +354,6 @@ def split_header_body(text: str):
     return subject, sender, body
 
 
-def normalize_rebuild_labels(text: str) -> str:
-    return text.replace('件名：', '제목：').replace('差出人：', '발신인：')
-
-
 # ────────────────────────────────────────────────────────────
 # 텍스트 → 바이너리 재조립
 # ────────────────────────────────────────────────────────────
@@ -423,11 +418,8 @@ def encode_text(text: str, charmap: dict | None) -> bytes:
     return bytes(out)
 
 
-def rebuild_header_body(subject: str, sender: str, body: str, charmap: dict | None) -> bytes:
-    """제목/발신자/본문을 원본 형식대로 바이너리로 조합"""
-    # 제목：<CTL:0D02>제목\n발신인：발신자\n
-    header_text = f'제목：<CTL:0D02>{subject}\n발신인：{sender}\n'
-    full_text = header_text + normalize_rebuild_labels(body)
+def rebuild_text(full_text: str, charmap: dict | None) -> bytes:
+    """추출된 텍스트 전체를 바이너리로 조합"""
     # 텍스트 종료 마커 <CTL:0D00> 이 body 끝에 있어야 함
     terminator_re = re.compile(r'<CTL:0D00>(?:\s|\x00|<NUL>|<BYTE:00>)*\Z')
     if not terminator_re.search(full_text):
@@ -468,9 +460,7 @@ class UMLFile:
     # ── 내보내기 ──────────────────────────────────────────
     def export_txt(self, txt_path: str):
         with open(txt_path, 'w', encoding='utf-8') as f:
-            f.write(f'#SUBJECT:{self.subject}\n')
-            f.write(f'#FROM:{self.sender}\n')
-            f.write(self.body)
+            f.write(self.text_str)
         print(f'  [TXT] {txt_path}')
 
     def export_jpg_parts(self, out_dir: str, basename: str):
@@ -656,22 +646,9 @@ def cmd_rebuild(args):
     if txt_path:
         # 번역 텍스트 읽기
         with open(txt_path, 'r', encoding='utf-8') as f:
-            lines = f.read().splitlines(keepends=True)
+            full_text = f.read()
 
-        # #SUBJECT / #FROM 파싱
-        subject = ''
-        sender  = ''
-        body_lines = []
-        for line in lines:
-            if line.startswith('#SUBJECT:'):
-                subject = line[len('#SUBJECT:'):].rstrip('\n')
-            elif line.startswith('#FROM:'):
-                sender = line[len('#FROM:'):].rstrip('\n')
-            else:
-                body_lines.append(line)
-        body = ''.join(body_lines)
-
-        new_text_bytes = rebuild_header_body(subject, sender, body, charmap)
+        new_text_bytes = rebuild_text(full_text, charmap)
     else:
         # 원본 텍스트 그대로 roundtrip
         new_text_bytes = u.text_bytes

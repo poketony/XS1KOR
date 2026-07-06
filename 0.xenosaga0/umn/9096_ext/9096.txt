@@ -1,6 +1,4 @@
-#SUBJECT:
-#FROM:
-<CTL:0D02>十二使徒<CTL:0D00>
+<CTL:0D02>１２사도<CTL:0D00>
 ――――――――――――――――――――――――
- イエス・キリストに従った十二聖人。
+ 예수 그리스도를 따른 １２명의 성인．
 <NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL>
