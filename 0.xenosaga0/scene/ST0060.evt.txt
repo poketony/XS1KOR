@@ -383,7 +383,7 @@
 /[waitkey(1)]/[clear()]
 「고양이에게 생선 가시 맡긴다」<lf>
 「개천에서 욕 나온다」<lf>
-「와규 정식」
+「약은 간식」
 # dup_of: line 5, tag8 5
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 2

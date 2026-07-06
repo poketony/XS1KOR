@@ -1,0 +1,11 @@
+pss
+	rate 929850
+
+	stream video:0
+		input "C:\Users\JO\XS1KOR\ÄÆ½Å ¿µ»ó\2033B\2033B_video_0_KOR_fixed.m2v"
+	end
+
+	stream adpcm:0
+		input "C:\Users\JO\XS1KOR\ÄÆ½Å ¿µ»ó\2033B\2033B_vag_0.ads"
+	end
+end
