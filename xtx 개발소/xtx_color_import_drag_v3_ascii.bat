@@ -54,19 +54,25 @@ if /I "!BASE:~-4!"=="_out" set "BASE=!BASE:~0,-4!"
 if /I "!BASE:~-10!"=="_extracted" set "BASE=!BASE:~0,-10!"
 
 set "XTX=!PARENT!!BASE!.xtx"
+if not exist "!XTX!" set "XTX=!PARENT!!BASE!.bin"
+if not exist "!XTX!" set "XTX=!PARENT!!BASE!"
 set "LEX=!PARENT!!BASE!.lex"
-set "OUT=!PARENT!!BASE!_rebuilt.xtx"
+for %%X in ("!XTX!") do set "XTXEXT=%%~xX"
+if "!XTXEXT!"=="" set "XTXEXT=.xtx"
+set "OUT=!PARENT!!BASE!_rebuilt!XTXEXT!"
 
 echo.
 echo ============================================================
 echo [FOLDER] "!FOLDER!"
 echo [BASE]   "!BASE!"
-echo [XTX]    "!XTX!"
+echo [INPUT]  "!XTX!"
 echo [OUT]    "!OUT!"
 
 if not exist "!XTX!" (
-    echo [ERROR] Original XTX not found.
-    echo Expected: "!XTX!"
+    echo [ERROR] Original XTX/ARX file not found by base name.
+    echo Tried: "!PARENT!!BASE!.xtx"
+    echo        "!PARENT!!BASE!.bin"
+    echo        "!PARENT!!BASE!"
     shift
     goto loop
 )

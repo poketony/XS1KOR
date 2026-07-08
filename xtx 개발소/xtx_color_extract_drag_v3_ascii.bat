@@ -28,7 +28,7 @@ if %errorlevel%==0 (
 )
 
 if "%~1"=="" (
-    echo Usage: drag .xtx file^(s^) onto this BAT.
+    echo Usage: drag XTX/ARX file^(s^) onto this BAT. Extension is ignored; file magic is used.
     pause
     exit /b 1
 )
@@ -37,19 +37,12 @@ if "%~1"=="" (
 if "%~1"=="" goto done
 
 set "XTX=%~f1"
-set "EXT=%~x1"
 set "LEX=%~dpn1.lex"
 set "OUT=%~dpn1_out"
 
-if /I not "!EXT!"==".xtx" (
-    echo [SKIP] Not an XTX file: "!XTX!"
-    shift
-    goto loop
-)
-
 echo.
 echo ============================================================
-echo [XTX] "!XTX!"
+echo [INPUT] "!XTX!"
 echo [OUT] "!OUT!"
 
 if exist "!LEX!" (

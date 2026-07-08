@@ -17,6 +17,12 @@ from PIL import Image
 TOOL_DIR = Path(__file__).resolve().parent
 TOOL_VERSION = 4
 NAMED_CONTAINER_MAGICS = (b"NLNK", b"NBXX", b"NBGL", b"PTCL")
+GS_LAYOUT_FACTS = {
+    "PSMT8_PAGE": [128, 64],
+    "PSMT4_PAGE": [128, 128],
+    "PSMT8_CLUT_ENTRIES": 256,
+    "PSMT4_CLUT_ENTRIES": 16,
+}
 
 
 def load_module(name: str, path: Path):
@@ -234,8 +240,10 @@ def psmt4_config(top_entry_name: str, psmt8_size: tuple[int, int]) -> dict:
         "dbw4": dbw4,
         "dbw32": max(1, width // 2),
         "source": source,
+        "gs_layout_facts": GS_LAYOUT_FACTS,
         "notes": [
             "PSMT4 is a logical GS interpretation of the same XTX upload bytes.",
+            "PCSX2 GS layout basis: PSMT4 page=128x128, PSMT8 page=128x64, CLUT entries are 16/256.",
             "Edit exact index values 0..15 only.",
             "Known profiles are applied by the tool on extract and rebuild.",
             "If this geometry is wrong for a specific texture, set manual_config=true in this config before rebuilding.",
@@ -326,6 +334,11 @@ def extract_xtx(xtx_data: bytes, out_dir: Path, meta_base: dict, manifest_xtx: l
         "xtx_sha256": sha256(xtx_data),
         "image_count": len(images),
         "images": [dict(img) for img in images],
+        "gs_layout_facts": GS_LAYOUT_FACTS,
+        "metadata_runtime_evidence": [
+            "OV12.OVL strings reference rg_help.euc.c, help.npr, help_*.bxx, RgBxxGetXtx, pXtxData, and pLexData.",
+            "This supports the container -> XTX/LEX -> GS indexed texture pipeline.",
+        ],
         "edit_files": {
             "PSMT4": {
                 "path": "PSMT4.png",
