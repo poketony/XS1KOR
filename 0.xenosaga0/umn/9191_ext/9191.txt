@@ -1,5 +1,5 @@
-<CTL:0D02>ペシェ<CTL:0D00>
+<CTL:0D02>페셰<CTL:0D00>
 ――――――――――――――――――――――――
  <CTL:1901>ＰВｃｈｅｒ<CTL:1900>
- 仏語で“桃”の意。
+ 프랑스어로 “복숭아”라는 뜻．
 <NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL>

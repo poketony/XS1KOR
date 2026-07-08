@@ -1,5 +1,5 @@
-<CTL:0D02>ペシェ（罪）<CTL:0D00>
+<CTL:0D02>페셰（죄）<CTL:0D00>
 ――――――――――――――――――――――――
  <CTL:1901>ＰЕｃｈｅｒ<CTL:1900>
- 仏語で“宗教上の罪”の意。
+ 프랑스어로 “종교상의 죄”라는 뜻．
 <NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL><NUL>
