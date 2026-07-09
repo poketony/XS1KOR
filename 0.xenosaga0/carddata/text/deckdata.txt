@@ -1,0 +1,52 @@
+﻿# source=deckdata.dat
+# format: <zero-based deck id> TAB name TAB <utf-8 text>
+# deck names are fixed in-record fields; encoded text must fit in 31 bytes plus null
+# escapes: \n, \r, \t, \\
+000	name	　１）시온과 지기
+001	name	　２）해머 어택
+002	name	　３）시민 단결
+003	name	　４）ＶＸ 어택
+004	name	　５）그노시스 어택
+005	name	　６）낭비도사 매슈스
+006	name	　７）ギャルギャル
+007	name	　８）인간 파워즈
+008	name	　９）탄도 어택
+009	name	１０）レアシュー
+010	name	１１）멋있는 어택
+011	name	１２）철벽의 모모
+012	name	１３）그노시스 습격
+013	name	１４）이벤트 어택
+014	name	１５）코먼 덱
+015	name	１６）엘자 크루
+016	name	１７）안경 슈트！
+017	name	１８）順当攻撃
+018	name	１９）대낭비
+019	name	２０）オールスター
+020	name	２１）リセッター
+021	name	２２）죽음의 예감
+022	name	２３）리얼리언즈
+023	name	２４）시온＆Ｊｒ．
+024	name	２５）로봇 인간 덱
+025	name	２６）弾道魂！
+026	name	２７）사마귀 전법
+027	name	２８）혼돈의 조하르
+028	name	２９）親父の섬광
+029	name	３０）알베도 일발
+030	name	３１）속공
+031	name	３２）メンメン
+032	name	３３）언코먼 덱
+033	name	３４）버질 어택
+034	name	３５）대혼란！
+035	name	３６）Ａ．Ｇ．
+036	name	３７）허세 １호
+037	name	３８）３색 혼합 어택！
+038	name	３９）상전이포 발동
+039	name	４０）그노로봇 덱
+040	name	４１）철벽
+041	name	４２）脆いよなぁ！
+042	name	４３）카레 시식
+043	name	４４）커맨드撃ち
+044	name	４５）휴전 협정
+045	name	４６）ＡＩ 실험
+046	name	４７）토니＆테스터
+047	name	４８）탄도 테스트

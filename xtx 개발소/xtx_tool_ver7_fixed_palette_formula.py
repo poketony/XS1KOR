@@ -1126,7 +1126,7 @@ def cmd_extract(xtx_path: str, out_dir: str, fix_alpha: bool = False, lex_path: 
 
     meta = {
         'tool': 'xtx_tool_ver7_fixed_palette_formula',
-        'version': 9,
+        'version': 10,
         'source_xtx_name': os.path.basename(xtx_path),
         'source_xtx_path': os.path.abspath(xtx_path),
         'xtx_size': len(data),
@@ -1140,12 +1140,20 @@ def cmd_extract(xtx_path: str, out_dir: str, fix_alpha: bool = False, lex_path: 
         ],
         'edit_files': {},
         'clean_edit_files': [],
+        'subimage_edit_files': [],
+        'full_reference_files': {},
         'rebuild_rule': [
             'PSMT4.png, PSMT8.png, and edit_*.png are separate edit pipelines.',
+            '<source>_N.png subimage files are also edit inputs when changed.',
+            '<source>_full_index.png is a PSMT8 full-index reference/edit input.',
+            'Preferred workflow: keep extracted originals untouched and place edited *_KOR.png files beside them.',
+            'Example: edit_001_KOR.png replaces edit_001.png; <source>_1_KOR.png replaces <source>_1.png.',
             'Edit only one pipeline before import.',
             'PSMT4 pixels must be exact index values 0..15.',
             'PSMT8 pixels must be exact index values 0..255.',
             'edit_*.png files are palette-applied material edit inputs.',
+            'If several files in one pipeline changed, they are applied together.',
+            'If files from multiple pipelines changed, rebuild stops as ambiguous.',
         ],
     }
 
@@ -1223,8 +1231,22 @@ def cmd_extract(xtx_path: str, out_dir: str, fix_alpha: bool = False, lex_path: 
                 )
         if save_full:
             if color_atlas is not None:
-                Image.fromarray(color_atlas, 'RGBA').save(os.path.join(out_dir, f"{base_name}_full_palette.png"))
-            Image.fromarray(index_atlas, 'L').save(os.path.join(out_dir, f"{base_name}_full_index.png"))
+                full_palette_path = os.path.join(out_dir, f"{base_name}_full_palette.png")
+                Image.fromarray(color_atlas, 'RGBA').save(full_palette_path)
+                meta['full_reference_files']['LEX_FULL_RGBA'] = {
+                    'path': os.path.basename(full_palette_path),
+                    'sha256': file_sha256(full_palette_path),
+                    'size': [int(color_atlas.shape[1]), int(color_atlas.shape[0])],
+                    'requires_lex': True,
+                }
+            full_index_path = os.path.join(out_dir, f"{base_name}_full_index.png")
+            Image.fromarray(index_atlas, 'L').save(full_index_path)
+            meta['full_reference_files']['PSMT8_FULL_INDEX'] = {
+                'path': os.path.basename(full_index_path),
+                'sha256': file_sha256(full_index_path),
+                'size': [int(index_atlas.shape[1]), int(index_atlas.shape[0])],
+                'max_index': 255,
+            }
 
     if edit_only and meta.get('clean_edit_files'):
         with open(os.path.join(out_dir, 'xtx_meta.json'), 'w', encoding='utf-8') as f:
@@ -1253,6 +1275,16 @@ def cmd_extract(xtx_path: str, out_dir: str, fix_alpha: bool = False, lex_path: 
             Image.fromarray(crop, 'L').save(out_path)
             print(f"  [{img['index']}] {w}x{h} -> {out_path}")
 
+        meta['subimage_edit_files'].append({
+            'path': os.path.basename(out_path),
+            'sha256': file_sha256(out_path),
+            'slot_order': int(saved),
+            'image_index': int(img['index']),
+            'rect': [int(ux), int(uy), int(ux + uw), int(uy + uh)],
+            'size': [int(uw), int(uh)],
+            'requires_lex': bool(color_atlas is not None),
+        })
+
         if fix_alpha:
             pdata    = data[img['pstart']:img['pend']]
             arr      = np.frombuffer(pdata, dtype=np.uint8).reshape(h, w, 4)
@@ -1274,16 +1306,116 @@ def cmd_extract(xtx_path: str, out_dir: str, fix_alpha: bool = False, lex_path: 
 # Import
 # ---------------------------------------------------------------------------
 
+def kor_variant_path(path: str) -> str:
+    stem, ext = os.path.splitext(path)
+    return stem + '_KOR' + ext
+
+
+def edit_input_path(folder: str, item: dict, label: str = 'edit file') -> tuple[str, bool]:
+    path = os.path.join(folder, item['path'])
+    kor_path = kor_variant_path(path)
+    if os.path.exists(kor_path):
+        return kor_path, True
+    if not os.path.exists(path):
+        raise ValueError(f"missing {label}: {path}")
+    return path, False
+
+
+def edit_item_changed(folder: str, item: dict, label: str = 'edit file') -> dict | None:
+    path, is_kor = edit_input_path(folder, item, label)
+    if is_kor or file_sha256(path) != item['sha256']:
+        changed = dict(item)
+        changed['_input_path'] = path
+        changed['_input_is_kor'] = is_kor
+        return changed
+    return None
+
+
+def edit_item_path(item: dict, folder: str) -> str:
+    return item.get('_input_path') or edit_input_path(folder, item)[0]
+
+
+def changed_rgba_mask(folder: str, item: dict, rgba: np.ndarray) -> np.ndarray | None:
+    ref_path = os.path.join(folder, item['path'])
+    if not os.path.exists(ref_path):
+        return None
+    try:
+        ref = np.array(Image.open(ref_path).convert('RGBA'), dtype=np.uint8)
+    except Exception:
+        return None
+    if ref.shape != rgba.shape:
+        return None
+    return np.any(ref != rgba, axis=2)
+
+
+def infer_legacy_meta_edit_files(folder: str, meta: dict) -> dict:
+    """Add edit metadata for older extract folders that lack v10 fields.
+
+    This keeps folders such as existing Tu_000_out usable with the new _KOR
+    convention, without treating already-present untracked reference PNGs as
+    modified edits.
+    """
+    meta = dict(meta)
+    if 'subimage_edit_files' not in meta:
+        base = os.path.splitext(meta.get('source_xtx_name') or 'image')[0]
+        items = []
+        for slot_order, img in enumerate([x for x in meta.get('images', []) if x.get('valid')]):
+            path = f"{base}_{slot_order + 1}.png"
+            full = os.path.join(folder, path)
+            if not os.path.exists(full):
+                continue
+            w, h = int(img['width']) * 2, int(img['height']) * 2
+            x0, y0 = int(img['x0']) * 2, int(img['y0']) * 2
+            try:
+                mode = Image.open(full).mode
+            except Exception:
+                mode = 'L'
+            items.append({
+                'path': path,
+                'sha256': file_sha256(full),
+                'slot_order': int(slot_order),
+                'image_index': int(img['index']),
+                'rect': [x0, y0, x0 + w, y0 + h],
+                'size': [w, h],
+                'requires_lex': mode not in ('1', 'L', 'P', 'I;16', 'I'),
+                'inferred_from_legacy_meta': True,
+            })
+        meta['subimage_edit_files'] = items
+    if 'full_reference_files' not in meta:
+        base = os.path.splitext(meta.get('source_xtx_name') or 'image')[0]
+        refs = {}
+        full_index = os.path.join(folder, f"{base}_full_index.png")
+        if os.path.exists(full_index):
+            size = Image.open(full_index).size
+            refs['PSMT8_FULL_INDEX'] = {
+                'path': os.path.basename(full_index),
+                'sha256': file_sha256(full_index),
+                'size': [int(size[0]), int(size[1])],
+                'max_index': 255,
+                'inferred_from_legacy_meta': True,
+            }
+        full_palette = os.path.join(folder, f"{base}_full_palette.png")
+        if os.path.exists(full_palette):
+            size = Image.open(full_palette).size
+            refs['LEX_FULL_RGBA'] = {
+                'path': os.path.basename(full_palette),
+                'sha256': file_sha256(full_palette),
+                'size': [int(size[0]), int(size[1])],
+                'requires_lex': True,
+                'inferred_from_legacy_meta': True,
+            }
+        meta['full_reference_files'] = refs
+    return meta
+
+
 def choose_full_atlas_edit_mode(folder: str, meta: dict) -> str | None:
     changed = []
     for mode in ('PSMT4', 'PSMT8', 'PSMT4_RGBA'):
         item = meta.get('edit_files', {}).get(mode)
         if not item:
             continue
-        path = os.path.join(folder, item['path'])
-        if not os.path.exists(path):
-            raise ValueError(f"missing edit file: {path}")
-        if file_sha256(path) != item['sha256']:
+        changed_item = edit_item_changed(folder, item)
+        if changed_item:
             changed.append(mode)
     if not changed:
         return None
@@ -1295,24 +1427,268 @@ def choose_full_atlas_edit_mode(folder: str, meta: dict) -> str | None:
 def changed_clean_edit_items(folder: str, meta: dict) -> list:
     changed = []
     for item in meta.get('clean_edit_files', []):
-        path = os.path.join(folder, item['path'])
-        if not os.path.exists(path):
-            raise ValueError(f"missing clean edit file: {path}")
-        if file_sha256(path) != item['sha256']:
-            changed.append(item)
+        changed_item = edit_item_changed(folder, item, 'clean edit file')
+        if changed_item:
+            changed.append(changed_item)
     return changed
 
 
 def changed_full_atlas_modes(folder: str, meta: dict) -> list:
+    return [mode for mode, item in changed_full_atlas_items(folder, meta)]
+
+
+def changed_full_atlas_items(folder: str, meta: dict) -> list:
     changed = []
     for mode in ('PSMT4', 'PSMT8', 'PSMT4_RGBA'):
         item = meta.get('edit_files', {}).get(mode)
         if not item:
             continue
-        path = os.path.join(folder, item['path'])
-        if os.path.exists(path) and file_sha256(path) != item['sha256']:
-            changed.append(mode)
+        changed_item = edit_item_changed(folder, item)
+        if changed_item:
+            changed.append((mode, changed_item))
     return changed
+
+
+def changed_full_reference_items(folder: str, meta: dict) -> list:
+    changed = []
+    for mode, item in meta.get('full_reference_files', {}).items():
+        changed_item = edit_item_changed(folder, item, 'full reference file')
+        if changed_item:
+            changed.append((mode, changed_item))
+    return changed
+
+
+def changed_subimage_edit_items(folder: str, meta: dict) -> list:
+    changed = []
+    for item in meta.get('subimage_edit_files', []):
+        changed_item = edit_item_changed(folder, item, 'subimage edit file')
+        if changed_item:
+            changed.append(changed_item)
+    return changed
+
+
+def changed_meta_edit_groups(folder: str, meta: dict) -> dict:
+    groups = {}
+    clean = changed_clean_edit_items(folder, meta)
+    if clean:
+        groups['clean'] = clean
+    subimages = changed_subimage_edit_items(folder, meta)
+    if subimages:
+        groups['subimage'] = subimages
+    for mode, item in changed_full_atlas_items(folder, meta):
+        groups[mode] = [item]
+    for mode, item in changed_full_reference_items(folder, meta):
+        groups[mode] = [item]
+    return groups
+
+
+def quantize_rgba_full_atlas(xtx_data: bytes, xtx_path: str, rgba: np.ndarray, lex_path: str,
+                             lex_verbose: bool, pal_no_ps2_reorder: bool, lex_scan: bool,
+                             palette_mode: str, palette_xtx_paths: list[str] | None,
+                             auto_palette_sources: bool) -> np.ndarray:
+    if not lex_path:
+        raise ValueError('RGBA full/subimage import requires --lex so the tool can quantize by LEX palettes')
+    images = parse_xtx_headers(xtx_data)
+    configure_texture_dimensions(images)
+    rgba_atlas = build_rgba_atlas(xtx_data, images)
+    index_atlas = build_index_atlas(xtx_data, images)
+    mats = parse_lex_materials(lex_path, lex_verbose, lex_scan)
+    palette_sources = collect_palette_sources(xtx_path, rgba_atlas, palette_xtx_paths, auto_palette_sources)
+    mat_map, palettes, valid_mats = build_material_maps(
+        mats, rgba_atlas, not pal_no_ps2_reorder, index_atlas, palette_sources
+    )
+    if not palettes:
+        raise ValueError('no usable LEX palettes found; cannot quantize RGBA edit image')
+    resolved_mode, coverage = choose_palette_mode(palette_mode, mat_map, palettes)
+    print(f"[META] LEX quantize mode: {resolved_mode} (material coverage {coverage*100:.1f}%)")
+    if resolved_mode == 'global':
+        return nearest_palette_indices(rgba, palettes[0])
+
+    out = index_atlas.copy()
+    for mi, pal in enumerate(palettes):
+        mask = (mat_map == mi)
+        if not np.any(mask):
+            continue
+        ys, xs = np.where(mask)
+        y0, y1 = ys.min(), ys.max() + 1
+        x0, x1 = xs.min(), xs.max() + 1
+        submask = mask[y0:y1, x0:x1]
+        idxs = nearest_palette_indices(rgba[y0:y1, x0:x1, :], pal)
+        tmp = out[y0:y1, x0:x1]
+        tmp[submask] = idxs[submask]
+        out[y0:y1, x0:x1] = tmp
+    return out
+
+
+def rebuild_xtx_from_psmt8_index(xtx_data: bytes, images: list, index8: np.ndarray) -> bytes:
+    modified = bytearray(xtx_data)
+    for slot in images:
+        if not slot.get('valid'):
+            continue
+        pdata = index_atlas_to_xtx_pdata(index8, slot)
+        modified[slot['pstart']:slot['pend']] = pdata
+    return bytes(modified)
+
+
+def apply_meta_subimage_edits(xtx_data: bytes, xtx_path: str, folder: str, items: list, lex_path: str | None,
+                              lex_verbose: bool, pal_no_ps2_reorder: bool, lex_scan: bool,
+                              palette_mode: str, palette_xtx_paths: list[str] | None,
+                              auto_palette_sources: bool) -> bytes:
+    images = parse_xtx_headers(xtx_data)
+    configure_texture_dimensions(images)
+    index_atlas = build_index_atlas(xtx_data, images)
+    lex_state = None
+
+    print(f"[META] applying {len(items)} subimage edit file(s)")
+    for item in items:
+        path = edit_item_path(item, folder)
+        expected_size = tuple(int(v) for v in item['size'])
+        image = Image.open(path)
+        if image.size != expected_size:
+            raise ValueError(f"{path} size must be {expected_size}, got {image.size}")
+        umin, vmin, umax, vmax = [int(v) for v in item['rect']]
+        if item.get('requires_lex'):
+            if lex_state is None:
+                if not lex_path:
+                    raise ValueError(f"{item['path']} is RGBA/LEX-based; pass --lex for import")
+                rgba_atlas = build_rgba_atlas(xtx_data, images)
+                base_index = build_index_atlas(xtx_data, images)
+                mats = parse_lex_materials(lex_path, lex_verbose, lex_scan)
+                palette_sources = collect_palette_sources(xtx_path, rgba_atlas, palette_xtx_paths, auto_palette_sources)
+                mat_map, palettes, valid_mats = build_material_maps(
+                    mats, rgba_atlas, not pal_no_ps2_reorder, base_index, palette_sources
+                )
+                if not palettes:
+                    raise ValueError('no usable LEX palettes found; cannot quantize RGBA subimage edits')
+                resolved_mode, coverage = choose_palette_mode(palette_mode, mat_map, palettes)
+                print(f"[META] LEX quantize mode: {resolved_mode} (material coverage {coverage*100:.1f}%)")
+                lex_state = (mat_map, palettes, resolved_mode)
+            mat_map, palettes, resolved_mode = lex_state
+            rgba = np.array(image.convert('RGBA'), dtype=np.uint8)
+            pixel_changed = changed_rgba_mask(folder, item, rgba)
+            if pixel_changed is not None and not np.any(pixel_changed):
+                print(f"  [META] {os.path.basename(path)} (_KOR) has no pixel differences; keeping original indices")
+                continue
+            if resolved_mode == 'global':
+                q = nearest_palette_indices(rgba, palettes[0])
+                indices = index_atlas[vmin:vmax, umin:umax].copy()
+                if pixel_changed is None:
+                    indices[:, :] = q
+                else:
+                    indices[pixel_changed] = q[pixel_changed]
+            else:
+                local_map = mat_map[vmin:vmax, umin:umax]
+                indices = index_atlas[vmin:vmax, umin:umax].copy()
+                for mi, pal in enumerate(palettes):
+                    mask = (local_map == mi)
+                    if pixel_changed is not None:
+                        mask = mask & pixel_changed
+                    if np.any(mask):
+                        q = nearest_palette_indices(rgba, pal)
+                        indices[mask] = q[mask]
+        else:
+            indices = np.array(image.convert('L'), dtype=np.uint8)
+        index_atlas[vmin:vmax, umin:umax] = indices
+        suffix = ' (_KOR)' if item.get('_input_is_kor') else ''
+        print(f"  [META] {os.path.basename(path)}{suffix} -> rect=({umin},{vmin})-({umax},{vmax})")
+    return rebuild_xtx_from_psmt8_index(xtx_data, images, index_atlas)
+
+
+def try_meta_driven_import(xtx_data: bytes, xtx_path: str, folder: str, lex_path: str | None,
+                           lex_verbose: bool, pal_no_ps2_reorder: bool, lex_scan: bool,
+                           palette_mode: str, palette_xtx_paths: list[str] | None,
+                           auto_palette_sources: bool) -> bytes | None:
+    meta_path = os.path.join(folder, 'xtx_meta.json')
+    if not os.path.exists(meta_path):
+        return None
+    with open(meta_path, 'r', encoding='utf-8') as f:
+        meta = json.load(f)
+    meta = infer_legacy_meta_edit_files(folder, meta)
+    if sha256(xtx_data) != meta.get('xtx_sha256'):
+        raise ValueError('input XTX hash does not match xtx_meta.json; import from the original XTX used for extract')
+
+    groups = changed_meta_edit_groups(folder, meta)
+    has_new_meta = 'subimage_edit_files' in meta or 'full_reference_files' in meta
+    if not groups:
+        if has_new_meta:
+            print('[META] no edit image changes detected; output will match input XTX')
+            return bytes(xtx_data)
+        return None
+    if len(groups) > 1:
+        raise ValueError(f"multiple edit pipelines changed in {folder}: {sorted(groups)}; edit only one pipeline")
+
+    mode, items = next(iter(groups.items()))
+    images = parse_xtx_headers(xtx_data)
+    configure_texture_dimensions(images)
+    print(f"[META] detected changed pipeline: {mode}")
+    if mode == 'clean':
+        return try_clean_edit_import(xtx_data, folder)
+    if mode == 'subimage':
+        return apply_meta_subimage_edits(
+            xtx_data, xtx_path, folder, items, lex_path, lex_verbose,
+            pal_no_ps2_reorder, lex_scan, palette_mode, palette_xtx_paths,
+            auto_palette_sources,
+        )
+    if mode == 'PSMT8':
+        item = items[0]
+        size = tuple(int(x) for x in item['size'])
+        index8 = read_index_png(edit_item_path(item, folder), size, 255)
+        return rebuild_xtx_from_psmt8_index(xtx_data, images, index8)
+    if mode == 'PSMT4':
+        item = items[0]
+        size = tuple(int(x) for x in item['size'])
+        index4 = read_index_png(edit_item_path(item, folder), size, 15)
+        return rebuild_xtx_from_psmt4(xtx_data, images, item['config'], index4)
+    if mode == 'PSMT4_RGBA':
+        item = items[0]
+        size = tuple(int(x) for x in item['size'])
+        path = edit_item_path(item, folder)
+        image = Image.open(path).convert('RGBA')
+        if image.size != size:
+            raise ValueError(f"{path} size must be {size}, got {image.size}")
+        rgba = np.array(image, dtype=np.uint8)
+        palette = np.array(item['palette_rgba'], dtype=np.uint8)
+        q = nearest_palette_indices(rgba, palette)
+        pixel_changed = changed_rgba_mask(folder, item, rgba)
+        if pixel_changed is not None:
+            if not np.any(pixel_changed):
+                print(f"[META] {os.path.basename(path)} (_KOR) has no pixel differences; keeping original indices")
+                return bytes(xtx_data)
+            base_index4 = decode_psmt4_png(xtx_data, images, item['config'])
+            index4 = base_index4.copy()
+            index4[pixel_changed] = q[pixel_changed]
+        else:
+            index4 = q
+        return rebuild_xtx_from_psmt4(xtx_data, images, item['config'], index4)
+    if mode == 'PSMT8_FULL_INDEX':
+        item = items[0]
+        size = tuple(int(x) for x in item['size'])
+        index8 = read_index_png(edit_item_path(item, folder), size, 255)
+        return rebuild_xtx_from_psmt8_index(xtx_data, images, index8)
+    if mode == 'LEX_FULL_RGBA':
+        item = items[0]
+        size = tuple(int(x) for x in item['size'])
+        path = edit_item_path(item, folder)
+        image = Image.open(path).convert('RGBA')
+        if image.size != size:
+            raise ValueError(f"{path} size must be {size}, got {image.size}")
+        q = quantize_rgba_full_atlas(
+            xtx_data, xtx_path, np.array(image, dtype=np.uint8), lex_path,
+            lex_verbose, pal_no_ps2_reorder, lex_scan, palette_mode,
+            palette_xtx_paths, auto_palette_sources,
+        )
+        rgba = np.array(image, dtype=np.uint8)
+        pixel_changed = changed_rgba_mask(folder, item, rgba)
+        if pixel_changed is not None:
+            if not np.any(pixel_changed):
+                print(f"[META] {os.path.basename(path)} (_KOR) has no pixel differences; keeping original indices")
+                return bytes(xtx_data)
+            index8 = build_index_atlas(xtx_data, images)
+            index8[pixel_changed] = q[pixel_changed]
+        else:
+            index8 = q
+        return rebuild_xtx_from_psmt8_index(xtx_data, images, index8)
+    raise ValueError(f"unsupported changed edit pipeline: {mode}")
 
 
 def try_clean_edit_import(xtx_data: bytes, folder: str) -> bytes | None:
@@ -1345,17 +1721,27 @@ def try_clean_edit_import(xtx_data: bytes, folder: str) -> bytes | None:
 
     print(f"[CLEAN] applying {len(clean_changed)} clean edit image(s)")
     for item in clean_changed:
-        path = os.path.join(folder, item['path'])
+        path = edit_item_path(item, folder)
         image = Image.open(path).convert('RGBA')
         expected_size = tuple(int(v) for v in item['size'])
         if image.size != expected_size:
             raise ValueError(f"{path} size must be {expected_size}, got {image.size}")
         rgba = np.array(image, dtype=np.uint8)
+        pixel_changed = changed_rgba_mask(folder, item, rgba)
+        if pixel_changed is not None and not np.any(pixel_changed):
+            print(f"  [CLEAN] {os.path.basename(path)} (_KOR) has no pixel differences; keeping original indices")
+            continue
         palette = np.array(item['palette_rgba'], dtype=np.uint8)
-        indices = nearest_palette_indices(rgba, palette)
         umin, vmin, umax, vmax = [int(v) for v in item['rect']]
+        indices = index_atlas[vmin:vmax, umin:umax].copy()
+        q = nearest_palette_indices(rgba, palette)
+        if pixel_changed is None:
+            indices[:, :] = q
+        else:
+            indices[pixel_changed] = q[pixel_changed]
         index_atlas[vmin:vmax, umin:umax] = indices
-        print(f"  [CLEAN] {item['path']} -> rect=({umin},{vmin})-({umax},{vmax})")
+        suffix = ' (_KOR)' if item.get('_input_is_kor') else ''
+        print(f"  [CLEAN] {os.path.basename(path)}{suffix} -> rect=({umin},{vmin})-({umax},{vmax})")
 
     modified = bytearray(xtx_data)
     for slot in images:
@@ -1388,7 +1774,7 @@ def try_full_atlas_import(xtx_data: bytes, xtx_path: str, folder: str) -> bytes 
     if mode == 'PSMT8':
         item = meta['edit_files']['PSMT8']
         size = tuple(int(x) for x in item['size'])
-        index8 = read_index_png(os.path.join(folder, item['path']), size, 255)
+        index8 = read_index_png(edit_item_path(item, folder), size, 255)
         modified = bytearray(xtx_data)
         for slot in images:
             if not slot.get('valid'):
@@ -1400,12 +1786,12 @@ def try_full_atlas_import(xtx_data: bytes, xtx_path: str, folder: str) -> bytes 
     if mode == 'PSMT4':
         item = meta['edit_files']['PSMT4']
         size = tuple(int(x) for x in item['size'])
-        index4 = read_index_png(os.path.join(folder, item['path']), size, 15)
+        index4 = read_index_png(edit_item_path(item, folder), size, 15)
         return rebuild_xtx_from_psmt4(xtx_data, images, item['config'], index4)
 
     item = meta['edit_files']['PSMT4_RGBA']
     size = tuple(int(x) for x in item['size'])
-    path = os.path.join(folder, item['path'])
+    path = edit_item_path(item, folder)
     image = Image.open(path).convert('RGBA')
     if image.size != size:
         raise ValueError(f"{path} size must be {size}, got {image.size}")
@@ -1431,6 +1817,17 @@ def cmd_import(xtx_path: str, folder: str, out_path: str, fix_alpha: bool = Fals
         xtx_data = data
     else:
         print(f"ERROR: unsupported file magic {data[0:4]!r}; expected XTX\\0 or ARX\\0")
+        return
+
+    meta_edit_out = try_meta_driven_import(
+        xtx_data, xtx_path, folder, lex_path, lex_verbose, pal_no_ps2_reorder,
+        lex_scan, palette_mode, palette_xtx_paths, auto_palette_sources,
+    )
+    if meta_edit_out is not None:
+        if is_arx:
+            print("[ARX] WARNING: ARX re-compression not yet supported. Saving as raw XTX.")
+        open(out_path, 'wb').write(meta_edit_out)
+        print(f"\nSaved -> {out_path}")
         return
 
     clean_edit_out = try_clean_edit_import(xtx_data, folder)

@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import argparse
+from pathlib import Path
+
+from card_text_tool import default_paths, load_charmap, rebuild_card, rebuild_deck
+
+
+def main() -> None:
+    base_dir = Path(__file__).resolve().parent
+    paths = default_paths(base_dir)
+
+    parser = argparse.ArgumentParser(description="Rebuild XS1 carddata text files.")
+    parser.add_argument("target", choices=("card", "deckdata"))
+    args = parser.parse_args()
+
+    charmap = load_charmap(paths["charmap"])
+
+    if args.target == "card":
+        rebuild_card(paths["card"], paths["out_dir"] / "card.txt", paths["built_card"], charmap)
+        print(f"rebuilt card.dat: {paths['built_card']}")
+    else:
+        rebuild_deck(paths["deck"], paths["out_dir"] / "deckdata.txt", paths["built_deck"], charmap)
+        print(f"rebuilt deckdata.dat: {paths['built_deck']}")
+
+
+if __name__ == "__main__":
+    main()
