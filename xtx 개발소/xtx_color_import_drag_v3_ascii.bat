@@ -81,7 +81,7 @@ if exist "!LEX!" (
     echo [LEX]    "!LEX!"
     %PY% "%SCRIPT%" import "!XTX!" "!FOLDER!" --lex "!LEX!" --out "!OUT!"
 ) else (
-    echo [WARN] LEX not found. Grayscale/fallback import:
+    echo [INFO] Same-name LEX not found. Using extracted metadata/index pipeline:
     echo        "!LEX!"
     %PY% "%SCRIPT%" import "!XTX!" "!FOLDER!" --out "!OUT!"
 )

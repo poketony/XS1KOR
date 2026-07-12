@@ -1,0 +1,1320 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "name": "CardBase",
+      "source": "CardBase.bin",
+      "source_size": 32848,
+      "source_sha256": "9c94ddd3a88cd4c47633fb23942dd91374b800a583abc1e18fc8c3a12a2b2611",
+      "lex": [
+        "card_kage.lex",
+        "card_m_c.lex",
+        "card_m_p.lex",
+        "card_m_r.lex",
+        "card_m_u.lex"
+      ],
+      "extract_dir": "graphics_extract/CardBase",
+      "rebuilt": "graphics_rebuilt/CardBase_rebuilt.bin"
+    },
+    {
+      "name": "CARDGRAP",
+      "source": "CARDGRAP.BIN",
+      "source_size": 7073216,
+      "source_sha256": "1cb354828c18fdd1b06098a7f44a1f4c21c92a4a79010ca09cd8b777742337af",
+      "lex": [
+        "cardgrap.lex"
+      ],
+      "extract_dir": "graphics_extract/CARDGRAP",
+      "rebuilt": "graphics_rebuilt/CARDGRAP_rebuilt.BIN"
+    },
+    {
+      "name": "CardInfo1",
+      "source": "CardInfo1.bin",
+      "source_size": 20560,
+      "source_sha256": "c84673f3720c1ae0f9b0906014fa50c7f521cfffd3d11c9686a99d371b447c5e",
+      "lex": [],
+      "extract_dir": "graphics_extract/CardInfo1",
+      "rebuilt": "graphics_rebuilt/CardInfo1_rebuilt.bin"
+    },
+    {
+      "name": "deck_gra",
+      "source": "deckmake/deck_gra.bin",
+      "source_size": 225456,
+      "source_sha256": "e8db988c56d5505c2e8de70907ad2c6537eaac18c3cd36791a26b7b20e6a83e0",
+      "lex": [
+        "deckmake/decklist.lex",
+        "deckmake/deckmake.lex"
+      ],
+      "extract_dir": "graphics_extract/deckmake/deck_gra",
+      "rebuilt": "graphics_rebuilt/deckmake/deck_gra_rebuilt.bin"
+    },
+    {
+      "name": "pack",
+      "source": "deckmake/pack.bin",
+      "source_size": 262224,
+      "source_sha256": "449430095497220ac1ec057aaf6c666d252762f516b296aa3965c30829e59b54",
+      "lex": [
+        "deckmake/pack1.lex",
+        "deckmake/pack2.lex",
+        "deckmake/pack3.lex",
+        "deckmake/pack4.lex"
+      ],
+      "extract_dir": "graphics_extract/deckmake/pack",
+      "rebuilt": "graphics_rebuilt/deckmake/pack_rebuilt.bin"
+    },
+    {
+      "name": "type2_0",
+      "source": "deckmake/type2_0.xtx",
+      "source_size": 65616,
+      "source_sha256": "4e4f29a15781027eeeab8eb58823f0ac517be23d42953fc1dfd51d8268f7dd0e",
+      "lex": [
+        "deckmake/type2_0.lex",
+        "deckmake/type2_1.lex",
+        "deckmake/type2_2.lex",
+        "deckmake/type2_3.lex",
+        "deckmake/type2_4.lex",
+        "deckmake/type2_5.lex",
+        "deckmake/type2_6.lex"
+      ],
+      "extract_dir": "graphics_extract/deckmake/type2_0",
+      "rebuilt": "graphics_rebuilt/deckmake/type2_0_rebuilt.xtx"
+    },
+    {
+      "name": "1p2p",
+      "source": "game/1p2p.xtx",
+      "source_size": 2176,
+      "source_sha256": "aae6022c910dba743909d1eedfa46edecac2ee9c404c4d24dc08bda4a325ecb7",
+      "lex": [
+        "game/1p.lex",
+        "game/2p.lex"
+      ],
+      "extract_dir": "graphics_extract/game/1p2p",
+      "rebuilt": "graphics_rebuilt/game/1p2p_rebuilt.xtx"
+    },
+    {
+      "name": "BG1",
+      "source": "game/BG1.xtx",
+      "source_size": 262224,
+      "source_sha256": "9d32b0277d636d49cfde34968ac6165a629db0a55cc316b3358efea33a59f628",
+      "lex": [
+        "game/BG1.lex"
+      ],
+      "extract_dir": "graphics_extract/game/BG1",
+      "rebuilt": "graphics_rebuilt/game/BG1_rebuilt.xtx"
+    },
+    {
+      "name": "BG2",
+      "source": "game/BG2.xtx",
+      "source_size": 262224,
+      "source_sha256": "0b0af5935a3a2ba62fde952443c230818fce1733dcb55c42ec53976212b69712",
+      "lex": [
+        "game/BG2.lex"
+      ],
+      "extract_dir": "graphics_extract/game/BG2",
+      "rebuilt": "graphics_rebuilt/game/BG2_rebuilt.xtx"
+    },
+    {
+      "name": "BG3",
+      "source": "game/BG3.xtx",
+      "source_size": 262224,
+      "source_sha256": "8500845c02740eb26b57473aeeb9047ffa8eb64ac754cd6470a3d672cc049f01",
+      "lex": [
+        "game/BG3.lex"
+      ],
+      "extract_dir": "graphics_extract/game/BG3",
+      "rebuilt": "graphics_rebuilt/game/BG3_rebuilt.xtx"
+    },
+    {
+      "name": "BG4",
+      "source": "game/BG4.xtx",
+      "source_size": 262224,
+      "source_sha256": "7524b8ed2b259c5ee8c65d02c8d019f06d2dc9dc5c33de2830f3cf82740ebc01",
+      "lex": [
+        "game/BG4.lex"
+      ],
+      "extract_dir": "graphics_extract/game/BG4",
+      "rebuilt": "graphics_rebuilt/game/BG4_rebuilt.xtx"
+    },
+    {
+      "name": "BG5",
+      "source": "game/BG5.xtx",
+      "source_size": 262224,
+      "source_sha256": "794b976e4b212584c6f9f4234df6f008925781f98d304d505d56579001866250",
+      "lex": [
+        "game/BG5.lex"
+      ],
+      "extract_dir": "graphics_extract/game/BG5",
+      "rebuilt": "graphics_rebuilt/game/BG5_rebuilt.xtx"
+    },
+    {
+      "name": "BG6",
+      "source": "game/BG6.xtx",
+      "source_size": 262224,
+      "source_sha256": "f98ff046d69f1fb68d685ec24ee0369d436da12376ce5d86d517f17c3ff9c7b7",
+      "lex": [
+        "game/BG6.lex"
+      ],
+      "extract_dir": "graphics_extract/game/BG6",
+      "rebuilt": "graphics_rebuilt/game/BG6_rebuilt.xtx"
+    },
+    {
+      "name": "cur2D",
+      "source": "game/cur2D.xtx",
+      "source_size": 1216,
+      "source_sha256": "198470d909368f89ae29b6848193cff68dbde27e5c67b0f35e72848803edbcef",
+      "lex": [
+        "game/cur2D_01.lex",
+        "game/cur2D_02.lex",
+        "game/cur2D_03.lex",
+        "game/cur2D_04.lex",
+        "game/cur2D_05.lex",
+        "game/cur2D_06.lex",
+        "game/cur2D_11.lex",
+        "game/cur2D_12.lex",
+        "game/cur2D_13.lex",
+        "game/cur2D_14.lex",
+        "game/cur2D_15.lex",
+        "game/cur2D_16.lex"
+      ],
+      "extract_dir": "graphics_extract/game/cur2D",
+      "rebuilt": "graphics_rebuilt/game/cur2D_rebuilt.xtx"
+    },
+    {
+      "name": "Cur_Waku",
+      "source": "game/Cur_Waku.xtx",
+      "source_size": 65616,
+      "source_sha256": "84cff0c9b977612bc280d479ca8a4c2103e1da317a711f54a6aa33c89d0ba7be",
+      "lex": [
+        "game/Cur_WakuG.lex",
+        "game/Cur_WakuR.lex",
+        "game/Cur_WakuW.lex",
+        "game/Cur_WakuY.lex"
+      ],
+      "extract_dir": "graphics_extract/game/Cur_Waku",
+      "rebuilt": "graphics_rebuilt/game/Cur_Waku_rebuilt.xtx"
+    },
+    {
+      "name": "HPbar",
+      "source": "game/HPbar.xtx",
+      "source_size": 65616,
+      "source_sha256": "ceebd9a2286104985f667dbdad6b54db03ed6e9e7fb39b339ac13fba9230e97a",
+      "lex": [
+        "game/HPbar.lex"
+      ],
+      "extract_dir": "graphics_extract/game/HPbar",
+      "rebuilt": "graphics_rebuilt/game/HPbar_rebuilt.xtx"
+    },
+    {
+      "name": "mat_fg",
+      "source": "game/mat_fg.xtx",
+      "source_size": 131152,
+      "source_sha256": "f5b01bc530fe4b8c632ce4216932b59a830e8df2a4e9e1ea6f4f1b0a9134833a",
+      "lex": [
+        "game/mat_fg.lex"
+      ],
+      "extract_dir": "graphics_extract/game/mat_fg",
+      "rebuilt": "graphics_rebuilt/game/mat_fg_rebuilt.xtx"
+    },
+    {
+      "name": "mat_mojiJ",
+      "source": "game/mat_mojiJ.xtx",
+      "source_size": 8384,
+      "source_sha256": "67cf664acb93bd26542785694326c79753911485dbd8ebe92503b490ff553208",
+      "lex": [
+        "game/mat_mojiJ.lex"
+      ],
+      "extract_dir": "graphics_extract/game/mat_mojiJ",
+      "rebuilt": "graphics_rebuilt/game/mat_mojiJ_rebuilt.xtx"
+    },
+    {
+      "name": "NewLost1",
+      "source": "game/NewLost1.xtx",
+      "source_size": 13952,
+      "source_sha256": "e5b8fdd6cb1a91ebe91a31be5c5deb6bf8b89136a2241f158f6bbcdb51d57ca0",
+      "lex": [
+        "game/NewLost1.lex"
+      ],
+      "extract_dir": "graphics_extract/game/NewLost1",
+      "rebuilt": "graphics_rebuilt/game/NewLost1_rebuilt.xtx"
+    },
+    {
+      "name": "NewLost2",
+      "source": "game/NewLost2.xtx",
+      "source_size": 13952,
+      "source_sha256": "6e771158b84e792bec7a23a88a4eed233f69f44e4b4ecb3f0f4708d4dd822423",
+      "lex": [
+        "game/NewLost2.lex"
+      ],
+      "extract_dir": "graphics_extract/game/NewLost2",
+      "rebuilt": "graphics_rebuilt/game/NewLost2_rebuilt.xtx"
+    },
+    {
+      "name": "NewLost3",
+      "source": "game/NewLost3.xtx",
+      "source_size": 13952,
+      "source_sha256": "0631c855767d5ae5d94f2858ea3cd8c87abf5b8cc15f86017fd8a086a7702e2a",
+      "lex": [
+        "game/NewLost1.lex",
+        "game/NewLost2.lex"
+      ],
+      "extract_dir": "graphics_extract/game/NewLost3",
+      "rebuilt": "graphics_rebuilt/game/NewLost3_rebuilt.xtx"
+    },
+    {
+      "name": "NewPop",
+      "source": "game/NewPop.xtx",
+      "source_size": 32848,
+      "source_sha256": "9f23157968454f4823ea040115858a123a8df4b2357a7aedf1aedfafafd89689",
+      "lex": [
+        "game/NewPop1P.lex",
+        "game/NewPop2P.lex"
+      ],
+      "extract_dir": "graphics_extract/game/NewPop",
+      "rebuilt": "graphics_rebuilt/game/NewPop_rebuilt.xtx"
+    },
+    {
+      "name": "NewTitle",
+      "source": "game/NewTitle.xtx",
+      "source_size": 65616,
+      "source_sha256": "14ec3c9d9f1df7b794689de56c942c49a737950374abfa7bd84f920ac22249d6",
+      "lex": [
+        "game/NewTitle.lex"
+      ],
+      "extract_dir": "graphics_extract/game/NewTitle",
+      "rebuilt": "graphics_rebuilt/game/NewTitle_rebuilt.xtx"
+    },
+    {
+      "name": "pop",
+      "source": "game/pop.xtx",
+      "source_size": 11488,
+      "source_sha256": "f2b31487610f0e9937001c354bc0fae6eca4437a2a3aa8bf3e45508aeefc2487",
+      "lex": [
+        "game/pop1.lex",
+        "game/pop2.lex"
+      ],
+      "extract_dir": "graphics_extract/game/pop",
+      "rebuilt": "graphics_rebuilt/game/pop_rebuilt.xtx"
+    },
+    {
+      "name": "up_LR",
+      "source": "game/up_LR.bin",
+      "source_size": 18512,
+      "source_sha256": "f9e91ec5b3fc186bd01a3f67f0cf46687f5e0ebc2a169338565a39609c739d21",
+      "lex": [
+        "game/up_L.lex",
+        "game/up_R.lex"
+      ],
+      "extract_dir": "graphics_extract/game/up_LR",
+      "rebuilt": "graphics_rebuilt/game/up_LR_rebuilt.bin"
+    },
+    {
+      "name": "victory",
+      "source": "game/victory.bin",
+      "source_size": 50304,
+      "source_sha256": "644be229f94c8c5e3efad0712e8e8b666ecf41871a31e5b97bc06c419616c49e",
+      "lex": [
+        "game/victory1.lex",
+        "game/victory2.lex",
+        "game/victory3.lex",
+        "game/victory4.lex",
+        "game/victory5.lex",
+        "game/victory6.lex",
+        "game/victory7.lex"
+      ],
+      "extract_dir": "graphics_extract/game/victory",
+      "rebuilt": "graphics_rebuilt/game/victory_rebuilt.bin"
+    },
+    {
+      "name": "yama",
+      "source": "game/yama.xtx",
+      "source_size": 6224,
+      "source_sha256": "9ad8124c69412ed5a55e75f918dcb045c99bb5d544e504ad7b399e2d0c1edbc8",
+      "lex": [
+        "game/yama.lex"
+      ],
+      "extract_dir": "graphics_extract/game/yama",
+      "rebuilt": "graphics_rebuilt/game/yama_rebuilt.xtx"
+    },
+    {
+      "name": "card_H",
+      "source": "help/card_H.xtx",
+      "source_size": 32848,
+      "source_sha256": "adb10f77c8613c710a51b5d9ffb6388baae3eb8fcc08765274425827bb885324",
+      "lex": [
+        "help/card_H.lex"
+      ],
+      "extract_dir": "graphics_extract/help/card_H",
+      "rebuilt": "graphics_rebuilt/help/card_H_rebuilt.xtx"
+    },
+    {
+      "name": "h_1P2P",
+      "source": "help/h_1P2P.xtx",
+      "source_size": 58496,
+      "source_sha256": "603ce981025d47627d1967cc6e7a526cc899830c59b8ac3dc93758af6578c06c",
+      "lex": [
+        "help/h_1P2P.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_1P2P",
+      "rebuilt": "graphics_rebuilt/help/h_1P2P_rebuilt.xtx"
+    },
+    {
+      "name": "h_battl",
+      "source": "help/h_battl.xtx",
+      "source_size": 58496,
+      "source_sha256": "eeaf0c2c9a31c871be12734caf2121721c4afbc35a04284a0ddad326ee03a9bb",
+      "lex": [
+        "help/h_battl.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_battl",
+      "rebuilt": "graphics_rebuilt/help/h_battl_rebuilt.xtx"
+    },
+    {
+      "name": "h_battle1",
+      "source": "help/h_battle1.xtx",
+      "source_size": 58496,
+      "source_sha256": "351192c84b5470505cf29e35c5ffa61a9d78471a4cc72db344a688e41fcca705",
+      "lex": [
+        "help/h_battle1.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_battle1",
+      "rebuilt": "graphics_rebuilt/help/h_battle1_rebuilt.xtx"
+    },
+    {
+      "name": "h_battle2",
+      "source": "help/h_battle2.xtx",
+      "source_size": 58496,
+      "source_sha256": "fe365b72591f5926337952dcfe7b034caf7a4a09f280e633f12c3c44cdce5bf3",
+      "lex": [
+        "help/h_battle2.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_battle2",
+      "rebuilt": "graphics_rebuilt/help/h_battle2_rebuilt.xtx"
+    },
+    {
+      "name": "h_decklist",
+      "source": "help/h_decklist.xtx",
+      "source_size": 58496,
+      "source_sha256": "c6b01010f419401b9360387dff6224e7e93c9e142bc8161dbd7d4dd10425af0f",
+      "lex": [
+        "help/h_decklist.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_decklist",
+      "rebuilt": "graphics_rebuilt/help/h_decklist_rebuilt.xtx"
+    },
+    {
+      "name": "h_deckmake",
+      "source": "help/h_deckmake.xtx",
+      "source_size": 58496,
+      "source_sha256": "fa8fc8ec2e0bcc5eef617349a51b82c93cea92048d97abe01add2896209b2da7",
+      "lex": [
+        "help/h_deckmake.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_deckmake",
+      "rebuilt": "graphics_rebuilt/help/h_deckmake_rebuilt.xtx"
+    },
+    {
+      "name": "h_decksave",
+      "source": "help/h_decksave.xtx",
+      "source_size": 58496,
+      "source_sha256": "c1342dde36b997fdc6c3376b13a35dbbc982f097ec4f658b36322f1e4ada4299",
+      "lex": [
+        "help/h_decksave.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_decksave",
+      "rebuilt": "graphics_rebuilt/help/h_decksave_rebuilt.xtx"
+    },
+    {
+      "name": "h_down",
+      "source": "help/h_down.xtx",
+      "source_size": 58496,
+      "source_sha256": "27e59cdb35487c6f7eaa123052a5cb94ffeb32236ff30d509f5ad45e269221ab",
+      "lex": [
+        "help/h_down.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_down",
+      "rebuilt": "graphics_rebuilt/help/h_down_rebuilt.xtx"
+    },
+    {
+      "name": "h_Eblake",
+      "source": "help/h_Eblake.xtx",
+      "source_size": 58496,
+      "source_sha256": "029a1349ca642acc9db4c25675a4ffea22ea1ba281c10962b5dbd258a83cac6a",
+      "lex": [
+        "help/h_Eblake.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_Eblake",
+      "rebuilt": "graphics_rebuilt/help/h_Eblake_rebuilt.xtx"
+    },
+    {
+      "name": "h_Emark",
+      "source": "help/h_Emark.xtx",
+      "source_size": 58496,
+      "source_sha256": "e5fcef76d5e57868628fbcd9312729b83043bc9490a2e6a5c7efcb838292264f",
+      "lex": [
+        "help/h_Emark.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_Emark",
+      "rebuilt": "graphics_rebuilt/help/h_Emark_rebuilt.xtx"
+    },
+    {
+      "name": "h_event",
+      "source": "help/h_event.xtx",
+      "source_size": 58496,
+      "source_sha256": "5787adee3a252b2db83219cdd0b2184f4e20f5560c413d2dfdedf41df544b2e0",
+      "lex": [
+        "help/h_event.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_event",
+      "rebuilt": "graphics_rebuilt/help/h_event_rebuilt.xtx"
+    },
+    {
+      "name": "h_field",
+      "source": "help/h_field.xtx",
+      "source_size": 58496,
+      "source_sha256": "eeaf0c2c9a31c871be12734caf2121721c4afbc35a04284a0ddad326ee03a9bb",
+      "lex": [
+        "help/h_field.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_field",
+      "rebuilt": "graphics_rebuilt/help/h_field_rebuilt.xtx"
+    },
+    {
+      "name": "h_hand",
+      "source": "help/h_hand.xtx",
+      "source_size": 58496,
+      "source_sha256": "eeaf0c2c9a31c871be12734caf2121721c4afbc35a04284a0ddad326ee03a9bb",
+      "lex": [
+        "help/h_hand.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_hand",
+      "rebuilt": "graphics_rebuilt/help/h_hand_rebuilt.xtx"
+    },
+    {
+      "name": "h_hand2",
+      "source": "help/h_hand2.xtx",
+      "source_size": 58496,
+      "source_sha256": "eeaf0c2c9a31c871be12734caf2121721c4afbc35a04284a0ddad326ee03a9bb",
+      "lex": [
+        "help/h_hand2.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_hand2",
+      "rebuilt": "graphics_rebuilt/help/h_hand2_rebuilt.xtx"
+    },
+    {
+      "name": "h_junk",
+      "source": "help/h_junk.xtx",
+      "source_size": 58496,
+      "source_sha256": "eeaf0c2c9a31c871be12734caf2121721c4afbc35a04284a0ddad326ee03a9bb",
+      "lex": [
+        "help/h_junk.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_junk",
+      "rebuilt": "graphics_rebuilt/help/h_junk_rebuilt.xtx"
+    },
+    {
+      "name": "h_lost",
+      "source": "help/h_lost.xtx",
+      "source_size": 58496,
+      "source_sha256": "eeaf0c2c9a31c871be12734caf2121721c4afbc35a04284a0ddad326ee03a9bb",
+      "lex": [
+        "help/h_lost.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_lost",
+      "rebuilt": "graphics_rebuilt/help/h_lost_rebuilt.xtx"
+    },
+    {
+      "name": "h_open",
+      "source": "help/h_open.xtx",
+      "source_size": 58496,
+      "source_sha256": "ecbd464fae23ccd0d3de6be651685094336367aff9f78914d8c9e8949dfa5666",
+      "lex": [
+        "help/h_open.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_open",
+      "rebuilt": "graphics_rebuilt/help/h_open_rebuilt.xtx"
+    },
+    {
+      "name": "h_ph1",
+      "source": "help/h_ph1.xtx",
+      "source_size": 58496,
+      "source_sha256": "0c1be06050ee63bcc287c9adec3a27a7b45ce6b86a900e6d9e3201ccff5e32a9",
+      "lex": [
+        "help/h_ph1.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_ph1",
+      "rebuilt": "graphics_rebuilt/help/h_ph1_rebuilt.xtx"
+    },
+    {
+      "name": "h_ph2",
+      "source": "help/h_ph2.xtx",
+      "source_size": 58496,
+      "source_sha256": "12772fb314cf7707e5dcd44af971791290d42069853474a79b2abae07889b3ba",
+      "lex": [
+        "help/h_ph2.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_ph2",
+      "rebuilt": "graphics_rebuilt/help/h_ph2_rebuilt.xtx"
+    },
+    {
+      "name": "h_Phase1",
+      "source": "help/h_Phase1.xtx",
+      "source_size": 8384,
+      "source_sha256": "e0e69e46e319d3208b3b0b80beaa4c5a389a6745fe78026a870d00b1578f0d90",
+      "lex": [
+        "help/h_Phase1.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_Phase1",
+      "rebuilt": "graphics_rebuilt/help/h_Phase1_rebuilt.xtx"
+    },
+    {
+      "name": "h_Phase2",
+      "source": "help/h_Phase2.xtx",
+      "source_size": 8384,
+      "source_sha256": "e0e69e46e319d3208b3b0b80beaa4c5a389a6745fe78026a870d00b1578f0d90",
+      "lex": [
+        "help/h_Phase2.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_Phase2",
+      "rebuilt": "graphics_rebuilt/help/h_Phase2_rebuilt.xtx"
+    },
+    {
+      "name": "h_Phase3",
+      "source": "help/h_Phase3.xtx",
+      "source_size": 8384,
+      "source_sha256": "e0e69e46e319d3208b3b0b80beaa4c5a389a6745fe78026a870d00b1578f0d90",
+      "lex": [
+        "help/h_Phase3.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_Phase3",
+      "rebuilt": "graphics_rebuilt/help/h_Phase3_rebuilt.xtx"
+    },
+    {
+      "name": "h_Phase4",
+      "source": "help/h_Phase4.xtx",
+      "source_size": 8384,
+      "source_sha256": "e0e69e46e319d3208b3b0b80beaa4c5a389a6745fe78026a870d00b1578f0d90",
+      "lex": [
+        "help/h_Phase4.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_Phase4",
+      "rebuilt": "graphics_rebuilt/help/h_Phase4_rebuilt.xtx"
+    },
+    {
+      "name": "h_Phase5",
+      "source": "help/h_Phase5.xtx",
+      "source_size": 8384,
+      "source_sha256": "e0e69e46e319d3208b3b0b80beaa4c5a389a6745fe78026a870d00b1578f0d90",
+      "lex": [
+        "help/h_Phase5.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_Phase5",
+      "rebuilt": "graphics_rebuilt/help/h_Phase5_rebuilt.xtx"
+    },
+    {
+      "name": "h_Phase6",
+      "source": "help/h_Phase6.xtx",
+      "source_size": 8384,
+      "source_sha256": "e0e69e46e319d3208b3b0b80beaa4c5a389a6745fe78026a870d00b1578f0d90",
+      "lex": [
+        "help/h_Phase6.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_Phase6",
+      "rebuilt": "graphics_rebuilt/help/h_Phase6_rebuilt.xtx"
+    },
+    {
+      "name": "h_Phase7",
+      "source": "help/h_Phase7.xtx",
+      "source_size": 8384,
+      "source_sha256": "e0e69e46e319d3208b3b0b80beaa4c5a389a6745fe78026a870d00b1578f0d90",
+      "lex": [
+        "help/h_Phase7.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_Phase7",
+      "rebuilt": "graphics_rebuilt/help/h_Phase7_rebuilt.xtx"
+    },
+    {
+      "name": "h_situation",
+      "source": "help/h_situation.xtx",
+      "source_size": 58496,
+      "source_sha256": "eeaf0c2c9a31c871be12734caf2121721c4afbc35a04284a0ddad326ee03a9bb",
+      "lex": [
+        "help/h_situation.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_situation",
+      "rebuilt": "graphics_rebuilt/help/h_situation_rebuilt.xtx"
+    },
+    {
+      "name": "h_standby",
+      "source": "help/h_standby.xtx",
+      "source_size": 58496,
+      "source_sha256": "eeaf0c2c9a31c871be12734caf2121721c4afbc35a04284a0ddad326ee03a9bb",
+      "lex": [
+        "help/h_standby.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_standby",
+      "rebuilt": "graphics_rebuilt/help/h_standby_rebuilt.xtx"
+    },
+    {
+      "name": "h_text",
+      "source": "help/h_text.xtx",
+      "source_size": 58496,
+      "source_sha256": "5a1528aea508c3fa48ec7c10637aa3d5d884580ec956eda157d1ad135c9771ee",
+      "lex": [
+        "help/h_text.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_text",
+      "rebuilt": "graphics_rebuilt/help/h_text_rebuilt.xtx"
+    },
+    {
+      "name": "h_tittle",
+      "source": "help/h_tittle.xtx",
+      "source_size": 58496,
+      "source_sha256": "7d337b1e46db6c8cd132d96b8af45f92604a5faf9d75b42d9d94a331b7b12d54",
+      "lex": [
+        "help/h_tittle.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_tittle",
+      "rebuilt": "graphics_rebuilt/help/h_tittle_rebuilt.xtx"
+    },
+    {
+      "name": "h_viewer",
+      "source": "help/h_viewer.xtx",
+      "source_size": 58496,
+      "source_sha256": "c29e28b3c3b4ae679f972dc5cfcf0370ff9f173ce9ba8fff3d21a3ddd477d0ef",
+      "lex": [
+        "help/h_viewer.lex"
+      ],
+      "extract_dir": "graphics_extract/help/h_viewer",
+      "rebuilt": "graphics_rebuilt/help/h_viewer_rebuilt.xtx"
+    },
+    {
+      "name": "help1",
+      "source": "help/help1.xtx",
+      "source_size": 65616,
+      "source_sha256": "ffee61a6a41d0f9d23543db5ab6f520be389fbbeea214357f824cfb7fa919608",
+      "lex": [
+        "help/help1.lex"
+      ],
+      "extract_dir": "graphics_extract/help/help1",
+      "rebuilt": "graphics_rebuilt/help/help1_rebuilt.xtx"
+    },
+    {
+      "name": "help2",
+      "source": "help/help2.xtx",
+      "source_size": 52400,
+      "source_sha256": "66985b935cc6171057a3abdf68a5741bc2ee57ead28de7f3349507f1268a1910",
+      "lex": [
+        "help/help2.lex"
+      ],
+      "extract_dir": "graphics_extract/help/help2",
+      "rebuilt": "graphics_rebuilt/help/help2_rebuilt.xtx"
+    },
+    {
+      "name": "help3",
+      "source": "help/help3.xtx",
+      "source_size": 65616,
+      "source_sha256": "ffee61a6a41d0f9d23543db5ab6f520be389fbbeea214357f824cfb7fa919608",
+      "lex": [
+        "help/help3.lex"
+      ],
+      "extract_dir": "graphics_extract/help/help3",
+      "rebuilt": "graphics_rebuilt/help/help3_rebuilt.xtx"
+    },
+    {
+      "name": "help5",
+      "source": "help/help5.xtx",
+      "source_size": 38016,
+      "source_sha256": "73a68dc1d7d0057d3b8ab1cbbedc86494c50db70a5541238222f7e89997482b1",
+      "lex": [
+        "help/help5.lex"
+      ],
+      "extract_dir": "graphics_extract/help/help5",
+      "rebuilt": "graphics_rebuilt/help/help5_rebuilt.xtx"
+    },
+    {
+      "name": "help6",
+      "source": "help/help6.xtx",
+      "source_size": 8384,
+      "source_sha256": "e0e69e46e319d3208b3b0b80beaa4c5a389a6745fe78026a870d00b1578f0d90",
+      "lex": [
+        "help/help6.lex"
+      ],
+      "extract_dir": "graphics_extract/help/help6",
+      "rebuilt": "graphics_rebuilt/help/help6_rebuilt.xtx"
+    },
+    {
+      "name": "name",
+      "source": "name.xtx",
+      "source_size": 10960,
+      "source_sha256": "59a06bae8f5f410e7adbc7fc8794b2c30ab1ac31294083c98d4e961fb842eae4",
+      "lex": [
+        "name.lex"
+      ],
+      "extract_dir": "graphics_extract/name",
+      "rebuilt": "graphics_rebuilt/name_rebuilt.xtx"
+    },
+    {
+      "name": "NewCardBase",
+      "source": "NewCardBase.bin",
+      "source_size": 82048,
+      "source_sha256": "cf286b0372dcc7c4d4d17d276d49ffc91b50940bda46204dcc83a4218c8d6d66",
+      "lex": [
+        "NewCard_B.lex",
+        "NewCard_E.lex",
+        "NewCard_S.lex"
+      ],
+      "extract_dir": "graphics_extract/NewCardBase",
+      "rebuilt": "graphics_rebuilt/NewCardBase_rebuilt.bin"
+    },
+    {
+      "name": "m_card",
+      "source": "title/m_card.xtx",
+      "source_size": 65616,
+      "source_sha256": "12a71be362dfe53044fa38489854c5ba65c2565ffb09a8c893d5c3560aac0419",
+      "lex": [
+        "title/m_card.lex"
+      ],
+      "extract_dir": "graphics_extract/title/m_card",
+      "rebuilt": "graphics_rebuilt/title/m_card_rebuilt.xtx"
+    },
+    {
+      "name": "m_help",
+      "source": "title/m_help.xtx",
+      "source_size": 65616,
+      "source_sha256": "fb725bf3e930db6d7285d7fd38b514e5a3ddd17eb4cfd9664acb528aa50a4f6c",
+      "lex": [
+        "title/m_help.lex"
+      ],
+      "extract_dir": "graphics_extract/title/m_help",
+      "rebuilt": "graphics_rebuilt/title/m_help_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_000",
+      "source": "tuto/Tu_000.xtx",
+      "source_size": 262224,
+      "source_sha256": "f745be8d2dccc25e9d6e8131bfef4c9ec15d8eacc587f3881bf3f332d7c2749a",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_000",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_000_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_001",
+      "source": "tuto/Tu_001.xtx",
+      "source_size": 262224,
+      "source_sha256": "8eba8311973b37a7cadbd13c6e16016df1e62c39250399ef077472eacf28555f",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_001",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_001_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_002",
+      "source": "tuto/Tu_002.xtx",
+      "source_size": 262224,
+      "source_sha256": "2a2141baba628ffb560196656c23b3f7739824384f28a89e390aeeaac2e452b2",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_002",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_002_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_003",
+      "source": "tuto/Tu_003.xtx",
+      "source_size": 262224,
+      "source_sha256": "65e25221021b3d01fd7db4176e10752632c5171fa82a4827d27848ad85ce90fc",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_003",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_003_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_004",
+      "source": "tuto/Tu_004.xtx",
+      "source_size": 262224,
+      "source_sha256": "e9726dbc7ef845fe39f4c94ed3ab63abf16dfa0ca7ce33fdf08996148d1f4427",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_004",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_004_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_005",
+      "source": "tuto/Tu_005.xtx",
+      "source_size": 262224,
+      "source_sha256": "66a6d8e94f20147259db8ddf78c1898356a99e7a47e20fa359785a789989e0a5",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_005",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_005_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_006",
+      "source": "tuto/Tu_006.xtx",
+      "source_size": 262224,
+      "source_sha256": "7735c2d9085e0c8b0a7f5191e3e77dd025f8afbb5c0d8eb93968c2dadaa4588f",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_006",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_006_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_007",
+      "source": "tuto/Tu_007.xtx",
+      "source_size": 262224,
+      "source_sha256": "bd9b9af43d4e9319bf46369f547bef9c33f5202f5339f0da50a8689a6a434181",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_007",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_007_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_008",
+      "source": "tuto/Tu_008.xtx",
+      "source_size": 262224,
+      "source_sha256": "a8d1cc2819c6700f41d6d46bc2719dc984fd5425be76b7be5bb60e9dcb5e4a3b",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_008",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_008_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_009",
+      "source": "tuto/Tu_009.xtx",
+      "source_size": 262224,
+      "source_sha256": "2beac90c96104eb5854e77c07b9644188ea3361c85b49608cbedd66405029827",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_009",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_009_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_010",
+      "source": "tuto/Tu_010.xtx",
+      "source_size": 262224,
+      "source_sha256": "199a524de90034b0987a459618d0be820a0a23583f5922fa5b807de02ff59c83",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_010",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_010_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_011",
+      "source": "tuto/Tu_011.xtx",
+      "source_size": 262224,
+      "source_sha256": "fc4d7b04da0762b02b691185148c2cd90aeae23fa78ca807dbc63f02ec54a39c",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_011",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_011_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_012",
+      "source": "tuto/Tu_012.xtx",
+      "source_size": 262224,
+      "source_sha256": "abbce2affbc23f84c3a95dbdea1c66f23e833f5c3928d1f26f713030589b2daa",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_012",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_012_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_013",
+      "source": "tuto/Tu_013.xtx",
+      "source_size": 262224,
+      "source_sha256": "c18929541b87a93fb570f19b57d72354d21355dc1e02e6c7c0ceb6fcee4922cd",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_013",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_013_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_014",
+      "source": "tuto/Tu_014.xtx",
+      "source_size": 262224,
+      "source_sha256": "9017989a2a44ff55fe3a8d7cc127dfb35245354ea3b50061247b1e88d185afea",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_014",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_014_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_015",
+      "source": "tuto/Tu_015.xtx",
+      "source_size": 262224,
+      "source_sha256": "017521bcebc8bd4d8221491182c165607f1805a51c799545c7aaf0db352a224e",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_015",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_015_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_016",
+      "source": "tuto/Tu_016.xtx",
+      "source_size": 262224,
+      "source_sha256": "85a07cd7b1ff9743e87f805bea912e17d00d52ad231725f175376b3e16749a60",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_016",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_016_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_017",
+      "source": "tuto/Tu_017.xtx",
+      "source_size": 262224,
+      "source_sha256": "8386ec24a0162545b8c6dbb18d38e7c58cc5be937539dbafbdb390f2b913d074",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_017",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_017_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_018",
+      "source": "tuto/Tu_018.xtx",
+      "source_size": 262224,
+      "source_sha256": "d1ff786fe5b5b356abd7fe67359ad62a0dd8d81b15309677b3db82dc57afacba",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_018",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_018_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_019",
+      "source": "tuto/Tu_019.xtx",
+      "source_size": 262224,
+      "source_sha256": "fdc7388665b8efb6315825dc4caac569548fb695206a70f7f0bf8bbbcf825d02",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_019",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_019_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_020",
+      "source": "tuto/Tu_020.xtx",
+      "source_size": 262224,
+      "source_sha256": "51acd78ba81b8c3d0ebb22a6810c4d454bf503a49eecb2480e9ee96bf17bfbfb",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_020",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_020_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_021",
+      "source": "tuto/Tu_021.xtx",
+      "source_size": 262224,
+      "source_sha256": "0791f3e7015553a819366726b1537ba785ea463ca64dc4fbd2be6decd978df90",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_021",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_021_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_022",
+      "source": "tuto/Tu_022.xtx",
+      "source_size": 262224,
+      "source_sha256": "783e13bde9cfe045b12f74453af76425bab11eab74badb2882b346724a5672dd",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_022",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_022_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_023",
+      "source": "tuto/Tu_023.xtx",
+      "source_size": 262224,
+      "source_sha256": "d8fedaf66bece68eff20cf9fa37cb28d3faac84abea5f782dd803123e0a5b42e",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_023",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_023_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_024",
+      "source": "tuto/Tu_024.xtx",
+      "source_size": 262224,
+      "source_sha256": "1832f1f203db8c6afc750744f76a3f540e70b9b17a10ee95297ada1ead76f125",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_024",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_024_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_025",
+      "source": "tuto/Tu_025.xtx",
+      "source_size": 262224,
+      "source_sha256": "83065d8a26aca0ce98003a2090082e4372b1e46e1c71ae0c8c9f1c15ca51ad7f",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_025",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_025_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_026",
+      "source": "tuto/Tu_026.xtx",
+      "source_size": 262224,
+      "source_sha256": "742e8e02f5f87a8b946ddf579d405f23825ee6d7974580eb261220b72cf1a324",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_026",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_026_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_027",
+      "source": "tuto/Tu_027.xtx",
+      "source_size": 262224,
+      "source_sha256": "549c54418bd99151c730f7e5c2ae06de3b0d795f43c154a5ac803d3aa0e87fa5",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_027",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_027_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_028",
+      "source": "tuto/Tu_028.xtx",
+      "source_size": 262224,
+      "source_sha256": "f7a2b85c5854cf97c5080804d6100d94621d1c37f40b4c9e5e926ec5bc205a67",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_028",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_028_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_029",
+      "source": "tuto/Tu_029.xtx",
+      "source_size": 262224,
+      "source_sha256": "f0dde4a171411040e8f7709a2411e5143572b71d35f412fcb5f088d5ff5f7e53",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_029",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_029_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_030",
+      "source": "tuto/Tu_030.xtx",
+      "source_size": 262224,
+      "source_sha256": "7127b8ad75d80eec03ed87036abc1e805b4bbc29a7f948fe097ffbac6772c0a5",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_030",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_030_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_031",
+      "source": "tuto/Tu_031.xtx",
+      "source_size": 262224,
+      "source_sha256": "4f2596acf731080b93c828ba6c5e416967ba625860af062a176e263707233a51",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_031",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_031_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_032",
+      "source": "tuto/Tu_032.xtx",
+      "source_size": 262224,
+      "source_sha256": "3e445c3ef43174c991e29276218f457b20c8319b9159adcf30873d58c10730e9",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_032",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_032_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_033",
+      "source": "tuto/Tu_033.xtx",
+      "source_size": 262224,
+      "source_sha256": "65a5e311771d79e61fc65a2cc481ad21fdd1379b733e5a5a79d42e37583ff0e6",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_033",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_033_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_034",
+      "source": "tuto/Tu_034.xtx",
+      "source_size": 262224,
+      "source_sha256": "794f880e9b0c6af10d6b46bcc7d1dd8b1da5ca26d8dbb607783173f38504c35d",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_034",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_034_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_035",
+      "source": "tuto/Tu_035.xtx",
+      "source_size": 262224,
+      "source_sha256": "2ccbae4bbf0a15bdea9034fd3ac73af96d08d78686cd3c26318edc8cd9a204d6",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_035",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_035_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_036",
+      "source": "tuto/Tu_036.xtx",
+      "source_size": 262224,
+      "source_sha256": "e027c49263975aa298c270bf32d356eb207710c2671145994cb98351fd1a6f52",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_036",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_036_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_037",
+      "source": "tuto/Tu_037.xtx",
+      "source_size": 262224,
+      "source_sha256": "1fc5cdcd696e10530e372a1758ea67e2f2934522ed6d3a619a453ab1899070b1",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_037",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_037_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_038",
+      "source": "tuto/Tu_038.xtx",
+      "source_size": 262224,
+      "source_sha256": "13b508a9ac64479ae75d066c57f891559bec2a0e58fd6d0cd3c23923972ebe2a",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_038",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_038_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_039",
+      "source": "tuto/Tu_039.xtx",
+      "source_size": 262224,
+      "source_sha256": "3f43ba6ba20192bf336e9550e0388aa1823225cb4e4a24e40638a44af7ccb016",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_039",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_039_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_040",
+      "source": "tuto/Tu_040.xtx",
+      "source_size": 262224,
+      "source_sha256": "20869c0da8d2ce305703e7be9323525e77edd99d4185834f4101a5a766256ac2",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_040",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_040_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_041",
+      "source": "tuto/Tu_041.xtx",
+      "source_size": 262224,
+      "source_sha256": "227ece8e67783efe4dbee91a1c55dd063815fab7e776984fae53754c7e786601",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_041",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_041_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_042",
+      "source": "tuto/Tu_042.xtx",
+      "source_size": 262224,
+      "source_sha256": "934b25888f67c4020ab3240b4ebf3b21a74ccb8b4939c1a76c8be7ee465ef5e6",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_042",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_042_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_043",
+      "source": "tuto/Tu_043.xtx",
+      "source_size": 262224,
+      "source_sha256": "033e6d9e2a604e5c21bdfdf8d22130dd6d3bc1bcbcc866afd610c3e3495b5456",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_043",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_043_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_044",
+      "source": "tuto/Tu_044.xtx",
+      "source_size": 262224,
+      "source_sha256": "3a350b042392189373cc5be6ab8fdd2fb1265bc0a5032ae6dd6f20b31685ab77",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_044",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_044_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_045",
+      "source": "tuto/Tu_045.xtx",
+      "source_size": 262224,
+      "source_sha256": "a795e38abcf87c68885c5d36cb0de62ae14a977ae1742694210e8f439c9bae87",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_045",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_045_rebuilt.xtx"
+    },
+    {
+      "name": "Tu_046",
+      "source": "tuto/Tu_046.xtx",
+      "source_size": 262224,
+      "source_sha256": "389b3d0d712832f64c91cda1e0763d93e9eb0139b9d8ec29332a2d00ffa971ea",
+      "lex": [
+        "tuto/Tu_000.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tu_046",
+      "rebuilt": "graphics_rebuilt/tuto/Tu_046_rebuilt.xtx"
+    },
+    {
+      "name": "Tutorial",
+      "source": "tuto/Tutorial.xtx",
+      "source_size": 52400,
+      "source_sha256": "66985b935cc6171057a3abdf68a5741bc2ee57ead28de7f3349507f1268a1910",
+      "lex": [
+        "tuto/Tutorial.lex"
+      ],
+      "extract_dir": "graphics_extract/tuto/Tutorial",
+      "rebuilt": "graphics_rebuilt/tuto/Tutorial_rebuilt.xtx"
+    }
+  ]
+}

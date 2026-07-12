@@ -350,6 +350,23 @@ def write_index_png(arr: np.ndarray, path: str, levels: int) -> None:
     image.save(path)
 
 
+def write_colored_index_png(arr: np.ndarray, path: str, palette_rgba: np.ndarray) -> None:
+    """Write an opaque indexed PNG whose pixel values are the actual GS indices.
+
+    Alpha is intentionally omitted.  The XTX palette alpha remains in metadata
+    and in the original resource; editors such as GraphicsGale can therefore
+    paint an index without accidentally retaining an invisible alpha value.
+    """
+    palette = np.asarray(palette_rgba, dtype=np.uint8)
+    if palette.ndim != 2 or palette.shape[1] != 4 or not (1 <= len(palette) <= 256):
+        raise ValueError(f'invalid indexed PNG palette shape: {palette.shape}')
+    rgb = np.zeros((256, 3), dtype=np.uint8)
+    rgb[:len(palette), :] = palette[:, :3]
+    image = Image.fromarray(arr.astype(np.uint8), 'P')
+    image.putpalette(rgb.reshape(-1).tolist())
+    image.save(path)
+
+
 def read_index_png(path: str, expected_size: tuple[int, int], max_value: int) -> np.ndarray:
     image = Image.open(path)
     if image.mode == 'P':
@@ -531,13 +548,35 @@ def parse_uvinfo(buf: bytes, off: int):
     return umin, vmin, umax, vmax, t
 
 
-def parse_paletteinfo(buf: bytes, off: int):
+def parse_tex0(buf: bytes, off: int):
     if off + 16 > len(buf):
+        return None
+    value = struct.unpack_from('<Q', buf, off)[0]
+    return {
+        'raw': f'{value:016X}',
+        'tbp0': int(value & 0x3fff),
+        'tbw': int((value >> 14) & 0x3f),
+        'psm': int((value >> 20) & 0x3f),
+        'tw': int((value >> 26) & 0x0f),
+        'th': int((value >> 30) & 0x0f),
+        'tcc': int((value >> 34) & 0x01),
+        'tfx': int((value >> 35) & 0x03),
+        'cbp': int((value >> 37) & 0x3fff),
+        'cpsm': int((value >> 51) & 0x0f),
+        'csm': int((value >> 55) & 0x01),
+        'csa': int((value >> 56) & 0x1f),
+        'cld': int((value >> 61) & 0x07),
+    }
+
+
+def parse_paletteinfo(buf: bytes, off: int):
+    tex0 = parse_tex0(buf, off)
+    if tex0 is None:
         return None
     pal2 = buf[off + 4]
     pal = buf[off + 5]
     candidates = lex_clut_coordinate_candidates(pal, pal2)
-    return pal, pal2, candidates
+    return pal, pal2, candidates, tex0
 
 
 def lex_clut_coordinate_candidates(pal: int, pal2: int) -> dict[str, tuple[int, int]]:
@@ -595,13 +634,13 @@ def make_material(buf: bytes, pal_off: int, uv_off: int, source: str):
     uv = parse_uvinfo(buf, uv_off)
     if pi is None or uv is None:
         return None
-    pal, pal2, candidates = pi
+    pal, pal2, candidates, tex0 = pi
     palx, paly = candidates['primary']
     alt_palx, alt_paly = candidates['legacy']
     page_palx, page_paly = candidates['page']
     halfpage_palx, halfpage_paly = candidates['halfpage']
     umin, vmin, umax, vmax, uvtype = uv
-    if pal == 0xff:
+    if pal == 0xff or tex0['psm'] not in (0x13, 0x14):
         return None
     # Clamp clearly bogus rectangles but keep small/odd valid ones.
     umin = max(0, min(FULL_INDEX_W, int(umin)))
@@ -616,6 +655,7 @@ def make_material(buf: bytes, pal_off: int, uv_off: int, source: str):
         'page_palx': page_palx, 'page_paly': page_paly,
         'halfpage_palx': halfpage_palx, 'halfpage_paly': halfpage_paly,
         'clut_candidates': {k: [int(v[0]), int(v[1])] for k, v in candidates.items()},
+        'tex0': tex0,
         'umin': umin, 'vmin': vmin, 'umax': umax, 'vmax': vmax, 'uvtype': uvtype,
     }
 
@@ -681,9 +721,94 @@ def parse_lex_materials(lex_path: str, verbose=False, scan_blocks=False):
             ):
                 extras.append(f"halfpage=({m['halfpage_palx']},{m['halfpage_paly']})")
             extra = f" {' '.join(extras)}" if extras else ''
+            tex0 = m.get('tex0', {})
+            tex = (
+                f" TEX0(psm={tex0.get('psm', -1):02X} tbp0={tex0.get('tbp0')} tbw={tex0.get('tbw')} "
+                f"size={1 << tex0.get('tw', 0)}x{1 << tex0.get('th', 0)} "
+                f"cbp={tex0.get('cbp')} csa={tex0.get('csa')})"
+            )
             print(f"  mat {i:03d}: pal={m['pal']:02X} pal2={m['pal2']:02X} palxy=({m['palx']},{m['paly']}){extra} "
-                  f"uv=({m['umin']},{m['vmin']})-({m['umax']},{m['vmax']}) type={m['uvtype']:02X} {m['source']}")
+                  f"uv=({m['umin']},{m['vmin']})-({m['umax']},{m['vmax']}) type={m['uvtype']:02X}{tex} {m['source']}")
         if len(mats) > 200: print(f"  ... {len(mats)-200} more")
+    return mats
+
+
+def collect_lex_family_paths(xtx_path: str, lex_path: str) -> list[str]:
+    """Find every sibling LEX that references the same named XTX payload.
+
+    Model texture containers can be shared by several model files.  For
+    example, pack.bin is referenced by pack1.lex through pack4.lex, and each
+    LEX supplies only the TEX0/CLUT used by that model.  Identical copies of
+    the XTX are matched by name, size, and SHA-256 so a development copy still
+    discovers the original asset directory without filename-specific rules.
+    """
+    xtx_abs = os.path.abspath(xtx_path)
+    lex_abs = os.path.abspath(lex_path)
+    xtx_name = os.path.basename(xtx_abs)
+    xtx_stem = os.path.splitext(xtx_name)[0]
+    family_pattern = re.compile(rf'^{re.escape(xtx_stem)}(?:[_-]?\d+)?$', re.IGNORECASE)
+    source_size = os.path.getsize(xtx_abs)
+    source_hash = file_sha256(xtx_abs)
+    candidate_dirs = {os.path.dirname(xtx_abs), os.path.dirname(lex_abs)}
+
+    workspace_root = os.path.dirname(SCRIPT_DIR)
+    for root, dirs, files in os.walk(workspace_root):
+        dirs[:] = [
+            d for d in dirs
+            if d not in ('.git', '__pycache__', 'codex-lab')
+            and not d.lower().endswith(('_out', '_rebuilt'))
+        ]
+        match = next((name for name in files if name.lower() == xtx_name.lower()), None)
+        if match is None:
+            continue
+        candidate = os.path.join(root, match)
+        try:
+            if os.path.getsize(candidate) == source_size and file_sha256(candidate) == source_hash:
+                candidate_dirs.add(root)
+        except OSError:
+            continue
+
+    paths = {lex_abs}
+    for directory in candidate_dirs:
+        try:
+            names = os.listdir(directory)
+        except OSError:
+            continue
+        for name in names:
+            stem, ext = os.path.splitext(name)
+            if ext.lower() == '.lex' and family_pattern.fullmatch(stem):
+                paths.add(os.path.abspath(os.path.join(directory, name)))
+    ordered = [lex_abs] + sorted(
+        (path for path in paths if path.lower() != lex_abs.lower()),
+        key=lambda p: (os.path.dirname(p).lower(), os.path.basename(p).lower()),
+    )
+    unique = []
+    seen_hashes = set()
+    for path in ordered:
+        digest = file_sha256(path)
+        if digest in seen_hashes:
+            continue
+        seen_hashes.add(digest)
+        unique.append(path)
+    return unique
+
+
+def parse_lex_material_family(xtx_path: str, lex_path: str, verbose=False, scan_blocks=False):
+    paths = collect_lex_family_paths(xtx_path, lex_path)
+    if len(paths) > 1:
+        print(f"[LEX] shared-XTX LEX family: {', '.join(os.path.basename(p) for p in paths)}")
+    mats = []
+    for path in paths:
+        parsed = parse_lex_materials(path, verbose, scan_blocks)
+        for mat in parsed:
+            item = dict(mat)
+            item['lex_path'] = path
+            item['lex_name'] = os.path.basename(path)
+            item['source'] = f"{os.path.basename(path)}:{item['source']}"
+            mats.append(item)
+    mats = _dedupe_materials(mats)
+    mats.sort(key=lambda m: (m['vmin'], m['umin'], (m['vmax']-m['vmin'])*(m['umax']-m['umin'])))
+    print(f"[LEX] combined material palette regions: {len(mats)} from {len(paths)} LEX file(s)")
     return mats
 
 
@@ -711,13 +836,45 @@ def palette_candidate_score(palette: np.ndarray, index_crop: np.ndarray | None) 
     low_alpha = float(np.sum(used_weight[(used_alpha > 8) & (used_alpha < 96)]))
     mean_alpha = float(np.average(used_alpha, weights=used_weight))
     used_unique = len({tuple(v) for v in palette[used_idx].tolist()})
+    alpha_i = alpha.astype(np.int16)
+    alpha_standard_distance = np.minimum.reduce([
+        np.abs(alpha_i - 0),
+        np.abs(alpha_i - 99),
+        np.abs(alpha_i - 199),
+        np.abs(alpha_i - 255),
+    ])
+    clut_alpha_noise = float(np.mean(alpha_standard_distance))
+    clut_alpha_match = float(np.mean(alpha_standard_distance <= 4))
 
     score = visible * 3.0
     score -= transparent * 8.0
     score -= low_alpha * 0.75
     score += (mean_alpha / 128.0) * total
     score += min(used_unique, 128) * 8.0
+    # Real CLUTs in these Xenosaga assets usually have alpha clustered around
+    # transparent, half-shadow, or opaque values. Random texture bytes read as
+    # a CLUT often score high by visibility alone; penalize that alpha noise.
+    score -= clut_alpha_noise * 8192.0
+    score -= (1.0 - clut_alpha_match) * 2000000.0
     return float(score)
+
+
+def clut_structure_bonus(palette: np.ndarray) -> float:
+    """Prefer actual PS2 CLUT alpha patterns over texture bytes read as colors."""
+    alpha = palette[:, 3].astype(np.int16)
+    distance = np.minimum.reduce([
+        np.abs(alpha - 0),
+        np.abs(alpha - 99),
+        np.abs(alpha - 199),
+        np.abs(alpha - 255),
+    ])
+    mean_distance = float(np.mean(distance))
+    match_ratio = float(np.mean(distance <= 4))
+    if match_ratio >= 0.95 and mean_distance <= 4.0:
+        return 500000.0
+    if match_ratio >= 0.90 and mean_distance <= 10.0:
+        return 100000.0
+    return 0.0
 
 
 def collect_palette_sources(xtx_path: str, current_rgba_atlas: np.ndarray, palette_xtx_paths: list[str] | None = None,
@@ -731,10 +888,10 @@ def collect_palette_sources(xtx_path: str, current_rgba_atlas: np.ndarray, palet
 
     def palette_source_priority(path: str, explicit: bool = False, current: bool = False) -> float:
         if explicit:
-            return 20000.0
+            return 400000.0
         name = palette_source_name(path).lower()
         if current:
-            return 5000.0
+            return 10000.0
         if 'base' in name or 'grap' in name:
             return 5000.0
         if name.endswith('/original.xtx'):
@@ -743,6 +900,10 @@ def collect_palette_sources(xtx_path: str, current_rgba_atlas: np.ndarray, palet
 
     def is_likely_auto_palette_source(path: str) -> bool:
         name = palette_source_name(path).lower()
+        stem = os.path.splitext(os.path.basename(name))[0]
+        generated_markers = ('verify', 'noedit', 'imported', 'rebuilt', 'fixed', 'test')
+        if stem.startswith('xtx_') or any(marker in stem for marker in generated_markers):
+            return False
         return 'base' in name or 'grap' in name
 
     sources = [{
@@ -809,7 +970,21 @@ def collect_palette_sources(xtx_path: str, current_rgba_atlas: np.ndarray, palet
     return sources
 
 
-def build_material_maps(mats, rgba_atlas, ps2_reorder=True, index_atlas=None, palette_sources=None):
+def get_material_palette(rgba_atlas: np.ndarray, palx: int, paly: int, material: dict,
+                         ps2_reorder: bool) -> np.ndarray | None:
+    tex0 = material.get('tex0', {})
+    if int(tex0.get('psm', 0x13)) == 0x14:
+        full = get_palette_from_rgba_atlas(rgba_atlas, palx, paly, False)
+        if full is None:
+            return None
+        csa = int(tex0.get('csa', 0)) & 0x0f
+        start = csa * 16
+        return full[start:start + 16].copy()
+    return get_palette_from_rgba_atlas(rgba_atlas, palx, paly, ps2_reorder)
+
+
+def build_material_maps(mats, rgba_atlas, ps2_reorder=True, index_atlas=None, palette_sources=None,
+                        psm_filter=0x13):
     mat_map = np.full((FULL_INDEX_H, FULL_INDEX_W), -1, dtype=np.int32)
     palettes = []
     valid_mats = []
@@ -821,6 +996,8 @@ def build_material_maps(mats, rgba_atlas, ps2_reorder=True, index_atlas=None, pa
             'current': True,
         }]
     for m in mats:
+        if int(m.get('tex0', {}).get('psm', 0x13)) != int(psm_filter):
+            continue
         pal = None
         chosen = None
         coords = [
@@ -836,22 +1013,56 @@ def build_material_maps(mats, rgba_atlas, ps2_reorder=True, index_atlas=None, pa
         best_score = INVALID_PALETTE_SCORE
         for pal_source in palette_sources:
             src_rgba = pal_source['rgba_atlas']
+            source_locality_bonus = 0.0
+            if psm_filter != 0x14 and pal_source.get('current', False):
+                for _source, check_x, check_y in coords:
+                    check_palette = get_material_palette(src_rgba, check_x, check_y, m, ps2_reorder)
+                    if check_palette is not None and clut_structure_bonus(check_palette) > 0:
+                        source_locality_bonus = 1000000.0
+                        break
             for source, palx, paly in coords:
                 key = (pal_source['path'], source, palx, paly)
                 if key in seen_coords:
                     continue
                 seen_coords.add(key)
-                candidate = get_palette_from_rgba_atlas(src_rgba, palx, paly, ps2_reorder)
-                raw_score = palette_candidate_score(candidate, index_crop)
-                if raw_score <= INVALID_PALETTE_SCORE / 2:
-                    continue
-                score = raw_score + float(pal_source.get('priority', 0.0))
+                if psm_filter == 0x14 and index_atlas is not None:
+                    hist = np.bincount(index_atlas.reshape(-1), minlength=16).astype(np.int64).tolist()
+                    raw_h, raw_w = src_rgba.shape[:2]
+                    scan_y1 = min(raw_h, paly + 16)
+                    scan_x1 = min(raw_w - 15, palx + 64)
+                    scan_candidates = []
+                    for scan_y in range(max(0, paly), max(0, scan_y1)):
+                        for scan_x in range(max(0, palx), max(0, scan_x1)):
+                            candidate = read_psmt4_palette_row(src_rgba, scan_x, scan_y)
+                            raw_score = score_psmt4_palette(candidate, hist) if candidate is not None else -1.0
+                            if raw_score >= 0:
+                                scan_candidates.append((raw_score, scan_x, scan_y, candidate))
+                    if not scan_candidates:
+                        continue
+                    raw_score, chosen_x, chosen_y, candidate = max(scan_candidates, key=lambda item: item[0])
+                    chosen_source = f'{source}+row_scan'
+                else:
+                    candidate = get_material_palette(src_rgba, palx, paly, m, ps2_reorder)
+                    raw_score = palette_candidate_score(candidate, index_crop)
+                    if raw_score <= INVALID_PALETTE_SCORE / 2:
+                        continue
+                    chosen_x, chosen_y, chosen_source = palx, paly, source
+                if psm_filter == 0x14:
+                    structure_bonus = clut_structure_bonus(candidate)
+                    if pal_source.get('current', False) and structure_bonus > 0:
+                        structure_bonus += 1000000.0
+                else:
+                    # Once the current XTX demonstrably contains a structured
+                    # CLUT, favor that source equally for every coordinate
+                    # candidate. Candidate choice itself remains score-based.
+                    structure_bonus = source_locality_bonus
+                score = raw_score + float(pal_source.get('priority', 0.0)) + structure_bonus
                 if score > best_score:
-                    pal = candidate
+                    pal = sanitize_display_palette(candidate) if psm_filter == 0x14 else candidate
                     chosen = (
-                        source, palx, paly, pal_source['name'], pal_source['path'],
+                        chosen_source, chosen_x, chosen_y, pal_source['name'], pal_source['path'],
                         score, pal_source.get('current', False), raw_score,
-                        float(pal_source.get('priority', 0.0)),
+                        float(pal_source.get('priority', 0.0)), structure_bonus,
                     )
                     best_score = score
         if pal is None:
@@ -865,16 +1076,18 @@ def build_material_maps(mats, rgba_atlas, ps2_reorder=True, index_atlas=None, pa
             selected['palette_score'] = float(chosen[5])
             selected['palette_raw_score'] = float(chosen[7])
             selected['palette_source_priority'] = float(chosen[8])
+            selected['palette_structure_bonus'] = float(chosen[9])
             if chosen[0] != 'primary' or not chosen[6]:
                 print(
                     f"[LEX] palette fallback: pal={m['pal']:02X} pal2={m['pal2']:02X} "
                     f"primary=({m['palx']},{m['paly']}) -> {chosen[3]}:{chosen[0]}=({chosen[1]},{chosen[2]}) "
-                    f"score={chosen[5]:.1f} raw={chosen[7]:.1f} priority={chosen[8]:.1f}"
+                    f"score={chosen[5]:.1f} raw={chosen[7]:.1f} priority={chosen[8]:.1f} "
+                    f"clut_bonus={chosen[9]:.1f}"
                 )
         valid_mats.append(selected)
         palettes.append(pal)
         mat_map[selected['vmin']:selected['vmax'], selected['umin']:selected['umax']] = idx
-    print(f"[LEX] usable palette regions: {len(valid_mats)}")
+    print(f"[LEX] usable PSMT{4 if psm_filter == 0x14 else 8} palette regions: {len(valid_mats)}")
     return mat_map, palettes, valid_mats
 
 
@@ -905,6 +1118,9 @@ def choose_palette_mode(requested: str, mat_map, palettes):
     if requested == 'material':
         return 'material', coverage
     # auto
+    unique_palettes = {pal.astype(np.uint8).tobytes() for pal in palettes}
+    if len(unique_palettes) == 1:
+        return 'global', coverage
     if len(palettes) == 1 and coverage < 0.75:
         return 'global', coverage
     if coverage < 0.50:
@@ -920,34 +1136,193 @@ def colorize_with_mode(index_atlas, mat_map, palettes, mode: str):
     return colorize_index_atlas(index_atlas, mat_map, palettes)
 
 
-def save_clean_edit_set(out_dir: str, index_atlas: np.ndarray, valid_mats: list, palettes: list) -> list:
+def texture_binding_key(mat: dict, palette: np.ndarray) -> tuple:
+    tex0 = mat.get('tex0', {})
+    return (
+        int(tex0.get('psm', 0x13)), int(tex0.get('tbp0', 0)), int(tex0.get('tbw', 0)),
+        int(tex0.get('tw', 0)), int(tex0.get('th', 0)), int(tex0.get('cbp', 0)),
+        int(tex0.get('cpsm', 0)), int(tex0.get('csm', 0)), int(tex0.get('csa', 0)),
+        mat.get('palette_xtx_path'), int(mat.get('palx', 0)), int(mat.get('paly', 0)),
+        palette.astype(np.uint8).tobytes(),
+    )
+
+
+def indexed_slot_rect(img: dict) -> tuple[int, int, int, int]:
+    x0, y0 = int(img['x0']) * 2, int(img['y0']) * 2
+    return x0, y0, x0 + int(img['width']) * 2, y0 + int(img['height']) * 2
+
+
+def has_overlapping_index_slots(images: list) -> bool:
+    rects = [indexed_slot_rect(img) for img in images if img.get('valid')]
+    for i, (ax0, ay0, ax1, ay1) in enumerate(rects):
+        for bx0, by0, bx1, by1 in rects[i + 1:]:
+            if max(ax0, bx0) < min(ax1, bx1) and max(ay0, by0) < min(ay1, by1):
+                return True
+    return False
+
+
+def slot_palette_regions(img: dict, valid_mats: list, palettes: list) -> list[dict]:
+    sx0, sy0, sx1, sy1 = indexed_slot_rect(img)
+    regions = []
+    for mat, palette in zip(valid_mats, palettes):
+        x0, y0 = max(sx0, int(mat['umin'])), max(sy0, int(mat['vmin']))
+        x1, y1 = min(sx1, int(mat['umax'])), min(sy1, int(mat['vmax']))
+        if x1 <= x0 or y1 <= y0:
+            continue
+        regions.append({
+            'rect': [x0 - sx0, y0 - sy0, x1 - sx0, y1 - sy0],
+            'palette_rgba': palette.astype(np.uint8).tolist(),
+            'material': dict(mat),
+        })
+    return regions
+
+
+def colorize_isolated_slot(index_slot: np.ndarray, regions: list[dict], fallback_palette: np.ndarray) -> np.ndarray:
+    out = fallback_palette[index_slot]
+    for region in regions:
+        x0, y0, x1, y1 = [int(v) for v in region['rect']]
+        palette = np.array(region['palette_rgba'], dtype=np.uint8)
+        out[y0:y1, x0:x1, :] = palette[index_slot[y0:y1, x0:x1]]
+    return out
+
+
+def quantize_isolated_slot(rgba: np.ndarray, item: dict) -> np.ndarray:
+    fallback = np.array(item['palette_rgba'], dtype=np.uint8)
+    out = nearest_palette_indices(rgba, fallback)
+    for region in item.get('palette_regions', []):
+        x0, y0, x1, y1 = [int(v) for v in region['rect']]
+        palette = np.array(region['palette_rgba'], dtype=np.uint8)
+        out[y0:y1, x0:x1] = nearest_palette_indices(rgba[y0:y1, x0:x1, :], palette)
+    return out
+
+
+def save_isolated_slot_edit_set(out_dir: str, xtx_data: bytes, images: list,
+                                valid_mats: list, palettes: list) -> list:
+    """Export overlapping XTX entries independently so later slots cannot contaminate earlier ones."""
     edit_items = []
-    for i, (mat, pal) in enumerate(zip(valid_mats, palettes), 1):
-        umin, vmin = int(mat['umin']), int(mat['vmin'])
-        umax, vmax = int(mat['umax']), int(mat['vmax'])
-        umin = max(0, min(FULL_INDEX_W, umin))
-        umax = max(0, min(FULL_INDEX_W, umax))
-        vmin = max(0, min(FULL_INDEX_H, vmin))
-        vmax = max(0, min(FULL_INDEX_H, vmax))
+    fallback_palette = palettes[0]
+    saved = 0
+    for img in images:
+        if not img.get('valid'):
+            continue
+        saved += 1
+        index_slot = img_to_unsw(xtx_data, img)
+        regions = slot_palette_regions(img, valid_mats, palettes)
+        if regions:
+            fallback_palette = np.array(regions[0]['palette_rgba'], dtype=np.uint8)
+        rel_path = f'PSMT8_{saved:03d}.png'
+        out_path = os.path.join(out_dir, rel_path)
+        region_palettes = {
+            np.array(region['palette_rgba'], dtype=np.uint8).tobytes()
+            for region in regions
+        }
+        single_palette = not regions or region_palettes == {fallback_palette.astype(np.uint8).tobytes()}
+        if single_palette:
+            write_colored_index_png(index_slot, out_path, fallback_palette)
+        else:
+            rgba = colorize_isolated_slot(index_slot, regions, fallback_palette)
+            Image.fromarray(rgba, 'RGBA').save(out_path)
+        item = {
+            'path': rel_path,
+            'sha256': file_sha256(out_path),
+            'size': [int(index_slot.shape[1]), int(index_slot.shape[0])],
+            'pixel_format': 'PSMT8',
+            'slot_isolated': True,
+            'image_index': int(img['index']),
+            'atlas_rect': list(indexed_slot_rect(img)),
+            'palette_rgba': fallback_palette.astype(np.uint8).tolist(),
+            'palette_regions': regions,
+        }
+        if single_palette:
+            item['edit_encoding'] = 'indexed_palette_no_alpha'
+            item['max_index'] = int(len(fallback_palette) - 1)
+        else:
+            item['edit_encoding'] = 'rgba_multi_palette'
+        edit_items.append(item)
+        print(
+            f"  [PSMT8 {saved:03d}] isolated XTX slot={img['index']} "
+            f"size={index_slot.shape[1]}x{index_slot.shape[0]} palette_regions={len(regions)} -> {out_path}"
+        )
+    return edit_items
+
+
+def save_clean_edit_set(out_dir: str, index_atlas: np.ndarray, valid_mats: list, palettes: list,
+                        pixel_format='PSMT8', psmt4_cfg=None) -> list:
+    """Save every resolved GS TEX0/CLUT image region as an editable texture.
+
+    Duplicate mesh materials with the same texture and CLUT are grouped.  The
+    union of their UV rectangles is bounded by TEX0.TBW/TH, which keeps each
+    output clean while still covering every model that shares the XTX.
+    """
+    edit_items = []
+    groups = []
+    group_by_key = {}
+    for mat, pal in zip(valid_mats, palettes):
+        key = texture_binding_key(mat, pal)
+        if key not in group_by_key:
+            group_by_key[key] = len(groups)
+            groups.append({'material': mat, 'palette': pal, 'materials': [mat]})
+        else:
+            groups[group_by_key[key]]['materials'].append(mat)
+
+    for i, group in enumerate(groups, 1):
+        mat, pal = group['material'], group['palette']
+        tex0 = mat.get('tex0', {})
+        tbp0 = int(tex0.get('tbp0', 0))
+        if tbp0 != 0:
+            print(f"[LEX] WARNING: TEX0 TBP0={tbp0} is not zero; exporting the available atlas origin")
+        storage_width = int(tex0.get('tbw', 0)) * 64
+        storage_height = 1 << int(tex0.get('th', 0)) if int(tex0.get('th', 0)) > 0 else 0
+        if storage_width <= 0:
+            storage_width = index_atlas.shape[1]
+        if storage_height <= 0:
+            storage_height = index_atlas.shape[0]
+        if pixel_format == 'PSMT4':
+            # PSMT4 aliases the CT32 upload layout.  The mesh UV rectangle is
+            # not a reliable crop in that aliased view, so expose the complete
+            # TEX0 storage area and preserve every editable nibble.
+            umin = vmin = 0
+            umax = min(int(index_atlas.shape[1]), storage_width)
+            vmax = min(int(index_atlas.shape[0]), storage_height)
+        else:
+            umin = max(0, min(int(m['umin']) for m in group['materials']))
+            vmin = max(0, min(int(m['vmin']) for m in group['materials']))
+            umax = min(
+                int(index_atlas.shape[1]), storage_width,
+                max(int(m['umax']) for m in group['materials']),
+            )
+            vmax = min(
+                int(index_atlas.shape[0]), storage_height,
+                max(int(m['vmax']) for m in group['materials']),
+            )
         if umax <= umin or vmax <= vmin:
             continue
 
         crop_idx = index_atlas[vmin:vmax, umin:umax]
-        crop_rgba = pal[crop_idx]
-        rel_path = f"edit_{i:03d}.png"
+        rel_path = f"{pixel_format}_{i:03d}.png"
         out_path = os.path.join(out_dir, rel_path)
-        Image.fromarray(crop_rgba, 'RGBA').save(out_path)
-        edit_items.append({
+        write_colored_index_png(crop_idx, out_path, pal)
+        item = {
             'path': rel_path,
             'sha256': file_sha256(out_path),
             'rect': [umin, vmin, umax, vmax],
             'size': [umax - umin, vmax - vmin],
+            'pixel_format': pixel_format,
+            'edit_encoding': 'indexed_palette_no_alpha',
+            'max_index': int(len(pal) - 1),
             'palette_rgba': pal.astype(np.uint8).tolist(),
             'material': dict(mat),
-        })
+            'material_count': len(group['materials']),
+            'materials': [dict(m) for m in group['materials']],
+            'tex0_storage_size': [int(storage_width), int(storage_height)],
+        }
+        if pixel_format == 'PSMT4' and psmt4_cfg is not None:
+            item['config'] = psmt4_cfg
+        edit_items.append(item)
         print(
-            f"  [EDIT {i:03d}] rect=({umin},{vmin})-({umax},{vmax}) "
-            f"palette={mat.get('pal_source', 'primary')}({mat['palx']},{mat['paly']}) -> {out_path}"
+            f"  [{pixel_format} {i:03d}] TEX0 referenced view=({umin},{vmin})-({umax},{vmax}) "
+            f"materials={len(group['materials'])} palette={mat.get('pal_source', 'primary')}"
+            f"({mat['palx']},{mat['paly']}) -> {out_path}"
         )
     return edit_items
 
@@ -1068,8 +1443,8 @@ def find_psmt4_palette(rgba_atlas: np.ndarray, psmt4_index: np.ndarray, valid_ma
 
 
 def nearest_palette_indices(rgba_arr: np.ndarray, palette: np.ndarray) -> np.ndarray:
-    rgba = rgba_arr.reshape(-1, 4).astype(np.int16)
-    pal = palette.astype(np.int16)
+    rgba = rgba_arr.reshape(-1, 4).astype(np.int32)
+    pal = palette.astype(np.int32)
     out = np.empty((rgba.shape[0],), dtype=np.uint8)
     transparent = rgba[:, 3] < 8
     if np.any(transparent):
@@ -1094,11 +1469,300 @@ def nearest_palette_indices(rgba_arr: np.ndarray, palette: np.ndarray) -> np.nda
 # Extract
 # ---------------------------------------------------------------------------
 
+def split_concatenated_xtx(data: bytes) -> list[dict]:
+    """Split a file made of complete, back-to-back XTX payloads.
+
+    XTX has no outer bank header.  The end of one member is therefore derived
+    from its own image payload declarations, and the next member must begin
+    with another XTX magic.  A partial/trailing match is rejected.
+    """
+    chunks = []
+    pos = 0
+    while pos < len(data):
+        if data[pos:pos + 4] != b'XTX\x00':
+            return []
+        tail = data[pos:]
+        try:
+            images = parse_xtx_headers(tail)
+        except (ValueError, IndexError, struct.error):
+            return []
+        valid = [img for img in images if img.get('valid')]
+        if not valid:
+            return []
+        end = max(int(img['pend']) for img in valid)
+        if end <= 0 or pos + end > len(data):
+            return []
+        next_pos = pos + end
+        if next_pos < len(data) and data[next_pos:next_pos + 4] != b'XTX\x00':
+            return []
+        chunks.append({'index': len(chunks), 'offset': pos, 'size': end, 'images': images})
+        pos = next_pos
+    return chunks if pos == len(data) else []
+
+
+def is_cardgrap_chunk(images: list) -> bool:
+    valid = [img for img in images if img.get('valid')]
+    signature = [
+        (int(img['width']), int(img['height']), int(img['bw']), int(img['offset']))
+        for img in valid
+    ]
+    return signature == [(112, 80, 8, 0), (80, 32, 8, 4096), (24, 16, 8, 8192)]
+
+
+def img_to_unsw_region_fast(data: bytes, img: dict) -> np.ndarray:
+    """Unswizzle only one slot rectangle instead of the full 1024x1024 atlas."""
+    w, h = int(img['width']), int(img['height'])
+    ux, uy, uw, uh = int(img['x0']) * 2, int(img['y0']) * 2, w * 2, h * 2
+    atlas = np.zeros((RGBA_ATLAS_H, RGBA_ATLAS_W, 4), dtype=np.uint8)
+    pdata = np.frombuffer(data[int(img['pstart']):int(img['pend'])], dtype=np.uint8).reshape(h, w, 4)
+    x0, y0 = int(img['x0']), int(img['y0'])
+    atlas[y0:y0 + h, x0:x0 + w, :] = pdata
+    flat = atlas.reshape(-1)
+    out = np.zeros((uh, uw), dtype=np.uint8)
+    for ly in range(uh):
+        y = uy + ly
+        for lx in range(uw):
+            x = ux + lx
+            bl = (y & ~0xf) * FULL_INDEX_W + (x & ~0xf) * 2
+            ss = (((y + 2) >> 2) & 1) * 4
+            py = (((y & ~3) >> 1) + (y & 1)) & 7
+            cl = py * FULL_INDEX_W * 2 + ((x + ss) & 7) * 4
+            bn = ((y >> 1) & 1) + ((x >> 2) & 2)
+            si = bl + cl + bn
+            if 0 <= si < len(flat):
+                out[ly, lx] = flat[si]
+    return out
+
+
+def decode_psmt4_slot_region(xtx_data: bytes, slot: dict, rect: tuple[int, int, int, int]) -> np.ndarray:
+    """Decode a PSMT4 rectangle using only one CT32 upload slot."""
+    x0, y0, width, height = [int(v) for v in rect]
+    gsmem = psmt4_tool.build_gsmem_words(xtx_data, [slot], FULL_INDEX_W // 2)
+    out = np.zeros((height, width), dtype=np.uint8)
+    for y in range(height):
+        for x in range(width):
+            pos, cb = psmt4_tool.psmt4_pos(x0 + x, y0 + y, 0, 64)
+            if not (0 <= pos < len(gsmem)):
+                continue
+            word = int(gsmem[pos])
+            byte = (word >> ((cb >> 1) * 8)) & 0xff
+            out[y, x] = (byte >> 4) & 0x0f if cb & 1 else byte & 0x0f
+    return out
+
+
+def rebuild_psmt4_slot_region(xtx_data: bytes, slot: dict, rect: tuple[int, int, int, int],
+                              index4: np.ndarray) -> bytes:
+    """Write one PSMT4 rectangle back to one slot without touching aliases."""
+    x0, y0, width, height = [int(v) for v in rect]
+    if index4.shape != (height, width):
+        raise ValueError(f'PSMT4 slot region must be {width}x{height}, got {index4.shape[1]}x{index4.shape[0]}')
+    gsmem = psmt4_tool.build_gsmem_words(xtx_data, [slot], FULL_INDEX_W // 2)
+    for y in range(height):
+        for x in range(width):
+            set_psmt4_pixel(gsmem, x0 + x, y0 + y, int(index4[y, x]), 0, 64)
+    payload = gsmem_to_xtx_payloads(gsmem, [slot], FULL_INDEX_W // 2)[int(slot['index'])]
+    modified = bytearray(xtx_data)
+    modified[int(slot['pstart']):int(slot['pend'])] = payload
+    return bytes(modified)
+
+
+def cardgrap_name_palette(xtx_data: bytes, images: list, index4: np.ndarray) -> tuple[np.ndarray, dict]:
+    """Resolve the 16-color name CLUT stored in CARDGRAP's auxiliary slot."""
+    rgba_atlas = build_rgba_atlas(xtx_data, images)
+    aux = [img for img in images if img.get('valid')][2]
+    base_x, base_y = int(aux['x0']) + 17, int(aux['y0'])
+    hist = np.bincount(index4.reshape(-1), minlength=16).astype(np.int64).tolist()
+    best = None
+    # The auxiliary slot starts the CLUT neighborhood.  Score nearby rows
+    # instead of fixing one palette variant or choosing by filename.
+    for y in range(base_y, min(rgba_atlas.shape[0], base_y + int(aux['height']))):
+        for x in range(max(0, int(aux['x0'])), min(rgba_atlas.shape[1] - 15, int(aux['x0']) + 32)):
+            candidate = read_psmt4_palette_row(rgba_atlas, x, y)
+            if candidate is None:
+                continue
+            score = score_psmt4_palette(candidate, hist)
+            if best is None or score > best[0]:
+                best = (score, x, y, candidate)
+    if best is None or best[0] < 0:
+        raise ValueError('CARDGRAP PSMT4 name palette could not be resolved from auxiliary slot')
+    palette = sanitize_display_palette(best[3])
+    return palette, {'x': int(best[1]), 'y': int(best[2]), 'score': float(best[0])}
+
+
+def cardgrap_psmt8_palette(xtx_data: bytes, images: list, mats: list,
+                           card_index: np.ndarray) -> tuple[np.ndarray, list]:
+    rgba_atlas = build_rgba_atlas(xtx_data, images)
+    candidates = []
+    for mat in mats:
+        if int(mat.get('tex0', {}).get('psm', -1)) != 0x13:
+            continue
+        coords = [
+            ('primary', mat['palx'], mat['paly']),
+            ('legacy', mat.get('alt_palx', mat['palx']), mat.get('alt_paly', mat['paly'])),
+            ('page', mat.get('page_palx', mat['palx']), mat.get('page_paly', mat['paly'])),
+            ('halfpage', mat.get('halfpage_palx', mat['palx']), mat.get('halfpage_paly', mat['paly'])),
+        ]
+        for source, x, y in coords:
+            palette = get_material_palette(rgba_atlas, int(x), int(y), mat, True)
+            score = palette_candidate_score(palette, card_index)
+            if palette is not None and score > INVALID_PALETTE_SCORE / 2:
+                candidates.append((score + clut_structure_bonus(palette), palette, mat, source, x, y))
+    if not candidates:
+        raise ValueError('CARDGRAP PSMT8 palette could not be resolved from LEX TEX0')
+    _score, palette, selected, source, x, y = max(candidates, key=lambda item: item[0])
+    selected = dict(selected)
+    selected.update({'pal_source': source, 'palx': int(x), 'paly': int(y)})
+    card = [img for img in images if img.get('valid')][0]
+    regions = slot_palette_regions(card, [selected], [palette])
+    fallback = np.array(regions[0]['palette_rgba'], dtype=np.uint8) if regions else palette
+    return fallback, regions
+
+
+def extract_cardgrap_bank(xtx_path: str, data: bytes, chunks: list, out_dir: str,
+                          lex_path: str, mats: list) -> None:
+    os.makedirs(out_dir, exist_ok=True)
+    entries_dir = os.path.join(out_dir, 'entries')
+    os.makedirs(entries_dir, exist_ok=True)
+    meta_chunks = []
+    for chunk_info in chunks:
+        ci = int(chunk_info['index'])
+        start, size = int(chunk_info['offset']), int(chunk_info['size'])
+        chunk = data[start:start + size]
+        images = parse_xtx_headers(chunk)
+        configure_texture_dimensions(images)
+        valid = [img for img in images if img.get('valid')]
+        folder = os.path.join(entries_dir, f'{ci:03d}')
+        os.makedirs(folder, exist_ok=True)
+
+        card_index = img_to_unsw_region_fast(chunk, valid[0])
+        card_palette, card_regions = cardgrap_psmt8_palette(chunk, images, mats, card_index)
+        card_path = os.path.join(folder, 'PSMT8_card.png')
+        write_colored_index_png(card_index, card_path, card_palette)
+
+        name_rect = (int(valid[1]['x0']) * 2, int(valid[1]['y0']) * 2, 256, 32)
+        name_index = decode_psmt4_slot_region(chunk, valid[1], name_rect)
+        name_palette, name_pal_info = cardgrap_name_palette(chunk, images, name_index)
+        name_path = os.path.join(folder, 'PSMT4_name.png')
+        write_colored_index_png(name_index, name_path, name_palette)
+
+        meta_chunks.append({
+            'index': ci, 'offset': start, 'size': size, 'sha256': sha256(chunk),
+            'card': {
+                'path': f'entries/{ci:03d}/PSMT8_card.png',
+                'sha256': file_sha256(card_path), 'image_index': int(valid[0]['index']),
+                'size': [int(card_index.shape[1]), int(card_index.shape[0])],
+                'palette_rgba': card_palette.astype(np.uint8).tolist(),
+                'palette_regions': card_regions,
+                'edit_encoding': 'indexed_palette_no_alpha', 'max_index': 255,
+            },
+            'name': {
+                'path': f'entries/{ci:03d}/PSMT4_name.png',
+                'sha256': file_sha256(name_path), 'image_index': int(valid[1]['index']),
+                'size': [256, 32], 'rect': list(name_rect),
+                'palette_rgba': name_palette.astype(np.uint8).tolist(),
+                'palette_source': name_pal_info,
+                'edit_encoding': 'indexed_palette_no_alpha', 'max_index': 15,
+            },
+            'auxiliary': {'image_index': int(valid[2]['index']), 'role': 'CLUT/auxiliary upload; preserved byte-for-byte'},
+        })
+        if (ci + 1) % 16 == 0 or ci + 1 == len(chunks):
+            print(f'  [BANK] extracted {ci + 1}/{len(chunks)} members')
+    meta = {
+        'tool': 'xtx_tool_ver7_fixed_palette_formula', 'version': 14,
+        'profile': 'CARDGRAP_concatenated_mixed_bank',
+        'source_path': os.path.abspath(xtx_path), 'source_size': len(data),
+        'source_sha256': sha256(data), 'lex_path': os.path.abspath(lex_path),
+        'chunk_count': len(chunks), 'chunks': meta_chunks,
+        'edit_rule': 'Keep originals and add PSMT8_card_KOR.png and/or PSMT4_name_KOR.png beside them.',
+    }
+    with open(os.path.join(out_dir, 'xtx_bank_meta.json'), 'w', encoding='utf-8') as f:
+        json.dump(meta, f, ensure_ascii=False, indent=2)
+    print(f'\n  {len(chunks)} CARDGRAP members extracted to: {out_dir}/')
+
+
+def import_cardgrap_bank(xtx_path: str, data: bytes, folder: str, out_path: str) -> None:
+    meta_path = os.path.join(folder, 'xtx_bank_meta.json')
+    with open(meta_path, 'r', encoding='utf-8') as f:
+        meta = json.load(f)
+    if meta.get('profile') != 'CARDGRAP_concatenated_mixed_bank':
+        raise ValueError('unsupported XTX bank profile')
+    if sha256(data) != meta.get('source_sha256'):
+        raise ValueError('input bank hash does not match xtx_bank_meta.json')
+    modified = bytearray(data)
+    changed_count = 0
+    for item in meta['chunks']:
+        start, size = int(item['offset']), int(item['size'])
+        chunk = bytes(modified[start:start + size])
+        if sha256(chunk) != item['sha256']:
+            raise ValueError(f"bank member {item['index']:03d} no longer matches extraction source")
+        images = parse_xtx_headers(chunk)
+        configure_texture_dimensions(images)
+        slots = {int(img['index']): img for img in images if img.get('valid')}
+
+        card = item['card']
+        card_orig = os.path.join(folder, card['path'])
+        card_kor = kor_variant_path(card_orig)
+        if os.path.exists(card_kor) or file_sha256(card_orig) != card['sha256']:
+            path = card_kor if os.path.exists(card_kor) else card_orig
+            expected = tuple(int(v) for v in card['size'])
+            if Image.open(path).size != expected:
+                raise ValueError(f'{path} size must be {expected}')
+            if card.get('edit_encoding') == 'indexed_palette_no_alpha':
+                q = read_index_png(path, expected, int(card.get('max_index', 255)))
+                ref = read_index_png(card_orig, expected, int(card.get('max_index', 255)))
+                mask = q != ref
+            else:
+                rgba = np.array(Image.open(path).convert('RGBA'), dtype=np.uint8)
+                ref = np.array(Image.open(card_orig).convert('RGBA'), dtype=np.uint8)
+                mask = np.any(rgba != ref, axis=2)
+                q = quantize_isolated_slot(rgba, card)
+            if np.any(mask):
+                slot = slots[int(card['image_index'])]
+                indices = img_to_unsw(chunk, slot).copy()
+                indices[mask] = q[mask]
+                out = bytearray(chunk)
+                out[int(slot['pstart']):int(slot['pend'])] = unsw_to_pdata(indices, slot)
+                chunk = bytes(out)
+                changed_count += 1
+
+        name = item['name']
+        name_orig = os.path.join(folder, name['path'])
+        name_kor = kor_variant_path(name_orig)
+        if os.path.exists(name_kor) or file_sha256(name_orig) != name['sha256']:
+            path = name_kor if os.path.exists(name_kor) else name_orig
+            image = Image.open(path)
+            expected = tuple(int(v) for v in name['size'])
+            if image.size != expected:
+                raise ValueError(f'{path} size must be {expected}')
+            if name.get('edit_encoding') == 'indexed_palette_no_alpha':
+                q = read_index_png(path, expected, int(name.get('max_index', 15)))
+                ref = read_index_png(name_orig, expected, int(name.get('max_index', 15)))
+                mask = q != ref
+            else:
+                rgba = np.array(image.convert('RGBA'), dtype=np.uint8)
+                ref = np.array(Image.open(name_orig).convert('RGBA'), dtype=np.uint8)
+                mask = np.any(rgba != ref, axis=2)
+                palette = np.array(name['palette_rgba'], dtype=np.uint8)
+                q = nearest_palette_indices(rgba, palette)
+            if np.any(mask):
+                slot = slots[int(name['image_index'])]
+                rect = tuple(int(v) for v in name['rect'])
+                indices = decode_psmt4_slot_region(chunk, slot, rect)
+                indices[mask] = q[mask]
+                chunk = rebuild_psmt4_slot_region(chunk, slot, rect, indices)
+                changed_count += 1
+
+        modified[start:start + size] = chunk
+    with open(out_path, 'wb') as f:
+        f.write(modified)
+    print(f'\n[BANK] changed image(s): {changed_count}; saved -> {out_path}')
+
 def cmd_extract(xtx_path: str, out_dir: str, fix_alpha: bool = False, lex_path: str = None,
                 lex_verbose: bool = False, pal_no_ps2_reorder: bool = False,
                 save_full: bool = False, lex_scan: bool = False, palette_mode: str = 'auto',
                 edit_only: bool = False, palette_xtx_paths: list[str] | None = None,
-                auto_palette_sources: bool = True):
+                auto_palette_sources: bool = True, _bank_chunk: bool = False,
+                _preparsed_mats: list | None = None):
     data  = open(xtx_path, 'rb').read()
     magic = texture_magic(data)
 
@@ -1113,26 +1777,63 @@ def cmd_extract(xtx_path: str, out_dir: str, fix_alpha: bool = False, lex_path: 
         print(f"ERROR: unsupported file magic {data[0:4]!r}; expected XTX\\0 or ARX\\0")
         return
 
+    bank_chunks = split_concatenated_xtx(data) if not _bank_chunk else []
+    if len(bank_chunks) > 1:
+        if not all(is_cardgrap_chunk(item['images']) for item in bank_chunks):
+            raise ValueError(f'found {len(bank_chunks)} concatenated XTX members, but no proven mixed-format bank profile')
+        if not lex_path:
+            candidate = os.path.splitext(xtx_path)[0] + '.lex'
+            if os.path.exists(candidate):
+                lex_path = candidate
+        if not lex_path:
+            raise ValueError('CARDGRAP bank extraction requires the paired CARDGRAP.lex')
+        mats = _preparsed_mats or parse_lex_material_family(xtx_path, lex_path, lex_verbose, lex_scan)
+        extract_cardgrap_bank(xtx_path, data, bank_chunks, out_dir, lex_path, mats)
+        return
+
     images    = parse_xtx_headers(data)
     configure_texture_dimensions(images)
+    mats = _preparsed_mats
+    if lex_path and mats is None:
+        mats = parse_lex_material_family(xtx_path, lex_path, lex_verbose, lex_scan)
+    detected_psms = sorted({int(m.get('tex0', {}).get('psm', -1)) for m in (mats or [])})
+    mixed_slot_fallback = has_overlapping_index_slots(images)
+    needs_psmt8 = not lex_path or 0x13 in detected_psms
+    # Overlapping upload entries can alias different GS formats even when the
+    # model LEX declares only one of them. CARDGRAP is confirmed PSMT8 in slot
+    # 0 and PSMT4 text in slot 1, so retain both diagnostic/edit bases until
+    # entry-level classification is available.
+    needs_psmt4 = not lex_path or 0x14 in detected_psms or mixed_slot_fallback
     os.makedirs(out_dir, exist_ok=True)
     base_name = os.path.splitext(os.path.basename(xtx_path))[0]
 
     rgba_atlas = None
     index_atlas = build_index_atlas(data, images)
+    overlapping_slots = has_overlapping_index_slots(images)
     original_xtx_path = os.path.join(out_dir, 'original.xtx')
     with open(original_xtx_path, 'wb') as f:
         f.write(data)
 
     meta = {
         'tool': 'xtx_tool_ver7_fixed_palette_formula',
-        'version': 10,
+        'version': 14,
         'source_xtx_name': os.path.basename(xtx_path),
         'source_xtx_path': os.path.abspath(xtx_path),
         'xtx_size': len(data),
         'xtx_sha256': sha256(data),
         'image_count': len(images),
         'images': [dict(img) for img in images],
+        'format_detection': {
+            'source': (
+                'LEX TEX0.PSM + overlapping-slot mixed-format fallback'
+                if lex_path and mixed_slot_fallback else
+                ('LEX TEX0.PSM' if lex_path else 'ambiguous: no LEX')
+            ),
+            'tex0_psm_values': detected_psms,
+            'editable_formats': [
+                name for name, enabled in (('PSMT8', needs_psmt8), ('PSMT4', needs_psmt4)) if enabled
+            ],
+        },
         'gs_layout_facts': GS_LAYOUT_FACTS,
         'metadata_runtime_evidence': [
             'OV12.OVL strings reference rg_help.euc.c, help.npr, help_*.bxx, RgBxxGetXtx, pXtxData, and pLexData.',
@@ -1143,49 +1844,54 @@ def cmd_extract(xtx_path: str, out_dir: str, fix_alpha: bool = False, lex_path: 
         'subimage_edit_files': [],
         'full_reference_files': {},
         'rebuild_rule': [
-            'PSMT4.png, PSMT8.png, and edit_*.png are separate edit pipelines.',
+            'PSMT4.png, PSMT8.png, and palette-applied PSMT4_NNN/PSMT8_NNN PNGs are separate edit pipelines.',
             '<source>_N.png subimage files are also edit inputs when changed.',
             '<source>_full_index.png is a PSMT8 full-index reference/edit input.',
             'Preferred workflow: keep extracted originals untouched and place edited *_KOR.png files beside them.',
-            'Example: edit_001_KOR.png replaces edit_001.png; <source>_1_KOR.png replaces <source>_1.png.',
+            'Example: PSMT8_001_KOR.png replaces PSMT8_001.png; <source>_1_KOR.png replaces <source>_1.png.',
             'Edit only one pipeline before import.',
             'PSMT4 pixels must be exact index values 0..15.',
             'PSMT8 pixels must be exact index values 0..255.',
-            'edit_*.png files are palette-applied material edit inputs.',
+            'PSMT4_NNN.png and PSMT8_NNN.png are TEX0/CLUT-resolved editable image views.',
+            'Palette-resolved edit PNGs use indexed P mode with the real RGB palette and no PNG alpha channel.',
+            'Their pixel values are imported directly as GS palette indices; do not convert them to RGBA.',
             'If several files in one pipeline changed, they are applied together.',
             'If files from multiple pipelines changed, rebuild stops as ambiguous.',
         ],
     }
 
-    psmt8_path = os.path.join(out_dir, 'PSMT8.png')
-    write_index_png(index_atlas, psmt8_path, 256)
-
     p4_cfg = psmt4_config(xtx_path)
-    psmt4 = decode_psmt4_png(data, images, p4_cfg)
-    psmt4_path = os.path.join(out_dir, 'PSMT4.png')
-    write_index_png(psmt4, psmt4_path, 16)
-
-    meta['edit_files'] = {
-        'PSMT4': {
+    psmt4 = None
+    meta['edit_files'] = {}
+    if needs_psmt8:
+        psmt8_path = os.path.join(out_dir, 'PSMT8.png')
+        write_index_png(index_atlas, psmt8_path, 256)
+        meta['edit_files']['PSMT8'] = {
+            'path': 'PSMT8.png',
+            'sha256': file_sha256(psmt8_path),
+            'size': [int(index_atlas.shape[1]), int(index_atlas.shape[0])],
+            'max_index': 255,
+            'read_only_due_to_overlapping_slots': bool(overlapping_slots),
+        }
+    if needs_psmt4:
+        psmt4 = decode_psmt4_png(data, images, p4_cfg)
+        psmt4_path = os.path.join(out_dir, 'PSMT4.png')
+        write_index_png(psmt4, psmt4_path, 16)
+        meta['edit_files']['PSMT4'] = {
             'path': 'PSMT4.png',
             'sha256': file_sha256(psmt4_path),
             'size': [int(psmt4.shape[1]), int(psmt4.shape[0])],
             'max_index': 15,
             'config': p4_cfg,
-        },
-        'PSMT8': {
-            'path': 'PSMT8.png',
-            'sha256': file_sha256(psmt8_path),
-            'size': [int(index_atlas.shape[1]), int(index_atlas.shape[0])],
-            'max_index': 255,
-        },
-    }
+            'read_only_due_to_overlapping_slots': bool(overlapping_slots),
+        }
 
     mat_map = palettes = valid_mats = None
+    isolated_slots = False
     color_atlas = None
+    resolved_mode = None
     if lex_path:
         rgba_atlas = build_rgba_atlas(data, images)
-        mats = parse_lex_materials(lex_path, lex_verbose, lex_scan)
         palette_sources = collect_palette_sources(xtx_path, rgba_atlas, palette_xtx_paths, auto_palette_sources)
         if len(palette_sources) > 1:
             names = ', '.join(src['name'] for src in palette_sources[:12])
@@ -1193,42 +1899,36 @@ def cmd_extract(xtx_path: str, out_dir: str, fix_alpha: bool = False, lex_path: 
                 names += f", ... +{len(palette_sources)-12}"
             print(f"[LEX] palette source candidates: {names}")
         mat_map, palettes, valid_mats = build_material_maps(
-            mats, rgba_atlas, not pal_no_ps2_reorder, index_atlas, palette_sources
+            mats, rgba_atlas, not pal_no_ps2_reorder, index_atlas, palette_sources, 0x13
         )
-        if not palettes:
-            print("[LEX] WARNING: no usable palettes found in this XTX/LEX pair; falling back to grayscale extraction")
+        if psmt4 is not None:
+            p4_mat_map, p4_palettes, p4_valid_mats = build_material_maps(
+                mats, rgba_atlas, not pal_no_ps2_reorder, psmt4, palette_sources, 0x14
+            )
         else:
+            p4_mat_map, p4_palettes, p4_valid_mats = None, [], []
+        clean_edit_files = []
+        if palettes:
             resolved_mode, coverage = choose_palette_mode(palette_mode, mat_map, palettes)
-            color_atlas = colorize_with_mode(index_atlas, mat_map, palettes, resolved_mode)
             print(f"[LEX] palette apply mode: {resolved_mode} (material coverage {coverage*100:.1f}%)")
-            meta['clean_edit_files'] = save_clean_edit_set(out_dir, index_atlas, valid_mats, palettes)
-            p4_palette = find_psmt4_palette(rgba_atlas, psmt4, valid_mats, images)
-            if p4_palette:
-                p4_rgba = np.array(p4_palette['palette_rgba'], dtype=np.uint8)[psmt4]
-                p4_rgba_path = os.path.join(out_dir, 'PSMT4_RGBA.png')
-                Image.fromarray(p4_rgba, 'RGBA').save(p4_rgba_path)
-                meta['edit_files']['PSMT4_RGBA'] = {
-                    'path': 'PSMT4_RGBA.png',
-                    'sha256': file_sha256(p4_rgba_path),
-                    'size': [int(psmt4.shape[1]), int(psmt4.shape[0])],
-                    'config': p4_cfg,
-                    'palette_rgba': p4_palette['palette_rgba'],
-                    'raw_palette_rgba': p4_palette.get('raw_palette_rgba'),
-                    'palette_source': {
-                        'palx': p4_palette['palx'],
-                        'paly': p4_palette['paly'],
-                        'base_palx': p4_palette['base_palx'],
-                        'base_paly': p4_palette['base_paly'],
-                        'base_pal_source': p4_palette['base_pal_source'],
-                        'search_source': p4_palette.get('search_source'),
-                        'score': p4_palette['score'],
-                    },
-                }
-                print(
-                    f"[PSMT4] palette row=({p4_palette['palx']},{p4_palette['paly']}) "
-                    f"base=({p4_palette['base_palx']},{p4_palette['base_paly']}) "
-                    f"score={p4_palette['score']:.1f} -> {p4_rgba_path}"
+            isolated_slots = overlapping_slots
+            if isolated_slots:
+                print('[XTX] overlapping indexed slot rectangles detected; extracting each slot independently')
+                clean_edit_files.extend(
+                    save_isolated_slot_edit_set(out_dir, data, images, valid_mats, palettes)
                 )
+            else:
+                color_atlas = colorize_with_mode(index_atlas, mat_map, palettes, resolved_mode)
+                clean_edit_files.extend(
+                    save_clean_edit_set(out_dir, index_atlas, valid_mats, palettes, 'PSMT8')
+                )
+        if p4_palettes:
+            clean_edit_files.extend(
+                save_clean_edit_set(out_dir, psmt4, p4_valid_mats, p4_palettes, 'PSMT4', p4_cfg)
+            )
+        meta['clean_edit_files'] = clean_edit_files
+        if not clean_edit_files:
+            print("[LEX] WARNING: no usable PSMT8/PSMT4 palettes found in this XTX/LEX pair")
         if save_full:
             if color_atlas is not None:
                 full_palette_path = os.path.join(out_dir, f"{base_name}_full_palette.png")
@@ -1239,14 +1939,16 @@ def cmd_extract(xtx_path: str, out_dir: str, fix_alpha: bool = False, lex_path: 
                     'size': [int(color_atlas.shape[1]), int(color_atlas.shape[0])],
                     'requires_lex': True,
                 }
-            full_index_path = os.path.join(out_dir, f"{base_name}_full_index.png")
-            Image.fromarray(index_atlas, 'L').save(full_index_path)
-            meta['full_reference_files']['PSMT8_FULL_INDEX'] = {
-                'path': os.path.basename(full_index_path),
-                'sha256': file_sha256(full_index_path),
-                'size': [int(index_atlas.shape[1]), int(index_atlas.shape[0])],
-                'max_index': 255,
-            }
+            if needs_psmt8:
+                full_index_path = os.path.join(out_dir, f"{base_name}_full_index.png")
+                Image.fromarray(index_atlas, 'L').save(full_index_path)
+                meta['full_reference_files']['PSMT8_FULL_INDEX'] = {
+                    'path': os.path.basename(full_index_path),
+                    'sha256': file_sha256(full_index_path),
+                    'size': [int(index_atlas.shape[1]), int(index_atlas.shape[0])],
+                    'max_index': 255,
+                    'read_only_due_to_overlapping_slots': bool(overlapping_slots),
+                }
 
     if edit_only and meta.get('clean_edit_files'):
         with open(os.path.join(out_dir, 'xtx_meta.json'), 'w', encoding='utf-8') as f:
@@ -1264,26 +1966,55 @@ def cmd_extract(xtx_path: str, out_dir: str, fix_alpha: bool = False, lex_path: 
         ux, uy = img['x0'] * 2, img['y0'] * 2
         uw, uh = w * 2, h * 2
         out_path = os.path.join(out_dir, f"{base_name}_{saved + 1}.png")
+        isolated_regions = []
+        isolated_fallback = None
+        subimage_palette = None
 
-        if color_atlas is not None:
-            crop = color_atlas[uy:uy+uh, ux:ux+uw, :]
+        if isolated_slots and palettes:
+            index_slot = img_to_unsw(data, img)
+            isolated_regions = slot_palette_regions(img, valid_mats, palettes)
+            isolated_fallback = (
+                np.array(isolated_regions[0]['palette_rgba'], dtype=np.uint8)
+                if isolated_regions else palettes[0]
+            )
+            crop = colorize_isolated_slot(index_slot, isolated_regions, isolated_fallback)
             Image.fromarray(crop, 'RGBA').save(out_path)
+            print(f"  [{img['index']}] {w}x{h} -> {out_path} (RGBA, isolated XTX slot)")
+        elif color_atlas is not None:
+            if resolved_mode == 'global' and palettes:
+                crop = index_atlas[uy:uy+uh, ux:ux+uw]
+                subimage_palette = palettes[0]
+                write_colored_index_png(crop, out_path, subimage_palette)
+                mode_note = 'indexed palette, no PNG alpha'
+            else:
+                crop = color_atlas[uy:uy+uh, ux:ux+uw, :]
+                Image.fromarray(crop, 'RGBA').save(out_path)
+                mode_note = 'RGBA multi-palette reference'
             covered = int(np.mean(mat_map[uy:uy+uh, ux:ux+uw] >= 0) * 100) if mat_map is not None else 0
-            print(f"  [{img['index']}] {w}x{h} -> {out_path} (RGBA, material coverage {covered}%)")
+            print(f"  [{img['index']}] {w}x{h} -> {out_path} ({mode_note}, material coverage {covered}%)")
         else:
             crop = img_to_unsw(data, img)
             Image.fromarray(crop, 'L').save(out_path)
             print(f"  [{img['index']}] {w}x{h} -> {out_path}")
 
-        meta['subimage_edit_files'].append({
+        subimage_item = {
             'path': os.path.basename(out_path),
             'sha256': file_sha256(out_path),
             'slot_order': int(saved),
             'image_index': int(img['index']),
             'rect': [int(ux), int(uy), int(ux + uw), int(uy + uh)],
             'size': [int(uw), int(uh)],
-            'requires_lex': bool(color_atlas is not None),
-        })
+            'requires_lex': bool((color_atlas is not None and subimage_palette is None) or (isolated_slots and palettes)),
+        }
+        if subimage_palette is not None:
+            subimage_item['edit_encoding'] = 'indexed_palette_no_alpha'
+            subimage_item['max_index'] = int(len(subimage_palette) - 1)
+            subimage_item['palette_rgba'] = subimage_palette.astype(np.uint8).tolist()
+        if isolated_slots and palettes:
+            subimage_item['slot_isolated'] = True
+            subimage_item['palette_rgba'] = isolated_fallback.astype(np.uint8).tolist()
+            subimage_item['palette_regions'] = isolated_regions
+        meta['subimage_edit_files'].append(subimage_item)
 
         if fix_alpha:
             pdata    = data[img['pstart']:img['pend']]
@@ -1348,6 +2079,107 @@ def changed_rgba_mask(folder: str, item: dict, rgba: np.ndarray) -> np.ndarray |
     return np.any(ref != rgba, axis=2)
 
 
+def changed_index_mask(folder: str, item: dict, indices: np.ndarray) -> np.ndarray | None:
+    ref_path = os.path.join(folder, item['path'])
+    if not os.path.exists(ref_path):
+        return None
+    try:
+        ref = read_index_png(
+            ref_path,
+            tuple(int(v) for v in item['size']),
+            int(item.get('max_index', 255)),
+        )
+    except (OSError, ValueError):
+        return None
+    if ref.shape != indices.shape:
+        return None
+    return ref != indices
+
+
+def read_index_edit_compat(folder: str, item: dict, path: str) -> np.ndarray:
+    """Read a new indexed edit or migrate a legacy RGB/RGBA _KOR in memory.
+
+    Tool v14 changed palette-resolved edit references from RGBA to opaque
+    indexed PNGs.  Existing _KOR files must remain usable after re-extraction:
+    changed RGB pixels are quantized with the recorded GS palette, while every
+    visually unchanged pixel retains its exact original index.
+    """
+    size = tuple(int(v) for v in item['size'])
+    max_index = int(item.get('max_index', 255))
+    image = Image.open(path)
+    if image.size != size:
+        raise ValueError(f'{path} size must be {size}, got {image.size}')
+    ref_path = os.path.join(folder, item['path'])
+    if image.mode == 'P':
+        indices = np.array(image, dtype=np.uint8)
+        bad = indices > max_index
+        if not np.any(bad):
+            return indices
+        source_rgb = np.array(image.getpalette(), dtype=np.int16).reshape(256, 3)
+        ref_image = Image.open(ref_path)
+        if item.get('palette_rgba'):
+            allowed_rgb = np.array(item['palette_rgba'], dtype=np.int16)[:max_index + 1, :3]
+        elif ref_image.mode == 'P' and ref_image.getpalette():
+            allowed_rgb = np.array(ref_image.getpalette(), dtype=np.int16).reshape(256, 3)[:max_index + 1]
+        else:
+            raise ValueError(f'{path} contains indices above {max_index} and no palette is available for repair')
+        repaired = indices.copy()
+        replacements = {}
+        for value in np.unique(indices[bad]).tolist():
+            diff = allowed_rgb - source_rgb[int(value)]
+            nearest = int(np.argmin(np.sum(diff * diff, axis=1)))
+            repaired[indices == int(value)] = nearest
+            replacements[int(value)] = nearest
+        print(
+            f"  [COMPAT] {os.path.basename(path)}: repaired {int(np.count_nonzero(bad))} "
+            f"palette-overflow pixel(s), replacements={replacements}"
+        )
+        if int(repaired.max(initial=0)) > max_index:
+            raise ValueError(f'internal repair error: {path} still contains indices above {max_index}')
+        return repaired
+    if image.mode in ('L', 'I;16', 'I'):
+        return read_index_png(path, size, max_index)
+    if image.mode not in ('RGB', 'RGBA'):
+        raise ValueError(f'{path} must be indexed, grayscale, RGB, or RGBA')
+    ref_index = read_index_png(ref_path, size, max_index)
+    ref_rgb = np.array(Image.open(ref_path).convert('RGB'), dtype=np.uint8)
+    edit_rgba = np.array(image.convert('RGBA'), dtype=np.uint8)
+    changed = np.any(edit_rgba[:, :, :3] != ref_rgb, axis=2)
+    if item.get('palette_rgba'):
+        palette = np.array(item['palette_rgba'], dtype=np.uint8)
+    else:
+        ref_palette = Image.open(ref_path).getpalette()
+        if ref_palette is None:
+            raise ValueError(f'{path} is RGB/RGBA but no reference palette is available')
+        rgb = np.array(ref_palette, dtype=np.uint8).reshape(256, 3)
+        palette = np.column_stack((rgb, np.full((256,), 255, dtype=np.uint8)))
+    if len(palette) <= max_index:
+        raise ValueError(f'{path} metadata palette has only {len(palette)} entries for max index {max_index}')
+    quantized = nearest_palette_indices(edit_rgba, palette[:max_index + 1])
+    result = ref_index.copy()
+    result[changed] = quantized[changed]
+    if int(result.max(initial=0)) > max_index:
+        raise ValueError(f'internal compatibility error: {path} produced indices above {max_index}')
+    print(
+        f"  [COMPAT] {os.path.basename(path)}: migrated legacy {image.mode} edit in memory; "
+        f"{int(np.count_nonzero(changed))} changed RGB pixel(s), unchanged indices preserved"
+    )
+    return result
+
+
+def normalize_meta_edit_file_shapes(meta: dict) -> dict:
+    """Accept the one-item list accidentally written by tool version 12."""
+    meta = dict(meta)
+    edit_files = dict(meta.get('edit_files', {}))
+    for mode, item in list(edit_files.items()):
+        if isinstance(item, list):
+            if len(item) != 1 or not isinstance(item[0], dict):
+                raise ValueError(f'invalid {mode} edit metadata: expected one object, got {item!r}')
+            edit_files[mode] = item[0]
+    meta['edit_files'] = edit_files
+    return meta
+
+
 def infer_legacy_meta_edit_files(folder: str, meta: dict) -> dict:
     """Add edit metadata for older extract folders that lack v10 fields.
 
@@ -1355,7 +2187,7 @@ def infer_legacy_meta_edit_files(folder: str, meta: dict) -> dict:
     convention, without treating already-present untracked reference PNGs as
     modified edits.
     """
-    meta = dict(meta)
+    meta = normalize_meta_edit_file_shapes(meta)
     if 'subimage_edit_files' not in meta:
         base = os.path.splitext(meta.get('source_xtx_name') or 'image')[0]
         items = []
@@ -1492,7 +2324,7 @@ def quantize_rgba_full_atlas(xtx_data: bytes, xtx_path: str, rgba: np.ndarray, l
     configure_texture_dimensions(images)
     rgba_atlas = build_rgba_atlas(xtx_data, images)
     index_atlas = build_index_atlas(xtx_data, images)
-    mats = parse_lex_materials(lex_path, lex_verbose, lex_scan)
+    mats = parse_lex_material_family(xtx_path, lex_path, lex_verbose, lex_scan)
     palette_sources = collect_palette_sources(xtx_path, rgba_atlas, palette_xtx_paths, auto_palette_sources)
     mat_map, palettes, valid_mats = build_material_maps(
         mats, rgba_atlas, not pal_no_ps2_reorder, index_atlas, palette_sources
@@ -1530,12 +2362,77 @@ def rebuild_xtx_from_psmt8_index(xtx_data: bytes, images: list, index8: np.ndarr
     return bytes(modified)
 
 
+def rebuild_overlapping_psmt8_by_owner(xtx_data: bytes, images: list,
+                                       original_index: np.ndarray,
+                                       edited_index: np.ndarray) -> bytes:
+    """Apply a flattened PSMT8 edit only to the last slot owning each pixel.
+
+    build_index_atlas writes XTX slots in header order, so a pixel visible in
+    the flattened atlas belongs to the last covering slot.  Writing only that
+    owner reproduces the edited atlas without copying overlap bytes into every
+    aliased slot.
+    """
+    if original_index.shape != edited_index.shape:
+        raise ValueError('original and edited PSMT8 atlas sizes differ')
+    changed = original_index != edited_index
+    if not np.any(changed):
+        return bytes(xtx_data)
+
+    owner = np.full(original_index.shape, -1, dtype=np.int32)
+    slots = [slot for slot in images if slot.get('valid')]
+    for slot in slots:
+        x0, y0, x1, y1 = indexed_slot_rect(slot)
+        x0, y0 = max(0, x0), max(0, y0)
+        x1, y1 = min(owner.shape[1], x1), min(owner.shape[0], y1)
+        if x1 > x0 and y1 > y0:
+            owner[y0:y1, x0:x1] = int(slot['index'])
+
+    unowned = changed & (owner < 0)
+    if np.any(unowned):
+        ys, xs = np.where(unowned)
+        raise ValueError(
+            f'PSMT8 edit changes {len(xs)} pixel(s) outside every XTX slot; '
+            f'first unowned pixel=({int(xs[0])},{int(ys[0])})'
+        )
+
+    modified = bytearray(xtx_data)
+    applied = 0
+    for slot in slots:
+        slot_id = int(slot['index'])
+        x0, y0, x1, y1 = indexed_slot_rect(slot)
+        x0c, y0c = max(0, x0), max(0, y0)
+        x1c, y1c = min(owner.shape[1], x1), min(owner.shape[0], y1)
+        if x1c <= x0c or y1c <= y0c:
+            continue
+        owned_changed = changed[y0c:y1c, x0c:x1c] & (owner[y0c:y1c, x0c:x1c] == slot_id)
+        if not np.any(owned_changed):
+            continue
+        local = img_to_unsw(xtx_data, slot).copy()
+        ly0, lx0 = y0c - y0, x0c - x0
+        ly1, lx1 = ly0 + (y1c - y0c), lx0 + (x1c - x0c)
+        local_view = local[ly0:ly1, lx0:lx1]
+        edited_view = edited_index[y0c:y1c, x0c:x1c]
+        local_view[owned_changed] = edited_view[owned_changed]
+        pdata = unsw_to_pdata(local, slot)
+        modified[int(slot['pstart']):int(slot['pend'])] = pdata
+        count = int(np.count_nonzero(owned_changed))
+        applied += count
+        print(f'  [OWNER] slot {slot_id}: {count} changed pixel(s)')
+    print(f'  [OWNER] applied {applied} overlapping-atlas pixel change(s)')
+    return bytes(modified)
+
+
 def apply_meta_subimage_edits(xtx_data: bytes, xtx_path: str, folder: str, items: list, lex_path: str | None,
                               lex_verbose: bool, pal_no_ps2_reorder: bool, lex_scan: bool,
                               palette_mode: str, palette_xtx_paths: list[str] | None,
                               auto_palette_sources: bool) -> bytes:
     images = parse_xtx_headers(xtx_data)
     configure_texture_dimensions(images)
+    isolated_flags = {bool(item.get('slot_isolated')) for item in items}
+    if isolated_flags == {True}:
+        return apply_isolated_clean_edits(xtx_data, folder, items, images)
+    if len(isolated_flags) > 1:
+        raise ValueError('isolated-slot and combined-atlas subimage edits cannot be rebuilt together')
     index_atlas = build_index_atlas(xtx_data, images)
     lex_state = None
 
@@ -1547,13 +2444,24 @@ def apply_meta_subimage_edits(xtx_data: bytes, xtx_path: str, folder: str, items
         if image.size != expected_size:
             raise ValueError(f"{path} size must be {expected_size}, got {image.size}")
         umin, vmin, umax, vmax = [int(v) for v in item['rect']]
-        if item.get('requires_lex'):
+        if item.get('edit_encoding') == 'indexed_palette_no_alpha':
+            q = read_index_edit_compat(folder, item, path)
+            pixel_changed = changed_index_mask(folder, item, q)
+            if pixel_changed is not None and not np.any(pixel_changed):
+                print(f"  [META] {os.path.basename(path)} (_KOR) has no index differences; keeping original indices")
+                continue
+            indices = index_atlas[vmin:vmax, umin:umax].copy()
+            if pixel_changed is None:
+                indices[:, :] = q
+            else:
+                indices[pixel_changed] = q[pixel_changed]
+        elif item.get('requires_lex'):
             if lex_state is None:
                 if not lex_path:
                     raise ValueError(f"{item['path']} is RGBA/LEX-based; pass --lex for import")
                 rgba_atlas = build_rgba_atlas(xtx_data, images)
                 base_index = build_index_atlas(xtx_data, images)
-                mats = parse_lex_materials(lex_path, lex_verbose, lex_scan)
+                mats = parse_lex_material_family(xtx_path, lex_path, lex_verbose, lex_scan)
                 palette_sources = collect_palette_sources(xtx_path, rgba_atlas, palette_xtx_paths, auto_palette_sources)
                 mat_map, palettes, valid_mats = build_material_maps(
                     mats, rgba_atlas, not pal_no_ps2_reorder, base_index, palette_sources
@@ -1614,12 +2522,18 @@ def try_meta_driven_import(xtx_data: bytes, xtx_path: str, folder: str, lex_path
             print('[META] no edit image changes detected; output will match input XTX')
             return bytes(xtx_data)
         return None
+    probe_images = parse_xtx_headers(xtx_data)
+    configure_texture_dimensions(probe_images)
+    if groups and has_overlapping_index_slots(probe_images) and int(meta.get('version', 0)) < 12:
+        raise ValueError(
+            'this XTX has overlapping image slots but the extract folder uses pre-v12 metadata; '
+            're-extract with the current tool before editing/rebuilding'
+        )
     if len(groups) > 1:
         raise ValueError(f"multiple edit pipelines changed in {folder}: {sorted(groups)}; edit only one pipeline")
 
     mode, items = next(iter(groups.items()))
-    images = parse_xtx_headers(xtx_data)
-    configure_texture_dimensions(images)
+    images = probe_images
     print(f"[META] detected changed pipeline: {mode}")
     if mode == 'clean':
         return try_clean_edit_import(xtx_data, folder)
@@ -1632,12 +2546,17 @@ def try_meta_driven_import(xtx_data: bytes, xtx_path: str, folder: str, lex_path
     if mode == 'PSMT8':
         item = items[0]
         size = tuple(int(x) for x in item['size'])
-        index8 = read_index_png(edit_item_path(item, folder), size, 255)
+        index8 = read_index_edit_compat(folder, item, edit_item_path(item, folder))
+        if item.get('read_only_due_to_overlapping_slots'):
+            original_index = build_index_atlas(xtx_data, images)
+            return rebuild_overlapping_psmt8_by_owner(xtx_data, images, original_index, index8)
         return rebuild_xtx_from_psmt8_index(xtx_data, images, index8)
     if mode == 'PSMT4':
         item = items[0]
+        if item.get('read_only_due_to_overlapping_slots'):
+            raise ValueError('PSMT4.png is diagnostic-only because XTX slots overlap; edit palette-applied slot PNGs instead')
         size = tuple(int(x) for x in item['size'])
-        index4 = read_index_png(edit_item_path(item, folder), size, 15)
+        index4 = read_index_edit_compat(folder, item, edit_item_path(item, folder))
         return rebuild_xtx_from_psmt4(xtx_data, images, item['config'], index4)
     if mode == 'PSMT4_RGBA':
         item = items[0]
@@ -1662,6 +2581,8 @@ def try_meta_driven_import(xtx_data: bytes, xtx_path: str, folder: str, lex_path
         return rebuild_xtx_from_psmt4(xtx_data, images, item['config'], index4)
     if mode == 'PSMT8_FULL_INDEX':
         item = items[0]
+        if item.get('read_only_due_to_overlapping_slots'):
+            raise ValueError('full-index PNG is diagnostic-only because XTX slots overlap; edit PSMT8_NNN_KOR.png instead')
         size = tuple(int(x) for x in item['size'])
         index8 = read_index_png(edit_item_path(item, folder), size, 255)
         return rebuild_xtx_from_psmt8_index(xtx_data, images, index8)
@@ -1691,6 +2612,42 @@ def try_meta_driven_import(xtx_data: bytes, xtx_path: str, folder: str, lex_path
     raise ValueError(f"unsupported changed edit pipeline: {mode}")
 
 
+def apply_isolated_clean_edits(xtx_data: bytes, folder: str, items: list, images: list) -> bytes:
+    slots = {int(img['index']): img for img in images if img.get('valid')}
+    modified = bytearray(xtx_data)
+    print(f"[CLEAN] applying {len(items)} isolated PSMT8 slot image(s)")
+    for item in items:
+        image_index = int(item['image_index'])
+        if image_index not in slots:
+            raise ValueError(f"missing XTX image slot {image_index}")
+        slot = slots[image_index]
+        path = edit_item_path(item, folder)
+        image = Image.open(path)
+        expected_size = tuple(int(v) for v in item['size'])
+        if image.size != expected_size:
+            raise ValueError(f"{path} size must be {expected_size}, got {image.size}")
+        if item.get('edit_encoding') == 'indexed_palette_no_alpha':
+            quantized = read_index_edit_compat(folder, item, path)
+            pixel_changed = changed_index_mask(folder, item, quantized)
+        else:
+            rgba = np.array(image.convert('RGBA'), dtype=np.uint8)
+            pixel_changed = changed_rgba_mask(folder, item, rgba)
+            quantized = quantize_isolated_slot(rgba, item)
+        if pixel_changed is not None and not np.any(pixel_changed):
+            print(f"  [CLEAN] {os.path.basename(path)} (_KOR) has no pixel differences; keeping slot {image_index}")
+            continue
+        indices = img_to_unsw(xtx_data, slot).copy()
+        if pixel_changed is None:
+            indices[:, :] = quantized
+        else:
+            indices[pixel_changed] = quantized[pixel_changed]
+        pdata = unsw_to_pdata(indices, slot)
+        modified[int(slot['pstart']):int(slot['pend'])] = pdata
+        suffix = ' (_KOR)' if item.get('_input_is_kor') else ''
+        print(f"  [CLEAN] {os.path.basename(path)}{suffix} -> isolated slot {image_index}")
+    return bytes(modified)
+
+
 def try_clean_edit_import(xtx_data: bytes, folder: str) -> bytes | None:
     meta_path = os.path.join(folder, 'xtx_meta.json')
     if not os.path.exists(meta_path):
@@ -1698,6 +2655,7 @@ def try_clean_edit_import(xtx_data: bytes, folder: str) -> bytes | None:
 
     with open(meta_path, 'r', encoding='utf-8') as f:
         meta = json.load(f)
+    meta = normalize_meta_edit_file_shapes(meta)
     if not meta.get('clean_edit_files'):
         return None
 
@@ -1717,24 +2675,45 @@ def try_clean_edit_import(xtx_data: bytes, folder: str) -> bytes | None:
 
     images = parse_xtx_headers(xtx_data)
     configure_texture_dimensions(images)
-    index_atlas = build_index_atlas(xtx_data, images)
+    isolated_flags = {bool(item.get('slot_isolated')) for item in clean_changed}
+    if isolated_flags == {True}:
+        return apply_isolated_clean_edits(xtx_data, folder, clean_changed, images)
+    if len(isolated_flags) > 1:
+        raise ValueError('isolated-slot and combined-atlas clean edits cannot be rebuilt together')
+    pixel_formats = {item.get('pixel_format', 'PSMT8') for item in clean_changed}
+    if len(pixel_formats) != 1:
+        raise ValueError(
+            f"PSMT4 and PSMT8 palette-applied files changed together: {sorted(pixel_formats)}; "
+            "edit one pixel format per rebuild"
+        )
+    pixel_format = next(iter(pixel_formats))
+    if pixel_format == 'PSMT4':
+        cfg = clean_changed[0].get('config') or psmt4_config(meta.get('source_xtx_name', ''))
+        index_atlas = decode_psmt4_png(xtx_data, images, cfg)
+    else:
+        cfg = None
+        index_atlas = build_index_atlas(xtx_data, images)
 
-    print(f"[CLEAN] applying {len(clean_changed)} clean edit image(s)")
+    print(f"[CLEAN] applying {len(clean_changed)} {pixel_format} palette-applied image(s)")
     for item in clean_changed:
         path = edit_item_path(item, folder)
-        image = Image.open(path).convert('RGBA')
         expected_size = tuple(int(v) for v in item['size'])
+        image = Image.open(path)
         if image.size != expected_size:
             raise ValueError(f"{path} size must be {expected_size}, got {image.size}")
-        rgba = np.array(image, dtype=np.uint8)
-        pixel_changed = changed_rgba_mask(folder, item, rgba)
+        umin, vmin, umax, vmax = [int(v) for v in item['rect']]
+        indices = index_atlas[vmin:vmax, umin:umax].copy()
+        if item.get('edit_encoding') == 'indexed_palette_no_alpha':
+            q = read_index_edit_compat(folder, item, path)
+            pixel_changed = changed_index_mask(folder, item, q)
+        else:
+            rgba = np.array(image.convert('RGBA'), dtype=np.uint8)
+            pixel_changed = changed_rgba_mask(folder, item, rgba)
+            palette = np.array(item['palette_rgba'], dtype=np.uint8)
+            q = nearest_palette_indices(rgba, palette)
         if pixel_changed is not None and not np.any(pixel_changed):
             print(f"  [CLEAN] {os.path.basename(path)} (_KOR) has no pixel differences; keeping original indices")
             continue
-        palette = np.array(item['palette_rgba'], dtype=np.uint8)
-        umin, vmin, umax, vmax = [int(v) for v in item['rect']]
-        indices = index_atlas[vmin:vmax, umin:umax].copy()
-        q = nearest_palette_indices(rgba, palette)
         if pixel_changed is None:
             indices[:, :] = q
         else:
@@ -1743,13 +2722,9 @@ def try_clean_edit_import(xtx_data: bytes, folder: str) -> bytes | None:
         suffix = ' (_KOR)' if item.get('_input_is_kor') else ''
         print(f"  [CLEAN] {os.path.basename(path)}{suffix} -> rect=({umin},{vmin})-({umax},{vmax})")
 
-    modified = bytearray(xtx_data)
-    for slot in images:
-        if not slot.get('valid'):
-            continue
-        pdata = index_atlas_to_xtx_pdata(index_atlas, slot)
-        modified[slot['pstart']:slot['pend']] = pdata
-    return bytes(modified)
+    if pixel_format == 'PSMT4':
+        return rebuild_xtx_from_psmt4(xtx_data, images, cfg, index_atlas)
+    return rebuild_xtx_from_psmt8_index(xtx_data, images, index_atlas)
 
 
 def try_full_atlas_import(xtx_data: bytes, xtx_path: str, folder: str) -> bytes | None:
@@ -1759,6 +2734,7 @@ def try_full_atlas_import(xtx_data: bytes, xtx_path: str, folder: str) -> bytes 
 
     with open(meta_path, 'r', encoding='utf-8') as f:
         meta = json.load(f)
+    meta = normalize_meta_edit_file_shapes(meta)
 
     if sha256(xtx_data) != meta.get('xtx_sha256'):
         raise ValueError('input XTX hash does not match xtx_meta.json; import from the original XTX used for extract')
@@ -1774,7 +2750,10 @@ def try_full_atlas_import(xtx_data: bytes, xtx_path: str, folder: str) -> bytes 
     if mode == 'PSMT8':
         item = meta['edit_files']['PSMT8']
         size = tuple(int(x) for x in item['size'])
-        index8 = read_index_png(edit_item_path(item, folder), size, 255)
+        index8 = read_index_edit_compat(folder, item, edit_item_path(item, folder))
+        if item.get('read_only_due_to_overlapping_slots'):
+            original_index = build_index_atlas(xtx_data, images)
+            return rebuild_overlapping_psmt8_by_owner(xtx_data, images, original_index, index8)
         modified = bytearray(xtx_data)
         for slot in images:
             if not slot.get('valid'):
@@ -1786,7 +2765,7 @@ def try_full_atlas_import(xtx_data: bytes, xtx_path: str, folder: str) -> bytes 
     if mode == 'PSMT4':
         item = meta['edit_files']['PSMT4']
         size = tuple(int(x) for x in item['size'])
-        index4 = read_index_png(edit_item_path(item, folder), size, 15)
+        index4 = read_index_edit_compat(folder, item, edit_item_path(item, folder))
         return rebuild_xtx_from_psmt4(xtx_data, images, item['config'], index4)
 
     item = meta['edit_files']['PSMT4_RGBA']
@@ -1817,6 +2796,11 @@ def cmd_import(xtx_path: str, folder: str, out_path: str, fix_alpha: bool = Fals
         xtx_data = data
     else:
         print(f"ERROR: unsupported file magic {data[0:4]!r}; expected XTX\\0 or ARX\\0")
+        return
+
+    bank_meta_path = os.path.join(folder, 'xtx_bank_meta.json')
+    if not is_arx and os.path.exists(bank_meta_path):
+        import_cardgrap_bank(xtx_path, xtx_data, folder, out_path)
         return
 
     meta_edit_out = try_meta_driven_import(
@@ -1871,7 +2855,7 @@ def cmd_import(xtx_path: str, folder: str, out_path: str, fix_alpha: bool = Fals
     if lex_path:
         rgba_atlas = build_rgba_atlas(xtx_data, images)
         index_atlas = build_index_atlas(xtx_data, images)
-        mats = parse_lex_materials(lex_path, lex_verbose, lex_scan)
+        mats = parse_lex_material_family(xtx_path, lex_path, lex_verbose, lex_scan)
         palette_sources = collect_palette_sources(xtx_path, rgba_atlas, palette_xtx_paths, auto_palette_sources)
         if len(palette_sources) > 1:
             names = ', '.join(src['name'] for src in palette_sources[:12])

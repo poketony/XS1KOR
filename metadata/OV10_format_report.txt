@@ -1,0 +1,69 @@
+OV10 format report: OV10.OVL
+
+ELF
+- machine: 0x8 (MIPS)
+- load segment: file 0x0..0x58836 -> vaddr 0x9ff000
+- extracted text entries: 420
+
+Control Packet Rule
+- Help*_txt streams are not plain null-terminated strings.
+- Stream starts commonly contain 0b 0d 00.
+- Inline display packet observed in all sampled cases:
+  0c <3-byte header> <EUC-JIS-2004 payload text> 0b 0d 00
+- Some normal records use 0d 00/02/04 separators before 0c packets; these are kept as {0D00}/{0D02}/{0D04}.
+- The old XX/寸咤/釘味 artifacts are caused by decoding the 3-byte header as text.
+
+0x0c Header Distribution
+- 58 58 c0: 21 packets; sample payload='ＳＴＡＲＴ'
+- 38 40 38: 16 packets; sample payload='１／３'
+- c8 08 08: 10 packets; sample payload='○'
+- ff 40 40: 8 packets; sample payload='（参照：カード：条件）'
+- 28 08 ff: 2 packets; sample payload='×'
+- 40 ff 40: 1 packets; sample payload='△'
+- c0 28 68: 1 packets; sample payload='□'
+- 08 40 08: 1 packets; sample payload='△'
+- payload decode failures after 3-byte header: 0
+
+Pointer Tables
+- 0x000491b0 CardBookMarkTxtLst: 7 entries, 7 text refs [BookMark1_txt, BookMark2_txt, BookMark3_txt, BookMark4_txt, BookMark5_txt, BookMark6_txt, BookMark7_txt]
+- 0x00042930 CardErrorList: 6 entries, 6 text refs [CardErrTxt01, CardErrTxt01, CardErrTxt02, CardErrTxt03, CardErrTxt04, CardErrTxt05]
+- 0x00048f00 CardHelpTxtLst: 59 entries, 59 text refs [Help1_01_txt, Help1_02_txt, Help1_03_txt, Help1_04_txt, Help1_05_txt, Help1_06_txt, Help2_01_txt, Help2_02_txt, ... +51]
+- 0x000433e8 CardPlayPMessList: 1 entries, 1 text refs [CardPlayPMessTxt01]
+- 0x000433f0 CardPlayTMessList: 79 entries, 79 text refs [CardPlayTMessTxt00, CardPlayTMessTxt01, CardPlayTMessTxt02, CardPlayTMessTxt04, CardPlayTMessTxt03, CardPlayTMessTxt05, CardPlayTMessTxt06, CardPlayTMessTxt07, ... +71]
+- 0x000490e0 CardSkipTitleTxtLst: 52 entries, 52 text refs [Title1_01_txt, Title1_02_txt, Title1_03_txt, Title1_04_txt, Title1_05_txt, Title1_06_txt, Title2_01_txt, Title2_02_txt, ... +44]
+- 0x00048ff0 CardTitleTxtLst: 59 entries, 59 text refs [Title1_01_txt, Title1_02_txt, Title1_03_txt, Title1_04_txt, Title1_05_txt, Title1_06_txt, Title2_01_txt, Title2_02_txt, ... +51]
+- 0x0004a290 ErrorMessTbl: 195 entries, 135 text refs [EMTitle90Txt, EMMess900Txt, EMMess901Txt, EMTitle01Txt, EMMess018Txt, EMMess019Txt, EMMess902Txt, EMTitle04Txt, ... +127]
+- 0x00049a90 OLMessTbl: 16 entries, 16 text refs [OLMess0010Txt, OLMess0020Txt, OLMess0040Txt, OLMess0030Txt, OLMess0042Txt, OLMess0050Txt, OLMess0000Txt, OLMess0060Txt, ... +8]
+- 0x00049830 PermMessTbl: 16 entries, 16 text refs [PermMess000Txt, PermMess001Txt, PermMess002Txt, PermMess003Txt, PermMess004Txt, PermMess005Txt, PermMess006Txt, PermMess007Txt, ... +8]
+
+Normal Text Slot Groups
+- AnonMess: count=96 slot_bytes=[(16, 34), (24, 18), (8, 17), (32, 11), (40, 10), (48, 5), (72, 1)] raw_bytes=[(10, 16), (4, 12), (14, 10), (12, 8), (8, 7), (18, 6), (24, 6), (6, 5)]
+- BookMark: count=7 slot_bytes=[(16, 5), (8, 2)] raw_bytes=[(10, 2), (6, 2), (14, 1), (12, 1), (8, 1)]
+- CardConvertNameLst: count=20 slot_bytes=[(24, 20)] raw_bytes=[(12, 17), (16, 3)]
+- CardErrTxt: count=5 slot_bytes=[(40, 3), (56, 1), (80, 1)] raw_bytes=[(34, 2), (32, 1), (48, 1), (76, 1)]
+- CardExitMessTxt: count=8 slot_bytes=[(144, 3), (80, 1), (56, 1), (24, 1), (136, 1), (64, 1)] raw_bytes=[(138, 3), (72, 1), (54, 1), (20, 1), (130, 1), (58, 1)]
+- CardMenuMessTxt: count=14 slot_bytes=[(32, 6), (56, 2), (152, 1), (144, 1), (48, 1), (24, 1), (40, 1), (176, 1)] raw_bytes=[(26, 3), (30, 2), (150, 1), (50, 1), (138, 1), (24, 1), (46, 1), (52, 1)]
+- CardPlayDMessTxt: count=9 slot_bytes=[(32, 4), (40, 2), (48, 2), (24, 1)] raw_bytes=[(26, 2), (28, 2), (30, 1), (40, 1), (42, 1), (34, 1), (16, 1)]
+- CardPlayPMessTxt: count=3 slot_bytes=[(24, 2), (32, 1)] raw_bytes=[(18, 2), (22, 1)]
+- CardPlayTMessTxt: count=15 slot_bytes=[(24, 12), (32, 2), (16, 1)] raw_bytes=[(18, 8), (20, 4), (22, 2), (14, 1)]
+- DeckListStr: count=10 slot_bytes=[(16, 10)] raw_bytes=[(8, 10)]
+- EMMess: count=64 slot_bytes=[(32, 38), (24, 10), (16, 9), (8, 5), (40, 2)] raw_bytes=[(26, 30), (24, 7), (12, 4), (4, 4), (18, 3), (16, 3), (22, 3), (8, 2)]
+- EMTitle: count=12 slot_bytes=[(24, 9), (16, 3)] raw_bytes=[(18, 3), (16, 3), (14, 2), (20, 2), (22, 1), (12, 1)]
+- ModeContMess: count=2 slot_bytes=[(40, 2)] raw_bytes=[(36, 1), (34, 1)]
+- ModeEndMess: count=4 slot_bytes=[(24, 2), (48, 1), (40, 1)] raw_bytes=[(14, 1), (42, 1), (22, 1), (38, 1)]
+- OLMess: count=14 slot_bytes=[(32, 4), (40, 4), (56, 4), (8, 1), (24, 1)] raw_bytes=[(24, 2), (26, 2), (38, 2), (48, 2), (50, 2), (32, 2), (2, 1), (18, 1)]
+- P: count=2 slot_bytes=[(24, 2)] raw_bytes=[(20, 2)]
+- PermMess: count=15 slot_bytes=[(40, 11), (48, 3), (8, 1)] raw_bytes=[(34, 4), (36, 3), (38, 3), (40, 3), (2, 1), (32, 1)]
+- Title: count=59 slot_bytes=[(16, 29), (8, 16), (24, 13), (32, 1)] raw_bytes=[(10, 10), (4, 10), (14, 9), (8, 6), (16, 5), (6, 5), (18, 4), (12, 4)]
+
+23-Fullwidth-Cell Wrapping Candidates
+- Many long menu/help descriptions are authored as continuous 2-byte fullwidth text.
+- For these, the renderer appears to wrap every 23 fullwidth cells.
+- ASCII halfwidth bytes break the byte/cell assumption in some renderers; use fullwidth spaces/ASCII.
+- 0x00042c50 CardMenuMessTxt00: raw=150B chars=75 row_chars=[23, 23, 23, 6]
+- 0x00042d20 CardMenuMessTxt02: raw=138B chars=69 row_chars=[23, 23, 23]
+- 0x00042f18 CardMenuMessTxt31: raw=170B chars=85 row_chars=[23, 23, 23, 16]
+- 0x00043068 CardExitMessTxt01: raw=138B chars=69 row_chars=[23, 23, 23]
+- 0x000430f8 CardExitMessTxt10: raw=138B chars=69 row_chars=[23, 23, 23]
+- 0x00043188 CardExitMessTxt11: raw=138B chars=69 row_chars=[23, 23, 23]
+- 0x00043218 CardExitMessTxt12: raw=130B chars=65 row_chars=[23, 23, 19]

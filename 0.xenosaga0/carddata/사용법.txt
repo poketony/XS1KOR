@@ -1,0 +1,10 @@
+작업 환경을 carddata 기준으로 정리했다.
+사용 명령
+cd C:\Users\JO\XS1KOR\0.xenosaga0\carddata
+
+cardgfx list
+cardgfx extract-all
+cardgfx extract CARDGRAP
+cardgfx extract help\h_text
+cardgfx rebuild CARDGRAP
+cardgfx rebuild help\h_text

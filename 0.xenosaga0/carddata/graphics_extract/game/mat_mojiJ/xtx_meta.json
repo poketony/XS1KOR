@@ -1,0 +1,156 @@
+{
+  "tool": "xtx_tool_ver7_fixed_palette_formula",
+  "version": 14,
+  "source_xtx_name": "mat_mojiJ.xtx",
+  "source_xtx_path": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\carddata\\game\\mat_mojiJ.xtx",
+  "xtx_size": 8384,
+  "xtx_sha256": "67cf664acb93bd26542785694326c79753911485dbd8ebe92503b490ff553208",
+  "image_count": 2,
+  "images": [
+    {
+      "index": 0,
+      "width": 64,
+      "height": 32,
+      "bw": 8,
+      "bw_eff": 8,
+      "offset": 0,
+      "img_size": 514,
+      "img_addr": 64,
+      "x0": 0,
+      "y0": 0,
+      "pstart": 96,
+      "pend": 8288,
+      "valid": true
+    },
+    {
+      "index": 1,
+      "width": 8,
+      "height": 2,
+      "bw": 8,
+      "bw_eff": 8,
+      "offset": 4096,
+      "img_size": 6,
+      "img_addr": 8288,
+      "x0": 64,
+      "y0": 0,
+      "pstart": 8320,
+      "pend": 8384,
+      "valid": true
+    }
+  ],
+  "format_detection": {
+    "source": "LEX TEX0.PSM",
+    "tex0_psm_values": [
+      20
+    ],
+    "editable_formats": [
+      "PSMT4"
+    ]
+  },
+  "gs_layout_facts": {
+    "PSMT8_PAGE": [
+      128,
+      64
+    ],
+    "PSMT4_PAGE": [
+      128,
+      128
+    ],
+    "PSMT8_CLUT_ENTRIES": 256,
+    "PSMT4_CLUT_ENTRIES": 16
+  },
+  "metadata_runtime_evidence": [
+    "OV12.OVL strings reference rg_help.euc.c, help.npr, help_*.bxx, RgBxxGetXtx, pXtxData, and pLexData.",
+    "This supports the container -> XTX/LEX -> GS indexed texture pipeline."
+  ],
+  "edit_files": {
+    "PSMT4": {
+      "path": "PSMT4.png",
+      "sha256": "2dac65864e1799015126a8ec974ee537d53b8180ddab3b874024d417c06e647d",
+      "size": [
+        1024,
+        1024
+      ],
+      "max_index": 15,
+      "config": {
+        "profile": "full_atlas_psmt4",
+        "width": 1024,
+        "height": 1024,
+        "dbp": 0,
+        "dbw4": 64,
+        "dbw32": 512,
+        "gs_layout_facts": {
+          "PSMT8_PAGE": [
+            128,
+            64
+          ],
+          "PSMT4_PAGE": [
+            128,
+            128
+          ],
+          "PSMT8_CLUT_ENTRIES": 256,
+          "PSMT4_CLUT_ENTRIES": 16
+        },
+        "notes": [
+          "PSMT4 is a logical GS interpretation of the same XTX upload bytes.",
+          "PCSX2 GS layout basis: PSMT4 page=128x128, PSMT8 page=128x64, CLUT entries are 16/256.",
+          "Edit exact index values 0..15 only."
+        ]
+      },
+      "read_only_due_to_overlapping_slots": false
+    }
+  },
+  "clean_edit_files": [],
+  "subimage_edit_files": [
+    {
+      "path": "mat_mojiJ_1.png",
+      "sha256": "0ec1c5311124e7d1d52c8755c429b3e120a299e157c671c4fa3a14af46d9a424",
+      "slot_order": 0,
+      "image_index": 0,
+      "rect": [
+        0,
+        0,
+        128,
+        64
+      ],
+      "size": [
+        128,
+        64
+      ],
+      "requires_lex": false
+    },
+    {
+      "path": "mat_mojiJ_2.png",
+      "sha256": "f6b5ab2b8fc6a1b8754877afd000a9a2c2b570e13bb405163006dffc8295e4a1",
+      "slot_order": 1,
+      "image_index": 1,
+      "rect": [
+        128,
+        0,
+        144,
+        4
+      ],
+      "size": [
+        16,
+        4
+      ],
+      "requires_lex": false
+    }
+  ],
+  "full_reference_files": {},
+  "rebuild_rule": [
+    "PSMT4.png, PSMT8.png, and palette-applied PSMT4_NNN/PSMT8_NNN PNGs are separate edit pipelines.",
+    "<source>_N.png subimage files are also edit inputs when changed.",
+    "<source>_full_index.png is a PSMT8 full-index reference/edit input.",
+    "Preferred workflow: keep extracted originals untouched and place edited *_KOR.png files beside them.",
+    "Example: PSMT8_001_KOR.png replaces PSMT8_001.png; <source>_1_KOR.png replaces <source>_1.png.",
+    "Edit only one pipeline before import.",
+    "PSMT4 pixels must be exact index values 0..15.",
+    "PSMT8 pixels must be exact index values 0..255.",
+    "PSMT4_NNN.png and PSMT8_NNN.png are TEX0/CLUT-resolved editable image views.",
+    "Palette-resolved edit PNGs use indexed P mode with the real RGB palette and no PNG alpha channel.",
+    "Their pixel values are imported directly as GS palette indices; do not convert them to RGBA.",
+    "If several files in one pipeline changed, they are applied together.",
+    "If files from multiple pipelines changed, rebuild stops as ambiguous."
+  ]
+}

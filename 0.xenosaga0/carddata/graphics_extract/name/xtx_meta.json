@@ -1,0 +1,392 @@
+{
+  "tool": "xtx_tool_ver7_fixed_palette_formula",
+  "version": 14,
+  "source_xtx_name": "name.xtx",
+  "source_xtx_path": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\carddata\\name.xtx",
+  "xtx_size": 10960,
+  "xtx_sha256": "59a06bae8f5f410e7adbc7fc8794b2c30ab1ac31294083c98d4e961fb842eae4",
+  "image_count": 1,
+  "images": [
+    {
+      "index": 0,
+      "width": 80,
+      "height": 34,
+      "bw": 8,
+      "bw_eff": 8,
+      "offset": 0,
+      "img_size": 682,
+      "img_addr": 48,
+      "x0": 0,
+      "y0": 0,
+      "pstart": 80,
+      "pend": 10960,
+      "valid": true
+    }
+  ],
+  "format_detection": {
+    "source": "LEX TEX0.PSM",
+    "tex0_psm_values": [
+      20
+    ],
+    "editable_formats": [
+      "PSMT4"
+    ]
+  },
+  "gs_layout_facts": {
+    "PSMT8_PAGE": [
+      128,
+      64
+    ],
+    "PSMT4_PAGE": [
+      128,
+      128
+    ],
+    "PSMT8_CLUT_ENTRIES": 256,
+    "PSMT4_CLUT_ENTRIES": 16
+  },
+  "metadata_runtime_evidence": [
+    "OV12.OVL strings reference rg_help.euc.c, help.npr, help_*.bxx, RgBxxGetXtx, pXtxData, and pLexData.",
+    "This supports the container -> XTX/LEX -> GS indexed texture pipeline."
+  ],
+  "edit_files": {
+    "PSMT4": {
+      "path": "PSMT4.png",
+      "sha256": "8fddd6a4641efc7c6ee436b18b411713aab32c4d2b26d628955403f97ebd10e7",
+      "size": [
+        1024,
+        1024
+      ],
+      "max_index": 15,
+      "config": {
+        "profile": "full_atlas_psmt4",
+        "width": 1024,
+        "height": 1024,
+        "dbp": 0,
+        "dbw4": 64,
+        "dbw32": 512,
+        "gs_layout_facts": {
+          "PSMT8_PAGE": [
+            128,
+            64
+          ],
+          "PSMT4_PAGE": [
+            128,
+            128
+          ],
+          "PSMT8_CLUT_ENTRIES": 256,
+          "PSMT4_CLUT_ENTRIES": 16
+        },
+        "notes": [
+          "PSMT4 is a logical GS interpretation of the same XTX upload bytes.",
+          "PCSX2 GS layout basis: PSMT4 page=128x128, PSMT8 page=128x64, CLUT entries are 16/256.",
+          "Edit exact index values 0..15 only."
+        ]
+      },
+      "read_only_due_to_overlapping_slots": false
+    }
+  },
+  "clean_edit_files": [
+    {
+      "path": "PSMT4_001.png",
+      "sha256": "817c579fbf355a1135720fcfa1393681167455e16462b8801ddaf072b03d2252",
+      "rect": [
+        0,
+        0,
+        1024,
+        256
+      ],
+      "size": [
+        1024,
+        256
+      ],
+      "pixel_format": "PSMT4",
+      "edit_encoding": "indexed_palette_no_alpha",
+      "max_index": 15,
+      "palette_rgba": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          48,
+          54,
+          48,
+          99
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          20,
+          20,
+          20,
+          199
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          255
+        ],
+        [
+          17,
+          17,
+          17,
+          255
+        ],
+        [
+          17,
+          17,
+          17,
+          255
+        ],
+        [
+          17,
+          17,
+          17,
+          255
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "material": {
+        "source": "name.lex:mesh_header[0]@0x140",
+        "pal": 16,
+        "pal2": 134,
+        "palx": 63,
+        "paly": 32,
+        "alt_palx": 272,
+        "alt_paly": 0,
+        "pal_source": "primary+row_scan",
+        "page_palx": 144,
+        "page_paly": 0,
+        "halfpage_palx": 144,
+        "halfpage_paly": 0,
+        "clut_candidates": {
+          "primary": [
+            16,
+            32
+          ],
+          "legacy": [
+            272,
+            0
+          ],
+          "page": [
+            144,
+            0
+          ],
+          "halfpage": [
+            144,
+            0
+          ]
+        },
+        "tex0": {
+          "raw": "2000108629440000",
+          "tbp0": 0,
+          "tbw": 16,
+          "psm": 20,
+          "tw": 10,
+          "th": 8,
+          "tcc": 1,
+          "tfx": 0,
+          "cbp": 132,
+          "cpsm": 0,
+          "csm": 0,
+          "csa": 0,
+          "cld": 1
+        },
+        "umin": 256,
+        "vmin": 0,
+        "umax": 448,
+        "vmax": 32,
+        "uvtype": 10,
+        "lex_path": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\carddata\\name.lex",
+        "lex_name": "name.lex",
+        "palette_xtx_name": "name.xtx",
+        "palette_xtx_path": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\carddata\\name.xtx",
+        "palette_score": 1513583.6065573771,
+        "palette_raw_score": 3583.6065573770493,
+        "palette_source_priority": 10000.0,
+        "palette_structure_bonus": 1500000.0
+      },
+      "material_count": 1,
+      "materials": [
+        {
+          "source": "name.lex:mesh_header[0]@0x140",
+          "pal": 16,
+          "pal2": 134,
+          "palx": 63,
+          "paly": 32,
+          "alt_palx": 272,
+          "alt_paly": 0,
+          "pal_source": "primary+row_scan",
+          "page_palx": 144,
+          "page_paly": 0,
+          "halfpage_palx": 144,
+          "halfpage_paly": 0,
+          "clut_candidates": {
+            "primary": [
+              16,
+              32
+            ],
+            "legacy": [
+              272,
+              0
+            ],
+            "page": [
+              144,
+              0
+            ],
+            "halfpage": [
+              144,
+              0
+            ]
+          },
+          "tex0": {
+            "raw": "2000108629440000",
+            "tbp0": 0,
+            "tbw": 16,
+            "psm": 20,
+            "tw": 10,
+            "th": 8,
+            "tcc": 1,
+            "tfx": 0,
+            "cbp": 132,
+            "cpsm": 0,
+            "csm": 0,
+            "csa": 0,
+            "cld": 1
+          },
+          "umin": 256,
+          "vmin": 0,
+          "umax": 448,
+          "vmax": 32,
+          "uvtype": 10,
+          "lex_path": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\carddata\\name.lex",
+          "lex_name": "name.lex",
+          "palette_xtx_name": "name.xtx",
+          "palette_xtx_path": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\carddata\\name.xtx",
+          "palette_score": 1513583.6065573771,
+          "palette_raw_score": 3583.6065573770493,
+          "palette_source_priority": 10000.0,
+          "palette_structure_bonus": 1500000.0
+        }
+      ],
+      "tex0_storage_size": [
+        1024,
+        256
+      ],
+      "config": {
+        "profile": "full_atlas_psmt4",
+        "width": 1024,
+        "height": 1024,
+        "dbp": 0,
+        "dbw4": 64,
+        "dbw32": 512,
+        "gs_layout_facts": {
+          "PSMT8_PAGE": [
+            128,
+            64
+          ],
+          "PSMT4_PAGE": [
+            128,
+            128
+          ],
+          "PSMT8_CLUT_ENTRIES": 256,
+          "PSMT4_CLUT_ENTRIES": 16
+        },
+        "notes": [
+          "PSMT4 is a logical GS interpretation of the same XTX upload bytes.",
+          "PCSX2 GS layout basis: PSMT4 page=128x128, PSMT8 page=128x64, CLUT entries are 16/256.",
+          "Edit exact index values 0..15 only."
+        ]
+      }
+    }
+  ],
+  "subimage_edit_files": [
+    {
+      "path": "name_1.png",
+      "sha256": "4b44ce11e52f12f2a81d7056e5bfc00948cef77d03a4924cff4cab70adf45981",
+      "slot_order": 0,
+      "image_index": 0,
+      "rect": [
+        0,
+        0,
+        160,
+        68
+      ],
+      "size": [
+        160,
+        68
+      ],
+      "requires_lex": false
+    }
+  ],
+  "full_reference_files": {},
+  "rebuild_rule": [
+    "PSMT4.png, PSMT8.png, and palette-applied PSMT4_NNN/PSMT8_NNN PNGs are separate edit pipelines.",
+    "<source>_N.png subimage files are also edit inputs when changed.",
+    "<source>_full_index.png is a PSMT8 full-index reference/edit input.",
+    "Preferred workflow: keep extracted originals untouched and place edited *_KOR.png files beside them.",
+    "Example: PSMT8_001_KOR.png replaces PSMT8_001.png; <source>_1_KOR.png replaces <source>_1.png.",
+    "Edit only one pipeline before import.",
+    "PSMT4 pixels must be exact index values 0..15.",
+    "PSMT8 pixels must be exact index values 0..255.",
+    "PSMT4_NNN.png and PSMT8_NNN.png are TEX0/CLUT-resolved editable image views.",
+    "Palette-resolved edit PNGs use indexed P mode with the real RGB palette and no PNG alpha channel.",
+    "Their pixel values are imported directly as GS palette indices; do not convert them to RGBA.",
+    "If several files in one pipeline changed, they are applied together.",
+    "If files from multiple pipelines changed, rebuild stops as ambiguous."
+  ]
+}

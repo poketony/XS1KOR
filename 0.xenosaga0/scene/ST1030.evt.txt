@@ -4,7 +4,7 @@ Boss_Move
 t == 200
 EVENT_CALL_START
 EVENT_CALL END
-画面の点滅開始
+화면 점멸 시작
 Sound_Move
 Sound_Reverse
 Sound_ReverseY
@@ -12,196 +12,196 @@ Sound_ReverseY
 # chunk 3 @ 0xdfc cnum=1067 total=90
 # bc_map: 87,86,4,0,65,50,4,0,54,80,4,0,33,33,32,3,55,41,4,2,52,4,2,82,4,2,43,4,2,45,4,2,36,4,2,46,88,4,2,76,4,2,47,4,2,37,4,0,48,4,0,56,4,0,40,58,4,0,51,4,0,44,4,0,39,4,0,57,79,4,0,89,42,53,4,2,78,4,0,49,4,2,38,35,34,3,77,4,1,62,62,62,85,85,84,4,11,27,24,10,13,25,26,12,15,66,14,23,7,8,9,60,59,59,68,69,70,71,72,61,83,74,64,17,21,20,19,6,5,73,18,22,30,31,67,75,28,63,16,16,81
 # bc_unmap: 29
-端末が点灯している。<lf>
-操作しますか？
+단말기가 켜져 있다．<lf>
+조작하겠습니까？
 /[waitkey(64)]/[close()]
-/[label(メリィ)]
-ブリッジを一通り見てみまひょか。<lf>
-ちび様も手伝ぉて。
+/[label(메리)]
+브리지 전체를 한번 둘러보까．<lf>
+꼬마님도 좀 도와주소．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 4, tag8 0
-/[label(メリィ)]
-どないです？ちび様。<lf>
-何か気になるもんあります？
+/[label(메리)]
+어떻습니까？ 꼬마님．<lf>
+뭐 신경 쓰이는 거 있습니꺼？
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 4, tag8 0
-/[label(メリィ)]
-………。<lf>
+/[label(메리)]
+………．<lf>
 # dup_of: line 13, tag8 33
-………。<lf>
-………。
+………．<lf>
+………．
 /[waitkey(1)]/[clear()]
-なんかこのコンソールだけ<lf>
-えらいケッタイですわな。
+왠지 이 콘솔만<lf>
+억수로 이상하네예．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 /[label(Ｊｒ．)]
-どうやらここがブリッジらしいな。
-# dup_of: line 3, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 2
-/[label(Ｊｒ．)]
-当たり前だろ。ここのメインフレームに用があるんだぜ。
+아무래도 여기가 브리지인 모양인걸．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 20, tag8 2
 /[label(Ｊｒ．)]
-これか？
+당연하지．여기 메인 프레임에 볼일이 있어．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 20, tag8 2
 /[label(Ｊｒ．)]
-これでいいんだよな？
+이건가？
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 20, tag8 2
 /[label(Ｊｒ．)]
-…で、分かるか？
+이거면 되는 거지？
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 20, tag8 2
 /[label(Ｊｒ．)]
-そうか。こんなのお前が悩むほどのものには<lf>
-見えないんだけどな〜俺には。
+……그래서，알겠어？
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 20, tag8 2
 /[label(Ｊｒ．)]
-メリィ！
+그래．이런 게 네가 고민할 정도로<lf>
+대단한 물건으론 안 보이는데〜 내 눈엔．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 20, tag8 2
 /[label(Ｊｒ．)]
-そうだな。奴に見つかる前に…。
+메리！
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 20, tag8 2
 /[label(Ｊｒ．)]
-…ん？
+그래．그 녀석에게 들키기 전에……．
+# dup_of: line 3, tag8 4
+/[waitkey(64)]/[close()]
+# dup_of: line 20, tag8 2
+/[label(Ｊｒ．)]
+……응？
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 4, tag8 0
-/[label(メリィ)]
-ちび様、ウチらの目的覚えてます？
+/[label(메리)]
+꼬마님，우리 목적 기억하고 있습니꺼？
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 4, tag8 0
-/[label(メリィ)]
-ほな、ささっと片付けまひょ！
+/[label(메리)]
+그럼 후딱 해치우입시더！
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 4, tag8 0
-/[label(メリィ)]
-ええ。…多分やさかい<lf>
-まだ触らんといてくださいね。
+/[label(메리)]
+예．……아마 그럴 테니까<lf>
+아직 건드리지 말아 주이소．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 4, tag8 0
-/[label(メリィ)]
-ちょぉ待ってください。
+/[label(메리)]
+쪼매만 기다려 주이소．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 4, tag8 0
-/[label(メリィ)]
-これがこうやから…。
+/[label(메리)]
+이게 이래 돼 있으니까……．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 4, tag8 0
-/[label(メリィ)]
-あれ…？なんかこれ…？
+/[label(메리)]
+어라……？ 뭔가 이거……？
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 4, tag8 0
-/[label(メリィ)]
-まあ…。ちょぉ時間かかりそうやけど<lf>
-任してください。
+/[label(메리)]
+뭐…… 쪼매 시간 걸릴 것 같긴 한데<lf>
+맡겨 주이소．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 4, tag8 0
-/[label(メリィ)]
-触らんといて言うたやないですか、ちび様！<lf>
-この端末からとちゃうかったんです！<lf>
-どないしはるんですか！
+/[label(메리)]
+건드리지 말라 캤잖아요，꼬마님！<lf>
+이 단말기로 하는 게 아니었습니더！<lf>
+우짜실 겁니꺼！
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 20, tag8 2
 /[label(Ｊｒ．)]
-今更戻る必要はないぜ。
+이제 와서 돌아갈 필요는 없어．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 4, tag8 0
-/[label(メリィ)]
-ちび様。どこにいくつもりなん？
+/[label(메리)]
+꼬마님．어디 가려는 겁니꺼？
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 20, tag8 2
 /[label(Ｊｒ．)]
-…ん？<lf>
-…。<lf>
-…。
+……응？<lf>
+…．<lf>
+…．
 # dup_of: line 16, tag8 3
 /[waitkey(1)]/[clear()]
-上に何かいるような気配がしたが…。
+위쪽에 뭔가 있는 느낌이었는데……．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
-/[label(警報)]
-セキュリティーシステムが作動しました。<lf>
+/[label(경보)]
+보안 시스템이 작동했습니다．<lf>
 # dup_of: line 90, tag8 62
-セキュリティーシステムが作動しました。<lf>
+보안 시스템이 작동했습니다．<lf>
 # dup_of: line 90, tag8 62
-セキュリティーシステムが作動しました。<lf>
-搭乗員は速やかに退避してください。<lf>
+보안 시스템이 작동했습니다．<lf>
+승무원은 신속히 대피해 주십시오．<lf>
 # dup_of: line 93, tag8 85
-搭乗員は速やかに退避してください。<lf>
-搭乗員は速やかに退避してください。
+승무원은 신속히 대피해 주십시오．<lf>
+승무원은 신속히 대피해 주십시오．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 CF_EVENT START !!!
 Sound_ReverseY
 Screen
 Boss_Move
-CF_EVENT1 開始
+CF_EVENT1 시작
 Sound_Move
 Sound_Reverse
-CF_EVENT1 終了
+CF_EVENT1 종료
 EOB !!!!!!!!
-プレイヤーのスクリプト制御解除
-CFイベント終了
-Runtime.jumpEvent(SCE02038)が実行されます
-A カメラ
-B カメラ
-B カメラ フォロー
-イベント（回転）操作 カメラ
-イベント操作02 カメラ
+플레이어 스크립트 제어 해제
+CF 이벤트 종료
+Runtime.jumpEvent(SCE02038)가 실행됩니다
+A 카메라
+B 카메라
+B 카메라 팔로우
+이벤트（회전） 조작 카메라
+이벤트 조작０２ 카메라
 # dup_of: line 113, tag8 59
-イベント操作02 カメラ
-ボス出現 カメラ1
-ボス出現 カメラ2
-ボス出現 カメラ3（着地)
-ボス出現 カメラ4（索敵)
-ボス出現 カメラ5（ダッシュ攻撃)
-キーボード操作 カメラ
-戦闘前 カメラ
-メインモニター前 カメラ
-フォロー・カメラ
+이벤트 조작０２ 카메라
+보스 출현 카메라１
+보스 출현 카메라２
+보스 출현 카메라３（착지）
+보스 출현 카메라４（색적）
+보스 출현 카메라５（대시 공격）
+키보드 조작 카메라
+전투 전 카메라
+메인 모니터 앞 카메라
+팔로우 카메라
 Final_Init !!!!!
-Mary挙動
-Mary待機
+Mary 거동
+Mary 대기
 Mary --- FREEZE_STOP_ALGO
 180 up
 180 down
-ボス戦には入らない
+보스전에는 들어가지 않음
 Mary --- FREEZE_FREE
 NPC1_TALK1
 enterd : /[$0]
 entrance: /[$0]
-ボスの初期化
-メリィの初期化
+보스 초기화
+메리 초기화
 Talk_npc1
-ダミーの初期化
+더미 초기화
 EVENT_CALL
 # dup_of: line 139, tag8 16
 EVENT_CALL
-初期化終了
+초기화 종료

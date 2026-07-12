@@ -1,0 +1,156 @@
+{
+  "tool": "xtx_tool_ver7_fixed_palette_formula",
+  "version": 14,
+  "source_xtx_name": "cur2D.xtx",
+  "source_xtx_path": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\carddata\\game\\cur2D.xtx",
+  "xtx_size": 1216,
+  "xtx_sha256": "198470d909368f89ae29b6848193cff68dbde27e5c67b0f35e72848803edbcef",
+  "image_count": 2,
+  "images": [
+    {
+      "index": 0,
+      "width": 32,
+      "height": 8,
+      "bw": 8,
+      "bw_eff": 8,
+      "offset": 0,
+      "img_size": 66,
+      "img_addr": 64,
+      "x0": 0,
+      "y0": 0,
+      "pstart": 96,
+      "pend": 1120,
+      "valid": true
+    },
+    {
+      "index": 1,
+      "width": 8,
+      "height": 2,
+      "bw": 8,
+      "bw_eff": 8,
+      "offset": 4096,
+      "img_size": 6,
+      "img_addr": 1120,
+      "x0": 64,
+      "y0": 0,
+      "pstart": 1152,
+      "pend": 1216,
+      "valid": true
+    }
+  ],
+  "format_detection": {
+    "source": "LEX TEX0.PSM",
+    "tex0_psm_values": [
+      20
+    ],
+    "editable_formats": [
+      "PSMT4"
+    ]
+  },
+  "gs_layout_facts": {
+    "PSMT8_PAGE": [
+      128,
+      64
+    ],
+    "PSMT4_PAGE": [
+      128,
+      128
+    ],
+    "PSMT8_CLUT_ENTRIES": 256,
+    "PSMT4_CLUT_ENTRIES": 16
+  },
+  "metadata_runtime_evidence": [
+    "OV12.OVL strings reference rg_help.euc.c, help.npr, help_*.bxx, RgBxxGetXtx, pXtxData, and pLexData.",
+    "This supports the container -> XTX/LEX -> GS indexed texture pipeline."
+  ],
+  "edit_files": {
+    "PSMT4": {
+      "path": "PSMT4.png",
+      "sha256": "39825579e6f0f4d8d78d15a04e9fbc84261121027578d9b61f9c8d9d80caff05",
+      "size": [
+        1024,
+        1024
+      ],
+      "max_index": 15,
+      "config": {
+        "profile": "full_atlas_psmt4",
+        "width": 1024,
+        "height": 1024,
+        "dbp": 0,
+        "dbw4": 64,
+        "dbw32": 512,
+        "gs_layout_facts": {
+          "PSMT8_PAGE": [
+            128,
+            64
+          ],
+          "PSMT4_PAGE": [
+            128,
+            128
+          ],
+          "PSMT8_CLUT_ENTRIES": 256,
+          "PSMT4_CLUT_ENTRIES": 16
+        },
+        "notes": [
+          "PSMT4 is a logical GS interpretation of the same XTX upload bytes.",
+          "PCSX2 GS layout basis: PSMT4 page=128x128, PSMT8 page=128x64, CLUT entries are 16/256.",
+          "Edit exact index values 0..15 only."
+        ]
+      },
+      "read_only_due_to_overlapping_slots": false
+    }
+  },
+  "clean_edit_files": [],
+  "subimage_edit_files": [
+    {
+      "path": "cur2D_1.png",
+      "sha256": "4bd27611d181a9bbe206e709121f4f37f1645f3ec744de4e5b04d72405796b80",
+      "slot_order": 0,
+      "image_index": 0,
+      "rect": [
+        0,
+        0,
+        64,
+        16
+      ],
+      "size": [
+        64,
+        16
+      ],
+      "requires_lex": false
+    },
+    {
+      "path": "cur2D_2.png",
+      "sha256": "bbf70924659a98a792eba2a647d74e800bafa95c6bc4c509a988c9ac2b2c348a",
+      "slot_order": 1,
+      "image_index": 1,
+      "rect": [
+        128,
+        0,
+        144,
+        4
+      ],
+      "size": [
+        16,
+        4
+      ],
+      "requires_lex": false
+    }
+  ],
+  "full_reference_files": {},
+  "rebuild_rule": [
+    "PSMT4.png, PSMT8.png, and palette-applied PSMT4_NNN/PSMT8_NNN PNGs are separate edit pipelines.",
+    "<source>_N.png subimage files are also edit inputs when changed.",
+    "<source>_full_index.png is a PSMT8 full-index reference/edit input.",
+    "Preferred workflow: keep extracted originals untouched and place edited *_KOR.png files beside them.",
+    "Example: PSMT8_001_KOR.png replaces PSMT8_001.png; <source>_1_KOR.png replaces <source>_1.png.",
+    "Edit only one pipeline before import.",
+    "PSMT4 pixels must be exact index values 0..15.",
+    "PSMT8 pixels must be exact index values 0..255.",
+    "PSMT4_NNN.png and PSMT8_NNN.png are TEX0/CLUT-resolved editable image views.",
+    "Palette-resolved edit PNGs use indexed P mode with the real RGB palette and no PNG alpha channel.",
+    "Their pixel values are imported directly as GS palette indices; do not convert them to RGBA.",
+    "If several files in one pipeline changed, they are applied together.",
+    "If files from multiple pipelines changed, rebuild stops as ambiguous."
+  ]
+}

@@ -25,8 +25,18 @@ txt 포맷: <hex_offset>|<orig_bytes>/<slack_bytes>|<text>
 
 import sys, os, json
 
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, 'reconfigure'):
+        _stream.reconfigure(encoding='utf-8', errors='replace')
+
 ENCODING = 'euc_jis_2004'
 CTRL_OK  = frozenset([0x01,0x02,0x03,0x08,0x09,0x0a,0x0c,0x0d,0x1f,0x19])
+
+# OV10 text lives in a dense card-help block. A blind scan from 0x0 catches
+# executable/table bytes that only coincidentally look like EUC-JIS-2004.
+FILE_SCAN_RANGES = {
+    'OV10.OVL': [(0x42830, 0x4fd6a)],
+}
 
 
 # ── 공통 ──────────────────────────────────────────────────────────────────────
@@ -48,6 +58,13 @@ def apply_replace_table(text, table):
     if not table:
         return text
     return ''.join(table.get(ch, ch) for ch in text)
+
+
+def is_polluted_legacy_text(text):
+    # OV10's old blind scan sometimes decoded 0x0c packet headers as text.
+    # Rebuilding those lines would reinsert corrupted control bytes, so leave
+    # the original bytes untouched.
+    return any(fragment in text for fragment in ('\\x0c', '寸咤', '釘味', '釘達'))
 
 
 def raw_to_display(raw):
@@ -142,6 +159,45 @@ def encode_display(s, table):
     return bytes(out)
 
 
+def file_scan_ranges(bin_path, data_len, start=0):
+    if start:
+        return [(start, data_len, False)]
+
+    ranges = FILE_SCAN_RANGES.get(os.path.basename(bin_path).upper())
+    if not ranges:
+        return [(0, data_len, False)]
+
+    return [(lo, min(hi, data_len), True) for lo, hi in ranges]
+
+
+def parse_scan_ranges(txt_path, data_len):
+    ranges = []
+    with open(txt_path, encoding='utf-8', newline='') as f:
+        for line in f:
+            line = line.strip()
+            if not line.startswith('# scan ranges:'):
+                continue
+            spec = line.split(':', 1)[1]
+            for item in spec.split(','):
+                item = item.strip()
+                if not item or '-' not in item:
+                    continue
+                lo_s, hi_s = item.split('-', 1)
+                try:
+                    lo = int(lo_s.strip(), 16)
+                    hi = int(hi_s.strip(), 16)
+                except ValueError:
+                    continue
+                if lo < hi:
+                    ranges.append((lo, min(hi, data_len), True))
+            break
+    return ranges
+
+
+def format_scan_ranges(ranges):
+    return ','.join(f'0x{lo:x}-0x{hi:x}' for lo, hi, _preserve in ranges)
+
+
 def _jp_runs(seg, base_off):
     """segment 내에서 일본어 포함 EUC 연속 run yield: (abs_offset, raw_bytes)"""
     slen = len(seg)
@@ -169,11 +225,35 @@ def _jp_runs(seg, base_off):
             i += 1
 
 
-def iter_strings(data, start=0):
+def leading_jp_run(seg):
+    for run_off, run_raw in _jp_runs(seg, 0):
+        if run_off == 0:
+            return run_raw
+        break
+    return None
+
+
+def append_legacy_suffix(orig_raw, new_raw):
+    """Keep bytes that older partial-run dumps could not represent."""
+    if new_raw == orig_raw:
+        return new_raw, 0
+
+    run = leading_jp_run(orig_raw)
+    if not run or len(run) >= len(orig_raw):
+        return new_raw, 0
+
+    suffix = orig_raw[len(run):]
+    if new_raw.endswith(suffix):
+        return new_raw, 0
+    return new_raw + suffix, len(suffix)
+
+
+def iter_strings(data, start=0, end=None, preserve_segments=False):
     """
     start~EOF 구간 스캔, yield: (offset, raw_bytes, trailing_nulls)
     """
-    end = len(data)
+    if end is None:
+        end = len(data)
     pos = start
     seen = set()
 
@@ -194,6 +274,13 @@ def iter_strings(data, start=0):
         seg = data[pos:np]
 
         if any(b >= 0xa1 for b in seg):
+            if preserve_segments:
+                if pos not in seen:
+                    seen.add(pos)
+                    yield (pos, bytes(seg), trailing)
+                pos = np + 1
+                continue
+
             try:
                 seg.decode(ENCODING)
                 if pos not in seen:
@@ -212,16 +299,46 @@ def iter_strings(data, start=0):
         pos = np + 1
 
 
+def iter_legacy_aliases(data, start, end):
+    pos = start
+    seen = set()
+
+    while pos < end:
+        if data[pos] == 0:
+            pos += 1
+            continue
+
+        np = data.find(b'\x00', pos, end)
+        if np == -1:
+            np = end
+
+        scan = np + 1
+        while scan < end and data[scan] == 0:
+            scan += 1
+        trailing = scan - np - 1
+
+        seg = data[pos:np]
+        if any(b >= 0xa1 for b in seg):
+            for run_off, run_raw in _jp_runs(seg, pos):
+                if run_off not in seen:
+                    seen.add(run_off)
+                    yield (run_off, run_raw, trailing)
+
+        pos = np + 1
+
+
 # ── 추출 ──────────────────────────────────────────────────────────────────────
 
 def extract(bin_path, start=0):
     data     = open(bin_path, 'rb').read()
+    ranges   = file_scan_ranges(bin_path, len(data), start)
     base     = os.path.splitext(os.path.basename(bin_path))[0]
     out_path = os.path.join(os.path.dirname(os.path.abspath(bin_path)),
                             base + '_strings.txt')
     lines = [
         f'# {os.path.basename(bin_path)} string dump',
         f'# scan start: 0x{start:x}',
+        f'# scan ranges: {format_scan_ranges(ranges)}',
         '# format: <hex_offset>|<orig_bytes>/<slack_bytes>|<text>',
         '#   orig  = 원본 바이트 수 (null terminator 제외)',
         '#   slack = 여유 공간 (trailing null 개수)',
@@ -231,10 +348,14 @@ def extract(bin_path, start=0):
         '',
     ]
     count = 0
-    for off, raw, trailing in sorted(iter_strings(data, start), key=lambda x: x[0]):
-        display = raw_to_display(raw)
-        lines.append(f'{off:08x}|{len(raw)}/{trailing}|{display}')
-        count += 1
+    for lo, hi, preserve in ranges:
+        for off, raw, trailing in sorted(
+            iter_strings(data, lo, hi, preserve),
+            key=lambda x: x[0],
+        ):
+            display = raw_to_display(raw)
+            lines.append(f'{off:08x}|{len(raw)}/{trailing}|{display}')
+            count += 1
 
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(lines))
@@ -249,7 +370,7 @@ def rebuild(bin_path, txt_path):
 
     # start offset을 txt 헤더에서 읽기
     start = 0
-    with open(txt_path, encoding='utf-8') as f:
+    with open(txt_path, encoding='utf-8', newline='') as f:
         for line in f:
             line = line.strip()
             if line.startswith('# scan start:'):
@@ -259,15 +380,23 @@ def rebuild(bin_path, txt_path):
                     pass
                 break
 
+    ranges = parse_scan_ranges(txt_path, len(data)) or file_scan_ranges(bin_path, len(data), start)
+
     orig = {}
-    for off, raw, trailing in iter_strings(bytes(data), start):
-        orig[off] = (raw, trailing)
+    for lo, hi, preserve in ranges:
+        for off, raw, trailing in iter_strings(bytes(data), lo, hi, preserve):
+            orig[off] = (raw, trailing)
+        if preserve:
+            for off, raw, trailing in iter_legacy_aliases(bytes(data), lo, hi):
+                orig.setdefault(off, (raw, trailing))
 
     edits = {}
     skipped = 0
-    with open(txt_path, encoding='utf-8') as f:
+    with open(txt_path, encoding='utf-8', newline='') as f:
         for lineno, line in enumerate(f, 1):
-            line = line.rstrip('\r\n')
+            line = line.rstrip('\n')
+            if line.endswith('\r'):
+                line = line[:-1]
             if not line or line.startswith('#'):
                 continue
             parts = line.split('|', 2)
@@ -284,12 +413,15 @@ def rebuild(bin_path, txt_path):
                 print(f'[WARN] line {lineno}: 오프셋 파싱 실패: {hex_off!r}')
                 skipped += 1
                 continue
+            if is_polluted_legacy_text(text):
+                skipped += 1
+                continue
             edits[offset] = text
 
     if skipped:
         print(f'[INFO] {skipped}개 라인 건너뜀')
 
-    patched = over_orig = over_slack = errors = 0
+    patched = over_orig = over_slack = legacy_suffix = errors = 0
 
     for offset, new_text in sorted(edits.items()):
         if offset not in orig:
@@ -308,6 +440,10 @@ def rebuild(bin_path, txt_path):
             print(f'[ERR] 0x{offset:08x}: 인코딩 실패 ({e}): {new_text!r}')
             errors += 1
             continue
+
+        new_raw, suffix_len = append_legacy_suffix(orig_raw, new_raw)
+        if suffix_len:
+            legacy_suffix += 1
 
         new_len = len(new_raw)
         if new_raw == orig_raw:
