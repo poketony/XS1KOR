@@ -1589,6 +1589,93 @@ def cardgrap_name_palette(xtx_data: bytes, images: list, index4: np.ndarray) -> 
     return palette, {'x': int(best[1]), 'y': int(best[2]), 'score': float(best[0])}
 
 
+CARDGRAP_NAME_CANVAS_WIDTH = 192
+CARDGRAP_NAME_BACKGROUND_INDEX = 1
+CARDGRAP_NAME_BLACK_INDEX = 2
+CARDGRAP_NAME_WHITE_INDEX = 3
+CARDGRAP_NAME_QUANTIZATION_PROFILE = 'cardgrap_name_runtime_clut_v1'
+
+
+def cardgrap_name_runtime_palette(palette_rgba: np.ndarray) -> np.ndarray:
+    """Return the palette order used when CARDGRAP names are drawn in game."""
+    palette = np.asarray(palette_rgba, dtype=np.uint8).copy()
+    if len(palette) <= CARDGRAP_NAME_WHITE_INDEX:
+        raise ValueError('CARDGRAP name palette is missing required indices 2 and 3')
+    palette[[CARDGRAP_NAME_BLACK_INDEX, CARDGRAP_NAME_WHITE_INDEX]] = \
+        palette[[CARDGRAP_NAME_WHITE_INDEX, CARDGRAP_NAME_BLACK_INDEX]]
+    return palette
+
+
+def cardgrap_name_rgb_indices(rgb: np.ndarray, runtime_palette: np.ndarray) -> np.ndarray:
+    """Map editor RGB to CARDGRAP's background, black, or white index."""
+    indices = np.array([
+        CARDGRAP_NAME_BACKGROUND_INDEX,
+        CARDGRAP_NAME_BLACK_INDEX,
+        CARDGRAP_NAME_WHITE_INDEX,
+    ], dtype=np.uint8)
+    palette_rgb = np.asarray(runtime_palette, dtype=np.int32)[indices, :3]
+    pixels = np.asarray(rgb, dtype=np.int32)
+    diff = pixels[:, :, None, :] - palette_rgb[None, None, :, :]
+    nearest = np.argmin(np.sum(diff * diff, axis=3), axis=2)
+    return indices[nearest]
+
+
+def cardgrap_name_edit_indices(folder: str, item: dict, path: str) -> np.ndarray:
+    """Replace the complete CARDGRAP text canvas as one three-color image."""
+    expected = tuple(int(v) for v in item['size'])
+    max_index = int(item.get('max_index', 15))
+    image = Image.open(path)
+    if image.size != expected:
+        raise ValueError(f'{path} size must be {expected}, got {image.size}')
+    ref_path = os.path.join(folder, item['path'])
+    original = read_index_png(ref_path, expected, max_index)
+
+    stored_palette = np.array(item['palette_rgba'], dtype=np.uint8)
+    if item.get('quantization_profile') == CARDGRAP_NAME_QUANTIZATION_PROFILE:
+        runtime_palette = stored_palette
+    else:
+        runtime_palette = cardgrap_name_runtime_palette(stored_palette)
+
+    if image.mode == 'P':
+        replacement = np.array(image, dtype=np.uint8)
+        if int(replacement.max(initial=0)) > max_index:
+            raise ValueError(f'{path} contains values above {max_index}')
+        png_palette = image.getpalette()
+        legacy_palette = False
+        if png_palette is not None:
+            rgb_palette = np.array(png_palette, dtype=np.uint8).reshape(256, 3)
+            legacy_palette = (
+                int(rgb_palette[CARDGRAP_NAME_BLACK_INDEX].sum()) >
+                int(rgb_palette[CARDGRAP_NAME_WHITE_INDEX].sum())
+            )
+        if legacy_palette:
+            replacement = replacement.copy()
+            black = replacement == CARDGRAP_NAME_BLACK_INDEX
+            white = replacement == CARDGRAP_NAME_WHITE_INDEX
+            replacement[black] = CARDGRAP_NAME_WHITE_INDEX
+            replacement[white] = CARDGRAP_NAME_BLACK_INDEX
+    elif image.mode in ('L', 'I;16', 'I'):
+        replacement = read_index_png(path, expected, max_index)
+    elif image.mode in ('RGB', 'RGBA'):
+        edit_rgba = np.array(image.convert('RGBA'), dtype=np.uint8)
+        replacement = cardgrap_name_rgb_indices(edit_rgba[:, :, :3], runtime_palette)
+        replacement[edit_rgba[:, :, 3] == 0] = CARDGRAP_NAME_BACKGROUND_INDEX
+    else:
+        raise ValueError(f'{path} must be indexed, grayscale, RGB, or RGBA')
+
+    canvas_width = min(CARDGRAP_NAME_CANVAS_WIDTH, original.shape[1])
+    result = original.copy()
+    result[:, :canvas_width] = replacement[:, :canvas_width]
+    if int(result.max(initial=0)) > max_index:
+        raise ValueError(f'internal CARDGRAP name quantization overflow for {path}')
+    print(
+        f"  [CARDGRAP TEXT] {os.path.basename(path)}: replaced x=0..{canvas_width - 1}; "
+        f"runtime indices bg={CARDGRAP_NAME_BACKGROUND_INDEX}, "
+        f"black={CARDGRAP_NAME_BLACK_INDEX}, white={CARDGRAP_NAME_WHITE_INDEX}"
+    )
+    return result
+
+
 def cardgrap_psmt8_palette(xtx_data: bytes, images: list, mats: list,
                            card_index: np.ndarray) -> tuple[np.ndarray, list]:
     rgba_atlas = build_rgba_atlas(xtx_data, images)
@@ -1642,6 +1729,7 @@ def extract_cardgrap_bank(xtx_path: str, data: bytes, chunks: list, out_dir: str
         name_rect = (int(valid[1]['x0']) * 2, int(valid[1]['y0']) * 2, 256, 32)
         name_index = decode_psmt4_slot_region(chunk, valid[1], name_rect)
         name_palette, name_pal_info = cardgrap_name_palette(chunk, images, name_index)
+        name_palette = cardgrap_name_runtime_palette(name_palette)
         name_path = os.path.join(folder, 'PSMT4_name.png')
         write_colored_index_png(name_index, name_path, name_palette)
 
@@ -1661,6 +1749,13 @@ def extract_cardgrap_bank(xtx_path: str, data: bytes, chunks: list, out_dir: str
                 'size': [256, 32], 'rect': list(name_rect),
                 'palette_rgba': name_palette.astype(np.uint8).tolist(),
                 'palette_source': name_pal_info,
+                'quantization_profile': CARDGRAP_NAME_QUANTIZATION_PROFILE,
+                'runtime_indices': {
+                    'background': CARDGRAP_NAME_BACKGROUND_INDEX,
+                    'black': CARDGRAP_NAME_BLACK_INDEX,
+                    'white': CARDGRAP_NAME_WHITE_INDEX,
+                },
+                'canvas_width': CARDGRAP_NAME_CANVAS_WIDTH,
                 'edit_encoding': 'indexed_palette_no_alpha', 'max_index': 15,
             },
             'auxiliary': {'image_index': int(valid[2]['index']), 'role': 'CLUT/auxiliary upload; preserved byte-for-byte'},
@@ -1668,7 +1763,7 @@ def extract_cardgrap_bank(xtx_path: str, data: bytes, chunks: list, out_dir: str
         if (ci + 1) % 16 == 0 or ci + 1 == len(chunks):
             print(f'  [BANK] extracted {ci + 1}/{len(chunks)} members')
     meta = {
-        'tool': 'xtx_tool_ver7_fixed_palette_formula', 'version': 14,
+        'tool': 'xtx_tool_ver7_fixed_palette_formula', 'version': 15,
         'profile': 'CARDGRAP_concatenated_mixed_bank',
         'source_path': os.path.abspath(xtx_path), 'source_size': len(data),
         'source_sha256': sha256(data), 'lex_path': os.path.abspath(lex_path),
@@ -1708,7 +1803,9 @@ def import_cardgrap_bank(xtx_path: str, data: bytes, folder: str, out_path: str)
             if Image.open(path).size != expected:
                 raise ValueError(f'{path} size must be {expected}')
             if card.get('edit_encoding') == 'indexed_palette_no_alpha':
-                q = read_index_png(path, expected, int(card.get('max_index', 255)))
+                q = read_index_edit_compat(folder, card, path)
+                if int(q.max(initial=0)) > int(card.get('max_index', 255)):
+                    raise ValueError(f"CARDGRAP card {item['index']:03d} palette index overflow")
                 ref = read_index_png(card_orig, expected, int(card.get('max_index', 255)))
                 mask = q != ref
             else:
@@ -1735,7 +1832,9 @@ def import_cardgrap_bank(xtx_path: str, data: bytes, folder: str, out_path: str)
             if image.size != expected:
                 raise ValueError(f'{path} size must be {expected}')
             if name.get('edit_encoding') == 'indexed_palette_no_alpha':
-                q = read_index_png(path, expected, int(name.get('max_index', 15)))
+                q = cardgrap_name_edit_indices(folder, name, path)
+                if int(q.max(initial=0)) > int(name.get('max_index', 15)):
+                    raise ValueError(f"CARDGRAP name {item['index']:03d} palette index overflow")
                 ref = read_index_png(name_orig, expected, int(name.get('max_index', 15)))
                 mask = q != ref
             else:

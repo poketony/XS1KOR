@@ -155,10 +155,10 @@ def extraction_dir(source: Path) -> Path:
     candidates = [
         standard,
         standard.with_name(standard.name + '_indexed'),
-        standard.with_name(standard.name + '_indexed_v14'),
+        standard.with_name(standard.name + '_indexed_v15'),
     ]
     for candidate in candidates:
-        if not candidate.is_dir() or not any(candidate.glob('*_KOR.png')):
+        if not candidate.is_dir() or not any(candidate.rglob('*_KOR.png')):
             if candidate != standard:
                 print(f"  Existing _KOR edit preserved; new indexed extraction: {candidate}")
             return candidate

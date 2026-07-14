@@ -13,3 +13,5 @@
 *.ads
 *.lnk
 *.pyc
+*.mov
+/0.xenosaga0/carddata/graphics_rebuilt

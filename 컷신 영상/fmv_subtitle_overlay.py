@@ -62,6 +62,7 @@ DEFAULT_LINE1_Y = 380
 DEFAULT_LINE2_Y = 415
 VIDEO_EXTENSIONS = {".m2v"}
 SUBTITLE_EXTENSIONS = {".srt", ".vtt", ".ass", ".ssa"}
+VERTICAL_PREFIX = "[VERT]"
 
 
 @dataclasses.dataclass
@@ -87,7 +88,7 @@ def parse_time(value: str) -> str:
 def parse_srt_or_vtt(text: str) -> list[Cue]:
     text = text.replace("\ufeff", "").replace("\r\n", "\n").replace("\r", "\n")
     text = re.sub(r"^WEBVTT[^\n]*(?:\n\n|\n)", "", text, flags=re.IGNORECASE)
-    blocks = re.split(r"\n{2,}", text.strip())
+    blocks = re.split(r"\n{2,}", text.strip("\n"))
     cues: list[Cue] = []
 
     for block in blocks:
@@ -101,8 +102,8 @@ def parse_srt_or_vtt(text: str) -> list[Cue]:
 
         start_raw, end_raw = lines[0].split("-->", 1)
         end_raw = end_raw.split()[0]
-        body = "\n".join(strip_basic_tags(line) for line in lines[1:]).strip()
-        if body:
+        body = "\n".join(strip_basic_tags(line) for line in lines[1:]).strip("\n")
+        if body.strip():
             cues.append(Cue(parse_time(start_raw), parse_time(end_raw), body))
 
     return cues
@@ -115,6 +116,7 @@ def parse_ass(text: str) -> list[Cue]:
     cues: list[Cue] = []
 
     for raw_line in text.splitlines():
+        event_line = raw_line.lstrip()
         line = raw_line.strip()
         if line.lower() == "[events]":
             in_events = True
@@ -127,18 +129,18 @@ def parse_ass(text: str) -> list[Cue]:
         if line.lower().startswith("format:"):
             fields = [field.strip().lower() for field in line.split(":", 1)[1].split(",")]
             continue
-        if not line.lower().startswith("dialogue:") or not fields:
+        if not event_line.lower().startswith("dialogue:") or not fields:
             continue
 
-        payload = line.split(":", 1)[1].lstrip()
+        payload = event_line.split(":", 1)[1].lstrip()
         parts = payload.split(",", maxsplit=len(fields) - 1)
         if len(parts) != len(fields):
             continue
         row = dict(zip(fields, parts))
         body = row.get("text", "")
         body = re.sub(r"\{[^}]*\}", "", body).replace("\\N", "\n").replace("\\n", "\n")
-        body = strip_basic_tags(body).strip()
-        if body:
+        body = strip_basic_tags(body).strip("\r\n")
+        if body.strip():
             cues.append(Cue(parse_time(row["start"]), parse_time(row["end"]), body))
 
     return cues
@@ -279,6 +281,34 @@ def format_mixed_font_text(text: str, main_font_name: str, punct_font_name: str)
     return "".join(parts)
 
 
+def format_cover_text(text: str) -> str:
+    """Build fixed-font cover geometry while preserving edge whitespace."""
+    parts: list[str] = []
+    cover_glyph = "\uac00"
+    half_space_glyph = r"{\fscx50}" + cover_glyph + r"{\fscx100}"
+    for char in text:
+        if char == " ":
+            parts.append(half_space_glyph)
+        elif char == "\u2800":
+            parts.append(cover_glyph)
+        elif char == "\t":
+            parts.append(half_space_glyph * 4)
+        else:
+            parts.append(cover_glyph)
+    return "".join(parts)
+
+
+def vertical_line_text(text: str) -> str | None:
+    stripped = text.lstrip()
+    if not stripped.upper().startswith(VERTICAL_PREFIX):
+        return None
+    return stripped[len(VERTICAL_PREFIX) :].strip()
+
+
+def ass_rectangle(width: float, height: float) -> str:
+    return f"m 0 0 l {width:g} 0 l {width:g} {height:g} l 0 {height:g}"
+
+
 def line_position(index: int, line1_y: float, line2_y: float, line_gap: float | None) -> float:
     if index == 0:
         return line1_y
@@ -318,11 +348,26 @@ def write_ass(
     ruby_cover_outline: float,
     ruby_cover_blur: float,
     ruby_cover_alpha: int,
+    vertical_font_name: str,
+    vertical_font_size: float | None,
+    vertical_x: float,
+    vertical_y: float,
+    vertical_char_gap: float | None,
+    vertical_cover_y: float,
+    vertical_cover_width: float,
+    vertical_cover_height: float,
+    vertical_cover_blur: float,
+    vertical_cover_alpha: int,
     primary_color: str,
     outline_color: str,
     shadow_color: str,
 ) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
+    effective_vertical_font_size = (
+        max(1.0, font_size - 1.0)
+        if vertical_font_size is None
+        else max(1.0, vertical_font_size)
+    )
     lines = [
         "[Script Info]",
         "ScriptType: v4.00+",
@@ -361,6 +406,21 @@ def write_ass(
             f"{ass_color(shadow_color)},0,0,0,0,100,100,{spacing},0,"
             f"1,{outline},{shadow},2,24,24,{margin_v},1"
         ),
+        (
+            "Style: XenoVerticalCover,"
+            f"{font_name},10,{ass_color('000000', ass_alpha(vertical_cover_alpha))},"
+            f"{ass_color('000000', ass_alpha(vertical_cover_alpha))},"
+            f"{ass_color('000000', ass_alpha(vertical_cover_alpha))},"
+            f"{ass_color('000000', ass_alpha(vertical_cover_alpha))},0,0,0,0,100,100,0,0,"
+            "1,0,0,7,0,0,0,1"
+        ),
+        (
+            "Style: XenoVertical,"
+            f"{vertical_font_name},{effective_vertical_font_size:g},{ass_color(primary_color)},"
+            f"{ass_color(primary_color)},{ass_color(outline_color)},"
+            f"{ass_color(shadow_color)},0,0,0,0,100,100,{spacing},0,"
+            f"1,{outline},{shadow},8,0,0,0,1"
+        ),
         "",
         "[Events]",
         "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
@@ -368,23 +428,61 @@ def write_ass(
 
     for cue in cues:
         cue_lines = cue.text.splitlines() if split_lines else [cue.text]
-        for index, cue_line in enumerate(cue_lines):
+        normal_line_index = 0
+        vertical_cover_added = False
+        for cue_line in cue_lines:
             if not cue_line.strip():
                 continue
-            line_pos_y = line_position(index, line1_y, line2_y, line_gap) if split_lines else pos_y
+            vertical_text = vertical_line_text(cue_line)
+            if vertical_text is not None:
+                if not vertical_text:
+                    continue
+                if spread and not vertical_cover_added:
+                    cover_x = vertical_x - vertical_cover_width / 2
+                    lines.append(
+                        f"Dialogue: 0,{cue.start},{cue.end},XenoVerticalCover,,0000,0000,0000,,"
+                        f"{{\\q2\\an7\\blur{vertical_cover_blur:g}\\pos({cover_x:g},{vertical_cover_y:g})"
+                        f"\\p1}}{ass_rectangle(vertical_cover_width, vertical_cover_height)}{{\\p0}}"
+                    )
+                    vertical_cover_added = True
+                char_gap = (
+                    vertical_char_gap
+                    if vertical_char_gap is not None
+                    else effective_vertical_font_size + spacing
+                )
+                char_y = vertical_y
+                for char in vertical_text:
+                    if char.isspace():
+                        char_y += char_gap / 2
+                        continue
+                    lines.append(
+                        f"Dialogue: 2,{cue.start},{cue.end},XenoVertical,,0000,0000,0000,,"
+                        f"{{\\q2\\an8\\blur{blur:g}\\pos({vertical_x:g},{char_y:g})}}"
+                        f"{escape_ass_char(char)}"
+                    )
+                    char_y += char_gap
+                continue
+
+            line_pos_y = (
+                line_position(normal_line_index, line1_y, line2_y, line_gap)
+                if split_lines
+                else pos_y
+            )
+            normal_line_index += 1
             formatted_text = format_mixed_font_text(cue_line, font_name, punct_font_name)
+            cover_text = format_cover_text(cue_line)
             if spread:
                 if ruby_cover:
                     ruby_pos_y = None if line_pos_y is None else line_pos_y + ruby_cover_y_offset
                     lines.append(
                         f"Dialogue: 0,{cue.start},{cue.end},XenoRubyCover,,0000,0000,0000,,"
                         f"{ass_override_tag(blur=ruby_cover_blur, pos_x=pos_x, pos_y=ruby_pos_y, scale_y=ruby_cover_scale_y)}"
-                        f"{formatted_text}"
+                        f"{cover_text}"
                     )
                 lines.append(
                     f"Dialogue: 1,{cue.start},{cue.end},XenoSpread,,0000,0000,0000,,"
                     f"{ass_override_tag(blur=spread_blur, pos_x=pos_x, pos_y=line_pos_y)}"
-                    f"{formatted_text}"
+                    f"{cover_text}"
                 )
             lines.append(
                 f"Dialogue: 2,{cue.start},{cue.end},XenoFMV,,0000,0000,0000,,"
@@ -524,6 +622,16 @@ def render_subtitle(
         ruby_cover_outline=args.ruby_cover_outline,
         ruby_cover_blur=args.ruby_cover_blur,
         ruby_cover_alpha=args.ruby_cover_alpha,
+        vertical_font_name=args.vertical_font_name,
+        vertical_font_size=args.vertical_font_size,
+        vertical_x=args.vertical_x,
+        vertical_y=args.vertical_y,
+        vertical_char_gap=args.vertical_char_gap,
+        vertical_cover_y=args.vertical_cover_y,
+        vertical_cover_width=args.vertical_cover_width,
+        vertical_cover_height=args.vertical_cover_height,
+        vertical_cover_blur=args.vertical_cover_blur,
+        vertical_cover_alpha=args.vertical_cover_alpha,
         primary_color=args.primary_color,
         outline_color=args.outline_color,
         shadow_color=args.shadow_color,
@@ -666,6 +774,35 @@ def build_parser() -> argparse.ArgumentParser:
         type=int,
         default=28,
         help="ASS alpha for ruby cover. 0 is opaque, 255 is transparent.",
+    )
+    parser.add_argument(
+        "--vertical-font-name",
+        default="Dotum",
+        help="ASS font family used by [VERT] subtitle lines.",
+    )
+    parser.add_argument(
+        "--vertical-font-size",
+        type=float,
+        default=None,
+        help="Vertical font size. Defaults to one point smaller than --font-size.",
+    )
+    parser.add_argument("--vertical-x", type=float, default=478.0)
+    parser.add_argument("--vertical-y", type=float, default=20.0)
+    parser.add_argument(
+        "--vertical-char-gap",
+        type=float,
+        default=None,
+        help="Vertical character step. Defaults to font size plus normal ASS spacing.",
+    )
+    parser.add_argument("--vertical-cover-y", type=float, default=6.0)
+    parser.add_argument("--vertical-cover-width", type=float, default=44.0)
+    parser.add_argument("--vertical-cover-height", type=float, default=300.0)
+    parser.add_argument("--vertical-cover-blur", type=float, default=5.0)
+    parser.add_argument(
+        "--vertical-cover-alpha",
+        type=int,
+        default=0,
+        help="ASS alpha for the vertical original-text cover rectangle.",
     )
     parser.add_argument("--primary-color", default="FFFFFF")
     parser.add_argument("--outline-color", default="000000")

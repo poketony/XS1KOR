@@ -33,6 +33,15 @@ KOR_UI_PATCHES = (
     # Korean "진행　설정" is 5 fullwidth cells, so it needs the same X as
     # ゲーム終了 instead of the original 4-cell 進行設定 position.
     (0x3218, bytes.fromhex('d8 00 04 24'), bytes.fromhex('ce 00 04 24')),
+    # Card sale result line is printed in fragments:
+    #   <count> + count-suffix + <money> + sale-result-text.
+    # Add a visual gap after the count suffix by moving the whole money block right.
+    (0x1ea04, bytes.fromhex('68 00 04 24'), bytes.fromhex('70 00 04 24')),
+    (0x1ea74, bytes.fromhex('7c 00 04 24'), bytes.fromhex('84 00 04 24')),
+    (0x1eae0, bytes.fromhex('7c 00 04 24'), bytes.fromhex('84 00 04 24')),
+    (0x1eb90, bytes.fromhex('90 00 04 24'), bytes.fromhex('98 00 04 24')),
+    (0x1ebe0, bytes.fromhex('90 00 04 24'), bytes.fromhex('98 00 04 24')),
+    (0x1ebf8, bytes.fromhex('a4 00 04 24'), bytes.fromhex('ac 00 04 24')),
 )
 
 for _stream in (sys.stdout, sys.stderr):
