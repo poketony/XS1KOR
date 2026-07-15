@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import struct
 from pathlib import Path
 
@@ -36,6 +37,20 @@ CARD_TEXT_FIELDS = ("name", "effect", "quote")
 DECK_RECORD_SIZE = 0x80
 DECK_NAME_SIZE = 0x20
 DEFAULT_CHARMAP_NAME = "XENOSAGA_KOR-JPN.json"
+CONTROL_TOKEN_RE = re.compile(r"\{(BYTE|CTRL12):([^}]*)\}", re.IGNORECASE)
+
+
+def parse_hex_bytes(text: str, count: int, where: str) -> bytes:
+    parts = text.replace(",", " ").split()
+    if len(parts) != count:
+        raise ValueError(f"{where}: expected {count} hex byte(s), got {text!r}")
+
+    out = bytearray()
+    for part in parts:
+        if not re.fullmatch(r"[0-9a-fA-F]{2}", part):
+            raise ValueError(f"{where}: invalid hex byte {part!r}")
+        out.append(int(part, 16))
+    return bytes(out)
 
 
 def load_charmap(path: Path | None) -> dict[str, str]:
@@ -68,7 +83,7 @@ def apply_charmap(text: str, charmap: dict[str, str]) -> str:
     return "".join(out)
 
 
-def encode_text(text: str, charmap: dict[str, str], where: str) -> bytes:
+def encode_plain_text(text: str, charmap: dict[str, str], where: str) -> bytes:
     mapped = apply_charmap(text, charmap)
     try:
         return mapped.encode(ENCODING)
@@ -77,6 +92,23 @@ def encode_text(text: str, charmap: dict[str, str], where: str) -> bytes:
             f"{where}: cannot encode {exc.object[exc.start:exc.end]!r}; "
             "add it to the Korean-to-Japanese charmap or replace it"
         ) from exc
+
+
+def encode_text(text: str, charmap: dict[str, str], where: str) -> bytes:
+    out = bytearray()
+    pos = 0
+    for match in CONTROL_TOKEN_RE.finditer(text):
+        out.extend(encode_plain_text(text[pos : match.start()], charmap, where))
+        kind = match.group(1).upper()
+        payload = match.group(2)
+        if kind == "BYTE":
+            out.extend(parse_hex_bytes(payload, 1, where))
+        elif kind == "CTRL12":
+            out.append(0x12)
+            out.extend(parse_hex_bytes(payload, 2, where))
+        pos = match.end()
+    out.extend(encode_plain_text(text[pos:], charmap, where))
+    return bytes(out)
 
 
 def decode_c_string(blob: bytes, offset: int, where: str) -> str:
@@ -190,6 +222,7 @@ def extract_card(path: Path, txt_path: Path) -> None:
             f"source={path.name}",
             "format: <zero-based card id> TAB <name|effect|quote> TAB <utf-8 text>",
             "edit only the third column; Korean text is mapped through XENOSAGA_KOR-JPN.json during rebuild",
+            "control tokens: {CTRL12:xx yy} sets text scale, {BYTE:xx} writes one raw byte",
             "escapes: \\n, \\r, \\t, \\\\",
         ],
         rows,
