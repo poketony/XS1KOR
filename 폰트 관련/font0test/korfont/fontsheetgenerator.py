@@ -55,5 +55,5 @@ if __name__ == "__main__":
         ttf_path="C:/Windows/Fonts/batang.ttc", # 원하는 폰트 경로
         output_name="font0_blue_kor_auto.png",
         char_list=full_chars[:1024],
-        font_size=20 # 20x24 규격에 맞게 적절히 조절
+        font_size=22 # 20x24 규격에 맞게 적절히 조절
     )

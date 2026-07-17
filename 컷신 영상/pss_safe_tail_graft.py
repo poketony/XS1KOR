@@ -7,7 +7,7 @@ import hashlib
 import json
 import shutil
 import sys
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path
 
 
@@ -22,6 +22,7 @@ NO_PES_HEADER = {0xBC, 0xBE, 0xBF, 0xF0, 0xF1, 0xF2, 0xF8, 0xFF}
 VIDEO_STREAM_0 = 0xE0
 PICTURE_START_CODE = 0x00
 GOP_START_CODE = 0xB8
+MAX_PS2_PES_PACKET_SIZE = 4096
 
 
 @dataclass(frozen=True)
@@ -211,8 +212,9 @@ def find_original(translated: Path, root: Path) -> Path:
     return matches[0]
 
 
-def output_path_for(translated: Path) -> Path:
-    return translated.with_name(f"{translated.stem}_safe_tail{translated.suffix}")
+def output_path_for(translated: Path, *, keep_translated_video: bool = False) -> Path:
+    marker = "_safe_tail_kor_video" if keep_translated_video else "_safe_tail"
+    return translated.with_name(f"{translated.stem}{marker}{translated.suffix}")
 
 
 def check_tail_layout(original_tail: list[Packet], translated_tail: list[Packet]) -> None:
@@ -279,6 +281,47 @@ def bd_data_capacity(packet: Packet) -> int:
     return max(0, packet.payload_length - 4)
 
 
+def final_bd_adjacent_padding_borrow(
+    packets: list[Packet],
+) -> tuple[Packet | None, Packet | None, int]:
+    """Return the final BD, its immediately following BE, and safe borrow bytes."""
+    final_bd_index = next(
+        (index for index in range(len(packets) - 1, -1, -1) if packets[index].stream_id == PRIVATE_STREAM_1),
+        None,
+    )
+    if final_bd_index is None or final_bd_index + 1 >= len(packets):
+        return None, None, 0
+
+    final_bd = packets[final_bd_index]
+    padding = packets[final_bd_index + 1]
+    if padding.stream_id != 0xBE or padding.offset != final_bd.end:
+        return final_bd, None, 0
+
+    bd_size = final_bd.end - final_bd.offset
+    padding_size = padding.end - padding.offset
+    max_borrow = min(
+        MAX_PS2_PES_PACKET_SIZE - bd_size,
+        padding_size - 6,
+    )
+    return final_bd, padding, max(0, max_borrow)
+
+
+def tail_bd_capacity(
+    packets: list[Packet],
+    *,
+    allow_adjacent_padding_borrow: bool,
+) -> tuple[int, int]:
+    bd_capacity = sum(
+        bd_data_capacity(packet)
+        for packet in packets
+        if packet.stream_id == PRIVATE_STREAM_1
+    )
+    if not allow_adjacent_padding_borrow:
+        return bd_capacity, 0
+    _final_bd, _padding, borrow_capacity = final_bd_adjacent_padding_borrow(packets)
+    return bd_capacity + borrow_capacity, borrow_capacity
+
+
 def build_bd_packet_from_template(
     *,
     buf: bytes | bytearray,
@@ -312,7 +355,8 @@ def build_audio_preserving_tail(
     translated_tail_start: int,
     original_tail_packets: list[Packet],
     translated_tail_packets: list[Packet],
-) -> tuple[bytes, int, int]:
+    allow_adjacent_padding_borrow: bool = False,
+) -> tuple[bytes, int, int, int]:
     """Return original tail bytes with translated BD audio data re-packetized.
 
     The old whole-tail copy corrupts ADPCM when the original and translated
@@ -327,19 +371,22 @@ def build_audio_preserving_tail(
     )
     remaining = memoryview(translated_audio_data)
     rebuilt_bd_packets = 0
+    borrowed_be_bytes = 0
+    borrowed_padding_offset: int | None = None
 
-    original_bd_capacity = sum(
-        bd_data_capacity(packet)
-        for packet in original_tail_packets
-        if packet.stream_id == PRIVATE_STREAM_1
+    original_audio_capacity, borrow_capacity = tail_bd_capacity(
+        original_tail_packets,
+        allow_adjacent_padding_borrow=allow_adjacent_padding_borrow,
     )
-    if len(translated_audio_data) > original_bd_capacity:
+    if len(translated_audio_data) > original_audio_capacity:
+        capacity_label = "BD/adjacent BE" if allow_adjacent_padding_borrow else "BD"
         raise ValueError(
-            "Translated tail ADPCM data does not fit in original tail BD capacity: "
-            f"{len(translated_audio_data)} > {original_bd_capacity}"
+            f"Translated tail ADPCM data does not fit in original tail {capacity_label} capacity: "
+            f"{len(translated_audio_data)} > {original_audio_capacity}"
         )
 
     original_bd_packets = [packet for packet in original_tail_packets if packet.stream_id == PRIVATE_STREAM_1]
+    borrow_bd, borrow_padding, _max_borrow = final_bd_adjacent_padding_borrow(original_tail_packets)
     for bd_index, packet in enumerate(original_bd_packets):
         rel = packet.offset - original_tail_start
         slot_size = packet.end - packet.offset
@@ -347,7 +394,36 @@ def build_audio_preserving_tail(
             tail[rel : rel + slot_size] = make_padding_packet(slot_size)
             continue
 
-        chunk_size = min(bd_data_capacity(packet), len(remaining))
+        slot_capacity = bd_data_capacity(packet)
+        if (
+            allow_adjacent_padding_borrow
+            and packet == borrow_bd
+            and borrow_padding is not None
+            and len(remaining) > slot_capacity
+        ):
+            borrowed_be_bytes = len(remaining) - slot_capacity
+            if borrowed_be_bytes > borrow_capacity:
+                raise ValueError(
+                    "Translated tail ADPCM exceeds the safe adjacent BE borrow capacity: "
+                    f"{borrowed_be_bytes} > {borrow_capacity}"
+                )
+
+            expanded_packet = replace(packet, end=packet.end + borrowed_be_bytes)
+            bd_packet = build_bd_packet_from_template(
+                buf=original_buf,
+                packet=expanded_packet,
+                subheader=subheader,
+                audio_data=remaining.tobytes(),
+            )
+            padding_size = (borrow_padding.end - borrow_padding.offset) - borrowed_be_bytes
+            pair_size = borrow_padding.end - packet.offset
+            tail[rel : rel + pair_size] = bd_packet + make_padding_packet(padding_size)
+            borrowed_padding_offset = borrow_padding.offset
+            remaining = remaining[len(remaining) :]
+            rebuilt_bd_packets += 1
+            continue
+
+        chunk_size = min(slot_capacity, len(remaining))
         bd_packet = build_bd_packet_from_template(
             buf=original_buf,
             packet=packet,
@@ -381,11 +457,13 @@ def build_audio_preserving_tail(
     for packet in original_tail_packets:
         if packet.stream_id != 0xBE:
             continue
+        if packet.offset == borrowed_padding_offset:
+            continue
         rel = packet.offset - original_tail_start
         slot_size = packet.end - packet.offset
         tail[rel : rel + slot_size] = make_padding_packet(slot_size)
 
-    return bytes(tail), rebuilt_bd_packets, translated_bd_packets
+    return bytes(tail), rebuilt_bd_packets, translated_bd_packets, borrowed_be_bytes
 
 
 def last_gop_info(buf: bytes | bytearray, max_tail_packs: int) -> tuple[int, int] | None:
@@ -460,13 +538,26 @@ def collect_original_video_from_gop(
     original_tail_packets: list[Packet],
     gop_file_offset: int,
 ) -> bytes:
+    return collect_video_from_gop(
+        buf=original_buf,
+        tail_packets=original_tail_packets,
+        gop_file_offset=gop_file_offset,
+    )
+
+
+def collect_video_from_gop(
+    *,
+    buf: bytes | bytearray,
+    tail_packets: list[Packet],
+    gop_file_offset: int,
+) -> bytes:
     video = bytearray()
-    for packet in original_tail_packets:
+    for packet in tail_packets:
         if packet.stream_id != VIDEO_STREAM_0 or packet.payload_offset is None:
             continue
         start = max(packet.payload_offset, gop_file_offset)
         if start < packet.end:
-            video.extend(original_buf[start : packet.end])
+            video.extend(buf[start : packet.end])
     return bytes(video)
 
 
@@ -488,6 +579,89 @@ def translated_video_insert_index(
     return None
 
 
+def rebuild_video_tail_from_data(
+    *,
+    tail_bytes: bytes,
+    template_buf: bytes | bytearray,
+    tail_start: int,
+    tail_packets: list[Packet],
+    video_data: bytes,
+    suppress_video_before_insert: bool,
+    source_label: str,
+) -> tuple[bytes, int, int, int]:
+    insert_index = translated_video_insert_index(
+        translated_packets=tail_packets,
+        video_data_len=len(video_data),
+    )
+    if insert_index is None:
+        video_capacity = sum(
+            packet.payload_length or 0
+            for packet in tail_packets
+            if packet.stream_id == VIDEO_STREAM_0 and packet.payload_offset is not None
+        )
+        raise ValueError(
+            f"{source_label} GOP video does not fit in tail E0 capacity: "
+            f"{len(video_data)} > {video_capacity}"
+        )
+
+    tail = bytearray(tail_bytes)
+    remaining = memoryview(video_data)
+    rebuilt_video_packets = 0
+    available_video_packets = sum(
+        1
+        for packet in tail_packets[insert_index:]
+        if packet.stream_id == VIDEO_STREAM_0 and packet.payload_offset is not None
+    )
+    insert_tail_offset = tail_packets[insert_index].offset - tail_start
+
+    for packet_index, packet in enumerate(tail_packets):
+        if packet.stream_id != VIDEO_STREAM_0 or packet.payload_offset is None:
+            continue
+
+        rel = packet.offset - tail_start
+        slot_size = packet.end - packet.offset
+        if packet_index < insert_index:
+            if suppress_video_before_insert:
+                tail[rel : rel + slot_size] = make_padding_packet(slot_size)
+            continue
+
+        capacity = packet.payload_length or 0
+        if not remaining:
+            tail[rel : rel + slot_size] = make_padding_packet(slot_size)
+            continue
+
+        chunk_size = min(capacity, len(remaining))
+        video_packet = build_video_packet_with_payload(
+            buf=template_buf,
+            packet=packet,
+            payload=remaining[:chunk_size].tobytes(),
+        )
+        leftover = slot_size - len(video_packet)
+        if 0 < leftover < 6:
+            need_to_move = 6 - leftover
+            if chunk_size <= need_to_move:
+                raise ValueError(
+                    f"Could not split {source_label} GOP video on a legal padding boundary at "
+                    f"E0 offset 0x{packet.offset:X}: leftover={leftover}"
+                )
+            chunk_size -= need_to_move
+            video_packet = build_video_packet_with_payload(
+                buf=template_buf,
+                packet=packet,
+                payload=remaining[:chunk_size].tobytes(),
+            )
+            leftover = slot_size - len(video_packet)
+
+        tail[rel : rel + slot_size] = video_packet + (make_padding_packet(leftover) if leftover else b"")
+        remaining = remaining[chunk_size:]
+        rebuilt_video_packets += 1
+
+    if remaining:
+        raise ValueError(f"{source_label} GOP video left over after tail rebuild: {len(remaining)} bytes")
+
+    return bytes(tail), rebuilt_video_packets, available_video_packets, insert_tail_offset
+
+
 def build_translated_map_video_tail(
     *,
     original_buf: bytes | bytearray,
@@ -503,70 +677,18 @@ def build_translated_map_video_tail(
         original_tail_packets=original_tail_packets,
         gop_file_offset=gop_file_offset,
     )
-    insert_index = translated_video_insert_index(
-        translated_packets=translated_tail_packets,
-        video_data_len=len(original_video),
+    rebuilt_tail, rebuilt_video_packets, translated_video_packets, _insert_tail_offset = (
+        rebuild_video_tail_from_data(
+            tail_bytes=bytes(tail),
+            template_buf=translated_buf,
+            tail_start=translated_tail_start,
+            tail_packets=translated_tail_packets,
+            video_data=original_video,
+            suppress_video_before_insert=False,
+            source_label="Original",
+        )
     )
-    if insert_index is None:
-        translated_capacity = sum(
-            packet.payload_length or 0
-            for packet in translated_tail_packets
-            if packet.stream_id == VIDEO_STREAM_0 and packet.payload_offset is not None
-        )
-        raise ValueError(
-            "Original GOP video does not fit in translated tail E0 capacity: "
-            f"{len(original_video)} > {translated_capacity}"
-        )
-
-    remaining = memoryview(original_video)
-    rebuilt_video_packets = 0
-    translated_video_packets = sum(
-        1
-        for packet in translated_tail_packets[insert_index:]
-        if packet.stream_id == VIDEO_STREAM_0 and packet.payload_offset is not None
-    )
-
-    for packet in translated_tail_packets[insert_index:]:
-        if packet.stream_id != VIDEO_STREAM_0 or packet.payload_offset is None:
-            continue
-
-        rel = packet.offset - translated_tail_start
-        slot_size = packet.end - packet.offset
-        capacity = packet.payload_length or 0
-        if not remaining:
-            tail[rel : rel + slot_size] = make_padding_packet(slot_size)
-            continue
-
-        chunk_size = min(capacity, len(remaining))
-        video_packet = build_video_packet_with_payload(
-            buf=translated_buf,
-            packet=packet,
-            payload=remaining[:chunk_size].tobytes(),
-        )
-        leftover = slot_size - len(video_packet)
-        if 0 < leftover < 6:
-            need_to_move = 6 - leftover
-            if chunk_size <= need_to_move:
-                raise ValueError(
-                    "Could not split original GOP video on a legal padding boundary at "
-                    f"translated E0 offset 0x{packet.offset:X}: leftover={leftover}"
-                )
-            chunk_size -= need_to_move
-            video_packet = build_video_packet_with_payload(
-                buf=translated_buf,
-                packet=packet,
-                payload=remaining[:chunk_size].tobytes(),
-            )
-            leftover = slot_size - len(video_packet)
-
-        tail[rel : rel + slot_size] = video_packet + (make_padding_packet(leftover) if leftover else b"")
-        remaining = remaining[chunk_size:]
-        rebuilt_video_packets += 1
-
-    if remaining:
-        raise ValueError(f"Original GOP video left over after translated-map rebuild: {len(remaining)} bytes")
-
-    return bytes(tail), rebuilt_video_packets, translated_video_packets
+    return rebuilt_tail, rebuilt_video_packets, translated_video_packets
 
 
 def suppress_video_before_gop(
@@ -739,6 +861,120 @@ def choose_translated_map_layout(
     )
 
 
+def choose_keep_translated_video_layout(
+    *,
+    original_buf: bytes | bytearray,
+    translated_buf: bytes | bytearray,
+    min_tail_packs: int,
+    max_tail_packs: int,
+) -> tuple[int, int, int, int, int, bytes, list[Packet], list[Packet]]:
+    gop_info = last_gop_info(translated_buf, max_tail_packs)
+    if gop_info is None:
+        raise ValueError("Cannot keep translated tail video because no translated GOP was found.")
+
+    gop_tail_packs, gop_file_offset = gop_info
+    first_tail_packs = max(min_tail_packs, gop_tail_packs)
+    rejected: list[str] = []
+    for candidate_tail_packs in range(first_tail_packs, max_tail_packs + 1):
+        original_tail_start = tail_start(original_buf, candidate_tail_packs)
+        translated_tail_start = tail_start(translated_buf, candidate_tail_packs)
+        original_tail_bytes = original_buf[original_tail_start:]
+        translated_tail_size = len(translated_buf) - translated_tail_start
+        if len(original_tail_bytes) != translated_tail_size:
+            rejected.append(
+                f"{candidate_tail_packs}: tail size {len(original_tail_bytes)} != {translated_tail_size}"
+            )
+            continue
+
+        original_tail_packets = packets_from(original_buf, original_tail_start)
+        translated_tail_packets = packets_from(translated_buf, translated_tail_start)
+        translated_audio, _subheader, _audio_packets = collect_bd_audio_data(
+            translated_buf,
+            translated_tail_packets,
+        )
+        original_audio_capacity, borrow_capacity = tail_bd_capacity(
+            original_tail_packets,
+            allow_adjacent_padding_borrow=True,
+        )
+        if len(translated_audio) > original_audio_capacity:
+            rejected.append(
+                f"{candidate_tail_packs}: translated tail ADPCM {len(translated_audio)} "
+                f"> original BD/adjacent BE capacity {original_audio_capacity} "
+                f"(BE borrow {borrow_capacity})"
+            )
+            continue
+
+        translated_video = collect_video_from_gop(
+            buf=translated_buf,
+            tail_packets=translated_tail_packets,
+            gop_file_offset=gop_file_offset,
+        )
+        insert_index = translated_video_insert_index(
+            translated_packets=original_tail_packets,
+            video_data_len=len(translated_video),
+        )
+        if insert_index is None:
+            original_video_capacity = sum(
+                packet.payload_length or 0
+                for packet in original_tail_packets
+                if packet.stream_id == VIDEO_STREAM_0 and packet.payload_offset is not None
+            )
+            rejected.append(
+                f"{candidate_tail_packs}: translated GOP video {len(translated_video)} "
+                f"> original E0 capacity {original_video_capacity}"
+            )
+            continue
+
+        return (
+            candidate_tail_packs,
+            gop_tail_packs,
+            gop_file_offset,
+            original_tail_start,
+            translated_tail_start,
+            bytes(original_tail_bytes),
+            original_tail_packets,
+            translated_tail_packets,
+        )
+
+    raise ValueError(
+        "Translated GOP video and ADPCM do not fit in original tail structure within auto-expand limit. "
+        f"Tried tail packs {first_tail_packs}..{max_tail_packs}: " + "; ".join(rejected)
+    )
+
+
+def build_original_map_translated_video_tail(
+    *,
+    tail_bytes: bytes,
+    original_buf: bytes | bytearray,
+    translated_buf: bytes | bytearray,
+    original_tail_start: int,
+    translated_tail_packets: list[Packet],
+    original_tail_packets: list[Packet],
+    translated_gop_file_offset: int,
+) -> tuple[bytes, int, int, int, str]:
+    translated_video = collect_video_from_gop(
+        buf=translated_buf,
+        tail_packets=translated_tail_packets,
+        gop_file_offset=translated_gop_file_offset,
+    )
+    rebuilt_tail, rebuilt_packets, available_packets, insert_tail_offset = rebuild_video_tail_from_data(
+        tail_bytes=tail_bytes,
+        template_buf=original_buf,
+        tail_start=original_tail_start,
+        tail_packets=original_tail_packets,
+        video_data=translated_video,
+        suppress_video_before_insert=True,
+        source_label="Translated",
+    )
+    return (
+        rebuilt_tail,
+        rebuilt_packets,
+        available_packets,
+        insert_tail_offset,
+        hashlib.sha256(translated_video).hexdigest(),
+    )
+
+
 def safe_tail_graft(
     original: Path,
     translated: Path,
@@ -747,6 +983,7 @@ def safe_tail_graft(
     tail_packs: int,
     max_tail_packs: int,
     sync_to_gop: bool,
+    keep_translated_video: bool,
     overwrite: bool,
     allow_oversize_input: bool,
     allow_bad_input_audio: bool,
@@ -779,8 +1016,12 @@ def safe_tail_graft(
     fallback_reason: str | None = None
     rebuilt_video_packets: int | None = None
     translated_video_packets: int | None = None
+    video_insert_tail_offset: int | None = None
+    video_source_sha256: str | None = None
+    borrowed_be_bytes = 0
+    gop_source = "translated" if keep_translated_video else "original"
 
-    try:
+    if keep_translated_video:
         (
             selected_tail_packs,
             gop_tail_packs,
@@ -790,64 +1031,121 @@ def safe_tail_graft(
             original_tail_bytes,
             original_tail_packets,
             translated_tail_packets,
-        ) = choose_tail_layout(
+        ) = choose_keep_translated_video_layout(
             original_buf=original_buf,
             translated_buf=translated_buf,
             min_tail_packs=tail_packs,
             max_tail_packs=max_tail_packs,
-            sync_to_gop=sync_to_gop,
         )
         if not original_tail_bytes.endswith(END_MAGIC):
             raise ValueError("Original tail does not end with 00 00 01 B9.")
 
-        rebuilt_tail_bytes, inserted_bd_packets, translated_tail_bd_packets = build_audio_preserving_tail(
+        (
+            rebuilt_tail_bytes,
+            inserted_bd_packets,
+            translated_tail_bd_packets,
+            borrowed_be_bytes,
+        ) = build_audio_preserving_tail(
             original_buf=original_buf,
             translated_buf=translated_buf,
             original_tail_start=original_tail_start,
             translated_tail_start=translated_tail_start,
             original_tail_packets=original_tail_packets,
             translated_tail_packets=translated_tail_packets,
+            allow_adjacent_padding_borrow=True,
         )
-        if sync_to_gop:
-            rebuilt_tail_bytes = suppress_video_before_gop(
-                tail_bytes=rebuilt_tail_bytes,
+        (
+            rebuilt_tail_bytes,
+            rebuilt_video_packets,
+            translated_video_packets,
+            video_insert_tail_offset,
+            video_source_sha256,
+        ) = build_original_map_translated_video_tail(
+            tail_bytes=rebuilt_tail_bytes,
+            original_buf=original_buf,
+            translated_buf=translated_buf,
+            original_tail_start=original_tail_start,
+            translated_tail_packets=translated_tail_packets,
+            original_tail_packets=original_tail_packets,
+            translated_gop_file_offset=gop_file_offset,
+        )
+        graft_mode = "original-tail-translated-video"
+        gop_tail_offset = gop_file_offset - translated_tail_start
+    else:
+        try:
+            (
+                selected_tail_packs,
+                gop_tail_packs,
+                gop_file_offset,
+                original_tail_start,
+                translated_tail_start,
+                original_tail_bytes,
+                original_tail_packets,
+                translated_tail_packets,
+            ) = choose_tail_layout(
                 original_buf=original_buf,
+                translated_buf=translated_buf,
+                min_tail_packs=tail_packs,
+                max_tail_packs=max_tail_packs,
+                sync_to_gop=sync_to_gop,
+            )
+            if not original_tail_bytes.endswith(END_MAGIC):
+                raise ValueError("Original tail does not end with 00 00 01 B9.")
+
+            (
+                rebuilt_tail_bytes,
+                inserted_bd_packets,
+                translated_tail_bd_packets,
+                borrowed_be_bytes,
+            ) = build_audio_preserving_tail(
+                original_buf=original_buf,
+                translated_buf=translated_buf,
                 original_tail_start=original_tail_start,
+                translated_tail_start=translated_tail_start,
                 original_tail_packets=original_tail_packets,
+                translated_tail_packets=translated_tail_packets,
+            )
+            if sync_to_gop:
+                rebuilt_tail_bytes = suppress_video_before_gop(
+                    tail_bytes=rebuilt_tail_bytes,
+                    original_buf=original_buf,
+                    original_tail_start=original_tail_start,
+                    original_tail_packets=original_tail_packets,
+                    gop_file_offset=gop_file_offset,
+                )
+        except ValueError as primary_error:
+            if not sync_to_gop:
+                raise
+            fallback_reason = str(primary_error)
+            graft_mode = "translated-map-video-rebuilt"
+            (
+                selected_tail_packs,
+                gop_tail_packs,
+                gop_file_offset,
+                original_tail_start,
+                translated_tail_start,
+                original_tail_bytes,
+                original_tail_packets,
+                translated_tail_packets,
+            ) = choose_translated_map_layout(
+                original_buf=original_buf,
+                translated_buf=translated_buf,
+                min_tail_packs=tail_packs,
+                max_tail_packs=max_tail_packs,
+            )
+            if not original_tail_bytes.endswith(END_MAGIC):
+                raise ValueError("Translated tail does not end with 00 00 01 B9.")
+            rebuilt_tail_bytes, rebuilt_video_packets, translated_video_packets = build_translated_map_video_tail(
+                original_buf=original_buf,
+                translated_buf=translated_buf,
+                original_tail_packets=original_tail_packets,
+                translated_tail_start=translated_tail_start,
+                translated_tail_packets=translated_tail_packets,
                 gop_file_offset=gop_file_offset,
             )
-    except ValueError as primary_error:
-        if not sync_to_gop:
-            raise
-        fallback_reason = str(primary_error)
-        graft_mode = "translated-map-video-rebuilt"
-        (
-            selected_tail_packs,
-            gop_tail_packs,
-            gop_file_offset,
-            original_tail_start,
-            translated_tail_start,
-            original_tail_bytes,
-            original_tail_packets,
-            translated_tail_packets,
-        ) = choose_translated_map_layout(
-            original_buf=original_buf,
-            translated_buf=translated_buf,
-            min_tail_packs=tail_packs,
-            max_tail_packs=max_tail_packs,
-        )
-        if not original_tail_bytes.endswith(END_MAGIC):
-            raise ValueError("Translated tail does not end with 00 00 01 B9.")
-        rebuilt_tail_bytes, rebuilt_video_packets, translated_video_packets = build_translated_map_video_tail(
-            original_buf=original_buf,
-            translated_buf=translated_buf,
-            original_tail_packets=original_tail_packets,
-            translated_tail_start=translated_tail_start,
-            translated_tail_packets=translated_tail_packets,
-            gop_file_offset=gop_file_offset,
-        )
-        inserted_bd_packets = sum(1 for packet in translated_tail_packets if packet.stream_id == PRIVATE_STREAM_1)
-        translated_tail_bd_packets = inserted_bd_packets
+            inserted_bd_packets = sum(1 for packet in translated_tail_packets if packet.stream_id == PRIVATE_STREAM_1)
+            translated_tail_bd_packets = inserted_bd_packets
+        gop_tail_offset = None if gop_file_offset is None else gop_file_offset - original_tail_start
 
     output_buf = bytearray(translated_buf)
     output_buf[translated_tail_start:] = rebuilt_tail_bytes
@@ -881,15 +1179,20 @@ def safe_tail_graft(
         "max_tail_packs": max_tail_packs,
         "gop_tail_packs": gop_tail_packs,
         "gop_file_offset": gop_file_offset,
-        "gop_tail_offset": None if gop_file_offset is None else gop_file_offset - original_tail_start,
+        "gop_tail_offset": gop_tail_offset,
+        "gop_source": gop_source,
         "sync_to_gop": sync_to_gop,
+        "keep_translated_video": keep_translated_video,
         "original_tail_start": original_tail_start,
         "translated_tail_start": translated_tail_start,
         "tail_size": len(original_tail_bytes),
         "inserted_bd_packets": inserted_bd_packets,
         "translated_tail_bd_packets": translated_tail_bd_packets,
+        "borrowed_be_bytes": borrowed_be_bytes,
         "rebuilt_video_packets": rebuilt_video_packets,
         "translated_video_packets": translated_video_packets,
+        "video_insert_tail_offset": video_insert_tail_offset,
+        "video_source_sha256": video_source_sha256,
         "graft_mode": graft_mode,
         "fallback_reason": fallback_reason,
         "audio_sha256": translated_audio_after.sha256,
@@ -929,6 +1232,11 @@ def build_parser() -> argparse.ArgumentParser:
         help="Do not expand the final graft window to include the last original MPEG GOP start.",
     )
     parser.add_argument(
+        "--keep-translated-video",
+        action="store_true",
+        help="Use the translated last GOP video inside the original tail structure to avoid original subtitle flashes.",
+    )
+    parser.add_argument(
         "--allow-oversize-input",
         action="store_true",
         help="Diagnostic only. Output is still refused if it would exceed original size.",
@@ -953,7 +1261,14 @@ def main(argv: list[str] | None = None) -> int:
     else:
         raise ValueError("Expected either TRANSLATED.pss or ORIGINAL.pss TRANSLATED.pss.")
 
-    output = args.out.resolve() if args.out else output_path_for(translated).resolve()
+    if args.keep_translated_video and args.no_gop_sync:
+        raise ValueError("--keep-translated-video cannot be combined with --no-gop-sync.")
+
+    output = (
+        args.out.resolve()
+        if args.out
+        else output_path_for(translated, keep_translated_video=args.keep_translated_video).resolve()
+    )
     report = safe_tail_graft(
         original,
         translated,
@@ -961,6 +1276,7 @@ def main(argv: list[str] | None = None) -> int:
         tail_packs=args.tail_packs,
         max_tail_packs=args.max_tail_packs,
         sync_to_gop=not args.no_gop_sync,
+        keep_translated_video=args.keep_translated_video,
         overwrite=args.overwrite,
         allow_oversize_input=args.allow_oversize_input,
         allow_bad_input_audio=args.allow_bad_input_audio,
@@ -973,14 +1289,18 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Mode          : {report['graft_mode']}")
     print(f"Tail graft    : last {report['tail_packs']} packs, {report['tail_size']} bytes")
     if report["gop_tail_packs"]:
-        print(f"Video sync    : last GOP within {report['gop_tail_packs']} packs")
+        print(f"Video sync    : last {report['gop_source']} GOP within {report['gop_tail_packs']} packs")
     if report["gop_tail_offset"] is not None:
         print(f"GOP offset    : tail + {report['gop_tail_offset']} bytes")
     if report["tail_packs"] != report["requested_tail_packs"]:
         print(f"Tail expanded : {report['requested_tail_packs']} -> {report['tail_packs']} packs")
     print(f"BD rebuilt    : {report['inserted_bd_packets']} / {report['translated_tail_bd_packets']} packet(s)")
+    if report["borrowed_be_bytes"]:
+        print(f"BE borrowed   : {report['borrowed_be_bytes']} byte(s) for final BD")
     if report["rebuilt_video_packets"] is not None:
         print(f"Video rebuilt : {report['rebuilt_video_packets']} / {report['translated_video_packets']} packet(s)")
+    if report["video_insert_tail_offset"] is not None:
+        print(f"Video insert  : tail + {report['video_insert_tail_offset']} bytes")
     print(f"Audio hash    : unchanged ({str(report['audio_sha256'])[:16]}...)")
     print(f"ADPCM check   : bad_frames={report['audio_bad_frames']}, ads_delta={report['audio_ads_delta']}")
     print("End code      : verified 00 00 01 B9")

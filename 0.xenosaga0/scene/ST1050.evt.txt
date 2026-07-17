@@ -48,7 +48,7 @@ SOUND_LOOP
 # dup_of: line 16, tag8 6
 /[label(Ｊｒ．)]
 이 문은 Ｎｏ．３인가．<lf>
-함의 구조상 이 앞이 브리지일 거라고<lf>
+전함 구조상 이 앞이 브리지일 거라고<lf>
 생각하는데 말이지……．
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
@@ -56,42 +56,42 @@ SOUND_LOOP
 /[label(Ｊｒ．)]
 문의 Ｎｏ．는 ３．<lf>
 아까 들은 대로 이 앞이<lf>
-브리지인 것 같지만，<lf>
-열 방법이 없군．
+브리지인 것 같지만<lf>
+열 방법이 없는걸．
 /[waitkey(1)]/[clear()]
 우선 다른 곳을 둘러볼까……．
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
 # dup_of: line 5, tag8 91
 카드 키 삽입구가 있다．<lf>
-/[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]를 쓸 수 있을 것 같다．
+/[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]를 쓸 수 있을 듯하다．
 # dup_of: line 33, tag8 7
 /[waitkey(1)]/[clear()]
-/[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]를 사용하겠습니까？<lf>
+/[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]를 쓰겠습니까？<lf>
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
-카드 키 삽입구가 있다<lf>
-/[color(0x329bbe)]Ｕ−ＴＩＣ 카드/[color(0xffffff)]를 쓸 수 있을 것 같다．
+카드 키 삽입구가 있다．<lf>
+/[color(0x329bbe)]Ｕ−ＴＩＣ 카드/[color(0xffffff)]를 쓸 수 있을 듯하다．
 # dup_of: line 33, tag8 7
 /[waitkey(1)]/[clear()]
-/[color(0x329bbe)]Ｕ−ＴＩＣ 카드/[color(0xffffff)]를 사용하겠습니까？<lf>
+/[color(0x329bbe)]Ｕ−ＴＩＣ 카드/[color(0xffffff)]를 쓰겠습니까？<lf>
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
 아，꼬마님！ 다치진 않으셨죠？<lf>
-갑자기 문이 닫히기 시작할 때 습격당해서<lf>
-불찰로 부상자가 생기고 말았습니다．<lf>
+갑자기 문이 닫힐 때 습격당해서<lf>
+그만 부상자가 생기고 말았습니다．<lf>
 제가 붙어 있었는데도……<lf>
 죄송합니다．
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
 하지만 생각보다 Ｎｏ．４ 문이<lf>
 빨리 열려서 살았습니다．<lf>
-동료를 죽게 하지 않아도 될 것 같습니다．
+동료를 죽게 하지 않아도 될 것 같네요．
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
 꼬마님．<lf>
-여기보다 앞서간 아군도<lf>
-아직 몇 명 있을 것으로 보입니다．
+더 앞으로 간 아군도<lf>
+아직 몇 명 있는 것으로 보입니다．
 # dup_of: line 33, tag8 7
 /[waitkey(1)]/[clear()]
 위험을 느끼면 무리하지 말고<lf>
@@ -100,8 +100,8 @@ SOUND_LOOP
 /[waitkey(64)]/[close()]
 열려 있던 Ｎｏ．３ 문이 갑자기 닫혀서<lf>
 서둘러 들어가려던 참에 공격당했습니다．<lf>
-탄은 거의 빗나갔지만，<lf>
-선두의 그는 몇 발 맞은 듯합니다．
+탄은 거의 빗나갔지만 선두에 있던<lf>
+그는 몇 발 맞은 듯합니다．
 # dup_of: line 33, tag8 7
 /[waitkey(1)]/[clear()]
 치명적인 곳에 맞지는 않았으니<lf>
@@ -114,58 +114,58 @@ SOUND_LOOP
 그들은 무사할까요？
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
-괜찮습니다．여긴 저희에게 맡기고，<lf>
+괜찮습니다．여긴 저희에게 맡기고<lf>
 꼬마님은 어서 가 주십시오．
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
-하하하하하．죄송합니다，꼬마님．<lf>
-조금……방심했습니다．<lf>
+하하하하하．죄송합니다 꼬마님．<lf>
+조금…… 방심했습니다．<lf>
 # dup_of: line 33, tag8 7
 /[waitkey(1)]/[clear()]
-뭐〜，조금 쉬면 괜찮……습니다．<lf>
+뭐〜 조금 쉬면 괜찮……을 겁니다．<lf>
 그보다 어서 가 주십시오．
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
 한심하군요．<lf>
-부주의하게 뛰쳐나가지 않았다면<lf>
-그런 놈들한테 당하다니……아야야．
+부주의하게 뛰쳐나가지 말았어야 했는데．<lf>
+그런 놈들한테 당하다니…… 아야야．
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
-조금 속이……안 좋습니다．<lf>
+조금 속이…… 안 좋습니다．<lf>
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
 ……의식을 잃은 것 같다．<lf>
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
-……의식을 잃고 있다．<lf>
+……의식을 잃었다．<lf>
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
 # dup_of: line 16, tag8 6
 /[label(Ｊｒ．)]
-이야기로 들은 전투 장소인가．<lf>
+방금 들은 전투 장소인가．<lf>
 각 통로가 합류하는<lf>
-이렇게 좁은 곳에서 습격당했다니……．
+이런 좁은 곳에서 습격당했다니……．
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
 # dup_of: line 16, tag8 6
 /[label(Ｊｒ．)]
-……조금 방심했을지도 모르겠군．
+……조금 방심했을지도 모르겠어．
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
 # dup_of: line 16, tag8 6
 /[label(Ｊｒ．)]
 아무래도 여기서 돌발적인<lf>
-전투가 있었던 것 같군．
+전투가 있었던 것 같은데．
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
 # dup_of: line 16, tag8 6
 /[label(Ｊｒ．)]
-아군에게 피해가 없었으면 좋겠는데……．
+아군에게 피해가 없었으면 좋겠는걸……．
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
 # dup_of: line 16, tag8 6
 /[label(Ｊｒ．)]
-여기서 전투가 있었던 것 같다．<lf>
+여기서 전투가 있었던 것 같아．<lf>
 Ｕ−ＴＩＣ 기관의 병사가<lf>
 매복하고 있었겠지．
 # dup_of: line 4, tag8 8
@@ -179,7 +179,7 @@ SOUND_LOOP
 ………．
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]
-『Ｎｏ．３ 문　개폐 스위치』<lf>
+『Ｎｏ．３ 문 개폐 스위치』<lf>
 조작하겠습니까？<lf>
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[close()]

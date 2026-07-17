@@ -173,7 +173,7 @@ MoveU
 ＥＶＳ 플레이트를 알고 있나？
 /[waitkey(1)]/[clear()]
 ＥＶＳ란，<lf>
-/[font(Ｕ．Ｍ．Ｎ．)] 관리국에서 제작한<lf>
+Ｕ．Ｍ．Ｎ． 관리국에서 제작한<lf>
 환경 시뮬레이션 서비스의 총칭이다．
 # dup_of: line 122, tag8 12
 /[waitkey(1)]/[clear()]
@@ -187,7 +187,7 @@ MoveU
 기동시킬 수 있다．
 # dup_of: line 122, tag8 12
 /[waitkey(1)]/[clear()]
-현재 /[font(Ｕ．Ｍ．Ｎ．)] 관리국이 제공하는 환경은<lf>
+현재 Ｕ．Ｍ．Ｎ． 관리국이 제공하는 환경은<lf>
 ４종류의 게임 센터와<lf>
 과거의 전투 데이터로 만든 전투 필드．
 # dup_of: line 12, tag8 0
@@ -213,7 +213,7 @@ MoveU
 /[waitkey(1)]/[clear()]
 그 플레이트는<lf>
 # dup_of: line 124, tag8 3
-/[font(Ｕ．Ｍ．Ｎ．)] 관리국에서 제작한<lf>
+Ｕ．Ｍ．Ｎ． 관리국에서 제작한<lf>
 온라인 숍 단말이다．
 # dup_of: line 122, tag8 12
 /[waitkey(1)]/[clear()]

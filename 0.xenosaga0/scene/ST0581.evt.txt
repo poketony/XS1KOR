@@ -19,7 +19,7 @@
 # dup_of: line 5, tag8 2
 /[label(케이오스)]
 그래도<lf>
-잠든 얼굴이 기품 있더라고．
+잠든 얼굴이 기품 있더라．
 # dup_of: line 4, tag8 8
 /[waitkey(64)]/[clear()]
 # dup_of: line 1, tag8 3

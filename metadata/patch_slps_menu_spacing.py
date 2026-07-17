@@ -31,6 +31,20 @@ SKILL_X_PATCHES = {
     0x0B3614: b"\x4c\x00",
 }
 
+# Message layout uses several independent line-width accumulators. The original
+# code advances half-width bytes by 8 or 10 in those paths, while
+# xglFontGetStringWidth() and actual rendering advance them by 16. This affects
+# both centered cutscene subtitles and the field-dialogue continuation cursor.
+EVT_HALF_WIDTH_PATCHES = {
+    # MSG_queuePop:  addiu v0, v0, 8  -> addiu v0, v0, 16
+    0x058DD0: (b"\x08\x00\x42\x24", b"\x10\x00\x42\x24"),
+    # MSG_copyln:    addiu s3, s3, 8  -> addiu s3, s3, 16
+    0x059158: (b"\x08\x00\x73\x26", b"\x10\x00\x73\x26"),
+    # eMessageDrawType01 cursor X accumulator:
+    # addiu s5, s5, 10 -> addiu s5, s5, 16
+    0x078A0C: (b"\x0a\x00\xb5\x26", b"\x10\x00\xb5\x26"),
+}
+
 
 def parse_translations(path: Path) -> dict[int, str]:
     translations = {}
@@ -161,6 +175,22 @@ def apply_spacing_fixes(data: bytearray, translations: dict[int, str]) -> list[s
             )
         data[offset : offset + 2] = replacement
         changes.append(f"0x{offset:08x}: X 0x4c -> 0x{skill_x:x} ({skill_text!r})")
+
+    for offset, (expected, replacement_bytes) in EVT_HALF_WIDTH_PATCHES.items():
+        actual = bytes(data[offset : offset + len(expected)])
+        if actual == replacement_bytes:
+            changes.append(f"0x{offset:08x}: EVT half-width advance already patched")
+            continue
+        if actual != expected:
+            raise ValueError(
+                f"unexpected EVT half-width instruction at 0x{offset:08x}: "
+                f"expected {expected.hex(' ')}, found {actual.hex(' ')}"
+            )
+        data[offset : offset + len(expected)] = replacement_bytes
+        changes.append(
+            f"0x{offset:08x}: EVT half-width advance "
+            f"{expected.hex(' ')} -> {replacement_bytes.hex(' ')}"
+        )
     return changes
 
 

@@ -1,0 +1,401 @@
+# chunk 13 @ 0x2e70 cnum=2354 total=398
+# bc_map: 174,221,11,103,13,105,93,104,288,367,377,376,291,290,287,286,357,95,100,96,98,102,359,292,299,316,333,350,351,352,353,354,355,293,294,295,296,297,298,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,289,285,358,366,378,379,380,381,382,383,384,385,386,387,201,202,203,204,205,206,207,208,209,210,283,388,389,390,391,392,393,394,395,396,397,211,212,213,214,215,216,217,218,219,220,94,10,12,106,122,141,142,120,121,62,63,60,61,150,6,192,57,59,55,54,257,144,107,143,126,7,193,58,145,194,146,14,231,53,238,183,52,116,160,161,123,124,118,117,8,148,147,125,184,185,186,187,119,48,49,51,50,158,176,244,233,159,177,245,232,128,127,115,131,129,130,92,132,140,109,108,151,136,139,134,137,138,135,133,15,152,30,153,36,9,243,241,242,156,157,23,22,18,20,19,16,17,25,29,28,225,224,169,228,235,190,191,250,223,227,236,175,222,255,188,189,32,256,173,197,198,251,167,168,199,196,47,38,40,37,35,42,170,149,165,162,179,5,180,166,164,178,4,163,3,1,34,2,33,31,0,249,252,45,46,44,41,43,39,247,246,254,240,182,237,234,253,239,181,248,230,24,110,154,155,113,111,112,114,200,26,66,171,280,274,364,370,65,260,363,267,281,83,85,368,84,87,272,86,89,271,273,282,269,88,375,263,362,356,371,361,278,226,369,360,277,275,90,64,91,68,266,268,365,373,372,67,70,172,259,270,374,265,69,72,56,71,74,258,276,73,76,262,264,75,78,261,77,80,229,279,79,82,284,81,195,21,27,97,99,101
+# bc_unmap: 21,27,97,99,101
+eventmovie/
+msg_clear_thread
+*********Capture Start!!!*****************
+CaptureMode = /[$0]
+*********CaptureTool Standby*****************
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+キャプチャモード
+全画面
+ＢＧのみ（ＺＰＩＣなし）
+ＢＧのみ（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+オブジェ単体（ＺＰＩＣあり）
+テキスト（ＺＰＩＣなし）
+CaptureMODE ---All Screen.
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---Chr(pic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---TXT(pic)
+ページ切り替え
+キャラ０
+キャラ１
+キャラ２
+キャラ３
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラのみキャプチャ
+オブジェのみキャプチャ
+フォルダ選択
+企画サイドのフォルダを使用する
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（？？？？）
+ｍｏｖｉｅ０４（？？？？）
+ｍｏｖｉｅ０５（？？？？）
+ｍｏｖｉｅ０６（？？？？）
+ｍｏｖｉｅ０７（？？？？）
+ｍｏｖｉｅ０８（？？？？）
+ｍｏｖｉｅ０９（？？？？）
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+エフェクトサイドのフォルダを使用する
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（ひみつ）
+ｍｏｖｉｅ１７（ひみつ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+*********Capture End.*****************
+*********Capture Waiting...*****************
+ColorScreen  SetMode
+Layer = /[$0]
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode-------end
+*************ColorScreen Printout*************
+int ColorScreenParam[] = {
+0,
+1,
+/[$1],
+/[$0],
+};
+Runtime.setDefocus(15, 1, ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], 1, ColorScreenParam);
+Layer not exist.
+*************ColorScreen Printout_temae*************
+int[] test_param0 = {
+0, 
+Runtime.setDefocus(15, 2, test_param0);
+int[] test_param1 = {
+Runtime.setDefocus(15, 3, test_param1);
+*********ManualCamera Replay*********
+pos[] ={
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+Focus SetMode
+alpha_percent-/[#0]
+alpha_set-/[#0]
+Layer = Back
+Layer = Before
+Focus delta = /[$0](back)
+Focus SetMode-------end
+*************Focus Printout*************
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+Gnochk...
+--alpha--
+--filter--
+--shake--
+--ref_alpha--
+alpha max!!
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+MSGprint.
+MSGprint(with Face).
+Face End.
+ManualCamera not Recorded.
+ManualCam_record.
+ManualCamera MOVE to start.
+Cancel!!
+ManualCameraRecord START!!!
+Record /[$0]
+End(TimeOver).
+End(Button).
+Time = /[$0]
+Objchk......(Chr)
+Objchk......End
+Objchk(+Mtn)......
+Objchk......(Effect)
+Objchk......(Unit)
+Objchk......
+Mtn Frame = /[$0]
+*********Timechk Standby*****************
+Timechk_main
+----------シーンは終了しました。(Total = /[$0])
+Timerchk_srv_main
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])
+***********Objchk printout***********
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+setRotate(/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+Xenvmainthreadmain
+Xenvplaythread
+-------------* ManualCam_record()start *-----------
+-------------* ManualCam_record()end *-----------
+-------------* Debugprint5() *-----------
+-------------* ManualCam_play_sub()end *-----------
+-------------* Gnochk(gold) *-----------
+-------------* ColorScreenSet() *-----------
+-------------* ColorScreenSet()_temae *-----------
+-------------* chr_look_start *-----------
+-------------* point_light()start *-----------
+-------------* point_light()end *-----------
+objtool---------------------------scl
+objtool---------------------------ido
+camtool---------------------------cam
+one_scale-----------------/[#0]
+robo.setScale(/[#0]f,/[#1]f,/[#2]f);
+gold_number-------------------(/[#0])
+haba -----------------/[#0]
+takasa ---------------/[#1]
+noudo ----------------/[#2]
+one_scale ------------/[#3]
+robo.setScale(/[#4]f,/[#5]f,/[#6]f);
+f_speed--------------------------------------------------(/[#0])
+non_move_view-/[#1]|cap-/[#2]
+view-/[#1]|cap-/[#2]
+gold-no-/[#0]|view-/[#1]|cap-/[#2]
+gold-unit-no-/[#0]|view-/[#1]|cap-/[#2]
+--------plus_one_write--------
+write-/[#0]|now-/[#1]|cap-/[#2]
+erase-/[#1]|now-/[#1]|cap-/[#2]
+live-normal-cam
+live-normal-human
+time-/[#0]
+cam_time_tani++(/[#0])
+cam_time_tani--(/[#0])
+live-pretty-cam
+live-human-pretty-cam
+--SPL_CARDINAL
+----SPL_LINEAR
+---PATH_LINEAR
+-----PATH_DOWN
+-------PATH_UP
+---PATH_SPLINE
+change-/[#1]|now-/[#1]|cap-/[#2]
+STCam.setFov(/[#0]f);
+cam1.setFov(/[#0]f);
+cam0.setFov(/[#0]f);
+float pos00[] = {
+  /[#0]fnc,/[#1]fnc,/[#2]fnc,/[#3]fnc,
+float rot00[] = {
+cam1.transSPL(pos00, SPL_CARDINAL);
+cam1.rotateSPL(rot00, SPL_CARDINAL);
+float fov00[] = {
+  /[#0]fnc,/[#1]fnc,
+cam1.fovSPL(fov00, SPL_CARDINAL);
+  /[#0]f,/[#1]f,/[#2]f,/[#3]f,
+  /[#0]f,/[#1]f,
+--------trans--------
+  /[#0]f,/[#1]f,/[#2]f,/[#3]f
+--------rotate--------
+--------fov--------
+  /[#0]f,/[#1]f
+t_no_change-/[#0]-/[#1]/[#2]-/[#3]
+time_change-/[#0]-/[#1]/[#2]-/[#3]
+---SPL_CARDINAL---
+---SPL_LINEAR---
+---PATH_UP---
+---PATH_LINEAR---
+---PATH_SPLINE---
+---PATH_DOWN---
+shion.setTranslate(/[#0]fnc,/[#1]fnc,/[#2]fnc);
+shion.setRotate(/[#3]fnc,/[#4]fnc,/[#5]fnc);
+trans----/[#0]fnc,/[#1]fnc,/[#2]fnc
+rotate---/[#3]fnc,/[#4]fnc,/[#5]fnc
+fov------/[#6]fnc
+robo.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+robo.setRotate(/[#3]f,/[#4]f,/[#5]f);
+trans----/[#0]f,/[#1]f,/[#2]f
+rotate---/[#3]f,/[#4]f,/[#5]f
+fov------/[#6]f
+speed--------------------------------------------------(/[#0])
+parts_nomber---------------(/[#0])
+-------------* chr_look_end *-----------
+Event Out
+XEVEFLAG:EV02041_F
+XEVEJNAME:SCE02042
+FLSshion_h.fpk
+FLSandrew.fpk
+FLSmomo.fpk
+FLSziggy.fpk
+map_nomber---------------(/[#0])
+-------------* map_look_end *-----------
+CUT1 START
+cut1
+もういい
+で　でもっ
+中佐
+大丈夫ですか
+CUT1 END
+ああ──
+一体何があったんです
+ここのゴロツキどもに絡まれたんだ
+やがて内輪もめが始まったんで<lf>その隙に逃げてきた
+CUT2 END
+CUT3 START
+内輪もめ──
+CUT3 END
+CUT4 START
+だ　大丈夫だ<lf>大した怪我じゃない
+CUT4 END
+CUT5 START
+そんなことないです
+だから　ちゃんと治療させて下さいって<lf>言ってるんですけど──
+アンドリュー
+す　すまん<lf>ナノ治療は──合わないんだ
+CUT5 END
+自然派志向とか
+いや　そういうわけでは──
+モモ　代わりにこっちを頼む
+ジギー
+小惑星での戦闘からこっち　未調整のままだ<lf>ガタが来ているかもしれん
+モモ
+はい
+off
+動力　神経系統ともに異常ないみたいです
+メンテナンスが煩雑ですまない<lf>旧式だからな
+どういたしまして
+でも　ジギーの身体に関しては<lf>シオンさんの方が上手かもしれません
+CUT8 END
+CU93 START
+CUT9 END
+CUT10 START
+おまえは笑うかもしれないが
+こんな体になっても<lf>若い女にあれこれいじられるのは抵抗がある
+人間のお医者さんにも<lf>女の先生は沢山いるじゃないですか
+機械と継ぎはぎの体は　生身より恥ずかしい
+感傷に過ぎないがな
+CUT10 END
+CUT11 START
+cut11
+──モモは　人間じゃないから平気なんですね
+そういう意味じゃない
+確かにお前といるのは気が楽だが<lf>それはおそらく──
+おまえには邪気がないからだろう
+CUT11 END
+CUT12 START
+/[ruby(無機物/モ　ノ)]だからじゃない
+CUT12 END
+CUT13 START
+──ありがとう
+とても嬉しいです
+CUT13 END
+CUT14 START
+いいものだな──
+え
+CUT14 END
+CUT15 START
+い　いや<lf>な　なんでもない
+CUT15 END
+CUT16 START
+open
+ほんとに大丈夫かしら中佐
+CUT16 END
+CUT17 START
+エルザに乗ってから<lf>どうも様子が変なのよね──
+CUT17 END
+light.setGlobalPointLightCol( 0, /[#0]f,/[#1]f,/[#2]f);
+-------------* ManualCam_play_sub()start *-----------
+-------------* map_look_start *-----------
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---SoftImage BG(pic+zpic)

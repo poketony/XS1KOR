@@ -11,9 +11,9 @@
 # dup_of: line 2, tag8 4
 /[waitkey(64)]/[close()]
 카드 키 삽입구가 있다<lf>
-/[color(0x329bbe)]Ｕ−ＴＩＣ 카드/[color(0xffffff)]를 쓸 수 있을 것 같다．
+/[color(0x329bbe)]Ｕ−ＴＩＣ 카드/[color(0xffffff)]를 쓸 수 있을 듯하다．
 /[waitkey(1)]/[clear()]
-/[color(0x329bbe)]Ｕ−ＴＩＣ 카드/[color(0xffffff)]를 사용하겠습니까？<lf>
+/[color(0x329bbe)]Ｕ−ＴＩＣ 카드/[color(0xffffff)]를 쓰겠습니까？<lf>
 # dup_of: line 2, tag8 4
 /[waitkey(64)]/[close()]
 EOB_Always !!!!!!!!!!!!!!!!!!!!!

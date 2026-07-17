@@ -281,20 +281,30 @@ def format_mixed_font_text(text: str, main_font_name: str, punct_font_name: str)
     return "".join(parts)
 
 
-def format_cover_text(text: str) -> str:
-    """Build fixed-font cover geometry while preserving edge whitespace."""
+def format_cover_text(text: str, main_font_name: str, punct_font_name: str) -> str:
+    """Build width-matched cover geometry while preserving edge whitespace."""
     parts: list[str] = []
+    active_font: str | None = None
     cover_glyph = "\uac00"
     half_space_glyph = r"{\fscx50}" + cover_glyph + r"{\fscx100}"
     for char in text:
-        if char == " ":
-            parts.append(half_space_glyph)
-        elif char == "\u2800":
-            parts.append(cover_glyph)
-        elif char == "\t":
-            parts.append(half_space_glyph * 4)
-        else:
-            parts.append(cover_glyph)
+        if char in {" ", "\u2800", "\t"}:
+            if active_font != main_font_name:
+                parts.append(ass_font_tag(main_font_name))
+                active_font = main_font_name
+            if char == " ":
+                parts.append(half_space_glyph)
+            elif char == "\u2800":
+                parts.append(cover_glyph)
+            else:
+                parts.append(half_space_glyph * 4)
+            continue
+
+        desired_font = main_font_name if uses_main_font(char) else punct_font_name
+        if desired_font != active_font:
+            parts.append(ass_font_tag(desired_font))
+            active_font = desired_font
+        parts.append(escape_ass_char(char))
     return "".join(parts)
 
 
@@ -453,7 +463,7 @@ def write_ass(
                 char_y = vertical_y
                 for char in vertical_text:
                     if char.isspace():
-                        char_y += char_gap / 2
+                        char_y += char_gap * 0.75
                         continue
                     lines.append(
                         f"Dialogue: 2,{cue.start},{cue.end},XenoVertical,,0000,0000,0000,,"
@@ -470,7 +480,7 @@ def write_ass(
             )
             normal_line_index += 1
             formatted_text = format_mixed_font_text(cue_line, font_name, punct_font_name)
-            cover_text = format_cover_text(cue_line)
+            cover_text = format_cover_text(cue_line, font_name, punct_font_name)
             if spread:
                 if ruby_cover:
                     ruby_pos_y = None if line_pos_y is None else line_pos_y + ruby_cover_y_offset

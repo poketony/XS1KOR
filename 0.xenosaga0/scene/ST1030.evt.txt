@@ -43,7 +43,7 @@ Sound_ReverseY
 /[waitkey(64)]/[close()]
 # dup_of: line 20, tag8 2
 /[label(Ｊｒ．)]
-당연하지．여기 메인 프레임에 볼일이 있어．
+그래．여기 메인 프레임에 볼일이 있어．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 20, tag8 2
@@ -63,8 +63,8 @@ Sound_ReverseY
 /[waitkey(64)]/[close()]
 # dup_of: line 20, tag8 2
 /[label(Ｊｒ．)]
-그래．이런 게 네가 고민할 정도로<lf>
-대단한 물건으론 안 보이는데〜 내 눈엔．
+그래．이게 네가 애쓸 만큼<lf>
+대단한 물건 같진 않은데〜
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 20, tag8 2
@@ -84,7 +84,7 @@ Sound_ReverseY
 /[waitkey(64)]/[close()]
 # dup_of: line 4, tag8 0
 /[label(메리)]
-꼬마님，우리 목적 기억하고 있습니꺼？
+꼬마님，우리 목적 기억합니꺼？
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 # dup_of: line 4, tag8 0
@@ -94,7 +94,7 @@ Sound_ReverseY
 /[waitkey(64)]/[close()]
 # dup_of: line 4, tag8 0
 /[label(메리)]
-예．……아마 그럴 테니까<lf>
+예．……아마 그럴 테니<lf>
 아직 건드리지 말아 주이소．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
@@ -143,7 +143,7 @@ Sound_ReverseY
 …．
 # dup_of: line 16, tag8 3
 /[waitkey(1)]/[clear()]
-위쪽에 뭔가 있는 느낌이었는데……．
+위쪽에 뭔가 있는 듯했는데……．
 # dup_of: line 3, tag8 4
 /[waitkey(64)]/[close()]
 /[label(경보)]

@@ -1,0 +1,547 @@
+# chunk 12 @ 0x10f94 cnum=3289 total=544
+# bc_map: 364,273,338,94,96,72,95,49,48,50,144,51,55,98,6,8,64,10,66,52,65,413,506,522,521,416,415,411,410,493,496,495,54,61,62,56,57,58,63,59,60,498,417,424,441,458,475,476,477,478,479,480,418,419,420,421,422,423,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,414,409,497,504,524,525,526,527,528,529,530,531,532,533,344,345,346,347,348,349,350,351,352,353,408,534,535,536,537,538,539,540,541,542,543,354,355,356,357,358,359,360,361,362,363,53,7,9,67,101,44,40,130,131,91,92,45,46,38,39,138,2,70,34,32,382,133,69,35,31,135,102,68,134,71,132,106,11,5,365,28,374,331,27,12,100,0,18,13,93,47,15,14,108,107,127,125,128,126,139,384,1,83,77,118,342,343,78,84,85,103,104,87,86,3,137,136,105,88,327,328,116,117,89,375,332,333,334,335,90,23,24,25,268,329,379,367,269,330,380,366,97,29,110,109,82,113,111,112,114,129,74,73,140,33,121,124,119,122,123,120,492,115,17,272,271,270,43,42,41,16,141,21,142,22,4,378,376,377,143,146,147,148,145,76,99,75,381,260,337,336,36,37,19,20,79,80,81,482,483,484,485,486,487,488,489,490,491,213,214,368,215,305,306,280,235,236,244,245,243,240,241,242,237,238,239,372,339,340,315,387,515,393,519,250,246,247,248,249,266,341,370,369,316,517,511,251,252,371,267,318,317,284,502,520,253,254,285,257,255,256,319,259,258,321,322,288,289,388,518,510,385,398,320,286,287,395,500,403,262,263,261,324,325,290,291,400,505,405,323,512,264,265,326,292,390,293,294,274,275,513,401,153,295,276,277,397,156,157,162,163,164,165,158,159,160,161,154,155,278,174,175,171,180,181,182,183,166,167,168,176,177,178,179,172,173,169,170,296,297,373,149,150,151,152,188,185,184,186,187,298,192,193,194,195,190,191,189,299,199,200,197,196,198,301,300,508,205,201,206,202,203,207,208,204,302,509,516,210,209,303,279,392,383,211,212,304,406,216,307,281,386,514,389,523,217,219,220,218,308,282,494,507,221,223,224,222,309,283,394,226,225,310,412,503,501,228,229,227,311,481,407,402,391,399,231,230,312,499,233,232,234,314,313,396,404,30,26
+# bc_unmap: 26
+msg_clear_thread
+eventmovie/
+lightSPL_main
+HISTORY CLEAR
+HISTORYDELETE PTR=/[$0]
+ERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRROR!!
+HISTORY-SET /[$0]
+CameraHistory Overflow!!
+Camera instant test
+Cameratest_history
+WAIT=/[$0]
+Cancel!!
+CaptureMODE ---Chr(pic)
+History is Empty.
+*********CameraTool Standby*****************
+*********Capture Start!!!*****************
+CaptureMode = /[$0]
+*********CaptureTool Standby*****************
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+キャプチャモード
+全画面
+ＢＧのみ（ＺＰＩＣなし）
+ＢＧのみ（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+オブジェ単体（ＺＰＩＣあり）
+テキスト（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣあり）
+CaptureMODE ---All Screen.
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---SoftImage BG(pic+zpic)
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---TXT(pic)
+CaptureMODE ---Particle(pic)
+CaptureMODE ---Particle(pic+zpic)
+ページ切り替え
+キャラ０
+キャラ１
+キャラ２
+キャラ３
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラのみキャプチャ
+オブジェのみキャプチャ
+フォルダ選択
+企画サイドのフォルダを使用する
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（たけなか）
+ｍｏｖｉｅ０４（なかむら）
+ｍｏｖｉｅ０５（いけうち）
+ｍｏｖｉｅ０６（？？？？）
+ｍｏｖｉｅ０７（ふち）
+ｍｏｖｉｅ０８（ふち）
+ｍｏｖｉｅ０９（保存）
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+エフェクトサイドのフォルダを使用する
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（おの７６５）
+ｍｏｖｉｅ１７（うなかみ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+*********Capture End.*****************
+*********Capture Waiting...*****************
+ColorScreen  SetMode
+Layer = /[$0]
+Before.
+Back.
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode-------end
+*************ColorScreen Printout*************
+ColorScreenParamZ = {
+0,
+/[$1],
+};
+Runtime.setDefocus(0,2,ColorScreenParamZ);
+ColorScreenParamBack = {
+1,
+/[$0],
+Runtime.setDefocus(15, /[$2], ColorScreenParamBack);
+Layer = /[$3]
+ColorScreenParam = {
+Runtime.setDefocus(15, /[$2], ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], /[$3], ColorScreenParam);
+Layer not exist.
+*********DEBUGPRINT*********
+*********CameraHistory SPL*********
+pos[] ={
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+*********DEBUGPRINT3*********
+LINKTABLE
+ 
+,
+*********DEBUGPRINT4*********
+HISPTR
+CAMHIS
+*********ManualCamera Replay*********
+*********DEBUGPRINT6*********
+MANUALCAMPTR
+MANUALCAMHIS
+PATH = SPLINE
+PATH = DOWN
+PATH = UP
+PATH = LINEAR
+ShakeRoutine_main
+■■ 
+ =========================================
+Facechk...
+F-/[$0]
+No Face!!!
+mouth close.
+mouth open.
+F-/[$0]/[$2] frame(/[$1])
+Facechk...end.
+Focus SetMode
+Layer = Back
+Layer = Before
+Focus delta = /[$0](back)
+Focus SetMode-------end
+*************Focus Printout*************
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+Fog  SetMode
+far Ratio Max!!
+far Ratio Min!!
+Near Ratio Max!!
+Near Ratio Min!!
+Fog SetMode-------end
+setFog(1,/[#0]f,/[#1]f,/[#2]f,/[#3]f,/[$4],/[$5],/[$6],/[$7]);
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+Gnochk...
+--alpha--
+--filter--
+--ref_alpha--
+alpha max!!
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+HISTORYLOOK PTR=/[$0]
+/[$0]
+MSGprint.
+MSGprint(with Face).
+Face End.
+ManualCamera not Recorded.
+ManualCam_record.
+ManualCamera MOVE to start.
+ManualCameraRecord START!!!
+Record /[$0]
+End(TimeOver).
+End(Button).
+Time = /[$0]
+/[wait(CLOSEwin)]/[close()]
+Objchk......(Chr)
+Objchk......End
+Objchk(+Mtn)......
+Objchk......(Effect)
+Objchk......(Unit)
+Objchk......
+スタート　３００→３０９
+Mtn Frame = /[$0]
+*********printout /[$0]***********
+cam1.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+cam1.setRotate   (/[#0]f,/[#1]f,/[#2]f);
+cam1.setFov(/[#0]f);
+BaseCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setFov(/[#0]f);
+*********Timechk Standby*****************
+Timechk_main
+----------シーンは終了しました。
+Timerchk_srv_main
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])
+***********Objchk printout***********
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+setRotate   (/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+VibRoutine_main
+Xenvmainthreadmain
+Xenvplaythread
+_MSGprint.
+XEVEJNAME:SCE02039
+Event Out
+INPUT Number!!
+End.(RETURN = /[$0])
+spl
+act7_mary
+lightSPL start.
+lightSPL end.
+==
+================================
+--
+--------------------------------
+FLSjr_h.fpk
+FLSmary.fpk
+FLSshelley.fpk
+スタート
+スタート　２１０→２１９
+スタート　２２０→２２９
+スタート　２３０→２３９
+スタート　２４０→２４９
+スタート　２５０→２５９
+スタート　２６０→２６９
+スタート　２７０→２７９
+スタート　２８０→２８９
+スタート　２９０→２９９
+act1_jr
+act1_mary
+reset_pos
+act1_space
+face1_jr
+face1_mary
+eyes1_jr
+act2_jr
+act2_mary
+act2_shelley
+act2_space
+act2_moniW0
+act2_moniR0
+act2_moniR1
+act2_moniR2
+act2_moniL0
+act2_moniL1
+act2_moniL2
+roll
+model3
+model4
+face2_mary
+【メリィ】
+敵メインフレームへ侵入
+さて　どないしょ
+記録する　転送する
+act3_shelley
+act3_monitor1
+act3_monitor2
+act3_monitor_front
+act3_monitor_side
+act_monitor_all_off
+model_reset
+ring_R
+ring_L
+face3_shelley
+既にマニュアルコードが打ち込まれていて<lf>各パーテイションが消えかかってるわ
+急いで転送して
+act4_jr
+act4_mary
+ring_reset
+act_monitor_all_on
+face4_mary
+face4_jr
+eyes4_jr
+了解
+頭ン中空っぽにして待っときや
+act5_jr
+act5_mary
+eyes5_jr
+act6_mary
+act6_cable_l
+act6_cable_l2
+face6_mary
+act7_jr
+act7_cable_l
+face7_jr
+face7_mary
+eyes7_jr
+eyes7_mary
+【Ｊｒ．】
+毎度思うけど
+姉妹で/[ruby(記憶連結/インターリンク)]出来るってのは<lf>便利でいいな
+【シェリィ】
+そうでもありませんわ<lf>この子は雑念が多くて
+face7_1_mary
+eyes7_1_jr
+eyes7_1_mary
+しゃーないやーん
+レアリエンと違って<lf>ウチらは/[ruby(生身/アナログ)]やねんから
+ちび様こそ<lf>ガイナン様と念話出来るやん
+act8_jr
+act8_mary
+act8_cable_l
+face8_jr
+face8_mary
+eyes8_jr
+eyes8_mary
+そっちのが便利そうやわ
+余計な機器いらんし
+でもねーよ
+face8_1_jr
+意識領域の防壁に常に気を配ってないと<lf>伝えたくない情報まで筒抜けになるからな
+act9_jr
+act9_mary
+face9_99_jr
+eyes9_jr
+お陰で無っ茶疲れるし
+face10_jr
+face10_mary
+eyes10_jr
+eyes10_mary
+手紙書いて渡した方が楽なくらいだぜ
+そないなもんかなぁ──
+act11_jr
+face11_jr
+eyes11_jr
+eyes11_mary
+そう　そないなも────
+act12_jr
+act12_mary
+act12_utic1
+act12_utic2
+act12_utic3
+act12_utic4
+act12_rifle1
+act12_rifle2
+act12_rifle3
+act12_rifle4
+act12_door1
+act12_door2
+eyes12_jr
+act13_jr
+act13_mary
+act13_gunR2
+act13_utic1
+act13_utic2
+act13_utic3
+act13_utic4
+act13_bullet1
+act13_bullet2
+act13_bullet3
+act13_rifle1
+act13_rifle2
+act13_rifle3
+act13_rifle4
+act13_impact1
+act13_impact2
+act13_door1
+act13_door2
+face13_jr
+face13_mary
+roop_stop
+_roop1_stop
+_roop2_stop
+_roop3_stop
+_roop4_stop
+act14_jr
+act14_gunR2
+act14_gunL2
+act14_impact3
+act14_impact4
+face14_jr
+act15_utic1
+act15_utic2
+act15_utic3
+act15_utic4
+act15_rifle3
+act15_rifle4
+act15_blood
+face15_jr
+act16_jr
+act16_jr_hand
+act16_gunR1
+act16_gunL1
+act16_impact1
+face16_jr
+face16_1_jr
+大丈夫か　メリィ
+act17_mary
+act17_cable_s
+act17_short
+act17_impact1
+act17_impact2
+act17_spark1
+act17_spark2
+act17_map
+face17_mary
+大丈夫やけど──もう　ちび様ぁ
+敵艦メインフレームの全データ<lf>ロストしました
+act18_jr
+act18_impact1
+face18_jr
+eyes18_jr
+ご愁傷様です
+──悪ぃ
+act19_jr
+act19_mary
+face19_mary
+もう　深夜の西部劇ばっかり見てたら<lf>あかんで
+act20_jr
+face20_jr
+eyes20_jr
+【デュランダル乗員】
+救命艇が射出されました<lf>追いますか
+いや　深追いすんな<lf>行先だけ判りゃいい
+Ｕ．Ｍ．Ｎ．管理局に逆探申請しておけ<lf>帰還するぞ
+act21_jr
+act21_mary
+act21_utic4
+act21_map
+face21_jr
+eyes21_mary
+デュランダル　収容準備急げ
+各班撤退時に装備の再確認<lf>痕跡を残すなよ
+act22_jr
+act22_mary
+act22_utic4
+act22_map
+face22_mary
+eyes22_mary
+しかしあれやな
+act23_mary
+act23_map
+face23_mary
+ガン持つたんびに人格変わるな<lf>ちび様は
+他者への間接的な征服心<lf>絶対的権力への憧憬　巨根願望──
+一般的にはそんなとこね
+act24_mary
+act24_shelley
+act24_map
+face24_mary
+シレっというなぁ　シェリィは
+もっとも　ちび様の場合は単なる<lf>身長へのコンプレックスでしょうけど
+そやな
+けどちっさいちび様も素敵やで
+そうね──
+act25_shelley
+act25_mary
+face25_shelley
+メリィ　後二分でここから撤退するわ<lf>急いでね
+act26_mary
+act26_impact1
+act26_spark1
+face26_mary
+face26_1_mary
+せや──
+ちび様は──<lf>ちっさいままでおらなあかんのや──
+/[$0](Cursor = /[$1])
+--shake--

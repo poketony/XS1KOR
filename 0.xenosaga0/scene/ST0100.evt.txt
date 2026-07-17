@@ -99,8 +99,8 @@
 # dup_of: line 1, tag8 4
 /[label(스왜거)]
 재밌다고 생각하면 느긋하게 찾아봐．<lf>
-입구를 찾아도，<lf>
-열쇠는 전혀 다른 곳에 있기도 하니까〜
+입구를 찾아도<lf>
+열쇠는 아예 다른 곳에 있기도 하니까〜
 # dup_of: line 8, tag8 6
 /[waitkey(1)]/[clear()]
 ……왠지 이번 항해는<lf>
@@ -566,9 +566,9 @@
 # dup_of: line 75, tag8 267
 재밌다고 생각하면 느긋하게 찾아봐．<lf>
 # dup_of: line 76, tag8 200
-입구를 찾아도，<lf>
+입구를 찾아도<lf>
 # dup_of: line 77, tag8 260
-열쇠는 전혀 다른 곳에 있기도 하니까〜
+열쇠는 아예 다른 곳에 있기도 하니까〜
 # dup_of: line 8, tag8 6
 /[waitkey(1)]/[clear()]
 # dup_of: line 79, tag8 29

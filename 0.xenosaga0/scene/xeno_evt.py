@@ -11,11 +11,10 @@ xeno_evt.py  -  Xenosaga Episode 1 EVT / class 텍스트 추출·재조립 (v4 d
 규칙:
   - txt는 바이트코드 실행 순서로 출력됨. 이 순서 그대로 번역하면 됨.
   - 줄 수 변경 금지. 번역 안 할 줄은 원문 그대로.
-  - 기본: ', '→'，', '. '→'．', '!'→'！', '?'→'？' 적용 후,
-          표시 행별 반각 공백을 4로 나눈 뒤 올림한 수만큼 행 끝에 전각 공백 '　' 추가
+  - 기본: ', '→'，', '. '→'．', '!'→'！', '?'→'？' 적용
   - 반각 공백 자체는 치환하지 않음
-  - [raw] 태그: 줄 끝에 붙이면 기본 치환/패딩 없이 태그만 제거
-  - [sub] 태그: 줄 끝에 붙이면 기본 치환/패딩 후 반각→전각 변환
+  - [raw] 태그: 줄 끝에 붙이면 기본 치환 없이 태그만 제거
+  - [sub] 태그: 줄 끝에 붙이면 기본 치환 후 반각→전각 변환
   - XENOSAGA_KOR-JPN.json이 같은 폴더에 있으면 재조립 시 자동 적용.
 """
 
@@ -151,7 +150,6 @@ def to_fullwidth(s):
             converted = []
             for c in part:
                 # 반각 공백은 일본어 쉼표로 바꾸지 않는다.
-                # 공백 보정은 apply_text_rules()에서 리플레이스 이후 별도로 처리한다.
                 if c == ' ':
                     converted.append(' ')
                 elif '!' <= c <= '~':
@@ -161,32 +159,6 @@ def to_fullwidth(s):
                     converted.append(c)
             result.append(''.join(converted))
     return ''.join(result)
-
-def add_space_padding_per_visual_line(s):
-    """
-    <lf> 기준 표시 행별로 반각 공백 개수를 센 뒤,
-    반각 공백 개수를 4로 나눈 뒤 올림한 수만큼 전각 공백 '　'을 해당 표시 행 끝에 추가한다.
-
-    치환 순서:
-      1) 문장부호 리플레이스
-      2) 그 결과 기준으로 반각 공백 개수 계산
-      3) 표시 행 끝, 즉 <lf>가 있으면 <lf> 바로 전에 전각 공백 패딩 추가
-    """
-    parts = re.split(r'(<lf>)', s)
-    out = []
-
-    for part in parts:
-        if part == '<lf>':
-            out.append(part)
-            continue
-
-        pad_basis = re.sub(r'/\[label\([^\]]*\)\]', '', part)
-        pad_count = (pad_basis.count(' ') + 3) // 4
-        if pad_count:
-            part += '　' * pad_count
-        out.append(part)
-
-    return ''.join(out)
 
 def visible_text_length(s):
     """
@@ -206,7 +178,7 @@ def warn_long_visual_lines(s, limit=23, context=''):
 
     주의:
       - 이 검사는 process_sub_tag() 이후 결과를 기준으로 한다.
-      - 따라서 문장부호 치환, 공백 패딩, [sub] 전각화가 반영된 상태로 검사한다.
+      - 따라서 문장부호 치환과 [sub] 전각화가 반영된 상태로 검사한다.
       - [raw]는 태그만 제거된 원문 기준으로 검사한다.
     """
     for line_no, part in enumerate(s.split('<lf>'), start=1):
@@ -228,7 +200,6 @@ def apply_text_rules(s):
           '. ' => '．'
           '!'  => '！'
           '?'  => '？'
-      - 그 다음, 표시 행별 반각 공백을 4로 나눈 뒤 올림한 수만큼 행 끝에 전각 공백 '　' 추가
       - 반각 공백 자체는 다른 문자로 치환하지 않음
     """
     if s.endswith('[raw]'):
@@ -240,9 +211,6 @@ def apply_text_rules(s):
     s = s.replace('!', '！')
     s = s.replace('?', '？')
 
-    # 2) 리플레이스 결과 기준으로 반각 공백 보정 패딩 적용
-    s = add_space_padding_per_visual_line(s)
-
     return s
 
 def process_sub_tag(s):
@@ -251,8 +219,8 @@ def process_sub_tag(s):
 
     우선순위:
       [raw] : 아무 치환도 하지 않음. 태그만 제거.
-      [sub] : 기본 치환/패딩 적용 후 반각 문자를 전각으로 변환.
-      기본  : 기본 치환/패딩만 적용.
+      [sub] : 기본 치환 적용 후 반각 문자를 전각으로 변환.
+      기본  : 기본 치환만 적용.
     """
     if s.endswith('[raw]'):
         return s[:-5]

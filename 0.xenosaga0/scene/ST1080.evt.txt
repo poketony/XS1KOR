@@ -17,9 +17,9 @@
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 /[label(뒤랑달 승무원 ２)]
-Ｕ−ＴＩＣ 함의 병사들은<lf>
-준비가 철저한 건지，비겁한 건지，<lf>
-매복하거나，그늘에 숨어 있거나 해서
+Ｕ−ＴＩＣ 전함의 병사들은<lf>
+준비가 철저한 건지 비겁한 건지，<lf>
+매복하거나 그늘에 숨은 경우가 많아서
 # dup_of: line 10, tag8 9
 /[waitkey(1)]/[clear()]
 예상 밖의 전투가 아주 많습니다．<lf>
@@ -35,7 +35,7 @@
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 수고하셨습니다，꼬마님<lf>
-지금 잠깐 손을 뗄 수 없어 죄송합니다．<lf>
+도와드리지 못해서 죄송합니다．<lf>
 무사히 카드 키를 입수하신 것 같군요．<lf>
 다행입니다，다행이에요．
 # dup_of: line 5, tag8 10
@@ -50,18 +50,18 @@
 도망친 게 아닐까 싶습니다．
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
-현재 저는，<lf>
+저는 현재<lf>
 『꼬마님이 브리지로 향하십니다』라고<lf>
 셸리 씨에게 보고하는 중입니다．
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 브리지 위치는 아시죠？<lf>
-이 방을 나가 제５ 통로를 서쪽으로 가서<lf>
-Ｎｏ．３ 문을 연 너머일 것으로 보입니다．
+방에서 나가 제５ 통로 서쪽에 있는<lf>
+Ｎｏ．３ 문 너머에 있는 듯합니다．
 # dup_of: line 10, tag8 9
 /[waitkey(1)]/[clear()]
 준비를 마치면 서둘러 제압해 주십시오．<lf>
-새로운 적 함대의 전이가 없다고도<lf>
+새로운 적 함대의 전이가 없을 거라곤<lf>
 장담할 수 없으니까요．
 # dup_of: line 10, tag8 9
 /[waitkey(1)]/[clear()]
@@ -81,9 +81,9 @@
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 6
 /[label(뒤랑달 승무원 １)]
-좀처럼 입을 열지 않더라도，<lf>
-캐묻는 데에는 마음이 중요합니다．<lf>
-정중히 물어보겠습니까？
+좀처럼 입을 열지 않더라도<lf>
+캐묻는 데에는 마음이 중요한 법이죠．<lf>
+정중히 물어볼까요？
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 6
@@ -93,19 +93,19 @@
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 6
 /[label(뒤랑달 승무원 １)]
-한 번 더，그가 말하기 쉽도록<lf>
-물어보지 않겠습니까？
+그가 말하기 쉽도록 한 번 더<lf>
+물어볼까요？
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 6
 /[label(뒤랑달 승무원 １)]
-이야기를 들을 수 있는 상태가 될 때까지<lf>
-잠시 기다리겠습니까？
+얘기를 들을 수 있는 상태가 될 때까지<lf>
+잠시 기다릴까요？
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 6
 /[label(뒤랑달 승무원 １)]
-이제 충분히 이야기할 수 있을 것 같군요．<lf>
+이제 충분히 얘기할 수 있을 것 같군요．<lf>
 재개할까요？<lf>
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
@@ -114,15 +114,15 @@
 평범하게 물어봐도<lf>
 좀처럼 입을 열지 않는다면<lf>
 역시 몸에 물어볼 수밖에 없나……．<lf>
-알기 쉬운 형태로 물어봐도 되겠습니까？
+알기 쉬운 형태로 물어봐도 될까요？
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 15, tag8 7
 /[label(뒤랑달 승무원 ２)]
 너무 저자세로 나가면<lf>
 상대가 기어오를 테니……．<lf>
-입장을 알게 해 주기 위해서도<lf>
-확실히 말해 줘야 합니다．<lf>
+입장을 알게 해 주기 위해서라도<lf>
+확실하게 말해 줘야 합니다．<lf>
 조금 거칠게 물어봐도 되겠죠？
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
@@ -136,12 +136,12 @@
 /[label(뒤랑달 승무원 ２)]
 이제 슬슬 입을 열게 해야……．<lf>
 시간 낭비는 좋은 수가 아닙니다．<lf>
-거칠게 심문해도 되겠습니까？
+거칠게 심문해도 될까요？
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 15, tag8 7
 /[label(뒤랑달 승무원 ２)]
-어쩔 수 없군요．놈이 진정된 뒤<lf>
+어쩔 수 없군요．놈이 진정된 뒤에<lf>
 심문을 재개할까요？
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
@@ -155,7 +155,7 @@
 /[label(뒤랑달 승무원 １)]
 완전히 얕보이고 말았습니다．<lf>
 잠잠해질 때까지 기다리는 편이<lf>
-좋을 것 같습니다．
+좋을 것 같군요．
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 6
@@ -166,21 +166,21 @@
 # dup_of: line 10, tag8 9
 /[waitkey(1)]/[clear()]
 가능하다면…… 가능하다면 말입니다만，<lf>
-번거롭게 해 드려 죄송한데<lf>
+번거롭게 해 드려서 죄송한데<lf>
 저희에게 알려 주실 수는 없겠습니까？
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 6
 /[label(뒤랑달 승무원 １)]
-너무 괴롭혔습니다．주눅 들어 입도<lf>
-열지 못합니다．조금 시간을 두는 편이<lf>
+너무 괴롭혔군요．주눅 들어서 입도<lf>
+열지 못합니다．조금 시간을 두는 게<lf>
 좋다고 생각합니다．
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 6
 /[label(뒤랑달 승무원 １)]
 얕보이고 말았군요．<lf>
-조금 너무 부드럽게 물었을지도……．<lf>
+살짝 과하게 친절했던 걸지도……．<lf>
 잠시 시간을 둘까요？
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
@@ -191,12 +191,12 @@
 어디 있는지 알고 계시지 않습니까？<lf>
 위치를 모르면 여러모로 곤란합니다．<lf>
 부디 알려 주실 수 없겠습니까？<lf>
-나쁘게 하지는 않겠습니다．
+나쁘게 대우하지는 않겠습니다．
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 6
 /[label(뒤랑달 승무원 １)]
-조금 너무 서둘렀군요．<lf>
+살짝 과하게 서둘렀군요．<lf>
 시간을 두고 심문을 재개하는 편이<lf>
 # dup_of: line 131, tag8 51
 좋다고 생각합니다．
@@ -212,11 +212,11 @@
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 6
 /[label(뒤랑달 승무원 １)]
-슬슬 지쳐 왔겠죠．<lf>
+슬슬 지쳤겠죠．<lf>
 /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 
 있는 곳만 알려 주면<lf>
 이런 심문은 끝날 텐데……．<lf>
-아직 말할 마음이 들지 않습니까？
+아직도 말할 생각이 없습니까？
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 1, tag8 6
@@ -248,7 +248,7 @@
 # dup_of: line 1, tag8 6
 /[label(뒤랑달 승무원 １)]
 마지막 말을 잘못했군요．<lf>
-그걸로 마음을 닫아 버린 것 같습니다．<lf>
+마음을 닫아 버린 것 같습니다．<lf>
 기분이 풀릴 때까지 기다릴까요？
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
@@ -270,12 +270,12 @@
 어이 어이 어이 어이！
 # dup_of: line 10, tag8 9
 /[waitkey(1)]/[clear()]
-너무 까불다가는，<lf>
-자랑하는 『철권』이<lf>
+너무 까불면<lf>
+내 특기인 『철권』이<lf>
 크리티컬 히트한다！
 # dup_of: line 10, tag8 9
 /[waitkey(1)]/[clear()]
-좋게 말할 때<lf>
+좋게 좋게 말할 때<lf>
 아픈 꼴 보기 전에 불어！
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
@@ -283,19 +283,19 @@
 /[label(뒤랑달 승무원 ２)]
 이런 이런．삐져 버렸습니다．<lf>
 난감하군요．당분간 내버려 두지 않으면<lf>
-말을 해 줄 것 같지 않습니다．
+말해 줄 것 같지 않습니다．
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 15, tag8 7
 /[label(뒤랑달 승무원 ２)]
-저자세로 나가니까 얕보이는 겁니다．<lf>
+저자세로 나가니까 얕보이는 거예요．<lf>
 포로니까 더 강하게 나가도 됩니다．<lf>
 잠시 내버려 둘 수밖에 없군요．
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 15, tag8 7
 /[label(뒤랑달 승무원 ２)]
-어라 어라 어라 어라！
+야 야 야 야！
 # dup_of: line 10, tag8 9
 /[waitkey(1)]/[clear()]
 빨리 입 열라고 하는 말이<lf>
@@ -325,8 +325,8 @@
 슬슬 입을 열지 않으면<lf>
 온화한 나도 가만있지 않을 거다．<lf>
 끝까지 말하지 않을 생각이라면<lf>
-팔꿈치가 좋은지 무릎이 좋은지，<lf>
-잘 생각해 둬라．
+팔꿈치로 맞을지 무릎으로 맞을지<lf>
+잘 생각해 두시지．
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 15, tag8 7
@@ -337,7 +337,7 @@
 /[waitkey(64)]/[close()]
 # dup_of: line 15, tag8 7
 /[label(뒤랑달 승무원 ２)]
-쳇．마지막에 부드러운 말을<lf>
+쳇．마지막에 친절하게 말을<lf>
 건네서 그렇습니다．<lf>
 세게 말했으면 순순히 불었을 텐데．<lf>
 뭐，조급해하지 말고 다시 추궁하죠．
@@ -345,12 +345,12 @@
 /[waitkey(64)]/[close()]
 # dup_of: line 15, tag8 7
 /[label(뒤랑달 승무원 ２)]
-내 인내심도 한계에 왔으니까．<lf>
+내 인내심에도 한계가 왔다．<lf>
 # dup_of: line 158, tag8 0
 /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 
 # dup_of: line 177, tag8 102
 있는 곳을<lf>
-말하라고 하고 있다．<lf>
+불라고 몇 번이나 말했을 텐데．<lf>
 어쩔 거냐？<lf>
 말할 건지 안 할 건지<lf>
 슬슬 확실히 하자고．
@@ -358,14 +358,14 @@
 /[waitkey(64)]/[close()]
 # dup_of: line 15, tag8 7
 /[label(뒤랑달 승무원 ２)]
-아〜아〜，마지막의 마지막에．<lf>
+아〜아，거의 다 됐는데．<lf>
 입을 다물어 버렸습니다．<lf>
 끈기 있게 갈 수밖에 없군요．
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 15, tag8 7
 /[label(뒤랑달 승무원 ２)]
-좋아！<lf>
+좋았어！<lf>
 이걸로 브리지와 카드 키 위치는<lf>
 알았습니다．나머지는 부탁드립니다，꼬마님．
 # dup_of: line 5, tag8 10
@@ -426,7 +426,7 @@
 /[waitkey(64)]/[close()]
 # dup_of: line 271, tag8 8
 /[label(병사)]
-아무것도 대답할 생각은 없다．
+대답할 건 아무것도 없다．
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
 # dup_of: line 271, tag8 8
@@ -451,7 +451,7 @@
 # dup_of: line 10, tag8 9
 /[waitkey(1)]/[clear()]
 사령관님의 방은<lf>
-제５ 통로를 빙 돌아서<lf>
+제５ 통로를 빙 돌면 나오는<lf>
 제６ 통로 너머에 있다．
 # dup_of: line 5, tag8 10
 /[waitkey(64)]/[close()]
