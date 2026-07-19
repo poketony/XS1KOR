@@ -1,0 +1,453 @@
+# chunk 16 @ 0xae8 cnum=2599 total=450
+# bc_map: 276,217,248,20,111,22,113,101,112,103,108,104,106,110,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,102,19,21,114,137,152,153,135,136,76,77,74,75,165,115,143,142,166,14,242,71,73,70,69,310,158,116,154,141,17,243,72,160,244,161,16,238,155,239,156,240,157,241,159,23,284,68,291,227,67,129,120,150,254,255,121,130,131,177,178,138,139,133,132,18,163,162,140,15,229,230,231,232,134,63,64,66,65,175,220,294,286,176,221,295,285,145,144,128,148,146,147,100,149,151,118,117,167,235,324,318,417,412,429,410,328,426,413,422,420,321,319,312,327,314,416,415,418,316,311,322,323,408,313,425,402,317,406,401,315,326,423,320,424,407,409,421,325,419,44,42,40,41,43,24,168,45,169,51,172,173,6,7,8,9,10,11,298,181,180,299,179,174,182,215,218,228,33,32,28,30,29,25,26,27,35,39,38,280,279,213,282,288,236,237,303,278,281,289,219,277,308,234,233,47,309,216,250,251,304,211,212,252,249,62,53,55,52,50,57,214,164,209,206,223,5,224,210,208,222,4,207,3,1,49,2,48,46,0,302,305,60,61,59,56,58,54,297,296,307,293,226,290,287,306,292,225,300,283,34,119,170,171,13,12,183,301,247,246,253,36,122,123,124,125,126,127,78,88,184,93,185,94,186,95,187,96,188,97,189,98,190,99,191,79,192,80,193,81,194,82,195,196,83,197,84,198,85,199,86,200,87,201,89,202,90,203,91,204,92,205,245,31,37,105,107,109,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,403,404,405,411,414,427,428,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449
+# bc_unmap: 31,37,105,107,109,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,403,404,405,411,414,427,428,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449
+msg_clear_thread
+eventmovie/
+lightSPL_main
+*********Capture Start!!!*****************
+CaptureMode = /[$0]
+*********CaptureTool Standby*****************
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+CaptureMODE ---All Screen.
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---Chr(pic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---TXT(pic)
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+*********Capture End.*****************
+*********Capture Waiting...*****************
+ColorScreen  SetMode No.1
+Layer = /[$0]
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode No.1-------end
+ColorScreen  SetMode No.2
+Layer番号 = /[$0]
+Layer枚数 = /[$0]
+ScreenColor SetMode No.2-------end
+*************ColorScreen Printout No.1*************
+int ColorScreenParam[] = {
+0,
+1,
+/[$1],
+/[$0],
+};
+Runtime.setDefocus(15, 1, ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], 1, ColorScreenParam);
+Layer not exist.
+*************ColorScreen Printout_temae*************
+int[] test_param0 = {
+0, 
+Runtime.setDefocus(15, 2, test_param0);
+int[] test_param1 = {
+Runtime.setDefocus(15, 3, test_param1);
+*************ColorScreen PrintoutNo.2*************
+int ColorScreenParam12[] = {
+Runtime.setDefocus(12, 1, ColorScreenParam12);
+int ColorScreenParam13[] = {
+Runtime.setDefocus(13, 1, ColorScreenParam13);
+int ColorScreenParam14[] = {
+Runtime.setDefocus(14, 1, ColorScreenParam14);
+int ColorScreenParam15[] = {
+Runtime.setDefocus(15, 1, ColorScreenParam15);
+*********ManualCamera Replay*********
+pos[] ={
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+Facechk...
+F-/[$0]
+No Face!!!
+mouth close.
+mouth open.
+F-/[$0]/[$2] frame(/[$1])
+Facechk...end.
+Focus SetMode
+alpha_percent-/[#0]
+alpha_set-/[#0]
+Layer = Back
+Layer = Before
+Focus delta = /[$0](back)
+Focus SetMode-------end
+*************Focus Printout*************
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+*************ColorScreen Printout*************
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+Gnochk...
+--alpha--
+--filter--
+--shake--
+--ref_alpha--
+alpha max!!
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+MSGprint.
+MSGprint(with Face).
+Face End.
+ManualCamera not Recorded.
+ManualCam_record.
+ManualCamera MOVE to start.
+Cancel!!
+ManualCameraRecord START!!!
+Record /[$0]
+End(TimeOver).
+End(Button).
+Time = /[$0]
+gold-unit-no-/[#0]|view-/[#1]|cap-/[#2]
+ちっくしょう　あの野郎　モモの意識を――
+ぜってぇゆるせねぇっ
+待ってろ
+俺が取り戻してきてやる
+Ｊｒ．君
+モモちゃんの身に何があったの
+アルベドの野郎<lf>精神リンクをリバースさせやがった――
+精神リンクのリバース
+俺とガイナンのやる念話の逆パターンさ
+相手の意識を　無理矢理自分側に<lf>引っ張り込むことによって
+深層意識の奥にまで侵入し<lf>必要な記憶を引きずり出すことが出来る
+そんな
+それじゃあ　モモちゃんの意識は――
+ああ――
+やっぱみんなは戻ってくれ
+こっから先は俺だけでいい
+待って
+君一人で行くなんて無茶だ
+悪い
+これは――
+“俺達”の問題なんだ――
+だからさ――
+だけど――
+モモ――
+お前も来るってのか
+私も行くわ
+シオン――
+さっき言ったよね
+ミルチアが滅んだのも
+グノーシスが出現したのも
+この歌声が原因だって――
+もしここが
+私が知っている“あの場所”と関係あるのなら
+それは――
+私の問題でもあるのよ――
+モモ
+モモ　モモ　
+無事だったか
+まさか――
+既に奴に――
+------------ＭＰ速度変更は正常に終了しました。
+------------カット/[$1]が（/[$2]→/[$0]）フレームに変更されました。
+------------/[$0]フレームの増加です。
+------------/[$0]フレームの減少です。
+------------ＭＰの速度を変更します(/[$0]-/[$1]) ×/[#2]
+*********Timechk Standby*****************
+Timechk_main
+----------シーンは終了しました。(Total = /[$0])
+Timerchk_srv_main
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])
+Xenvmainthreadmain
+Xenvplaythread
+ a = /[$0];
+ b = /[$1];
+ c = /[$2];
+ e = /[$3];
+ f = /[$4];
+ g = /[$5];
+sokge_per = /[#0]f;
+bure_py_flag = /[$0];
+bure_py_flag = /[#0]
+sokge_per---------------(/[#0])
+b---------------(/[#0])
+a---------------(/[#0])
+c---------------(/[#0])
+e---------------(/[#0])
+f---------------(/[#0])
+g---------------(/[#0])
+-------------* ManualCam_record()start *-----------
+-------------* ManualCam_record()end *-----------
+-------------* Debugprint5() *-----------
+-------------* ManualCam_play_sub()end *-----------
+-------------* Gnochk(gold) *-----------
+-------------* ColorScreenSet() *-----------
+-------------* ColorScreenSet()_temae *-----------
+-------------* ColorScreenSet_No.2() *-----------
+-------------* chr_look_start *-----------
+-------------* point_light()start *-----------
+-------------* point_light()end *-----------
+objtool---------------------------scl
+objtool---------------------------ido
+camtool---------------------------cam
+one_scale-----------------/[#0]
+robo.setScale(/[#0]f,/[#1]f,/[#2]f);
+gold_number-------------------(/[#0])
+haba -----------------/[#0]
+takasa ---------------/[#1]
+noudo ----------------/[#2]
+one_scale ------------/[#3]
+robo.setScale(/[#4]f,/[#5]f,/[#6]f);
+f_speed--------------------------------------------------(/[#0])
+non_move_view-/[#1]|cap-/[#2]
+view-/[#1]|cap-/[#2]
+gold-no-/[#0]|view-/[#1]|cap-/[#2]
+gold-eft-no-/[#0]|view-/[#1]|cap-/[#2]
+--------plus_one_write--------
+write-/[#0]|now-/[#1]|cap-/[#2]
+erase-/[#1]|now-/[#1]|cap-/[#2]
+live-normal-cam
+live-normal-human
+time-/[#0]
+cam_time_tani++(/[#0])
+cam_time_tani--(/[#0])
+live-pretty-cam
+live-human-pretty-cam
+--SPL_CARDINAL
+----SPL_LINEAR
+---PATH_LINEAR
+-----PATH_DOWN
+-------PATH_UP
+---PATH_SPLINE
+change-/[#1]|now-/[#1]|cap-/[#2]
+STCam.setFov(/[#0]f);
+cam1.setFov(/[#0]f);
+cam0.setFov(/[#0]f);
+float pos00[] = {
+  /[#0]fnc,/[#1]fnc,/[#2]fnc,/[#3]fnc,
+float rot00[] = {
+cam1.transSPL(pos00, SPL_CARDINAL);
+cam1.rotateSPL(rot00, SPL_CARDINAL);
+float fov00[] = {
+  /[#0]fnc,/[#1]fnc,
+cam1.fovSPL(fov00, SPL_CARDINAL);
+  /[#0]f,/[#1]f,/[#2]f,/[#3]f,
+  /[#0]f,/[#1]f,
+--------trans--------
+  /[#0]f,/[#1]f,/[#2]f,/[#3]f
+--------rotate--------
+--------fov--------
+  /[#0]f,/[#1]f
+t_no_change-/[#0]-/[#1]/[#2]-/[#3]
+time_change-/[#0]-/[#1]/[#2]-/[#3]
+---SPL_CARDINAL---
+---SPL_LINEAR---
+---PATH_UP---
+---PATH_LINEAR---
+---PATH_SPLINE---
+---PATH_DOWN---
+shion_h.setTranslate(/[#0]fnc,/[#1]fnc,/[#2]fnc);
+shion_h.setRotate(/[#3]fnc,/[#4]fnc,/[#5]fnc);
+trans----/[#0]fnc,/[#1]fnc,/[#2]fnc
+rotate---/[#3]fnc,/[#4]fnc,/[#5]fnc
+fov------/[#6]fnc
+robo.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+robo.setRotate(/[#3]f,/[#4]f,/[#5]f);
+trans----/[#0]f,/[#1]f,/[#2]f
+rotate---/[#3]f,/[#4]f,/[#5]f
+fov------/[#6]f
+speed--------------------------------------------------(/[#0])
+parts_nomber---------------(/[#0])
+-------------* chr_look_end *-----------
+Event Out
+XEVEFLAG:EV03047A_F
+XEVEJNAME:CFJ3_210 XEVEJPOINT:POINT3_210
+!!__wait_loop_flag_________on!!
+!!__wait_loop_flag_________off!!
+c03s47Acut01.cam
+spl
+lightSPL start.
+lightSPL end.
+map_nomber---------------(/[#0])
+-------------* map_look_end *-----------
+FLSchaos.fpk
+FLSjr.fpk
+FLSjr_h.fpk
+FLSmomo.fpk
+FLSshion_h.fpk
+FLSziggy.fpk
+CUT1
+CUT2
+c03s47Acut02.cam
+CUT3
+c03s47Acut03.cam
+CUT4
+c03s47Acut04.cam
+CUT5
+c03s47Acut05.cam
+CUT6
+c03s47Acut06.cam
+CUT7
+c03s47Acut07.cam
+CUT8
+c03s47Acut08.cam
+CUT9
+c03s47Acut09.cam
+CUT10
+c03s47Acut10.cam
+CUT11
+c03s47Acut11.cam
+CUT12
+c03s47Acut12.cam
+CUT13
+c03s47Acut13.cam
+c03s47Acut14.cam
+CUT15
+c03s47Acut15.cam
+CUT16
+c03s47Acut16.cam
+CUT17
+c03s47Acut17.cam
+CUT18
+c03s47Acut18.cam
+CUT19
+c03s47Acut19.cam
+CUT20
+c03s47Acut20.cam
+CUT21
+c03s47Acut21.cam
+CUT22
+c03s47Acut22.cam
+CUT23
+c03s47Acut23.cam
+light.setGlobalPointLightCol( 0, /[#0]f,/[#1]f,/[#2]f);
+-------------* ManualCam_play_sub()start *-----------
+-------------* map_look_start *-----------
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---SoftImage BG(pic+zpic)
+エフェクトサイドのフォルダを使用する
+オブジェのみキャプチャ
+オブジェ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+キャプチャモード
+キャラのみキャプチャ
+キャラ単体（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ０
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+テキスト（ＺＰＩＣなし）
+フォルダ選択
+ページ切り替え
+企画サイドのフォルダを使用する
+全画面
+ＢＧのみ（ＺＰＩＣあり）
+ＢＧのみ（ＺＰＩＣなし）
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（？？？？）
+ｍｏｖｉｅ０４（？？？？）
+ｍｏｖｉｅ０５（？？？？）
+ｍｏｖｉｅ０６（？？？？）
+ｍｏｖｉｅ０７（？？？？）
+ｍｏｖｉｅ０８（？？？？）
+ｍｏｖｉｅ０９（？？？？）
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（ひみつ）
+ｍｏｖｉｅ１７（ひみつ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）

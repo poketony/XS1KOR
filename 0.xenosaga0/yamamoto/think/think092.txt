@@ -1,0 +1,96 @@
+# think_patch extract: think092.bin.ori
+# 총 23개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x0782
+もんすたー
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0794
+けいおす
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x07A4
+もも
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x07B0
+しおん
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x08DE
+　攻撃１　　？／？
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x08FE
+　攻撃２　　？／？
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x091E
+　攻撃３　　？／？
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x093E
+　攻撃４　　？／？
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x095E
+　攻撃５　　？／？
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x0986
+　様子を見ている
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x09BC
+攻撃１
+<<<
+
+>>> [011] op=0x21(display) flag=0x00 offset=0x09E4
+攻撃２
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x0A0C
+攻撃３
+<<<
+
+>>> [013] op=0x21(display) flag=0x00 offset=0x0A34
+攻撃４
+<<<
+
+>>> [014] op=0x21(display) flag=0x00 offset=0x0A5C
+攻撃５
+<<<
+
+>>> [015] op=0x21(display) flag=0x00 offset=0x0A70
+メッセージのテスト
+<<<
+
+>>> [016] op=0x21(display) flag=0x00 offset=0x0A98
+防御体勢
+<<<
+
+>>> [017] op=0x21(display) flag=0x00 offset=0x0AC2
+攻撃１
+<<<
+
+>>> [018] op=0x21(display) flag=0x00 offset=0x0BB8
+魔法１
+<<<
+
+>>> [019] op=0x21(display) flag=0x00 offset=0x0BDA
+魔法２
+<<<
+
+>>> [020] op=0x21(display) flag=0x00 offset=0x0BFC
+魔法１
+<<<
+
+>>> [021] op=0x21(display) flag=0x00 offset=0x0C1E
+魔法２
+<<<
+
+>>> [022] op=0x21(display) flag=0x00 offset=0x0C3A
+えくすとら
+<<<

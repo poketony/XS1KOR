@@ -1,5 +1,7 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x9e8 cnum=596 total=19
-# bc_map: 12,0,8,18,9,16,10,15,11,17,14,4,5,1,2,3,6,7,13
+# bc_map: 12,0,8,18,9,16,10,15,11,17,14,4,5,1,2,3,6,13
+# bc_unmap: 7
 あれは確か公園に倒れていたマスコット…。
 /[waitkey(64)]/[close()]
 lo:0 右下
@@ -17,5 +19,4 @@ MC_KAS15・２
 MC_KAS17・１
 MC_KAS17・２
 entrance: /[$0]
-idle
 はい<lf>いいえ

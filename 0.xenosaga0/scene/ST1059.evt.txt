@@ -1,21 +1,19 @@
+# extraction_order: precise_code_v4
 # chunk 2 @ 0x4a8 cnum=606 total=23
-# bc_map: 17,4,18,21,4,19,2,4,16,0,3,1,4,7,5,6,8,13,14,9,10,11,12,22,15,20,5,18
+# bc_map: 17,4,18,21,4,19,2,4,16,0,3,1,4,7,5,6,8,13,14,9,10,11,12,22,15,20
 카드 키 삽입구가 있다．<lf>
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 카드 키를 사용하지 않으면<lf>
 문은 열리지 않을 것 같다．<lf>
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 옆에 있는 카드 리더기에<lf>
 /[color(0x329bbe)]Ｕ−ＴＩＣ 카드/[color(0xffffff)]를 통과시켜야……．
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 카드 키 삽입구가 있다<lf>
 /[color(0x329bbe)]Ｕ−ＴＩＣ 카드/[color(0xffffff)]를 쓸 수 있을 듯하다．
 /[waitkey(1)]/[clear()]
 /[color(0x329bbe)]Ｕ−ＴＩＣ 카드/[color(0xffffff)]를 쓰겠습니까？<lf>
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 EOB_Always !!!!!!!!!!!!!!!!!!!!!
 ENEMY_START!!!
 ENEMY_STOP!!!
@@ -29,7 +27,3 @@ doorD 초기화
 방４ 카드 리더（빨간 점등） 초기화
 게 메카 초기화
 초기화 종료
-# dup_of: line 15, tag8 5
-ENEMY_START!!!
-# dup_of: line 3, tag8 18
-카드 키를 사용하지 않으면<lf>

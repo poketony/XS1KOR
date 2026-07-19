@@ -1,188 +1,133 @@
+# extraction_order: precise_code_v4
 # chunk 3 @ 0x648 cnum=769 total=86
-# bc_map: 2,42,68,5,2,50,56,4,84,16,0,67,79,4,55,80,41,5,2,14,75,0,66,77,5,2,17,4,63,1,52,0,71,4,59,5,2,15,45,21,5,2,24,53,62,46,5,2,25,23,0,70,31,54,5,2,13,4,69,65,81,5,2,64,4,27,39,22,5,2,43,5,2,60,57,74,4,48,5,2,44,32,4,82,51,47,5,2,35,33,83,0,28,20,4,34,40,5,2,26,85,5,3,19,4,73,78,38,0,30,72,5,3,29,58,4,36,61,0,49,18,4,37,5,76,76,76,79,11,12,6,7,8,9,10,6
-/[label()]
-ねぇ、<lf>
-惑星消失事件って知ってます？
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
-アリアドネという惑星が、<lf>
-丸ごと消えてしまったんですよ。
-/[waitkey(1)]/[clear()]
-連邦政府は<lf>
-いまだにその原因さえつかめず、
-<lf>
-惑星と共に消えてしまった人も<lf>
-行方不明のままなんです。
-# dup_of: line 8, tag8 4
-/[waitkey(1)]/[clear()]
-一説にはグノーシスの仕業だとも<lf>
-言われてますし、<lf>
-なんにせよ、恐ろしい事件ですよ。
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
-あの事件、いまだに、<lf>
-真相は謎のままなんですってよ。
-# dup_of: line 11, tag8 0
-<lf>
-惑星が一つ消えてしまうなんて、<lf>
-私には信じられませんよ。
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
-いらっしゃいませ〜。
-# dup_of: line 8, tag8 4
-/[waitkey(1)]/[clear()]
-当店には<lf>
-/[font(Ａ．Ｇ．Ｗ．Ｓ．)]のビーム砲から<lf>
-トイレットペーパーまで
-# dup_of: line 11, tag8 0
-<lf>
-手に入らない物はありませ〜ん！
-# dup_of: line 8, tag8 4
-/[waitkey(1)]/[clear()]
-何をお求めですか〜？
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
-ありがとうございました〜。<lf>
-またのご来店<lf>
-おまちしてま〜す。
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
-ここの品揃えは、<lf>
-ドックコロニーの中で一番だね。<lf>
-孫のオムツなんかも手に入るんだ。<lf>
-まったく、いい世の中になったもんだよ。
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
-ここも、戦争中は<lf>
-かなり非道い目にあったけどさ。
-# dup_of: line 11, tag8 0
-<lf>
-戦後、ミルチア憲章が制定されたのが<lf>
-せめてもの救いだね。<lf>
-レアリエンを加害者にしちゃいけないよ。
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
-あ、そうそう、
-# dup_of: line 8, tag8 4
-/[waitkey(1)]/[clear()]
-憲章は、<lf>
-当時の連邦政府枢機院議長の後押しで<lf>
-議会を通ったらしいね。
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
-当時の議長？
-# dup_of: line 8, tag8 4
-/[waitkey(1)]/[clear()]
-さあ…、<lf>
-どっかのデカイ企業の<lf>
-おエライさんだった筈だけど…。
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
-ねぇねぇ、知ってます？
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
-先ほど、そこの路地で<lf>
-人が襲われたんです。<lf>
-犯人はどうやら連邦の兵隊だったとか。
-# dup_of: line 8, tag8 4
-/[waitkey(1)]/[clear()]
-まったく、物騒な世の中ですよね。
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
-ほんと、物騒ですよね。<lf>
-そこで襲われた人、重体らしいですよ。
-# dup_of: line 8, tag8 4
-/[waitkey(1)]/[clear()]
-軍人がウロウロしてたって<lf>
-ウワサもあるし、<lf>
-まったく、安心して外を歩けないですよ。
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
-ちょっと、知ってるかい？<lf>
-そこの路地で、<lf>
-軍人がケンカ騒ぎを起こしたらしいんだよ。
-# dup_of: line 11, tag8 0
-<lf>
-しかも、相手は重体なんだってさ。
-おっそろしいねぇ〜。
-# dup_of: line 8, tag8 4
-/[waitkey(1)]/[clear()]
-そんな危険な兵隊、<lf>
-なんで野放しにしてるんだろうね〜。
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
-この状態を見て見ぬフリってんだから、<lf>
-連邦政府もどうしようもないわね。
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[close()]
-/[label(トム)]
-おっかしーなー？<lf>
-# dup_of: line 8, tag8 4
-/[waitkey(1)]/[clear()]
-昔さぁ、このお店にピンクのお化けの人形が<lf>
-置いてあったんだけど。<lf>
-どこ行っちゃったのかなぁ……。
-# dup_of: line 11, tag8 0
-<lf>
-すっごく、壊れやすかったから、<lf>
-捨てられちゃったのかなぁ。
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 103, tag8 3
-/[label(トム)]
-じつはね、そのピンクの人形ってさ、<lf>
-人の言葉をしゃべれるんだよ。
-# dup_of: line 8, tag8 4
-/[waitkey(1)]/[clear()]
-とっても傷つきやすくて、<lf>
-壊れやすい奴だけど、
-# dup_of: line 11, tag8 0
-<lf>
-やさしく話し掛けると、<lf>
-いろんな事を教えてくれるよ！
-# dup_of: line 8, tag8 4
-/[waitkey(1)]/[clear()]
-どこかで見かけたら仲良くしてあげてね！
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[close()]
-知ってる<lf>知らない
-# dup_of: line 125, tag8 76
-知ってる<lf>知らない
-# dup_of: line 125, tag8 76
-知ってる<lf>知らない
-# dup_of: line 13, tag8 79
-行方不明のままなんです。
+# bc_map: 2,42,68,5,2,50,56,4,84,16,0,67,79,4,55,80,41,5,2,14,75,0,66,77,5,2,17,4,63,1,52,0,71,4,59,5,2,15,45,21,5,2,24,53,62,46,5,2,25,23,0,70,31,54,5,2,13,4,69,65,81,5,2,64,4,27,39,22,5,2,43,5,2,60,57,74,4,48,5,2,44,32,4,82,51,47,5,2,35,33,83,0,28,20,4,34,40,5,2,26,85,5,3,19,4,73,78,38,0,30,72,5,3,29,58,4,36,61,0,49,18,4,37,5,76,76,76,11,12
+# bc_unmap: 6,7,8,9,10
+#dup(1): /[label()]
+저기，<lf>
+행성 소실 사건이라고 아세요？
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+아리아드네라는 행성이<lf>
+통째로 사라졌대요．
+#dup(3): /[waitkey(1)]/[clear()]
+연방 정부는<lf>
+아직도 그 원인조차 파악하지 못했고
+#dup(4): <lf>
+행성과 함께 사라진 사람들도<lf>
+여전히 행방불명인 상태예요．
+#dup(3): /[waitkey(1)]/[clear()]
+일설에는 그노시스의 소행이라고도<lf>
+하더라고요．<lf>
+어쨌든 무서운 사건이에요．
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+그 사건은 아직도<lf>
+진상이 수수께끼로 남아 있대요．
+#dup(4): <lf>
+행성 하나가 사라진다니<lf>
+저는 믿을 수가 없어요．
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+어서 오세요〜
+#dup(3): /[waitkey(1)]/[clear()]
+저희 가게에는<lf>
+/[font(Ａ．Ｇ．Ｗ．Ｓ．)]의 빔포부터<lf>
+화장지까지
+#dup(4): <lf>
+구하지 못하는 물건이 없답니다〜！
+#dup(3): /[waitkey(1)]/[clear()]
+무엇을 찾으시나요〜？
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+감사합니다〜<lf>
+다음에 또<lf>
+방문해 주세요〜
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+이곳의 상품 구색은<lf>
+격납고 콜로니에서 제일이야．<lf>
+손주의 기저귀까지 구할 수 있다니까．<lf>
+참 좋은 세상이 됐지．
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+여기도 전쟁 중에는<lf>
+상당히 끔찍한 일을 당했지만 말이야．
+#dup(4): <lf>
+전쟁 후 미르치아 헌장이 제정된 게<lf>
+그나마 다행이지．<lf>
+리얼리언을 가해자로 몰아서는 안 돼．
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+아，그러고 보니
+#dup(3): /[waitkey(1)]/[clear()]
+그 헌장은 당시<lf>
+연방 정부 추기원 의장의 지원으로<lf>
+의회를 통과했다더군．
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+당시 의장？
+#dup(3): /[waitkey(1)]/[clear()]
+글쎄……<lf>
+어느 큰 기업의<lf>
+높으신 분이었던 것 같은데……
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+저기，알고 계세요？
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+조금 전 저 골목에서<lf>
+사람이 습격당했대요．<lf>
+범인은 연방 병사라는 모양이에요．
+#dup(3): /[waitkey(1)]/[clear()]
+정말 뒤숭숭한 세상이네요．
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+정말 뒤숭숭하죠．<lf>
+거기서 습격당한 사람은 중태래요．
+#dup(3): /[waitkey(1)]/[clear()]
+군인이 어슬렁거렸다는<lf>
+소문도 있고<lf>
+정말 안심하고 밖을 다닐 수가 없네요．
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+저기，알고 있나？<lf>
+저 골목에서<lf>
+군인이 싸움을 벌였다는 모양이야．
+#dup(4): <lf>
+게다가 상대는 중태라더군．
+무서운 일이야〜
+#dup(3): /[waitkey(1)]/[clear()]
+그런 위험한 병사를<lf>
+왜 내버려 두는 걸까〜
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+이 상황을 보고도 못 본 척하니<lf>
+연방 정부도 구제할 길이 없네．
+#dup(2): /[waitkey(64)]/[close()]
+#dup(5): /[label(톰)]
+이상하네〜？<lf>
+#dup(3): /[waitkey(1)]/[clear()]
+예전에 이 가게에 분홍색 유령 인형이<lf>
+놓여 있었는데．<lf>
+어디로 간 걸까……
+#dup(4): <lf>
+아주 잘 망가지는 인형이라<lf>
+버려진 걸까．
+#dup(2): /[waitkey(64)]/[close()]
+#dup(5): /[label(톰)]
+사실 그 분홍색 인형은 말이야，<lf>
+사람 말을 할 수 있어．
+#dup(3): /[waitkey(1)]/[clear()]
+아주 상처받기 쉽고<lf>
+잘 망가지는 녀석이지만
+#dup(4): <lf>
+상냥하게 말을 걸면<lf>
+이런저런 걸 알려 줄 거야！
+#dup(3): /[waitkey(1)]/[clear()]
+어디서 보거든 친하게 지내 줘！
+#dup(2): /[waitkey(64)]/[close()]
+#dup(6): 알고 있다<lf>모른다
+#dup(6): 알고 있다<lf>모른다
+#dup(6): 알고 있다<lf>모른다
 enterd : /[$0]
 entrance: /[$0]
-Talk_npc1
-Talk_npc2
-Talk_npc3
-Talk_npc4
-Talk_npc5
-# dup_of: line 131, tag8 6
-Talk_npc1

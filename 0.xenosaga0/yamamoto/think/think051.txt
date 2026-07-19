@@ -1,0 +1,73 @@
+# think_patch extract: think051.bin.ori
+# 총 15개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x1A(condition) flag=0x00 offset=0x0052
+INIT
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0238
+　チャンピオン태클　　Ｐ
+
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x0288
+　トロルスィング　　Ｐ
+물리 방어력 저하
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x02C8
+　リベンジガード
+
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x031A
+　カウンターブースト
+
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x03DA
+　포스 퍼니셔　　Ｅ
+
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x0418
+　올 큐어
+　　전체 ＨＰ 회복
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x0480
+　파워 차지
+　　물리 공격력 업
+<<<
+
+>>> [008] op=0x1A(condition) flag=0x00 offset=0x04B2
+Ｍ사이즈검색
+<<<
+
+>>> [009] op=0x1A(condition) flag=0x00 offset=0x04F0
+태클 선택
+<<<
+
+>>> [010] op=0x1A(condition) flag=0x00 offset=0x051A
+ＡＧＷＳ 선택
+<<<
+
+>>> [011] op=0x1A(condition) flag=0x00 offset=0x054A
+태클 나왔나？
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x057A
+　태클　　Ｐ／Ｓ
+　　슬로
+<<<
+
+>>> [013] op=0x21(display) flag=0x00 offset=0x05DE
+　트롤 스윙　　Ｐ／Ｓ
+　　물리 방어력 저하
+<<<
+
+>>> [014] op=0x21(display) flag=0x00 offset=0x0666
+　様子を見ている
+<<<

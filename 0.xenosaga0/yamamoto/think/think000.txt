@@ -208,7 +208,7 @@ MOVE
 <<<
 
 >>> [051] op=0x1A(condition) flag=0x00 offset=0x1BCE
-Ｍサイズ検索
+Ｍ사이즈검색
 <<<
 
 >>> [052] op=0x1A(condition) flag=0x00 offset=0x1C08
@@ -216,7 +216,7 @@ MOVE
 <<<
 
 >>> [053] op=0x1A(condition) flag=0x00 offset=0x1C2E
-ＡＧＷＳを選べ
+ＡＧＷＳ 선택
 <<<
 
 >>> [054] op=0x1A(condition) flag=0x00 offset=0x1C5A
@@ -256,7 +256,7 @@ MOVE
 <<<
 
 >>> [063] op=0x1A(condition) flag=0x00 offset=0x1E48
-Ｍサイズ検索
+Ｍ사이즈검색
 <<<
 
 >>> [064] op=0x21(display) flag=0x00 offset=0x1EC4
@@ -396,8 +396,8 @@ MOVE
 <<<
 
 >>> [096] op=0x21(display) flag=0x00 offset=0x26DC
-　モデストカース
-　　混乱
+　모데스트 커스
+　　혼란
 <<<
 
 >>> [097] op=0x21(display) flag=0x00 offset=0x2720
@@ -406,8 +406,8 @@ MOVE
 <<<
 
 >>> [098] op=0x21(display) flag=0x00 offset=0x27AC
-　モデストカース
-　　混乱
+　모데스트 커스
+　　혼란
 <<<
 
 >>> [099] op=0x1A(condition) flag=0x00 offset=0x27F6
@@ -415,15 +415,15 @@ MOVE
 <<<
 
 >>> [100] op=0x21(display) flag=0x00 offset=0x2838
-　パワースイング　　体力低下
+　파워 스윙　　体力低下
 <<<
 
 >>> [101] op=0x21(display) flag=0x00 offset=0x2876
-　パワーチャージ　　攻撃力ＵＰ
+　파워 차지　　攻撃力 업
 <<<
 
 >>> [102] op=0x21(display) flag=0x00 offset=0x28C2
-　タックル
+　태클
 <<<
 
 >>> [103] op=0x21(display) flag=0x00 offset=0x28EE

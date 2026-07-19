@@ -1,0 +1,146 @@
+# think_patch extract: think050.bin.ori
+# 총 28개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x01F2
+　선더볼트　　Ｅ／번개
+
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x023C
+　Ｗ선더볼트　　Ｅ／번개
+
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x0296
+　ＭＡＸ선더볼트　Ｅ／번개
+
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x02D6
+　포이즌 클라우드　　Ｐ
+　　독
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x0334
+　선더볼트　　Ｅ／번개
+
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x0370
+　포이즌 클라우드　　Ｐ
+　　독
+<<<
+
+>>> [006] op=0x1A(condition) flag=0x00 offset=0x03A0
+coblt
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x03EE
+　선더볼트　　Ｅ／번개
+
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x0438
+　Ｗ선더볼트　　Ｅ／번개
+
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x0492
+　ＭＡＸ선더볼트　Ｅ／번개
+
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x04D2
+　포이즌 클라우드　　Ｐ
+　　독
+<<<
+
+>>> [011] op=0x21(display) flag=0x00 offset=0x0506
+　様子を見ている
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x0AAA
+ミンティア
+「♂はキライ！
+<<<
+
+>>> [013] op=0x21(display) flag=0x00 offset=0x0AFE
+ミンティア
+「♂はキライ！
+　二度もいわせるな！！
+<<<
+
+>>> [014] op=0x21(display) flag=0x00 offset=0x0B6A
+ミンティア
+「ビボ！！
+<<<
+
+>>> [015] op=0x21(display) flag=0x00 offset=0x0BB8
+ミンティア
+「この○○な♂の命！！
+　一滴残さず吸いつくせ！！
+<<<
+
+>>> [016] op=0x21(display) flag=0x00 offset=0x0C30
+ミンティア
+「フッ、攻撃독で死ぬなんて〜
+<<<
+
+>>> [017] op=0x21(display) flag=0x00 offset=0x0C60
+ミンティア
+「おバカな♂
+<<<
+
+>>> [018] op=0x21(display) flag=0x00 offset=0x0CBE
+　パープルボム　　Ｅ／Ｓ
+　　攻撃독
+<<<
+
+>>> [019] op=0x21(display) flag=0x00 offset=0x0CFC
+　パープルボム　　Ｅ／Ｓ
+　　攻撃독
+<<<
+
+>>> [020] op=0x21(display) flag=0x00 offset=0x0DA6
+　ダークスター　　Ｅ
+　　後列とばし
+<<<
+
+>>> [021] op=0x21(display) flag=0x00 offset=0x0E2C
+ミンティア
+「最初にいっとくけど
+<<<
+
+>>> [022] op=0x21(display) flag=0x00 offset=0x0E56
+ミンティア
+「あんたたちの持っている
+　あの人型のデカイ機械―
+<<<
+
+>>> [023] op=0x21(display) flag=0x00 offset=0x0E9E
+ミンティア
+「アレ、好みじゃないから
+　ここでは禁止―
+<<<
+
+>>> [024] op=0x21(display) flag=0x00 offset=0x0F10
+ミンティア
+「その攻撃！　キライ！！
+<<<
+
+>>> [025] op=0x21(display) flag=0x00 offset=0x0F40
+ミンティア
+「物理攻撃する奴は殺す！！！
+<<<
+
+>>> [026] op=0x21(display) flag=0x00 offset=0x0F74
+　シャドーアイ　　Ｓ
+　　命中ダウン
+<<<
+
+>>> [027] op=0x21(display) flag=0x00 offset=0x0FA4
+　スペシャルチェーン　　Ｓ
+　攻撃封鎖（○）
+<<<

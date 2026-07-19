@@ -1,0 +1,22 @@
+# think_patch extract: think069.bin.ori
+# 총 4개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x1A(condition) flag=0x00 offset=0x009A
+INIT
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0130
+　ハイパーロケットガン　Ｐ／Ｓ
+　　장갑 결손
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x01B2
+　パワーグレネード　　Ｅ
+
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x01E0
+なにもしない
+<<<

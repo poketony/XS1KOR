@@ -1,0 +1,377 @@
+# chunk 18 @ 0x3558 cnum=2360 total=374
+# bc_map: 217,169,191,13,37,11,91,93,81,92,258,338,353,352,261,260,257,256,326,83,88,84,86,90,330,262,269,286,303,320,321,322,323,324,325,263,264,265,266,267,268,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,259,255,328,337,354,355,356,357,358,359,360,361,362,363,197,198,199,200,201,202,203,204,205,206,254,364,365,366,367,368,369,370,371,372,373,207,208,209,210,211,212,213,214,215,216,82,10,12,94,111,130,131,109,110,62,63,60,61,139,6,187,56,58,55,54,252,133,95,132,115,7,188,57,134,189,135,14,225,53,232,178,52,105,157,158,112,113,107,106,16,8,137,136,114,179,180,181,182,108,48,49,50,155,171,238,227,156,172,239,226,117,116,104,120,118,119,80,121,129,97,96,140,125,128,123,126,127,124,122,15,141,30,142,36,9,237,235,236,145,146,23,22,18,21,20,19,17,27,25,29,28,221,220,166,223,229,185,186,245,219,222,230,170,218,250,183,184,32,251,168,193,194,246,164,165,195,192,47,38,40,35,42,167,138,162,159,174,5,175,163,161,173,4,160,3,1,34,2,33,31,0,244,247,45,46,44,41,43,39,241,240,249,234,177,231,228,248,233,176,242,224,24,98,143,144,243,196,26,100,102,103,99,101,65,147,64,67,148,150,351,329,66,69,149,343,68,71,347,70,73,151,335,349,346,341,342,72,75,331,74,77,152,154,350,339,334,76,79,153,327,336,333,332,348,253,344,345,340,78,59,190,51,85,87,89
+# bc_unmap: 51,85,87,89
+msg_clear_thread
+eventmovie/
+lightSPL_main
+*********CaptureTool Standby*****************
+-----PATH_DOWN
+*********Capture Start!!!*****************
+CaptureMode = /[$0]
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+キャプチャモード
+全画面
+ＢＧのみ（ＺＰＩＣなし）
+ＢＧのみ（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+オブジェ単体（ＺＰＩＣあり）
+テキスト（ＺＰＩＣなし）
+CaptureMODE ---All Screen.
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---Chr(pic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---TXT(pic)
+ページ切り替え
+キャラ０
+キャラ１
+キャラ２
+キャラ３
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラのみキャプチャ
+オブジェのみキャプチャ
+フォルダ選択
+企画サイドのフォルダを使用する
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（？？？？）
+ｍｏｖｉｅ０４（？？？？）
+ｍｏｖｉｅ０５（？？？？）
+ｍｏｖｉｅ０６（？？？？）
+ｍｏｖｉｅ０７（？？？？）
+ｍｏｖｉｅ０８（？？？？）
+ｍｏｖｉｅ０９（？？？？）
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+エフェクトサイドのフォルダを使用する
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（ひみつ）
+ｍｏｖｉｅ１７（ひみつ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+*********Capture End.*****************
+*********Capture Waiting...*****************
+ColorScreen  SetMode
+Layer = /[$0]
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode-------end
+*************ColorScreen Printout*************
+int ColorScreenParam[] = {
+0,
+1,
+/[$1],
+/[$0],
+};
+Runtime.setDefocus(15, 1, ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], 1, ColorScreenParam);
+Layer not exist.
+*************ColorScreen Printout_temae*************
+int[] test_param0 = {
+0, 
+Runtime.setDefocus(15, 2, test_param0);
+int[] test_param1 = {
+Runtime.setDefocus(15, 3, test_param1);
+*********ManualCamera Replay*********
+pos[] ={
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+Focus SetMode
+alpha_percent-/[#0]
+alpha_set-/[#0]
+Layer = Back
+Layer = Before
+Focus delta = /[$0](back)
+Focus SetMode-------end
+-------------* ColorScreenSet() *-----------
+*************Focus Printout*************
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+Gnochk...
+--alpha--
+--filter--
+--ref_alpha--
+alpha max!!
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+MSGprint.
+MSGprint(with Face).
+Face End.
+ManualCamera not Recorded.
+ManualCam_record.
+ManualCamera MOVE to start.
+Cancel!!
+ManualCameraRecord START!!!
+Record /[$0]
+End(TimeOver).
+End(Button).
+Time = /[$0]
+Objchk......(Chr)
+Objchk......End
+Objchk(+Mtn)......
+Objchk......(Effect)
+Objchk......(Unit)
+Objchk......
+Mtn Frame = /[$0]
+*********Timechk Standby*****************
+Timechk_main
+----------シーンは終了しました。(Total = /[$0])
+Timerchk_srv_main
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])
+***********Objchk printout***********
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+setRotate(/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+Xenvmainthreadmain
+Xenvplaythread
+-------------* ManualCam_record()start *-----------
+-------------* ManualCam_record()end *-----------
+-------------* Debugprint5() *-----------
+-------------* ManualCam_play_sub()start *-----------
+-------------* ManualCam_play_sub()end *-----------
+-------------* Gnochk(gold) *-----------
+-------------* ColorScreenSet()_temae *-----------
+-------------* map_look_start *-----------
+-------------* chr_look_start *-----------
+-------------* point_light()start *-----------
+-------------* point_light()end *-----------
+objtool---------------------------scl
+objtool---------------------------ido
+camtool---------------------------cam
+one_scale-----------------/[#0]
+robo.setScale(/[#0]f,/[#1]f,/[#2]f);
+gold_number-------------------(/[#0])
+haba -----------------/[#0]
+takasa ---------------/[#1]
+noudo ----------------/[#2]
+one_scale ------------/[#3]
+robo.setScale(/[#4]f,/[#5]f,/[#6]f);
+f_speed--------------------------------------------------(/[#0])
+non_move_view-/[#1]|cap-/[#2]
+view-/[#1]|cap-/[#2]
+gold-no-/[#0]|view-/[#1]|cap-/[#2]
+gold-unit-no-/[#0]|view-/[#1]|cap-/[#2]
+--------plus_one_write--------
+write-/[#0]|now-/[#1]|cap-/[#2]
+erase-/[#1]|now-/[#1]|cap-/[#2]
+live-normal-cam
+live-normal-human
+time-/[#0]
+cam_time_tani++(/[#0])
+cam_time_tani--(/[#0])
+live-pretty-cam
+live-human-pretty-cam
+--SPL_CARDINAL
+----SPL_LINEAR
+---PATH_LINEAR
+-------PATH_UP
+---PATH_SPLINE
+change-/[#1]|now-/[#1]|cap-/[#2]
+STCam.setFov(/[#0]f);
+cam1.setFov(/[#0]f);
+cam0.setFov(/[#0]f);
+float pos00[] = {
+  /[#0]fnc,/[#1]fnc,/[#2]fnc,/[#3]fnc,
+float rot00[] = {
+cam1.transSPL(pos00, SPL_CARDINAL);
+cam1.rotateSPL(rot00, SPL_CARDINAL);
+float fov00[] = {
+  /[#0]fnc,/[#1]fnc,
+cam1.fovSPL(fov00, SPL_CARDINAL);
+  /[#0]f,/[#1]f,/[#2]f,/[#3]f,
+  /[#0]f,/[#1]f,
+--------trans--------
+  /[#0]f,/[#1]f,/[#2]f,/[#3]f
+--------rotate--------
+--------fov--------
+  /[#0]f,/[#1]f
+t_no_change-/[#0]-/[#1]/[#2]-/[#3]
+time_change-/[#0]-/[#1]/[#2]-/[#3]
+---SPL_CARDINAL---
+---SPL_LINEAR---
+---PATH_UP---
+---PATH_LINEAR---
+---PATH_SPLINE---
+---PATH_DOWN---
+shion.setTranslate(/[#0]fnc,/[#1]fnc,/[#2]fnc);
+shion.setRotate(/[#3]fnc,/[#4]fnc,/[#5]fnc);
+trans----/[#0]fnc,/[#1]fnc,/[#2]fnc
+rotate---/[#3]fnc,/[#4]fnc,/[#5]fnc
+fov------/[#6]fnc
+robo.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+robo.setRotate(/[#3]f,/[#4]f,/[#5]f);
+trans----/[#0]f,/[#1]f,/[#2]f
+rotate---/[#3]f,/[#4]f,/[#5]f
+fov------/[#6]f
+speed--------------------------------------------------(/[#0])
+parts_nomber---------------(/[#0])
+-------------* chr_look_end *-----------
+Event Out
+XEVEFLAG:EV03014_F
+XEVEJNAME:SCE03015
+spl
+map_nomber---------------(/[#0])
+-------------* map_look_end *-----------
+FLSgaignun_h.fpk
+FLShelmer.fpk
+FLSlapis.fpk
+FLSfried.fpk
+FLSgove_w1.fpk
+CUT1 START
+act1
+CUT1 END
+CUT2 START
+act2
+act3s
+開けなさい
+ヘルマーか
+CUT2 END
+CUT3 START
+act3
+待たせたな　ガイナン
+CUT3 END
+CUT4 START
+私も今はそれなりに動き辛い立場なのだが<lf>連邦議会には手を回している
+CUT4 END
+CUT5 START
+act5
+今　君の隣にいる女性はラピス・ローマン大尉
+軍内部に潜伏するＵ−ＴＩＣ機関の動きを<lf>探る為に数年前から潜入させている
+私の信頼に足る部下だ
+常に抜かりないな
+年をとると　用心深くなるんだよ
+CUT5 END
+CUT6 START
+ローマン大尉には<lf>デュランダルの諸記録をあたってもらっている
+CUT6 END
+CUT7 START
+act7
+act8s
+連中に改竄される前にな
+協力してやってくれ
+了解した
+CUT7 END
+CUT8 START
+act8
+デュランダルのマスターキーを渡しておこう
+代表
+ヴェクターのＣＥＯからＥＰＲ通信が<lf>入っておりますが――
+ヴェクターの――
+解った　出よう
+すまない
+状況が進展したらまた連絡をする
+相変わらず多忙だな
+君ほどではないさ
+CUT8 END
+3014_1
+light.setGlobalPointLightCol( 0, /[#0]f,/[#1]f,/[#2]f);
+--shake--
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---SoftImage BG(pic+zpic)

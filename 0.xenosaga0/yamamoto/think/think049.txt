@@ -1,0 +1,139 @@
+# think_patch extract: think049.bin.ori
+# 총 29개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x027A
+　포스 퍼니셔　　Ｅ
+
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x02B8
+　올 큐어
+　　전체 ＨＰ 회복
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x02F6
+　【ポイズンバブル】
+　トラップの影響で発動失敗！
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x0374
+　ポイズンバブル　　Ｅ／Ｓ
+　　독
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x03B6
+　ドレインアーム　　Ｅ
+　　ＨＰドレイン
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x040E
+　ドレインアーム　　Ｅ
+　　ＨＰドレイン
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x04EE
+　技体分離
+
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x050E
+　様子をみている
+<<<
+
+>>> [008] op=0x1A(condition) flag=0x00 offset=0x0578
+４のアタック確率
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x060C
+　ブラストウェーブ　　Ｐ
+
+<<<
+
+>>> [010] op=0x1A(condition) flag=0x00 offset=0x064C
+４の魔＆防確率
+<<<
+
+>>> [011] op=0x21(display) flag=0x00 offset=0x06A8
+　リンドフ로스트　　Ｅ／냉기
+
+<<<
+
+>>> [012] op=0x1A(condition) flag=0x00 offset=0x06DE
+４のワーク１の中身
+<<<
+
+>>> [013] op=0x21(display) flag=0x00 offset=0x06FE
+　防御
+
+<<<
+
+>>> [014] op=0x1A(condition) flag=0x00 offset=0x073A
+ガードしていたか？
+<<<
+
+>>> [015] op=0x1A(condition) flag=0x00 offset=0x0778
+５のアタック確率
+<<<
+
+>>> [016] op=0x21(display) flag=0x00 offset=0x07EA
+　轟雷撃　　Ｅ／번개
+
+<<<
+
+>>> [017] op=0x21(display) flag=0x00 offset=0x082A
+　念動破　　Ｅ
+
+<<<
+
+>>> [018] op=0x1A(condition) flag=0x00 offset=0x0860
+５の魔＆防確率
+<<<
+
+>>> [019] op=0x1A(condition) flag=0x00 offset=0x08B8
+使用した数は？
+<<<
+
+>>> [020] op=0x21(display) flag=0x00 offset=0x08F2
+　絶命響
+　　即死
+<<<
+
+>>> [021] op=0x1A(condition) flag=0x00 offset=0x0930
+５のワーク１の中身
+<<<
+
+>>> [022] op=0x21(display) flag=0x00 offset=0x0950
+　防御
+
+<<<
+
+>>> [023] op=0x21(display) flag=0x00 offset=0x096C
+　様子をみている
+<<<
+
+>>> [024] op=0x21(display) flag=0x00 offset=0x0BCC
+　ブラストウェーブ　　Ｐ
+
+<<<
+
+>>> [025] op=0x21(display) flag=0x00 offset=0x0C12
+　リンドフ로스트　　Ｅ／냉기
+
+<<<
+
+>>> [026] op=0x21(display) flag=0x00 offset=0x0C54
+　念動破　　Ｅ
+
+<<<
+
+>>> [027] op=0x21(display) flag=0x00 offset=0x0C90
+　轟雷撃　　Ｅ／번개
+
+<<<
+
+>>> [028] op=0x21(display) flag=0x00 offset=0x0CD0
+　絶命響
+　　即死
+<<<

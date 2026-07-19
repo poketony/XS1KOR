@@ -1,86 +1,63 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x710 cnum=737 total=38
-# bc_map: 1,14,23,30,6,1,16,37,5,12,24,6,1,25,33,6,2,34,13,6,0,19,36,6,3,32,6,4,20,35,6,0,19,28,6,2,11,15,6,2,10,6,2,27,31,6,3,22,6,4,17,26,5,21,29,18,6,0,7,8,9
-/[label(シオン)]
+# bc_map: 1,14,23,30,6,1,16,37,5,12,24,6,1,25,33,6,2,34,13,6,0,19,36,6,3,32,6,4,20,35,6,0,19,28,6,2,11,15,6,2,10,6,2,27,31,6,3,22,6,4,17,26,5,21,29,18,6,7,8,9
+#dup(1): /[label(シオン)]
 さぁ、エルザに戻って<lf>
 ヴォークリンデとグノーシスとの<lf>
 戦闘記録の複製を取りましょう！！
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 1
-/[label(シオン)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(シオン)]
 それじゃあ<lf>
 装備品を探しましょう！！
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 きっとこのエリアの<lf>
 何処かにあるはずだわ！！
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 1
-/[label(シオン)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(シオン)]
 何処にあるのかしら？<lf>
 私たちの装備……。
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
-/[label(ジギー)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(ジギー)]
 装備品か……。<lf>
 このエリアの何処かにあるはずだな……。
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
-/[label(ケイオス)]
-まずは<lf>
+#dup(2): /[waitkey(64)]/[close()]
+#dup(5): /[label(ケイオス)]
+#dup(6): まずは<lf>
 装備品を取り戻さなくちゃ！！
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
-/[label(モモ)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(7): /[label(モモ)]
 早く装備品を取り戻さなくちゃ！！
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
-/[label(Ｊｒ．)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(8): /[label(Ｊｒ．)]
 チッキショーッ！！<lf>
 装備品は何処にあるんだ？
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 21, tag8 0
-/[label(ケイオス)]
-# dup_of: line 22, tag8 19
-まずは<lf>
+#dup(2): /[waitkey(64)]/[close()]
+#dup(5): /[label(ケイオス)]
+#dup(6): まずは<lf>
 奪われた武器を捜すのが先決みたいだね。
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 17, tag8 2
-/[label(ジギー)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(ジギー)]
 ……確かに。<lf>
 それが一番利口な方法だな。
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 17, tag8 2
-/[label(ジギー)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(ジギー)]
 ……どうかしたのか？
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 17, tag8 2
-/[label(ジギー)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(ジギー)]
 大丈夫だ。<lf>
 手加減はしておいた。
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 25, tag8 3
-/[label(モモ)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(7): /[label(モモ)]
 ラピスさん大丈夫でしょうか？
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 28, tag8 4
-/[label(Ｊｒ．)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(8): /[label(Ｊｒ．)]
 ちょっと待てよ！！<lf>
 外は連邦の兵隊がウロチョロしてんだぜ！？
-# dup_of: line 9, tag8 5
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ドックエリアの駅までは<lf>
 少なくとも２ブロックはあるし……。<lf>
 とてもじゃないが丸腰じゃあ危険だ！
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 21, tag8 0
-/[label(ケイオス)]
+#dup(2): /[waitkey(64)]/[close()]
 enterd : /[$0]
 entrance: /[$0]
 shoot on

@@ -1,14 +1,13 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x8e8 cnum=319 total=9
 # bc_map: 7,8,0,5,0,3,3,6,1,2,4
 時空のゆがみがあります。
 飛び込みますか？
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 下へ降りますか？
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
-lo:0
-# dup_of: line 6, tag8 3
-lo:0
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): lo:0
+#dup(2): lo:0
 地下水道【MC_KAS14】・６・Jr
 enterd : /[$0]
 entrance: /[$0]

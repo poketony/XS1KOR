@@ -1,16 +1,15 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x6a0 cnum=645 total=13
 # bc_map: 11,2,9,2,1,7,10,12,2,3,4,6,8,0,5
-ＥＶＳ 【환경 시뮬레이터】를 종료합니다．
-/[waitkey(64)]/[close()]
+ＥＶＳ【환경 시뮬레이터】를 종료합니다．
+#dup(1): /[waitkey(64)]/[close()]
 아쿠아지스트를 손에 넣었다！<lf>
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(시온)]
 으음，<lf>
 타깃이 ２개 이상 있을 때는<lf>
-Ｌ１・Ｒ１ 버튼으로 선택해 쏘는 거였지．
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+Ｌ１・Ｒ１ 버튼으로 선택해서 쐈었지．
+#dup(1): /[waitkey(64)]/[close()]
 KickEvent_case0!!!!!!!!!!!!!!
 enterd : /[$0]
 evsExitをコールしました

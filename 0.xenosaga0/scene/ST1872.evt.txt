@@ -1,56 +1,44 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x740 cnum=445 total=28
-# bc_map: 0,9,3,0,11,15,3,0,10,14,3,0,8,16,26,2,12,3,1,22,3,1,24,3,25,3,27,3,18,23,21,3,19,20,17,3,13,6,7,4
-# bc_unmap: 5
-/[label(シオン)]
+# bc_map: 0,9,3,0,11,15,3,0,10,14,3,0,8,16,26,2,12,3,1,22,3,1,24,3,25,3,27,3,18,23,21,3,19,20,17,3,5,13,6,7
+# bc_unmap: 4
+#dup(1): /[label(シオン)]
 『今日は疲れたしもう休もうかしら……。』
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 0
-/[label(シオン)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(シオン)]
 『無理は体に毒ね。<lf>
 もう休みましょう……。』
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 0
-/[label(シオン)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(シオン)]
 『広い艦だったし、<lf>
 もうちょっと遊んでみようかな。』
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 0
-/[label(シオン)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(シオン)]
 ……さっきはちょっと<lf>
 アレン君に詰めたくしすぎちゃったな？<lf>
 直接会って謝らなくちゃ。
 /[waitkey(1)]/[clear()]
 どこ行っちゃったんだろう？
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
-/[label(仮人)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(仮人)]
 クーカイ前です。【仮】
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 19, tag8 1
-/[label(仮人)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(仮人)]
 ネピリムの歌声前です。【仮】
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 休憩をとりますか？
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ＨＰ・ＥＰが回復した！！
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 オッス！！<lf>
 ナンダカ、オマエモ<lf>
 カンロクガ、デテキタナ！！
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 オマエラ、イツモ、イソガシソウ<lf>
 オレミタイニ、ヨユウヲモッテ<lf>
 イキテミルカ？
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
+\\\\\\\\\\\
 はい<lf>いいえ
 enterd : /[$0]
 entrance: /[$0]
-TalkNPC1

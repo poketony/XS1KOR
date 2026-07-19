@@ -1,3 +1,4 @@
+# extraction_order: precise_code_v4
 # chunk 2 @ 0x4a8 cnum=517 total=13
 # bc_map: 12,0,2,3,6,8,9,7,1,10,11,4,5
 ＥＶＳ【환경 시뮬레이터】를 종료합니다．

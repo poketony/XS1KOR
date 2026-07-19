@@ -1,19 +1,17 @@
+# extraction_order: precise_code_v4
 # chunk 3 @ 0x5d4 cnum=431 total=11
 # bc_map: 8,9,0,4,0,10,0,7,1,6,5,3,7,2
 뭔가 떨어져 있는 것 같다．<lf>
 가져가겠습니까？
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 「드릴 패스포트」를 손에 넣었다！
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ＥＶＳ【환경 시뮬레이터】를 종료합니다．
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
-예<lf>아니요
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): 예<lf>아니요
 enterd : /[$0]
 【환경 시뮬레이터】・VOK07로 jump！！
 【환경 시뮬레이터】・ＶＯＫ０６으로 점프！！
 evsExit를 호출했습니다
-# dup_of: line 8, tag8 7
-예<lf>아니요
+#dup(2): 예<lf>아니요
 entrance: /[$0]

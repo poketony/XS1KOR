@@ -1,3 +1,4 @@
+# extraction_order: precise_code_v4
 # chunk 1 @ 0x1ec cnum=188 total=15
 # bc_map: 12,1,13,2,10,0,11,14,3,4,5,6,7,8,9
 ボス戦闘後後処理

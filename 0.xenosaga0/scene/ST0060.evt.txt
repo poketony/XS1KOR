@@ -1,2145 +1,1118 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x88c cnum=2677 total=565
-# bc_map: 2,113,541,488,5,1,107,301,6,2,193,522,136,551,4,420,530,520,5,1,252,6,0,115,4,517,466,355,388,205,5,1,348,162,544,454,6,1,236,512,424,6,0,387,521,552,542,232,5,2,444,328,4,278,478,6,0,321,442,6,0,510,353,313,5,2,181,323,527,414,208,4,526,6,0,122,129,525,4,546,349,244,133,284,6,0,275,547,346,539,405,6,2,228,426,5,0,262,379,398,465,77,6,2,92,354,292,6,2,139,227,5,0,261,4,448,534,127,413,469,5,2,188,496,6,2,499,59,5,0,384,4,153,450,507,5,2,167,549,141,6,2,89,479,5,0,359,212,5,2,203,293,441,6,0,505,172,372,5,2,180,6,2,112,324,531,5,0,359,33,5,2,21,6,0,285,6,2,96,511,5,0,66,135,403,423,378,545,5,2,95,294,437,6,0,449,452,226,5,2,406,242,428,6,0,453,436,5,2,243,429,434,5,0,152,5,2,190,57,4,197,194,6,2,240,5,0,23,5,2,202,5,0,32,5,2,74,124,155,6,0,27,6,2,99,241,5,0,493,411,149,369,5,2,94,221,480,6,0,163,123,40,483,430,5,2,31,368,5,0,367,4,39,37,38,5,2,23,6,2,29,237,5,0,131,298,484,5,2,160,279,6,0,65,482,473,392,486,487,5,2,94,182,564,6,2,550,5,0,254,176,485,5,2,245,173,267,6,2,250,5,0,352,5,2,105,5,0,258,222,555,288,209,5,2,270,6,0,560,433,6,2,97,395,6,0,559,6,2,277,432,6,0,558,306,6,2,200,308,6,0,561,412,6,140,422,6,1,23,6,0,385,274,4,528,53,370,468,169,409,4,319,168,6,0,63,344,224,5,2,142,4,470,472,459,5,0,165,474,6,0,351,508,93,6,0,70,548,347,451,529,4,380,187,443,4,195,536,6,0,333,535,6,2,91,218,54,5,0,256,317,5,2,104,5,0,82,5,2,52,183,142,6,2,220,501,431,5,0,260,445,6,2,143,358,475,5,0,75,56,393,4,490,461,4,150,519,446,171,538,6,0,447,138,5,2,166,215,204,6,0,543,5,2,108,5,0,331,5,2,117,98,217,5,0,335,418,174,5,2,179,192,504,5,0,158,498,287,6,0,360,497,6,2,231,5,0,62,491,435,4,69,439,375,4,334,151,458,6,2,198,58,514,5,0,41,6,0,22,5,2,273,477,6,0,502,72,154,4,35,206,5,2,263,362,132,6,0,500,332,481,5,2,299,533,5,0,83,516,5,2,45,506,6,1,47,340,462,280,5,2,266,177,6,0,79,338,463,337,310,121,5,2,26,357,5,0,427,239,159,5,2,21,6,0,356,120,494,6,0,48,199,201,289,5,2,80,4,114,134,524,137,5,0,50,325,5,2,111,126,233,6,0,78,283,339,147,5,2,100,390,5,0,213,314,513,4,304,515,5,2,103,164,191,6,0,366,456,81,5,2,144,489,408,6,2,91,218,54,5,0,256,317,5,2,104,5,0,82,5,2,52,184,142,6,2,220,501,431,5,0,260,445,6,2,143,358,475,5,0,75,56,394,490,460,4,150,519,446,171,538,6,0,447,138,5,2,166,215,204,6,0,543,5,2,108,5,3,331,5,2,117,98,217,5,0,335,418,174,5,2,179,192,503,5,0,157,498,286,6,0,360,497,6,2,230,5,0,62,491,435,4,69,439,376,334,151,458,6,2,198,58,514,5,0,41,6,0,22,5,2,273,477,6,0,502,72,154,4,35,206,5,2,263,362,132,6,0,500,332,481,5,2,299,533,5,0,83,516,5,2,45,506,5,1,47,402,4,238,309,130,5,2,46,5,1,110,34,5,2,102,86,6,1,71,276,476,311,416,6,0,49,312,329,5,2,90,170,5,0,247,207,467,5,2,268,85,5,0,42,146,6,0,44,5,2,235,540,5,0,106,316,249,55,421,5,2,210,381,6,0,216,61,350,4,415,425,322,6,0,336,5,2,116,389,234,5,0,84,5,2,189,407,492,5,0,314,553,6,2,257,373,5,0,391,5,2,326,5,0,76,5,2,67,196,399,5,0,109,495,5,2,88,185,6,2,371,5,0,255,6,2,229,523,4,60,295,223,5,0,401,400,440,5,2,101,509,5,0,211,374,457,5,2,24,554,6,0,282,6,2,73,5,0,341,397,148,5,2,253,5,0,563,175,5,2,272,64,5,0,51,246,300,186,404,6,2,251,386,302,4,219,128,455,87,5,0,119,410,532,383,248,214,5,2,264,330,291,6,0,25,5,2,296,5,0,28,5,2,345,6,0,320,318,36,5,2,30,6,2,225,5,0,259,377,290,5,2,161,396,6,0,558,419,6,2,297,307,6,0,557,315,6,2,303,363,471,178,265,6,0,556,305,6,2,281,537,4,464,145,6,0,364,562,4,125,156,6,0,365,118,269,6,0,68,518,271,382,6,0,43,361,4,438,6,0,327,342,6,34,0,3,6,343,417,18,19,20,7,11,12,13,14,15,16,17,8,9,10,7,11,12,13,14,15,16,17,8,9,10,7,11,12,13,14,15,16,17,8,9,10,7,5,11,12,18,25,27,30,33,36,39,42,44,47,49,53,60,62,65,68,71,74,77,80,83,85,89,96,98,101,103,106,109,112,114,117,119,123,130,132,5,6,5,13,14,15,16,14,17,14,18,14,22,23,22,24,22,25,22,26,22,31,32,31,33,31,34,31,35,31,58,59,58,58,61,58,62,58,63,58,64,58,65,58,66,58,71,72,71,73,71,74,71,78,79,78,80,78,81,78,82,78,86,87,86,88,86,89,86,90,86,98,99,98,100,98,101,98,102,98,103,98,104,98,105,98,118,119,118,120,118,121,118,122,118,123,118,127,128,127,129,127,130,127,131,127,159,415,343,417,46,45,18,19,20,7,11,12,13,14,15,16,17,8,5,9,5,10,7,11,12,13,14,15,16,17,8,9,10,7,11,12,13,14,15,16,17,8,9,10,50,7,11,12,13,14,15,16,17,8,9,10,5
-/[label(시온)]
+# bc_map: 2,113,541,488,5,1,107,301,6,2,193,522,136,551,4,420,530,520,5,1,252,6,0,115,4,517,466,355,388,205,5,1,348,162,544,454,6,1,236,512,424,6,0,387,521,552,542,232,5,2,444,328,4,278,478,6,0,321,442,6,0,510,353,313,5,2,181,323,527,414,208,4,526,6,0,122,129,525,4,546,349,244,133,284,6,0,275,547,346,539,405,6,2,228,426,5,0,262,379,398,465,77,6,2,92,354,292,6,2,139,227,5,0,261,4,448,534,127,413,469,5,2,188,496,6,2,499,59,5,0,384,4,153,450,507,5,2,167,549,141,6,2,89,479,5,0,359,212,5,2,203,293,441,6,0,505,172,372,5,2,180,6,2,112,324,531,5,0,359,33,5,2,21,6,0,285,6,2,96,511,5,0,66,135,403,423,378,545,5,2,95,294,437,6,0,449,452,226,5,2,406,242,428,6,0,453,436,5,2,243,429,434,5,0,152,5,2,190,57,4,197,194,6,2,240,5,0,23,5,2,202,5,0,32,5,2,74,124,155,6,0,27,6,2,99,241,5,0,493,411,149,369,5,2,94,221,480,6,0,163,123,40,483,430,5,2,31,368,5,0,367,4,39,37,38,5,2,23,6,2,29,237,5,0,131,298,484,5,2,160,279,6,0,65,482,473,392,486,487,5,2,94,182,564,6,2,550,5,0,254,176,485,5,2,245,173,267,6,2,250,5,0,352,5,2,105,5,0,258,222,555,288,209,5,2,270,6,0,560,433,6,2,97,395,6,0,559,6,2,277,432,6,0,558,306,6,2,200,308,6,0,561,412,6,140,422,6,1,23,6,0,385,274,4,528,53,370,468,169,409,4,319,168,6,0,63,344,224,5,2,142,4,470,472,459,5,0,165,474,6,0,351,508,93,6,0,70,548,347,451,529,4,380,187,443,4,195,536,6,0,333,535,6,2,91,218,54,5,0,256,317,5,2,104,5,0,82,5,2,52,183,142,6,2,220,501,431,5,0,260,445,6,2,143,358,475,5,0,75,56,393,4,490,461,4,150,519,446,171,538,6,0,447,138,5,2,166,215,204,6,0,543,5,2,108,5,0,331,5,2,117,98,217,5,0,335,418,174,5,2,179,192,504,5,0,158,498,287,6,0,360,497,6,2,231,5,0,62,491,435,4,69,439,375,4,334,151,458,6,2,198,58,514,5,0,41,6,0,22,5,2,273,477,6,0,502,72,154,4,35,206,5,2,263,362,132,6,0,500,332,481,5,2,299,533,5,0,83,516,5,2,45,506,6,1,47,340,462,280,5,2,266,177,6,0,79,338,463,337,310,121,5,2,26,357,5,0,427,239,159,5,2,21,6,0,356,120,494,6,0,48,199,201,289,5,2,80,4,114,134,524,137,5,0,50,325,5,2,111,126,233,6,0,78,283,339,147,5,2,100,390,5,0,213,314,513,4,304,515,5,2,103,164,191,6,0,366,456,81,5,2,144,489,408,6,2,91,218,54,5,0,256,317,5,2,104,5,0,82,5,2,52,184,142,6,2,220,501,431,5,0,260,445,6,2,143,358,475,5,0,75,56,394,490,460,4,150,519,446,171,538,6,0,447,138,5,2,166,215,204,6,0,543,5,2,108,5,3,331,5,2,117,98,217,5,0,335,418,174,5,2,179,192,503,5,0,157,498,286,6,0,360,497,6,2,230,5,0,62,491,435,4,69,439,376,334,151,458,6,2,198,58,514,5,0,41,6,0,22,5,2,273,477,6,0,502,72,154,4,35,206,5,2,263,362,132,6,0,500,332,481,5,2,299,533,5,0,83,516,5,2,45,506,5,1,47,402,4,238,309,130,5,2,46,5,1,110,34,5,2,102,86,6,1,71,276,476,311,416,6,0,49,312,329,5,2,90,170,5,0,247,207,467,5,2,268,85,5,0,42,146,6,0,44,5,2,235,540,5,0,106,316,249,55,421,5,2,210,381,6,0,216,61,350,4,415,425,322,6,0,336,5,2,116,389,234,5,0,84,5,2,189,407,492,5,0,314,553,6,2,257,373,5,0,391,5,2,326,5,0,76,5,2,67,196,399,5,0,109,495,5,2,88,185,6,2,371,5,0,255,6,2,229,523,4,60,295,223,5,0,401,400,440,5,2,101,509,5,0,211,374,457,5,2,24,554,6,0,282,6,2,73,5,0,341,397,148,5,2,253,5,0,563,175,5,2,272,64,5,0,51,246,300,186,404,6,2,251,386,302,4,219,128,455,87,5,0,119,410,532,383,248,214,5,2,264,330,291,6,0,25,5,2,296,5,0,28,5,2,345,6,0,320,318,36,5,2,30,6,2,225,5,0,259,377,290,5,2,161,396,6,0,558,419,6,2,297,307,6,0,557,315,6,2,303,363,471,178,265,6,0,556,305,6,2,281,537,4,464,145,6,0,364,562,4,125,156,6,0,365,118,269,6,0,68,518,271,382,6,0,43,361,4,438,6,0,327,342,6,343,417,18,19,20
+# bc_unmap: 7,8,9,10,11,12,13,14,15,16,17
+#dup(1): /[label(시온)]
 으음，<lf>
 조정 베드에 누워 있는 리얼리언들의<lf>
 상태를 봐 주면 되는 거죠？
-/[waitkey(64)]/[clear()]
-/[label(카스파제)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(카스파제)]
 네 맞습니다．<lf>
 잘 부탁드리지요．
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 확실히 거절 신호가 나오고 있네요．<lf>
 행위주와 행위 주체의 관계，<lf>
 그중에서도 특히 자타의 차이성을<lf>
 인지하는 부분의 조정이 애매해요．
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 그들에게 자기 자신의 영속성을 제대로<lf>
 인지시켜 주지 않으면，내려진 명령과<lf>
 자신과의 상관관계에서 혼란을 겪거든요．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 6, tag8 1
-/[label(카스파제)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(카스파제)]
 하아…．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 음 그러니까 쉽게 말하면요，<lf>
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 자신과 다른 사람을<lf>
 명확하게 구분하지 못한다는 건，<lf>
 세상 안에서 자신이 어디에 존재하는지<lf>
 알 수 없게 되어 버린다는 말로<lf>
 이해하시면 돼요．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 6, tag8 1
-/[label(카스파제)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(카스파제)]
 리얼리언을 항상 기동시켜 둔다면<lf>
 그런 일은<lf>
 일어나지 않을 텐데 말이죠．<lf>
 전투 항행 중에는 좀처럼……．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 6, tag8 1
-/[label(카스파제)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(3): /[label(카스파제)]
 아무래도 전 생화학 전공인지라……．<lf>
 순수하게 신체적인 거라면 알겠는데，<lf>
 심리 소프트웨어 쪽은 어렵네요．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 출항 전 조정을 전임 카운슬러가<lf>
 해 주긴 했는데，<lf>
 이게 길게 항해하다 보니까……．<lf>
 조정 베드만으로는<lf>
 어떻게 해도 결함이 생겨 버려요……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 우리조차 장기 항해에는<lf>
 스트레스가 쌓이잖아요．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 하물며 그들은 이제 막 태어났으니까<lf>
 무리도 아니라고 봐요．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 카운슬러 요청도 했었지만，만성적인<lf>
 인력 부족이라며 단호히 거절하더라고요．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 간단한 카운슬링을 하는 동안에는<lf>
 언뜻 보면 아무 문제가 없어 보이는데，<lf>
 설치하려고 하면 에러가……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 즉，표면적으로 보정 프로그램에 의해<lf>
 의사소통이 되는 것처럼<lf>
 보일 뿐이지，<lf>
 실제로는 그들의 마음속엔 에러……<lf>
 즉 스트레스가 쌓이고 있단 거죠．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 요컨대 아기랑 똑같은 상태예요．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 벡터에는 분명<lf>
 여기 따위보다 훨씬 대규모고<lf>
 복잡한 조정 부서가 있겠죠．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 군에서도<lf>
 리얼리언들은 중요한 전력의 일부가<lf>
 되어 가는 중인데，<lf>
 그런 것치고 정비나 조정에 대해서는<lf>
 아직 한참 뒤처져 있어요．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 뭐，<lf>
 군의 높으신 분들 중에는<lf>
 리얼리언을 쓰다 버리는 도구로<lf>
 인식하고 있는 사람들이<lf>
 많다는 방증이겠죠．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 어때？<lf>
 응급 처치이긴 한데．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 네．적절한 표현은 못 하겠지만<lf>
 왠지 막힌 게 뚫린 기분이 듭니다．<lf>
 주변 풍경도<lf>
 밝아진 것처럼 느껴져요．<lf>
 감사합니다．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 응．<lf>
 세상이 밝아 보이게 됐다면<lf>
 이제 괜찮을 거야！
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 이걸로 됐어．<lf>
 어때，어지럽거나 하진 않아？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 네，괜찮습니다．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 저희는 전투용이라<lf>
 훈련만으로도 소모나 열화가 심한데，<lf>
 이렇게<lf>
 정기적으로 조정해 주셔서<lf>
 정말 감사할 따름입니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 아냐，<lf>
 내가 뭐 대단한 일을 한 것도 아닌데．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 나 있지，사실은<lf>
 너희가 싸우지 않았으면 좋겠어．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 다정하시군요．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 하지만 저는 전투용으로 개발됐습니다．<lf>
 전투를 부정하는 건<lf>
 제 존재에 대한 부정으로 이어집니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 그렇지，<lf>
 혼란스러운 말을 해서<lf>
 미안해……．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 음，너는 수치가 안정적이네．<lf>
 특별한 문제는 없어．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-알겠습니다．<lf>
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(7): 알겠습니다．<lf>
 그럼 임무로 복귀하겠습니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 잠깐만，<lf>
 조금 더 기뻐해도 된다고 생각하는데，<lf>
 감정 표현이 잘 안 되는 거야……？
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 저는 전투용으로 개발된 리얼리언입니다．<lf>
 그러한 감정의 기복은<lf>
 임무에 필요하지 않다고 생각합니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 그건 그렇지만……．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 그，「고마워」라는 말은<lf>
 의사소통의 첫걸음이야．<lf>
 알겠어？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 147, tag8 359
-알겠습니다．<lf>
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(7): 알겠습니다．<lf>
 「고마워」
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-…………．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(8): …………．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 아직 무슨 말이 더 필요하십니까？
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 으음，어찌 된 일일까？<lf>
 정신 파장이 흐트러져 있네……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 저기，저，<lf>
 이 보클린데에 배치된 이후로<lf>
 이상해요．<lf>
 서서히 정신적으로 불안정해지고，<lf>
 몸에 미세한 경련이，<lf>
 일어나기 시작했어요．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 으음，이 파형의 느낌은……<lf>
 설마 전투에 대한<lf>
 공포심 때문인 건가……？
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 전투에 대한 공포심이요？<lf>
 전투용으로 개발된 제가<lf>
 왜 그런 걸 느끼는 거죠！？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 괜찮아 괜찮아，<lf>
 어디가 고장 난 게 아니야．<lf>
 공포심은 생명체에게 자연스러운 거니까．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 전투용 리얼리언이<lf>
 공포를 느낀다니……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 아무리 훌륭하고 강한 병사라도<lf>
 무서워하거나 두려운 감정은 있어．<lf>
-공포를 극복하는 것도 강해지는 비결이야．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+공포를 이기는 것도 강해지는 비결이야．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 하지만 저는 리얼리언입니다……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 그런 건 관계없어．<lf>
 너는 우리와 똑같아．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 어쩌다 태어난 방식이 달랐을 뿐，<lf>
 그저 그뿐인 일이야．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 어딘가 컨디션 안 좋은 곳 있어？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-………．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(9): ………．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 저기，괜찮아？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 ……ＺＺＺ
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 어머，이 애는<lf>
 푹 잠들어 있네．<lf>
 당분간 그대로 놔두자．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 ……쿠울
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 음，딱히 이상한 곳은 없는데……．<lf>
 어디 안 좋은 데 있니？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 저，고사성어나 속담을<lf>
 학습 중인데요．<lf>
 잘 활용하지 못해서<lf>
 다른 분들께 비웃음만 사고 있어요．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-으으음……<lf>
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(10): 으으음……<lf>
 그래도 언어 중추 등에는<lf>
 별다른 이상이 없어 보이는데．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 그렇군요，<lf>
 분명 제 생각이 지나쳤던 걸 거예요．<lf>
 「돌다리도 두들기면 무너진다」면서요，<lf>
 조심해서 나쁠 게 없다고<lf>
 생각했거든요．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 ……저기，<lf>
 다른 속담들도 알려 줄래？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 다른 속담들요？
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 「고양이에게 생선 가시 맡긴다」<lf>
 「개천에서 욕 나온다」<lf>
 「약은 간식」
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 228, tag8 23
-………．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(9): ………．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 ……그거，<lf>
 어떻게 배운 거야？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 속담에 해박한 병사분께 배웠습니다．<lf>
 역시 어딘가<lf>
 이상한가요？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 으，으응……<lf>
 우선 선생님부터 바꾸는 게 좋겠다．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 저기，최근 들어<lf>
 특정 인물과 의사소통을 하는 중에<lf>
 기능 장애가 일어나고 있습니다．<lf>
 심장 박동이 빨라지거나<lf>
 땀이 자주 나게 되고，<lf>
 발음도 나빠지곤 합니다……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 255, tag8 94
-으으음……<lf>
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(10): 으으음……<lf>
 그건 확실히 이상한걸．<lf>
 ＯＳ에 버그라도 있는 걸까……．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 평소 임무에 지장은 없어？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-네，<lf>
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(11): 네，<lf>
 그 특정 인물과 접촉하지만 않으면<lf>
 이상은 발생하지 않는 것 같습니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 대체 원인이 뭘까……<lf>
 그 사람이 바이러스라도<lf>
 뿌리고 다니는 건가？
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 저기，그 특정 인물은 누구야？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 벡터 제１ 개발국의 알렌 씨입니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 엑，알렌？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 네，알렌 씨를 만나면<lf>
 갑자기 몸이 위축되기 시작하고<lf>
 머리가 어지러워지며 수치심이 솟구쳐서<lf>
 제대로 대화를<lf>
 할 수 없는 상태가 됩니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 흐음，재미있는 증상이네．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 （과연，그녀는 알렌 씨를<lf>
 좋아하고 있는 거구나……．）
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 으음，모르겠다．<lf>
 원인이 뭔지 감도 안 잡혀！
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 （에엑，모르겠다고！？）
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 설마 알렌한테서<lf>
 괴전파라도 나오고 있나……？
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
-（아니，그게 아니라<lf>
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
+#dup(12): （아니，그게 아니라<lf>
 알렌 씨를 좋아해서 그런 거겠죠……．）
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 나중에 잠깐<lf>
 알렌을 조사해 볼 필요가 있겠다！
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 （아니에요……<lf>
 그게 아니라고요……！）
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
+#dup(4): /[waitkey(64)]/[close()]
 죄송합니다<lf>
 나중에 추가하겠습니당ー！
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 6, tag8 1
-/[label(카스파제)]
-# dup_of: line 228, tag8 23
-………．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(3): /[label(카스파제)]
+#dup(9): ………．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 나 참，그 버질 중위라는 사람<lf>
 진짜 음흉해 보이지 않아요？
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 보셨어요？<lf>
 그 사람 여성용 팔찌 같은 걸<lf>
 차고 다닌다니까요．<lf>
 본인은 멋있다고 생각할 텐데<lf>
 그 생각을 하니 열까지 받아요．<lf>
 불쾌하라고 일부러 그러나……？
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 우즈키 씨도<lf>
 그렇게 생각하지 않으세요？
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 저기 우즈키 씨，<lf>
 리얼리언의 「긴급 제어 코드」라는 건<lf>
 대체 뭔가요……？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-죄송합니다．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(13): 죄송합니다．
+#dup(5): /[waitkey(1)]/[clear()]
 본사에서도 일부밖에 모르는<lf>
 기밀 사항이라서<lf>
 알려 드릴 수가 없어요．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 그런가요？<lf>
 유감입니다……．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 벡터의 개발자밖에 모르는<lf>
 비밀 코드……．<lf>
 으으음，신경 쓰여요．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 그 버질 중위라는 사람，<lf>
 군인으로서 실력은 확실한 것 같던데<lf>
 리얼리언한테 못되게 군대요……．<lf>
 전투 중에 아무렇지 않게 방패로 쓰거나<lf>
 버리고 온다고 하더라고요．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 과거에 무슨 일이 있었던 모양인데，<lf>
 그때 이후로 리얼리언을<lf>
 증오하게 됐다나 뭐라나……．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 설령 그게 사실이라 해도<lf>
 정당화되는 건 아니라고요．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 버질 중위의 행동은<lf>
 용서받을 수 있는 것이 아닙니다！
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-응，이제 괜찮은 것 같네．<lf>
-하지만 조심해야 해．<lf>
-어디까지나 응급 처치에 불과하니까．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-네，그런데 저기，<lf>
-우즈키 씨는 괜찮으십니까？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-응？ 뭐가？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-그，아까 버질 중위님께……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-아，괜찮으니까 신경 쓰지 마！<lf>
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
+#dup(14): 응，이제 괜찮은 것 같네．<lf>
+#dup(15): 하지만 조심해야 해．<lf>
+#dup(16): 어디까지나 응급 처치에 불과하니까．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(17): 네，그런데 저기，<lf>
+#dup(18): 우즈키 씨는 괜찮으십니까？
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(19): 응？ 뭐가？
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(20): 그，아까 버질 중위님께……．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(21): 아，괜찮으니까 신경 쓰지 마！<lf>
 그것보다 너희를 다치게 했네．<lf>
-# dup_of: line 391, tag8 142
-죄송합니다．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-그치만 안심해도 돼．<lf>
-난 너희를 도구라고<lf>
-생각한 적 없으니까．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-네，우즈키 씨의 마음은<lf>
-저희에게도 잘 전해지고 있습니다．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-미안해，<lf>
-중위가 한 말 같은 건<lf>
-신경 쓰지 마．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-감사합니다，우즈키 씨．<lf>
-당신이 저희를 배려해 주시는 마음은<lf>
+#dup(13): 죄송합니다．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
+#dup(22): 그치만 안심해도 돼．<lf>
+#dup(23): 난 너희를 도구라고<lf>
+#dup(24): 생각한 적 없으니까．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(25): 네，우즈키 씨의 마음은<lf>
+#dup(26): 저희에게도 잘 전해지고 있습니다．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
+#dup(27): 미안해，<lf>
+#dup(28): 중위가 한 말 같은 건<lf>
+#dup(29): 신경 쓰지 마．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(30): 감사합니다，우즈키 씨．<lf>
+#dup(31): 당신이 저희를 배려해 주시는 마음은<lf>
 충분히 이해합니다．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
-확실히 저희는 적과 싸우기 위해<lf>
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(32): 확실히 저희는 적과 싸우기 위해<lf>
 어떤 명령이든 따릅니다．<lf>
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
-하지만 저희는 자기 자신을<lf>
-도구라고 생각하지 않습니다．<lf>
-저희는 여러분을 지키기 위해 싸우며，<lf>
-그 사실을 매우 긍지 높은 일로<lf>
-생각하고 있습니다．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
-저희는 그 긍지를 위해<lf>
-이 몸을 바쳐 싸우고 있는 겁니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-그래，<lf>
-하지만 그런 삶의 방식은<lf>
-조금 슬프다고 생각해……．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
-질문해도 되겠습니까？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-응，얼마든지．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-버질 중위님이 싫으십니까？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-어？ 으음，<lf>
-아까 처음 봤으니까 뭐라곤 못 하지．<lf>
-하지만 그의 사고방식은 조금……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-버질 중위님은 우수한 병사입니다．<lf>
-그분이 저희를 물건으로 취급하는 것도<lf>
-그 우수함 때문이라고 생각합니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-그건 그럴지도 모르지만……．<lf>
-그런 피도 눈물도 없는 사고방식은<lf>
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(33): 하지만 저희는 자기 자신을<lf>
+#dup(34): 도구라고 생각하지 않습니다．<lf>
+#dup(35): 저희는 여러분을 지키기 위해 싸우며，<lf>
+#dup(36): 그 사실을 매우 긍지 높은 일로<lf>
+#dup(37): 생각하고 있습니다．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
+#dup(38): 저희는 그 긍지를 위해<lf>
+#dup(39): 이 몸을 바쳐 싸우고 있는 겁니다．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(40): 그래，<lf>
+#dup(41): 하지만 그런 삶의 방식은<lf>
+#dup(42): 조금 슬프다고 생각해……．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
+#dup(43): 질문해도 되겠습니까？
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(44): 응，얼마든지．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(45): 버질 중위님이 싫으십니까？
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(46): 어？ 으음，<lf>
+#dup(47): 아까 처음 봤으니까 뭐라곤 못 하지．<lf>
+#dup(48): 하지만 그의 사고방식은 조금……．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(49): 버질 중위님은 우수한 병사입니다．<lf>
+#dup(50): 그분이 저희를 물건으로 취급하는 것도<lf>
+#dup(51): 그 우수함 때문이라고 생각합니다．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(52): 그건 그럴지도 모르지만……．<lf>
+#dup(53): 그런 피도 눈물도 없는 사고방식은<lf>
 싫어하거든．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-죄송합니다．<lf>
-저는 그 감정이<lf>
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(54): 죄송합니다．<lf>
+#dup(55): 저는 그 감정이<lf>
 아직은 이해가 가지 않습니다．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
-사람의 감정이란 건 어렵군요．<lf>
-저는 아직 이해를 못 하겠습니다．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
+#dup(56): 사람의 감정이란 건 어렵군요．<lf>
+#dup(57): 저는 아직 이해를 못 하겠습니다．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 왜 그렇게 떨어，무슨 일 있어？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-저기，<lf>
-저，<lf>
-공포를 느끼고 있습니다．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
-그 버질 중위님의 말을 듣자마자<lf>
-의지와 관계없이<lf>
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(58): 저기，<lf>
+#dup(59): 저，<lf>
+#dup(60): 공포를 느끼고 있습니다．
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(61): 그 버질 중위님의 말을 듣자마자<lf>
+#dup(62): 의지와 관계없이<lf>
 몸이 경련하기 시작해서……．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
-버질 중위님의 말은 충분히 이해합니다．<lf>
-하지만 제 몸은<lf>
-거부 반응을 일으키는 모양이라……．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-괜찮으니까 안심해도 돼．<lf>
-너는 일회용 도구 같은 게 아냐．<lf>
-그렇게 되게 두진 않겠어！
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-가，감사합니다．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
-…………쿠울쿠울．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-정말<lf>
-기분 좋게 자고 있네．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
-저는 버질 중위님을<lf>
-좋아하기 힘들 것 같습니다．<lf>
-하지만 부대에선 상당한 실력자라더군요．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
-「미운 놈 떡 하나 더 뺏는다」라는<lf>
-속담이 떠오르네요！
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-그래그래，<lf>
-다음에 제대로 된<lf>
-속담 사전을 가져다줄게．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
-제 몸은<lf>
-버질 중위님에게도<lf>
-특별한 반응을 일으키는 것 같습니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-그럼 숨이 가빠지거나<lf>
-말이 안 나오거나 그래？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-아뇨，속이 메스껍고<lf>
-등줄기가 오싹오싹합니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-아，그런 거라면 괜찮아．<lf>
-그건 나도 똑같거든．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 6, tag8 1
-/[label(카스파제)]
-아 우즈키 씨，<lf>
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(63): 버질 중위님의 말은 충분히 이해합니다．<lf>
+#dup(64): 하지만 제 몸은<lf>
+#dup(65): 거부 반응을 일으키는 모양이라……．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
+#dup(66): 괜찮으니까 안심해도 돼．<lf>
+#dup(67): 너는 일회용 도구 같은 게 아냐．<lf>
+#dup(68): 그렇게 되게 두진 않겠어！
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(69): 가，감사합니다．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
+#dup(70): …………쿠울쿠울．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(71): 정말<lf>
+#dup(72): 기분 좋게 자고 있네．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
+#dup(73): 저는 버질 중위님을<lf>
+#dup(74): 좋아하기 힘들 것 같습니다．<lf>
+#dup(75): 하지만 부대에선 상당한 실력자라더군요．
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(76): 「미운 놈 떡 하나 더 뺏는다」라는<lf>
+#dup(77): 속담이 떠오르네요！
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(78): 그래그래，<lf>
+#dup(79): 다음에 제대로 된<lf>
+#dup(80): 속담 사전을 가져다줄게．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
+#dup(81): 제 몸은<lf>
+#dup(82): 버질 중위님에게도<lf>
+#dup(83): 특별한 반응을 일으키는 것 같습니다．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(84): 그럼 숨이 가빠지거나<lf>
+#dup(85): 말이 안 나오거나 그래？
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(86): 아뇨，속이 메스껍고<lf>
+#dup(87): 등줄기가 오싹오싹합니다．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(88): 아，그런 거라면 괜찮아．<lf>
+#dup(89): 그건 나도 똑같거든．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(3): /[label(카스파제)]
+#dup(90): 아 우즈키 씨，<lf>
 브리지에는 벌써 갔다 오신 건가요？<lf>
 빨리 안 가면<lf>
 또 버질한테 비아냥을 들을걸요．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 하하하，<lf>
 그것만큼은 피하고 싶네요．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 어라 우즈키 씨．<lf>
 브리지에서 호출받으시지 않았어요？<lf>
 빨리 가시는 게 좋을 겁니다．<lf>
 브리지에는 「그」<lf>
 앤드루 중령님이 계시니까요．<lf>
 분명 그냥 넘어가시진 않을걸요？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 ……헉，<lf>
 중령님이 그렇게 무서운 분이셨어！？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 무섭다기보다는<lf>
 어딘가 정체를 알 수 없는 듯한<lf>
 느낌이 든단 말이죠 중령님은．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 173, tag8 21
-…………．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(8): …………．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 이쪽에 오신 지 얼마 안 돼서<lf>
 얘기를 많이 나눠 보지는 않았지만<lf>
 저는 좀 거북하더라고요．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 아，우즈키 씨！<lf>
 마침 잘됐네요．<lf>
 잠깐 여기 에러를<lf>
 한번 봐 주셨으면 하는데요……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 알겠습니다．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 으음，이 코드는<lf>
 이대로 쓰면 에러가 날 거예요．<lf>
 꼼수긴 한데，<lf>
 이 명령에 요걸 이렇게 끼워 넣으면…．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 아，정말로 되네요！<lf>
 덕분에 완성됐습니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 네，ＯＳ 버전에 따라선<lf>
 이런 잔기술들이<lf>
 꼭 필요한 순간들이 있더라고요．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 어라 우즈키 씨，<lf>
 아직도 계셨군요？<lf>
 브리지의 호출을 무시하다니<lf>
 역시 배짱이 두둑하신데요！
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 앗，아뇨，<lf>
 딱히 무시할 의도는……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 그래도 저 들은 게 있다구요．<lf>
-우즈키 씨는<lf>
+#dup(91): 우즈키 씨는<lf>
 상당히 무모하시다고 하던데요．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 알렌 씨가 위장에 구멍이<lf>
 숭숭 날 것 같다고 푸념했었어요．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 앗，정말요？<lf>
 그랬구나，<lf>
 그럴 생각은 없었는데 말이죠．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 일에 있어 타협을 모르는<lf>
 재색을 겸비한 젊은 과학자！<lf>
 멋지지 않나요？ 존경하게 된다구요．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 재，재색을 겸비했는지는 둘째 치고<lf>
 확실히 일에 있어서 가급적<lf>
 타협하고 싶지 않다는 마음은 있죠．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 425, tag8 91
-응，이제 괜찮은 것 같네．<lf>
-# dup_of: line 426, tag8 218
-하지만 조심해야 해．<lf>
-# dup_of: line 427, tag8 54
-어디까지나 응급 처치에 불과하니까．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 430, tag8 256
-네，그런데 저기，<lf>
-# dup_of: line 431, tag8 317
-우즈키 씨는 괜찮으십니까？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 434, tag8 104
-응？ 뭐가？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 437, tag8 82
-그，아까 버질 중위님께……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 440, tag8 52
-아，괜찮으니까 신경 쓰지 마！<lf>
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
+#dup(14): 응，이제 괜찮은 것 같네．<lf>
+#dup(15): 하지만 조심해야 해．<lf>
+#dup(16): 어디까지나 응급 처치에 불과하니까．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(17): 네，그런데 저기，<lf>
+#dup(18): 우즈키 씨는 괜찮으십니까？
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(19): 응？ 뭐가？
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(20): 그，아까 버질 중위님께……．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(21): 아，괜찮으니까 신경 쓰지 마！<lf>
 그보다 너희가 다치게 해 버렸네．<lf>
-# dup_of: line 391, tag8 142
-죄송합니다．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 445, tag8 220
-그치만 안심해도 돼．<lf>
-# dup_of: line 446, tag8 501
-난 너희를 도구라고<lf>
-# dup_of: line 447, tag8 431
-생각한 적 없으니까．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 450, tag8 260
-네，우즈키 씨의 마음은<lf>
-# dup_of: line 451, tag8 445
-저희에게도 잘 전해지고 있습니다．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 454, tag8 143
-미안해，<lf>
-# dup_of: line 455, tag8 358
-중위가 한 말 같은 건<lf>
-# dup_of: line 456, tag8 475
-신경 쓰지 마．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 459, tag8 75
-감사합니다，우즈키 씨．<lf>
-# dup_of: line 460, tag8 56
-당신이 저희를 배려해 주시는 마음은<lf>
+#dup(13): 죄송합니다．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
+#dup(22): 그치만 안심해도 돼．<lf>
+#dup(23): 난 너희를 도구라고<lf>
+#dup(24): 생각한 적 없으니까．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(25): 네，우즈키 씨의 마음은<lf>
+#dup(26): 저희에게도 잘 전해지고 있습니다．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
+#dup(27): 미안해，<lf>
+#dup(28): 중위가 한 말 같은 건<lf>
+#dup(29): 신경 쓰지 마．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(30): 감사합니다，우즈키 씨．<lf>
+#dup(31): 당신이 저희를 배려해 주시는 마음은<lf>
 이 정도는 충분히 이해합니다．<lf>
-# dup_of: line 463, tag8 490
-확실히 저희는 적과 싸우기 위해<lf>
+#dup(32): 확실히 저희는 적과 싸우기 위해<lf>
 적과 싸우려면 어떤 명령이든 따라야죠．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
-# dup_of: line 466, tag8 150
-하지만 저희는 자기 자신을<lf>
-# dup_of: line 467, tag8 519
-도구라고 생각하지 않습니다．<lf>
-# dup_of: line 468, tag8 446
-저희는 여러분을 지키기 위해 싸우며，<lf>
-# dup_of: line 469, tag8 171
-그 사실을 매우 긍지 높은 일로<lf>
-# dup_of: line 470, tag8 538
-생각하고 있습니다．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 473, tag8 447
-저희는 그 긍지를 위해<lf>
-# dup_of: line 474, tag8 138
-이 몸을 바쳐 싸우고 있는 겁니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 477, tag8 166
-그래，<lf>
-# dup_of: line 478, tag8 215
-하지만 그런 삶의 방식은<lf>
-# dup_of: line 479, tag8 204
-조금 슬프다고 생각해……．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 482, tag8 543
-질문해도 되겠습니까？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 485, tag8 108
-응，얼마든지．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(33): 하지만 저희는 자기 자신을<lf>
+#dup(34): 도구라고 생각하지 않습니다．<lf>
+#dup(35): 저희는 여러분을 지키기 위해 싸우며，<lf>
+#dup(36): 그 사실을 매우 긍지 높은 일로<lf>
+#dup(37): 생각하고 있습니다．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
+#dup(38): 저희는 그 긍지를 위해<lf>
+#dup(39): 이 몸을 바쳐 싸우고 있는 겁니다．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(40): 그래，<lf>
+#dup(41): 하지만 그런 삶의 방식은<lf>
+#dup(42): 조금 슬프다고 생각해……．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
+#dup(43): 질문해도 되겠습니까？
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(44): 응，얼마든지．
+#dup(2): /[waitkey(64)]/[clear()]
 /[label(리얼리언（Ｃ）)]
-# dup_of: line 488, tag8 331
-버질 중위님이 싫으십니까？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 491, tag8 117
-어？ 으음，<lf>
-# dup_of: line 492, tag8 98
-아까 처음 봤으니까 뭐라곤 못 하지．<lf>
-# dup_of: line 493, tag8 217
-하지만 그의 사고방식은 조금……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 496, tag8 335
-버질 중위님은 우수한 병사입니다．<lf>
-# dup_of: line 497, tag8 418
-그분이 저희를 물건으로 취급하는 것도<lf>
-# dup_of: line 498, tag8 174
-그 우수함 때문이라고 생각합니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 501, tag8 179
-그건 그럴지도 모르지만……．<lf>
-# dup_of: line 502, tag8 192
-그런 피도 눈물도 없는 사고방식은<lf>
+#dup(45): 버질 중위님이 싫으십니까？
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(46): 어？ 으음，<lf>
+#dup(47): 아까 처음 봤으니까 뭐라곤 못 하지．<lf>
+#dup(48): 하지만 그의 사고방식은 조금……．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(49): 버질 중위님은 우수한 병사입니다．<lf>
+#dup(50): 그분이 저희를 물건으로 취급하는 것도<lf>
+#dup(51): 그 우수함 때문이라고 생각합니다．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(52): 그건 그럴지도 모르지만……．<lf>
+#dup(53): 그런 피도 눈물도 없는 사고방식은<lf>
 난 그런 건 싫어．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-죄송합니다．<lf>
-# dup_of: line 507, tag8 498
-저는 그 감정이<lf>
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(54): 죄송합니다．<lf>
+#dup(55): 저는 그 감정이<lf>
 아직도 이해가 되질 않는군요．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 511, tag8 360
-사람의 감정이란 건 어렵군요．<lf>
-# dup_of: line 512, tag8 497
-저는 아직 이해를 못 하겠습니다．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
+#dup(56): 사람의 감정이란 건 어렵군요．<lf>
+#dup(57): 저는 아직 이해를 못 하겠습니다．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 왜 떨고 그래，무슨 일 있어？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 518, tag8 62
-저기，<lf>
-# dup_of: line 519, tag8 491
-저，<lf>
-# dup_of: line 520, tag8 435
-공포를 느끼고 있습니다．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
-# dup_of: line 522, tag8 69
-그 버질 중위님의 말을 듣자마자<lf>
-# dup_of: line 523, tag8 439
-의지와 관계없이<lf>
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(58): 저기，<lf>
+#dup(59): 저，<lf>
+#dup(60): 공포를 느끼고 있습니다．
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(61): 그 버질 중위님의 말을 듣자마자<lf>
+#dup(62): 의지와 관계없이<lf>
 몸이 경련하기 시작해서……．<lf>
-# dup_of: line 526, tag8 334
-버질 중위님의 말은 충분히 이해합니다．<lf>
-# dup_of: line 527, tag8 151
-하지만 제 몸은<lf>
-# dup_of: line 528, tag8 458
-거부 반응을 일으키는 모양이라……．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 531, tag8 198
-괜찮으니까 안심해도 돼．<lf>
-# dup_of: line 532, tag8 58
-너는 일회용 도구 같은 게 아냐．<lf>
-# dup_of: line 533, tag8 514
-그렇게 되게 두진 않겠어！
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 536, tag8 41
-가，감사합니다．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 539, tag8 22
-…………쿠울쿠울．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 542, tag8 273
-정말<lf>
-# dup_of: line 543, tag8 477
-기분 좋게 자고 있네．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 546, tag8 502
-저는 버질 중위님을<lf>
-# dup_of: line 547, tag8 72
-좋아하기 힘들 것 같습니다．<lf>
-# dup_of: line 548, tag8 154
-하지만 부대에선 상당한 실력자라더군요．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
-# dup_of: line 550, tag8 35
-「미운 놈 떡 하나 더 뺏는다」라는<lf>
-# dup_of: line 551, tag8 206
-속담이 떠오르네요！
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 554, tag8 263
-그래그래，<lf>
-# dup_of: line 555, tag8 362
-다음에 제대로 된<lf>
-# dup_of: line 556, tag8 132
-속담 사전을 가져다줄게．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 559, tag8 500
-제 몸은<lf>
-# dup_of: line 560, tag8 332
-버질 중위님에게도<lf>
-# dup_of: line 561, tag8 481
-특별한 반응을 일으키는 것 같습니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 564, tag8 299
-그럼 숨이 가빠지거나<lf>
-# dup_of: line 565, tag8 533
-말이 안 나오거나 그래？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 568, tag8 83
-아뇨，속이 메스껍고<lf>
-# dup_of: line 569, tag8 516
-등줄기가 오싹오싹합니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 572, tag8 45
-아，그런 거라면 괜찮아．<lf>
-# dup_of: line 573, tag8 506
-그건 나도 똑같거든．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 6, tag8 1
-/[label(카스파제)]
-# dup_of: line 576, tag8 47
-아 우즈키 씨，<lf>
+#dup(63): 버질 중위님의 말은 충분히 이해합니다．<lf>
+#dup(64): 하지만 제 몸은<lf>
+#dup(65): 거부 반응을 일으키는 모양이라……．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
+#dup(66): 괜찮으니까 안심해도 돼．<lf>
+#dup(67): 너는 일회용 도구 같은 게 아냐．<lf>
+#dup(68): 그렇게 되게 두진 않겠어！
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(69): 가，감사합니다．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
+#dup(70): …………쿠울쿠울．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(71): 정말<lf>
+#dup(72): 기분 좋게 자고 있네．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
+#dup(73): 저는 버질 중위님을<lf>
+#dup(74): 좋아하기 힘들 것 같습니다．<lf>
+#dup(75): 하지만 부대에선 상당한 실력자라더군요．
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(76): 「미운 놈 떡 하나 더 뺏는다」라는<lf>
+#dup(77): 속담이 떠오르네요！
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(78): 그래그래，<lf>
+#dup(79): 다음에 제대로 된<lf>
+#dup(80): 속담 사전을 가져다줄게．
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
+#dup(81): 제 몸은<lf>
+#dup(82): 버질 중위님에게도<lf>
+#dup(83): 특별한 반응을 일으키는 것 같습니다．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(84): 그럼 숨이 가빠지거나<lf>
+#dup(85): 말이 안 나오거나 그래？
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(86): 아뇨，속이 메스껍고<lf>
+#dup(87): 등줄기가 오싹오싹합니다．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(88): 아，그런 거라면 괜찮아．<lf>
+#dup(89): 그건 나도 똑같거든．
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(카스파제)]
+#dup(90): 아 우즈키 씨，<lf>
 보고는 벌써 끝난 건가요？
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 얼굴을 보니 아무래도<lf>
 앤드루 중령님께 호되게<lf>
 깨지신 듯한 느낌이 드네요．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 아，그게 티가 나나요？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 6, tag8 1
-/[label(카스파제)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(카스파제)]
 네，얼굴에 딱 적혀 있다구요．<lf>
 「중령님 완전 짜증 나！」라고요．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 앗，정말요！？<lf>
 누가 그새 적은 건지！
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 6, tag8 1
-/[label(카스파제)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(3): /[label(카스파제)]
 아하하하．<lf>
 뭐 그렇게<lf>
 신경 쓰실 필요 없어요．<lf>
 앤드루 중령님은<lf>
 좀 과하게 신경질적인 면이 있거든요．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 아 우즈키 씨！<lf>
 앤드루 중령님이 뭐라 하던가요？<lf>
 막 끈질기게 괴롭혔었죠？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 네，뭐<lf>
 그냥저냥……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 뭐야，그랬나요？<lf>
 재미없게시리．<lf>
 기대하고 있었는데 말이죠……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 너무해요！<lf>
 대체 뭘 기대하고 있었단 거예요？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 아，아하하，<lf>
 자，그럼 일이나 해 볼까！
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 아，수고하십니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 어떤가요，<lf>
 조정은 순조롭게 되고 있나요？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-네，<lf>
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(11): 네，<lf>
 우즈키 씨 덕분에<lf>
 어떻게든 끝낼 수 있을 것 같습니다．<lf>
 남은 건 그들의 임무가 개시될 때까지<lf>
 대기시켜 두는 것뿐이에요．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 가능하다면 이대로<lf>
 아무 일 없이 끝나면 좋겠지만요．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 그나저나 우즈키 씨는 정말 대단하군요．<lf>
 그 /[font(ＫＯＳ−ＭＯＳ)]의 설계자이자<lf>
 벡터의 유망주이니까요．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 대그노시스용으로 개발된 전쟁의 여신！<lf>
 필살의 힐베르트 이펙트가 있다면<lf>
 그노시스 따위는 적이 안 될 테죠！
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 브리지에서 무슨 일 있으셨나요？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 어！？<lf>
 딱히 아무 일도 없었는데．<lf>
 왜？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 아니，표정이 조금 어두워 보여서요．<lf>
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 그런 거 아냐！<lf>
 괜찮아 괜찮아．<lf>
 난 그 정도론 굴하지 않거든！
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 645, tag8 314
-우즈키 씨는<lf>
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
+#dup(91): 우즈키 씨는<lf>
 숨기는 걸 잘 못 하는 타입이시군요．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 자，이제 됐어．<lf>
 임무로 복귀해도 될 거야．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 감사합니다 우즈키 씨．<lf>
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 시온이라고 불러도 돼．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 감사합니다，시온．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 저기 있지，<lf>
 설령 자신의 긍지를 위해서라 해도<lf>
 목숨을 함부로 하지는 마．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 네，물론 그럴 겁니다．<lf>
 저희도 죽는 건 싫거든요．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 응，<lf>
 그 말을 들으니 안심이 되네．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 임무 열심히 하고！
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 네，감사합니다．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 어때，조금은 감정을<lf>
 겉으로 드러낼 수 있게 됐니？
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 너희는 전투를 위한 도구가 아냐．<lf>
 보다 다양한 사람들과 의사소통을<lf>
 할 수 있게 되어야 해．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 명령입니까？<lf>
 명령이라면<lf>
 감정을 표현할 수 있게 노력하겠습니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 앗，아니，명령까지는 아닌데……．<lf>
 애초에 나한테 명령할 권한은 없어．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 그렇다면 임무에 대한 필요성을<lf>
 인정할 수 없으므로<lf>
 따르기 어렵습니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 ………．<lf>
 고집 센 건 충분히 잘 표현되고 있네．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 또 무슨 할 말이 있는 겁니까？
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 어머，넌 처음 보는 얼굴인걸？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 헤이，마이 스위트 허니．<lf>
 너한테라면 나의 모든 것을<lf>
 드러낼 수 있어．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 ……뭐？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 ＯＨ，큐트！<lf>
 그 곤란해하는 얼굴도 각별하군 베이비！
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 베이비라니……<lf>
 저기，뭐죠 이건？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 아，<lf>
 아무래도 병사들한테<lf>
 쓸데없는 정보를 주입받은 모양이라<lf>
 그때 이후로 성격 설정이<lf>
 바뀌어 버린 모양입니다．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 하아……<lf>
 군인들 중엔 정말<lf>
 제대로 된 사람이 없다니까！
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 그나저나 곤란하게 됐네．<lf>
 여기서 리셋할 수도 없는 노릇이고，<lf>
 돌아올 때까지 이대로<lf>
 놔둘 수밖에 없겠는걸．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 오오，날 버리는 거야？<lf>
 아기 고양이 씨，<lf>
 그렇게 슬픈 말은 하지 말아 줘．<lf>
 난 이렇게나 네게 헌신하고 있는데，<lf>
 너는 어쩜 그리 무정한 거니．<lf>
 하지만 그 또한 매력적이군，마이 러브！
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 네네，<lf>
 허니든 러브든 됐으니까<lf>
 이제 그만 조용히 하자．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 ………쿨
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 와，얘는 아직도 자고 있네．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 ……쿠울쿠울
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 리얼리언도 꿈을 꿀까……？
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 우즈키 씨！<lf>
 우즈키 씨 같은 아름다운 사람을 두고<lf>
 「군계일닭」이라고 하는 거죠！？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 ……군계일학이겠지．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 어때，아직도 컨디션이 안 좋아？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label()]
 네，알렌 씨를 생각하기만 하면<lf>
 몸이 긴장되고 뜨거워집니다．<lf>
 완전 아무것도 못 하게 돼서……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 그렇구나……．<lf>
 원인은 모르겠지만 꽤 심각한걸．<lf>
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 354, tag8 558
-（아니，그게 아니라<lf>
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
+#dup(12): （아니，그게 아니라<lf>
 알렌 씨가 좋아서 그런 거라구요오！）
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 역시 알렌한테<lf>
 원인이 있는 걸까……．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 （……왜 결론이 그렇게 되는 건데요？<lf>
 우즈키 씨 바보예요？）
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 알았어，<lf>
 다음에 알렌을 여기 데려와서<lf>
 검사해 볼게．<lf>
 그러면 네게 이상이 일어나는 원인도<lf>
 밝혀낼 수 있겠지．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 （……이래서야<lf>
 알렌 씨도 고생 좀 하겠는걸．）
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 아직 모든 리얼리언과<lf>
 대화하지 못했어．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 빨리 조정을 끝내야지．<lf>
 일하자 일！
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 오늘로 이틀째 밤샘 작업이야．<lf>
 커피를 ９잔째 마시고 있다고．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 이렇게 불규칙한 생활을 하면<lf>
 금방 피부에 드러나게 된단 말이야．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 오늘은 반드시 방에서 잘 거야．<lf>
 맛있는 거 잔뜩 먹고<lf>
 푹신푹신한 이불에서 푹 잘 거라구！
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 그 버질이란 녀석 완전 짜증 나．<lf>
 자기는 일도 안 하고<lf>
 어슬렁거리기만 하면서<lf>
 잘난 척만 하고 있고 말이야．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 아，미안．<lf>
 지금 기자재를 반입 중이거든．
-# dup_of: line 15, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(1)]/[clear()]
 미안하지만 저쪽 문을 이용해 줘．
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 0
-/[label()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(6): /[label()]
 시온 앞으로<lf>
 메일이 도착했어！！
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 828, tag8 34
-「중령님 완전 짜증 나！」라고요．
-# dup_of: line 23, tag8 0
-/[label()]
-# dup_of: line 728, tag8 3
-/[label(리얼리언（Ｃ）)]
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
+#dup(4): /[waitkey(64)]/[close()]
 메일을 본다<lf>메일을 보지 않는다
 공사 중입니다/[wait(30)]/[close()]
 enterd : /[$0]
 entrance: /[$0]
 shoot on
-Talk_npc1
-Talk_npc2
-Talk_npc3
-Talk_npc4
-Talk_npc5
-Talk_npc6
-Talk_npc7
-Talk_npc8
-Talk_npc10
-Talk_npc11
-Talk_npc13
-# dup_of: line 1119, tag8 7
-Talk_npc1
-# dup_of: line 1120, tag8 11
-Talk_npc2
-# dup_of: line 1121, tag8 12
-Talk_npc3
-# dup_of: line 1122, tag8 13
-Talk_npc4
-# dup_of: line 1123, tag8 14
-Talk_npc5
-# dup_of: line 1124, tag8 15
-Talk_npc6
-# dup_of: line 1125, tag8 16
-Talk_npc7
-# dup_of: line 1126, tag8 17
-Talk_npc8
-# dup_of: line 1127, tag8 8
-Talk_npc10
-# dup_of: line 1128, tag8 9
-Talk_npc11
-# dup_of: line 1129, tag8 10
-Talk_npc13
-# dup_of: line 1119, tag8 7
-Talk_npc1
-# dup_of: line 1120, tag8 11
-Talk_npc2
-# dup_of: line 1121, tag8 12
-Talk_npc3
-# dup_of: line 1122, tag8 13
-Talk_npc4
-# dup_of: line 1123, tag8 14
-Talk_npc5
-# dup_of: line 1124, tag8 15
-Talk_npc6
-# dup_of: line 1125, tag8 16
-Talk_npc7
-# dup_of: line 1126, tag8 17
-Talk_npc8
-# dup_of: line 1127, tag8 8
-Talk_npc10
-# dup_of: line 1128, tag8 9
-Talk_npc11
-# dup_of: line 1129, tag8 10
-Talk_npc13
-# dup_of: line 1119, tag8 7
-Talk_npc1
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1120, tag8 11
-Talk_npc2
-# dup_of: line 1121, tag8 12
-Talk_npc3
-# dup_of: line 1116, tag8 18
-enterd : /[$0]
-# dup_of: line 1021, tag8 25
-………쿨
-# dup_of: line 242, tag8 27
-……쿠울
-# dup_of: line 1038, tag8 30
-……군계일학이겠지．
-# dup_of: line 170, tag8 33
-「고마워」
-# dup_of: line 1035, tag8 36
-「군계일닭」이라고 하는 거죠！？
-# dup_of: line 273, tag8 39
-「고양이에게 생선 가시 맡긴다」<lf>
-# dup_of: line 860, tag8 42
-아，아하하，<lf>
-# dup_of: line 864, tag8 44
-아，수고하십니다．
-# dup_of: line 576, tag8 47
-아 우즈키 씨，<lf>
-# dup_of: line 842, tag8 49
-아 우즈키 씨！<lf>
-# dup_of: line 376, tag8 53
-그 사람 여성용 팔찌 같은 걸<lf>
-# dup_of: line 946, tag8 60
-너희는 전투를 위한 도구가 아냐．<lf>
-# dup_of: line 518, tag8 62
-저기，<lf>
-# dup_of: line 294, tag8 65
-저기，최근 들어<lf>
-# dup_of: line 1095, tag8 68
-그 버질이란 녀석 완전 짜증 나．<lf>
-# dup_of: line 835, tag8 71
-아하하하．<lf>
-# dup_of: line 237, tag8 74
-어머，이 애는<lf>
-# dup_of: line 102, tag8 77
-감사합니다．
-# dup_of: line 617, tag8 80
-알겠습니다．
-# dup_of: line 568, tag8 83
-아뇨，속이 메스껍고<lf>
-# dup_of: line 857, tag8 85
-대체 뭘 기대하고 있었단 거예요？
-# dup_of: line 143, tag8 89
-음，너는 수치가 안정적이네．<lf>
-# dup_of: line 179, tag8 96
-으음，어찌 된 일일까？<lf>
-# dup_of: line 492, tag8 98
-아까 처음 봤으니까 뭐라곤 못 하지．<lf>
-# dup_of: line 956, tag8 101
-앗，아니，명령까지는 아닌데……．<lf>
-# dup_of: line 652, tag8 103
-앗，정말요？<lf>
-# dup_of: line 871, tag8 106
-네，<lf>
-# dup_of: line 929, tag8 109
-네，물론 그럴 겁니다．<lf>
-# dup_of: line 164, tag8 112
-그，「고마워」라는 말은<lf>
-# dup_of: line 619, tag8 114
-으음，이 코드는<lf>
-# dup_of: line 491, tag8 117
-어？ 으음，<lf>
-# dup_of: line 1008, tag8 119
-오오，날 버리는 거야？<lf>
-# dup_of: line 261, tag8 123
-분명 제 생각이 지나쳤던 걸 거예요．<lf>
-# dup_of: line 821, tag8 130
-깨지신 듯한 느낌이 드네요．
-# dup_of: line 556, tag8 132
-속담 사전을 가져다줄게．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 9, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1122, tag8 13
-Talk_npc4
-# dup_of: line 1123, tag8 14
-Talk_npc5
-# dup_of: line 1124, tag8 15
-Talk_npc6
-# dup_of: line 1125, tag8 16
-Talk_npc7
-# dup_of: line 1123, tag8 14
-Talk_npc5
-# dup_of: line 1126, tag8 17
-Talk_npc8
-# dup_of: line 1123, tag8 14
-Talk_npc5
-# dup_of: line 1116, tag8 18
-enterd : /[$0]
-# dup_of: line 1123, tag8 14
-Talk_npc5
-# dup_of: line 539, tag8 22
-…………쿠울쿠울．
-# dup_of: line 228, tag8 23
-………．
-# dup_of: line 539, tag8 22
-…………쿠울쿠울．
-# dup_of: line 965, tag8 24
-………．<lf>
-# dup_of: line 539, tag8 22
-…………쿠울쿠울．
-# dup_of: line 1021, tag8 25
-………쿨
-# dup_of: line 539, tag8 22
-…………쿠울쿠울．
-# dup_of: line 594, tag8 26
-……헉，<lf>
-# dup_of: line 539, tag8 22
-…………쿠울쿠울．
-# dup_of: line 267, tag8 31
-……저기，<lf>
-# dup_of: line 234, tag8 32
-……ＺＺＺ
-# dup_of: line 267, tag8 31
-……저기，<lf>
-# dup_of: line 170, tag8 33
-「고마워」
-# dup_of: line 267, tag8 31
-……저기，<lf>
-# dup_of: line 828, tag8 34
-「중령님 완전 짜증 나！」라고요．
-# dup_of: line 267, tag8 31
-……저기，<lf>
-# dup_of: line 550, tag8 35
-「미운 놈 떡 하나 더 뺏는다」라는<lf>
-# dup_of: line 267, tag8 31
-……저기，<lf>
-# dup_of: line 532, tag8 58
-너는 일회용 도구 같은 게 아냐．<lf>
-# dup_of: line 128, tag8 59
-너희가 싸우지 않았으면 좋겠어．
-# dup_of: line 532, tag8 58
-너는 일회용 도구 같은 게 아냐．<lf>
-# dup_of: line 532, tag8 58
-너는 일회용 도구 같은 게 아냐．<lf>
-# dup_of: line 883, tag8 61
-그 /[font(ＫＯＳ−ＭＯＳ)]의 설계자이자<lf>
-# dup_of: line 532, tag8 58
-너는 일회용 도구 같은 게 아냐．<lf>
-# dup_of: line 518, tag8 62
-저기，<lf>
-# dup_of: line 532, tag8 58
-너는 일회용 도구 같은 게 아냐．<lf>
-# dup_of: line 386, tag8 63
-저기 우즈키 씨，<lf>
-# dup_of: line 532, tag8 58
-너는 일회용 도구 같은 게 아냐．<lf>
-# dup_of: line 988, tag8 64
-저기，뭐죠 이건？
-# dup_of: line 532, tag8 58
-너는 일회용 도구 같은 게 아냐．<lf>
-# dup_of: line 294, tag8 65
-저기，최근 들어<lf>
-# dup_of: line 532, tag8 58
-너는 일회용 도구 같은 게 아냐．<lf>
-# dup_of: line 183, tag8 66
-저기，저，<lf>
-# dup_of: line 532, tag8 58
-너는 일회용 도구 같은 게 아냐．<lf>
-# dup_of: line 835, tag8 71
-아하하하．<lf>
-# dup_of: line 547, tag8 72
-좋아하기 힘들 것 같습니다．<lf>
-# dup_of: line 835, tag8 71
-아하하하．<lf>
-# dup_of: line 972, tag8 73
-어머，넌 처음 보는 얼굴인걸？
-# dup_of: line 835, tag8 71
-아하하하．<lf>
-# dup_of: line 237, tag8 74
-어머，이 애는<lf>
-# dup_of: line 835, tag8 71
-아하하하．<lf>
-# dup_of: line 634, tag8 78
-어라 우즈키 씨，<lf>
-# dup_of: line 586, tag8 79
-어라 우즈키 씨．<lf>
-# dup_of: line 634, tag8 78
-어라 우즈키 씨，<lf>
-# dup_of: line 617, tag8 80
-알겠습니다．
-# dup_of: line 634, tag8 78
-어라 우즈키 씨，<lf>
-# dup_of: line 659, tag8 81
-멋지지 않나요？ 존경하게 된다구요．
-# dup_of: line 634, tag8 78
-어라 우즈키 씨，<lf>
-# dup_of: line 437, tag8 82
-그，아까 버질 중위님께……．
-# dup_of: line 634, tag8 78
-어라 우즈키 씨，<lf>
-# dup_of: line 832, tag8 86
-누가 그새 적은 건지！
-# dup_of: line 1005, tag8 87
-놔둘 수밖에 없겠는걸．
-# dup_of: line 832, tag8 86
-누가 그새 적은 건지！
-# dup_of: line 933, tag8 88
-응，<lf>
-# dup_of: line 832, tag8 86
-누가 그새 적은 건지！
-# dup_of: line 143, tag8 89
-음，너는 수치가 안정적이네．<lf>
-# dup_of: line 832, tag8 86
-누가 그새 적은 건지！
-# dup_of: line 847, tag8 90
-네，뭐<lf>
-# dup_of: line 832, tag8 86
-누가 그새 적은 건지！
-# dup_of: line 492, tag8 98
-아까 처음 봤으니까 뭐라곤 못 하지．<lf>
-# dup_of: line 245, tag8 99
-음，딱히 이상한 곳은 없는데……．<lf>
-# dup_of: line 492, tag8 98
-아까 처음 봤으니까 뭐라곤 못 하지．<lf>
-# dup_of: line 640, tag8 100
-앗，아뇨，<lf>
-# dup_of: line 492, tag8 98
-아까 처음 봤으니까 뭐라곤 못 하지．<lf>
-# dup_of: line 956, tag8 101
-앗，아니，명령까지는 아닌데……．<lf>
-# dup_of: line 492, tag8 98
-아까 처음 봤으니까 뭐라곤 못 하지．<lf>
-# dup_of: line 831, tag8 102
-앗，정말요！？<lf>
-# dup_of: line 492, tag8 98
-아까 처음 봤으니까 뭐라곤 못 하지．<lf>
-# dup_of: line 652, tag8 103
-앗，정말요？<lf>
-# dup_of: line 492, tag8 98
-아까 처음 봤으니까 뭐라곤 못 하지．<lf>
-# dup_of: line 434, tag8 104
-응？ 뭐가？
-# dup_of: line 492, tag8 98
-아까 처음 봤으니까 뭐라곤 못 하지．<lf>
-# dup_of: line 326, tag8 105
-엑，알렌？
-# dup_of: line 492, tag8 98
-아까 처음 봤으니까 뭐라곤 못 하지．<lf>
-# dup_of: line 1091, tag8 118
-맛있는 거 잔뜩 먹고<lf>
-# dup_of: line 1008, tag8 119
-오오，날 버리는 거야？<lf>
-# dup_of: line 1091, tag8 118
-맛있는 거 잔뜩 먹고<lf>
-# dup_of: line 607, tag8 120
-얘기를 많이 나눠 보지는 않았지만<lf>
-# dup_of: line 1091, tag8 118
-맛있는 거 잔뜩 먹고<lf>
-# dup_of: line 591, tag8 121
-분명 그냥 넘어가시진 않을걸요？
-# dup_of: line 1091, tag8 118
-맛있는 거 잔뜩 먹고<lf>
-# dup_of: line 76, tag8 122
-벡터에는 분명<lf>
-# dup_of: line 1091, tag8 118
-맛있는 거 잔뜩 먹고<lf>
-# dup_of: line 261, tag8 123
-분명 제 생각이 지나쳤던 걸 거예요．<lf>
-# dup_of: line 1091, tag8 118
-맛있는 거 잔뜩 먹고<lf>
-# dup_of: line 118, tag8 127
-이렇게<lf>
-# dup_of: line 1003, tag8 128
-여기서 리셋할 수도 없는 노릇이고，<lf>
-# dup_of: line 118, tag8 127
-이렇게<lf>
-# dup_of: line 77, tag8 129
-여기 따위보다 훨씬 대규모고<lf>
-# dup_of: line 118, tag8 127
-이렇게<lf>
-# dup_of: line 821, tag8 130
-깨지신 듯한 느낌이 드네요．
-# dup_of: line 118, tag8 127
-이렇게<lf>
-# dup_of: line 285, tag8 131
-속담에 해박한 병사분께 배웠습니다．<lf>
-# dup_of: line 118, tag8 127
-이렇게<lf>
-# dup_of: line 600, tag8 159
-느낌이 든단 말이죠 중령님은．
-# dup_of: line 886, tag8 415
-대그노시스용으로 개발된 전쟁의 여신！<lf>
-# dup_of: line 1114, tag8 343
-메일을 본다<lf>메일을 보지 않는다
-# dup_of: line 1115, tag8 417
-공사 중입니다/[wait(30)]/[close()]
-# dup_of: line 824, tag8 46
-아，그게 티가 나나요？
-# dup_of: line 572, tag8 45
-아，그런 거라면 괜찮아．<lf>
-# dup_of: line 1116, tag8 18
-enterd : /[$0]
-# dup_of: line 1117, tag8 19
-entrance: /[$0]
-# dup_of: line 1118, tag8 20
-shoot on
-# dup_of: line 1119, tag8 7
-Talk_npc1
-# dup_of: line 1120, tag8 11
-Talk_npc2
-# dup_of: line 1121, tag8 12
-Talk_npc3
-# dup_of: line 1122, tag8 13
-Talk_npc4
-# dup_of: line 1123, tag8 14
-Talk_npc5
-# dup_of: line 1124, tag8 15
-Talk_npc6
-# dup_of: line 1125, tag8 16
-Talk_npc7
-# dup_of: line 1126, tag8 17
-Talk_npc8
-# dup_of: line 1127, tag8 8
-Talk_npc10
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1128, tag8 9
-Talk_npc11
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1129, tag8 10
-Talk_npc13
-# dup_of: line 1119, tag8 7
-Talk_npc1
-# dup_of: line 1120, tag8 11
-Talk_npc2
-# dup_of: line 1121, tag8 12
-Talk_npc3
-# dup_of: line 1122, tag8 13
-Talk_npc4
-# dup_of: line 1123, tag8 14
-Talk_npc5
-# dup_of: line 1124, tag8 15
-Talk_npc6
-# dup_of: line 1125, tag8 16
-Talk_npc7
-# dup_of: line 1126, tag8 17
-Talk_npc8
-# dup_of: line 1127, tag8 8
-Talk_npc10
-# dup_of: line 1128, tag8 9
-Talk_npc11
-# dup_of: line 1129, tag8 10
-Talk_npc13
-# dup_of: line 1119, tag8 7
-Talk_npc1
-# dup_of: line 1120, tag8 11
-Talk_npc2
-# dup_of: line 1121, tag8 12
-Talk_npc3
-# dup_of: line 1122, tag8 13
-Talk_npc4
-# dup_of: line 1123, tag8 14
-Talk_npc5
-# dup_of: line 1124, tag8 15
-Talk_npc6
-# dup_of: line 1125, tag8 16
-Talk_npc7
-# dup_of: line 1126, tag8 17
-Talk_npc8
-# dup_of: line 1127, tag8 8
-Talk_npc10
-# dup_of: line 1128, tag8 9
-Talk_npc11
-# dup_of: line 1129, tag8 10
-Talk_npc13
-# dup_of: line 625, tag8 50
-아，정말로 되네요！<lf>
-# dup_of: line 1119, tag8 7
-Talk_npc1
-# dup_of: line 1120, tag8 11
-Talk_npc2
-# dup_of: line 1121, tag8 12
-Talk_npc3
-# dup_of: line 1122, tag8 13
-Talk_npc4
-# dup_of: line 1123, tag8 14
-Talk_npc5
-# dup_of: line 1124, tag8 15
-Talk_npc6
-# dup_of: line 1125, tag8 16
-Talk_npc7
-# dup_of: line 1126, tag8 17
-Talk_npc8
-# dup_of: line 1127, tag8 8
-Talk_npc10
-# dup_of: line 1128, tag8 9
-Talk_npc11
-# dup_of: line 1129, tag8 10
-Talk_npc13
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[clear()]

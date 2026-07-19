@@ -1,45 +1,35 @@
-# chunk 2 @ 0xafc cnum=129 total=1
-# bc_map: 0
-MoveU
-
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x12d4 cnum=700 total=29
-# bc_map: 4,20,22,24,6,2,16,5,23,17,6,3,18,15,6,1,19,21,6,28,6,27,6,14,0,13,7,12,10,11,9,25,8,26
+# bc_map: 4,20,22,24,6,2,16,5,23,17,6,3,18,15,6,1,19,21,6,28,6,27,6,14,0,13,12,10,11,25,26
+# bc_unmap: 7,8,9
 /[label(경고)]
 죽고 싶냐！？<lf>
 항행 중 개방은 엄금이다！！<lf>
 （Ｂｙ 매슈스 님）
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(해머)]
 침입자는 캐터펄트에 있슴다！！
 /[waitkey(1)]/[clear()]
 배는<lf>
 저희한테 맡겨 주십쇼！！
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(매슈스)]
 미안해 아가씨！！<lf>
 캐터펄트는 이 배 최하층에 있어．
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(토니)]
 적은 자율 전투 단말기 ＜오테크＞다！！<lf>
 방심하지 말라고！！
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 Ｂ１으로 이동하겠습니까？
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 Ｂ１으로 이동합니다．
-# dup_of: line 5, tag8 6
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 엘리베이터
 **********************************
 예<lf>아니요
-MoveD
 on!!
 enterd : /[$0]
 entrance: /[$0]
-automatic_door
 ＊＊＊＊＊＊＊＊KOJI_38は立ってます＊＊＊＊＊＊＊＊＊
-Up
 ＊＊＊＊＊＊＊＊KOJI_38は立ってません＊＊＊＊＊＊＊＊＊

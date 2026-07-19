@@ -1,277 +1,206 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0xc3c cnum=942 total=155
-# bc_map: 53,119,1,93,101,150,1,74,145,2,26,151,109,2,31,2,154,81,1,47,131,2,92,106,1,63,45,2,82,42,1,76,89,2,28,94,2,25,80,125,1,21,2,36,99,75,1,20,83,2,18,121,78,2,62,2,52,127,68,84,60,56,1,30,136,2,32,77,43,1,61,22,40,2,110,49,1,103,73,1,100,140,35,2,130,152,114,79,2,44,1,57,1,141,139,138,144,1,104,88,111,1,69,1,146,142,54,2,19,86,1,108,123,2,37,134,1,107,90,2,135,51,153,2,34,38,27,1,17,17,24,2,66,143,2,118,1,65,120,133,1,55,2,39,129,1,124,112,1,33,95,58,2,71,113,1,137,128,2,70,1,48,148,116,1,132,98,59,1,126,149,2,67,96,1,72,1,41,117,2,64,85,1,105,122,46,1,50,147,29,2,0,23,115,102,2,87,97,2,53,15,91,3,16,6,4,7,9,11,13,5,8,10,12,14
+# bc_map: 53,119,1,93,101,150,1,74,145,2,26,151,109,2,31,2,154,81,1,47,131,2,92,106,1,63,45,2,82,42,1,76,89,2,28,94,2,25,80,125,1,21,2,36,99,75,1,20,83,2,18,121,78,2,62,2,52,127,68,84,60,56,1,30,136,2,32,77,43,1,61,22,40,2,110,49,1,103,73,1,100,140,35,2,130,152,114,79,2,44,1,57,1,141,139,138,144,1,104,88,111,1,69,1,146,142,54,2,19,86,1,108,123,2,37,134,1,107,90,2,135,51,153,2,34,38,27,1,17,17,24,2,66,143,2,118,1,65,120,133,1,55,2,39,129,1,124,112,1,33,95,58,2,71,113,1,137,128,2,70,1,48,148,116,1,132,98,59,1,126,149,2,67,96,1,72,1,41,117,2,64,85,1,105,122,46,1,50,147,29,2,0,23,115,102,2,87,97,2,15,91,16
+# bc_unmap: 3,4,5,6,7,8,9,10,11,12,13,14
 この艦だけで一つのコロニー並の<lf>
 大きさがありますからね。
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 ファウンデーションの特性上、<lf>
 一般の都市に比べれば、<lf>
 遙かに治安は良いとは言っても
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 やはり私達のような<lf>
 警察官は必要なんです。
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ……まぁ、<lf>
 酔っぱらい同士のケンカの <lf>
 仲裁とかが主な仕事ですけど……。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 あ、Ｊｒ．様も見回りですか？
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 Ｊｒ．様のお連れの方ですね？<lf>
 ガイナン理事から伺っております。
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 お部屋の方はこの通路の先に<lf>
 用意させていただきました。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ファウンデーションの到着までは<lf>
 今しばらくかかります。
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 どうぞゆっくり<lf>
 お休みください。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 シェリィさんとメリィさんって、<lf>
 いいよなぁ……。
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 りりしいシェリィさんも良いけど、<lf>
 ノリのいいメリィさんも捨て難いよなぁ。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ……やっぱ、<lf>
 ファンクラブに入っておくべきかなぁ……。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ……でもなぁ、あの二人、<lf>
 ガイナン代表理事の<lf>
 愛人だってウワサもあるしなぁ。
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 ……う〜ん、でもやっぱいいよなぁ……。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 あっ、Ｊｒ．様！すみません！！<lf>
 一つ教えていただきたいのですが、<lf>
 よろしいでしょうか！？
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 ……あの、ガイナン代表理事と<lf>
 シェリィさんとメリィさんの関係を……。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ……あ、それがダメなら、<lf>
 彼女たちのプライベートの<lf>
 アドレスなどを……。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 とりあえず３サイズぐらいでも……。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 このデュランダルは戦闘艦なんですが、<lf>
 数多くの民間人も働いているんです。<lf>
 まぁ、指揮をとっている<lf>
 シェリィさんとメリィさんは<lf>
 そんな無茶をしないので、<lf>
 さほど危険はないんですけどね。
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 あ、でもＪｒ．様が一緒の時は<lf>
 私達も覚悟を決めてるんです。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 あ、Ｊｒ．様！！<lf>
 わたくし、Ｊｒ．様の為なら<lf>
 いつでもこの命を投げ出すつもりです！！
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 でも、あの、家には家族がありますので、<lf>
 ……その、<lf>
 あまり無茶な事だけはしないでください。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 任務上仕方のない事なんだけど、<lf>
 ここは一般人にはキツイ仕事が多いよ。
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 主立ったクルーは<lf>
 みんな特殊な能力もってるからなぁ。
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 一昔前は念力とかテレパシーとか<lf>
 言ってたんだろ？<lf>
 ああ、俺もそんな力が欲しい！
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 生身のままじゃ、レアリエンのパワーや<lf>
 集中力にもかなわないしなぁ。<lf>
 俺も政府の許可取って<lf>
 インプラントするかなぁ……。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 え？インプラントって何かって？
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 そうだな……、<lf>
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 記憶補助用の生体メモリを<lf>
 脳神経に接続したり、<lf>
 脳内でのドーパミンやアセチルコリンの生産<lf>
 調整を人工的に制御したり
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 乳酸の分解や、化学物質浄化用の<lf>
 ナノマシンプラントを、<lf>
 体内に埋め込んだりといった
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 まぁ人体改造の総称を指してそう言うのさ。
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 軍人や連邦警察関係者以外は<lf>
 許可制だからね。<lf>
 この許可を取るのがなかなか難しいのさ。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ……あの、もしよろしければ、<lf>
 シェリィ・メリィＦＣに登録しませんか？
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 今登録されますと、<lf>
 彼女たちの生写真がついてきます！
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 あの、お願いします、<lf>
 登録していただけないでしょうか？
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 今月、あと一人勧誘しないと、<lf>
 ノルマ達成できないんですよ……。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 私、先月もノルマ達成できなかったんで、<lf>
 このままじゃ<lf>
 Ｊｒ．様に怒られちゃうんですよぉ……。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 あぁ、Ｊｒ．様！？<lf>
 あの、もう少しです！<lf>
 ……もう少しでノルマ達成できます！！
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
-……<lf>
-# dup_of: line 129, tag8 17
-……<lf>
+#dup(1): /[waitkey(1)]/[clear()]
+#dup(3): ……<lf>
+#dup(3): ……<lf>
 ……だから、叱らないで……。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 なぁに？人探し？<lf>
 誰を探してるの？
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 名前はアレン。ふむふむ、特徴は
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 どこにでもいるような、<lf>
 影の薄い２０代男性。<lf>
 痩せ型っと。
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 こりゃ、探すの苦労するわね……。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 あの、シェリィさんとメリィさんは<lf>
 無事だったんでしょうか！？
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 怪我とかしてませんか？<lf>
 何かイヤラシイ事をされたとか！？
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 あぁ、ダメだ！やっぱり入ろう！<lf>
 ファンクラブに入っとこう！<lf>
 そしてこの俺が二人を守るんだ！！
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 まったく、兵士って言うのは<lf>
 何であんなに横暴なのでしょうか？
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 罪も無い人に<lf>
 暴力を振るうなんて最低です！
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 まったく……。
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 こういうことがあると、改めて<lf>
 連邦政府の私達に対する見方っての<lf>
 再認識させられるよな。
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 異能者？<lf>
 レアリエン？<lf>
 そんなの関係ないじゃん。
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 政府の俗物議員より、<lf>
 遙かにまともな人達だよ。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ま、第二ミルチアの<lf>
 ヘルマー代表だけは別格だけどね。
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 みんながああだといいんだけど。
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 あーあ。<lf>
 前の議長の頃は良かったなぁ……。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 どうですか？<lf>
 シェリィ・メリィＦＣに入りませんか？<lf>
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 今、会員になりますと、<lf>
 彼女たちの思いのこもった<lf>
 お守りがプレゼントされます！
-# dup_of: line 3, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 このお守りさえあれば、<lf>
 連邦の兵士に捕まっても安心……って<lf>
 あ、あの、話を聞いてください……。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 /[label(アレン)]
 ……それじゃあ、僕は<lf>
 先にランチ乗り場に行ってますんで<lf>
 主任も来てくださいよ！！
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 シオン宛てに<lf>
 メールが届いてるよ！！
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 53
-この艦だけで一つのコロニー並の<lf>
+#dup(2): /[waitkey(64)]/[close()]
 enterd : /[$0]
 パーティー情報・leader_shion,*,*,*,*,*
-Evt
 entrance: /[$0]
-TalkNPC1x
-TalkNPC1
-TalkNPC2
-TalkNPC3
-TalkNPC4
-TalkNPC5
-TalkNPC11
-TalkNPC22
-TalkNPC33
-TalkNPC44
-TalkNPC55

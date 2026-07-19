@@ -1,0 +1,366 @@
+# chunk 5 @ 0x1fe0 cnum=2945 total=363
+# bc_map: 142,158,78,80,66,79,43,42,45,123,46,82,221,5,243,7,60,9,62,47,61,50,49,57,51,53,59,55,56,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,48,157,6,8,63,85,111,112,75,76,39,40,34,35,117,1,64,32,33,31,30,214,114,65,113,89,10,4,192,27,195,145,26,11,84,0,17,12,77,41,14,13,91,90,108,106,109,107,118,71,86,87,73,72,220,2,116,115,88,146,147,148,149,74,22,23,25,24,136,143,199,194,137,144,200,193,81,97,95,96,98,110,68,67,119,102,105,100,103,104,101,99,218,16,94,93,92,38,37,36,15,120,19,18,20,121,21,3,198,196,197,122,126,127,70,124,125,44,83,69,212,156,201,320,216,207,316,311,132,210,165,230,166,223,310,307,227,167,340,331,341,324,317,133,219,225,215,168,134,169,342,211,170,171,231,339,325,135,322,306,202,159,304,305,328,319,160,321,222,329,203,224,330,226,204,161,128,150,129,217,228,151,332,336,138,205,162,130,152,206,139,153,335,308,213,229,333,208,163,131,154,209,164,155,334,140,141,309,28,29,52,54,58,232,233,234,235,236,237,238,239,240,241,242,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,312,313,314,315,318,323,326,327,337,338,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362
+# bc_unmap: 52,54,58,232,233,234,235,236,237,238,239,240,241,242,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,312,313,314,315,318,323,326,327,337,338,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362
+eventmovie/
+lightSPL_main
+HISTORY CLEAR
+HISTORYDELETE PTR=/[$0]
+ERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRROR!!
+HISTORY-SET /[$0]
+CameraHistory Overflow!!
+Camera instant test
+Cameratest_history
+WAIT=/[$0]
+Cancel!!
+History is Empty.
+せっかくビーチに来たのに<lf>モニターとにらめっこだなんて
+*********CameraTool Standby*****************
+キャラ０Ｃ
+*********Capture Start!!!*****************
+CaptureMode = /[$0]
+*********CaptureTool Standby*****************
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+CaptureMODE ---All Screen.
+CaptureMODE ---All Screen(alpha).
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---Chr(pic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---TXT(pic)
+CaptureMODE ---Particle(pic)
+CaptureMODE ---Particle(pic+zpic)
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+lightSPL start.
+*********Capture End.*****************
+*********Capture Waiting...*****************
+ColorScreen  SetMode
+Layer = /[$0]
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode-------end
+*************ColorScreen Printout*************
+ColorScreenParam = {
+0,
+1,
+/[$1],
+/[$0],
+};
+Runtime.setDefocus(15, 1, ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], 1, ColorScreenParam);
+Layer not exist.
+*********DEBUGPRINT*********
+*********CameraHistory SPL*********
+pos[] ={
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+*********DEBUGPRINT3*********
+LINKTABLE
+ 
+,
+*********DEBUGPRINT4*********
+HISPTR
+CAMHIS
+*********ManualCamera Replay*********
+*********DEBUGPRINT6*********
+MANUALCAMPTR
+MANUALCAMHIS
+PATH = SPLINE
+PATH = DOWN
+PATH = UP
+PATH = LINEAR
+ShakeRoutine_main
+Focus SetMode
+Layer = Back
+Layer = Before
+Focus delta = /[$0](back)
+Focus SetMode-------end
+ごめん──
+*************Focus Printout*************
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+Gnochk...
+--alpha--
+--filter--
+--shake--
+--ref_alpha--
+alpha max!!
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+HISTORYLOOK PTR=/[$0]
+ManualCamera not Recorded.
+ManualCam_record.
+ManualCamera MOVE to start.
+ManualCameraRecord START!!!
+Record /[$0]
+End(TimeOver).
+End(Button).
+Time = /[$0]
+Objchk......(Chr)
+Objchk......End
+Objchk(+Mtn)......
+Objchk......(Effect)
+Objchk......(Unit)
+Objchk......
+Mtn Frame = /[$0]
+うちの新製品だからな
+*********printout /[$0]***********
+ManualCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+ManualCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+ManualCam.setFov(/[#0]f);
+BaseCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setFov(/[#0]f);
+*********Timechk Standby*****************
+Timechk_main
+----------シーンは終了しました。
+----------シーンは/[$0]フレームでした。
+----------シーンを開始します。
+Timerchk_srv_main
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])(RealTotal = /[$3])
+***********Objchk printout***********
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+setRotate(/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+VibRoutine_main
+Xenvmainthreadmain
+Xenvplaythread
+Event Out
+XEVEFLAG:EV03006C_F
+XEVEJNAME:SCE03007
+CameraThread
+INPUT Number!!
+End.(RETURN = /[$0])
+spl
+lightSPL end.
+shion_act1
+モモちゃんへの<lf>共感行動──
+あの時の<lf>深層領域下波形は──
+shion_act2
+フラットライン──
+ダメか──<lf>なんにも無しね
+allen_act3
+shion_act3
+momo_act3
+どうしたんですか<lf>主任
+momo_act4
+そうですよ
+シオンさんも一緒に<lf>遊びましょう
+ゴメン
+ちょっとね──
+momo_act5
+ＫＯＳ−ＭＯＳさんですか
+大変なんですね
+ＫＯＳ−ＭＯＳね
+僕らでも解析しきれない<lf>ブラックボックスの部分が多いんだ
+ブラックボックス
+allen_act6
+うん
+だから少しずつ<lf>少しずつ解析していって
+“昔の姿”に近づけて<lf>いってるんだよ
+momo_act6
+allen_act7
+momo_act7
+ＫＯＳ−ＭＯＳのこと熟知してたの<lf>ケビン先輩だけだったから──
+shion_act8
+momo_act8
+moni_kie
+ねぇアレン君
+Ｊｒ．君とガイナン氏って<lf>親子なのかな
+兄弟にしては随分年が<lf>離れてるみたいだけど
+allen_act9
+世襲用にセルフクローニング<lf>したとか　隠し子だとか
+ゴシップはあれこれ<lf>聞きますけど──
+shion_act10
+momo_act10
+クローンでは<lf>ないと思います
+ゲノム配列が<lf>微妙に違う感じ──
+凄い
+モモちゃん<lf>そんなことまで解るの
+momo_act11
+モモは観測用ですから──
+そうですね　親子兄弟と<lf>いうほど差異はないのに
+同じ構造とはいえないような──
+shion_act12
+そんな存在ってあるの
+塩基配列が０．１％違えば<lf>完全に他人なのに
+だーれが隠し子だって
+shion_act13
+momo_act13
+allen_act13
+jr_act13
+allen_act14
+い　いやあ<lf>素晴らしい海岸だねぇ
+とても人工ビーチとは<lf>思えないよ
+jr_act15
+天候も変えられるのがウリ
+青空ばっかじゃ芸がない　ってね
+ball_light
+shion_act17
+momo_act17
+allen_act17
+jr_act17
+shion_act19
+chaos_act19
+jr_act20
+雷は──イヤ──
+シオン
+thunder_light
+とめて
+雷は/[ruby(嫌/いや)]
+shion_act22
+momo_act22
+allen_act22
+jr_act22
+shion_act23
+momo_act23
+jr_act23
+雷は──<lf>/[ruby(嫌/いや)]なのよ──
+chaos_act24
+chaos_act25
+シオン──
+/[$0]
+/[$0](Cursor = /[$1])
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---SoftImage BG(pic+zpic)
+エフェクトサイドのフォルダを使用する
+オブジェのみキャプチャ
+オブジェ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+キャプチャモード
+キャラのみキャプチャ
+キャラ単体（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ０
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+テキスト（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣあり）
+パーティクル（ＺＰＩＣなし）
+フォルダ選択
+ページ切り替え
+企画サイドのフォルダを使用する
+全画面
+全画面（アルファ）
+ＢＧのみ（ＺＰＩＣあり）
+ＢＧのみ（ＺＰＩＣなし）
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（たけなか）
+ｍｏｖｉｅ０４（なかむら）
+ｍｏｖｉｅ０５（いけうち）
+ｍｏｖｉｅ０６（いけうち）
+ｍｏｖｉｅ０７（ふち）
+ｍｏｖｉｅ０８（ふち）
+ｍｏｖｉｅ０９（保存）
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（おの７６５）
+ｍｏｖｉｅ１７（うなかみ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）

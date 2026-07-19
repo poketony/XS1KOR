@@ -1,61 +1,49 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x710 cnum=616 total=33
 # bc_map: 1,25,7,2,23,6,15,0,18,7,5,24,21,27,7,3,32,17,29,7,1,11,16,20,31,7,2,14,26,12,7,2,22,19,7,4,10,7,2,13,7,30,28,7,8,9
-/[label(ケイオス)]
+#dup(1): /[label(ケイオス)]
 何かのデータのようだね。
-/[waitkey(64)]/[close()]
-/[label(シオン)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(シオン)]
 レアリエン──？
 /[waitkey(1)]/[clear()]
 でもこれ、随分古いものだわ。<lf>
 /[font(Ｔ．Ｃ．４４７４)]年、<lf>
 タイレル社製、レメク３型。
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 /[label(Ｊｒ．)]
 レメク３型ってーと、<lf>
 ミルチア紛争の<lf>
 前年まで生産されていたタイプだな。
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 /[label(ジギー)]
 製造年代、企業ともまちまちだが、<lf>
 どれも/[font(４７５２)]年より<lf>
 新しいものはないようだ。
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 1
-/[label(ケイオス)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(ケイオス)]
 この記録によると、
 どのレアリエンも何らかの異常があって、<lf>
 ミルチアの調整施設に<lf>
 移送されていたみたいだね。
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 2
-/[label(シオン)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(シオン)]
 だけど、そのデータが何故ここに？<lf>
 何のために<lf>
 これだけ膨大な数のデータを……。
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 2
-/[label(シオン)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(シオン)]
 モモちゃん。<lf>
 ミズラヒ博士から何か聞いてない？
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 /[label(モモ)]
 いいえ、ママは…何も……。
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 2
-/[label(シオン)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(シオン)]
 そう……。
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 旧式のレアリエンのデータが<lf>
 大量に保存されている。
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 enterd : /[$0]
 entrance: /[$0]

@@ -1,20 +1,18 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x54 cnum=164 total=1
-# bc_map: 0,0
-물론이지！！<lf>미안… 잊어버렸어．
-# dup_of: line 1, tag8 0
+# bc_map: 0
 물론이지！！<lf>미안… 잊어버렸어．
 
 # chunk 3 @ 0x109c cnum=593 total=39
-# bc_map: 37,3,0,20,22,3,0,19,31,35,38,17,27,2,24,3,0,12,32,28,13,26,29,36,11,25,3,0,10,21,3,0,23,14,30,3,1,15,33,16,3,1,9,34,3,1,8,3,23,18,18,5,6,4,7
+# bc_map: 37,3,0,20,22,3,0,19,31,35,38,17,27,2,24,3,0,12,32,28,13,26,29,36,11,25,3,0,10,21,3,0,23,14,30,3,1,15,33,16,3,1,9,34,3,1,8,3,18,18,5,6,7
+# bc_unmap: 4
 격벽 스위치를 누르겠습니까？<lf>
-/[waitkey(64)]/[close()]
-/[label(알렌)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(알렌)]
 아이고 진짜……<lf>
 주임님 지켜보다가 죽을 지경입니다．
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label(알렌)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(알렌)]
 자 여기요．<lf>
 본사에서 보낸<lf>
 시험용 /[font(Ａ．Ｇ．Ｗ．Ｓ．)]，<lf>
@@ -23,10 +21,8 @@
 형편이 조금은 나아지겠죠．
 /[waitkey(1)]/[clear()]
 쓰는 방법은 알고 계십니까？
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label(알렌)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(알렌)]
 네？！<lf>
 본사 ２국이 개발한 건데요？<lf>
 잊어버리신 거예요？<lf>
@@ -36,44 +32,30 @@
 전송 기술을 응용한 공간 압축 기술로<lf>
 만들어진 휴대용 /[font(Ａ．Ｇ．Ｗ．Ｓ．)] 격납고예요．<lf>
 물론 다른 기체로 바꿀 수도 있습니다．
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label(알렌)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(알렌)]
 『……나 참，정신 좀 차려 주세요<lf>
 주임님만의 주임님이 아니니까요……．』
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label(알렌)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(알렌)]
 아무것도 아닙니다！！<lf>
 자 이제！<lf>
 빨리 구명 포드에 타서 도망치죠！！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 그，그 정도는 알고 있거든！<lf>
 상황이 상황이니까<lf>
 잠깐 혼란스러워서 그랬던 것뿐이야．
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 37, tag8 1
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 ……미안．<lf>
 들어 본 기억은 있는데……．
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 37, tag8 1
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 ……응？ 무슨 말 했어！？
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 33, tag8 23
-아무것도 아닙니다！！<lf>
-예<lf>아니요
-# dup_of: line 50, tag8 18
-예<lf>아니요
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): 예<lf>아니요
+#dup(4): 예<lf>아니요
 enterd : /[$0]
 entrance: /[$0]
-Evt
 shoot on

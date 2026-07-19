@@ -1,0 +1,322 @@
+# chunk 4 @ 0xb28 cnum=2364 total=319
+# bc_map: 136,146,2,6,10,15,78,80,66,79,43,42,45,123,46,82,5,7,60,9,62,47,61,197,287,288,298,297,200,199,196,195,267,269,268,50,49,57,58,51,52,53,54,59,55,56,271,201,208,225,242,259,260,261,262,263,264,202,203,204,205,206,207,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,198,194,270,278,299,300,301,302,303,304,305,306,307,308,147,148,149,150,151,152,153,154,155,156,193,309,310,311,312,313,314,315,316,317,318,157,158,159,160,161,162,163,164,165,166,48,8,63,85,111,112,75,76,39,40,34,35,117,1,64,32,33,31,30,180,114,65,113,89,4,167,27,170,139,26,11,84,0,17,12,77,41,14,13,91,90,108,106,109,107,118,71,86,87,73,72,116,115,88,140,141,142,143,74,22,23,24,128,137,174,169,129,138,175,168,81,190,97,95,96,98,110,68,67,119,102,105,100,103,104,101,99,16,94,93,92,38,37,36,120,19,18,20,121,21,3,173,171,172,122,126,127,70,124,125,44,83,69,179,28,29,145,144,130,176,177,274,131,292,282,272,285,192,277,185,291,189,293,191,296,188,273,289,286,294,187,279,284,275,280,132,265,181,133,183,276,182,186,184,134,290,283,266,135,295,281,178,25
+# bc_unmap: 25
+eventmovie/
+lightSPL_main
+*************Focus Printout*************
+*********Capture End.*****************
+*********DEBUGPRINT*********
+*********Timechk Standby*****************
+HISTORY CLEAR
+HISTORYDELETE PTR=/[$0]
+ERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRROR!!
+HISTORY-SET /[$0]
+CameraHistory Overflow!!
+Camera instant test
+Cameratest_history
+WAIT=/[$0]
+Cancel!!
+History is Empty.
+*********CameraTool Standby*****************
+*********Capture Start!!!*****************
+CaptureMode = /[$0]
+*********CaptureTool Standby*****************
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+キャプチャモード
+全画面
+全画面（アルファ）
+ＢＧのみ（ＺＰＩＣなし）
+ＢＧのみ（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+オブジェ単体（ＺＰＩＣあり）
+テキスト（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣあり）
+CaptureMODE ---All Screen.
+CaptureMODE ---All Screen(alpha).
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---SoftImage BG(pic+zpic)
+CaptureMODE ---Chr(pic)
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---TXT(pic)
+CaptureMODE ---Particle(pic)
+CaptureMODE ---Particle(pic+zpic)
+ページ切り替え
+キャラ０
+キャラ１
+キャラ２
+キャラ３
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラのみキャプチャ
+オブジェのみキャプチャ
+フォルダ選択
+企画サイドのフォルダを使用する
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（たけなか）
+ｍｏｖｉｅ０４（なかむら）
+ｍｏｖｉｅ０５（いけうち）
+ｍｏｖｉｅ０６（いけうち）
+ｍｏｖｉｅ０７（ふち）
+ｍｏｖｉｅ０８（ふち）
+ｍｏｖｉｅ０９（保存）
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+エフェクトサイドのフォルダを使用する
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（おの７６５）
+ｍｏｖｉｅ１７（うなかみ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+*********Capture Waiting...*****************
+ColorScreen  SetMode
+Layer = /[$0]
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode-------end
+*************ColorScreen Printout*************
+ColorScreenParam = {
+0,
+1,
+/[$1],
+/[$0],
+};
+Runtime.setDefocus(15, 1, ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], 1, ColorScreenParam);
+Layer not exist.
+*********CameraHistory SPL*********
+pos[] ={
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+*********DEBUGPRINT3*********
+LINKTABLE
+ 
+,
+*********DEBUGPRINT4*********
+HISPTR
+CAMHIS
+*********ManualCamera Replay*********
+*********DEBUGPRINT6*********
+MANUALCAMPTR
+MANUALCAMHIS
+PATH = SPLINE
+PATH = DOWN
+PATH = UP
+PATH = LINEAR
+ShakeRoutine_main
+Focus SetMode
+Layer = Back
+Layer = Before
+Focus delta = /[$0](back)
+Focus SetMode-------end
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+Gnochk...
+--alpha--
+--filter--
+--ref_alpha--
+alpha max!!
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+HISTORYLOOK PTR=/[$0]
+やがてミルチア紛争へとつながる<lf>ツォアル事変が起こった翌年だ
+ManualCamera not Recorded.
+ManualCam_record.
+ManualCamera MOVE to start.
+ManualCameraRecord START!!!
+Record /[$0]
+End(TimeOver).
+End(Button).
+Time = /[$0]
+Objchk......(Chr)
+Objchk......End
+Objchk(+Mtn)......
+Objchk......(Effect)
+Objchk......(Unit)
+Objchk......
+Mtn Frame = /[$0]
+*********printout /[$0]***********
+ManualCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+ManualCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+ManualCam.setFov(/[#0]f);
+BaseCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setFov(/[#0]f);
+Timechk_main
+----------シーンは終了しました。
+----------シーンは/[$0]フレームでした。
+----------シーンを開始します。
+Timerchk_srv_main
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])(RealTotal = /[$3])
+***********Objchk printout***********
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+setRotate(/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+VibRoutine_main
+Xenvmainthreadmain
+Xenvplaythread
+Event Out
+XEVEFLAG:EV02056B_F
+XEVEJNAME:SCE02057
+CameraThread
+INPUT Number!!
+End.(RETURN = /[$0])
+spl
+/[$0]
+/[$0](Cursor = /[$1])
+lightSPL start.
+lightSPL end.
+andrew_act1
+shion_act1
+shion_act2
+中佐──
+andrew_act3
+最初から/[ruby(存在しなかった/なかった)]のさ
+俺は──
+三十六年前
+俺は　戦争の道具として<lf>この世界に生まれた──
+よくある話さ
+他者を破壊することが俺──<lf>いや俺達の存在意義だった
+それに適応出来た奴は幸せだった
+戦場で死ねた奴は<lf>もっと幸せだったろう
+だが俺にそれは<lf>訪れなかった
+自分という存在に<lf>なんら意義を見いだせないまま
+やがて戦争は終わり<lf>俺は世界から取り残された
+適応しようとはしたさ
+だが　俺の言葉と<lf>世界の言葉とは違った
+世界が俺を拒絶していると思った
+司令は──<lf>そんな俺を必要としてくれた
+俺は司令の中に<lf>未来の自分の姿を見た──いや
+見たかったんだ──
+だからなんだろう
+俺が世界の言葉を話すには<lf>常に薬の力が必要だった
+俺は　いつまでも<lf>“俺のまま”だったから──
+今ならそれが解る
+俺が世界を<lf>拒絶していたんだ
+andrew_act6
+シオン──
+“ここ”はいい
+andrew_act7
+ここには俺だけが<lf>存在している
+他はない
+──怒りも　哀しみも<lf>喜びも　未来もない──
+ただ──“自分がある”だけだ
+その自分も<lf>やがては溶けていく──
+andrew_act8
+心地よい感じだ──
+俺は──この感じを──<lf>求めていたんだ──
+シオン──やがてお前も<lf>──ここに来る──
+andrew_act8_2
+近い内に──<lf>きっと──
+俺には──<lf>それが──解る──
+shion_act9
+--shake--

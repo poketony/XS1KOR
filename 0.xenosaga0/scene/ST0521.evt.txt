@@ -1,432 +1,300 @@
-# chunk 2 @ 0xbb8 cnum=130 total=1
-# bc_map: 0
-MoveU
-
+# extraction_order: precise_code_v4
 # chunk 5 @ 0x14f8 cnum=1362 total=192
-# bc_map: 5,40,13,8,34,96,13,5,27,141,171,0,58,103,0,79,151,13,8,107,60,74,13,5,26,52,77,14,5,29,150,13,8,67,13,5,42,136,14,5,39,28,78,13,8,31,137,174,13,5,30,72,14,7,36,99,139,13,8,53,157,13,7,75,108,156,14,8,46,167,13,7,83,0,88,163,90,13,8,76,89,0,91,121,0,112,183,14,6,25,0,164,70,0,65,63,14,7,123,125,13,8,32,166,68,14,7,86,154,13,8,54,165,14,7,124,110,14,4,111,191,12,190,3,162,12,145,161,168,12,62,155,175,12,158,187,177,0,92,143,12,84,122,82,0,180,14,4,111,178,12,80,3,119,12,145,161,168,12,113,51,144,59,153,12,181,14,64,14,10,159,14,189,14,188,14,4,170,160,14,9,97,35,69,147,116,50,14,9,104,102,87,33,14,9,129,172,12,66,134,81,57,14,9,45,12,115,61,98,71,14,9,41,114,12,117,142,126,93,14,9,148,152,120,47,140,14,9,169,128,146,130,85,95,14,9,100,131,43,182,14,9,44,43,182,14,9,48,12,56,135,149,14,9,45,12,37,176,49,94,138,14,5,38,101,13,8,55,109,13,5,73,2,14,11,106,179,184,13,4,133,14,4,132,14,65,118,1,105,15,24,127,173,127,22,23,35,35,35,16,21,185,20,186,18,18,19,18,17
-/[label(알렌)]
+# bc_map: 5,40,13,8,34,96,13,5,27,141,171,0,58,103,0,79,151,13,8,107,60,74,13,5,26,52,77,14,5,29,150,13,8,67,13,5,42,136,14,5,39,28,78,13,8,31,137,174,13,5,30,72,14,7,36,99,139,13,8,53,157,13,7,75,108,156,14,8,46,167,13,7,83,0,88,163,90,13,8,76,89,0,91,121,0,112,183,14,6,25,0,164,70,0,65,63,14,7,123,125,13,8,32,166,68,14,7,86,154,13,8,54,165,14,7,124,110,14,4,111,191,12,190,3,162,12,145,161,168,12,62,155,175,12,158,187,177,0,92,143,12,84,122,82,0,180,14,4,111,178,12,80,3,119,12,145,161,168,12,113,51,144,59,153,12,181,14,64,14,10,159,14,189,14,188,14,4,170,160,14,9,97,35,69,147,116,50,14,9,104,102,87,33,14,9,129,172,12,66,134,81,57,14,9,45,12,115,61,98,71,14,9,41,114,12,117,142,126,93,14,9,148,152,120,47,140,14,9,169,128,146,130,85,95,14,9,100,131,43,182,14,9,44,43,182,14,9,48,12,56,135,149,14,9,45,12,37,176,49,94,138,14,5,38,101,13,8,55,109,13,5,73,2,14,11,106,179,184,13,4,133,14,4,132,14,118,1,105,24,127,173,127,22,23,185,186
+# bc_unmap: 15,16,17,18,19,20,21
+#dup(1): /[label(알렌)]
 아，주임님！！
-/[waitkey(64)]/[clear()]
-/[label(시온)]
-아，알렌 군<lf>
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(시온)]
+앗 알렌，<lf>
 무슨 일이야？
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 5
-/[label(알렌)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(알렌)]
 저，저기，주임님<lf>
 저，그 뒤로<lf>
 여러 가지 생각해 봤는데요
-<lf>
+#dup(4): <lf>
 그，그 사람들도，<lf>
 나름 괜찮은 점은 있는 것 같고，
-# dup_of: line 12, tag8 0
-<lf>
+#dup(4): <lf>
 그，저도 말이죠，<lf>
 조금씩 다가가 보려고요……．
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 4, tag8 8
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(시온)]
 흐음，괜찮은데？<lf>
 힘내．<lf>
 그럼！
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 5
-/[label(알렌)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(알렌)]
 아，아아……<lf>
 아니，그게 아니라<lf>
 저기，제 노력을………．
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 5
-/[label(알렌)]
-저，저기 주임님<lf>
+#dup(5): /[waitkey(64)]/[close()]
+#dup(1): /[label(알렌)]
+저，저기 주임님，<lf>
 사실은……．
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 4, tag8 8
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(시온)]
 미안，나중에！
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 5
-/[label(알렌)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(알렌)]
 아아아，<lf>
 주임님………．
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 5
-/[label(알렌)]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(1): /[label(알렌)]
 아，주임님！<lf>
 저，저기，혹시 제가<lf>
 그，주임님 기분을 상하게 할 만한……．
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 4, tag8 8
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(시온)]
 아，미안．<lf>
 지금 급하거든．<lf>
 이야기는 나중에 하자．
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 5
-/[label(알렌)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(알렌)]
 아，에，저기<lf>
 주임님……．
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-/[label(케이오스)]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(6): /[label(케이오스)]
 아，시온！<lf>
 어때，<lf>
 이상은 있었어？
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 4, tag8 8
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(시온)]
 아니，<lf>
 특별한 문제는 없는 것 같아．
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 54, tag8 7
-/[label(케이오스)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label(케이오스)]
 그래？<lf>
 흐음，해머나 선장님의<lf>
 기분 탓이면 좋겠는데．
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 8
-/[label(시온)]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 아，케이오스는<lf>
 나 못 믿는구나？
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 54, tag8 7
-/[label(케이오스)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(6): /[label(케이오스)]
 그렇지 않아．
-# dup_of: line 12, tag8 0
-<lf>
+#dup(4): <lf>
 시온이라면<lf>
 이상 한둘쯤은<lf>
 뚝딱！ 해치울 수 있잖아？
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 4, tag8 8
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(시온)]
 그래그래，<lf>
 뚝딱！ 해치울 수 있다고．
-# dup_of: line 12, tag8 0
-<lf>
+#dup(4): <lf>
 ……라고 하긴 했지만，<lf>
 케이오스 너，
-# dup_of: line 12, tag8 0
-<lf>
+#dup(4): <lf>
 역시 나를<lf>
 놀리는 거지？
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
+#dup(5): /[waitkey(64)]/[close()]
 /[label(앤드루)]
 …………．
-# dup_of: line 12, tag8 0
-<lf>
+#dup(4): <lf>
 백식 리얼리언，<lf>
 그것도 프로토타입인가．
-# dup_of: line 12, tag8 0
-<lf>
+#dup(4): <lf>
 이런 곳에서 만나게 되다니．<lf>
 나도 악운만은 강한 모양이군．
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 54, tag8 7
-/[label(케이오스)]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(6): /[label(케이오스)]
 시온，아직이야<lf>
 먼저 지기 씨를 불러와야지．
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 4, tag8 8
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(시온)]
 아 그렇지．<lf>
 너무 당황했나 봐……<lf>
 미안해．
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 54, tag8 7
-/[label(케이오스)]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(6): /[label(케이오스)]
 그러니까 아직 안 된다니까．<lf>
 빨리 지기 씨를 데려오자．
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 4, tag8 8
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(시온)]
 응，그렇지．<lf>
 나 대체 뭐 하는 거람……？
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 54, tag8 7
-/[label(케이오스)]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(6): /[label(케이오스)]
 시온도 참……．<lf>
 혹시 일부러 그러는 거야？
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-/[label()]
-안녕하신가，거기 있는<lf>
+#dup(5): /[waitkey(64)]/[close()]
+#dup(7): /[label()]
+#dup(8): 안녕하신가，거기 있는<lf>
 ＥＶＳ 플레이트를 알고 있나？
-/[waitkey(1)]/[clear()]
+#dup(9): /[waitkey(1)]/[clear()]
 ＥＶＳ란，<lf>
-Ｕ．Ｍ．Ｎ． 관리국에서 제작한<lf>
+#dup(10): Ｕ．Ｍ．Ｎ． 관리국에서 제작한<lf>
 환경 시뮬레이션 서비스의 총칭이다．
-# dup_of: line 122, tag8 12
-/[waitkey(1)]/[clear()]
-어려운 설명을 해 봐야<lf>
-이해하지 못할 것 같으니，<lf>
-간단히 설명하도록 하지．
-# dup_of: line 122, tag8 12
-/[waitkey(1)]/[clear()]
+#dup(9): /[waitkey(1)]/[clear()]
+#dup(11): 어려운 설명을 해 봐야<lf>
+#dup(12): 이해하지 못할 것 같으니，<lf>
+#dup(13): 간단히 설명하도록 하지．
+#dup(9): /[waitkey(1)]/[clear()]
 이 플레이트를 만지면<lf>
 다양한 환경 시뮬레이터를<lf>
 기동시킬 수 있다．
-# dup_of: line 122, tag8 12
-/[waitkey(1)]/[clear()]
-현재 Ｕ．Ｍ．Ｎ． 관리국이 제공하는 환경은<lf>
+#dup(9): /[waitkey(1)]/[clear()]
+Ｕ．Ｍ．Ｎ． 관리국이 제공하는 환경은<lf>
 ４종류의 게임 센터와<lf>
 과거의 전투 데이터로 만든 전투 필드．
-# dup_of: line 12, tag8 0
-<lf>
+#dup(4): <lf>
 다양한 환경을 제공하고 있으니<lf>
 그 뜻에 맞게 이용해 보도록．
-# dup_of: line 122, tag8 12
-/[waitkey(1)]/[clear()]
+#dup(9): /[waitkey(1)]/[clear()]
 다만，<lf>
 서비스를 이용하려면<lf>
 각 서비스의 패스포트가 필요하다．
-# dup_of: line 12, tag8 0
-<lf>
+#dup(4): <lf>
 열심히 손에 넣어 보게！
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 119, tag8 4
-/[label()]
-# dup_of: line 120, tag8 111
-안녕하신가，거기 있는<lf>
+#dup(5): /[waitkey(64)]/[close()]
+#dup(7): /[label()]
+#dup(8): 안녕하신가，거기 있는<lf>
 은색 플레이트를 알고 있나？
-# dup_of: line 122, tag8 12
-/[waitkey(1)]/[clear()]
+#dup(9): /[waitkey(1)]/[clear()]
 그 플레이트는<lf>
-# dup_of: line 124, tag8 3
-Ｕ．Ｍ．Ｎ． 관리국에서 제작한<lf>
+#dup(10): Ｕ．Ｍ．Ｎ． 관리국에서 제작한<lf>
 온라인 숍 단말이다．
-# dup_of: line 122, tag8 12
-/[waitkey(1)]/[clear()]
-# dup_of: line 127, tag8 145
-어려운 설명을 해 봐야<lf>
-# dup_of: line 128, tag8 161
-이해하지 못할 것 같으니，<lf>
-# dup_of: line 129, tag8 168
-간단히 설명하도록 하지．
-# dup_of: line 122, tag8 12
-/[waitkey(1)]/[clear()]
+#dup(9): /[waitkey(1)]/[clear()]
+#dup(11): 어려운 설명을 해 봐야<lf>
+#dup(12): 이해하지 못할 것 같으니，<lf>
+#dup(13): 간단히 설명하도록 하지．
+#dup(9): /[waitkey(1)]/[clear()]
 요컨대 이 플레이트를 만지면<lf>
 언제든 통신 판매 서비스를<lf>
 이용할 수 있다는 소리지．<lf>
 하지만 당연하게도<lf>
 돈이 없으면 물건을 살 수 없다．
-# dup_of: line 122, tag8 12
-/[waitkey(1)]/[clear()]
+#dup(9): /[waitkey(1)]/[clear()]
 열심히 벌어 보게！
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
+#dup(5): /[waitkey(64)]/[close()]
 이게 나오면 오류입니다！
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
+#dup(5): /[waitkey(64)]/[close()]
 /[label(위험)]
 현재 선외로 나갈 수 없습니다．
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
+#dup(5): /[waitkey(64)]/[close()]
 Ｂ１으로 이동하겠습니까？
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
+#dup(5): /[waitkey(64)]/[close()]
 Ｂ１으로 이동합니다．
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 119, tag8 4
-/[label()]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(7): /[label()]
 선내 ＭＡＰ<lf>
 현재 위치：거주 구역 통로
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-/[label(해머)]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(14): /[label(해머)]
 무슨 일임까？<lf>
 아，저를 못 봐서<lf>
 쓸쓸해진 건가요？<lf>
 괜찮슴다，<lf>
 엘자는 지금 대기 명령 중이에요．<lf>
 언제든 만날 수 있슴다．
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 181, tag8 9
-/[label(해머)]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(14): /[label(해머)]
 왜 그러시죠？<lf>
 어디 가고 싶은 검까？<lf>
 그럼 선장님한테 말하는 게 좋슴다．<lf>
 아，근데 바가지 조심하십쇼．<lf>
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 181, tag8 9
-/[label(해머)]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(14): /[label(해머)]
 모모 말임까？<lf>
 못 봤어요．<lf>
-# dup_of: line 122, tag8 12
-/[waitkey(1)]/[clear()]
+#dup(9): /[waitkey(1)]/[clear()]
 이럴 때 모모한테 부탁하면<lf>
 한 번에 위치를 알 수 있는데 말임다．<lf>
 그 모모가 없으니<lf>
 두 손 다 든 셈이죠．
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 181, tag8 9
-/[label(해머)]
-어라？ 혼자서 무슨 일임까？
-# dup_of: line 122, tag8 12
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(14): /[label(해머)]
+#dup(15): 어라？ 혼자서 무슨 일임까？
+#dup(9): /[waitkey(1)]/[clear()]
 알렌 씨 말인가요？<lf>
 여기엔 없슴다．<lf>
 어차피 또 어디선가 화풀이로<lf>
 폭식이라도 하고 있겠죠．
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 181, tag8 9
-/[label(해머)]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(14): /[label(해머)]
 아，무사하셨군요！<lf>
 다행임다．
-# dup_of: line 122, tag8 12
-/[waitkey(1)]/[clear()]
+#dup(9): /[waitkey(1)]/[clear()]
 엘자도 위험했슴다만<lf>
 병사들이 들어오기 전에<lf>
 해치를 전부 잠가 버렸어요．<lf>
 그래도 이래선 잡힌 거나 마찬가지임다．
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 181, tag8 9
-/[label(해머)]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(14): /[label(해머)]
 큰일임다 큰일！<lf>
 시민이 파운데이션에서，<lf>
 그노시스가 대위기예요！<lf>
 아 정말，<lf>
 뭐가 뭔지 하나도 모르겠슴다！
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 181, tag8 9
-/[label(해머)]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(14): /[label(해머)]
 들었슴다，<lf>
 모모가 큰일 났다면서요！<lf>
 괜찮슴다，각오는 됐어요．<lf>
 모모를 위해서라면<lf>
 불속이든 물속이든 가겠슴다！<lf>
 하지만 여긴 우주 속임다．
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 181, tag8 9
-/[label(해머)]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(14): /[label(해머)]
 어떻게 됐슴까？<lf>
 모모는 찾았나요？<lf>
-포기하면 안 돼요．<lf>
-힘내십쇼！！
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 181, tag8 9
-/[label(해머)]
+#dup(16): 포기하면 안 돼요．<lf>
+#dup(17): 힘내십쇼！！
+#dup(5): /[waitkey(64)]/[close()]
+#dup(14): /[label(해머)]
 네피림의 노랫소리만 멈추면 됨다！<lf>
-# dup_of: line 239, tag8 43
-포기하면 안 돼요．<lf>
-# dup_of: line 240, tag8 182
-힘내십쇼！！
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 181, tag8 9
-/[label(해머)]
+#dup(16): 포기하면 안 돼요．<lf>
+#dup(17): 힘내십쇼！！
+#dup(5): /[waitkey(64)]/[close()]
+#dup(14): /[label(해머)]
 좋슴다，준비는 됐어요．
-# dup_of: line 122, tag8 12
-/[waitkey(1)]/[clear()]
+#dup(9): /[waitkey(1)]/[clear()]
 제 손으로<lf>
 세계를 구하고 싶었슴다！<lf>
 놈을 이기면 영웅이군요！
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 181, tag8 9
-/[label(해머)]
-# dup_of: line 205, tag8 45
-어라？ 혼자서 무슨 일임까？
-# dup_of: line 122, tag8 12
-/[waitkey(1)]/[clear()]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(14): /[label(해머)]
+#dup(15): 어라？ 혼자서 무슨 일임까？
+#dup(9): /[waitkey(1)]/[clear()]
 아，파운데이션에<lf>
 놀러 가시려고요！？<lf>
 좋으시겠슴다．<lf>
 그나저나 아쉽네요……．<lf>
 일만 없으면 같이 갈 텐데 말임다……．
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 5
-/[label(알렌)]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(1): /[label(알렌)]
 아 주임님，어서 오세요．<lf>
 어때요，푹 쉬셨나요？<lf>
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 4, tag8 8
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(시온)]
 응，완벽해！<lf>
 이제 괜찮아．
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 5
-/[label(알렌)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(알렌)]
 그럼 바로，<lf>
 /[font(ＫＯＳ−ＭＯＳ)] 조정을 시작할까요．<lf>
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
+#dup(5): /[waitkey(64)]/[close()]
 /[label(경고)]
 이 멍청아！！<lf>
 비상사태라 잠가 둔 거라고！<lf>
 （Ｂｙ 매슈스 님）
-# dup_of: line 3, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 119, tag8 4
-/[label()]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(7): /[label()]
 잠금을 해제하겠습니까？
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 119, tag8 4
-/[label()]
+#dup(5): /[waitkey(64)]/[close()]
+#dup(7): /[label()]
 잠금이 해제되었습니다．
-# dup_of: line 28, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 95, tag8 65
-이런 곳에서 만나게 되다니．<lf>
+#dup(5): /[waitkey(64)]/[close()]
 엘리베이터
 **********************************
 예<lf>아니요
-MoveD
 on!!
-フラグオン！
+#dup(18): フラグオン！
 해제한다<lf>해제하지 않는다
-# dup_of: line 292, tag8 127
-フラグオン！
+#dup(18): フラグオン！
 enterd : /[$0]
 entrance: /[$0]
-# dup_of: line 183, tag8 35
-아，저를 못 봐서<lf>
-# dup_of: line 183, tag8 35
-아，저를 못 봐서<lf>
-# dup_of: line 183, tag8 35
-아，저를 못 봐서<lf>
-Talk_npc15
-automatic_door
 ＊＊＊＊＊＊＊＊KOJI_38は立ってます＊＊＊＊＊＊＊＊＊
-Up
 ＊＊＊＊＊＊＊＊KOJI_38は立ってません＊＊＊＊＊＊＊＊＊
-Talk_npc3
-# dup_of: line 305, tag8 18
-Talk_npc3
-Talk_npc5
-# dup_of: line 305, tag8 18
-Talk_npc3
-Talk_npc20

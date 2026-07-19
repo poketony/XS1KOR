@@ -1,0 +1,69 @@
+# think_patch extract: think076.bin.ori
+# 총 13개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x0196
+　도주
+
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0312
+　冷衝　　Ｓ
+　　슬로
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x0344
+　治癒
+　　ＨＰ 회복
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x0372
+　治癒
+　　ＨＰ 회복
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x04C2
+　剣の力　　Ｓ
+　　物理攻撃力アップ
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x051A
+　剣の風　　Ｓ
+　　スピード２５
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x0806
+　死界の독　　Ｓ
+　　リバースＨＰ
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x084C
+　煉獄の炎　　Ｅ／불꽃
+
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x088C
+　魔神の血　　Ｓ
+　　ＥＰ×２
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x08C4
+　呪印の鎖　　Ｓ
+　　コンボ封鎖（□）
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x0904
+　呪印の鎖　　Ｓ
+　　コンボ封鎖（△）
+<<<
+
+>>> [011] op=0x21(display) flag=0x00 offset=0x0944
+　冥界の血印　　Ｓ
+　　ＨＰドレイン
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x0982
+　冥界の霊印　　Ｓ
+　　ＥＰドレイン
+<<<

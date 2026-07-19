@@ -1,6 +1,8 @@
+# extraction_order: precise_code_v4
 # chunk 2 @ 0x43c cnum=398 total=18
-# bc_map: 0,13,7,1,10,6,12,9,8,2,0,11,2,4,16,14,15,17,5,3
-/[label()]
+# bc_map: 0,13,7,1,10,6,12,9,8,2,0,11,2,4,16,14,15,17,5
+# bc_unmap: 3
+#dup(1): /[label()]
 俺ッちさ、家を壊されちまったから、<lf>
 ここに住まわせてもらってんだよ。
 /[waitkey(1)]/[clear()]
@@ -9,16 +11,13 @@
 俺が落ち込んでいてもしょうがないよな。<lf>
 だから、<lf>
 せめてホテルの修理をしようと思ってさ！
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 0
-/[label()]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
 やさしいパパとママにかこまれて。
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 enterd : /[$0]
 襲撃後宿屋１Ｆ・２
 襲撃後外観街１・５
 襲撃後外観街１・９
 襲撃後酒場２Ｆ・２
 entrance: /[$0]
-Talk_npc1

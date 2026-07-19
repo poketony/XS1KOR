@@ -1,40 +1,30 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x8e8 cnum=603 total=27
-# bc_map: 15,12,3,15,10,3,16,17,3,18,3,19,3,7,6,3,1,8,3,2,9,3,0,3,10,14,23,20,24,21,26,4,25,22,13,5,11
-セグメント・アドレスＮｏ．５<lf>
+# bc_map: 15,12,3,15,10,3,16,17,3,18,3,19,3,7,6,3,1,8,3,2,9,3,0,3,14,23,20,24,21,26,4,25,22,13,5,11
+#dup(1): セグメント・アドレスＮｏ．５<lf>
 を発見した。
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 15
-セグメント・アドレスＮｏ．５<lf>
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): セグメント・アドレスＮｏ．５<lf>
 と表示されている。
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 セグメント・アドレスＮｏ．５の<lf>
 デコードを終了します。
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ボタンがあります。押してみますか？
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ロックされている。
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 「◇永遠の平和を子供たちに◇<lf>
 　　　　　　　　ミルチアパーク」
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 /[label(モモ)]
 あれ…
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 /[label(Ｊｒ．)]
 おや…
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 /[color(0x329bbe)]ＰＭカードＡ/[color(0xffffff)]を手に入れた
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 10
-と表示されている。
+#dup(2): /[waitkey(64)]/[close()]
 サブルート扉見つけた
 左
 右

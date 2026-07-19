@@ -14,7 +14,7 @@ WAIT=/[$0]
 Cancel!!
 History is Empty.
 *********CameraTool Standby*****************
-そうね
+그래
 *********Capture Start!!!*****************
 CaptureMode = /[$0]
 *********CaptureTool Standby*****************
@@ -276,15 +276,15 @@ lightSPL end.
 hammer_act
 chaos_act
 shion_act
-そういうことなら<lf>何か起こる前に連れ戻しに行こう
-私　ジギーさん呼んで来る<lf>あの人　頼りになりそうだから
-んじゃ<lf>オイラはアレンさんを
-頼りにならなさそうっすけど――
+그렇다면<lf>무슨 일이 생기기 전에 데려오자
+난 지기 씨를 불러올게<lf>그분은 믿음직해 보이니까
+그럼<lf>전 알렌 씨 데려올게요
+믿음직해 보이진 않지만요……
 fish1_act
 fish2_act
 fish3_act
 allen_act
-――ん
+……응？
 /[$0]
 /[$0](Cursor = /[$1])
 --shake--

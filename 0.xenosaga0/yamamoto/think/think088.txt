@@ -1,0 +1,91 @@
+# think_patch extract: think088.bin.ori
+# 총 18개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x01B4
+思考中断
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x038C
+コンビネーション攻撃思案中
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x03D4
+コンビネーション攻撃発案！
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x04C8
+グレイト・ジョー
+「そんな後ろじゃ〜当らんぞ！
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x04FE
+グレイト・ジョー
+「それとも恐いのか〜？
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x056C
+グレイト・ジョー
+「ガンマンの少年よ
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x0598
+グレイト・ジョー
+「サシの勝負といこうじゃないか
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x06BA
+グレイト・ジョー
+「勝負解除！！！
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x06E4
+グレイト・ジョー
+「まとめて一気にカタをつける！
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x073A
+회복とダメージが逆転したかも？
+（確率５０％）
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x079C
+　ブラッドノイズ　　Ｓ
+　　エーテル攻撃力重視
+<<<
+
+>>> [011] op=0x21(display) flag=0x00 offset=0x0876
+グレイト・ジョー
+「外野は、黙ってろ！！
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x08B6
+グレイト・ジョー
+「愚か者が…
+<<<
+
+>>> [013] op=0x21(display) flag=0x00 offset=0x093A
+　ハートショットブロー　Ｐ／Ｓ
+　　戒め
+<<<
+
+>>> [014] op=0x21(display) flag=0x00 offset=0x097C
+　カモンブリット　　Ｅ
+
+<<<
+
+>>> [015] op=0x21(display) flag=0x00 offset=0x09C2
+　ソウルバスター　　Ｅ
+
+<<<
+
+>>> [016] op=0x21(display) flag=0x00 offset=0x0A10
+　デッドリーパワー　　Ｓ
+　　物理攻撃力重視
+<<<
+
+>>> [017] op=0x21(display) flag=0x00 offset=0x0A56
+　ブラッドノイズ　　Ｓ
+　　エーテル攻撃力重視
+<<<

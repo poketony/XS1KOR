@@ -1,5 +1,7 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0xc6c cnum=585 total=16
-# bc_map: 15,0,1,2,12,3,4,5,6,7,8,14,10,13,9,11,13
+# bc_map: 15,0,1,2,12,3,4,5,6,7,8,14,10,13,9,13
+# bc_unmap: 11
 ＥＶＳ【環境シミュレーター】を終了します。
 /[waitkey(64)]/[close()]
 EOB:0
@@ -13,8 +15,6 @@ broken:5
 enterd : /[$0]
 イベント3020a - 3021
 evsExitをコールしました
-はい<lf>いいえ
+#dup(1): はい<lf>いいえ
 entrance: /[$0]
-idle
-# dup_of: line 14, tag8 13
-はい<lf>いいえ
+#dup(1): はい<lf>いいえ

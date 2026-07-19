@@ -1,11 +1,12 @@
+# extraction_order: precise_code_v4
 # chunk 2 @ 0x5a0 cnum=406 total=16
-# bc_map: 0,11,10,1,0,12,13,15,2,6,3,4,5,14,8,9,7
-/[label(알렌)]
+# bc_map: 0,11,10,1,0,12,13,15,2,6,3,4,5,14,8,9
+# bc_unmap: 7
+#dup(1): /[label(알렌)]
 주임님．<lf>
 타깃 드론을 변경했습니다．
 /[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 0
-/[label(알렌)]
+#dup(1): /[label(알렌)]
 이번 타깃은 소리에만 반응합니다．<lf>
 큰 소리를 내면 다가오겠지만<lf>
 시야에 들어가도 안 들킬 거예요！　
@@ -17,4 +18,3 @@ Event Pass
 공사 중입니다/[wait(30)]/[close()]
 enterd : /[$0]
 entrance: /[$0]
-Msg

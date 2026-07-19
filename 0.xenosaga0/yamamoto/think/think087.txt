@@ -1,0 +1,103 @@
+# think_patch extract: think087.bin.ori
+# 총 20개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x040E
+アルベド
+「そんなトロイマシンに乗って
+　どうするつもりだぁ？
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x05AA
+　赤狼拳　　Ｐ
+　　장갑 결손
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x05E4
+　鳳翼天舞　　Ｅ
+
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x0614
+　魔眼−朧　　Ｓ
+　　혼란＋ＥＰ破壊
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x0656
+　魔眼−魂　　Ｓ
+　　ＨＰドレイン
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x06A2
+　堕天黒霊掌　　Ｅ
+　　
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x06E6
+　幻桜陣　　Ｓ
+　　エーテル攻撃重視
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x072A
+　魔風陣　　Ｓ
+　　スピード５０
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x0B1E
+　ムシノムレ　　Ｐ
+
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x0B64
+　ヒカリノハシラ　　Ｅ
+
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x0BAE
+　ハナツカゲノハリ　　Ｅ
+
+<<<
+
+>>> [011] op=0x21(display) flag=0x00 offset=0x0C2E
+　ハメツノヒカリ　　Ｅ
+
+<<<
+
+>>> [012] op=0x1A(condition) flag=0x00 offset=0x0C5E
+------------->Free Think ------------
+<<<
+
+>>> [013] op=0x21(display) flag=0x00 offset=0x0CB4
+　シロキモノ
+　　全ステータスクリア
+<<<
+
+>>> [014] op=0x21(display) flag=0x00 offset=0x0D26
+　ハメツノマエブレ
+　　ＥＰドレイン
+<<<
+
+>>> [015] op=0x21(display) flag=0x00 offset=0x0D7E
+　トワノキオク
+　　로스트
+<<<
+
+>>> [016] op=0x21(display) flag=0x00 offset=0x0DD8
+　自爆
+
+<<<
+
+>>> [017] op=0x1A(condition) flag=0x00 offset=0x0E38
+============>LASBOSS-d-think
+<<<
+
+>>> [018] op=0x21(display) flag=0x00 offset=0x0EEA
+　扇閃光　　Ｅ／Ｓ
+　　エーテル力ダウン
+<<<
+
+>>> [019] op=0x21(display) flag=0x00 offset=0x0F3C
+　封滅刃　　Ｅ
+
+<<<

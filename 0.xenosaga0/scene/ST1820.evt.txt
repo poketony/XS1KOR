@@ -1,75 +1,55 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x64 cnum=213 total=4
-# bc_map: 0,3,2,1
+# bc_map: 0,3
+# bc_unmap: 1,2
 22222222222222222222222222222222222222222222222222222
 【ブリッジエリア】
-Nobi
-Chijimi
 
 # chunk 4 @ 0x1264 cnum=662 total=36
-# bc_map: 35,2,18,2,14,2,19,2,13,2,16,2,34,2,32,2,0,30,29,2,12,1,31,33,2,24,1,22,28,23,1,11,20,1,25,21,26,2,15,2,6,3,17,27,9,10,8,8,4,5
-# bc_unmap: 7
+# bc_map: 35,2,18,2,14,2,19,2,13,2,16,2,34,2,32,2,0,30,29,2,12,1,31,33,2,24,1,22,28,23,1,11,20,1,25,21,26,2,15,2,17,27,7,9,10
+# bc_unmap: 3,4,5,6,8
 移動先の入力をお願いします。
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【揚陸待機エリア】に移動します。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【パークエリア】に移動します。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【隔離格納庫エリア】に移動します。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【ドックエリア】に移動します。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【居住エリア】に移動します。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ブリッジに移動しますか？
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(シオン)]
 アレン君に酷い事言っちゃったからな。<lf>
 やっぱり直接会って謝らないとね……。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 『ピンク色の髪の女の子』？
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 パークエリア方面のエリアトレインに<lf>
 乗って行くのを見かけたぜ！！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 それより聞いてくれよ！！
-# dup_of: line 22, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 この掲示板を整備してるんだけどよ……。<lf>
 みんながいじり倒すもんだから<lf>
 すぐに壊れちまうんだよ！！
-# dup_of: line 22, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 ……まぁ、それだけ利用してくれてんのは、<lf>
 ありがたいんだけどな！！
-# dup_of: line 22, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 とにかくこんな広い艦だ！！<lf>
 あんたも道に迷ったら<lf>
 どんどん活用してくれよ！！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【ブリッジエリア駅】
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-Nobi
-Chijimi
+#dup(1): /[waitkey(64)]/[close()]
 【揚陸待機エリア】<lf>【パークエリア】<lf>【隔離格納庫エリア】<lf>【ドックエリア】<lf>【居住エリア】<lf>　キャンセル
 はい<lf>いいえ
+PPPPPPPPPPPPPPPPPPPPPPP
 enterd : /[$0]
 entrance: /[$0]
-TalkNPC1
-# dup_of: line 47, tag8 8
-TalkNPC1
-Evt1
-Evt2

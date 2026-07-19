@@ -1,0 +1,85 @@
+# chunk 13 @ 0x3340 cnum=1126 total=83
+# bc_map: 10,11,0,8,9,12,5,7,6,1,4,3,2,26,27,28,29,30,32,33,23,34,73,24,36,38,35,37,13,77,31,61,78,39,40,41,42,18,79,69,14,75,62,80,43,44,45,63,68,67,15,65,66,25,22,46,74,20,64,47,48,49,50,51,21,72,70,52,53,54,55,19,16,81,56,57,59,17,76,71,60,58,82
+Xenvmainthreadmain
+Xenvplaythread
+Event Out
+XEVEFLAG:EV02061B_F
+XEVEJNAME:SCE02062
+__chracter_splne
+FLSmomo.fpk
+FLSziggy.fpk
+FLSshion.fpk
+FLSallen.fpk
+FLSmatehws.fpk
+FLShammer.fpk
+FLSchaos.fpk
+mtn_001
+mtn_002
+mtn_003
+mtn_004
+mtn_005
+mtn_006
+mtn_007
+masyu_fm_irekae
+mtn_008
+なんだ　楽勝じゃねぇか
+masyu_serifu_01_2
+mtn_009_mae
+mtn_010_mae
+mtn_009
+mtn_010
+allen_serifu_01_3
+主任――
+mtn_005_2
+shion_serifu_01_3
+今の――
+mtn_011
+mtn_012
+mtn_013
+mtn_014
+hammr_fm_irekae1
+幻覚なんかじゃないわよね
+ええ
+allen_serifu_02_1
+グノーシスを吸収しているようでしたが
+shion_serifu_02_1
+私の知らない兵装があるなんて――
+mtn_015
+mtn_016
+mtn_017
+shion_serifu_02_2
+ううん　兵装なんかじゃないわ
+あれは――
+allen_serifu_02_2
+ありえない話ですよ
+あるとかないとか<lf>一体何の話でい
+masyu_serifu_02_2
+masyu_fm2_off
+mtn_018
+グノーシスは<lf>倒したんじゃねぇのか
+hammr_serifu_03_1
+あのぉ――船長
+mtn_019
+mtn_020
+mtn_021
+mtn_022
+mtn_023
+hammr_serifu_03_3
+さっきから　ちび旦那が<lf>通信を入れてきてるっすけど――
+おう　つないでくれ
+mtn_024
+mtn_025
+mtn_026
+mtn_027
+hammr_fm_irekae3
+allen_serifu_04_3
+私の知らないＫＯＳ−ＭＯＳ――
+mtn_028
+mtn_029
+mtn_030
+allen_serifu_04_4
+ケビン先輩――
+これがあなたの<lf>望んでいたことなんですか――
+mtn_031
+mtn_029_2
+ＫＯＳ−ＭＯＳの本当の姿なんですか――

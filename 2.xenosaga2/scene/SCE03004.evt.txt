@@ -1,0 +1,356 @@
+# chunk 5 @ 0x1a6c cnum=2625 total=353
+# bc_map: 135,170,79,81,67,80,44,43,46,124,47,83,5,7,61,9,63,48,62,233,318,319,332,331,236,235,231,230,305,307,306,51,50,58,52,54,60,56,57,311,237,244,261,278,295,296,297,298,299,300,238,239,240,241,242,243,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,234,229,309,313,333,334,335,336,337,338,339,340,341,342,171,172,173,174,175,176,177,178,179,180,227,343,344,345,346,347,348,349,350,351,352,181,182,183,184,185,186,187,188,189,190,49,6,8,64,86,112,113,76,77,40,41,35,36,118,1,65,33,34,31,30,201,115,66,114,90,10,4,191,27,194,138,26,11,85,0,17,12,78,42,14,13,92,91,109,107,110,108,119,72,87,88,74,73,2,117,116,89,151,152,153,154,75,22,23,25,24,129,136,198,193,130,137,199,192,104,82,98,96,97,99,111,69,68,120,103,106,101,105,102,100,16,95,94,93,39,38,37,15,121,19,18,20,122,21,3,197,195,196,123,127,128,71,125,126,45,84,70,200,169,168,146,164,205,312,216,228,147,308,32,211,303,165,324,316,223,148,325,166,210,328,222,327,149,310,167,217,208,150,221,204,139,158,220,330,225,202,203,329,322,140,159,226,214,215,212,323,213,156,209,157,160,131,141,206,219,161,155,304,207,317,302,218,142,232,143,162,320,326,314,134,144,163,224,315,321,133,301,145,132,28,29,53,55,59
+# bc_unmap: 53,55,59
+eventmovie/
+lightSPL_main
+HISTORY CLEAR
+HISTORYDELETE PTR=/[$0]
+ERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRROR!!
+HISTORY-SET /[$0]
+CameraHistory Overflow!!
+Camera instant test
+Cameratest_history
+WAIT=/[$0]
+Cancel!!
+History is Empty.
+*********CameraTool Standby*****************
+*********Capture Start!!!*****************
+CaptureMode = /[$0]
+*********CaptureTool Standby*****************
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+キャプチャモード
+全画面
+全画面（アルファ）
+ＢＧのみ（ＺＰＩＣなし）
+ＢＧのみ（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+オブジェ単体（ＺＰＩＣあり）
+テキスト（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣあり）
+CaptureMODE ---All Screen.
+CaptureMODE ---All Screen(alpha).
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---Chr(pic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---TXT(pic)
+CaptureMODE ---Particle(pic)
+CaptureMODE ---Particle(pic+zpic)
+ページ切り替え
+キャラ０
+キャラ１
+キャラ２
+キャラ３
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラのみキャプチャ
+オブジェのみキャプチャ
+フォルダ選択
+企画サイドのフォルダを使用する
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（たけなか）
+ｍｏｖｉｅ０４（なかむら）
+ｍｏｖｉｅ０５（いけうち）
+ｍｏｖｉｅ０６（いけうち）
+ｍｏｖｉｅ０７（ふち）
+ｍｏｖｉｅ０８（ふち）
+ｍｏｖｉｅ０９（保存）
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+エフェクトサイドのフォルダを使用する
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（おの７６５）
+ｍｏｖｉｅ１７（うなかみ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+*********Capture End.*****************
+*********Capture Waiting...*****************
+ColorScreen  SetMode
+Layer = /[$0]
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode-------end
+*************ColorScreen Printout*************
+ColorScreenParam = {
+0,
+1,
+/[$1],
+/[$0],
+};
+Runtime.setDefocus(15, 1, ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], 1, ColorScreenParam);
+Layer not exist.
+*********DEBUGPRINT*********
+*********CameraHistory SPL*********
+pos[] ={
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+*********DEBUGPRINT3*********
+LINKTABLE
+ 
+,
+*********DEBUGPRINT4*********
+HISPTR
+CAMHIS
+*********ManualCamera Replay*********
+*********DEBUGPRINT6*********
+MANUALCAMPTR
+MANUALCAMHIS
+PATH = SPLINE
+PATH = DOWN
+PATH = UP
+PATH = LINEAR
+ShakeRoutine_main
+Focus SetMode
+Layer = Back
+Layer = Before
+Focus delta = /[$0](back)
+Focus SetMode-------end
+*************Focus Printout*************
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+Gnochk...
+--alpha--
+--filter--
+--shake--
+--ref_alpha--
+alpha max!!
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+Objchk......(Effect)
+HISTORYLOOK PTR=/[$0]
+ManualCamera not Recorded.
+ManualCam_record.
+ManualCamera MOVE to start.
+ManualCameraRecord START!!!
+Record /[$0]
+End(TimeOver).
+End(Button).
+Time = /[$0]
+Objchk......(Chr)
+Objchk......End
+Objchk(+Mtn)......
+Objchk......(Unit)
+Objchk......
+Mtn Frame = /[$0]
+*********printout /[$0]***********
+ManualCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+ManualCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+ManualCam.setFov(/[#0]f);
+BaseCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setFov(/[#0]f);
+*********Timechk Standby*****************
+Timechk_main
+----------シーンは終了しました。
+----------シーンは/[$0]フレームでした。
+----------シーンを開始します。
+Timerchk_srv_main
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])(RealTotal = /[$3])
+***********Objchk printout***********
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+setRotate(/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+VibRoutine_main
+Xenvmainthreadmain
+Xenvplaythread
+Event Out
+XEVEFLAG:EV03004_F
+XEVEJNAME:SCE03005
+CameraThread
+INPUT Number!!
+End.(RETURN = /[$0])
+spl
+lightSPL start.
+lightSPL end.
+gaignun_act2
+jr_act2
+あのＫＯＳ−ＭＯＳって<lf>奴の/[ruby(能力/ポテンシャル)]
+並大抵じゃないぜ
+どう見ても/[ruby(試験運用型/テストタイプ)]<lf>ってガラじゃねーな
+エミュレーターと<lf>共鳴したことも気になる
+gaignun_act3
+ヒルベルトエフェクト──
+/[ruby(元型/アーキタイプ)]は損失したと聞くが<lf>なかなか裏がありそうだな──
+それに<lf>ＫＯＳ−ＭＯＳの管理者──
+シオンと言ったか
+jr_act4
+彼女気付いているかもしれんな
+俺達の/[ruby(能力/ちから)]に
+まさか<lf>フツーの人間がか
+gaignun_act5
+普通でない可能性は<lf>あるんじゃないか
+jr_act6
+そうかな
+見たとこ普通の<lf>女の子だけど
+まぁ　ヘルマーのおっさんも<lf>関係している“例の計画”の
+最重要機密に携わっている訳だから<lf>そう言うこともありうるか──
+gaignun_act7
+プロジェクトゾハル──か
+jr_act8
+なぁ──
+しばらくさ<lf>ミズラヒの話はよそうぜ
+gaignun_act9
+ふむ
+あのモモという/[ruby(娘/こ)]へ<lf>の気遣いか
+gaignun_act10
+jr_act10
+なんだよ<lf>その目は
+誰も狂人の子だなんて<lf>言われたかねーだろ
+もっとも俺達は<lf>ミズラヒ最期の場所となった
+“あそこ”に居あわせ<lf>一部始終を見ている
+あの/[ruby(娘/こ)]はレアリエンだ
+記憶を刷り込まれてる<lf>可能性もあるけどな
+彼女の抱いているミズラヒ像の方が<lf>虚像だと言う訳だな
+gaignun_act12
+jr_act12
+わかんね
+だからこそ保留に<lf>しておきたいのさ
+とりあえず今はな
+そんなに気にかかるのなら<lf>/[ruby(浜辺/ビーチ)]にでも誘ったらどうだ
+彼女も少しは<lf>気分転換になるだろう
+だから
+isu_act1
+そういうんじゃねえって<lf>言ってんだろ
+isu_act2
+jr_act13
+box_act13
+gaignun_act14
+おい
+なんだよ<lf>これ
+jr_act15
+gun_act15
+ステンレス仕上げの<lf>/[ruby(ＰＭ/マカロフ)]じゃねーか
+しかも紙箱付きかよ
+先週たまたま
+サザビーズの“古代武器コレクション”に<lf>出ていたので落札してみた
+なに企んでんだよ
+gaignun_act15
+ガラでもねえ
+gaignun_act16
+jr_act16
+別に
+最近よく働いているようだから<lf>ボーナスでも──と思ったんだが
+余計な世話だったかな
+door_open
+gaignun_act17
+jr_act17
+むやみやたらと撃つなよ
+俺より年上なんだ
+少しは年長者らしく<lf>振舞ってくれ
+door_close
+サイコーッ
+gaignun_act18
+box_act18
+/[$0]
+/[$0](Cursor = /[$1])
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---SoftImage BG(pic+zpic)

@@ -1,17 +1,15 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x29e0 cnum=792 total=16
-# bc_map: 13,0,10,0,10,0,11,0,15,12,14,1,7,6,3,9,4,5,11,2,0,4,6,10,12,8
+# bc_map: 13,0,10,0,10,0,11,0,15,12,14,1,7,6,3,9,4,2,8
+# bc_unmap: 5
 上の階へ上がりますか？
-/[waitkey(64)]/[close()]
-エレベーターを作動させますか？
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 10
-エレベーターを作動させますか？
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): エレベーターを作動させますか？
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): エレベーターを作動させますか？
+#dup(1): /[waitkey(64)]/[close()]
 ボタンがあります。押しますか？
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 回転盤
 上のエレベータ
 下のエレベータ
@@ -21,18 +19,5 @@ lo2 = true
 enterd : /[$0]
 イベント2054:ボスバトル
 entrance: /[$0]
-idle
-# dup_of: line 7, tag8 11
-ボタンがあります。押しますか？
 1520から来た
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
-# dup_of: line 17, tag8 4
-entrance: /[$0]
-# dup_of: line 14, tag8 6
-lo2 = true
-# dup_of: line 3, tag8 10
-エレベーターを作動させますか？
-# dup_of: line 10, tag8 12
-上のエレベータ
 はい<lf>いいえ

@@ -1,17 +1,8 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x8e8 cnum=493 total=5
-# bc_map: 4,1,2,0,3,4,1,2,0,3
+# bc_map: 4,1,2,3
+# bc_unmap: 0
 イベント3050C1
 enterd : /[$0]
 entrance: /[$0]
-Talk_npc1
-はい<lf>いいえ
-# dup_of: line 1, tag8 4
-イベント3050C1
-# dup_of: line 2, tag8 1
-enterd : /[$0]
-# dup_of: line 3, tag8 2
-entrance: /[$0]
-# dup_of: line 4, tag8 0
-Talk_npc1
-# dup_of: line 5, tag8 3
 はい<lf>いいえ

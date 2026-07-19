@@ -1,163 +1,111 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x1edc cnum=790 total=65
-# bc_map: 9,55,56,4,1,48,4,0,14,54,3,30,19,17,4,1,16,42,38,4,2,11,4,1,10,4,2,62,4,1,12,4,1,44,61,4,2,39,46,4,0,27,25,3,35,58,29,3,18,4,1,40,64,41,3,34,4,1,36,60,53,3,32,52,4,0,24,57,4,1,26,59,4,0,21,13,37,3,31,4,1,47,50,23,4,0,45,4,1,15,49,43,4,0,28,4,2,20,33,22,4,0,63,51,4,7,8,6,6,6,6,6,5
+# bc_map: 9,55,56,4,1,48,4,0,14,54,3,30,19,17,4,1,16,42,38,4,2,11,4,1,10,4,2,62,4,1,12,4,1,44,61,4,2,39,46,4,0,27,25,3,35,58,29,3,18,4,1,40,64,41,3,34,4,1,36,60,53,3,32,52,4,0,24,57,4,1,26,59,4,0,21,13,37,3,31,4,1,47,50,23,4,0,45,4,1,15,49,43,4,0,28,4,2,20,33,22,4,0,63,51,4,7,8
+# bc_unmap: 5,6
 ×× 플로어를 작동합니다．<lf>
 이동 범위 안에 있는 작업자는<lf>
 즉시 안전한 장소로 대피해 주십시오．
-/[waitkey(64)]/[close()]
-/[label(지기)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(지기)]
 네가 이 배의 책임자인가？
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 아，아닙니다．<lf>
 저는 그냥 승객이에요．
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 그보다<lf>
 그 배에 타고 있던 건<lf>
 여러분 둘뿐인가요？
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 1
-/[label(지기)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(지기)]
 그렇다．<lf>
 나는 연방 정부의 헌체 사이보그，<lf>
 지구라트……
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-/[label(모모)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): /[label(모모)]
 ……．
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 1
-/[label(지기)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(지기)]
 ………지기다．
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 21, tag8 2
-/[label(모모)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): /[label(모모)]
 （방긋！）
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 1
-/[label(지기)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(지기)]
 ……그녀는 모모．
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 1
-/[label(지기)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(지기)]
 나와 마찬가지로<lf>
 연방 정부 소속 리얼리언이지．
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 21, tag8 2
-/[label(모모)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): /[label(모모)]
 모모입니다．<lf>
 구해 주셔서 감사합니다．
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 8, tag8 0
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 그렇군요．<lf>
 무사해서 다행……이라고
-# dup_of: line 11, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 말하고 싶지만，<lf>
 선내에 적기가 침입해서<lf>
 그렇게 말할 상황이 아니에요．
-# dup_of: line 11, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 여러분을 쫓던 자들은 대체……？
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 1
-/[label(지기)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(지기)]
 침입한 적기는<lf>
 Ｕ−ＴＩＣ 기관이라는 조직이<lf>
 보유한 오테크，
-# dup_of: line 11, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 즉 무인 전투기다．
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 1
-/[label(지기)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(지기)]
 놈들의 소행성에서 탈출한 우리를<lf>
 쫓아온 부대의 잔존 병력이지만，<lf>
-모함이 전송 시스템을 탑재하고 있지．
-# dup_of: line 11, tag8 3
-/[waitkey(1)]/[clear()]
+본체가 전송 시스템을 탑재하고 있지．
+#dup(4): /[waitkey(1)]/[clear()]
 그걸 공격하지 않는 한<lf>
 전투 단말기가 계속 올 거다．
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 8, tag8 0
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 이대로 두면<lf>
 배 안이 적으로 가득…… 차겠네요．
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 1
-/[label(지기)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(지기)]
 미안하다．<lf>
 폐를 끼쳤군．
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 8, tag8 0
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 응？<lf>
 아，아뇨，신경 쓰지 마세요．<lf>
 지기 씨와 모모 탓이 아니잖아요．
-# dup_of: line 11, tag8 3
-/[waitkey(1)]/[clear()]
-그보다 그 모함을 어떻게든 해야 해요！
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 1
-/[label(지기)]
+#dup(4): /[waitkey(1)]/[clear()]
+그보다 그 본체를 어떻게든 해야 해요！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(지기)]
 동감이다．<lf>
 미력하게나마 우리도 협력하지．<lf>
 마무리는 짓고 싶다．
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 8, tag8 0
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 우리라니，모모도요！？
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 1
-/[label(지기)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(지기)]
 그래，<lf>
 그녀는 이렇게 보여도<lf>
 나보다 도움이 될 거다．
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 8, tag8 0
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 그래？
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 21, tag8 2
-/[label(모모)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): /[label(모모)]
 으음，<lf>
 그렇다고 생각하진 않지만<lf>
 열심히 할게요！
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 8, tag8 0
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 ＯＫ，<lf>
 서두르자！
-# dup_of: line 4, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 enterd : /[$0]
 entrance: /[$0]
-Talk_kosmos
-# dup_of: line 108, tag8 6
-Talk_kosmos
-# dup_of: line 108, tag8 6
-Talk_kosmos
-# dup_of: line 108, tag8 6
-Talk_kosmos
-# dup_of: line 108, tag8 6
-Talk_kosmos
-Evt

@@ -1,7 +1,8 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0xce4 cnum=466 total=5
-# bc_map: 4,0,2,3,1
+# bc_map: 4,0,2,3
+# bc_unmap: 1
 こちらからは開きません。（仮）
 /[waitkey(64)]/[close()]
 enterd : /[$0]
 entrance: /[$0]
-Evt

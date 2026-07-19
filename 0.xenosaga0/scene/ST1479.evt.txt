@@ -1,17 +1,15 @@
+# extraction_order: precise_code_v4
 # chunk 3 @ 0x778 cnum=499 total=12
 # bc_map: 9,7,0,9,5,0,10,11,0,2,1,8,3,4,6
-セグメント・アドレスＮｏ．１３<lf>
+#dup(1): セグメント・アドレスＮｏ．１３<lf>
 を発見した。
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 9
-セグメント・アドレスＮｏ．１３<lf>
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): セグメント・アドレスＮｏ．１３<lf>
 と表示されている。
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 セグメント・アドレスＮｏ．１３の<lf>
 デコードを終了します。
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 EOB****************************************************
 2
 サブルート扉見つけた

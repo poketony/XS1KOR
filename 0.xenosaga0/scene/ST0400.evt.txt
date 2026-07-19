@@ -1,87 +1,58 @@
+# extraction_order: precise_code_v4
 # chunk 3 @ 0x5d4 cnum=516 total=27
-# bc_map: 2,15,16,21,4,1,25,17,4,2,14,18,22,4,1,20,23,4,2,16,21,4,1,17,4,2,14,13,4,1,10,4,2,10,4,19,4,1,24,3,11,26,4,1,11,26,4,0,4,12,12,7,8,5,6,9
-/[label(홀거)]
+# bc_map: 2,15,16,21,4,1,25,17,4,2,14,18,22,4,1,20,23,4,2,16,21,4,1,17,4,2,14,13,4,1,10,4,2,10,4,19,4,1,24,3,11,26,4,1,11,26,4,0,4,12,12,7,8,9
+# bc_unmap: 5,6
+#dup(1): /[label(홀거)]
 오，시，시온……이구나，<lf>
-여，여기는，위，위험해……<lf>
-어，서…… 도망쳐……
-/[waitkey(64)]/[close()]
-/[label(시온)]
+#dup(2): 여，여기는，위，위험해……<lf>
+#dup(3): 어，서…… 도망쳐……
+#dup(4): /[waitkey(64)]/[close()]
+#dup(5): /[label(시온)]
 홀거 씨！<lf>
-정신 차려요！！
-# dup_of: line 5, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(홀거)]
-됐으，니까，어……서 가．<lf>
+#dup(6): 정신 차려요！！
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(홀거)]
+#dup(7): 됐으，니까，어……서 가．<lf>
 죽……으면 안……돼，<lf>
 시……온……
-# dup_of: line 5, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 6, tag8 1
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(5): /[label(시온)]
 안 돼요，<lf>
 홀거 씨……
-# dup_of: line 5, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(홀거)]
-# dup_of: line 3, tag8 16
-여，여기는，위，위험해……<lf>
-# dup_of: line 4, tag8 21
-어，서…… 도망쳐……
-# dup_of: line 5, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 6, tag8 1
-/[label(시온)]
-# dup_of: line 8, tag8 17
-정신 차려요！！
-# dup_of: line 5, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(홀거)]
-# dup_of: line 11, tag8 14
-됐으，니까，어……서 가．<lf>
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(홀거)]
+#dup(2): 여，여기는，위，위험해……<lf>
+#dup(3): 어，서…… 도망쳐……
+#dup(4): /[waitkey(64)]/[close()]
+#dup(5): /[label(시온)]
+#dup(6): 정신 차려요！！
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(홀거)]
+#dup(7): 됐으，니까，어……서 가．<lf>
 너는，도망쳐……<lf>
-# dup_of: line 5, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 6, tag8 1
-/[label(시온)]
-…………
-# dup_of: line 5, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(홀거)]
-# dup_of: line 31, tag8 10
-…………
-# dup_of: line 5, tag8 4
-/[waitkey(64)]/[close()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(5): /[label(시온)]
+#dup(8): …………
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(홀거)]
+#dup(8): …………
+#dup(4): /[waitkey(64)]/[close()]
 이미 숨이 끊어졌다．
-# dup_of: line 5, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 6, tag8 1
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(5): /[label(시온)]
 홀거 씨……．
 /[waitkey(64)]/[clear()]
-……？<lf>
-뭔가 빛나고 있어……
-# dup_of: line 5, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 6, tag8 1
-/[label(시온)]
-# dup_of: line 41, tag8 11
-……？<lf>
-# dup_of: line 42, tag8 26
-뭔가 빛나고 있어……
-# dup_of: line 5, tag8 4
-/[waitkey(64)]/[close()]
+#dup(9): ……？<lf>
+#dup(10): 뭔가 빛나고 있어……
+#dup(4): /[waitkey(64)]/[close()]
+#dup(5): /[label(시온)]
+#dup(9): ……？<lf>
+#dup(10): 뭔가 빛나고 있어……
+#dup(4): /[waitkey(64)]/[close()]
 /[color(0x329bbe)]드릴 패스포트/[color(0xffffff)]를 손에 넣었다！
-# dup_of: line 5, tag8 4
-/[waitkey(64)]/[close()]
-『……가져가 버릴까？』<lf>『그냥 두는 게 좋겠어．』
-# dup_of: line 50, tag8 12
-『……가져가 버릴까？』<lf>『그냥 두는 게 좋겠어．』
+#dup(4): /[waitkey(64)]/[close()]
+#dup(11): 『……가져가 버릴까？』<lf>『그냥 두는 게 좋겠어．』
+#dup(11): 『……가져가 버릴까？』<lf>『그냥 두는 게 좋겠어．』
 enterd : /[$0]
 entrance: /[$0]
-TalkNPC1
-TalkNPC2
 shoot on

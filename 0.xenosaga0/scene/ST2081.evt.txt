@@ -1,69 +1,53 @@
+# extraction_order: precise_code_v4
 # chunk 3 @ 0x6f4 cnum=549 total=45
-# bc_map: 27,3,1,30,2,29,19,3,1,22,20,31,2,13,3,1,21,23,18,3,1,17,42,39,2,14,32,16,3,1,15,28,2,44,0,3,1,26,24,2,43,40,2,41,25,3,42,11,37,33,38,35,36,34,12,5,6,7,8,9,10,4
+# bc_map: 27,3,1,30,2,29,19,3,1,22,20,31,2,13,3,1,21,23,18,3,1,17,42,39,2,14,32,16,3,1,15,28,2,44,0,3,1,26,24,2,43,40,2,41,25,3,11,37,33,38,35,36,34,12
+# bc_unmap: 4,5,6,7,8,9,10
 ジャンプしますか？<lf>
-/[waitkey(64)]/[close()]
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 ・・・今、仕事中だ。
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ・・・なんだ？
 そんなにじろじろみるな。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 ふーやっと元通りですね<lf>
 ちょっとでも、<lf>
 位置が変わるともう気になって気になって！
-# dup_of: line 5, tag8 2
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 あ、そこ壊さないでくださいよ！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 なーんか、片付けるきがしねーな<lf>
 まぁ、前も似たようなもんだし、<lf>
 このままでいいか！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 くくく、
 見てくださいよ親方の顔！
 子供に囲まれて顔が真っ赤なんですよ。
-# dup_of: line 5, tag8 2
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 あーあ、硬くなっちゃってますね。
 口元がにやけてますよ。
 くくく……。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 おもしろーい！
 パンってこうやって作るんだ！？
-# dup_of: line 5, tag8 2
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 親方！次は
 /[font(Ａ．Ｇ．Ｗ．Ｓ．)]パンの作り方おしえてよー！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 わたしね、
 みんなの為にパンを作ってるの
-# dup_of: line 5, tag8 2
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 親方がね、みんなの為にパンを作るから
 手伝ってって言ったのよ
-# dup_of: line 5, tag8 2
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 私も親方みたいな、
 やさしいパンやさんになる！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 42
-見てくださいよ親方の顔！
+#dup(1): /[waitkey(64)]/[close()]
 enterd : /[$0]
 外概観８
 外概観１０
@@ -72,10 +56,3 @@ enterd : /[$0]
 外概観７
 外概観１６
 entrance: /[$0]
-Talk_npc1
-Talk_npc2
-Talk_npc3
-Talk_npc4
-Talk_npc5
-Talk_npc6
-Oto_Move

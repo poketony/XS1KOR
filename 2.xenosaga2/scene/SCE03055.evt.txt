@@ -1,0 +1,379 @@
+# chunk 14 @ 0x41c8 cnum=2654 total=376
+# bc_map: 231,186,208,83,0,2,3,4,7,8,9,11,12,13,15,16,17,19,21,22,24,33,56,58,98,100,75,99,52,51,53,101,150,54,102,6,368,67,10,69,55,68,254,351,355,354,257,256,253,252,337,340,339,57,64,65,59,60,61,66,62,63,342,258,265,282,299,316,317,318,319,320,321,259,260,261,262,263,264,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,255,251,341,350,356,357,358,359,360,361,362,363,364,365,211,212,213,214,215,216,217,218,219,220,250,366,367,369,370,371,372,373,374,375,221,222,223,224,225,226,227,228,229,230,70,105,47,43,136,137,95,96,48,49,41,42,144,73,34,32,243,139,72,35,31,141,106,71,140,74,138,110,5,232,28,235,201,27,104,1,18,97,50,14,112,111,133,131,134,132,145,87,80,124,209,210,81,88,89,107,108,91,90,143,142,109,92,197,198,122,123,93,236,202,203,204,205,94,23,25,170,199,240,234,171,200,241,233,116,115,86,119,117,118,120,135,77,76,146,127,130,125,128,129,126,121,185,184,183,46,45,44,182,187,188,189,190,180,37,38,39,152,153,155,156,157,158,159,160,162,163,165,167,168,169,172,173,175,176,177,148,147,239,237,238,103,149,85,79,154,151,78,242,207,206,40,20,84,82,323,324,325,329,330,331,332,333,334,335,336,326,327,328,192,193,194,195,36,161,348,345,344,196,174,249,347,338,164,113,244,166,114,343,178,346,349,179,246,353,322,191,181,248,352,247,245,29,30,26
+# bc_unmap: 26
+msg_clear_thread
+eventmovie/
+lightSPL_main
+FLSjr.fpk
+<lf>
+*************ColorScreen Printout*************
+*************Focus Printout*************
+***********Objchk printout***********
+*********Capture End.*****************
+*********Capture Start!!!*****************
+*********Capture Waiting...*****************
+*********DEBUGPRINT*********
+*********DEBUGPRINT3*********
+*********DEBUGPRINT4*********
+*********ManualCamera Replay*********
+*********Timechk Standby*****************
+*********printout /[$0]***********
+--
+----------シーンは終了しました。
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])
+--filter--
+/[wait(CLOSEwin)]/[close()]
+Capture Folder Setting...
+CaptureMODE ---Chr(pic)
+HISTORY CLEAR
+HISTORYDELETE PTR=/[$0]
+ERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRROR!!
+HISTORY-SET /[$0]
+CameraHistory Overflow!!
+Camera instant test
+Cameratest_history
+HISTORYLOOK PTR=/[$0]
+WAIT=/[$0]
+Cancel!!
+History is Empty.
+*********CameraTool Standby*****************
+ｍｏｖｉｅ１２（すぎさわ）
+CaptureMode = /[$0]
+*********CaptureTool Standby*****************
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+キャプチャモード
+全画面
+ＢＧのみ（ＺＰＩＣなし）
+ＢＧのみ（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+オブジェ単体（ＺＰＩＣあり）
+テキスト（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣあり）
+CaptureMODE ---All Screen.
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---SoftImage BG(pic+zpic)
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---TXT(pic)
+CaptureMODE ---Particle(pic)
+CaptureMODE ---Particle(pic+zpic)
+ページ切り替え
+キャラ０
+キャラ１
+キャラ２
+キャラ３
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラのみキャプチャ
+オブジェのみキャプチャ
+フォルダ選択
+企画サイドのフォルダを使用する
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（たけなか）
+ｍｏｖｉｅ０４（なかむら）
+ｍｏｖｉｅ０５（いけうち）
+ｍｏｖｉｅ０６（？？？？）
+ｍｏｖｉｅ０７（ふち）
+ｍｏｖｉｅ０８（ふち）
+ｍｏｖｉｅ０９（保存）
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+エフェクトサイドのフォルダを使用する
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（おの７６５）
+ｍｏｖｉｅ１７（うなかみ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+ColorScreen  SetMode
+Layer = /[$0]
+Before.
+Back.
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode-------end
+ColorScreenParamZ = {
+0,
+/[$1],
+};
+Runtime.setDefocus(0,2,ColorScreenParamZ);
+ColorScreenParamBack = {
+1,
+/[$0],
+Runtime.setDefocus(15, /[$2], ColorScreenParamBack);
+Layer = /[$3]
+ColorScreenParam = {
+Runtime.setDefocus(15, /[$2], ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], /[$3], ColorScreenParam);
+Layer not exist.
+*********CameraHistory SPL*********
+pos[] ={
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+LINKTABLE
+ 
+,
+HISPTR
+CAMHIS
+*********DEBUGPRINT6*********
+MANUALCAMPTR
+MANUALCAMHIS
+PATH = SPLINE
+PATH = DOWN
+PATH = UP
+PATH = LINEAR
+ShakeRoutine_main
+Facechk...
+F-/[$0]
+No Face!!!
+mouth close.
+mouth open.
+F-/[$0]/[$2] frame(/[$1])
+Facechk...end.
+Focus SetMode
+Layer = Back
+Layer = Before
+Focus delta = /[$0](back)
+Focus SetMode-------end
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+Fog  SetMode
+far Ratio Max!!
+far Ratio Min!!
+Near Ratio Max!!
+Near Ratio Min!!
+Fog SetMode-------end
+setFog(1,/[#0]f,/[#1]f,/[#2]f,/[#3]f,/[$4],/[$5],/[$6],/[$7]);
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+Gnochk...
+--alpha--
+--ref_alpha--
+alpha max!!
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+MSGprint.
+MSGprint(with Face).
+Face End.
+ManualCamera not Recorded.
+ManualCam_record.
+ManualCamera MOVE to start.
+ManualCameraRecord START!!!
+Record /[$0]
+End(TimeOver).
+End(Button).
+Time = /[$0]
+Objchk......(Chr)
+Objchk......End
+Objchk(+Mtn)......
+Objchk......(Effect)
+Objchk......(Unit)
+Objchk......
+Mtn Frame = /[$0]
+cam1.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+cam1.setRotate   (/[#0]f,/[#1]f,/[#2]f);
+cam1.setFov(/[#0]f);
+BaseCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setFov(/[#0]f);
+c03s55cut13.cam
+eyes10_momo
+face10_jr
+face10_momo
+face11_momo
+c03s55cut11.cam
+==
+===
+==========================
+XEVEJNAME:CFJ3_270 XEVEJPOINT:POINT3_270
+Xenvmainthreadmain
+_MSGprint.
+act11_chara
+act12_chara
+act13_chara
+act1_chara
+act2_shadow
+act3_shadow
+act4_chara
+act6_chara
+act9_chara
+act_off_shadow
+act_set_shadow
+c03s55cut01_02.cam
+c03s55cut03.cam
+c03s55cut05.cam
+c03s55cut06_07.cam
+c03s55cut08.cam
+Timerchk_srv_main
+Timechk_main
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+setRotate   (/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+INPUT Number!!
+VibRoutine_main
+FLSshion_h.fpk
+Event Out
+Xenvplaythread
+XEVEFLAG:EV03055_F
+End.(RETURN = /[$0])
+spl
+lightSPL start.
+lightSPL end.
+================================
+--------------------------------
+FLSmomo_h.fpk
+FLSchaos.fpk
+スタート
+スタート　０→９
+スタート　１０→１９
+スタート　２０→２９
+スタート　３０→３９
+スタート　４０→４９
+スタート　５０→５９
+スタート　６０→６９
+スタート　７０→７９
+スタート　８０→８９
+スタート　９０→９９
+スタート　１００→１０９
+スタート　１１０→１１９
+スタート　１２０→１２９
+face1_chaos
+face1_jr
+face1_momo
+face1_shion
+3055_1
+act3_chara
+モモちゃん──
+ミルチア紛争の時<lf>この機械が本当は何をしたのか
+ママは教えてくれませんでした──
+face4_momo
+c03s55cut04.cam
+でも何となく分かります
+モモが生まれる時
+パパは死んだ──
+act5_chara
+MAPeff_off
+あの光景が真実なら<lf>その後に何が起こったのか──
+act8_chara
+MAPeff_set
+ママが言うとおり<lf>これは忌まわしい機械
+c03s55cut09.cam
+モモが生まれた事によって<lf>大勢の命が消えていったのなら
+モモもパパと同じ<lf>忌まわしい存在なんでしょうか──
+c03s55cut10.cam
+お前──
+違う<lf>そんな親なんていない──
+シオンさん
+face12_shion
+c03s55cut12.cam
+たとえレアリエンでも<lf>モモちゃんは二人の子供なんでしょ
+子供のことを忌まわしく思う親なんて<lf>いない──
+そう──
+いるはず──ないわ──
+/[$0]
+/[$0](Cursor = /[$1])
+--shake--

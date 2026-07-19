@@ -1,3 +1,4 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x8e8 cnum=406 total=7
 # bc_map: 5,4,0,3,1,2,6
 「地下鉄ノースシティライン<lf>

@@ -1,68 +1,51 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x710 cnum=527 total=32
-# bc_map: 1,12,2,31,26,30,2,10,27,3,1,21,2,13,3,1,17,2,24,14,3,1,11,2,29,18,22,2,23,3,1,15,16,3,0,25,3,0,20,3,4,28,6,19,2,7,8,9,5
-/[label(グレイト・ジョー)]
+# bc_map: 1,12,2,31,26,30,2,10,27,3,1,21,2,13,3,1,17,2,24,14,3,1,11,2,29,18,22,2,23,3,1,15,16,3,0,25,3,0,20,3,4,28,6,19,7,8,9
+# bc_unmap: 5
+#dup(1): /[label(グレイト・ジョー)]
 ……ガンマンの少年？
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 銃の勝負の世界、<lf>
 敗北の後に何が待つかは<lf>
 知っているはず！！
-# dup_of: line 3, tag8 2
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 ……それでもなお、<lf>
 敢えてオレに戦いを挑むか？
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 1
-/[label(グレイト・ジョー)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(1): /[label(グレイト・ジョー)]
 丁度いい暇つぶしだ。
-# dup_of: line 3, tag8 2
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 おとなしく死ぬがいい！！
-# dup_of: line 10, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 1
-/[label(グレイト・ジョー)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(1): /[label(グレイト・ジョー)]
 その銃はただの飾りか？
-# dup_of: line 3, tag8 2
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 弱者に用はない。<lf>
 この場を立ち去れ！！
-# dup_of: line 10, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 1
-/[label(グレイト・ジョー)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(1): /[label(グレイト・ジョー)]
 ……オレの負けだ。
-# dup_of: line 3, tag8 2
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 油断していたとはいえ、<lf>
 なかなかの銃さばき。<lf>
 友と呼ぶにふさわしい男だ。
-# dup_of: line 3, tag8 2
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 友の証として、これを贈ろう。
-# dup_of: line 10, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 1
-/[label(グレイト・ジョー)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(1): /[label(グレイト・ジョー)]
 さらばだ、友よ。<lf>
 その『水着』はしばらく預けておくぞ。
-# dup_of: line 10, tag8 3
-/[waitkey(64)]/[close()]
-<lf>
+#dup(3): /[waitkey(64)]/[close()]
+#dup(4): <lf>
 必殺技『魂の狂詩曲』を覚えた。
-# dup_of: line 10, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 35, tag8 0
-<lf>
+#dup(3): /[waitkey(64)]/[close()]
+#dup(4): <lf>
 エーテル『マグナムジョー』を覚えた。
-# dup_of: line 10, tag8 3
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 EOB****************************************************
 新技ＧＥＴなのか！？
 broken1111111111111111111111111111
 もちろんやってやるぜ！！<lf>オイオイ、付き合ってらんねーぜ！！
-# dup_of: line 3, tag8 2
-/[waitkey(1)]/[clear()]
 broken22222222222222222222222222
 enterd : /[$0]
 entrance: /[$0]
-TalkNPC1

@@ -1,13 +1,10 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x8e8 cnum=588 total=16
-# bc_map: 9,0,10,0,15,15,14,7,8,4,5,2,11,12,13,3,6
-# bc_unmap: 1
+# bc_map: 9,0,10,0,15,14,7,8,4,5,2,11,12,13,3,1,6
 ボタンがあります。押してみますか？
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ロックされている。
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
-瓦礫２【MC_KAS13】・３・シオン
-# dup_of: line 5, tag8 15
+#dup(1): /[waitkey(64)]/[close()]
 瓦礫２【MC_KAS13】・３・シオン
 瓦礫２【MC_KAS13】・２・シオン
 イベント3022
@@ -19,4 +16,5 @@ enterd : /[$0]
 地下鉄トンネル【MC_KAS20】・３・Jr
 森入り口【MC_KAS15】・１・シオン
 entrance: /[$0]
+ITEM:1
 はい<lf>いいえ

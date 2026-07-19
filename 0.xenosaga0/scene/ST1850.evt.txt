@@ -1,54 +1,41 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x64 cnum=188 total=4
-# bc_map: 0,3,2,1
+# bc_map: 0,3
+# bc_unmap: 1,2
 22222222222222222222222222222222222222222222222222222
 【パークエリア】
-Nobi
-Chijimi
 
 # chunk 4 @ 0x105c cnum=618 total=25
-# bc_map: 24,0,15,0,9,0,12,0,11,0,13,0,23,0,16,17,22,0,8,19,18,0,10,0,20,21,0,3,1,14,6,7,5,2
-# bc_unmap: 4
+# bc_map: 24,0,15,0,9,0,12,0,11,0,13,0,23,0,16,17,22,0,8,19,18,0,10,0,20,21,0,14,4,6,7
+# bc_unmap: 1,2,3,5
 移動先の入力をお願いします。
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【隔離格納庫エリア】に移動します。
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【ドックエリア】に移動します。
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【居住エリア】に移動します。
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【ブリッジエリア】に移動します。
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【揚陸待機エリア】に移動します。
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 あ？小さな女の子だって？<lf>
 そういや、この上の展望室に<lf>
 入って行くのを見たぜ。
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ……なんだか、凄く悲しげだったな。<lf>
 アンタお姉さんだろ？<lf>
 もっと優しくしてやんなきゃ駄目だよ！！
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【パークエリア駅】
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 シオン宛てに<lf>
 メールが届いてるよ！！
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
-Nobi
-Chijimi
+#dup(1): /[waitkey(64)]/[close()]
 【隔離格納庫エリア】<lf>【ドックエリア】<lf>【居住エリア】<lf>【ブリッジエリア】<lf>【揚陸待機エリア】<lf>　キャンセル
+PPPPPPPPPPPPPPPPPPPPPPP
 enterd : /[$0]
 entrance: /[$0]
-TalkNPC1a
-Evt

@@ -1,10 +1,7 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x44 cnum=71 total=2
-# bc_map: 0,1,1,1
+# bc_map: 0,1
 Start Down
-Start Up
-# dup_of: line 2, tag8 1
-Start Up
-# dup_of: line 2, tag8 1
 Start Up
 
 # chunk 2 @ 0x614 cnum=324 total=7

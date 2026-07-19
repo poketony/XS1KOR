@@ -1,3 +1,4 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x8e8 cnum=368 total=6
 # bc_map: 0,1,2,3,4,5
 EOB****************************************************

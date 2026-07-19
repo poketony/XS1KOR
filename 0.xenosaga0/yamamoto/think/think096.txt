@@ -1,0 +1,77 @@
+# think_patch extract: think096.bin.ori
+# 총 18개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x07A2
+もんすたー
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x07B4
+けいおす
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x07C4
+もも
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x07D0
+しおん
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x08EC
+　攻撃１
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x0916
+　攻撃２
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x0940
+　攻撃３
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x096A
+　攻撃４
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x0994
+　攻撃５
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x09AA
+　メッセージてすと
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x09D2
+　防御体勢
+<<<
+
+>>> [011] op=0x21(display) flag=0x00 offset=0x09FE
+　攻撃１
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x0AFC
+　魔法１
+<<<
+
+>>> [013] op=0x21(display) flag=0x00 offset=0x0B26
+　魔法２
+<<<
+
+>>> [014] op=0x21(display) flag=0x00 offset=0x0B50
+　魔法１
+<<<
+
+>>> [015] op=0x21(display) flag=0x00 offset=0x0B7A
+　魔法２
+<<<
+
+>>> [016] op=0x21(display) flag=0x00 offset=0x0B9E
+　えくすとら
+<<<
+
+>>> [017] op=0x21(display) flag=0x00 offset=0x0BC0
+　ちょっとだけやて！
+　なんもせーへんがな！
+<<<

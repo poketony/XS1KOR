@@ -1,75 +1,53 @@
+# extraction_order: precise_code_v4
 # chunk 1 @ 0x204 cnum=837 total=50
-# bc_map: 3,20,5,3,23,19,5,3,15,18,4,3,17,0,5,3,16,41,5,3,24,5,3,14,4,2,27,48,5,2,44,45,5,37,21,5,1,5,34,26,5,34,22,5,35,36,5,3,7,25,8,6,10,33,42,43,40,46,9,28,49,47,30,31,32,11,12,39,29,13
-# bc_unmap: 38
-/[label(시온)]
+# bc_map: 3,20,5,3,23,19,5,3,15,18,4,3,17,0,5,3,16,41,5,3,24,5,3,14,4,2,27,48,5,2,44,45,5,37,21,5,1,5,34,26,5,34,22,5,35,36,5,7,25,8,6,10,33,42,43,40,46,9,28,49,47,30,31,32,11,38,12,39,29,13
+#dup(1): /[label(시온)]
 이제 문의 잠금을 해제할 수 있겠어！　<lf>
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 하하하……<lf>
 이 방이구나……．<lf>
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 어디 보자……<lf>
 이 문을 열려면……<lf>
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(3): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 이 문을 열려면<lf>
 /[color(0x329bbe)]미션 키/[color(0xffffff)]가 필요한가 보네！<lf>
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 이쪽에서는 열리지 않아．<lf>
 잠겨 있는 모양이네…<lf>
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 이젠 아무것도 없는 것 같네…<lf>
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 와앗！？<lf>
-# dup_of: line 11, tag8 4
-/[waitkey(64)]/[clear()]
-/[label(알렌)]
+#dup(3): /[waitkey(64)]/[clear()]
+#dup(4): /[label(알렌)]
 카드 삽입구에 /[color(0x329bbe)]미션 키/[color(0xffffff)]를<lf>
 삽입해 주세요！
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 26, tag8 2
-/[label(알렌)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(알렌)]
 주임님，컨테이너 안에 아이템이<lf>
 들어 있을 거라곤 장담 못 합니다！<lf>
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 넘버 １０이라고<lf>
 적혀 있는 문이 있다…．<lf>
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 /[color(0x329bbe)]미션 키/[color(0xffffff)]를 꽂았다！<lf>
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-세그먼트 어드레스 Ｎｏ．１０이라고<lf>
+#dup(2): /[waitkey(64)]/[close()]
+#dup(5): 세그먼트 어드레스 Ｎｏ．１０이라고<lf>
 적혀 있는 문을 발견했다．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 39, tag8 34
-세그먼트 어드레스 Ｎｏ．１０이라고<lf>
+#dup(2): /[waitkey(64)]/[close()]
+#dup(5): 세그먼트 어드레스 Ｎｏ．１０이라고<lf>
 표시되어 있다．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 세그먼트 어드레스 Ｎｏ．１０의<lf>
 디코드를 종료합니다．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
 EOD****************************************************
 を 손에 넣었다！　/[waitkey(64)]/[close()]
 Effect!!!!!!!!!
@@ -88,6 +66,7 @@ KEYYYYY!!!!!!!!!
 サブルート発見済＆鍵あり
 サブルート発見済＆鍵なし
 broken
+フォークリフトを壊しました。次回は生成しません。
 enterd : /[$0]
 フラグ立ってないよーーーーーー大丈夫？？
 서브 루트로

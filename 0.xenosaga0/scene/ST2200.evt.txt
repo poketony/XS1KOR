@@ -1,3 +1,4 @@
+# extraction_order: precise_code_v4
 # chunk 2 @ 0x43c cnum=362 total=10
 # bc_map: 0,9,4,1,2,7,5,6,8,3
 /[label()]

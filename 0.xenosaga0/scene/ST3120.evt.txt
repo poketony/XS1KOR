@@ -1,8 +1,9 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x710 cnum=539 total=6
-# bc_map: 5,0,1,3,4
-# bc_unmap: 2
+# bc_map: 5,0,1,2,3,4
 裏側からロックがかかっている。
 /[waitkey(64)]/[close()]
 WINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWIN
+\\\\\\\\\\\\
 enterd : /[$0]
 entrance: /[$0]

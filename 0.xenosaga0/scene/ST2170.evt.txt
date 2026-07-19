@@ -1,235 +1,153 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0xc5c cnum=1049 total=87
-# bc_map: 34,3,71,3,55,3,1,76,84,85,2,62,73,3,1,28,51,31,3,0,30,25,52,2,27,72,24,3,0,61,3,1,42,86,3,1,41,86,3,1,40,86,3,1,39,86,3,1,50,86,3,1,49,86,3,1,48,86,3,1,47,86,3,1,46,86,3,1,45,86,3,1,44,86,3,1,43,86,3,1,38,86,3,1,65,66,2,63,70,68,3,1,23,74,3,58,53,3,58,33,3,59,60,3,0,14,3,0,13,3,0,12,3,0,11,3,0,22,3,0,21,3,0,20,3,0,19,3,0,18,3,0,17,3,0,16,3,0,15,3,0,10,3,0,64,3,54,67,26,35,29,36,75,6,57,48,32,32,7,77,69,79,82,80,83,78,56,81,8,4,5,5,9,48,37
+# bc_map: 34,3,71,3,55,3,1,76,84,85,2,62,73,3,1,28,51,31,3,0,30,25,52,2,27,72,24,3,0,61,3,1,42,86,3,1,41,86,3,1,40,86,3,1,39,86,3,1,50,86,3,1,49,86,3,1,48,86,3,1,47,86,3,1,46,86,3,1,45,86,3,1,44,86,3,1,43,86,3,1,38,86,3,1,65,66,2,63,70,68,3,1,23,74,3,58,53,3,58,33,3,59,60,3,0,14,3,0,13,3,0,12,3,0,11,3,0,22,3,0,21,3,0,20,3,0,19,3,0,18,3,0,17,3,0,16,3,0,15,3,0,10,3,0,64,3,54,67,26,35,29,36,75,6,57,32,32,7,77,69,79,82,80,83,78,56,81,8,37
+# bc_unmap: 4,5,9
 どこがいいかしら？<lf>
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 探さないでください。<lf>
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 クランクを回しますか？<lf>
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-/[label(市長)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 街の中に<lf>
 逃げ遅れた人が大勢いるんだ。<lf>
 頼む、助けてやってくれ！！
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 何か必要なものがあるなら、<lf>
 私が売ってやるぞ？
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 こらこら、<lf>
 まだ逃げ遅れた街の人が残ってるんだ。<lf>
 ちゃんと助けてくれよ！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 たすかった〜。<lf>
 いきなり怪物が襲ってきてよ、<lf>
 もうここに隠れるのが精一杯だったんだよ。
-# dup_of: line 11, tag8 2
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 このままゴミと一緒に<lf>
 死んじまうのかと思ったぜ。<lf>
 ありがとな！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 中から鍵が掛けられている。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 まだ、１３人逃げ遅れている！<lf>
-頼んだぞ！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(5): 頼んだぞ！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 まだ、１２人逃げ遅れている！<lf>
-# dup_of: line 34, tag8 86
-頼んだぞ！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(5): 頼んだぞ！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 まだ、１１人逃げ遅れている！<lf>
-# dup_of: line 34, tag8 86
-頼んだぞ！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(5): 頼んだぞ！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 まだ、１０人逃げ遅れている！<lf>
-# dup_of: line 34, tag8 86
-頼んだぞ！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(5): 頼んだぞ！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 まだ、９人逃げ遅れている！<lf>
-# dup_of: line 34, tag8 86
-頼んだぞ！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(5): 頼んだぞ！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 まだ、８人逃げ遅れている！<lf>
-# dup_of: line 34, tag8 86
-頼んだぞ！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(5): 頼んだぞ！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 まだ、７人逃げ遅れている！<lf>
-# dup_of: line 34, tag8 86
-頼んだぞ！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(5): 頼んだぞ！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 まだ、６人逃げ遅れている！<lf>
-# dup_of: line 34, tag8 86
-頼んだぞ！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(5): 頼んだぞ！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 まだ、５人逃げ遅れている！<lf>
-# dup_of: line 34, tag8 86
-頼んだぞ！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(5): 頼んだぞ！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 まだ、４人逃げ遅れている！<lf>
-# dup_of: line 34, tag8 86
-頼んだぞ！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(5): 頼んだぞ！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 まだ、３人逃げ遅れている！<lf>
-# dup_of: line 34, tag8 86
-頼んだぞ！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(5): 頼んだぞ！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 まだ、２人逃げ遅れている！<lf>
-# dup_of: line 34, tag8 86
-頼んだぞ！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(5): 頼んだぞ！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 まだ、１人逃げ遅れている！<lf>
-# dup_of: line 34, tag8 86
-頼んだぞ！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(5): 頼んだぞ！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 助かったよ。<lf>
 君たちのおかげで全員逃げる事ができた。<lf>
-# dup_of: line 11, tag8 2
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 何か足りなくなった物はないか？<lf>
 必要なものがあるなら、<lf>
 売ってやるぞ？
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label(市長)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(市長)]
 ありがとう。<lf>
 私もそろそろ避難するとしよう。<lf>
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-セグメント・アドレスＮｏ．１<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(6): セグメント・アドレスＮｏ．１<lf>
 を発見した。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 96, tag8 58
-セグメント・アドレスＮｏ．１<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(6): セグメント・アドレスＮｏ．１<lf>
 と表示されている。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 セグメント・アドレスＮｏ．１の<lf>
 デコードを終了します。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 あと１３人！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 あと１２人！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 あと１１人！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 あと１０人！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 あと９人！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 あと８人！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 あと７人！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 あと６人！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 あと５人！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 あと４人！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 あと３人！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 あと２人！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 あと１人！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label()]
 全員救出！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 クランク
 回す<lf>回さない<lf>
 うえあげ
@@ -239,11 +157,8 @@
 自然落下
 boss登場
 サブルート扉見つけた
-# dup_of: line 57, tag8 48
-まだ、７人逃げ遅れている！<lf>
-ちょっと見せてください<lf>いえ、特には
-# dup_of: line 157, tag8 32
-ちょっと見せてください<lf>いえ、特には
+#dup(7): ちょっと見せてください<lf>いえ、特には
+#dup(7): ちょっと見せてください<lf>いえ、特には
 enterd : /[$0]
 襲撃後外観街２・１
 外マップ
@@ -255,11 +170,4 @@ enterd : /[$0]
 サブルート MC_KUK14
 襲撃後宿屋３Ｆ・３
 entrance: /[$0]
-Talk_npc1
-Talk_npc2
-# dup_of: line 171, tag8 5
-Talk_npc2
-idle
-# dup_of: line 57, tag8 48
-まだ、７人逃げ遅れている！<lf>
 はい<lf>いいえ

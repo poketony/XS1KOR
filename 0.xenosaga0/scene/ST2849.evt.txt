@@ -1,5 +1,7 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x12b0 cnum=586 total=33
-# bc_map: 25,24,0,26,32,1,23,2,31,12,31,13,31,14,31,15,31,16,2,30,17,30,18,30,19,30,3,30,4,29,5,29,6,29,7,29,8,29,9,31,12,31,13,31,14,31,15,31,16,10,30,17,30,18,30,19,30,3,30,4,11,29,5,29,6,29,7,29,8,29,9,31,10,30,11,29,20,28,21,22,27
+# bc_map: 25,24,0,26,32,1,23,2,31,12,31,13,31,14,31,15,31,16,30,17,30,18,30,19,30,3,30,4,29,5,29,6,29,7,29,8,29,9,31,10,30,11,29,20,28,21,27
+# bc_unmap: 22
 『ＳＯＮＧ　ＯＦ　ＮＥＰＨＩＬＩＭ<lf>
 　ＳＹＳＴＥＭ』と書いてある。
 /[waitkey(1)]/[clear()]
@@ -8,124 +10,42 @@
 /[waitkey(64)]/[close()]
 lo:0
 1
-青
+#dup(1): 青
 2
-# dup_of: line 9, tag8 31
-青
+#dup(1): 青
 3
-# dup_of: line 9, tag8 31
-青
+#dup(1): 青
 4
-# dup_of: line 9, tag8 31
-青
+#dup(1): 青
 5
-# dup_of: line 9, tag8 31
-青
+#dup(1): 青
 6
-# dup_of: line 8, tag8 2
-1
-赤
+#dup(2): 赤
 7
-# dup_of: line 20, tag8 30
-赤
+#dup(2): 赤
 8
-# dup_of: line 20, tag8 30
-赤
+#dup(2): 赤
 9
-# dup_of: line 20, tag8 30
-赤
+#dup(2): 赤
 10
-# dup_of: line 20, tag8 30
-赤
+#dup(2): 赤
 11
-緑
+#dup(3): 緑
 12
-# dup_of: line 30, tag8 29
-緑
+#dup(3): 緑
 13
-# dup_of: line 30, tag8 29
-緑
+#dup(3): 緑
 14
-# dup_of: line 30, tag8 29
-緑
+#dup(3): 緑
 15
-# dup_of: line 30, tag8 29
-緑
+#dup(3): 緑
 16
-# dup_of: line 9, tag8 31
-青
-# dup_of: line 10, tag8 12
-2
-# dup_of: line 9, tag8 31
-青
-# dup_of: line 12, tag8 13
-3
-# dup_of: line 9, tag8 31
-青
-# dup_of: line 14, tag8 14
-4
-# dup_of: line 9, tag8 31
-青
-# dup_of: line 16, tag8 15
-5
-# dup_of: line 9, tag8 31
-青
-# dup_of: line 18, tag8 16
-6
+#dup(1): 青
 17
-# dup_of: line 20, tag8 30
-赤
-# dup_of: line 21, tag8 17
-7
-# dup_of: line 20, tag8 30
-赤
-# dup_of: line 23, tag8 18
-8
-# dup_of: line 20, tag8 30
-赤
-# dup_of: line 25, tag8 19
-9
-# dup_of: line 20, tag8 30
-赤
-# dup_of: line 27, tag8 3
-10
-# dup_of: line 20, tag8 30
-赤
-# dup_of: line 29, tag8 4
-11
+#dup(2): 赤
 18
-# dup_of: line 30, tag8 29
-緑
-# dup_of: line 31, tag8 5
-12
-# dup_of: line 30, tag8 29
-緑
-# dup_of: line 33, tag8 6
-13
-# dup_of: line 30, tag8 29
-緑
-# dup_of: line 35, tag8 7
-14
-# dup_of: line 30, tag8 29
-緑
-# dup_of: line 37, tag8 8
-15
-# dup_of: line 30, tag8 29
-緑
-# dup_of: line 39, tag8 9
-16
-# dup_of: line 9, tag8 31
-青
-# dup_of: line 50, tag8 10
-17
-# dup_of: line 20, tag8 30
-赤
-# dup_of: line 61, tag8 11
-18
-# dup_of: line 30, tag8 29
-緑
+#dup(3): 緑
 enterd : /[$0]
 成功
 entrance: /[$0]
-idle
 はい<lf>いいえ

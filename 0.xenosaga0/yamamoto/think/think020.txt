@@ -10,25 +10,25 @@
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x02A2
 
-　\x1e"を 메모리에 저장
+　\x1e"을 메모리에 저장
 
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x02C2
 
-　\x1e\x1fを 메모리에 저장
+　\x1e\x1f을 메모리에 저장
 
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x02E2
 
-　\x1e を 메모리에 저장
+　\x1e 을 메모리에 저장
 
 <<<
 
 >>> [004] op=0x21(display) flag=0x00 offset=0x0302
 
-　\x1e!を 메모리에 저장
+　\x1e!을 메모리에 저장
 
 <<<
 

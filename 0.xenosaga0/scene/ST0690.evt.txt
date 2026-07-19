@@ -1,89 +1,69 @@
+# extraction_order: precise_code_v4
 # chunk 3 @ 0xd10 cnum=774 total=51
-# bc_map: 2,41,35,47,43,8,6,38,50,25,8,1,42,48,37,7,49,8,3,20,21,7,18,23,8,4,39,34,8,5,30,45,46,8,5,44,28,7,29,19,8,5,27,8,0,26,8,31,24,8,31,22,8,32,33,8,41,17,40,12,40,13,36,14,9,10,11,15
-# bc_unmap: 16
+# bc_map: 2,41,35,47,43,8,6,38,50,25,8,1,42,48,37,7,49,8,3,20,21,7,18,23,8,4,39,34,8,5,30,45,46,8,5,44,28,7,29,19,8,5,27,8,0,26,8,31,24,8,31,22,8,32,33,8,17,16,40,40,36,14,9,10,15
+# bc_unmap: 11,12,13
 /[label(시온)]
 적과 싸우기에는<lf>
 인원이 너무 많네……．<lf>
 누가 전투에 참가할지<lf>
 정해야 해．
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(ＫＯＳ−ＭＯＳ)]
 전투에 참가하는 인원은<lf>
 ３명이 최적이라 판단됩니다．<lf>
 시온，전투에 참가할 멤버 결정을……．
-# dup_of: line 6, tag8 8
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(케이오스)]
 적과 싸울 때 사람이 많아서<lf>
 나쁠 건 없겠지만<lf>
 움직임이 둔해지겠지……．
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 ３명 정도가 최선이지 않을까？
-# dup_of: line 6, tag8 8
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(지기)]
 저 적을 섬멸하는 데<lf>
 그리 많은 인원은 필요 없겠지．
-# dup_of: line 16, tag8 7
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 ……그럼，<lf>
 몇 명이 최선일까？
-# dup_of: line 6, tag8 8
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(모모)]
 전투는 ３명이 최선 아닐까요？<lf>
 모모도 도움이 되고 싶어요．
-# dup_of: line 6, tag8 8
-/[waitkey(64)]/[close()]
-/[label(경고)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(경고)]
 슬라이드 덱을 작동합니다．<lf>
 이동 범위 안에 있는 작업자는<lf>
 즉시 안전한 장소로 대피해 주십시오．
-# dup_of: line 6, tag8 8
-/[waitkey(64)]/[close()]
-# dup_of: line 30, tag8 5
-/[label(경고)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(경고)]
 현재 잠겨 있으므로<lf>
 슬라이드 덱은 작동하지 않습니다．
-# dup_of: line 16, tag8 7
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 슬라이드 덱을 작동하려면<lf>
 「/[color(0x329bbe)]해제 키/[color(0xffffff)]」가 필요합니다．
-# dup_of: line 6, tag8 8
-/[waitkey(64)]/[close()]
-# dup_of: line 30, tag8 5
-/[label(경고)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(경고)]
 슬라이드 덱의 잠금을 해제합니다．
-# dup_of: line 6, tag8 8
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label()]
 슬라이드 덱의 스위치가 있다．
-# dup_of: line 6, tag8 8
-/[waitkey(64)]/[close()]
-세그먼트 어드레스 Ｎｏ．８이라고<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): 세그먼트 어드레스 Ｎｏ．８이라고<lf>
 적힌 문을 발견했다．
-# dup_of: line 6, tag8 8
-/[waitkey(64)]/[close()]
-# dup_of: line 48, tag8 31
-세그먼트 어드레스 Ｎｏ．８이라고<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): 세그먼트 어드레스 Ｎｏ．８이라고<lf>
 표시되어 있다．
-# dup_of: line 6, tag8 8
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 세그먼트 어드레스 Ｎｏ．８의<lf>
 디코드를 종료합니다．
-# dup_of: line 6, tag8 8
-/[waitkey(64)]/[close()]
-# dup_of: line 2, tag8 41
-적과 싸우기에는<lf>
+#dup(1): /[waitkey(64)]/[close()]
 top***********************
-누른다<lf>누르지 않는다
-Move
-# dup_of: line 59, tag8 40
-누른다<lf>누르지 않는다
-Move2
+top
+#dup(5): 누른다<lf>누르지 않는다
+#dup(5): 누른다<lf>누르지 않는다
 진짜로 합류한다니까 진짜로！！
 enterd : /[$0]
 55_ON
 56_ON
-GOGO
 entrance: /[$0]

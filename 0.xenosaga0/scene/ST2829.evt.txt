@@ -1,31 +1,27 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x64 cnum=189 total=5
 # bc_map: 0,1,2,3,4
 0
-1
-2
-3
-4
+#dup(1): 1
+#dup(2): 2
+#dup(3): 3
+#dup(4): 4
 
 # chunk 4 @ 0x1490 cnum=432 total=13
-# bc_map: 10,0,1,2,2,8,11,2,8,11,3,4,5,6,7,9
-# bc_unmap: 12
+# bc_map: 10,0,1,8,11,12,2,8,11,12,3,4,5,6,9
+# bc_unmap: 7
 エレベーターを作動させますか？
 /[waitkey(64)]/[close()]
-1
-2
-# dup_of: line 4, tag8 2
-2
-player.py: /[#1]
-上
-# dup_of: line 4, tag8 2
-2
-# dup_of: line 6, tag8 8
-player.py: /[#1]
-# dup_of: line 7, tag8 11
-上
-3
-4
+#dup(1): 1
+#dup(5): player.py: /[#1]
+#dup(6): 上
+#dup(7): 下
+#dup(2): 2
+#dup(5): player.py: /[#1]
+#dup(6): 上
+#dup(7): 下
+#dup(3): 3
+#dup(4): 4
 enterd : /[$0]
 entrance: /[$0]
-idle
 はい<lf>いいえ

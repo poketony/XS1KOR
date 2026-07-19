@@ -1,5 +1,7 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0xb6c cnum=436 total=17
-# bc_map: 0,15,1,14,7,10,6,9,12,2,16,11,2,13,3,5,4,8
+# bc_map: 0,15,1,14,7,10,6,9,12,2,16,11,2,13,3,4,8
+# bc_unmap: 5
 /[label(지기)]
 역십자에 느릅나무…．
 /[waitkey(1)]/[clear()]
@@ -9,13 +11,11 @@
 한때 순례지였던 이 행성도<lf>
 인적이 끊긴 지금은 Ｕ−ＴＩＣ 기관의<lf>
 좋은 은신처가 된 셈인가．
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 역십자와 느릅나무 문양… 예전에는<lf>
 고대 종교의 예배당이었던 듯하다．
-# dup_of: line 10, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 聖堂の間イベント
 enterd : /[$0]
-yurayura
 entrance: /[$0]
 예<lf>아니요

@@ -1,11 +1,12 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x8e8 cnum=515 total=21
-# bc_map: 1,10,2,20,2,0,11,8,9,12,13,18,2,19,2,7,5,16,17,15,6,3,4,14
+# bc_map: 1,10,2,20,2,0,11,8,9,12,13,18,2,19,2,7,5,16,17,15,6,14
+# bc_unmap: 3,4
 /[label(フェブロニア)]
 さあ、行きましょう。
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ＨＰ・ＥＰが回復した！！
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(ネピリム)]
 その扉を開けた瞬間から、<lf>
 あなた達は自分自身と向きあっていく<lf>
@@ -13,17 +14,13 @@
 それはとても辛くて哀しいこと…<lf>
 だけどそれは、あなた達にとっても、<lf>
 私達にとっても、とても大切なことなの。
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 鍵が開いた。
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 lo:0
 enterd : /[$0]
 教会外観・２
 教会外観・３
 イベントEV03026A
 entrance: /[$0]
-TalkNPC1
-TalkNPC2
 はい<lf>いいえ

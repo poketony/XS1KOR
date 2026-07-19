@@ -1,5 +1,6 @@
+# extraction_order: precise_code_v4
 # chunk 2 @ 0x460 cnum=481 total=13
-# bc_map: 0,1,4,5,6,7,2,3,9,12,11,8,10,1,8
+# bc_map: 0,1,4,5,6,7,2,3,9,12,11,8,10
 EOB *********************
 FINAL_INIT !!!!!
 id = 11
@@ -13,7 +14,3 @@ entrance: /[$0]
 방 앞 통로에 있는 병사（오른쪽）　초기화
 게 메카　초기화
 초기화 종료
-# dup_of: line 2, tag8 1
-FINAL_INIT !!!!!
-# dup_of: line 12, tag8 8
-게 메카　초기화

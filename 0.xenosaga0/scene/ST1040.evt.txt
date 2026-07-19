@@ -1,174 +1,133 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x54 cnum=56 total=1
 # bc_map: 0
 화면 점멸 시작
 
 # chunk 3 @ 0x830 cnum=1483 total=150
-# bc_map: 0,145,2,0,148,136,2,81,116,2,41,39,2,0,145,110,2,67,126,61,96,54,2,105,84,47,2,64,53,103,2,44,147,137,141,73,1,65,97,2,63,58,97,2,55,118,75,1,127,107,2,135,125,40,1,114,113,2,138,104,1,37,1,146,66,112,2,62,69,71,68,95,2,56,139,106,149,60,1,59,72,45,2,70,108,140,1,38,2,42,94,142,2,49,48,93,1,92,2,50,1,109,117,57,43,102,1,37,1,74,2,51,52,2,37,2,37,2,37,2,37,2,11,31,32,33,10,133,132,77,134,131,4,76,15,14,82,83,119,79,12,99,143,98,100,20,20,20,3,5,6,7,3,5,6,7,78,87,88,89,90,13,87,88,89,90,120,101,144,28,111,36,8,9,17,18,46,19,21,22,34,35,25,26,26,27,23,24,16,80,86,85,115,130,128,129,29,30,121,122,123,124,134,21,64
-# bc_unmap: 91
-/[label(Ｊｒ．)]
-전자 록이 걸려 있다．<lf>
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 0
-/[label(Ｊｒ．)]
+# bc_map: 0,145,2,0,148,136,2,81,116,2,41,39,2,0,145,110,2,67,126,61,96,54,2,105,84,47,2,64,53,103,2,44,147,137,141,73,1,65,97,2,63,58,97,2,55,118,75,1,127,107,2,135,125,40,1,114,113,2,138,104,1,37,1,146,66,112,2,62,69,71,68,95,2,56,139,106,149,60,1,59,72,45,2,70,108,140,1,38,2,42,94,142,2,49,48,93,1,92,2,50,1,109,117,57,43,102,1,37,1,74,2,51,52,2,37,2,37,2,37,2,37,2,11,31,32,33,10,133,132,77,134,131,4,76,15,14,82,83,119,79,12,99,143,98,100,3,5,6,7,3,5,6,7,78,87,88,89,90,91,13,87,88,89,90,91,120,101,144,28,111,36,8,9,17,18,46,19,21,22,34,35,16,80,86,85,115,130,128,129,29,30,121,122,123,124
+# bc_unmap: 20,23,24,25,26,27
+#dup(1): /[label(Ｊｒ．)]
+#dup(2): 전자 록이 걸려 있다．<lf>
+#dup(3): /[waitkey(64)]/[close()]
+#dup(1): /[label(Ｊｒ．)]
 ４라고 크게 쓰여 있다．<lf>
 맨손으로는 열 수 없겠어．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 스위치가 있다．<lf>
 누르겠습니까？
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 『Ｎｏ．４ 문　개폐 스위치』<lf>
 　조작하겠습니까？
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 0
-/[label(Ｊｒ．)]
-# dup_of: line 2, tag8 145
-전자 록이 걸려 있다．<lf>
+#dup(3): /[waitkey(64)]/[close()]
+#dup(1): /[label(Ｊｒ．)]
+#dup(2): 전자 록이 걸려 있다．<lf>
 안쪽에 깜빡이는 스위치가 보이지만……．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 꼬마님의 목표는 이 함의 브리지입니다．<lf>
 구조가 꽤 특수한 함이라<lf>
 현재로서는 위치를 알 수 없습니다．<lf>
 다른 부대는 적을 제압하러 향했습니다．<lf>
-여긴 저희에게 맡기고 뒤따라가 주십시오．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+여긴 저희에게 맡기고 가 주십시오．
+#dup(3): /[waitkey(64)]/[close()]
 선발대의 연락에 따르면<lf>
 트랩이 설치된 장소가<lf>
 있는 모양입니다．조심하십시오．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 꼬마님．그러니 어서 브리지로．<lf>
 여긴 저희에게 맡기고<lf>
 어서 가 주십시오．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 그 자식！<lf>
 ２번째로 도망치겠다면서<lf>
 결국 제일 먼저 도망쳤잖아！<lf>
 부상자가 나왔다고 겁먹기는！<lf>
 정말 못 말리는 녀석이구만．
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 꼬마님．찾으면 바로 돌아오라고<lf>
-전해 주십시오．부탁드립니다．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(5): 전해 주십시오．부탁드립니다．
+#dup(3): /[waitkey(64)]/[close()]
 꼬마님．그 자식을 찾으면<lf>
 바로 자기 위치로 돌아오라고<lf>
-# dup_of: line 39, tag8 97
-전해 주십시오．부탁드립니다．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(5): 전해 주십시오．부탁드립니다．
+#dup(3): /[waitkey(64)]/[close()]
 이 통로에서 오른쪽으로 들어간 곳이<lf>
 적의 방어선 같습니다．적이 여럿<lf>
 매복해 있을 가능성도 있습니다．
-# dup_of: line 37, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 정면뿐만 아니라<lf>
 전방위에 주의를 기울여 주십시오．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
-저는 꼬마님이라면 불필요한 전투만 피하면<lf>
+#dup(3): /[waitkey(64)]/[close()]
+꼬마님이라면 불필요한 전투만 피해도<lf>
 쉽게 돌파할 수 있으리라 봅니다．<lf>
 『군자는 위험한 곳에…』라는 거죠．
-# dup_of: line 37, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 의미 없이 총을 쏘거나<lf>
 수상한 곳을 만지지 마십시오．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
-저와 얘기하셔도 상황은 변하지 않습니다．<lf>
+#dup(3): /[waitkey(64)]/[close()]
+저와 얘기하셔도 상황은 그대로입니다．<lf>
 어서 앞으로 가시죠！<lf>
-# dup_of: line 37, tag8 1
-/[waitkey(1)]/[clear()]
-………．
-# dup_of: line 37, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
+#dup(6): ………．
+#dup(4): /[waitkey(1)]/[clear()]
 하나 여쭤봐도 되겠습니까？<lf>
 꼬마님도 싸움을 앞두고<lf>
 무서워지는 일이 있습니까？
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 그건 의외네요．<lf>
-하지만 『공포를 모르면 미숙한 법』이라는<lf>
+다만 『공포를 모르면 미숙한 법』이라는<lf>
 말도 있는 걸 생각하면，<lf>
 꼬마님은 이미 그 단계를<lf>
 넘어선 것이겠지요．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 역시 꼬마님은 말부터 다르시군요．<lf>
 저는 무서우면 바로 도망칩니다．<lf>
 아까도 꼬마님보다 먼저 돌입했다가<lf>
 Ｎｏ．３ 문 앞에서 적과 마주쳤거든요．<lf>
 그랬더니……．
-# dup_of: line 37, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 그러고 보니 놈들이 유난히 당황했었죠．<lf>
 빨리 닫지 않으면 브리지 어쩌고……<lf>
 그 Ｎｏ．３ 문 너머가 수상합니다．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 하지만 무리는 하지 마십시오．<lf>
-위험해지면…… １번째로 도망치긴 어려우니<lf>
+위험해지면…… １번째로 도망치긴 뭐하니<lf>
 저는 ２번째로 도망치겠습니다．
-# dup_of: line 37, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 ……농담입니다．농담！<lf>
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 아，꼬마님！ 꼬마님도 위험해져서<lf>
 일단 여기로 대피하신 겁니까？<lf>
 현명한 판단이라고 생각합니다．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 예……？ 저 말입니까？<lf>
 아뇨，저도 신변의 위협을 느껴서<lf>
 일단 여기까지 돌아온 겁니다．
-# dup_of: line 37, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 지，진짜예요．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 예……？
-# dup_of: line 37, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 초계 담당 동료가 저를<lf>
 찾고 있습니까？<lf>
 어，어쩔 수 없군요〜<lf>
 그 녀석도 참<lf>
 제가 없으면 아무것도 못 한다니까요．
-# dup_of: line 37, tag8 1
-/[waitkey(1)]/[clear()]
-# dup_of: line 62, tag8 37
-………．
-# dup_of: line 37, tag8 1
-/[waitkey(1)]/[clear()]
-조…… 조금만 더 있다가 돌아가겠습니다．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(4): /[waitkey(1)]/[clear()]
+#dup(6): ………．
+#dup(4): /[waitkey(1)]/[clear()]
+조…… 조금만 있다가 돌아가겠습니다．
+#dup(3): /[waitkey(64)]/[close()]
 조심하십시오，꼬마님．<lf>
-부디 조심하십시오．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 62, tag8 37
-………．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 62, tag8 37
-………．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 62, tag8 37
-………．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 62, tag8 37
-………．
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+부디 조심하셔야 됩니다．
+#dup(3): /[waitkey(64)]/[close()]
+#dup(6): ………．
+#dup(3): /[waitkey(64)]/[close()]
+#dup(6): ………．
+#dup(3): /[waitkey(64)]/[close()]
+#dup(6): ………．
+#dup(3): /[waitkey(64)]/[close()]
+#dup(6): ………．
+#dup(3): /[waitkey(64)]/[close()]
 EOB**********
 enemyNo case 3
 enemyNo case 4
@@ -192,37 +151,26 @@ Final_init !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 초준족　→　준족 경비원으로 변경
 준족（약） 경비원 변경
 준족 경비원으로 변경
-Screen
-# dup_of: line 146, tag8 20
-Screen
-# dup_of: line 146, tag8 20
-Screen
-AAAAA --- PATTERN
-BBBBB --- PATTERN
-CCCCC --- PATTERN
-DDDDD --- PATTERN
-# dup_of: line 149, tag8 3
-AAAAA --- PATTERN
-# dup_of: line 150, tag8 5
-BBBBB --- PATTERN
-# dup_of: line 151, tag8 6
-CCCCC --- PATTERN
-# dup_of: line 152, tag8 7
-DDDDD --- PATTERN
+#dup(7): AAAAA --- PATTERN
+#dup(8): BBBBB --- PATTERN
+#dup(9): CCCCC --- PATTERN
+#dup(10): DDDDD --- PATTERN
+#dup(7): AAAAA --- PATTERN
+#dup(8): BBBBB --- PATTERN
+#dup(9): CCCCC --- PATTERN
+#dup(10): DDDDD --- PATTERN
 셔터를 엽니다
-패턴Ａ
-패턴Ｂ
-패턴Ｃ
-패턴Ｄ
+#dup(11): 패턴Ａ
+#dup(12): 패턴Ｂ
+#dup(13): 패턴Ｃ
+#dup(14): 패턴Ｄ
+#dup(15): パターンE
 NO4를 엽니다
-# dup_of: line 158, tag8 87
-패턴Ａ
-# dup_of: line 159, tag8 88
-패턴Ｂ
-# dup_of: line 160, tag8 89
-패턴Ｃ
-# dup_of: line 161, tag8 90
-패턴Ｄ
+#dup(11): 패턴Ａ
+#dup(12): 패턴Ｂ
+#dup(13): 패턴Ｃ
+#dup(14): 패턴Ｄ
+#dup(15): パターンE
 기둥 뒤에 숨은 병사 이벤트
 준족 경비원 초기화
 초준족 경비원 초기화
@@ -239,13 +187,6 @@ TRAP1 파괴 이벤트！
 TRAP2 파괴 이벤트！
 enterd : /[$0]
 entrance: /[$0]
-Talk_npc1
-Talk_npc2
-# dup_of: line 184, tag8 26
-Talk_npc2
-Talk_npc3
-Talk_dead1
-Talk_dead2
 NO4 문 닫힘　초기화
 셔터 닫힘　초기화
 트랩 발화 이펙트 초기화
@@ -260,9 +201,3 @@ enemy 4 정의
 기둥 뒤 종료 후 A패턴
 기둥 뒤 종료 후 B패턴
 기둥 뒤 종료 후 C패턴
-# dup_of: line 131, tag8 134
-발화 시작 카메라１（파괴물１）
-# dup_of: line 179, tag8 21
-TRAP1 파괴 이벤트！
-# dup_of: line 28, tag8 64
-꼬마님．그러니 어서 브리지로．<lf>

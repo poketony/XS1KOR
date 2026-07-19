@@ -1,0 +1,162 @@
+# think_patch extract: think053.bin.ori
+# 총 33개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x0328
+　포스 퍼니셔　　Ｅ
+
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0366
+　올 큐어
+　　전체 ＨＰ 회복
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x03C6
+　선더볼트　　Ｅ／번개
+
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x0410
+　Ｗ선더볼트　　Ｅ／번개
+
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x044E
+　포이즌 클라우드　　Ｐ
+　　독
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x04AC
+　선더볼트　　Ｅ／번개
+
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x04E8
+　포이즌 클라우드　　Ｐ
+　　독
+<<<
+
+>>> [007] op=0x1A(condition) flag=0x00 offset=0x0522
+死んでブーストチェック
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x05BC
+　反魂変化
+
+<<<
+
+>>> [009] op=0x1A(condition) flag=0x00 offset=0x05D0
+チェックＰＯＳ１
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x0614
+　反魂変化
+
+<<<
+
+>>> [011] op=0x1A(condition) flag=0x00 offset=0x0628
+チェックＰＯＳ２
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x066C
+　反魂変化
+
+<<<
+
+>>> [013] op=0x1A(condition) flag=0x00 offset=0x0680
+チェックＰＯＳ３
+<<<
+
+>>> [014] op=0x21(display) flag=0x00 offset=0x06C4
+　反魂変化
+
+<<<
+
+>>> [015] op=0x1A(condition) flag=0x00 offset=0x06D8
+チェックＰＯＳ４
+<<<
+
+>>> [016] op=0x21(display) flag=0x00 offset=0x071C
+　反魂変化
+
+<<<
+
+>>> [017] op=0x1A(condition) flag=0x00 offset=0x0730
+チェックＰＯＳ５
+<<<
+
+>>> [018] op=0x21(display) flag=0x00 offset=0x0756
+　도주　　
+　　
+<<<
+
+>>> [019] op=0x21(display) flag=0x00 offset=0x07BE
+　모데스트 커스　　Ｓ
+　　혼란
+<<<
+
+>>> [020] op=0x21(display) flag=0x00 offset=0x0800
+ 원한의 냉기  Ｅ／냉기
+
+<<<
+
+>>> [021] op=0x21(display) flag=0x00 offset=0x08A4
+　アブソープション　　Ｅ
+　　ＥＰドレイン
+<<<
+
+>>> [022] op=0x21(display) flag=0x00 offset=0x08F0
+　ソウルスフリング　　Ｓ
+　　ＥＰオーバー
+<<<
+
+>>> [023] op=0x21(display) flag=0x00 offset=0x0930
+　도주　　
+　　
+<<<
+
+>>> [024] op=0x21(display) flag=0x00 offset=0x0A1A
+　ファイアボール　　Ｅ／불꽃
+
+<<<
+
+>>> [025] op=0x21(display) flag=0x00 offset=0x0A56
+　サンダーフライ　　Ｅ／번개
+
+<<<
+
+>>> [026] op=0x21(display) flag=0x00 offset=0x0A9E
+　スティング슬로　　Ｓ
+　　슬로
+<<<
+
+>>> [027] op=0x21(display) flag=0x00 offset=0x0AD6
+　도주
+
+<<<
+
+>>> [028] op=0x21(display) flag=0x00 offset=0x0AFC
+　【ポイズンバブル】
+　トラップの影響で発動失敗！
+<<<
+
+>>> [029] op=0x21(display) flag=0x00 offset=0x0B84
+　ポイズンバブル　　Ｅ／Ｓ
+　　독
+<<<
+
+>>> [030] op=0x21(display) flag=0x00 offset=0x0BC6
+　ドレインアーム　　Ｅ
+　　ＨＰドレイン
+<<<
+
+>>> [031] op=0x21(display) flag=0x00 offset=0x0C1E
+　ドレインアーム　　Ｅ
+　　ＨＰドレイン
+<<<
+
+>>> [032] op=0x21(display) flag=0x00 offset=0x0C5A
+　様子を見ている
+<<<

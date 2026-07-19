@@ -1,10 +1,11 @@
+# extraction_order: precise_code_v4
 # chunk 5 @ 0x15d4 cnum=1210 total=88
-# bc_map: 57,71,5,4,55,66,37,75,41,44,72,33,76,52,30,78,5,4,36,47,74,5,4,21,5,28,35,42,2,58,48,82,86,49,32,34,5,31,85,5,43,5,3,45,62,5,3,80,62,5,3,27,61,5,3,40,73,25,5,3,46,39,59,5,3,50,5,3,70,79,5,3,38,87,5,3,69,5,3,24,68,5,63,56,5,63,51,5,64,65,5,23,81,67,5,22,29,77,5,26,54,84,5,60,5,53,18,19,20,16,17,19,20,19,20,19,20,19,20,0,6,7,8,9,14,15,11,11,83,12,83,12,13,10,12,28,36,47
-# bc_unmap: 1
+# bc_map: 57,71,5,4,55,66,37,75,41,44,72,33,76,52,30,78,5,4,36,47,74,5,4,21,5,28,35,42,2,58,48,82,86,49,32,34,5,31,85,5,43,5,3,45,62,5,3,80,62,5,3,27,61,5,3,40,73,25,5,3,46,39,59,5,3,50,5,3,70,79,5,3,38,87,5,3,69,5,3,24,68,5,63,56,5,63,51,5,64,65,5,23,81,67,5,22,29,77,5,26,54,84,5,60,5,53,19,20,16,17,19,20,19,20,19,20,19,20,0,6,7,8,9,1,14,15,83,83
+# bc_unmap: 10,11,12,13,18
 에어록은 세이프티 모드로<lf>
 작동 중입니다．
-/[waitkey(64)]/[close()]
-/[label(스왜거)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(스왜거)]
 여，여어……<lf>
 벡터 아가씨인가……<lf>
 이，이 장사는 마음에 들었는데 말이야．<lf>
@@ -17,20 +18,15 @@
 그，안에 지금까지 빼돌린 물자가 있어．<lf>
 저……세상까지는 가지고……<lf>
 갈 수 없으…니까，다 줄게．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 4
-/[label(스왜거)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(스왜거)]
 구，군인이라는 게，윽…… 마，마음에<lf>
 드，들었었지…… 주，죽는 게，<lf>
 일이어도，으윽…… 일이어도，말이야……
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 4
-/[label(스왜거)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(스왜거)]
 ……<lf>
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 아，아아，<lf>
 추，추격전을 했던 아가씨 맞지！？<lf>
 미，미미미안하지만，<lf>
@@ -42,151 +38,95 @@
 가，가져와 줘！<lf>
 서，서두르지 않으면 온다！ 놈들이 와！<lf>
 나，나는 여기서 막고 있을게！
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 서，서둘러！<lf>
 퇴로는 내가 확보해 둘 테니까……．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 이미 숨이 끊어졌다．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 조，조장님！<lf>
-스왜거 조장님！
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 43, tag8 3
-/[label(시온)]
+#dup(4): 스왜거 조장님！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 조장님！ 정신 차리세요，조장님！<lf>
-# dup_of: line 45, tag8 62
-스왜거 조장님！
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 43, tag8 3
-/[label(시온)]
+#dup(4): 스왜거 조장님！
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 ……조장님．<lf>
 스왜거 씨……．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 43, tag8 3
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 이런 곳까지<lf>
 들어와 있다니……．<lf>
 ……다들 무사할까？
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 43, tag8 3
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 그러고 보니，<lf>
 이건 에어록을 작동시키는<lf>
 스위치였을 텐데…．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 43, tag8 3
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 어쨌든 눌러 볼 수밖에 없겠어…．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 43, tag8 3
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 무슨 일이 일어날지도 모르니…<lf>
 그냥 두는 게 좋겠어．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 43, tag8 3
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 이대로 똑바로 돌진하면<lf>
 틀림없이 ＯＵＴ이야……．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 43, tag8 3
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 뭔가 좋은 방법이 없을까……．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 43, tag8 3
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 ……끔찍해……．<lf>
 다른 길을 찾아야 해．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-세그먼트 어드레스 Ｎｏ．７이라고<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): 세그먼트 어드레스 Ｎｏ．７이라고<lf>
 적힌 문을 발견했다．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 83, tag8 63
-세그먼트 어드레스 Ｎｏ．７이라고<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): 세그먼트 어드레스 Ｎｏ．７이라고<lf>
 표시되어 있다．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 세그먼트 어드레스 Ｎｏ．７의<lf>
 디코드를 종료합니다．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ……이봐，저놈들 대체 뭐야？<lf>
-파쇄 플러그인으로도 못 부수는 컨테이너를<lf>
-일격에 부숴 버렸어！
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
-……하지만 말이야，아까 내가 봐 버렸어．<lf>
+파쇄 플러그인으로도 못 부수는<lf>
+컨테이너를 일격에 부숴 버렸어！
+#dup(1): /[waitkey(64)]/[close()]
+……하지만 아까 나는 봐 버렸지．<lf>
 저놈들，전자기 네트에<lf>
 걸려 있었거든．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ……난 내버려 둬．<lf>
 이제 함께 싸울 동료 따윈<lf>
 단 한 명도 남아 있지 않아……．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 스위치를 누르겠습니까？
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 예<lf>아니요
-ido0
-serch_off!!!!!!!!!!!!!!!!!!!!!!
-serch_on!!!!!!!!!!!!!!!!!!!!!!!
+#dup(6): serch_off!!!!!!!!!!!!!!!!!!!!!!
+#dup(7): serch_on!!!!!!!!!!!!!!!!!!!!!!!
 gunoyose_lgunoyose_lgunoyose_lgunoyose_lgunoyose_l
 gunoyose_rgunoyose_rgunoyose_rgunoyose_rgunoyose_r
-# dup_of: line 108, tag8 19
-serch_off!!!!!!!!!!!!!!!!!!!!!!
-# dup_of: line 109, tag8 20
-serch_on!!!!!!!!!!!!!!!!!!!!!!!
-# dup_of: line 108, tag8 19
-serch_off!!!!!!!!!!!!!!!!!!!!!!
-# dup_of: line 109, tag8 20
-serch_on!!!!!!!!!!!!!!!!!!!!!!!
-# dup_of: line 108, tag8 19
-serch_off!!!!!!!!!!!!!!!!!!!!!!
-# dup_of: line 109, tag8 20
-serch_on!!!!!!!!!!!!!!!!!!!!!!!
-# dup_of: line 108, tag8 19
-serch_off!!!!!!!!!!!!!!!!!!!!!!
-# dup_of: line 109, tag8 20
-serch_on!!!!!!!!!!!!!!!!!!!!!!!
+#dup(6): serch_off!!!!!!!!!!!!!!!!!!!!!!
+#dup(7): serch_on!!!!!!!!!!!!!!!!!!!!!!!
+#dup(6): serch_off!!!!!!!!!!!!!!!!!!!!!!
+#dup(7): serch_on!!!!!!!!!!!!!!!!!!!!!!!
+#dup(6): serch_off!!!!!!!!!!!!!!!!!!!!!!
+#dup(7): serch_on!!!!!!!!!!!!!!!!!!!!!!!
+#dup(6): serch_off!!!!!!!!!!!!!!!!!!!!!!
+#dup(7): serch_on!!!!!!!!!!!!!!!!!!!!!!!
 ###############################################
 000
 111
 222
 333
+----------*-*-*-*-
 enterd : /[$0]
 entrance: /[$0]
-TalkNPC1
-# dup_of: line 127, tag8 11
-TalkNPC1
-읽었어？
-TalkNPC2
-# dup_of: line 129, tag8 83
-읽었어？
-# dup_of: line 130, tag8 12
-TalkNPC2
-TalkNPC5
-LookA
-# dup_of: line 130, tag8 12
-TalkNPC2
-# dup_of: line 26, tag8 28
-아，아아，<lf>
-# dup_of: line 19, tag8 36
-구，군인이라는 게，윽…… 마，마음에<lf>
-# dup_of: line 20, tag8 47
-드，들었었지…… 주，죽는 게，<lf>
+#dup(8): 읽었어？
+#dup(8): 읽었어？

@@ -1,0 +1,98 @@
+# think_patch extract: think054.bin.ori
+# 총 20개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x1A(condition) flag=0x00 offset=0x00A2
+INIT
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x02F2
+　포스 퍼니셔　　Ｅ
+
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x0330
+　올 큐어
+　　전체 ＨＰ 회복
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x0390
+　선더볼트　　Ｅ／번개
+
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x03DA
+　Ｗ선더볼트　　Ｅ／번개
+
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x0418
+　포이즌 클라우드　　Ｐ／Ｓ
+　　독
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x047A
+　선더볼트　　Ｅ／번개
+
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x04B6
+　포이즌 클라우드　　Ｐ／Ｓ
+　　독
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x051A
+　チャンピオン태클　　Ｐ
+
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x056A
+　トロルスィング　　Ｐ
+　　물리 방어력 저하
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x05AE
+　リベンジガード
+
+<<<
+
+>>> [011] op=0x21(display) flag=0x00 offset=0x05F6
+　カウンターブースト
+
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x0652
+　파워 차지
+　　물리 공격력 업
+<<<
+
+>>> [013] op=0x1A(condition) flag=0x00 offset=0x0684
+Ｍ사이즈검색
+<<<
+
+>>> [014] op=0x1A(condition) flag=0x00 offset=0x06C2
+태클 선택
+<<<
+
+>>> [015] op=0x1A(condition) flag=0x00 offset=0x06EC
+ＡＧＷＳ 선택
+<<<
+
+>>> [016] op=0x1A(condition) flag=0x00 offset=0x071C
+태클 나왔나？
+<<<
+
+>>> [017] op=0x21(display) flag=0x00 offset=0x074C
+　태클　　Ｐ／Ｓ
+　　슬로
+<<<
+
+>>> [018] op=0x21(display) flag=0x00 offset=0x07B0
+　트롤 스윙　　Ｐ／Ｓ
+　　물리 방어력 저하
+<<<
+
+>>> [019] op=0x21(display) flag=0x00 offset=0x0838
+　様子を見ている
+<<<

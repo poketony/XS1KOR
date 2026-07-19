@@ -1,27 +1,19 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x64 cnum=74 total=1
 # bc_map: 0,0,0,0
-move
-# dup_of: line 1, tag8 0
-move
-# dup_of: line 1, tag8 0
-move
-# dup_of: line 1, tag8 0
-move
+#dup(1): move
+#dup(1): move
+#dup(1): move
+#dup(1): move
 
 # chunk 4 @ 0xbac cnum=583 total=9
-# bc_map: 8,0,7,1,7,2,7,3,7,4,5,6
+# bc_map: 8,0,7,7,7,7,5,6
+# bc_unmap: 1,2,3,4
 플로어를 이동시키겠습니까？
 /[waitkey(64)]/[close()]
-예<lf>아니요
-Move
-# dup_of: line 3, tag8 7
-예<lf>아니요
-Move2
-# dup_of: line 3, tag8 7
-예<lf>아니요
-Move3
-# dup_of: line 3, tag8 7
-예<lf>아니요
-Move4
+#dup(2): 예<lf>아니요
+#dup(2): 예<lf>아니요
+#dup(2): 예<lf>아니요
+#dup(2): 예<lf>아니요
 enterd : /[$0]
 entrance: /[$0]

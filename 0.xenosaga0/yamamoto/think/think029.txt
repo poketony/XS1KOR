@@ -1,0 +1,73 @@
+# think_patch extract: think029.bin.ori
+# 총 14개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x02EE
+　히트 크래시　　Ｐ／불꽃
+
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0350
+　보머 웨이브　　Ｅ／불꽃
+
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x03B0
+　헬 캐넌　　Ｅ／불꽃
+
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x0412
+　보머 웨이브　　Ｅ／불꽃
+
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x04BE
+　다우저 팽　　Ｐ／Ｓ
+　　물리 공격력 다운
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x0536
+　플레임 볼　　Ｅ／불꽃
+
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x0598
+　프리저 브레스　　Ｅ／냉기
+
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x0642
+　라이트닝　　Ｅ／번개
+
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x06A2
+　윌리 위스프　　Ｅ
+
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x0714
+　위스퍼 보이스　　Ｓ
+　　수면
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x0780
+　파워 차지
+　　물리 공격력 업
+<<<
+
+>>> [011] op=0x1A(condition) flag=0x00 offset=0x07B2
+Ｍ사이즈검색
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x0822
+　태클　　Ｐ／Ｓ
+　　장갑 결손
+<<<
+
+>>> [013] op=0x21(display) flag=0x00 offset=0x0888
+　파워 스윙　　Ｐ／Ｓ
+　　물리 방어력 저하
+<<<

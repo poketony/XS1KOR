@@ -1,190 +1,141 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x54 cnum=217 total=8
-# bc_map: 4,4,5,6,7,0,2,2,3,1
-TRAP1 파괴 이벤트
-# dup_of: line 1, tag8 4
-TRAP1 파괴 이벤트
+# bc_map: 4,4,5,6,7,0,1
+# bc_unmap: 2,3
+#dup(1): TRAP1 파괴 이벤트
+#dup(1): TRAP1 파괴 이벤트
 이펙트１ 점멸 시작
 이펙트２ 점멸 시작
 화면 점멸 시작
 SOUND_BLINK
-Screen
-# dup_of: line 7, tag8 2
-Screen
-Sound_Loop
 SOUND_LOOP
 
 # chunk 3 @ 0x14ec cnum=1602 total=184
-# bc_map: 113,113,2,8,91,8,92,143,8,118,5,8,94,148,8,6,167,8,6,182,76,8,6,68,162,136,8,6,142,70,112,168,7,79,8,91,0,7,1,8,90,3,7,4,8,63,137,115,160,157,8,71,149,116,8,73,67,80,7,121,179,8,166,139,133,119,7,161,129,8,180,181,140,134,8,128,74,8,78,131,7,77,72,8,138,114,64,8,132,8,60,8,61,8,6,163,122,69,8,6,59,8,6,75,141,8,6,123,8,6,66,183,135,8,6,130,65,8,58,8,62,147,8,37,38,13,16,46,48,47,17,81,82,93,99,97,23,24,27,98,105,146,14,15,18,22,20,21,107,108,109,110,111,95,107,108,109,110,111,51,52,53,54,55,56,57,170,164,117,106,100,36,101,36,102,103,36,104,36,28,32,34,35,49,50,42,43,44,45,165,29,33,18,30,34,31,35,13,13,13,145,144,85,88,171,176,124,86,173,154,125,87,172,158,11,156,126,83,177,153,127,84,175,159,12,17,81,82,93,99,97,23,24,27,98,105,146,14,15,18,40,41,39,22,20,21,107,108,109,110,95,107,108,109,110,51,52,53,54,55,56,57,170,164,117,100,36,101,36,102,103,36,36,28,32,34,35,174,9,178,10,49,50,42,43,44,45,165,29,33,18,30,34,31,35,13,13,13,145,144,85,88,171,176,124,86,173,154,125,87,172,158,11,156,126,83,177,153,127,84,175,159,12,155,19,96,25,26,26,169,150,151,152,89,120
-……<lf>
-# dup_of: line 1, tag8 113
-……<lf>
+# bc_map: 113,113,2,8,91,8,92,143,8,118,5,8,94,148,8,6,167,8,6,182,76,8,6,68,162,136,8,6,142,70,112,168,7,79,8,91,0,7,1,8,90,3,7,4,8,63,137,115,160,157,8,71,149,116,8,73,67,80,7,121,179,8,166,139,133,119,7,161,129,8,180,181,140,134,8,128,74,8,78,131,7,77,72,8,138,114,64,8,132,8,60,8,61,8,6,163,122,69,8,6,59,8,6,75,141,8,6,123,8,6,66,183,135,8,6,130,65,8,58,8,62,147,8,13,16,46,48,47,17,81,82,93,99,97,23,24,27,98,105,146,14,15,18,40,41,39,22,20,21,107,108,109,110,111,95,107,108,109,110,111,51,52,53,54,55,56,57,170,164,117,106,100,101,102,103,104,28,32,34,35,174,178,49,50,42,43,44,45,165,29,18,30,31,145,144,85,88,171,176,124,86,173,154,125,87,172,158,156,126,83,177,153,127,84,175,159,155,19,96,25,26,26,169,150,151,152,89,120
+# bc_unmap: 9,10,11,12,33,36,37,38
+#dup(2): ……<lf>
+#dup(2): ……<lf>
 /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]를 꽂았다．<lf>
-/[waitkey(64)]/[close()]
-카드 키 삽입구가 있다．<lf>
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(4): 카드 키 삽입구가 있다．<lf>
+#dup(3): /[waitkey(64)]/[close()]
 카드 키를 사용하지 않으면<lf>
 문은 열리지 않을 것 같다．<lf>
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 옆에 있는 카드 리더에<lf>
 /[color(0x329bbe)]Ｕ−ＴＩＣ 카드/[color(0xffffff)]를 통과시켜야……．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 콘솔을 켜지 않으면<lf>
 조작할 수 없을 것 같다．<lf>
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
-/[label(Ｊｒ．)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(5): /[label(Ｊｒ．)]
 열릴 것 같지 않군．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
-# dup_of: line 16, tag8 6
-/[label(Ｊｒ．)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(5): /[label(Ｊｒ．)]
 Ｎｏ．５……인가．<lf>
 어딘가에 개폐 스위치가 있는 건가．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
-# dup_of: line 16, tag8 6
-/[label(Ｊｒ．)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(5): /[label(Ｊｒ．)]
 이 문은 Ｎｏ．３인가．<lf>
 전함 구조상 이 앞이 브리지일 거라고<lf>
 생각하는데 말이지……．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
-# dup_of: line 16, tag8 6
-/[label(Ｊｒ．)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(5): /[label(Ｊｒ．)]
 문의 Ｎｏ．는 ３．<lf>
 아까 들은 대로 이 앞이<lf>
 브리지인 것 같지만<lf>
 열 방법이 없는걸．
-/[waitkey(1)]/[clear()]
+#dup(6): /[waitkey(1)]/[clear()]
 우선 다른 곳을 둘러볼까……．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 91
-카드 키 삽입구가 있다．<lf>
+#dup(3): /[waitkey(64)]/[close()]
+#dup(4): 카드 키 삽입구가 있다．<lf>
 /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]를 쓸 수 있을 듯하다．
-# dup_of: line 33, tag8 7
-/[waitkey(1)]/[clear()]
+#dup(6): /[waitkey(1)]/[clear()]
 /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]를 쓰겠습니까？<lf>
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
-카드 키 삽입구가 있다．<lf>
+#dup(3): /[waitkey(64)]/[close()]
+#dup(4): 카드 키 삽입구가 있다．<lf>
 /[color(0x329bbe)]Ｕ−ＴＩＣ 카드/[color(0xffffff)]를 쓸 수 있을 듯하다．
-# dup_of: line 33, tag8 7
-/[waitkey(1)]/[clear()]
+#dup(6): /[waitkey(1)]/[clear()]
 /[color(0x329bbe)]Ｕ−ＴＩＣ 카드/[color(0xffffff)]를 쓰겠습니까？<lf>
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 아，꼬마님！ 다치진 않으셨죠？<lf>
 갑자기 문이 닫힐 때 습격당해서<lf>
 그만 부상자가 생기고 말았습니다．<lf>
 제가 붙어 있었는데도……<lf>
 죄송합니다．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 하지만 생각보다 Ｎｏ．４ 문이<lf>
 빨리 열려서 살았습니다．<lf>
 동료를 죽게 하지 않아도 될 것 같네요．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 꼬마님．<lf>
 더 앞으로 간 아군도<lf>
 아직 몇 명 있는 것으로 보입니다．
-# dup_of: line 33, tag8 7
-/[waitkey(1)]/[clear()]
+#dup(6): /[waitkey(1)]/[clear()]
 위험을 느끼면 무리하지 말고<lf>
 일단 귀환하라고 전해 주십시오．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 열려 있던 Ｎｏ．３ 문이 갑자기 닫혀서<lf>
 서둘러 들어가려던 참에 공격당했습니다．<lf>
 탄은 거의 빗나갔지만 선두에 있던<lf>
 그는 몇 발 맞은 듯합니다．
-# dup_of: line 33, tag8 7
-/[waitkey(1)]/[clear()]
+#dup(6): /[waitkey(1)]/[clear()]
 치명적인 곳에 맞지는 않았으니<lf>
 괜찮을 거라 생각합니다만……．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 Ｎｏ．３ 문이 닫힌 것과 동시에<lf>
 Ｎｏ．４，５ 문도 닫히기 시작했습니다．<lf>
 급히 되돌아간 아군도 있었는데，<lf>
 그들은 무사할까요？
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 괜찮습니다．여긴 저희에게 맡기고<lf>
 꼬마님은 어서 가 주십시오．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 하하하하하．죄송합니다 꼬마님．<lf>
 조금…… 방심했습니다．<lf>
-# dup_of: line 33, tag8 7
-/[waitkey(1)]/[clear()]
+#dup(6): /[waitkey(1)]/[clear()]
 뭐〜 조금 쉬면 괜찮……을 겁니다．<lf>
 그보다 어서 가 주십시오．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 한심하군요．<lf>
 부주의하게 뛰쳐나가지 말았어야 했는데．<lf>
 그런 놈들한테 당하다니…… 아야야．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 조금 속이…… 안 좋습니다．<lf>
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 ……의식을 잃은 것 같다．<lf>
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 ……의식을 잃었다．<lf>
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
-# dup_of: line 16, tag8 6
-/[label(Ｊｒ．)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(5): /[label(Ｊｒ．)]
 방금 들은 전투 장소인가．<lf>
 각 통로가 합류하는<lf>
 이런 좁은 곳에서 습격당했다니……．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
-# dup_of: line 16, tag8 6
-/[label(Ｊｒ．)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(5): /[label(Ｊｒ．)]
 ……조금 방심했을지도 모르겠어．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
-# dup_of: line 16, tag8 6
-/[label(Ｊｒ．)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(5): /[label(Ｊｒ．)]
 아무래도 여기서 돌발적인<lf>
 전투가 있었던 것 같은데．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
-# dup_of: line 16, tag8 6
-/[label(Ｊｒ．)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(5): /[label(Ｊｒ．)]
 아군에게 피해가 없었으면 좋겠는걸……．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
-# dup_of: line 16, tag8 6
-/[label(Ｊｒ．)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(5): /[label(Ｊｒ．)]
 여기서 전투가 있었던 것 같아．<lf>
 Ｕ−ＴＩＣ 기관의 병사가<lf>
 매복하고 있었겠지．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
-# dup_of: line 16, tag8 6
-/[label(Ｊｒ．)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(5): /[label(Ｊｒ．)]
 안쪽에 있는 부상병은<lf>
 여기서 부상을 입었겠군．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 ………．
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 『Ｎｏ．３ 문 개폐 스위치』<lf>
 조작하겠습니까？<lf>
-# dup_of: line 4, tag8 8
-/[waitkey(64)]/[close()]
-Teiten_Move1
-Teiten_Move2
+#dup(3): /[waitkey(64)]/[close()]
 Dead_Talk
 EOB !!!!!!!!!!!!!!!!!!!!!
 enemy1 소멸
@@ -204,26 +155,24 @@ NO3 문 앞 카메라
 협공하는 병사　카메라
 ENEMY_START!!!
 ENEMY_STOP!!!
-FINAL INIT !!!!!!!!!!!!!!!!!!!!!!!!!
+#dup(7): FINAL INIT !!!!!!!!!!!!!!!!!!!!!!!!!
+case 3
+case 4
+case 11
 NO3 문 앞
 NO3 카드 리더 앞
 NO3 콘솔 앞
-패턴Ａ
-패턴Ｂ
-패턴Ｃ
-패턴Ｄ
-패턴Ｅ
+#dup(8): 패턴Ａ
+#dup(9): 패턴Ｂ
+#dup(10): 패턴Ｃ
+#dup(11): 패턴Ｄ
+#dup(12): 패턴Ｅ
 콘솔을 켜지 않으면……
-# dup_of: line 149, tag8 107
-패턴Ａ
-# dup_of: line 150, tag8 108
-패턴Ｂ
-# dup_of: line 151, tag8 109
-패턴Ｃ
-# dup_of: line 152, tag8 110
-패턴Ｄ
-# dup_of: line 153, tag8 111
-패턴Ｅ
+#dup(8): 패턴Ａ
+#dup(9): 패턴Ｂ
+#dup(10): 패턴Ｃ
+#dup(11): 패턴Ｄ
+#dup(12): 패턴Ｅ
 pattern A
 pattern B
 pattern C
@@ -236,265 +185,56 @@ pattern G
 준족 경비원 초기화
 트랩 코드１
 트랩 코드1A
-Sound_Blink
 트랩 코드1B
-# dup_of: line 172, tag8 36
-Sound_Blink
 트랩 코드2
 트랩 코드2A
-# dup_of: line 172, tag8 36
-Sound_Blink
 트랩 코드2B
-# dup_of: line 172, tag8 36
-Sound_Blink
 NO5 문 앞
 Npc_Talk1
 Npc_Talk2
-Npc_Talk3
-enterd : /[$0]
-entrance: /[$0]
-doorA 초기화
-doorB 초기화
-doorC 초기화
-doorD 초기화
-방４ 카드 리더（빨간 점등） 초기화
-NPC1
-Npc_Talk1A
-# dup_of: line 145, tag8 18
-FINAL INIT !!!!!!!!!!!!!!!!!!!!!!!!!
-NPC2
-# dup_of: line 182, tag8 34
-Npc_Talk2
-NPC3
-# dup_of: line 183, tag8 35
-Npc_Talk3
-# dup_of: line 126, tag8 13
-Dead_Talk
-# dup_of: line 126, tag8 13
-Dead_Talk
-# dup_of: line 126, tag8 13
-Dead_Talk
-수동 클리핑 처리 B
-수동 클리핑 처리 A
-이펙트１（녹색） 초기화
-이펙트２（녹색） 초기화
-전기계 쇼트1 초기화
-전기계 쇼트2 초기화
-파괴물１은 파괴되어 있음
-이펙트１（녹색） 비점등
-전기계 쇼트1 점등）
-환경음・스파크 소（왼쪽）
-파괴물１ 초기화
-이펙트１（녹색） 점등
-전기계 쇼트1 비점등
-파괴 이펙트（폭발１） 초기화
-Blink_1
-환경음・도어 록 장치（왼쪽）
-파괴물２는 파괴되어 있음
-이펙트2（녹색） 비점등
-전기계 쇼트2 점등
-환경음・스파크 소（오른쪽）
-파괴물２ 초기화
-이펙트2（녹색） 점등
-전기계 쇼트2 비점등
-파괴 이펙트（폭발２） 초기화
-Blink_2
-# dup_of: line 131, tag8 17
-EOB_Always !!!!!!!!!!!!!!!!!!!!!
-# dup_of: line 132, tag8 81
-이벤트（회전） 조작 카메라
-# dup_of: line 133, tag8 82
-이벤트（회전） 조작 카메라 팔로우
-# dup_of: line 134, tag8 93
-콘솔　누르기 전 카메라
-# dup_of: line 135, tag8 99
-트랩 코드（왼쪽）B
-# dup_of: line 136, tag8 97
-트랩 코드（오른쪽）B
-# dup_of: line 137, tag8 23
-NO3 카드 키 삽입구 카메라
-# dup_of: line 138, tag8 24
-NO3 콘솔 앞 카메라
-# dup_of: line 139, tag8 27
-NO3 문 앞 카메라
-# dup_of: line 140, tag8 98
-트랩 코드（왼쪽）A
-# dup_of: line 141, tag8 105
-트랩 코드（오른쪽）A
-# dup_of: line 142, tag8 146
-협공하는 병사　카메라
-# dup_of: line 143, tag8 14
-ENEMY_START!!!
-# dup_of: line 144, tag8 15
-ENEMY_STOP!!!
-# dup_of: line 145, tag8 18
-FINAL INIT !!!!!!!!!!!!!!!!!!!!!!!!!
-case 3
-case 4
-case 11
-# dup_of: line 146, tag8 22
-NO3 문 앞
-# dup_of: line 147, tag8 20
-NO3 카드 리더 앞
-# dup_of: line 148, tag8 21
-NO3 콘솔 앞
-# dup_of: line 149, tag8 107
-패턴Ａ
-# dup_of: line 150, tag8 108
-패턴Ｂ
-# dup_of: line 151, tag8 109
-패턴Ｃ
-# dup_of: line 152, tag8 110
-패턴Ｄ
-# dup_of: line 154, tag8 95
-콘솔을 켜지 않으면……
-# dup_of: line 149, tag8 107
-패턴Ａ
-# dup_of: line 150, tag8 108
-패턴Ｂ
-# dup_of: line 151, tag8 109
-패턴Ｃ
-# dup_of: line 152, tag8 110
-패턴Ｄ
-# dup_of: line 160, tag8 51
-pattern A
-# dup_of: line 161, tag8 52
-pattern B
-# dup_of: line 162, tag8 53
-pattern C
-# dup_of: line 163, tag8 54
-pattern D
-# dup_of: line 164, tag8 55
-pattern E
-# dup_of: line 165, tag8 56
-pattern F
-# dup_of: line 166, tag8 57
-pattern G
-# dup_of: line 167, tag8 170
-뒤에 숨은 병사 이벤트
-# dup_of: line 168, tag8 164
-초고속 경비원 초기화
-# dup_of: line 169, tag8 117
-준족 경비원 초기화
-# dup_of: line 171, tag8 100
-트랩 코드1A
-# dup_of: line 172, tag8 36
-Sound_Blink
-# dup_of: line 173, tag8 101
-트랩 코드1B
-# dup_of: line 172, tag8 36
-Sound_Blink
-# dup_of: line 175, tag8 102
-트랩 코드2
-# dup_of: line 176, tag8 103
-트랩 코드2A
-# dup_of: line 172, tag8 36
-Sound_Blink
-# dup_of: line 172, tag8 36
-Sound_Blink
-# dup_of: line 180, tag8 28
-NO5 문 앞
-# dup_of: line 181, tag8 32
-Npc_Talk1
-# dup_of: line 182, tag8 34
-Npc_Talk2
-# dup_of: line 183, tag8 35
 Npc_Talk3
 전기계 쇼트1（이펙트）
-Bang_1
 전기계 쇼트2（이펙트）
-Bang_2
-# dup_of: line 184, tag8 49
 enterd : /[$0]
-# dup_of: line 185, tag8 50
 entrance: /[$0]
-# dup_of: line 186, tag8 42
 doorA 초기화
-# dup_of: line 187, tag8 43
 doorB 초기화
-# dup_of: line 188, tag8 44
 doorC 초기화
-# dup_of: line 189, tag8 45
 doorD 초기화
-# dup_of: line 190, tag8 165
 방４ 카드 리더（빨간 점등） 초기화
-# dup_of: line 191, tag8 29
 NPC1
-# dup_of: line 192, tag8 33
-Npc_Talk1A
-# dup_of: line 145, tag8 18
-FINAL INIT !!!!!!!!!!!!!!!!!!!!!!!!!
-# dup_of: line 194, tag8 30
+#dup(7): FINAL INIT !!!!!!!!!!!!!!!!!!!!!!!!!
 NPC2
-# dup_of: line 182, tag8 34
-Npc_Talk2
-# dup_of: line 196, tag8 31
 NPC3
-# dup_of: line 183, tag8 35
-Npc_Talk3
-# dup_of: line 126, tag8 13
-Dead_Talk
-# dup_of: line 126, tag8 13
-Dead_Talk
-# dup_of: line 126, tag8 13
-Dead_Talk
-# dup_of: line 201, tag8 145
 수동 클리핑 처리 B
-# dup_of: line 202, tag8 144
 수동 클리핑 처리 A
-# dup_of: line 203, tag8 85
 이펙트１（녹색） 초기화
-# dup_of: line 204, tag8 88
 이펙트２（녹색） 초기화
-# dup_of: line 205, tag8 171
 전기계 쇼트1 초기화
-# dup_of: line 206, tag8 176
 전기계 쇼트2 초기화
-# dup_of: line 207, tag8 124
 파괴물１은 파괴되어 있음
-# dup_of: line 208, tag8 86
 이펙트１（녹색） 비점등
-# dup_of: line 209, tag8 173
 전기계 쇼트1 점등）
-# dup_of: line 210, tag8 154
 환경음・스파크 소（왼쪽）
-# dup_of: line 211, tag8 125
 파괴물１ 초기화
-# dup_of: line 212, tag8 87
 이펙트１（녹색） 점등
-# dup_of: line 213, tag8 172
 전기계 쇼트1 비점등
-# dup_of: line 214, tag8 158
 파괴 이펙트（폭발１） 초기화
-# dup_of: line 215, tag8 11
-Blink_1
-# dup_of: line 216, tag8 156
 환경음・도어 록 장치（왼쪽）
-# dup_of: line 217, tag8 126
 파괴물２는 파괴되어 있음
-# dup_of: line 218, tag8 83
 이펙트2（녹색） 비점등
-# dup_of: line 219, tag8 177
 전기계 쇼트2 점등
-# dup_of: line 220, tag8 153
 환경음・스파크 소（오른쪽）
-# dup_of: line 221, tag8 127
 파괴물２ 초기화
-# dup_of: line 222, tag8 84
 이펙트2（녹색） 점등
-# dup_of: line 223, tag8 175
 전기계 쇼트2 비점등
-# dup_of: line 224, tag8 159
 파괴 이펙트（폭발２） 초기화
-# dup_of: line 225, tag8 12
-Blink_2
 환경음・도어 록 장치（오른쪽）
 Jr_Gun 초기화
 트랩 코드 병사 초기화
 NO3 콘솔 기동 전 초기화
-NO3 콘솔 기동 후 초기화
-# dup_of: line 328, tag8 26
-NO3 콘솔 기동 후 초기화
+#dup(13): NO3 콘솔 기동 후 초기화
+#dup(13): NO3 콘솔 기동 후 초기화
 뒤에 숨은 병사 초기화
 기둥 뒤 종료 후 A패턴
 기둥 뒤 종료 후 B패턴

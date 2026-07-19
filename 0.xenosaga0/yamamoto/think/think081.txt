@@ -1,0 +1,34 @@
+# think_patch extract: think081.bin.ori
+# 총 6개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x0484
+　ベノムエッジ　　Ｐ／Ｓ
+　　독
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x04C4
+　컨스텔
+　　ＨＰ 회복
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x0770
+　【デススペル】
+　トラップの影響で発動失敗！
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x07F0
+　デススペル
+　　即死
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x0820
+　ブラッドスペル
+　　エーテル力低下
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x085E
+　デススペル
+　　駆動停止
+<<<

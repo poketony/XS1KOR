@@ -1,246 +1,188 @@
+# extraction_order: precise_code_v4
 # chunk 3 @ 0x6c8 cnum=1106 total=152
-# bc_map: 72,6,94,6,128,6,0,85,83,37,4,36,113,4,89,6,0,80,68,4,38,132,6,0,79,91,108,6,0,41,141,64,6,0,116,6,0,140,126,129,118,75,6,0,63,137,6,0,90,143,71,4,66,115,4,61,139,6,0,107,92,6,0,39,69,51,6,0,148,145,6,0,40,144,47,119,6,0,56,33,134,125,123,4,32,48,93,4,42,34,142,131,102,4,136,46,6,0,55,45,135,31,49,101,4,146,147,138,6,0,150,59,87,81,4,54,43,60,4,58,114,120,6,0,57,86,44,35,6,3,151,6,2,77,2,76,2,84,2,50,62,6,127,6,2,65,88,4,133,78,6,1,67,70,73,106,98,4,52,117,110,5,1,97,109,104,103,4,111,95,4,53,82,99,96,112,6,1,96,105,6,19,130,149,74,100,20,21,22,23,24,25,26,27,28,121,124,122,29,7,10,12,13,14,15,16,17,18,8,9,7,11,69,30
+# bc_map: 72,6,94,6,128,6,0,85,83,37,4,36,113,4,89,6,0,80,68,4,38,132,6,0,79,91,108,6,0,41,141,64,6,0,116,6,0,140,126,129,118,75,6,0,63,137,6,0,90,143,71,4,66,115,4,61,139,6,0,107,92,6,0,39,69,51,6,0,148,145,6,0,40,144,47,119,6,0,56,33,134,125,123,4,32,48,93,4,42,34,142,131,102,4,136,46,6,0,55,45,135,31,49,101,4,146,147,138,6,0,150,59,87,81,4,54,43,60,4,58,114,120,6,0,57,86,44,35,6,3,151,6,2,77,2,76,2,84,2,50,62,6,127,6,2,65,88,4,133,78,6,1,67,70,73,106,98,4,52,117,110,5,1,97,109,104,103,4,111,95,4,53,82,99,96,112,6,1,96,105,6,19,130,149,74,100,20,21,22,23,24,25,26,27,28,121,124,122,29
+# bc_unmap: 7,8,9,10,11,12,13,14,15,16,17,18,30
 どれがいい？<lf>
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 スイッチがある。<lf>
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 戦いますか？
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 よ！あんたらか<lf>
 やっぱ普段から体を鍛えていれば、<lf>
 いざという時困らないですむんだよな！
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 あんたらもこの俺を見習って、<lf>
 体を鍛えた方がいいぜ！
-# dup_of: line 11, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ガハハハハハ！！
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 みんなも店を直すなら、
 ついでにこのピアノも直せばいいのに…。
-# dup_of: line 11, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 いつまで音が出ないまま
 放っておくのかしら……。
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 まったく、困ったのぉ<lf>
 グノーシスに襲われてから、<lf>
 マスターの自慢話が長くなっちまった…。
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 う〜ん、一体どこがわるかったんだ？<lf>
 肉体、ポーズ、心意気、<lf>
 すべてパーフェクトだと思ったのになぁ…。
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 俺もまだまだって事か……。
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 聞いて下さいよぉ〜<lf>
 彼女がデュランダルに避難したまま<lf>
 戻ってこないんですよぉ〜<lf>
 僕を置いてひとりで逃げるなんて<lf>
 ひどいと思いませんかぁ〜？
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 すごーい、すごーい！<lf>
 私もマスターみたいに強くなりたーい！
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 グノーシスが来て、
 街が壊された時は
 どうなるかと思ったさね。
-# dup_of: line 11, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 だからってクヨクヨしてたって
 何も良いことなんて無いさね。
-# dup_of: line 11, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 こんなときだからこそ、
 笑顔が大切なんだよ！
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 マスターすげー！<lf>
 グノーシスを素手で倒したんだってさ！
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 いやー、ひどい目に会いましたね！<lf>
 でも、まぁ、この程度のことで<lf>
 くじけてなんか居られませんよ！
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 酒でも飲んで、元気をつけて、<lf>
 街を元通りにしないとね！
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 いらっさいませー！<lf>
 街はボロボロですけど、<lf>
 お店の中は、常連さんのおかげで<lf>
 元通りですよ！
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 ぐす……ぐすっ。<lf>
 あぁ……、<lf>
 私ってば、なんて不幸なのかしら……。<lf>
 彼からもらった、<lf>
 大事な「/[color(0x329bbe)]婚約指輪/[color(0xffffff)]」を無くすなんて…。
-# dup_of: line 11, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 「/[color(0x329bbe)]婚約指輪/[color(0xffffff)]」を無くした事を彼が知ったら、<lf>
 きっと、愛想つかされて、<lf>
 ゴミのように捨てられるんだわ……。
-# dup_of: line 11, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 うぅ………。<lf>
 あの時、ビーチで指輪を落とさなければ…、<lf>
 落とした指輪を魚がくわえていかなければ…、<lf>
 指輪をくわえた魚が、ガイナン理事の<lf>
 プライベートビーチに逃げなければぁ……。
-# dup_of: line 11, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 私は幸せを掴んでいたはずなのにぃ……。<lf>
 うぐっ………ぐすっ…。
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 ぐす……。<lf>
 うぐっ………うぅ…、<lf>
 私はどうすればいいの…？<lf>
 「/[color(0x329bbe)]婚約指輪/[color(0xffffff)]」をくわえた魚は、<lf>
 きっとガイナン理事の<lf>
 プライベートビーチにいるはずなのにぃ…。
-# dup_of: line 11, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 誰か、<lf>
 誰でもいい、<lf>
 私を助けて………。
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 ！？<lf>
 こ、これ…、<lf>
 わたしの「/[color(0x329bbe)]婚約指輪/[color(0xffffff)]」。<lf>
 もしかして、探してきてくれたの……？
-# dup_of: line 11, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ぐ、ぐすっ…、<lf>
 うぅ…あ、ありがとう…。<lf>
 これで、彼の元に行けるわ……。
-# dup_of: line 11, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ぐすっ…うぐっ…これ、私の気持ち…。<lf>
 何かの役に立つと思うから、<lf>
 受け取ってぇ……。
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 ぐすっ……ぐすっ…、<lf>
 わ、わたし、必ず幸せになるから〜！<lf>
 うぐ…うぐっ……、<lf>
 ありがと〜
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(モモ)]
 ？？？
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-/[label(ミンティア)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label(ミンティア)]
 ふーん…。
-# dup_of: line 133, tag8 2
-/[label(ミンティア)]
+#dup(4): /[label(ミンティア)]
 ふうん…。
-# dup_of: line 133, tag8 2
-/[label(ミンティア)]
+#dup(4): /[label(ミンティア)]
 よしよし。
-# dup_of: line 133, tag8 2
-/[label(ミンティア)]
+#dup(4): /[label(ミンティア)]
 く、くやし〜〜いけど、アタシの負けだわ。<lf>
 じゃー、これをあげる！
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 必殺技『ダークロッド』を覚えた。
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 133, tag8 2
-/[label(ミンティア)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label(ミンティア)]
 それは、グノーシス相手に結構遊べるものよ。
 アンタがうまく使えたらの話だけど。
-# dup_of: line 11, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 次は、アタシの一番のペットを連れてくるわ。
 また遊んでよね、モモ。
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-/[label(スコットクン)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): /[label(スコットクン)]
 ちくしょう、ちくしょう！<lf>
 どうしてハカセはわかってくれないんだ…。<lf>
 なんでボクの意見を聞いてくれないんだ…。<lf>
 ボクは、ボクは、<lf>
 ハカセの事を心配しているだけなのに…。
-# dup_of: line 11, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 くそ、酒でも飲まなきゃやってられないよ！<lf>
 偏屈の頑固じじいめ！もう知らないぞ、<lf>
 一人になって後悔すればいいんだ！
 /[waitkey(64)]/[clear()]
-# dup_of: line 152, tag8 1
-/[label(スコットクン)]
+#dup(5): /[label(スコットクン)]
 ハカセなんか、<lf>
 一人じゃ何もできないくせに…。<lf>
 ボクがいないと、<lf>
 ホント何もできないんだから…。
-# dup_of: line 11, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 今ごろきっと困ってるんだろうな……。<lf>
 ハカセ…泣いてるかもしれないな…。
-# dup_of: line 11, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 くそ！<lf>
 やっぱり僕がいないとダメなんだ！<lf>
 ハカセを一人になんてできない！<lf>
-ハカセ、待ってて下さい。<lf>
+#dup(6): ハカセ、待ってて下さい。<lf>
 今ボクが助けに行きますからね！！
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 152, tag8 1
-/[label(スコットクン)]
-# dup_of: line 175, tag8 96
-ハカセ、待ってて下さい。<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): /[label(スコットクン)]
+#dup(6): ハカセ、待ってて下さい。<lf>
 ボクが必ず、ハカセを救って見せますよ！
-# dup_of: line 2, tag8 6
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 aaaaaa
 押す<lf>押さない<lf>
 魔女登場
@@ -259,20 +201,3 @@ enterd : /[$0]
 宿屋２Ｆ・４
 外観街１・６
 entrance: /[$0]
-Talk_npc1
-Talk_npc2
-Talk_npc3
-Talk_npc4
-Talk_npc5
-Talk_npc6
-Talk_npc7
-Talk_npc8
-Talk_npc9
-Talk_npc10
-Talk_npc11
-# dup_of: line 200, tag8 7
-Talk_npc1
-Talk_npc21
-# dup_of: line 65, tag8 69
-でも、まぁ、この程度のことで<lf>
-idle

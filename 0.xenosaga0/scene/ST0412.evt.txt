@@ -1,80 +1,59 @@
+# extraction_order: precise_code_v4
 # chunk 6 @ 0xb80 cnum=895 total=42
-# bc_map: 39,32,37,2,21,2,41,15,1,23,2,27,36,38,25,2,19,18,1,20,33,2,16,17,22,2,40,2,0,14,2,0,34,2,0,35,12,2,0,31,13,2,28,26,2,28,24,2,29,30,2,10,8,7,9,3,6,4,5,11
+# bc_map: 39,32,37,2,21,2,41,15,1,23,2,27,36,38,25,2,19,18,1,20,33,2,16,17,22,2,40,2,0,14,2,0,34,2,0,35,12,2,0,31,13,2,28,26,2,28,24,2,29,30,2,10,8,9,11
+# bc_unmap: 3,4,5,6,7
 젠장！！<lf>
 내게 더 힘이 있었다면<lf>
 여자 친구를 구할 수 있었을 텐데……．
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 이미 숨이 끊어졌다．
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ！！<lf>
 …뭐야，벡터 사람이잖아．
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 그나저나 당신 알고 있나？
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 젠장！！ 학자란 것들은<lf>
 왜들 그리 아는 척을 할까．<lf>
 사실은 아무것도<lf>
 모르는 주제에……．
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 오！？<lf>
 너 정신이 없구나！？
-# dup_of: line 9, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 이런 비상시일수록<lf>
 내 말을 들을 여유를 가지라고！！
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 『남의 말에 진지하게 귀를 기울여！！』<lf>
 이 앞에서 무슨 일이 일어나든<lf>
 네가 그것만 지키면 어떻게든 될 거야！
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 함내 모니터 스위치는 고장 나 있다．
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 ……돌아갈 수는 없어．
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 29, tag8 0
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 가다 보면 누군가 있을지도 몰라……．
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 29, tag8 0
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 반응이 없어……．<lf>
 ……브리지까지 습격당했단 거야！？
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 29, tag8 0
-/[label(시온)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 브리지가 봉쇄됐다고！？<lf>
 ……안 좋은 예감이 들어．
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
-세그먼트 어드레스 Ｎｏ．１６이라고<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): 세그먼트 어드레스 Ｎｏ．１６이라고<lf>
 적힌 문을 발견했다．
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 43, tag8 28
-세그먼트 어드레스 Ｎｏ．１６이라고<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): 세그먼트 어드레스 Ｎｏ．１６이라고<lf>
 표시되어 있다．
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 세그먼트 어드레스 Ｎｏ．１６의<lf>
 디코드를 종료합니다．
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 pass3
 enterd : /[$0]
-Turn
 entrance: /[$0]
-TalkNPC1
-TouchNPC1
-TalkNPC2
-TalkNPC3
 shoot on

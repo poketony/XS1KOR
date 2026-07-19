@@ -1,43 +1,31 @@
+# extraction_order: precise_code_v4
 # chunk 2 @ 0x460 cnum=838 total=40
-# bc_map: 18,33,3,1,39,19,3,1,36,36,20,2,17,3,1,36,36,20,2,17,21,3,1,35,3,4,5,6,7,9,34,22,8,10,0,13,14,15,16,25,26,27,28,29,11,12,24,30,31,38,37,23,32,1,3,7,9,13,14,18,20,24,26,30,31,35,37
+# bc_map: 18,33,3,1,39,19,3,1,36,36,20,2,17,3,1,36,36,20,2,17,21,3,1,35,3,4,5,6,7,9,34,22,8,10,0,13,14,15,16,25,26,27,28,29,11,12,24,30,31,38,37,23,32
 『Ｎｏ．５ 문　개폐 스위치』<lf>
 조작하겠습니까？<lf>
-/[waitkey(64)]/[close()]
-/[label(Ｊｒ．)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(Ｊｒ．)]
 Ｎｏ．５ 문인가．<lf>
 젠장，록이 걸려 있잖아<lf>
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 1
-/[label(Ｊｒ．)]
-긴급 사태 발생！<lf>
-# dup_of: line 9, tag8 36
-긴급 사태 발생！<lf>
-즉시 임전 태세를 갖추십시오．
-/[waitkey(1)]/[clear()]
-……라는데．<lf>
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 1
-/[label(Ｊｒ．)]
-# dup_of: line 9, tag8 36
-긴급 사태 발생！<lf>
-# dup_of: line 9, tag8 36
-긴급 사태 발생！<lf>
-# dup_of: line 11, tag8 20
-즉시 임전 태세를 갖추십시오．
-# dup_of: line 12, tag8 2
-/[waitkey(1)]/[clear()]
-# dup_of: line 13, tag8 17
-……라는데．<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(Ｊｒ．)]
+#dup(3): 긴급 사태 발생！<lf>
+#dup(3): 긴급 사태 발생！<lf>
+#dup(4): 즉시 임전 태세를 갖추십시오．
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(6): ……라는데．<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(Ｊｒ．)]
+#dup(3): 긴급 사태 발생！<lf>
+#dup(3): 긴급 사태 발생！<lf>
+#dup(4): 즉시 임전 태세를 갖추십시오．
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(6): ……라는데．<lf>
 이제 됐잖아，안 읽어도．
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 1
-/[label(Ｊｒ．)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(Ｊｒ．)]
 긴급 사태 발생이라는데．
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 EOB *********************
 HEISHI1_LIFE = END
 HEISHI2_LIFE = END
@@ -66,31 +54,3 @@ entrance: /[$0]
 방 앞 통로에 있는 병사（오른쪽）　초기화
 게 메카　초기화
 초기화 종료
-# dup_of: line 4, tag8 1
-/[label(Ｊｒ．)]
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 29, tag8 7
-HEISHI3_LIFE = END
-# dup_of: line 30, tag8 9
-NO5 콘솔 앞
-# dup_of: line 36, tag8 13
-id = 11
-# dup_of: line 37, tag8 14
-id = 12
-# dup_of: line 1, tag8 18
-『Ｎｏ．５ 문　개폐 스위치』<lf>
-# dup_of: line 11, tag8 20
-즉시 임전 태세를 갖추십시오．
-# dup_of: line 47, tag8 24
-콘솔 스위치 & 모니터 점멸
-# dup_of: line 41, tag8 26
-패턴Ｂ
-# dup_of: line 48, tag8 30
-병사１(AGWS)　초기화
-# dup_of: line 49, tag8 31
-병사１（색적）　초기화
-# dup_of: line 24, tag8 35
-긴급 사태 발생이라는데．
-# dup_of: line 51, tag8 37
-방 앞 통로에 있는 병사（오른쪽）　초기화

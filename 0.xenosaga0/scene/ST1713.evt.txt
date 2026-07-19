@@ -1,209 +1,136 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0xbd0 cnum=854 total=95
-# bc_map: 67,4,33,28,3,72,3,59,44,92,4,36,91,3,34,4,63,21,3,41,46,81,3,71,4,63,21,3,41,46,81,3,71,4,52,3,25,29,4,20,23,82,4,32,57,75,3,53,76,4,35,77,27,3,84,4,86,54,4,38,89,55,4,74,3,26,90,4,43,3,83,85,70,4,1,24,3,19,22,66,3,51,80,4,1,48,31,4,1,30,60,50,3,45,39,4,0,18,3,93,64,78,3,40,68,88,3,61,47,3,56,94,4,0,79,73,3,69,87,3,37,42,4,2,65,4,58,62,4,33,94,92,87,49,14,16,17,16,17,16,17,15,6,8,9,10,11,12,13,7,5
+# bc_map: 67,4,33,28,3,72,3,59,44,92,4,36,91,3,34,4,63,21,3,41,46,81,3,71,4,63,21,3,41,46,81,3,71,4,52,3,25,29,4,20,23,82,4,32,57,75,3,53,76,4,35,77,27,3,84,4,86,54,4,38,89,55,4,74,3,26,90,4,43,3,83,85,70,4,1,24,3,19,22,66,3,51,80,4,1,48,31,4,1,30,60,50,3,45,39,4,0,18,3,93,64,78,3,40,68,88,3,61,47,3,56,94,4,0,79,73,3,69,87,3,37,42,4,2,65,4,58,62,4,49,14,15
+# bc_unmap: 5,6,7,8,9,10,11,12,13,16,17
 下に降りますか？
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 そんな……。<lf>
 こちらからの攻撃が全くあたりません！
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 信じられない……。
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 ファウンデーションの主砲は、<lf>
 どんなエネルギーシールドだって<lf>
 貫いてしまうのに……。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ちび様、普通じゃありません。<lf>
 絶対普通じゃないです。
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 だから、気をつけて下さい！
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
-モモさんは<lf>
-あそこで生まれたんですね。
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
-でも、百式観測器を製造する為に<lf>
-なぜあんな巨大なものが<lf>
-必要だったのでしょう？
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
-何か別の目的があったのでしょうか？
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 17, tag8 63
-モモさんは<lf>
-# dup_of: line 18, tag8 21
-あそこで生まれたんですね。
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
-# dup_of: line 20, tag8 41
-でも、百式観測器を製造する為に<lf>
-# dup_of: line 21, tag8 46
-なぜあんな巨大なものが<lf>
-# dup_of: line 22, tag8 81
-必要だったのでしょう？
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
-# dup_of: line 24, tag8 71
-何か別の目的があったのでしょうか？
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): モモさんは<lf>
+#dup(4): あそこで生まれたんですね。
+#dup(2): /[waitkey(1)]/[clear()]
+#dup(5): でも、百式観測器を製造する為に<lf>
+#dup(6): なぜあんな巨大なものが<lf>
+#dup(7): 必要だったのでしょう？
+#dup(2): /[waitkey(1)]/[clear()]
+#dup(8): 何か別の目的があったのでしょうか？
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): モモさんは<lf>
+#dup(4): あそこで生まれたんですね。
+#dup(2): /[waitkey(1)]/[clear()]
+#dup(5): でも、百式観測器を製造する為に<lf>
+#dup(6): なぜあんな巨大なものが<lf>
+#dup(7): 必要だったのでしょう？
+#dup(2): /[waitkey(1)]/[clear()]
+#dup(8): 何か別の目的があったのでしょうか？
+#dup(1): /[waitkey(64)]/[close()]
 ほんま、ぶっ飛ぶわ！
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 あんなん食らったら、<lf>
 このデュランダルも一たまりもないでぇ。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 あかんで、ちび様。<lf>
 あれは普通や無い。<lf>
 普通の人間に手におえる代物やないで！
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 すごいです、<lf>
 グノーシスが次々と<lf>
 天の車と融合していきます。
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 まるで、<lf>
 天の車に取り込まれているよう……。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ちび様、<lf>
 天の車の中には<lf>
 かなりのグノーシスが入り込んでいます。
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 気をつけて下さい！
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 破壊された連邦艦に生命反応無しです。<lf>
 みんな、みんな消滅しちゃったんですぅ！
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ちび様ぁ！<lf>
 私達も、あんな風になっちゃうのぉ？<lf>
 みんな助からないのぉ？
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 天の車、射線軸固定しました。
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 おそらくあと数十分後に<lf>
 第二射が発射されると思われます。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 どうしたんでしょうか？
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 曙光が先ほどから<lf>
 沈黙したままなんですが……。<lf>
 何か、トラブルでもあったんでしょうか？
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
-/[label(メリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(9): /[label(メリィ)]
 あれもヨアキムが作り出したもんかいな？
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 「歌声」に「天の車」、<lf>
 あないなもんばっかり作って<lf>
 一体何がやりたかってんやろ？
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 ほんま、<lf>
 天才のやる事はようわからんわ……。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 75, tag8 1
-/[label(メリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(9): /[label(メリィ)]
 なんにせよ、売られた喧嘩は買うのが礼儀や<lf>
 しっかりきばってぇな！
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 75, tag8 1
-/[label(メリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(9): /[label(メリィ)]
 さっきのグノーシスとの戦闘で<lf>
 ファウンデーションもデュランダルも<lf>
 ほとんどからけつや。
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 なけなしの攻撃は全くあたらんし……。<lf>
 ちび様！頼んだで！
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
-/[label(シェリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(10): /[label(シェリィ)]
 「天の車」。
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 非公式な情報ではミルチア紛争で<lf>
 ヨアキム・ミズラヒの死亡が確認された後、<lf>
 天の車は連邦政府によって、アビス……
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 つまり旧ミルチア近傍に発生した<lf>
 二重ブラックホールに<lf>
 破棄された事になっていますね。
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 ブラックホールに捨てられたものが、<lf>
 なぜここにあるのか……。
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 もしかすると、史実と事実の間に<lf>
 食い違いがあるのかもしれませんね。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 97, tag8 0
-/[label(シェリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(10): /[label(シェリィ)]
 天の車への遠距離攻撃は、<lf>
 全て直撃寸前で弾かれてしまいます。
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 今のところ直接乗り込んで動力炉を<lf>
 破壊するしか手はありません。
-# dup_of: line 5, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 ちび様。<lf>
 どうか無事戻ってきて下さい！
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(仮人)]
 ラスダン前です。【仮】
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 シオン宛てに<lf>
 メールが届いてるよ！！
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 33
-そんな……。<lf>
-# dup_of: line 112, tag8 94
-食い違いがあるのかもしれませんね。
-# dup_of: line 10, tag8 92
-貫いてしまうのに……。
-# dup_of: line 119, tag8 87
-破壊するしか手はありません。
+#dup(1): /[waitkey(64)]/[close()]
 はい<lf>いいえ
 enterd : /[$0]
-ring_L
-ring_R
-# dup_of: line 136, tag8 16
-ring_L
-# dup_of: line 137, tag8 17
-ring_R
-# dup_of: line 136, tag8 16
-ring_L
-# dup_of: line 137, tag8 17
-ring_R
 entrance: /[$0]
-TalkNPC1
-TalkNPC2
-TalkNPC4
-TalkNPC5
-TalkNPC7
-TalkNPC8
-TalkNPC9
-TalkNPC11
-Evt0

@@ -1,214 +1,151 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x54 cnum=230 total=2
 # bc_map: 0,1
-그래，슬슬 졸리네<lf>아직이야，제대로 안내해야지！
-フラグオン！
+#dup(1): 그래，슬슬 졸리네<lf>아직이야，제대로 안내해야지！
+#dup(2): フラグオン！
 
 # chunk 3 @ 0x1158 cnum=845 total=89
-# bc_map: 3,18,38,67,5,27,6,2,16,32,7,2,87,0,86,80,25,5,88,7,3,19,81,48,7,2,82,85,7,3,73,45,37,7,2,83,84,57,7,2,33,6,3,53,63,69,6,2,22,17,6,3,23,72,6,2,20,62,51,5,42,7,3,47,66,78,6,2,15,58,6,3,30,64,79,6,2,14,7,3,28,6,3,41,74,6,4,54,6,3,21,46,76,70,6,4,77,39,49,6,3,44,68,40,36,52,6,4,43,61,7,3,31,7,3,65,35,7,3,24,7,3,50,26,7,29,7,1,55,59,7,1,75,71,7,74,79,34,56,34,56,60,12,13,10,11,9,8
-/[label(시온)]
+# bc_map: 3,18,38,67,5,27,6,2,16,32,7,2,87,0,86,80,25,5,88,7,3,19,81,48,7,2,82,85,7,3,73,45,37,7,2,83,84,57,7,2,33,6,3,53,63,69,6,2,22,17,6,3,23,72,6,2,20,62,51,5,42,7,3,47,66,78,6,2,15,58,6,3,30,64,79,6,2,14,7,3,28,6,3,41,74,6,4,54,6,3,21,46,76,70,6,4,77,39,49,6,3,44,68,40,36,52,6,4,43,61,7,3,31,7,3,65,35,7,3,24,7,3,50,26,7,29,7,1,55,59,7,1,75,71,7,34,56,34,56,60,12,13
+# bc_unmap: 8,9,10,11
+#dup(3): /[label(시온)]
 아，알렌！？<lf>
 잠깐，<lf>
 뭐 하는 거야？
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 여긴 여성용 방이라구．
-/[waitkey(64)]/[clear()]
-/[label(알렌)]
+#dup(5): /[waitkey(64)]/[clear()]
+#dup(6): /[label(알렌)]
 저，저기，<lf>
 주，주，주임님……．
-/[waitkey(64)]/[close()]
-# dup_of: line 8, tag8 2
-/[label(알렌)]
+#dup(7): /[waitkey(64)]/[close()]
+#dup(6): /[label(알렌)]
 （가라！ 알렌）
 <lf>
 （지금은 주임님과 단둘이야，<lf>
 누구에게도 방해받지 않고<lf>
 네 마음을 전할 수 있어！）
-# dup_of: line 5, tag8 5
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 （ＧＯ！ 알렌 ＧＯ！！）
-# dup_of: line 11, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(7): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 아，<lf>
 방을 잘못 찾아왔구나？<lf>
 정말이지 엄청 덜렁댄다니까．
-# dup_of: line 11, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 8, tag8 2
-/[label(알렌)]
+#dup(7): /[waitkey(64)]/[close()]
+#dup(6): /[label(알렌)]
 （그게 아니에요，아닙니다！）<lf>
 （주임님을 기다리고 있었어요！）
-# dup_of: line 11, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(7): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 나라서 이 정도지，<lf>
 다른 여자였으면<lf>
 그냥 넘어가지 않았을걸．
-# dup_of: line 11, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 8, tag8 2
-/[label(알렌)]
+#dup(7): /[waitkey(64)]/[close()]
+#dup(6): /[label(알렌)]
 （다른 여자는 아무래도 좋습니다）<lf>
 （저는 주임님만 있으면……<lf>
 저의 이 마음을 받아 주세요！）
-# dup_of: line 11, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 8, tag8 2
-/[label(알렌)]
+#dup(7): /[waitkey(64)]/[close()]
+#dup(6): /[label(알렌)]
 주，주임님！<lf>
-# dup_of: line 7, tag8 6
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(5): /[waitkey(64)]/[clear()]
+#dup(3): /[label(시온)]
 알렌도<lf>
 일단은 남자니까<lf>
 조심해야지．
-# dup_of: line 7, tag8 6
-/[waitkey(64)]/[clear()]
-# dup_of: line 8, tag8 2
-/[label(알렌)]
+#dup(5): /[waitkey(64)]/[clear()]
+#dup(6): /[label(알렌)]
 네，에，예？<lf>
 저，저기，일단…인가요？
-# dup_of: line 7, tag8 6
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(5): /[waitkey(64)]/[clear()]
+#dup(3): /[label(시온)]
 응？<lf>
 남자 아니야？
-# dup_of: line 7, tag8 6
-/[waitkey(64)]/[clear()]
-# dup_of: line 8, tag8 2
-/[label(알렌)]
+#dup(5): /[waitkey(64)]/[clear()]
+#dup(6): /[label(알렌)]
 아뇨，<lf>
 일단…… 맞습니다．<lf>
 그렇죠…．
-# dup_of: line 5, tag8 5
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 하아………．
-# dup_of: line 11, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(7): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 자，빨리 나가는 게 좋겠어．<lf>
 다른 사람에게 들키면<lf>
 이래저래 시끄러워질 테니까．
-# dup_of: line 7, tag8 6
-/[waitkey(64)]/[clear()]
-# dup_of: line 8, tag8 2
-/[label(알렌)]
+#dup(5): /[waitkey(64)]/[clear()]
+#dup(6): /[label(알렌)]
 아，아아 주임님………．<lf>
 저는 말이죠……
-# dup_of: line 7, tag8 6
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(5): /[waitkey(64)]/[clear()]
+#dup(3): /[label(시온)]
 미안 미안．<lf>
 지금은 바빠，<lf>
 이야기는 나중에 해 줘．
-# dup_of: line 7, tag8 6
-/[waitkey(64)]/[clear()]
-# dup_of: line 8, tag8 2
-/[label(알렌)]
+#dup(5): /[waitkey(64)]/[clear()]
+#dup(6): /[label(알렌)]
 아，아아아……．
-# dup_of: line 11, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(7): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 여기는 제２ 캐빈．
-# dup_of: line 7, tag8 6
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(5): /[waitkey(64)]/[clear()]
+#dup(3): /[label(시온)]
 이 넓은 캐빈을 무려<lf>
 나 혼자 쓰게 됐어．
-# dup_of: line 7, tag8 6
-/[waitkey(64)]/[clear()]
-/[label(모모)]
+#dup(5): /[waitkey(64)]/[clear()]
+#dup(8): /[label(모모)]
 시온 씨 혼자서요？
-# dup_of: line 7, tag8 6
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(5): /[waitkey(64)]/[clear()]
+#dup(3): /[label(시온)]
 응．<lf>
 뭐，일단은 나도 여자니까……．<lf>
 선장님이 그런 부분을<lf>
 신경 써 준 모양이야．
-# dup_of: line 7, tag8 6
-/[waitkey(64)]/[clear()]
-# dup_of: line 87, tag8 4
-/[label(모모)]
+#dup(5): /[waitkey(64)]/[clear()]
+#dup(8): /[label(모모)]
 선장님이요？<lf>
 그런데 왜요？<lf>
 다 같이 있는 쪽이 즐거운데……．
-# dup_of: line 7, tag8 6
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(5): /[waitkey(64)]/[clear()]
+#dup(3): /[label(시온)]
 후후．그렇긴 하지．<lf>
 아무튼 혼자라서 조금 불안했거든．<lf>
 하지만 오늘부터는 모모랑 함께니까<lf>
 그럴 일도 없어지겠네．<lf>
 잘 부탁해，모모．
-# dup_of: line 7, tag8 6
-/[waitkey(64)]/[clear()]
-# dup_of: line 87, tag8 4
-/[label(모모)]
+#dup(5): /[waitkey(64)]/[clear()]
+#dup(8): /[label(모모)]
 네，시온 씨．<lf>
 모모야말로 잘 부탁드려요．
-# dup_of: line 11, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(7): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 미안해 모모．
-# dup_of: line 11, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(7): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 오늘은 이제 피곤하니까<lf>
 슬슬 쉬는 게 좋겠지？
-# dup_of: line 11, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(7): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 안녕히 주무세요．
-# dup_of: line 11, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 3
-/[label(시온)]
+#dup(7): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 정말，밤샘은<lf>
 피부의 적인데！
-# dup_of: line 11, tag8 7
-/[waitkey(64)]/[close()]
+#dup(7): /[waitkey(64)]/[close()]
 이게 나오면 오류입니다！
-# dup_of: line 11, tag8 7
-/[waitkey(64)]/[close()]
-/[label()]
+#dup(7): /[waitkey(64)]/[close()]
+#dup(9): /[label()]
 시온 앞으로<lf>
 메일이 도착했어！！
-# dup_of: line 11, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 128, tag8 1
-/[label()]
+#dup(7): /[waitkey(64)]/[close()]
+#dup(9): /[label()]
 선내 ＭＡＰ<lf>
 현재 위치：제２ 캐빈
-# dup_of: line 11, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 85, tag8 74
-나 혼자 쓰게 됐어．
-# dup_of: line 75, tag8 79
-이야기는 나중에 해 줘．
-그래，슬슬 졸리네<lf>아직이야，제대로 안내해야지！
-フラグオン！
-# dup_of: line 138, tag8 34
-그래，슬슬 졸리네<lf>아직이야，제대로 안내해야지！
-# dup_of: line 139, tag8 56
-フラグオン！
+#dup(7): /[waitkey(64)]/[close()]
+#dup(1): 그래，슬슬 졸리네<lf>아직이야，제대로 안내해야지！
+#dup(2): フラグオン！
+#dup(1): 그래，슬슬 졸리네<lf>아직이야，제대로 안내해야지！
+#dup(2): フラグオン！
 메일을 본다<lf>메일을 보지 않는다
 enterd : /[$0]
 entrance: /[$0]
-Talk_npc20
-Talk_npc5
-TalkNPC11
-ANNAI

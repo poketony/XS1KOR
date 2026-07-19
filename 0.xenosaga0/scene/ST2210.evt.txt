@@ -1,143 +1,102 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x64 cnum=114 total=2
-# bc_map: 0,1,1
+# bc_map: 0,1
 上に移動
-下に移動
-# dup_of: line 2, tag8 1
 下に移動
 
 # chunk 4 @ 0xffc cnum=1002 total=74
-# bc_map: 50,2,51,2,0,43,58,1,40,45,1,60,2,0,42,2,0,41,39,57,1,44,38,37,2,0,54,54,53,2,0,28,2,0,27,2,0,26,2,0,25,2,0,36,2,0,35,2,0,34,2,0,33,2,0,32,2,0,31,2,0,30,2,0,29,2,0,24,2,0,56,2,46,19,52,61,3,4,5,6,59,61,7,8,9,10,23,62,18,18,20,68,69,70,71,47,66,67,63,65,64,48,73,49,72,55,21,11,12,13,14,15,15,16,17,22
+# bc_map: 50,2,51,2,0,43,58,1,40,45,1,60,2,0,42,2,0,41,39,57,1,44,38,37,2,0,54,54,53,2,0,28,2,0,27,2,0,26,2,0,25,2,0,36,2,0,35,2,0,34,2,0,33,2,0,32,2,0,31,2,0,30,2,0,29,2,0,24,2,0,56,2,46,19,52,61,3,4,5,6,59,61,7,8,9,10,23,62,18,18,20,68,69,70,71,47,66,67,63,65,64,48,73,49,72,55,21,11,12,13,14
+# bc_unmap: 15,16,17,22
 ジャンプするかい？<lf>
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 スイッチを押しますか？<lf>
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 ほっほっほ<lf>
 助かったわい。
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 このまま、<lf>
 わしも銅像になっちまうとこじゃったわ。
-# dup_of: line 8, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 恩にきるぞい。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 にゃー！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 こわかったよぉ〜。<lf>
 ここに隠れてたら、怪物がやってきて<lf>
 出られなくなっちゃったんだよ〜。
-# dup_of: line 8, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 もう、家出なんかしないよ〜。<lf>
 お母さんの言う事も聞くよぉ〜。<lf>
 うえ〜ん！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
-フー！<lf>
-# dup_of: line 27, tag8 54
-フー！<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
+#dup(4): フー！<lf>
+#dup(4): フー！<lf>
 フギャーー！！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと１３人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと１２人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと１１人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと１０人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと９人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと８人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと７人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと６人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと５人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと４人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと３人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと２人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと１人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 全員救出！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 クリーニング屋・５
 d
 ハシゴの上げ下げ
-押す<lf>押さない<lf>
+#dup(5): 押す<lf>押さない<lf>
 A
 B
 C
 D
 回転床の上げ下げ
-# dup_of: line 76, tag8 61
-押す<lf>押さない<lf>
+#dup(5): 押す<lf>押さない<lf>
 E
 F
 G
 H
 serial = 2
 自然落下
-case1
-# dup_of: line 89, tag8 18
-case1
+#dup(6): case1
+#dup(6): case1
 enterd : /[$0]
 襲撃後・外観街１
 襲撃後・外観街７
@@ -159,9 +118,3 @@ STAIRS == 0 && LADDER == 0
 STAIRS == 0 && LADDER == 1
 STAIRS == 1 && LADDER == 0
 STAIRS == 1 && LADDER == 1
-Talk_npc1
-# dup_of: line 112, tag8 15
-Talk_npc1
-Talk_npc2
-Talk_npc3
-idle

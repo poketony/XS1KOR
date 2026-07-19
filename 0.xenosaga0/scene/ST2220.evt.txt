@@ -1,106 +1,70 @@
+# extraction_order: precise_code_v4
 # chunk 3 @ 0x84c cnum=691 total=36
-# bc_map: 27,2,0,6,1,6,2,0,7,2,0,25,26,2,0,22,21,24,23,29,2,0,12,2,0,11,2,0,10,2,0,9,2,0,20,2,0,19,2,0,18,2,0,17,2,0,16,2,0,15,2,0,14,2,0,13,2,0,8,2,0,28,2,4,4,33,30,34,31,32,35,5,3
+# bc_map: 27,2,0,6,1,6,2,0,7,2,0,25,26,2,0,22,21,24,23,29,2,0,12,2,0,11,2,0,10,2,0,9,2,0,20,2,0,19,2,0,18,2,0,17,2,0,16,2,0,15,2,0,14,2,0,13,2,0,8,2,0,28,2,4,33,30,34,31,32,35,5
+# bc_unmap: 3
 ジャンプしますか？<lf>
-/[waitkey(64)]/[close()]
-/[label()]
-……………。
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
+#dup(3): ……………。
 /[waitkey(1)]/[clear()]
-# dup_of: line 4, tag8 6
-……………。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(3): ……………。
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 ……すまん、助かった。<lf>
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 そ、そこの奥から逃げろ。<lf>
 そ、外に出るなら、近道だ……。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 くるなー！<lf>
 くそ、貴様らなんぞに<lf>
 この店を荒させはせんぞ！<lf>
 ここには、<lf>
 子供たちの夢が詰まってるんだぁ！<lf>
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと１３人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと１２人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと１１人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと１０人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと９人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと８人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと７人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと６人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと５人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと４人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと３人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと２人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あと１人！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 全員救出！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-enterd : /[$0]
-# dup_of: line 64, tag8 4
+#dup(1): /[waitkey(64)]/[close()]
 enterd : /[$0]
 襲撃後・外概観８
 襲撃後・外概観１０
@@ -109,4 +73,3 @@ enterd : /[$0]
 襲撃後・外概観７
 襲撃後外概観１６
 entrance: /[$0]
-Talk_npc1

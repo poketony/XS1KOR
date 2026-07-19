@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a translated SLPS ELF with Korean menu breadcrumb spacing fixes.
+"""Build a translated SLPS ELF with Korean UI and database-search fixes.
 
 The source ELF and translation text are read-only. The output path must not
 already exist, preventing accidental replacement of either an original or a
@@ -14,6 +14,7 @@ import os
 from pathlib import Path
 
 import slps_strings
+from ov02_database_search import apply_database_search_patch
 
 
 LENGTH_TABLE_PATCHES = {
@@ -235,6 +236,14 @@ def main() -> None:
         data, source, translations
     )
     spacing_changes = apply_spacing_fixes(data, translations)
+    replace_table = slps_strings.load_replace_table(str(source))
+    database_changes = apply_database_search_patch(
+        data,
+        lambda text: slps_strings.encode_display(text, replace_table),
+        ov02_offset=0x2D7000,
+        memsz_offset=0xA8,
+        expected_memsz=0x1393C,
+    )
     write_output(output, data, args.replace_output)
 
     print(f"[OK] translated strings: {translated_count}")
@@ -244,6 +253,8 @@ def main() -> None:
     )
     for change in spacing_changes:
         print(f"[OK] spacing {change}")
+    for change in database_changes:
+        print(f"[OK] database search {change}")
     print(f"[OK] source SHA-256: {sha256(original)}")
     print(f"[OK] output SHA-256: {sha256(data)}")
     print(f"[OK] output: {output}")

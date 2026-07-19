@@ -1,0 +1,484 @@
+# chunk 14 @ 0x4014 cnum=2863 total=481
+# bc_map: 231,279,253,156,11,137,13,139,127,138,347,440,459,458,350,349,346,345,420,129,134,130,132,136,426,351,358,375,392,409,410,411,412,413,414,352,353,354,355,356,357,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,348,344,425,437,461,462,463,464,465,466,467,468,469,470,259,260,261,262,263,264,265,266,267,268,343,471,472,473,474,475,476,477,478,479,480,269,270,271,272,273,274,275,276,277,278,128,10,12,140,175,176,154,155,62,63,60,61,184,6,249,57,59,55,54,315,178,141,177,160,7,250,58,179,251,180,14,287,53,294,240,52,150,219,220,157,158,152,151,8,182,181,159,241,242,243,244,153,48,49,51,50,217,233,300,289,218,234,301,288,162,161,149,165,163,164,126,166,174,143,142,185,170,173,168,171,172,169,56,167,15,186,30,187,36,9,299,297,298,190,191,422,23,22,18,20,19,16,17,25,29,28,283,282,228,285,291,247,248,308,281,284,292,232,280,313,245,246,32,314,230,255,256,309,226,227,257,254,47,38,40,37,35,42,229,183,224,221,236,5,237,225,223,235,4,222,3,1,34,2,33,31,0,307,310,45,46,44,41,43,39,303,302,312,296,239,293,290,311,295,238,305,196,123,286,24,144,188,189,306,118,258,26,148,145,146,147,65,304,64,85,84,105,214,104,117,116,119,213,320,121,448,424,428,423,120,215,122,125,216,429,329,124,67,192,417,66,69,193,336,439,68,71,418,70,73,194,72,75,430,341,453,74,77,195,416,334,457,447,76,79,78,81,325,316,328,80,83,198,327,321,434,82,87,197,326,86,89,200,88,91,199,332,451,445,90,93,202,449,427,92,95,201,421,436,446,435,450,323,94,97,203,460,205,96,99,204,433,335,444,340,330,456,339,98,101,432,100,103,206,415,324,102,107,207,455,454,342,106,109,443,317,452,338,108,111,208,210,322,442,333,110,113,209,212,331,441,438,431,318,419,112,115,211,337,319,114,252,21,27,131,133,135
+# bc_unmap: 21,27,131,133,135
+eventmovie/
+msg_clear_thread
+lightSPL_main
+Layer = /[$0]
+*********Capture Start!!!*****************
+CaptureMode = /[$0]
+*********CaptureTool Standby*****************
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+キャプチャモード
+全画面
+ＢＧのみ（ＺＰＩＣなし）
+ＢＧのみ（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+オブジェ単体（ＺＰＩＣあり）
+テキスト（ＺＰＩＣなし）
+CaptureMODE ---All Screen.
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---Chr(pic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---TXT(pic)
+ページ切り替え
+キャラ０
+キャラ１
+キャラ２
+キャラ３
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラのみキャプチャ
+オブジェのみキャプチャ
+フォルダ選択
+企画サイドのフォルダを使用する
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（？？？？）
+ｍｏｖｉｅ０４（？？？？）
+ｍｏｖｉｅ０５（？？？？）
+ｍｏｖｉｅ０６（？？？？）
+ｍｏｖｉｅ０７（？？？？）
+ｍｏｖｉｅ０８（？？？？）
+ｍｏｖｉｅ０９（？？？？）
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+エフェクトサイドのフォルダを使用する
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（ひみつ）
+ｍｏｖｉｅ１７（ひみつ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+*********Capture End.*****************
+*********Capture Waiting...*****************
+ColorScreen  SetMode
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode-------end
+*************ColorScreen Printout*************
+int ColorScreenParam[] = {
+0,
+1,
+/[$1],
+/[$0],
+};
+Runtime.setDefocus(15, 1, ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], 1, ColorScreenParam);
+Layer not exist.
+*************ColorScreen Printout_temae*************
+int[] test_param0 = {
+0, 
+Runtime.setDefocus(15, 2, test_param0);
+int[] test_param1 = {
+Runtime.setDefocus(15, 3, test_param1);
+*********ManualCamera Replay*********
+pos[] ={
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+Focus SetMode
+alpha_percent-/[#0]
+alpha_set-/[#0]
+Layer = Back
+Layer = Before
+Focus delta = /[$0](back)
+Focus SetMode-------end
+*************Focus Printout*************
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+Gnochk...
+--alpha--
+--filter--
+--shake--
+--ref_alpha--
+alpha max!!
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+MSGprint.
+MSGprint(with Face).
+Face End.
+ManualCamera not Recorded.
+ManualCam_record.
+ManualCamera MOVE to start.
+Cancel!!
+ManualCameraRecord START!!!
+Record /[$0]
+End(TimeOver).
+End(Button).
+Time = /[$0]
+Objchk......(Chr)
+Objchk......End
+Objchk(+Mtn)......
+Objchk......(Effect)
+Objchk......(Unit)
+Objchk......
+/[ruby(貨客船/エルザ)]とは桁違いにリッチな設備だし
+Mtn Frame = /[$0]
+*********Timechk Standby*****************
+Timechk_main
+----------シーンは終了しました。(Total = /[$0])
+Timerchk_srv_main
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])
+***********Objchk printout***********
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+setRotate(/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+Xenvmainthreadmain
+Xenvplaythread
+パパに　会った事はないんです
+-------------* ManualCam_record()start *-----------
+-------------* ManualCam_record()end *-----------
+-------------* Debugprint5() *-----------
+-------------* ManualCam_play_sub()end *-----------
+-------------* Gnochk(gold) *-----------
+-------------* ColorScreenSet() *-----------
+-------------* ColorScreenSet()_temae *-----------
+-------------* chr_look_start *-----------
+-------------* point_light()start *-----------
+-------------* point_light()end *-----------
+objtool---------------------------scl
+objtool---------------------------ido
+camtool---------------------------cam
+one_scale-----------------/[#0]
+robo.setScale(/[#0]f,/[#1]f,/[#2]f);
+gold_number-------------------(/[#0])
+haba -----------------/[#0]
+takasa ---------------/[#1]
+noudo ----------------/[#2]
+one_scale ------------/[#3]
+robo.setScale(/[#4]f,/[#5]f,/[#6]f);
+f_speed--------------------------------------------------(/[#0])
+non_move_view-/[#1]|cap-/[#2]
+view-/[#1]|cap-/[#2]
+gold-no-/[#0]|view-/[#1]|cap-/[#2]
+gold-unit-no-/[#0]|view-/[#1]|cap-/[#2]
+--------plus_one_write--------
+write-/[#0]|now-/[#1]|cap-/[#2]
+erase-/[#1]|now-/[#1]|cap-/[#2]
+live-normal-cam
+live-normal-human
+time-/[#0]
+cam_time_tani++(/[#0])
+cam_time_tani--(/[#0])
+live-pretty-cam
+live-human-pretty-cam
+--SPL_CARDINAL
+----SPL_LINEAR
+---PATH_LINEAR
+-----PATH_DOWN
+-------PATH_UP
+---PATH_SPLINE
+change-/[#1]|now-/[#1]|cap-/[#2]
+STCam.setFov(/[#0]f);
+cam1.setFov(/[#0]f);
+cam0.setFov(/[#0]f);
+float pos00[] = {
+  /[#0]fnc,/[#1]fnc,/[#2]fnc,/[#3]fnc,
+float rot00[] = {
+cam1.transSPL(pos00, SPL_CARDINAL);
+cam1.rotateSPL(rot00, SPL_CARDINAL);
+float fov00[] = {
+  /[#0]fnc,/[#1]fnc,
+cam1.fovSPL(fov00, SPL_CARDINAL);
+  /[#0]f,/[#1]f,/[#2]f,/[#3]f,
+  /[#0]f,/[#1]f,
+--------trans--------
+  /[#0]f,/[#1]f,/[#2]f,/[#3]f
+--------rotate--------
+--------fov--------
+  /[#0]f,/[#1]f
+t_no_change-/[#0]-/[#1]/[#2]-/[#3]
+time_change-/[#0]-/[#1]/[#2]-/[#3]
+---SPL_CARDINAL---
+---SPL_LINEAR---
+---PATH_UP---
+---PATH_LINEAR---
+---PATH_SPLINE---
+---PATH_DOWN---
+shion.setTranslate(/[#0]fnc,/[#1]fnc,/[#2]fnc);
+shion.setRotate(/[#3]fnc,/[#4]fnc,/[#5]fnc);
+trans----/[#0]fnc,/[#1]fnc,/[#2]fnc
+rotate---/[#3]fnc,/[#4]fnc,/[#5]fnc
+fov------/[#6]fnc
+robo.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+robo.setRotate(/[#3]f,/[#4]f,/[#5]f);
+trans----/[#0]f,/[#1]f,/[#2]f
+rotate---/[#3]f,/[#4]f,/[#5]f
+fov------/[#6]f
+speed--------------------------------------------------(/[#0])
+act17
+CUT8 START
+parts_nomber---------------(/[#0])
+-------------* chr_look_end *-----------
+Event Out
+XEVEFLAG:EV03002_F
+XEVEJNAME:CFJ3_30 XEVEJPOINT:POINT3_30
+spl
+CUT5 END
+map_nomber---------------(/[#0])
+-------------* map_look_end *-----------
+FLSshion_h.fpk
+FLSallen.fpk
+FLSkosmos.fpk
+FLSmomo_h.fpk
+CUT1 START
+sit
+CUT1 END
+CUT2 START
+CUT2 END
+CUT3 START
+act5_1
+CUT3 END
+CUT4 START
+CUT4 END
+CUT5 START
+act5
+あなた達はどう思う――
+CUT6-7 START
+狂人ヨアキム・ミズラヒ――
+パパは本当にそんな人なのかしら
+モモ
+パパに創られた　私達レアリエンも<lf>有害なモノなのかな――
+CUT6-7 END
+act8
+CUT8 END
+CUT9 START
+act9
+モモちゃん
+こんなとこにいたんだ
+CUT9 END
+CUT10 START
+act10
+シオンさん――
+CUT10 END
+CUT11 START
+act11
+どうしたの
+元気ないなぁ
+CUT11 END
+CUT12 START
+シオンさん――<lf>モモは――
+CUT12 END
+CUT13 START
+act13
+CUT13 END
+CUT14 START
+ヨアキム・ミズラヒに創られたんです
+まだ連邦に貢献していた頃に計画された<lf>百式レアリエン
+知ってるわ――
+CUT14 END
+CUT15 START
+act15
+シオンさん<lf>モモ――パパが狂人だとは思えない
+でも――<lf>自分が何ものかも判らない
+自我同一性の拡散――か
+永遠の難問よね
+CUT15 END
+CUT16 START
+CUT16 END
+CUT17-18 START
+この/[ruby(艦/ふね)]　いい/[ruby(環境虫/かんきょうちゅう)]使ってるね
+“エンヴァイラメンタル・バグ”<lf>閉塞した空間をクリーンに保つナノマシン
+これ　ミズラヒ博士の――ううん<lf>科学の歴史の中でも結構いい発明だと思うな
+CUT17-18 END
+CUT19 START
+act20_1
+この子達は　人工的に生み出された存在なのに<lf>ずっとこの世界にいたように役に立ってる
+あなた達レアリエンも同じじゃないかな
+人間と違うのは　誕生してからの歴史の長さだけ
+CUT19 END
+CUT20 START
+act20
+この世界全体を構成する　大事な/[ruby(要素/メンバー)]である事に<lf>変わりはないと思うんだけど
+CUT20 END
+CUT21 START
+act22_1
+CUT21 END
+CUT22 START
+act22
+それに私ミズラヒ博士が一般に言われているような<lf>危険な人物だったのかは疑問なんだ
+環境虫だけじゃない
+彼のレアリエンに関する著作は<lf>深い洞察に満ちているもの
+CUT22 END
+CUT23 START
+act24_1
+現在の対グノーシス技術の発展にも
+ミズラヒ博士の遺した<lf>グノーシス基礎研究が役立っています
+CUT23 END
+CUT24 START
+act24
+ナイスフォローね　ＫＯＳ−ＭＯＳ
+今の反応　すごく良かったわ
+感情の/[ruby(共感/エンパシー)]――
+人間関係にとても重要な/[ruby(要素/ファクター)]よ
+現在は人間関係の円滑化が<lf>必要とされる/[ruby(場面/フェーズ)]ではないと思われますが
+お役に立てたのなら幸いです
+CUT24 END
+CUT25 START
+act25
+ＫＯＳ−ＭＯＳさんって面白い人ですね
+act26_1
+CUT25 END
+CUT26-27 START
+act26
+人の言うこと<lf>あまり聞かない子だけどね
+でも　モモが生まれるまでの間<lf>ずっと優しく声をかけてくれてた
+善い行いをしたら<lf>モモは人間になれるよって――
+ぼんやりとだけど　それだけは――
+そう
+素敵な想い出ね――
+はい
+CUT26-27 END
+CUT28 START
+主任――
+CUT28 END
+CUT29 START
+act29
+グッドニュースですよ
+この/[ruby(艦/ふね)]<lf>クーカイ・ファウンデーション着後
+CUT29 END
+CUT30 START
+act32
+第二ミルチアまで行ってくれるんだそうです
+第二ミルチアまで
+わざわざ
+CUT30 END
+CUT31 START
+向こうに用事が出来たそうです
+ああ　エルザはまた修理だとかで<lf>船長機嫌悪いですけど――
+用事って――<lf>本当かしら――
+は
+CUT31 END
+CUT32 START
+act32_2
+act33_1
+うん
+各々事情はあるんだろうけど<lf>みんながみんなミルチアっての
+ちょっと気持ち悪くない
+CUT32 END
+CUT33 START
+act33
+act34_1
+そうですか
+単なる偶然でしょ
+僕は運賃が省けて良かったと思いますけど
+万が一グノーシスに遭遇してもこの/[ruby(艦/ふね)]の装備なら
+あっ　個室行ってみました
+ジェットバスやミニバー付いてますよ――って<lf>なんで額に手　あててるんです
+CUT33 END
+CUT34 START
+act34
+なんでもないわ
+あなたの現金さが羨ましいだけよ――
+CUT34 END
+light.setGlobalPointLightCol( 0, /[#0]f,/[#1]f,/[#2]f);
+-------------* ManualCam_play_sub()start *-----------
+-------------* map_look_start *-----------
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---SoftImage BG(pic+zpic)

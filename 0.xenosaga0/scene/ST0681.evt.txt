@@ -1,67 +1,49 @@
+# extraction_order: precise_code_v4
 # chunk 5 @ 0x1b2c cnum=732 total=39
-# bc_map: 15,28,29,3,26,28,29,4,1,30,16,18,4,1,14,17,4,2,22,31,24,12,38,23,4,2,20,25,4,0,13,27,4,0,19,21,4,7,9,10,11,8,6,34,6,33,6,32,5,35,36,37
+# bc_map: 15,28,29,3,26,28,29,4,1,30,16,18,4,1,14,17,4,2,22,31,24,12,38,23,4,2,20,25,4,0,13,27,4,0,19,21,4,7,8,34,33,32,35,36,37
+# bc_unmap: 5,6,9,10,11
 침입자 대응 프로그램을 발동합니다．<lf>
-해당 구역 내 승무원은<lf>
-신속히 대피해 주십시오．
+#dup(1): 해당 구역 내 승무원은<lf>
+#dup(2): 신속히 대피해 주십시오．
 /[waitkey(1)]/[clear()]
 반복합니다，<lf>
-# dup_of: line 2, tag8 28
-해당 구역 내 승무원은<lf>
-# dup_of: line 3, tag8 29
-신속히 대피해 주십시오．
-/[waitkey(64)]/[close()]
-/[label(시온)]
+#dup(1): 해당 구역 내 승무원은<lf>
+#dup(2): 신속히 대피해 주십시오．
+#dup(3): /[waitkey(64)]/[close()]
+#dup(4): /[label(시온)]
 전자기 플로어를 쓰면<lf>
 잠시 동안이지만<lf>
 적의 발을 묶을 수 있을지도！？
-# dup_of: line 8, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 9, tag8 1
-/[label(시온)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(4): /[label(시온)]
 어쨌든 이 틈에<lf>
 서둘러 격납고까지……．
-# dup_of: line 8, tag8 4
-/[waitkey(64)]/[close()]
-/[label(ＫＯＳ−ＭＯＳ)]
-격납고에 침입한 모함을<lf>
+#dup(3): /[waitkey(64)]/[close()]
+#dup(5): /[label(ＫＯＳ−ＭＯＳ)]
+격납고에 침입한 본체를<lf>
 제거하는 것이 최우선 사항입니다．<lf>
 현재 상황을 고려할 때，<lf>
 여기서 전투 단말기를 구축할 경우<lf>
 ２１４３．１５초의 시간이<lf>
 낭비됩니다．
-# dup_of: line 8, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 18, tag8 2
-/[label(ＫＯＳ−ＭＯＳ)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(5): /[label(ＫＯＳ−ＭＯＳ)]
 적 단말기의 본선 침공 방해 성공．<lf>
-즉시 모함 제거로 이행합니다．
-# dup_of: line 8, tag8 4
-/[waitkey(64)]/[close()]
-/[label(케이오스)]
+즉시 본체 제거로 이행합니다．
+#dup(3): /[waitkey(64)]/[close()]
+#dup(6): /[label(케이오스)]
 이럴 때를 위한 프로그램인가……．<lf>
 선장님도 제법이네．
-# dup_of: line 8, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 30, tag8 0
-/[label(케이오스)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(6): /[label(케이오스)]
 적은 격납고 쪽인가……．<lf>
 빨리 어떻게든 해야 해！！
-# dup_of: line 8, tag8 4
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 enterd : /[$0]
-sound01
-sound02
-sound03
 entrance: /[$0]
-TalkNPC1
 ＊＊＊＊＊＊シオン登場＊＊＊＊＊＊＊＊＊
-# dup_of: line 43, tag8 6
-TalkNPC1
 ＊＊＊＊＊＊コスモス登場＊＊＊＊＊＊＊＊＊
-# dup_of: line 43, tag8 6
-TalkNPC1
 ＊＊＊＊＊＊ケイオス登場＊＊＊＊＊＊＊＊＊
-Evt
 ＊＊＊＊＊＊音が鳴った！！＊＊＊＊＊＊＊
 ＊＊＊＊＊＊音２が鳴った！！＊＊＊＊＊＊＊
 ＊＊＊＊＊＊音３が鳴った！！＊＊＊＊＊＊＊

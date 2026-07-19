@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build translated OV02 with corrected Korean mail breadcrumb spacing.
+"""Build translated OV02 with Korean UI and database-search fixes.
 
 The source OVL and translation text are never modified. The output must not
 already exist.
@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 
 import euc_scan
+from ov02_database_search import apply_database_search_patch
 
 
 LENGTH_TABLE_OFFSET = 0x132D8
@@ -174,6 +175,14 @@ def main() -> None:
         labels.append(f"{text!r}={cells}")
 
     data[LENGTH_TABLE_OFFSET : LENGTH_TABLE_OFFSET + len(replacement)] = replacement
+    replace_table = euc_scan.load_replace_table(str(source))
+    database_changes = apply_database_search_patch(
+        data,
+        lambda text: euc_scan.encode_display(text, replace_table),
+        ov02_offset=0,
+        memsz_offset=0x48,
+        expected_memsz=0x1493C,
+    )
     write_output(output, data, args.replace_output)
 
     print(
@@ -181,6 +190,8 @@ def main() -> None:
         f"{EXPECTED_LENGTHS.hex(' ')} -> {bytes(replacement).hex(' ')} "
         f"({', '.join(labels)})"
     )
+    for change in database_changes:
+        print(f"[OK] database search {change}")
     print(f"[OK] source SHA-256: {sha256(original)}")
     print(f"[OK] output SHA-256: {sha256(data)}")
     print(f"[OK] output: {output}")

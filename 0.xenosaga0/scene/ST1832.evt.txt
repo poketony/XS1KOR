@@ -1,96 +1,69 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x64 cnum=190 total=4
-# bc_map: 0,3,2,1
+# bc_map: 0,3
+# bc_unmap: 1,2
 22222222222222222222222222222222222222222222222222222
 【隔離格納庫エリア】
-Nobi
-Chijimi
 
 # chunk 4 @ 0x1074 cnum=689 total=47
-# bc_map: 41,2,14,2,17,2,16,2,18,2,15,2,40,2,20,1,27,33,38,2,22,44,1,30,29,42,2,25,39,24,2,34,28,1,37,36,2,46,26,2,23,35,21,1,45,43,2,0,31,2,0,32,2,19,2,5,3,13,11,12,7,9,8,10,7,4
-# bc_unmap: 6
+# bc_map: 41,2,14,2,17,2,16,2,18,2,15,2,40,2,20,1,27,33,38,2,22,44,1,30,29,42,2,25,39,24,2,34,28,1,37,36,2,46,26,2,23,35,21,1,45,43,2,0,31,2,0,32,2,19,2,13,6,11,12
+# bc_unmap: 3,4,5,7,8,9,10
 移動先の入力をお願いします。
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【ドックエリア】に移動します。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【居住エリア】に移動します。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【ブリッジエリア】に移動します。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【揚陸待機エリア】に移動します。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【パークエリア】に移動します。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ここの警備は万全です。
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 どうぞ安心して<lf>
 ファウンデーションの<lf>
 救助に向かって下さい。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 この先は<lf>
 重要機密の保管庫になっております。
-# dup_of: line 16, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 ガイナン様、<lf>
 もしくはＪｒ．様の許可のある方以外は<lf>
 通行する事はできません。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ご苦労様です！<lf>
 特に異常はありません。<lf>
 ご安心下さい！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ファウンデーションの状況は<lf>
 どうなのでしょうか？
-# dup_of: line 16, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 我々にできる事があれば、<lf>
 何なりとお申しつけください。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ＶＩＰの方ですね。<lf>
 どうぞお通りください。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ご安心下さい。<lf>
 何があろうとも<lf>
 このゲートは我々が死守します！
-# dup_of: line 16, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 Ｊｒ．様はどうぞご自分の任務を<lf>
 遂行なさって下さい。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-/[label(仮人)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(仮人)]
 クーカイ前です。【仮】
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 48, tag8 0
-/[label(仮人)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): /[label(仮人)]
 ネピリムの歌声前です。【仮】
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【隔離格納庫エリア駅】
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-Nobi
-Chijimi
+#dup(1): /[waitkey(64)]/[close()]
 【ドックエリア】<lf>【居住エリア】<lf>【ブリッジエリア】<lf>【揚陸待機エリア】<lf>【パークエリア】<lf>　キャンセル
+PPPPPPPPPPPPPPPPPPPPPPP
 enterd : /[$0]
 entrance: /[$0]
-TalkNPC1
-TalkNPC2
-TalkNPC1a
-TalkNPC2a
-# dup_of: line 61, tag8 7
-TalkNPC1
-Evt

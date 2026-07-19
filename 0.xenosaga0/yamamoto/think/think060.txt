@@ -1,0 +1,19 @@
+# think_patch extract: think060.bin.ori
+# 총 3개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x02AA
+　ビームキャノン　　Ｅ
+
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0330
+　ツイングレネード　　Ｅ
+
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x03B4
+　プラズマビーム　　Ｅ／Ｂ
+
+<<<

@@ -1,55 +1,42 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x1020 cnum=855 total=39
-# bc_map: 0,23,3,34,3,31,3,1,27,19,3,16,22,3,1,28,3,1,26,20,2,33,18,3,1,33,18,3,4,5,14,9,29,15,25,14,17,35,36,37,38,30,10,11,7,8,24,32,12,9,13,21
-# bc_unmap: 6
+# bc_map: 0,23,3,34,3,31,3,1,27,19,3,16,22,3,1,28,3,1,26,20,2,33,18,3,1,33,18,3,4,5,14,29,15,25,14,17,35,36,37,38,30,10,11,7,8,24,32,12,6,21
+# bc_unmap: 9,13
 /[color(0x329bbe)]スーパーキャロットジュース/[color(0xffffff)]<lf>
 を置いてみますか？
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 誰かいるようだが、返事が無い。
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 変なウサギがここで何か飲んでいたようだ。<lf>
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
-/[label(うーくん)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(うーくん)]
 オレの勝ち！！！<lf>
 この部屋には誰も入れないよ〜。
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 あの変なウサギは<lf>
 まるで後ろに目があるようだ？？<lf>
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 8, tag8 1
-/[label(うーくん)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(うーくん)]
 オレの負け〜。
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 8, tag8 1
-/[label(うーくん)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(うーくん)]
 オレ『うーくん』<lf>
 この部屋に入ったの、おまえ達がはじめて。<lf>
 /[waitkey(1)]/[clear()]
-最近、森もぶっそう。<lf>
-おまえ達も気をつけろ！<lf>
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 8, tag8 1
-/[label(うーくん)]
-# dup_of: line 22, tag8 33
-最近、森もぶっそう。<lf>
-# dup_of: line 23, tag8 18
-おまえ達も気をつけろ！<lf>
-# dup_of: line 3, tag8 3
-/[waitkey(64)]/[close()]
+#dup(3): 最近、森もぶっそう。<lf>
+#dup(4): おまえ達も気をつけろ！<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(うーくん)]
+#dup(3): 最近、森もぶっそう。<lf>
+#dup(4): おまえ達も気をつけろ！<lf>
+#dup(1): /[waitkey(64)]/[close()]
 EOB:0
 EOB_Always
-lo:0
-TalkNPC1
+#dup(5): lo:0
 ジュースの数: /[#1]
 lo:1
 イベント起動
-# dup_of: line 31, tag8 14
-lo:0
+#dup(5): lo:0
 うーくん
 負け:1
 負け:2
@@ -63,7 +50,5 @@ MC_KAS16・３
 イベント3023
 教会外観・１
 entrance: /[$0]
-# dup_of: line 32, tag8 9
-TalkNPC1
-idle
+ITEM:1
 はい<lf>いいえ

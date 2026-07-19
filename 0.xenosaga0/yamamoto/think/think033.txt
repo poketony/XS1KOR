@@ -1,0 +1,24 @@
+# think_patch extract: think033.bin.ori
+# 총 4개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x0208
+　베놈 클로　　Ｐ／Ｓ
+　　독
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x02B2
+　라이트닝　　Ｅ／번개
+
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x0312
+　윌리 위스프　　Ｅ
+
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x0384
+　위스퍼 보이스　　Ｓ
+　　수면
+<<<

@@ -1,119 +1,87 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x74 cnum=235 total=1
 # bc_map: 0
 로봇은 죽어 있다．
 
 # chunk 5 @ 0x1640 cnum=893 total=57
-# bc_map: 37,50,7,2,22,44,6,45,42,39,7,55,38,7,40,7,17,16,7,54,23,28,7,4,49,47,6,19,46,7,3,14,7,5,34,21,7,1,18,7,0,15,33,43,7,5,29,7,1,20,24,7,2,27,41,7,0,25,31,32,7,0,26,7,56,7,8,10,12,30,11,9,30,11,9,30,35,36,51,52,53,48,10,12
-# bc_unmap: 13
+# bc_map: 37,50,7,2,22,44,6,45,42,39,7,55,38,7,40,7,17,16,7,54,23,28,7,4,49,47,6,19,46,7,3,14,7,5,34,21,7,1,18,7,0,15,33,43,7,5,29,7,1,20,24,7,2,27,41,7,0,25,31,32,7,0,26,7,56,7,8,30,35,36,51,52,53,48,10,12,30,11,30
+# bc_unmap: 9,13
 크레인을 조작하는 스위치가 있다．<lf>
 눌러 보겠습니까？
-/[waitkey(64)]/[close()]
-/[label(모모)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(모모)]
 이 구역 어딘가에 마스터키를<lf>
 보관하는 장소가 있을 거예요．
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 병사들은 항상 이 앞 모니터링 룸에서<lf>
 왔던 것으로 기억합니다．<lf>
 마스터키도 아마 그곳에…
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 잠겨 있다．<lf>
 마스터키가 있으면 열릴 것 같다．
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 마스터키를 사용했다．
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 「←예배당 터<lf>
 　→독방동／모니터링 룸」
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 석비가 있다．<lf>
 이 기지가 예배당이었을 무렵의<lf>
 흔적인 듯하다．
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(Ｚｉｇｇｕｒａｔ８)]
 성가신 녀석이 있군．<lf>
 가능하면 전투는 피하고 싶지만…
-# dup_of: line 7, tag8 6
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 어떻게든 저 녀석의 주의를<lf>
 돌릴 수는 없을까？
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(병사)]
 ………
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
-/[label(ｊｒ．（특별 출연）)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label(ｊｒ．（특별 출연）)]
 좋아，이제 모모를 구해 내고<lf>
 여기서 탈출하면 되겠군．
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
-/[label(지기)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): /[label(지기)]
 그래，서두르자．
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
-/[label(케이오스（특별 출연）)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(6): /[label(케이오스（특별 출연）)]
 …라고 하고 싶지만，<lf>
 이제 시간이 됐어．<lf>
 오늘은 여기까지．
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 34, tag8 5
-/[label(ｊｒ．（특별 출연）)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label(ｊｒ．（특별 출연）)]
 뭐라고！？
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 38, tag8 1
-/[label(지기)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): /[label(지기)]
 음…  어쩔 수 없군．<lf>
 이 다음부턴 제품판에서인가．
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 2
-/[label(모모)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(모모)]
 그럴 수가…<lf>
 모모，４개월이나 이대로인가요？
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 41, tag8 0
-/[label(케이오스（특별 출연）)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(6): /[label(케이오스（특별 출연）)]
 그렇게 되려나…<lf>
 뭐，４개월 정도는 금방 지나가니까<lf>
 조금만 더 참아 줘．
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 41, tag8 0
-/[label(케이오스（특별 출연）)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(6): /[label(케이오스（특별 출연）)]
 그럼 또 보자！
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ＥＶＳ 【환경 시뮬레이터】를 종료합니다．
-# dup_of: line 3, tag8 7
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 EOB****************************************************
-enterd : /[$0]
-evsExitをコールしました
-예<lf>아니요
-entrance: /[$0]
-TalkNPC1
-# dup_of: line 70, tag8 30
-예<lf>아니요
-# dup_of: line 71, tag8 11
-entrance: /[$0]
-# dup_of: line 72, tag8 9
-TalkNPC1
-# dup_of: line 70, tag8 30
-예<lf>아니요
+#dup(7): 예<lf>아니요
 イベント2004A:모모와 경비원의 대화
 イベント2004C:모모와 합류
 빨리 열쇠를 가져와！
 안내
 석판
 골치 아픈 녀석이 있군．
-# dup_of: line 68, tag8 10
 enterd : /[$0]
-# dup_of: line 69, tag8 12
 evsExitをコールしました
+#dup(7): 예<lf>아니요
+entrance: /[$0]
+#dup(7): 예<lf>아니요

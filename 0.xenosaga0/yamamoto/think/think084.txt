@@ -1,0 +1,120 @@
+# think_patch extract: think084.bin.ori
+# 총 23개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x1A(condition) flag=0x00 offset=0x023E
+target--------------------------------------->
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0288
+　ターゲット不能
+
+<<<
+
+>>> [002] op=0x1A(condition) flag=0x00 offset=0x02EE
+-------------------------->
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x042E
+　ビームコート発生！
+　（中古品）
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x04A4
+　ビームコート破壊！
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x04CA
+　ビームコート損傷！
+　（ビーム防御率２５％）
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x0508
+　ビームコート損傷！
+　（ビーム防御率５０％）
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x0546
+　ビームコート損傷！
+　（ビーム防御率７５％）
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x073E
+　エネルギー充填開始！
+
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x0794
+少佐
+「メーデ！　メーデ！
+　至急！救援物資の投下を頼む！
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x07EE
+オペレータＡ
+「了解しました、少佐！
+<<<
+
+>>> [011] op=0x21(display) flag=0x00 offset=0x0864
+オペレータＡ
+「大変申し上げにくのですが、
+　上からの命令で・・・
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x08B0
+オペレータＡ
+「”これ以上、物資のムダ使いを
+　させるな！”
+<<<
+
+>>> [013] op=0x21(display) flag=0x00 offset=0x08F6
+オペレータＡ
+「と、のことです。
+<<<
+
+>>> [014] op=0x21(display) flag=0x00 offset=0x0920
+オペレータＡ
+「少佐なら勝てます！
+　頑張って下さい！
+<<<
+
+>>> [015] op=0x21(display) flag=0x00 offset=0x098C
+　アイアンプレス　　Ｐ
+
+<<<
+
+>>> [016] op=0x21(display) flag=0x00 offset=0x09BE
+　アイアンクラッシュ　　Ｐ
+
+<<<
+
+>>> [017] op=0x21(display) flag=0x00 offset=0x09F4
+　ビーム　　Ｅ
+
+<<<
+
+>>> [018] op=0x21(display) flag=0x00 offset=0x0A2A
+　ドーラバスター　　Ｅ
+
+<<<
+
+>>> [019] op=0x21(display) flag=0x00 offset=0x0A68
+　救援物資　　
+
+<<<
+
+>>> [020] op=0x21(display) flag=0x00 offset=0x0AE2
+パイロットＡ
+「少佐！　御武運を。
+<<<
+
+>>> [021] op=0x21(display) flag=0x00 offset=0x0B14
+パイロットＢ
+「少佐！　御武運を。
+<<<
+
+>>> [022] op=0x21(display) flag=0x00 offset=0x0C28
+　ロケットバンカー
+　　後列ふっとばし
+<<<

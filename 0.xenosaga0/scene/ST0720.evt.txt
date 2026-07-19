@@ -1,81 +1,49 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x940 cnum=469 total=21
-# bc_map: 0,14,9,1,15,2,0,14,9,1,15,2,0,14,9,1,15,2,0,14,9,1,15,2,0,10,1,8,12,1,13,16,2,18,2,17,2,20,2,19,2,11,3,3,11,4,4,6,7,5
-/[label(앤드루)]
-왔군．잘 들어라，<lf>
-적의 모함이 이 안쪽에 있다．
-/[waitkey(1)]/[clear()]
-방심하지 말고 단숨에 처리해라！
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 0
-/[label(앤드루)]
-# dup_of: line 2, tag8 14
-왔군．잘 들어라，<lf>
-# dup_of: line 3, tag8 9
-적의 모함이 이 안쪽에 있다．
-# dup_of: line 4, tag8 1
-/[waitkey(1)]/[clear()]
-# dup_of: line 5, tag8 15
-방심하지 말고 단숨에 처리해라！
-# dup_of: line 6, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 0
-/[label(앤드루)]
-# dup_of: line 2, tag8 14
-왔군．잘 들어라，<lf>
-# dup_of: line 3, tag8 9
-적의 모함이 이 안쪽에 있다．
-# dup_of: line 4, tag8 1
-/[waitkey(1)]/[clear()]
-# dup_of: line 5, tag8 15
-방심하지 말고 단숨에 처리해라！
-# dup_of: line 6, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 0
-/[label(앤드루)]
-# dup_of: line 2, tag8 14
-왔군．잘 들어라，<lf>
-# dup_of: line 3, tag8 9
-적의 모함이 이 안쪽에 있다．
-# dup_of: line 4, tag8 1
-/[waitkey(1)]/[clear()]
-# dup_of: line 5, tag8 15
-방심하지 말고 단숨에 처리해라！
-# dup_of: line 6, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 0
-/[label(앤드루)]
+# bc_map: 0,14,9,1,15,2,0,14,9,1,15,2,0,14,9,1,15,2,0,14,9,1,15,2,0,10,1,8,12,1,13,16,2,18,2,17,2,20,2,19,2,11,11,6,7
+# bc_unmap: 3,4,5
+#dup(1): /[label(앤드루)]
+#dup(2): 왔군．잘 들어라，<lf>
+#dup(3): 적의 본체가 이 안쪽에 있다．
+#dup(4): /[waitkey(1)]/[clear()]
+#dup(5): 방심하지 말고 단숨에 처리해라！
+#dup(6): /[waitkey(64)]/[close()]
+#dup(1): /[label(앤드루)]
+#dup(2): 왔군．잘 들어라，<lf>
+#dup(3): 적의 본체가 이 안쪽에 있다．
+#dup(4): /[waitkey(1)]/[clear()]
+#dup(5): 방심하지 말고 단숨에 처리해라！
+#dup(6): /[waitkey(64)]/[close()]
+#dup(1): /[label(앤드루)]
+#dup(2): 왔군．잘 들어라，<lf>
+#dup(3): 적의 본체가 이 안쪽에 있다．
+#dup(4): /[waitkey(1)]/[clear()]
+#dup(5): 방심하지 말고 단숨에 처리해라！
+#dup(6): /[waitkey(64)]/[close()]
+#dup(1): /[label(앤드루)]
+#dup(2): 왔군．잘 들어라，<lf>
+#dup(3): 적의 본체가 이 안쪽에 있다．
+#dup(4): /[waitkey(1)]/[clear()]
+#dup(5): 방심하지 말고 단숨에 처리해라！
+#dup(6): /[waitkey(64)]/[close()]
+#dup(1): /[label(앤드루)]
 뭐냐，네놈은…？
-# dup_of: line 4, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 …그런가，선장이 구조한<lf>
 크루저의 승무원이군．
-# dup_of: line 4, tag8 1
-/[waitkey(1)]/[clear()]
-적의 모함이 이 안쪽에 있다．<lf>
+#dup(4): /[waitkey(1)]/[clear()]
+적의 본체가 이 안쪽에 있다．<lf>
 네놈 손님이니 정중히 접대하고 와라．
-# dup_of: line 6, tag8 2
-/[waitkey(64)]/[close()]
+#dup(6): /[waitkey(64)]/[close()]
 전자기 플로어를 해제하겠습니까？
-# dup_of: line 6, tag8 2
-/[waitkey(64)]/[close()]
+#dup(6): /[waitkey(64)]/[close()]
 전자기 플로어를 해제합니다．
-# dup_of: line 6, tag8 2
-/[waitkey(64)]/[close()]
+#dup(6): /[waitkey(64)]/[close()]
 전자기 플로어를 기동하겠습니까？
-# dup_of: line 6, tag8 2
-/[waitkey(64)]/[close()]
+#dup(6): /[waitkey(64)]/[close()]
 전자기 플로어를 기동합니다．
-# dup_of: line 6, tag8 2
-/[waitkey(64)]/[close()]
-예<lf>아니요
-Chibi
-# dup_of: line 43, tag8 3
-Chibi
-# dup_of: line 42, tag8 11
-예<lf>아니요
-Deka
-# dup_of: line 46, tag8 4
-Deka
+#dup(6): /[waitkey(64)]/[close()]
+#dup(7): 예<lf>아니요
+#dup(7): 예<lf>아니요
 enterd : /[$0]
 entrance: /[$0]
-TalkNPC1

@@ -1,988 +1,598 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x928 cnum=1735 total=320
-# bc_map: 4,48,289,222,12,264,291,0,283,290,12,157,94,204,14,4,75,296,12,240,142,189,0,163,93,12,258,218,279,14,4,47,164,303,12,251,270,100,220,14,4,169,274,255,14,4,197,263,14,4,230,12,145,55,0,126,121,212,13,131,190,12,265,188,261,14,4,134,56,234,12,69,213,92,0,136,259,155,13,125,214,12,119,215,200,0,109,161,14,4,44,278,14,4,79,140,0,96,118,14,4,170,229,146,12,76,171,139,12,90,57,13,186,236,260,14,4,64,233,239,14,4,103,242,13,216,12,62,149,129,0,156,147,14,4,103,243,70,151,14,4,198,287,295,0,148,262,14,4,49,231,0,154,298,12,284,232,14,4,185,12,63,177,244,0,95,54,14,194,173,14,4,172,12,81,12,104,112,182,14,4,178,152,277,12,181,276,14,4,176,132,80,12,179,302,116,14,9,27,14,4,228,102,0,159,101,12,85,268,66,14,4,52,128,269,0,280,135,12,195,14,4,77,12,133,165,0,223,210,162,14,4,98,235,14,4,184,275,0,271,209,14,4,117,294,60,12,203,267,241,14,4,111,237,266,14,4,183,227,211,0,67,14,4,124,99,0,168,238,120,14,4,202,250,0,175,61,14,9,27,14,4,48,289,222,0,283,290,12,157,94,204,14,4,75,297,12,240,143,285,12,258,218,279,14,4,2,14,4,2,14,4,1,14,4,1,0,3,14,9,27,14,6,113,13,9,37,13,6,110,286,0,91,14,4,45,14,9,27,13,6,305,13,9,29,14,6,304,13,6,53,13,9,29,13,6,137,201,13,9,28,14,6,166,221,13,6,158,74,14,9,27,14,6,144,247,84,0,281,141,14,6,87,14,9,27,14,6,115,205,14,9,31,14,6,46,249,14,6,86,14,9,36,14,6,106,108,14,9,27,14,6,193,82,13,9,35,14,6,51,89,0,196,13,9,40,13,6,306,0,292,293,13,9,43,13,6,130,199,13,9,217,38,78,0,105,13,6,76,282,59,13,9,72,191,299,14,9,83,192,300,14,6,71,206,0,107,14,9,30,14,6,167,138,0,153,14,9,33,39,14,6,65,0,42,122,14,9,34,41,14,6,73,246,160,14,9,32,174,14,6,68,114,14,4,180,245,256,14,4,309,317,254,14,6,208,14,4,310,319,252,14,11,27,14,4,311,318,254,14,5,187,14,4,308,315,254,14,8,50,226,14,4,312,314,253,14,7,257,14,4,307,316,254,14,10,150,14,4,309,317,254,14,4,27,14,4,219,224,14,4,58,248,12,88,288,301,97,14,4,123,127,14,4,170,272,207,14,313,14,225,273,25,26,15,18,19,20,21,22,23,24,16,17,15,18,19,20,21,22,23,24,16,17,15,18,18,18,25,26,199,15,18,8,19,20,21,22,23,24,16,17,15,18,19,20,21,22,23,24,16,17,208,15,18,19,20,21,22,23,24,16,17
-/[label()]
-あ、こんにちは！<lf>
-観光ですか？<lf>
-フフフ、そんなわけ無いですね。
-/[waitkey(1)]/[clear()]
-政府からも見捨てられたような場所に、<lf>
-観光客が訪れるわけ無いですから。
-<lf>
-第一、ここには、<lf>
-観光名所なんてありませんもの。
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-でも、<lf>
-ここにいる人たちは皆いい人なんですよ。<lf>
-もちろん、この私もね。
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-え！？<lf>
-軍人を捜してる？
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-冗談じゃないわよ！<lf>
-そんなろくでなしの事なんて知らないわよ。<lf>
-まぁ、知ってたって教えないけど。
-# dup_of: line 8, tag8 0
-<lf>
-どうせ、そこら辺の路地裏で<lf>
-くたばってるんじゃない？
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-役人や、軍人なんて<lf>
-ゴミよゴミ！<lf>
-生ゴミと同じよ！！
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-あ、こんにちは。<lf>
-どうですか、このコロニーは？<lf>
-面白いところはありましたか？
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-実はこの間も、<lf>
-暴漢が出て何人も怪我をしたんですよ。<lf>
-このコロニーって見るところは無いですけど、<lf>
-スリルはたっぷり味わえますよ。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-なんぞい、お前ら？<lf>
-治療なら、順番がくるまで<lf>
-席でまっとれや。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-まーたく、こんな世の中じゃから<lf>
-怪我人が多くて、休むヒマもねーぞい。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-ルーティの事かいな？
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-たしかに、<lf>
-あの子はかわいそうな子ぞな。
-# dup_of: line 8, tag8 0
-<lf>
-じゃがの、<lf>
-しゃべれないのは、心の問題ぞい、<lf>
-わしにもどうしようもできんぞな。
-/[waitkey(64)]/[clear()]
-そうさな、<lf>
-まずは、あの子の心を開く事ができんとなぁ。
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-故郷とか家族との思い出とか。<lf>
-まぁ、そーいったもんがあれば、<lf>
-心を開くことができっかもしれんぞな……。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-そう言えば、<lf>
-あの子は待合室の鉢植えを<lf>
-一生懸命に世話しとったぞい。
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-うむ！たしか、<lf>
-アリアドネにしか咲かない<lf>
-きれいな花があったはずぞな！
-# dup_of: line 8, tag8 0
-<lf>
-その「/[color(0x329bbe)]アリアドネフラワー/[color(0xffffff)]」を咲かせれば<lf>
-彼女の心に希望を与える事が<lf>
-できっかもしれんぞい。
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-じゃがなぁ、<lf>
-アリアドネはすでにこの世には無いぞい。
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-したがって、<lf>
-アリアドネフラワーも、<lf>
-もうこの世には存在せん。
-# dup_of: line 8, tag8 0
-<lf>
-こればっかりは、<lf>
-どうしようもないぞな。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-「/[color(0x329bbe)]アリアドネフラワー/[color(0xffffff)]」を咲かせるなんて<lf>
-無理な話ぞな………。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-おやおや、怪我人かい？<lf>
-それとも急病かい？
-# dup_of: line 8, tag8 0
-<lf>
-ここは病人以外必要ないよ<lf>
-さっさと出てお行き！
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-なんだい、<lf>
-ルーティにちょっかい出すなら<lf>
-ただじゃおかないよ！
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-え？<lf>
-なんだ違うのかい。<lf>
-そりゃ、悪いことしたね。
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-かわいそうにあの子、<lf>
-あの通り、ふさぎ込んじまってさぁ。
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-まぁ、あのアリアドネの事件で、<lf>
-両親を失っちまったんだ。<lf>
-心が壊れるのも当然だわよね。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-あんなちっこい体で、<lf>
-一生懸命がんばってるんだ。<lf>
-何とかならないのかねぇ………。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-こらこら、<lf>
-勝手に入ってこないでくださいよ。
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-アンドリュー？
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-あんたら、軍人を捜してるんですか？<lf>
-だったら、あきらめて<lf>
-すぐにコロニーを出ていった方がいいわ。
-# dup_of: line 8, tag8 0
-<lf>
-でないと、あんたらも<lf>
-ただじゃすまない事になりますよ。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-# dup_of: line 123, tag8 103
-こらこら、<lf>
-勝手に入ってこないでくださいよ。<lf>
-うろうろしないで、<lf>
-ちゃんと待っていて下さいね！
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-みんな、昔ここがレアリエンの<lf>
-育成施設だったころに<lf>
-軍人にひどい目に合わされたんですよ。
-# dup_of: line 8, tag8 0
-<lf>
-だから、軍隊とか政府とかに<lf>
-必要以上に神経質になってるんです。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-あ、でも、ここの人達はみんな<lf>
-レアリエンには優しいんですよ。
-# dup_of: line 8, tag8 0
-<lf>
-つき合いが長かっただけに、<lf>
-連邦のどこよりも理解あるんですから。
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-結局、ミルチアのあの戦争では、<lf>
-レアリエンも被害者だったんですよ…。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-ほんにかわいそうにのぉ……。
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-あんなかわいい子が、<lf>
-ひどい目にあって<lf>
-口が利けなくなってしまったんじゃ。
-# dup_of: line 8, tag8 0
-<lf>
-ここの医者はヤブで、<lf>
-あの子のことを治すこともできんしの。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-まったく、<lf>
-なんの為に医者をやっとるのか……。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-なんですかいの？
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-おんどりゃー？！
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-こりゃこりゃ、<lf>
-こんな年寄りを脅すとは人が悪いのぉ。<lf>
-ほっほっほ。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-へ、ちがう？<lf>
-ちゅ、注射？<lf>
-注射を探しとりますのか？
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-ほっほっほ<lf>
-注射なら奥にいっぱいありますわい。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-は？<lf>
-そうじゃない？<lf>
-おんどりぃ調査？？
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-ほうかほうか、<lf>
-雄鳥の調査ですか。<lf>
-ご苦労様ですのぉ。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-/[label(ルーティ)]
-………。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-ルーティってね、<lf>
-この前まで、アリアドネに住んでたの。
-# dup_of: line 8, tag8 0
-<lf>
-でもね、星が無くなっちゃったから<lf>
-このコロニーまでお引っ越ししてきたのよ。
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-お父さんも、お母さんも<lf>
-星と一緒に居なくなったから<lf>
-いま、先生と一緒にくらしてるの。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-あ、聞きました？<lf>
-すぐそこの路地裏で、<lf>
-暴漢が出たらしいんですよ。
-# dup_of: line 8, tag8 0
-<lf>
-男の人が数人襲われたらしくて、<lf>
-そこの診療所に運ばれたようですよ。
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-まったく物騒な世の中ですよね……。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-え？犯人？
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-そうなのよ、その暴漢って<lf>
-どうやら軍人だって話なの！
-# dup_of: line 8, tag8 0
-<lf>
-ムカツクわよねぇ。<lf>
-やっぱり軍人って野蛮で、<lf>
-どうしようもないろくでなしよね！
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-こっちは急患で忙しいんぞな！<lf>
-世間話なら、ほかの場所でやってくれぞい。<lf>
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-ほら、どいたどいた！<lf>
-治療の邪魔だよ！！
-# dup_of: line 8, tag8 0
-<lf>
-本当に、どうしてこう<lf>
-やっかいごとばかり起こるんだろうね！
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-さっき、<lf>
-軍人が騒ぎを起こしたらしいですね。<lf>
-あんた、何か知ってるんでは？
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-もし何か関わりがあるのなら、<lf>
-早くこのコロニーから
-出ていった方がいいですよ。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-これ以上ここにいて<lf>
-何かあったとしても、<lf>
-文句は言えませんからね。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-ほっほっほ。<lf>
-ルーティちゃんは、<lf>
-ようけ働くのぉ。
-# dup_of: line 8, tag8 0
-<lf>
-うちの孫とは大違いじゃよ。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-じゃが、なぜか<lf>
-このじじぃと話をしてくれんのじゃ。
-# dup_of: line 8, tag8 0
-<lf>
-なぜかのぉ？<lf>
-何か気を悪くするようなこと<lf>
-したのかのぉ？
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-もしかして、<lf>
-嫌われておるのかのぉ……。
-# dup_of: line 8, tag8 0
-<lf>
-のぉ、旅の人<lf>
-あんたはどう思います？
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-# dup_of: line 199, tag8 27
-………。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-# dup_of: line 2, tag8 48
-あ、こんにちは！<lf>
-# dup_of: line 3, tag8 289
-観光ですか？<lf>
-# dup_of: line 4, tag8 222
-フフフ、そんなわけ無いですね。
-# dup_of: line 8, tag8 0
-<lf>
-# dup_of: line 9, tag8 283
-第一、ここには、<lf>
-# dup_of: line 10, tag8 290
-観光名所なんてありませんもの。
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-# dup_of: line 12, tag8 157
-でも、<lf>
-# dup_of: line 13, tag8 94
-ここにいる人たちは皆いい人なんですよ。<lf>
-# dup_of: line 14, tag8 204
-もちろん、この私もね。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-# dup_of: line 17, tag8 75
-え！？<lf>
-軍人？<lf>
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-# dup_of: line 20, tag8 240
-冗談じゃないわよ！<lf>
-そんなろくでなしの話なんて<lf>
-聞きたくないわよ。
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-# dup_of: line 27, tag8 258
-役人や、軍人なんて<lf>
-# dup_of: line 28, tag8 218
-ゴミよゴミ！<lf>
-# dup_of: line 29, tag8 279
-生ゴミと同じよ！！
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-//	１の時のセリフを使用
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-# dup_of: line 307, tag8 2
-//	１の時のセリフを使用
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-//	変更なし
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-# dup_of: line 313, tag8 1
-//	変更なし
-# dup_of: line 8, tag8 0
-<lf>
+# bc_map: 4,48,289,222,12,264,291,0,283,290,12,157,94,204,14,4,75,296,12,240,142,189,0,163,93,12,258,218,279,14,4,47,164,303,12,251,270,100,220,14,4,169,274,255,14,4,197,263,14,4,230,12,145,55,0,126,121,212,13,131,190,12,265,188,261,14,4,134,56,234,12,69,213,92,0,136,259,155,13,125,214,12,119,215,200,0,109,161,14,4,44,278,14,4,79,140,0,96,118,14,4,170,229,146,12,76,171,139,12,90,57,13,186,236,260,14,4,64,233,239,14,4,103,242,13,216,12,62,149,129,0,156,147,14,4,103,243,70,151,14,4,198,287,295,0,148,262,14,4,49,231,0,154,298,12,284,232,14,4,185,12,63,177,244,0,95,54,14,194,173,14,4,172,12,81,12,104,112,182,14,4,178,152,277,12,181,276,14,4,176,132,80,12,179,302,116,14,9,27,14,4,228,102,0,159,101,12,85,268,66,14,4,52,128,269,0,280,135,12,195,14,4,77,12,133,165,0,223,210,162,14,4,98,235,14,4,184,275,0,271,209,14,4,117,294,60,12,203,267,241,14,4,111,237,266,14,4,183,227,211,0,67,14,4,124,99,0,168,238,120,14,4,202,250,0,175,61,14,9,27,14,4,48,289,222,0,283,290,12,157,94,204,14,4,75,297,12,240,143,285,12,258,218,279,14,4,2,14,4,2,14,4,1,14,4,1,0,3,14,9,27,14,6,113,13,9,37,13,6,110,286,0,91,14,4,45,14,9,27,13,6,305,13,9,29,14,6,304,13,6,53,13,9,29,13,6,137,201,13,9,28,14,6,166,221,13,6,158,74,14,9,27,14,6,144,247,84,0,281,141,14,6,87,14,9,27,14,6,115,205,14,9,31,14,6,46,249,14,6,86,14,9,36,14,6,106,108,14,9,27,14,6,193,82,13,9,35,14,6,51,89,0,196,13,9,40,13,6,306,0,292,293,13,9,43,13,6,130,199,13,9,217,38,78,0,105,13,6,76,282,59,13,9,72,191,299,14,9,83,192,300,14,6,71,206,0,107,14,9,30,14,6,167,138,0,153,14,9,33,39,14,6,65,0,42,122,14,9,34,41,14,6,73,246,160,14,9,32,174,14,6,68,114,14,4,180,245,256,14,4,309,317,254,14,6,208,14,4,310,319,252,14,11,27,14,4,311,318,254,14,5,187,14,4,308,315,254,14,8,50,226,14,4,312,314,253,14,7,257,14,4,307,316,254,14,10,150,14,4,309,317,254,14,4,27,14,4,219,224,14,4,58,248,12,88,288,301,97,14,4,123,127,14,4,170,272,207,14,313,14,225,273,25,26
+# bc_unmap: 15,16,17,18,19,20,21,22,23,24
+#dup(1): /[label()]
+#dup(2): 앗，안녕하세요！<lf>
+#dup(3): 관광 오셨어요？<lf>
+#dup(4): 후후후，그럴 리는 없겠죠．
+#dup(5): /[waitkey(1)]/[clear()]
+정부에게 버림받은 듯한 곳에<lf>
+관광객이 찾아올 리가 없으니까요．
+#dup(6): <lf>
+#dup(7): 애초에 여긴<lf>
+#dup(8): 관광 명소 같은 것도 없고요．
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(9): 그래도 여기 있는 사람들은<lf>
+#dup(10): 다 좋은 사람들이에요．<lf>
+#dup(11): 물론 저도 그렇고요．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+#dup(13): 네！？<lf>
+군인을 찾고 있다고요？
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(14): 농담하지 마세요！<lf>
+그런 막돼먹은 인간은 몰라요．<lf>
+뭐，알고 있어도 안 알려 줄 거고요．
+#dup(6): <lf>
+어차피 골목 어딘가에서<lf>
+죽어 있지 않겠어요？
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(15): 관리나 군인 따위는<lf>
+#dup(16): 쓰레기예요 쓰레기！<lf>
+#dup(17): 음식물 쓰레기나 다름없죠！！
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+아，안녕하세요．<lf>
+이 콜로니는 어떠세요？<lf>
+재미있는 곳은 있었나요？
+#dup(5): /[waitkey(1)]/[clear()]
+사실 얼마 전에도<lf>
+폭한이 나타나서 여러 명이 다쳤거든요．<lf>
+이 콜로니는 볼거리는 없지만<lf>
+스릴은 실컷 맛볼 수 있어요．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+뭐지 자네들은？<lf>
+치료라면 순서가 올 때까지<lf>
+자리에 앉아서 기다리게．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+정말이지，세상이 이 모양이라<lf>
+환자가 많아서 쉴 틈도 없구만．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+루티 말인가？
+#dup(5): /[waitkey(1)]/[clear()]
+으음，확실히<lf>
+저 애는 참 불쌍한 아이지．
+#dup(6): <lf>
+하지만 말일세，<lf>
+말을 못 하는 건 마음의 문제라서<lf>
+나도 어찌할 도리가 없어．
+#dup(18): /[waitkey(64)]/[clear()]
+글쎄，<lf>
+우선 그 아이의 마음을 열어야 하네．
+#dup(5): /[waitkey(1)]/[clear()]
+고향이나 가족과의 추억 말이지．<lf>
+뭐，그런 게 있다면<lf>
+마음을 열 수 있을지도 모르겠군……
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+그러고 보니<lf>
+그 아이는 대기실의 화분을<lf>
+열심히 돌보고 있었지．
+#dup(5): /[waitkey(1)]/[clear()]
+음！ 분명<lf>
+아리아드네에서만 피는<lf>
+예쁜 꽃이 있었을 거야！
+#dup(6): <lf>
+그 「/[color(0x329bbe)]아리아드네 플라워/[color(0xffffff)]」를 피우면<lf>
+그 아이의 마음에 희망을<lf>
+줄 수 있을지도 모르네．
+#dup(18): /[waitkey(64)]/[clear()]
+하지만 말이지，<lf>
+아리아드네는 이제 이 세상에 없어．
+#dup(5): /[waitkey(1)]/[clear()]
+그러니<lf>
+아리아드네 플라워도<lf>
+이 세상에 더는 존재하지 않지．
+#dup(6): <lf>
+이것만큼은<lf>
+어찌할 도리가 없네．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+「/[color(0x329bbe)]아리아드네 플라워/[color(0xffffff)]」를 피운다니<lf>
+불가능한 이야기지……
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+어이쿠，환자야？<lf>
+아니면 위급한 병？
+#dup(6): <lf>
+여긴 환자 말고는 볼일 없어．<lf>
+어서 나가지 그래！
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+#dup(19): 뭐야，<lf>
+루티에게 수작을 부리려는 거라면<lf>
+그냥은 안 넘어갈 거다！
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(20): 어？<lf>
+뭐야，그런 거 아니라고？<lf>
+그럼 내가 실례했네．
+#dup(5): /[waitkey(1)]/[clear()]
+불쌍한 아이야，<lf>
+보다시피 마음을 닫아 버렸어．
+#dup(18): /[waitkey(64)]/[clear()]
+아리아드네 사건으로<lf>
+부모를 잃었으니<lf>
+마음이 무너지는 것도 당연하지．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+저 작은 몸으로<lf>
+열심히 버티고 있어．<lf>
+어떻게 안 될까……
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+#dup(21): 어허，<lf>
+멋대로 들어오시면 곤란해요．
+#dup(18): /[waitkey(64)]/[clear()]
+앤드루？
+#dup(5): /[waitkey(1)]/[clear()]
+당신들 군인을 찾고 있나요？<lf>
+그렇다면 포기하고<lf>
+당장 콜로니를 떠나는 게 좋아요．
+#dup(6): <lf>
+안 그러면 당신들도<lf>
+무사하지 못할 거예요．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+#dup(21): 어허，<lf>
+멋대로 들어오시면 곤란해요．<lf>
+어슬렁거리지 말고<lf>
+얌전히 기다리세요！
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+다들 예전에 이곳이<lf>
+리얼리언 육성 시설이던 시절<lf>
+군인들에게 끔찍한 일을 당했거든요．
+#dup(6): <lf>
+그래서 군대나 정부에<lf>
+필요 이상으로 예민한 거예요．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+아，그래도 여기 사람들은 모두<lf>
+리얼리언에게는 친절해요．
+#dup(6): <lf>
+오랫동안 함께 지내 왔으니<lf>
+연방 어디보다도 잘 이해하고 있죠．
+#dup(5): /[waitkey(1)]/[clear()]
+결국 미르치아의 그 전쟁 때는<lf>
+리얼리언도 피해자였어요……
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+참 딱하기도 하지……
+#dup(5): /[waitkey(1)]/[clear()]
+저렇게 귀여운 아이가<lf>
+끔찍한 일을 당하고<lf>
+말도 못 하게 됐어．
+#dup(6): <lf>
+여기 의사는 돌팔이라<lf>
+저 아이를 치료하지도 못한다네．
+#dup(12): /[waitkey(64)]/[close()]
+참 나，<lf>
+뭐 하러 의사를 하는 건지……
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+무슨 일이신가？
+#dup(5): /[waitkey(1)]/[clear()]
+안 드러워？！
+#dup(5): /[waitkey(1)]/[clear()]
+그래그래，<lf>
+난 꽤 깔끔하게 사는 편이라고．<lf>
+허허허．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+어，아니라고？<lf>
+주，중력？<lf>
+과학은 잘 모르는데……
+#dup(5): /[waitkey(1)]/[clear()]
+허허허．<lf>
+잘 아는 사람에게 물어보지 그러냐．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+뭐？<lf>
+그게 아니라고？<lf>
+안 들어 중령？？
+#dup(5): /[waitkey(1)]/[clear()]
+이런 노인네한테 뭘 들라는 겐가．<lf>
+그리고 여기서 사람을 함부로 중령이라고<lf>
+부르지 말게．암튼 수고가 많구먼．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(22): /[label(루티)]
+#dup(23): ………．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+루티는 말이야，<lf>
+얼마 전까지 아리아드네에 살았어．
+#dup(6): <lf>
+그런데 별이 사라져 버려서<lf>
+이 콜로니로 이사 오게 됐지．
+#dup(5): /[waitkey(1)]/[clear()]
+아빠도 엄마도<lf>
+별과 함께 사라져서<lf>
+지금은 선생님과 같이 살고 있어．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+아，들으셨어요？<lf>
+바로 앞에 있는 골목에<lf>
+폭력배가 나타났대요．
+#dup(6): <lf>
+남자 몇 명이 습격당해서<lf>
+저 진료소로 실려 갔다고 하더군요．
+#dup(5): /[waitkey(1)]/[clear()]
+정말 뒤숭숭한 세상이네요……
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+네？ 범인요？
+#dup(5): /[waitkey(1)]/[clear()]
+그게 있죠，그 폭력배가<lf>
+아무래도 군인이라는 모양이에요！
+#dup(6): <lf>
+정말 화가 나죠．<lf>
+역시 군인은 야만적이고<lf>
+구제할 길 없는 인간들이라니까요！
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+여긴 응급 환자 때문에 바쁘다네！<lf>
+잡담은 다른 데 가서 하게．<lf>
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+자，비켜 비켜！<lf>
+치료에 방해돼！！
+#dup(6): <lf>
+정말이지 왜 이렇게<lf>
+귀찮은 일만 생기는 거야！
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+아까<lf>
+군인이 소란을 일으켰다면서요．<lf>
+당신 뭔가 알고 있죠？
+#dup(5): /[waitkey(1)]/[clear()]
+뭔가 관련이 있다면<lf>
+어서 이 콜로니를
+떠나는 게 좋아요．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+계속 여기 있다가<lf>
+무슨 일이 생기면<lf>
+불평도 못 늘어놓게 될걸요．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+허허허．<lf>
+루티는<lf>
+참 열심히 일하는구먼．
+#dup(6): <lf>
+우리 손주하곤 아주 달라．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+그런데 어째서인지<lf>
+이 늙은이한테는 말을 안 하는구먼．
+#dup(6): <lf>
+왜일까？<lf>
+내가 혹시<lf>
+기분 상할 만한 일을 저질렀나？
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+혹시<lf>
+미움받고 있는 걸까……
+#dup(6): <lf>
+이보게 나그네．<lf>
+자네는 어떻게 생각하나？
+#dup(12): /[waitkey(64)]/[close()]
+#dup(22): /[label(루티)]
+#dup(23): ………．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+#dup(2): 앗，안녕하세요！<lf>
+#dup(3): 관광 오셨어요？<lf>
+#dup(4): 후후후，그럴 리는 없겠죠．
+#dup(6): <lf>
+#dup(7): 애초에 여긴<lf>
+#dup(8): 관광 명소 같은 것도 없고요．
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(9): 그래도 여기 있는 사람들은<lf>
+#dup(10): 다 좋은 사람들이에요．<lf>
+#dup(11): 물론 저도 그렇고요．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+#dup(13): 네！？<lf>
+군인이라고요？<lf>
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(14): 농담하지 마세요！<lf>
+그런 막돼먹은 인간 이야기는<lf>
+듣고 싶지도 않아요．
+#dup(5): /[waitkey(1)]/[clear()]
+#dup(15): 관리나 군인 따위는<lf>
+#dup(16): 쓰레기예요 쓰레기！<lf>
+#dup(17): 음식물 쓰레기나 다름없죠！！
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+#dup(24): //	１の時のセリフを使用
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+#dup(24): //	１の時のセリフを使用
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+#dup(25): //	変更なし
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+#dup(25): //	変更なし
+#dup(6): <lf>
 //少女
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-# dup_of: line 199, tag8 27
-………。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-/[label(シオン)]
-こんにちは。
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
+#dup(12): /[waitkey(64)]/[close()]
+#dup(22): /[label(루티)]
+#dup(23): ………．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+안녕하세요．
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(22): /[label(루티)]
 ………！？
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-これプレゼント。<lf>
-育ててくれる？
-# dup_of: line 8, tag8 0
-<lf>
-きっときれいな花が咲くはずよ。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-「/[color(0x329bbe)]花の種/[color(0xffffff)]」を渡した。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-# dup_of: line 199, tag8 27
-………。
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-頑張ってね。
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-………。（コク）
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-頑張って、きれいな花を咲かせてね。
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-あ、芽が出たのね！
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-# dup_of: line 345, tag8 29
-………。（コク）
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-その調子よ！<lf>
-もう一息だから、頑張ってね。	
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-………。（コクコク）
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-どんな花が咲くのかな。<lf>
-ドキドキするわね。
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-でも、あまり元気が無いわね<lf>
-うーん、栄養が足りないのかな？	
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-# dup_of: line 199, tag8 27
-………。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-そんな悲しい顔しないで。<lf>
-大丈夫。<lf>
-お姉さんに任せなさい！
-# dup_of: line 8, tag8 0
-<lf>
-私がどこかで良い肥料を探してきてあげる。<lf>
-それまで、お世話がんばってね！
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-お花、枯れちゃったんだ………。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-# dup_of: line 199, tag8 27
-………。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-ごめんね、<lf>
-もっとちゃんと様子を見に来ればよかったね……。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-………。（プイ！）
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-あ、<lf>
-嫌われちゃったかなぁ……。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-お花、まだ大丈夫ね！
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-………！（コク）
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-これ、お花の肥料よ。<lf>
-これで、きっと元気な花が咲くわよ。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-# dup_of: line 199, tag8 27
-………。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-また様子を見に来るから<lf>
-お世話、ガンバってね！
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-………ゥ…。（コク）
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-あ、咲いたんだね<lf>
-かわいくてきれい。
-# dup_of: line 8, tag8 0
-<lf>
-まるで、ルーティちゃんみたい。
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-……ゥン。
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(26): /[label(시온)]
+이거 선물이야．<lf>
+키워 줄래？
+#dup(6): <lf>
+분명 예쁜 꽃이 필 거야．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+「/[color(0x329bbe)]꽃의 씨앗/[color(0xffffff)]」을 건넸다．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(22): /[label(루티)]
+#dup(23): ………．
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(26): /[label(시온)]
+힘내．
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(22): /[label(루티)]
+#dup(27): ………（끄덕）
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+힘내서 예쁜 꽃을 피워 줘．
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(26): /[label(시온)]
+아，싹이 났구나！
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(22): /[label(루티)]
+#dup(27): ………（끄덕）
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(26): /[label(시온)]
+바로 그거야！<lf>
+조금만 더 힘내면 돼．
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(22): /[label(루티)]
+………（끄덕끄덕）
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+어떤 꽃이 필까？<lf>
+두근두근하네．
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(26): /[label(시온)]
+근데 별로 기운이 없어 보이네．<lf>
+으음，영양이 부족한 걸까？
+#dup(12): /[waitkey(64)]/[close()]
+#dup(22): /[label(루티)]
+#dup(23): ………．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+그렇게 슬픈 표정 짓지 마．<lf>
+괜찮아．<lf>
+언니한테 맡겨！
+#dup(6): <lf>
+내가 어딘가에서 좋은 비료를 찾아올게．<lf>
+그때까지 잘 돌봐 줘！
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+꽃이 시들어 버렸구나……．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(22): /[label(루티)]
+#dup(23): ………．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+미안해，<lf>
+좀 더 자주 보러 왔어야 했는데……
+#dup(12): /[waitkey(64)]/[close()]
+#dup(22): /[label(루티)]
+………（홱！）
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+아，<lf>
+미움받은 걸까……
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+꽃이 아직 괜찮네！
+#dup(12): /[waitkey(64)]/[close()]
+#dup(22): /[label(루티)]
+………！（끄덕）
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+여기 꽃 비료야．<lf>
+이걸 쓰면 분명 싱그러운 꽃이 피겠지．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(22): /[label(루티)]
+#dup(23): ………．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+또 보러 올 테니까<lf>
+잘 돌봐 줘！
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(22): /[label(루티)]
+………으……（끄덕）
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+아，꽃이 폈구나？<lf>
+귀엽고 예쁘네．
+#dup(6): <lf>
+꼭 루티 같아．
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(22): /[label(루티)]
+#dup(28): ……응．
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(26): /[label(시온)]
 ！
-# dup_of: line 8, tag8 0
-<lf>
-言葉……、<lf>
-話せるようになったんだ！
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-…ウン。
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-そう、よかった……。<lf>
-もう、大丈夫だね！
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-ウン。<lf>
-……あり…がとう。<lf>
-おねえ…ちゃん。
-# dup_of: line 8, tag8 0
-<lf>
-これ……。
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-# dup_of: line 106, tag8 76
-え？<lf>
-私にプレゼント？<lf>
-ありがとう、大切にするね！
-# dup_of: line 59, tag8 13
-/[waitkey(64)]/[clear()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-うん。<lf>
-また……、
-遊ぼうね！
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-お姉…ちゃん。<lf>
-また……、<lf>
-遊んでね。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-うわぁ、<lf>
-ものすごいことになってるわね。
-# dup_of: line 8, tag8 0
-<lf>
-これ、アリアドネフラワーなわけ…。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-………。（ブンブン）
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-ないわよね。<lf>
-そりゃ、そうよね！
-# dup_of: line 8, tag8 0
-<lf>
-ちょっと肥料がまずかったかなぁ……。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-………こ…のお花、<lf>
-……き…ら…い。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-あ！？
-# dup_of: line 8, tag8 0
-<lf>
-……言葉、<lf>
-しゃべれるようになったのね！
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-………こ…れ、<lf>
-……コ…ワ…イ。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-うーん……。<lf>
-喜んでいいのかわからないけど、<lf>
-とにかく良かったわ！
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 198, tag8 9
-/[label(ルーティ)]
-………おねえ…ちゃん
-の……ド……ジ。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-うっ…、<lf>
-ごめんなさい……。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-ほかの患者さんの迷惑になりますから、<lf>
-名前を呼ばれるまで、<lf>
-席に座っていて下さい。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-ＨＥＩＧＨＴ：　１６３ｃｍ<lf>
-ＷＥＩＧＨＴ：　　４８ｋｇ<lf>
-対象の健康状態　　良好
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 323, tag8 6
-/[label(シオン)]
-やだ、少し太ったかしら…。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-ＨＥＩＧＨＴ：　１６７ｃｍ<lf>
-ＷＥＩＧＨＴ：　　９２ｋｇ<lf>
-対象の健康状態　　ふとりすぎ
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
+#dup(6): <lf>
+말을……<lf>
+#dup(29): 할 수 있게 됐구나！
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(22): /[label(루티)]
+#dup(28): ……응．
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(26): /[label(시온)]
+그래，다행이다……<lf>
+이제 괜찮은 거지！？
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(22): /[label(루티)]
+#dup(30): 응．<lf>
+……고……마워．<lf>
+언니……
+#dup(6): <lf>
+이거……
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(26): /[label(시온)]
+#dup(20): 어？<lf>
+나한테 주는 선물？<lf>
+고마워，소중히 간직할게！
+#dup(18): /[waitkey(64)]/[clear()]
+#dup(22): /[label(루티)]
+#dup(30): 응．<lf>
+다시……
+같이 놀자！
+#dup(12): /[waitkey(64)]/[close()]
+#dup(22): /[label(루티)]
+언니……<lf>
+다시……<lf>
+같이 놀아 줘．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+우와，<lf>
+굉장한 꼴이 됐네．
+#dup(6): <lf>
+이게 아리아드네 플라워일 리는……
+#dup(12): /[waitkey(64)]/[close()]
+#dup(22): /[label(루티)]
+………（도리도리）
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+없나．<lf>
+그야 그렇겠지！
+#dup(6): <lf>
+비료가 좀 안 좋았나 보네……
+#dup(12): /[waitkey(64)]/[close()]
+#dup(22): /[label(루티)]
+………이…… 꽃……<lf>
+……싫……어．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+아！？
+#dup(6): <lf>
+……말을<lf>
+#dup(29): 할 수 있게 됐구나！
+#dup(12): /[waitkey(64)]/[close()]
+#dup(22): /[label(루티)]
+………이……건<lf>
+……무……서……워．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+음……<lf>
+기뻐해야 할지 모르겠지만<lf>
+아무튼 다행이야！
+#dup(12): /[waitkey(64)]/[close()]
+#dup(22): /[label(루티)]
+………언……니
+……바……보．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+윽……<lf>
+미안해……
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+다른 환자들에게 방해가 되니<lf>
+이름을 부를 때까지<lf>
+자리에 앉아 계세요．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+#dup(31): 신장：　１６３ｃｍ<lf>
+#dup(32): 체중：　　４８ｋｇ<lf>
+#dup(33): 건강　상태：　양호
+#dup(12): /[waitkey(64)]/[close()]
+#dup(26): /[label(시온)]
+이런，살이 좀 쪘나……
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+신장：　１６７ｃｍ<lf>
+체중：　　９２ｋｇ<lf>
+건강　상태：과체중
+#dup(12): /[waitkey(64)]/[close()]
 /[label(ＫＯＳ−ＭＯＳ)]
-# dup_of: line 199, tag8 27
-………。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-ＨＥＩＧＨＴ：　１６９ｃｍ<lf>
-ＷＥＩＧＨＴ：　　５３ｋｇ<lf>
-# dup_of: line 513, tag8 254
-対象の健康状態　　良好
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-/[label(ケイオス)]
-まぁ、こんなもんかな。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-ＨＥＩＧＨＴ：　１４１ｃｍ<lf>
-ＷＥＩＧＨＴ：　　３６ｋｇ<lf>
-# dup_of: line 513, tag8 254
-対象の健康状態　　良好
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-/[label(モモ)]
-あ、健康だ！<lf>
-モモ、うれしいです！
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-ＨＥＩＧＨＴ：　１９１ｃｍ<lf>
-ＷＥＩＧＨＴ：　　計測不能<lf>
-対象の健康状態　　不明
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-/[label(ジギー)]
-当然だな。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-ＨＥＩＧＨＴ：　１４０ｃｍ<lf>
-ＷＥＩＧＨＴ：　　３８ｋｇ<lf>
-# dup_of: line 513, tag8 254
-対象の健康状態　　良好
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
+#dup(23): ………．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+신장：　１６９ｃｍ<lf>
+체중：　　５３ｋｇ<lf>
+#dup(33): 건강　상태：　양호
+#dup(12): /[waitkey(64)]/[close()]
+/[label(케이오스)]
+뭐，이 정도면 됐나．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+신장：　１４１ｃｍ<lf>
+체중：　　３６ｋｇ<lf>
+#dup(33): 건강　상태：　양호
+#dup(12): /[waitkey(64)]/[close()]
+/[label(모모)]
+아，건강하대요！<lf>
+모모 기뻐요！
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+신장：　１９１ｃｍ<lf>
+체중：　측정　불가<lf>
+건강　상태：　불명
+#dup(12): /[waitkey(64)]/[close()]
+/[label(지기)]
+당연하지．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+신장：　１４０ｃｍ<lf>
+체중：　　３８ｋｇ<lf>
+#dup(33): 건강　상태：　양호
+#dup(12): /[waitkey(64)]/[close()]
 /[label(Ｊｒ．)]
-ちぇっ、くだらねぇ。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-# dup_of: line 511, tag8 309
-ＨＥＩＧＨＴ：　１６３ｃｍ<lf>
-# dup_of: line 512, tag8 317
-ＷＥＩＧＨＴ：　　４８ｋｇ<lf>
-# dup_of: line 513, tag8 254
-対象の健康状態　　良好
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-# dup_of: line 199, tag8 27
-………。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-シオン宛に<lf>
-メールが届いてるよ！！
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-あら、<lf>
-大丈夫かい？
-# dup_of: line 5, tag8 12
-/[waitkey(1)]/[clear()]
-かなり疲れてるようだけど。<lf>
-良かったら治療していくかい？<lf>
-遠慮する事はないよ、<lf>
-ここは病院なんだからさ。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-じゃ、ちょっと待ってな。<lf>
-すぐ、楽にしてあげるよ。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 4
-/[label()]
-# dup_of: line 102, tag8 170
-なんだい、<lf>
-本当にいいのかい？<lf>
-やせ我慢は体に毒だよ。
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-ＨＰ・ＥＰが回復した！！
-# dup_of: line 15, tag8 14
-/[waitkey(64)]/[close()]
-メールを見る<lf>メールを見ない
-治療する<lf>治療しない
+쳇，시시하네．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+#dup(31): 신장：　１６３ｃｍ<lf>
+#dup(32): 체중：　　４８ｋｇ<lf>
+#dup(33): 건강　상태：　양호
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+#dup(23): ………．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+시온 앞으로<lf>
+메일이 도착했어！！
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+어머，<lf>
+괜찮니？
+#dup(5): /[waitkey(1)]/[clear()]
+상당히 지친 것 같은데．<lf>
+괜찮다면 치료받고 갈래？<lf>
+사양할 것 없어，<lf>
+여긴 병원이니까．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+그럼 잠깐 기다리렴．<lf>
+금방 편하게 해 줄게．
+#dup(12): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
+#dup(19): 뭐야，<lf>
+정말로 괜찮겠니？<lf>
+억지로 버티는 건 몸에 해로워．
+#dup(12): /[waitkey(64)]/[close()]
+ＨＰ・ＥＰ가 회복됐다！！
+#dup(12): /[waitkey(64)]/[close()]
+메일을 본다<lf>메일을 보지 않는다
+치료한다<lf>치료하지 않는다
 enterd : /[$0]
 entrance: /[$0]
-Talk_npc1
-Talk_npc2
-Talk_npc3
-Talk_npc4
-Talk_npc5
-Talk_npc6
-Talk_npc7
-Talk_npc8
-Talk_npc10
-Talk_npc11
-# dup_of: line 595, tag8 15
-Talk_npc1
-# dup_of: line 596, tag8 18
-Talk_npc2
-# dup_of: line 597, tag8 19
-Talk_npc3
-# dup_of: line 598, tag8 20
-Talk_npc4
-# dup_of: line 599, tag8 21
-Talk_npc5
-# dup_of: line 600, tag8 22
-Talk_npc6
-# dup_of: line 601, tag8 23
-Talk_npc7
-# dup_of: line 602, tag8 24
-Talk_npc8
-# dup_of: line 603, tag8 16
-Talk_npc10
-# dup_of: line 604, tag8 17
-Talk_npc11
-# dup_of: line 595, tag8 15
-Talk_npc1
-# dup_of: line 596, tag8 18
-Talk_npc2
-# dup_of: line 596, tag8 18
-Talk_npc2
-# dup_of: line 596, tag8 18
-Talk_npc2
-# dup_of: line 593, tag8 25
-enterd : /[$0]
-# dup_of: line 594, tag8 26
-entrance: /[$0]
-# dup_of: line 439, tag8 199
-もう、大丈夫だね！
-# dup_of: line 595, tag8 15
-Talk_npc1
-# dup_of: line 596, tag8 18
-Talk_npc2
-# dup_of: line 539, tag8 8
-/[label(モモ)]
-# dup_of: line 597, tag8 19
-Talk_npc3
-# dup_of: line 598, tag8 20
-Talk_npc4
-# dup_of: line 599, tag8 21
-Talk_npc5
-# dup_of: line 600, tag8 22
-Talk_npc6
-# dup_of: line 601, tag8 23
-Talk_npc7
-# dup_of: line 602, tag8 24
-Talk_npc8
-# dup_of: line 603, tag8 16
-Talk_npc10
-# dup_of: line 604, tag8 17
-Talk_npc11
-# dup_of: line 595, tag8 15
-Talk_npc1
-# dup_of: line 596, tag8 18
-Talk_npc2
-# dup_of: line 597, tag8 19
-Talk_npc3
-# dup_of: line 598, tag8 20
-Talk_npc4
-# dup_of: line 599, tag8 21
-Talk_npc5
-# dup_of: line 600, tag8 22
-Talk_npc6
-# dup_of: line 601, tag8 23
-Talk_npc7
-# dup_of: line 602, tag8 24
-Talk_npc8
-# dup_of: line 603, tag8 16
-Talk_npc10
-# dup_of: line 604, tag8 17
-Talk_npc11
-# dup_of: line 516, tag8 208
-やだ、少し太ったかしら…。
-# dup_of: line 595, tag8 15
-Talk_npc1
-# dup_of: line 596, tag8 18
-Talk_npc2
-# dup_of: line 597, tag8 19
-Talk_npc3
-# dup_of: line 598, tag8 20
-Talk_npc4
-# dup_of: line 599, tag8 21
-Talk_npc5
-# dup_of: line 600, tag8 22
-Talk_npc6
-# dup_of: line 601, tag8 23
-Talk_npc7
-# dup_of: line 602, tag8 24
-Talk_npc8
-# dup_of: line 603, tag8 16
-Talk_npc10
-# dup_of: line 604, tag8 17
-Talk_npc11

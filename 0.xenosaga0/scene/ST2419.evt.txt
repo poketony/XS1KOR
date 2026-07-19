@@ -1,30 +1,25 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x8e8 cnum=458 total=16
 # bc_map: 13,0,6,5,0,11,14,0,15,0,4,4,4,1,12,9,8,10,3,7,2,7
 鍵が掛かっている。
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 「←森<lf>
 　→教会」
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 時空のゆがみがあります。
 飛び込みますか？
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ＥＶＳ【環境シミュレーター】を終了します。
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
-lo:0
-# dup_of: line 11, tag8 4
-lo:0
-# dup_of: line 11, tag8 4
-lo:0
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): lo:0
+#dup(2): lo:0
+#dup(2): lo:0
 enterd : /[$0]
 森２【MC_KAS17】・３
 教会内部【MC_KAS06】・１
 イベント3025
 教会内部【MC_KAS06】・２
 evsExitをコールしました
-はい<lf>いいえ
+#dup(3): はい<lf>いいえ
 entrance: /[$0]
-# dup_of: line 20, tag8 7
-はい<lf>いいえ
+#dup(3): はい<lf>いいえ

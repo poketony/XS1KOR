@@ -1,56 +1,43 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x64 cnum=239 total=1
 # bc_map: 0
 内部進入
 
 # chunk 4 @ 0x1b90 cnum=833 total=32
-# bc_map: 20,2,18,2,1,24,25,16,2,1,14,2,1,26,25,16,2,1,15,2,0,21,2,25,27,29,28,22,23,31,30,22,23,5,6,7,3,19,4,8,10,9,11,12,13,17
+# bc_map: 20,2,18,2,1,24,25,16,2,1,14,2,1,26,25,16,2,1,15,2,0,21,2,27,29,28,22,23,31,30,22,23,5,6,7,3,19,4,8,10,9,12,13,17
+# bc_unmap: 11
 ボタンがあります。押してみますか？
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 エレベーターを作動させますか？
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-/[label(モモ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(モモ)]
 具合が良くないので、<lf>
-戦いのメンバーから外してください。<lf>
-お願いします。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 1
-/[label(モモ)]
+#dup(3): 戦いのメンバーから外してください。<lf>
+#dup(4): お願いします。
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(モモ)]
 あの…、
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 1
-/[label(モモ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(モモ)]
 私、具合が良くないので、<lf>
-# dup_of: line 7, tag8 25
-戦いのメンバーから外してください。<lf>
-# dup_of: line 8, tag8 16
-お願いします。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 1
-/[label(モモ)]
+#dup(3): 戦いのメンバーから外してください。<lf>
+#dup(4): お願いします。
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label(モモ)]
 ええ……。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(シオン)]
 モモちゃん、大丈夫？
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 25
-戦いのメンバーから外してください。<lf>
+#dup(1): /[waitkey(64)]/[close()]
 第１の塔クリアボタン
 第２の塔クリアボタン
 第２の塔エレベータ
-上
-下
+#dup(5): 上
+#dup(6): 下
 第３の塔クリアボタン
 第３の塔エレベータ
-# dup_of: line 28, tag8 22
-上
-# dup_of: line 29, tag8 23
-下
+#dup(5): 上
+#dup(6): 下
 5 第２の塔エレベータ下
 7 第２の塔エレベータ上
 9
@@ -60,7 +47,6 @@
 enterd : /[$0]
 entrance: /[$0]
 entrance: /[#1]
-idle
 super_getFlags: /[#1]
 super_setFlags: /[#1]
 はい<lf>いいえ

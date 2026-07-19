@@ -1,167 +1,131 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x710 cnum=814 total=109
-# bc_map: 65,64,85,0,84,86,1,57,81,0,53,107,73,1,72,26,0,24,0,28,61,1,104,108,0,88,0,22,106,1,58,103,0,74,94,1,42,41,79,0,52,93,1,30,0,46,66,47,1,48,49,0,19,71,87,1,25,59,0,62,31,1,105,76,0,97,32,1,27,51,0,98,68,1,50,67,77,0,21,75,83,1,36,0,23,37,0,18,56,1,69,54,55,0,38,89,45,1,35,0,34,101,0,91,80,70,1,63,100,0,40,102,1,20,60,0,99,1,92,78,0,96,44,1,90,39,95,29,33,82,43,1,60,16,17,13,14,11,12,15,2,3,4,5,6,7,8,9,16,17,13,14,11,12,15,64,2,3,4,5,6,7,8,9,10
+# bc_map: 65,64,85,0,84,86,1,57,81,0,53,107,73,1,72,26,0,24,0,28,61,1,104,108,0,88,0,22,106,1,58,103,0,74,94,1,42,41,79,0,52,93,1,30,0,46,66,47,1,48,49,0,19,71,87,1,25,59,0,62,31,1,105,76,0,97,32,1,27,51,0,98,68,1,50,67,77,0,21,75,83,1,36,0,23,37,0,18,56,1,69,54,55,0,38,89,45,1,35,0,34,101,0,91,80,70,1,63,100,0,40,102,1,20,60,0,99,1,92,78,0,96,44,1,90,39,95,29,33,82,43,1,16,17
+# bc_unmap: 2,3,4,5,6,7,8,9,10,11,12,13,14,15
 住民の救助活動は終了したのですが、<lf>
 今度はファウンデーションの<lf>
 復興作業の準備です。
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 当分の間<lf>
 忙しい日が続きそうです……。
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ファウンデーションの人たちも<lf>
 大分落ち着きを取り戻してきました。
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 デュランダルの事は私たちに任せて、<lf>
 Ｊｒ．様はＪｒ．様のすべき事に<lf>
 全身全霊を注いで下さい！！
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 先ほどエルザの船長が<lf>
 あなたがたを探してましたよ！！
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 『出発するなら早くしろ！！ 』って、
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 あの方、乱暴ですけど<lf>
 ボクは好きですね……。
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ！！<lf>
 Ｊｒ．様？
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 手伝いをしに来てくれたんですか？
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 ……って、そんな訳無いですよね？<lf>
 Ｊｒ．様は他にやる事があるでしょ！？
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ファウンデーションの復興作業も<lf>
 随分進んでるみたいですねぇ。
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 再びあの華やかな街並みが見れる事を<lf>
 楽しみにしています。
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ちび様！<lf>
 ちび様のおかげで医療スタッフが
 増員されました！！
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 ガイナン理事とあなたには<lf>
 本当に感謝しています。
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 おいおい、また騒ぎかい？
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 まったく、この艦に関わってると<lf>
 体がいくつあっても<lf>
 もたねぇな！？
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 よう！！ちび様！！<lf>
 アンタ、いつも事件の中心人物だな！？
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 ……けどよ、<lf>
 俺はそんなアンタを<lf>
 応援してるぜ！！
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 あ、あの、すみません！<lf>
 ファンクラブの入会なら待って下さい。
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 今は……、あの、その……。<lf>
 おばちゃんの買い物の途中なんです！！
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 Ｊｒ．様〜！！<lf>
 助けてください！！
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 私、このままじゃ、あのおばちゃんに<lf>
 こき使われっぱなしですよ！
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 あの、レアリエンの男の子<lf>
 カワイイわぁ……。
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 私の言う事<lf>
 何でも聞いてくれちゃうの！！
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 オイラ分かったんだ！！<lf>
 体力なんていくらつけたって、<lf>
 化物の前じゃ無力なんだよ！！
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 ……その点、ガキは無邪気だね、<lf>
 力があれば何とかなるって<lf>
 張り切ってるよ！！
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 この艦の人達は本当に親切ですよ。
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 ……私の様な年寄りには<lf>
 この艦は広すぎますね。
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 ……ああ、<lf>
 ファウンデーションに帰りたいです。
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 何をしているかって？<lf>
 トレーニングじゃよ、<lf>
 トレーニング！！
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 こんなに広い艦だと、<lf>
 散歩ですらちょっとしたトレーニングに<lf>
 なってしまうんじゃ！！
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 この艦に来てから新しい発見ばかりです！！
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 この自動販売機で売っているものも<lf>
 見た事の無い物だらけ！！
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 最近、自販機とかを<lf>
 壊しまくっている人がいるそうだけど、<lf>
 信じられないわ！！
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 今度、バケモノがきたら、<lf>
 絶対にボクが退治してやるんだ！！
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 その為には<lf>
 身体を鍛えとかなくちゃね！！
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ……この『Ｓキャロットジュース』って、<lf>
 ホントにおいしいのかなぁ？？
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 私ニンジン嫌いだからなぁ……。
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 最近は道に迷う人が多くて<lf>
 困ります。
-# dup_of: line 4, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 確かにこんな大きな艦は<lf>
 どこに行っても見当たらないですからね。
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 最初はデュランダルが<lf>
 ざわついてて、<lf>
 正直言って嫌だったんですけど、<lf>
@@ -169,55 +133,6 @@
 この人達が<lf>
 帰ったときの事を考えると<lf>
 ちょっと寂しいですね……。
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
-# dup_of: line 115, tag8 60
-ホントにおいしいのかなぁ？？
+#dup(2): /[waitkey(64)]/[close()]
 enterd : /[$0]
 entrance: /[$0]
-TalkNPC3a
-TalkNPC4a
-TalkNPC1a
-TalkNPC2a
-TalkNPC5a
-TalkNPC06
-TalkNPC07
-TalkNPC08
-TalkNPC09
-TalkNPC10
-TalkNPC11
-TalkNPC12
-TalkNPC13
-# dup_of: line 134, tag8 16
-enterd : /[$0]
-# dup_of: line 135, tag8 17
-entrance: /[$0]
-# dup_of: line 136, tag8 13
-TalkNPC3a
-# dup_of: line 137, tag8 14
-TalkNPC4a
-# dup_of: line 138, tag8 11
-TalkNPC1a
-# dup_of: line 139, tag8 12
-TalkNPC2a
-# dup_of: line 140, tag8 15
-TalkNPC5a
-# dup_of: line 2, tag8 64
-今度はファウンデーションの<lf>
-# dup_of: line 141, tag8 2
-TalkNPC06
-# dup_of: line 142, tag8 3
-TalkNPC07
-# dup_of: line 143, tag8 4
-TalkNPC08
-# dup_of: line 144, tag8 5
-TalkNPC09
-# dup_of: line 145, tag8 6
-TalkNPC10
-# dup_of: line 146, tag8 7
-TalkNPC11
-# dup_of: line 147, tag8 8
-TalkNPC12
-# dup_of: line 148, tag8 9
-TalkNPC13
-TalkNPC14

@@ -1,0 +1,133 @@
+# think_patch extract: think057.bin.ori
+# 총 26개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x1A(condition) flag=0x00 offset=0x0038
+x\x09
+\x12
+<<<
+
+>>> [001] op=0x1A(condition) flag=0x00 offset=0x0042
+x\x09
+\x12
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x02E0
+　エーテル防御力復活　
+（エアッド使用後の一時低下）
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x06E2
+　エアッド　　Ｅ
+
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x0742
+　ビームサーベル　　Ｐ／Ｂ
+
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x076A
+アルベド
+「弱い！弱すぎるぞ！おまえ！
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x0798
+アルベド
+「次で殺しちまうかもな？
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x07CA
+アルベド
+「さあ〜、
+　もっと俺を楽しませてくれ
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x081C
+　サイコハンド　　Ｐ／Ｓ
+　　슬로
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x084C
+　サイコハンド　　Ｐ
+
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x09B6
+変身
+<<<
+
+>>> [011] op=0x21(display) flag=0x00 offset=0x0B40
+　ウェイバーソニック　　Ｅ／Ｓ
+　　슬로
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x0B9C
+　라이트닝ブラスト　　Ｅ
+
+<<<
+
+>>> [013] op=0x21(display) flag=0x00 offset=0x0C18
+　スペクトラウェーブ　　Ｓ
+　　エーテルボム
+<<<
+
+>>> [014] op=0x21(display) flag=0x00 offset=0x0C7C
+　リプレスフォース　　Ｓ
+　　攻撃封鎖
+<<<
+
+>>> [015] op=0x21(display) flag=0x00 offset=0x0CE6
+　ドーズパワー　　Ｓ
+パイロット睡眠
+<<<
+
+>>> [016] op=0x21(display) flag=0x00 offset=0x0D4A
+　パワースペル　　Ｓ
+　　物理攻撃力アップ
+<<<
+
+>>> [017] op=0x21(display) flag=0x00 offset=0x0DB4
+　クイックアップ　　Ｓ
+　　スピード２５
+<<<
+
+>>> [018] op=0x21(display) flag=0x00 offset=0x0DFA
+対ステータスシールド低下
+ステータス攻撃が有効
+<<<
+
+>>> [019] op=0x21(display) flag=0x00 offset=0x0FB2
+　カオスアロー　Ｅ／Ｓ
+　　혼란
+<<<
+
+>>> [020] op=0x21(display) flag=0x00 offset=0x1004
+　サウザンドストーム　　Ｅ
+
+<<<
+
+>>> [021] op=0x21(display) flag=0x00 offset=0x106A
+　フレアウイング　　Ｓ
+　　アンチヴェール
+<<<
+
+>>> [022] op=0x21(display) flag=0x00 offset=0x10E4
+　シャドーウイング　　Ｓ
+　　駆動機関停止
+<<<
+
+>>> [023] op=0x21(display) flag=0x00 offset=0x1152
+　シャドーウイング　　Ｓ
+　　ストップ
+<<<
+
+>>> [024] op=0x21(display) flag=0x00 offset=0x119A
+対ステータスシールド低下
+ステータス攻撃が有効
+<<<
+
+>>> [025] op=0x21(display) flag=0x00 offset=0x11D6
+　『로스트』の影響で発動不可能
+<<<

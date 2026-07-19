@@ -1,0 +1,67 @@
+# chunk 15 @ 0x22f4 cnum=715 total=65
+# bc_map: 12,13,3,10,11,14,41,42,9,4,6,5,8,7,19,17,21,63,53,44,20,43,60,22,39,0,55,45,23,33,64,24,40,61,25,56,34,54,26,1,47,27,35,51,59,15,28,2,29,36,57,16,50,46,62,30,49,58,31,37,48,32,38,52,18
+Xenvmainthreadmain
+Xenvplaythread
+Event Out
+XEVEFLAG:EV03041_F
+XEVEJNAME:SCE03039C
+__chracter_splne
+ring_L
+ring_R
+FLSshion_h.fpk
+FLSallen.fpk
+FLSjr_h.fpk
+FLSgaignun_h.fpk
+FLSshelley.fpk
+FLSmary.fpk
+c03s41cut01.cam
+amanogawa
+c03s41cut01bshelley_mae
+連邦艦隊　再び本艦を包囲しています
+もう　こんな時に何を考えてるのよ
+shion_serifu_01
+c03s41cut01b.cam
+shely_serifu_01b
+理由が判りました<lf>グノーシス群の動きを御覧下さい
+c03s41cut02.cam
+main_moni_on
+C03S41CUT03ASHELLEY_mae
+グノーシスが<lf>本コロニーを中心に発生しています
+shion_serifu_06_07
+c03s41cut03a.cam
+gaiun_serifu_03a
+隔離格納庫のゾハルは
+c03s41cut03b.cam
+mary_serifu_03b
+眠ってます<lf>/[ruby(活動阻止装置/アトラクト・インヒビター)]の出力も正常
+c03s41cut04.cam
+デュランダル内のゾハルが<lf>グノーシスを呼んでいないとすると──
+gaiun_serifu_04
+ガイナン──<lf>さっきから聞こえているこれ　そうだよな──
+c03s41cut05.cam
+C03S41CUT06_07SHION_mae
+ああ　微弱ではあるが　間違いない<lf>皆には聞こえていないみたいだが──
+c03s41cut06_07.cam
+light_change_cut06_07
+ねえ　何か聞こえてこない<lf>歌──かしら──これ
+歌──ですか
+allen_serifu_06_07
+c03s41cut08.cam
+C03S41CUT09_10_10AJR_mae
+c03s41cut09_10_10a.cam
+light_change_cut09_10
+何も聞こえないですよ<lf>気のせいじゃないんですか
+allen_serifu_09_10
+そうかしら──<lf>たしかに聞こえるんだけどな──
+shion_serifu_09_10
+聞こえているのか<lf>シオンには
+c03s41cut11a.cam
+しかし　この不安感はなんだ
+先ほどからずっと脳裏を離れない<lf>このイメージは──
+c03s41cut11b_12.cam
+light_change_cut11B_12
+お前もか　俺もだ<lf>暗闇に引きずり込まれるようなこの感覚──
+c03s41cut13_14.cam
+light_change_cut13_14
+まさか──
+bura_down

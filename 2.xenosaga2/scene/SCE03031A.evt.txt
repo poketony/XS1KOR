@@ -1,0 +1,399 @@
+# chunk 12 @ 0xdc4 cnum=2313 total=397
+# bc_map: 252,188,224,92,20,97,22,99,85,98,288,364,375,374,291,290,287,286,356,358,357,87,94,95,88,89,90,91,96,93,361,292,299,316,333,350,351,352,353,354,355,293,294,295,296,297,298,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,289,285,359,363,377,378,379,380,381,382,383,384,385,386,232,233,234,235,236,237,238,239,240,241,284,387,388,389,390,391,392,393,394,395,396,242,243,244,245,246,247,248,249,250,251,86,19,21,100,120,135,136,118,119,82,83,80,81,148,101,126,125,149,14,218,77,79,76,75,280,141,102,137,124,17,219,78,143,220,144,16,214,138,215,139,216,140,217,142,23,260,74,263,198,73,112,106,133,230,231,107,113,114,161,162,121,122,116,115,18,146,145,123,104,105,108,109,15,202,203,204,205,117,111,69,70,71,159,191,266,262,160,192,267,261,0,1,3,4,7,8,9,10,12,24,27,28,30,31,32,33,35,36,38,39,40,41,43,44,46,47,48,49,51,52,54,55,56,57,59,60,63,64,66,67,68,72,84,157,129,127,128,130,134,103,150,360,376,373,370,366,371,283,369,362,368,282,372,367,365,281,58,131,132,45,151,50,152,155,156,6,11,268,165,164,269,163,158,166,182,189,199,29,25,26,37,42,34,256,255,180,258,185,212,213,273,254,257,186,190,253,278,207,208,206,53,279,183,226,227,274,178,179,228,225,61,181,147,176,173,194,5,195,177,175,193,174,2,272,275,65,62,201,200,277,265,197,187,184,276,264,196,270,110,259,153,154,13,167,271,223,222,209,210,211,229,168,169,170,171,172,221
+msg_clear_thread
+eventmovie/
+lightSPL_main
+CaptureMODE ---Particle(pic)
+*********Capture Start!!!*****************
+CaptureMode = /[$0]
+*********CaptureTool Standby*****************
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+キャプチャモード
+全画面
+ＢＧのみ（ＺＰＩＣなし）
+ＢＧのみ（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+オブジェ単体（ＺＰＩＣあり）
+テキスト（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣあり）
+CaptureMODE ---All Screen.
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---SoftImage BG(pic+zpic)
+CaptureMODE ---Chr(pic)
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---TXT(pic)
+CaptureMODE ---Particle(pic+zpic)
+ページ切り替え
+キャラ０
+キャラ１
+キャラ２
+キャラ３
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラのみキャプチャ
+オブジェのみキャプチャ
+フォルダ選択
+企画サイドのフォルダを使用する
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（たけなか）
+ｍｏｖｉｅ０４（なかむら）
+ｍｏｖｉｅ０５（いけうち）
+ｍｏｖｉｅ０６（いけうち）
+ｍｏｖｉｅ０７（ふち）
+ｍｏｖｉｅ０８（ふち）
+ｍｏｖｉｅ０９（保存）
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+エフェクトサイドのフォルダを使用する
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（おの７６５）
+ｍｏｖｉｅ１７（うなかみ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+*********Capture End.*****************
+*********Capture Waiting...*****************
+ColorScreen  SetMode No.1
+Layer = /[$0]
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode No.1-------end
+ColorScreen  SetMode No.2
+Layer番号 = /[$0]
+Layer枚数 = /[$0]
+ScreenColor SetMode No.2-------end
+*************ColorScreen Printout No.1*************
+int ColorScreenParam[] = {
+0,
+1,
+/[$1],
+/[$0],
+};
+Runtime.setDefocus(15, 1, ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], 1, ColorScreenParam);
+Layer not exist.
+*************ColorScreen Printout_temae*************
+int[] test_param0 = {
+0, 
+Runtime.setDefocus(15, 2, test_param0);
+int[] test_param1 = {
+Runtime.setDefocus(15, 3, test_param1);
+*************ColorScreen PrintoutNo.2*************
+int ColorScreenParam12[] = {
+Runtime.setDefocus(12, 1, ColorScreenParam12);
+int ColorScreenParam13[] = {
+Runtime.setDefocus(13, 1, ColorScreenParam13);
+int ColorScreenParam14[] = {
+Runtime.setDefocus(14, 1, ColorScreenParam14);
+int ColorScreenParam15[] = {
+Runtime.setDefocus(15, 1, ColorScreenParam15);
+*********ManualCamera Replay*********
+pos[] ={
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+Facechk...
+F-/[$0]
+No Face!!!
+mouth close.
+mouth open.
+F-/[$0]/[$2] frame(/[$1])
+Facechk...end.
+Focus SetMode
+alpha_percent-/[#0]
+alpha_set-/[#0]
+Layer = Back
+Layer = Before
+Focus delta = /[$0](back)
+Focus SetMode-------end
+*************Focus Printout*************
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+End(TimeOver).
+Event Out
+FLSgaignun.fpk
+FLSjr.fpk
+*************ColorScreen Printout*************
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+Gnochk...
+FLSshelley.fpk
+--alpha--
+--filter--
+--ref_alpha--
+alpha max!!
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+  /[#0]f,/[#1]f
+  /[#0]f,/[#1]f,
+  /[#0]f,/[#1]f,/[#2]f,/[#3]f,
+  /[#0]fnc,/[#1]fnc,
+ b = /[$1];
+ c = /[$2];
+ e = /[$3];
+ f = /[$4];
+!!__wait_loop_flag_________off!!
+*********Timechk Standby*****************
+-------------* ColorScreenSet_No.2() *-----------
+-------------* Debugprint5() *-----------
+-------------* ManualCam_play_sub()end *-----------
+-------------* ManualCam_play_sub()start *-----------
+-------------* ManualCam_record()end *-----------
+-------------* ManualCam_record()start *-----------
+-------------* Objchk_Keychk_srv_mtn()start *-----------
+-------------* chr_look_end *-----------
+-------------* look_eye()end *-----------
+-------------* look_eye()start *-----------
+-------------* map_look_end *-----------
+-------------* map_look_start *-----------
+-------------* point_light()start *-----------
+------------/[$0]フレームの増加です。
+------------MPの速度を変更します(/[$0]-/[$1])x/[#2]
+------------MP速度変更は正常に終了しました。
+------------カット/[$1]が（/[$2]→/[$0]）フレームに変更。
+----------シーンは/[$0]フレームでした。
+----------シーンを開始します。
+--------fov--------
+--------rotate--------
+--------trans--------
+-------PATH_UP
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])(RealTotal = /[$3])
+----SPL_LINEAR
+---PATH_DOWN---
+---PATH_SPLINE
+---PATH_SPLINE---
+---SPL_CARDINAL---
+---SPL_LINEAR---
+--SPL_CARDINAL
+--shake--
+Cancel!!
+[/[$0]:/[$1]:/[$2]]
+ManualCamera not Recorded.
+ManualCam_record.
+ManualCamera MOVE to start.
+ManualCameraRecord START!!!
+Record /[$0]
+End(Button).
+Time = /[$0]
+ヘルマー
+ＫＯＳ−ＭＯＳの深層領域記録は<lf>今日　検証されたよ
+連邦艦隊も帰投の準備に入っている
+第二ミルチア政府　および<lf>クーカイ・ファウンデーションに対する嫌疑も
+明日正式に取り下げられる
+良く切り抜けたな
+そちらの助力があってこそだ
+礼を言う
+ミズラヒの百式
+相当重要な存在らしいな
+そうだ
+連中がこのまま静観しているとも思えん
+用心して欲しい
+承知している
+さて―――<lf>次はどう出てくる気か―――
+-----PATH_DOWN
+Mtn Frame = /[$0]
+Mtn no = /[$0]
+------------/[$0]フレームの減少です。
+Timechk_main
+----------シーンは終了しました。
+Timerchk_srv_main
+Xenvmainthreadmain
+Xenvplaythread
+ a = /[$0];
+ g = /[$5];
+sokge_per = /[#0]f;
+bure_py_flag = /[$0];
+bure_py_flag = /[#0]
+sokge_per---------------(/[#0])
+b---------------(/[#0])
+a---------------(/[#0])
+c---------------(/[#0])
+e---------------(/[#0])
+f---------------(/[#0])
+g---------------(/[#0])
+-------------* Gnochk(gold) *-----------
+-------------* ColorScreenSet() *-----------
+-------------* ColorScreenSet()_temae *-----------
+-------------* chr_look_start *-----------
+-------------* point_light()end *-----------
+-------------* Objchk_Keychk_srv_mtn()end *-----------
+objtool---------------------------scl
+objtool---------------------------ido
+camtool---------------------------cam
+one_scale-----------------/[#0]
+etc.setScale(/[#0]f,/[#1]f,/[#2]f);
+gold_number-------------------(/[#0])
+haba -----------------/[#0]
+takasa ---------------/[#1]
+noudo ----------------/[#2]
+one_scale ------------/[#3]
+etc.setScale(/[#4]f,/[#5]f,/[#6]f);
+f_speed--------------------------------------------------(/[#0])
+non_move_view-/[#1]|cap-/[#2]
+view-/[#1]|cap-/[#2]
+gold-no-/[#0]|view-/[#1]|cap-/[#2]
+gold-unit-no-/[#0]|view-/[#1]|cap-/[#2]
+gold-eft-no-/[#0]|view-/[#1]|cap-/[#2]
+--------plus_one_write--------
+write-/[#0]|now-/[#1]|cap-/[#2]
+erase-/[#1]|now-/[#1]|cap-/[#2]
+live-normal-cam
+live-normal-human
+time-/[#0]
+cam_time_tani++(/[#0])
+cam_time_tani--(/[#0])
+live-pretty-cam
+live-human-pretty-cam
+---PATH_LINEAR
+change-/[#1]|now-/[#1]|cap-/[#2]
+STCam.setFov(/[#0]f);
+cam1.setFov(/[#0]f);
+cam0.setFov(/[#0]f);
+float pos00[] = {
+  /[#0]fnc,/[#1]fnc,/[#2]fnc,/[#3]fnc,
+float rot00[] = {
+cam1.transSPL(pos00, SPL_CARDINAL);
+cam1.rotateSPL(rot00, SPL_CARDINAL);
+float fov00[] = {
+cam1.fovSPL(fov00, SPL_CARDINAL);
+  /[#0]f,/[#1]f,/[#2]f,/[#3]f
+t_no_change-/[#0]-/[#1]/[#2]-/[#3]
+time_change-/[#0]-/[#1]/[#2]-/[#3]
+---PATH_UP---
+---PATH_LINEAR---
+gaignun.setTranslate(/[#0]fnc,/[#1]fnc,/[#2]fnc);
+gaignun.setRotate(/[#3]fnc,/[#4]fnc,/[#5]fnc);
+trans----/[#0]fnc,/[#1]fnc,/[#2]fnc
+rotate---/[#3]fnc,/[#4]fnc,/[#5]fnc
+fov------/[#6]fnc
+etc.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+etc.setRotate(/[#3]f,/[#4]f,/[#5]f);
+trans----/[#0]f,/[#1]f,/[#2]f
+rotate---/[#3]f,/[#4]f,/[#5]f
+fov------/[#6]f
+speed--------------------------------------------------(/[#0])
+FLSmary.fpk
+parts_nomber---------------(/[#0])
+XEVEFLAG:EV03031_F
+XEVEJNAME:SCE03031B
+!!__wait_loop_flag_________on!!
+c03s31acut01.cam
+spl
+lightSPL start.
+lightSPL end.
+gold.look_eye_set(/[#0]f,/[#1]f);
+gold.look_eye_speed(/[#2]f);
+gold.look_speed(/[#2]f);
+map_nomber---------------(/[#0])
+c03s31acut02.cam
+c03s31acut03.cam
+c03s31acut04.cam
+c03s31acut05.cam
+c03s31acut06.cam
+light.setGlobalPointLightCol( 0, /[#0]f,/[#1]f,/[#2]f);

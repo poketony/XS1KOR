@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-xeno_evt.py  -  Xenosaga Episode 1 EVT / class 텍스트 추출·재조립 (v4 duplicate-safe)
+xeno_evt.py  -  Xenosaga Episode 1 EVT / class 텍스트 추출·재조립 (v5 precise-code)
 
 사용법:
   python xeno_evt.py <file.evt>            추출 → <file.evt>.txt  (바이트코드 실행 순서)
@@ -22,11 +22,12 @@ import struct, sys, os, json, re
 
 CAFEBABE   = b'\xca\xfe\xba\xbe'
 CONST_LENS = {5:8, 6:8, 7:2, 8:2, 16:2}
+DUP_MARKER_RE = re.compile(r'^(?:/\[dup\([^)]+\)\]|#dup\([^)]+\): ?)')
 
 def tag_len(tag): return CONST_LENS.get(tag, 4)
 
 # Java bytecode operand lengths. Variable-length switch instructions and wide
-# are handled separately in iter_ldc_refs().
+# are handled separately in iter_instructions().
 OP_LEN = {
     0x10: 2, 0x11: 3, 0x12: 2, 0x13: 3, 0x14: 3,
     0x15: 2, 0x16: 2, 0x17: 2, 0x18: 2, 0x19: 2,
@@ -41,42 +42,65 @@ OP_LEN = {
     0xc8: 5, 0xc9: 5,
 }
 
-def iter_ldc_refs(code):
-    """Yield 0-based constant-pool indexes referenced by ldc/ldc_w in code."""
+NON_TEXT_STRING_CALLS = {
+    ('xeno/Chr', 'talkto', '(Ljava/lang/String;)V'),
+    ('xeno/Chr', 'touchto', '(Ljava/lang/String;)V'),
+    ('xeno/Unit', 'start', '(ILjava/lang/Object;)V'),
+    ('xeno/Chr', 'start', '(ILjava/lang/Object;)V'),
+    ('xeno/vm/Thread', 'create',
+     '(Ljava/lang/Object;Ljava/lang/String;)Lxeno/vm/Thread;'),
+}
+
+def iter_instructions(code):
+    """Yield (pc, opcode, 0-based CP index) at real instruction boundaries."""
     i = 0
     n = len(code)
     while i < n:
         op = code[i]
+        cp_index = None
         if op == 0x12 and i + 1 < n:
-            yield code[i+1] - 1
-            i += 2
+            cp_index = code[i+1] - 1
+            size = 2
         elif op in (0x13, 0x14) and i + 2 < n:
-            yield struct.unpack_from('>H', code, i+1)[0] - 1
-            i += 3
+            cp_index = struct.unpack_from('>H', code, i+1)[0] - 1
+            size = 3
+        elif op in (0xb6, 0xb7, 0xb8, 0xb9) and i + 2 < n:
+            cp_index = struct.unpack_from('>H', code, i+1)[0] - 1
+            size = OP_LEN[op]
         elif op == 0xaa:  # tableswitch
             j = i + 1
-            while (j - i) % 4:
+            # JVM switch padding is aligned from the start of code[], not from
+            # the switch opcode itself.
+            while j % 4:
                 j += 1
             if j + 12 > n:
                 break
             low = struct.unpack_from('>i', code, j+4)[0]
             high = struct.unpack_from('>i', code, j+8)[0]
-            count = max(0, high - low + 1)
-            i = j + 12 + count * 4
+            if high < low:
+                break
+            count = high - low + 1
+            size = j + 12 + count * 4 - i
         elif op == 0xab:  # lookupswitch
             j = i + 1
-            while (j - i) % 4:
+            while j % 4:
                 j += 1
             if j + 8 > n:
                 break
             npairs = struct.unpack_from('>i', code, j+4)[0]
-            i = j + 8 + max(0, npairs) * 8
+            if npairs < 0:
+                break
+            size = j + 8 + npairs * 8 - i
         elif op == 0xc4:  # wide
             if i + 1 >= n:
                 break
-            i += 6 if code[i+1] == 0x84 else 4
+            size = 6 if code[i+1] == 0x84 else 4
         else:
-            i += OP_LEN.get(op, 1)
+            size = OP_LEN.get(op, 1)
+        yield i, op, cp_index
+        if size <= 0 or i + size > n:
+            break
+        i += size
 
 def code_blocks_from_rest(rest, pool):
     """Extract Code attribute bytecode blocks from the class body."""
@@ -160,9 +184,11 @@ def to_fullwidth(s):
             result.append(''.join(converted))
     return ''.join(result)
 
-def visible_text_length(s):
+def visible_text_width(s):
     """
-    게임 화면에 실제로 보이는 글자 수를 대략 계산한다.
+    게임 화면에 실제로 보이는 텍스트 폭을 계산한다.
+
+    현재 SLPS 기준으로 1바이트 문자는 16px, 그 외 문자는 20px이다.
 
     제외 대상:
       - /[font(...)] 같은 제어 태그
@@ -170,11 +196,12 @@ def visible_text_length(s):
       - 그 외 /[...] 형태 제어 태그
     """
     visible = re.sub(r'/\[[^\]]*\]', '', s)
-    return len(visible), visible
+    width = sum(16 if ord(c) < 0x80 else 20 for c in visible)
+    return width, visible
 
-def warn_long_visual_lines(s, limit=23, context=''):
+def warn_long_visual_lines(s, limit=420, context=''):
     """
-    <lf> 기준 표시 행별 글자 수가 limit를 초과하면 경고를 출력한다.
+    <lf> 기준 표시 행별 누적 폭이 limit에 도달하거나 넘으면 경고를 출력한다.
 
     주의:
       - 이 검사는 process_sub_tag() 이후 결과를 기준으로 한다.
@@ -182,10 +209,10 @@ def warn_long_visual_lines(s, limit=23, context=''):
       - [raw]는 태그만 제거된 원문 기준으로 검사한다.
     """
     for line_no, part in enumerate(s.split('<lf>'), start=1):
-        length, visible = visible_text_length(part)
-        if length > limit:
+        width, visible = visible_text_width(part)
+        if width >= limit:
             label = f" {context}" if context else ""
-            print(f"  [경고]{label} 표시행 {line_no}: {length}글자 > {limit}글자")
+            print(f"  [경고]{label} 표시행 {line_no}: {width}px >= {limit}px")
             print(f"         {visible}")
 
 
@@ -255,123 +282,54 @@ def parse(chunk):
             entries.append((8, str_idx)); tag8_order.append(str_idx)
         else:
             tl = tag_len(tag)
-            entries.append((tag, chunk[p:p+tl])); p+=tl
-            pool_all[i] = (tag, None)
+            raw = chunk[p:p+tl]; p+=tl
+            entries.append((tag, raw))
+            pool_all[i] = (tag, raw)
     rest = chunk[p:]
+
+    def method_signature(cidx):
+        entry = pool_all.get(cidx)
+        if not entry or entry[0] not in (10, 11) or len(entry[1]) < 4:
+            return None
+        class_idx, name_type_idx = struct.unpack('>HH', entry[1][:4])
+        class_entry = pool_all.get(class_idx - 1)
+        name_type_entry = pool_all.get(name_type_idx - 1)
+        if (not class_entry or class_entry[0] != 7 or len(class_entry[1]) < 2
+                or not name_type_entry or name_type_entry[0] != 12
+                or len(name_type_entry[1]) < 4):
+            return None
+        class_name_idx = struct.unpack('>H', class_entry[1][:2])[0] - 1
+        method_name_idx, descriptor_idx = struct.unpack('>HH', name_type_entry[1][:4])
+        owner = decode(pool.get(class_name_idx, b''))
+        name = decode(pool.get(method_name_idx - 1, b''))
+        descriptor = decode(pool.get(descriptor_idx - 1, b''))
+        return owner, name, descriptor
 
     def collect_precise_order():
         # Code attribute의 실제 bytecode만 명령 길이에 맞춰 해석한다.
-        # v3: 같은 tag8/string이 여러 번 호출되면 그 occurrence를 모두 보존한다.
+        # 같은 tag8/string이 여러 번 호출되면 그 occurrence를 모두 보존한다.
         order = []
         for code in code_blocks_from_rest(rest, pool):
-            for cidx in iter_ldc_refs(code):
+            instructions = list(iter_instructions(code))
+            for index, (_, op, cidx) in enumerate(instructions):
+                if op not in (0x12, 0x13) or cidx is None:
+                    continue
                 e = pool_all.get(cidx)
                 if e and e[0] == 8 and cidx in tag8_cp_to_k:
+                    if index + 1 < len(instructions):
+                        _, next_op, next_cp = instructions[index + 1]
+                        if (next_op in (0xb6, 0xb7, 0xb8, 0xb9)
+                                and method_signature(next_cp) in NON_TEXT_STRING_CALLS):
+                            continue
                     tag8_k = tag8_cp_to_k[cidx]
                     stridx = e[1]
                     if stridx in pool:
                         order.append(tag8_k)
         return order
 
-    def collect_legacy_order():
-        # 구버전 방식: class body 전체를 바이트 단위로 훑는다.
-        # v3: 기존에 구버전에서 잡히던 occurrence도 제거하지 않는다.
-        order = []
-        i = 0
-        while i < len(rest):
-            op = rest[i]
-            if op == 0x12 and i+1 < len(rest):
-                cidx = rest[i+1]-1; i+=2
-            elif op == 0x13 and i+2 < len(rest):
-                cidx = struct.unpack_from('>H',rest,i+1)[0]-1; i+=3
-            else:
-                i+=1; continue
-            e = pool_all.get(cidx)
-            if e and e[0] == 8 and cidx in tag8_cp_to_k:
-                tag8_k = tag8_cp_to_k[cidx]
-                stridx = e[1]
-                if stridx in pool:
-                    order.append(tag8_k)
-        return order
-
-    def is_subsequence(needle, haystack):
-        j = 0
-        for x in haystack:
-            if j < len(needle) and x == needle[j]:
-                j += 1
-        return j == len(needle)
-
-    def merge_preserve_legacy(precise, legacy):
-        # 목적:
-        #   1) precise-only: 구버전 누락을 추가한다.
-        #   2) legacy-only: 기존 추출 txt에 있던 occurrence를 제거하지 않는다.
-        #   3) duplicate occurrence: 같은 tag8이 여러 번 호출되면 여러 줄로 유지한다.
-        #
-        # 대부분의 경우 legacy는 precise의 부분수열이므로 precise를 그대로 쓰면 된다.
-        # 그렇지 않은 경우에만 legacy occurrence를 보수적으로 끼워 넣는다.
-        if not legacy:
-            return list(precise)
-        if not precise:
-            return list(legacy)
-        if is_subsequence(legacy, precise):
-            return list(precise)
-
-        merged = list(precise)
-        used = [False] * len(merged)
-        missing = []
-
-        # legacy occurrence를 precise occurrence에 순서대로 매칭한다.
-        pos = 0
-        for li, x in enumerate(legacy):
-            found = None
-            for mi in range(pos, len(merged)):
-                if (not used[mi]) and merged[mi] == x:
-                    found = mi
-                    break
-            if found is not None:
-                used[found] = True
-                pos = found + 1
-            else:
-                missing.append((li, x))
-
-        # 매칭되지 않은 legacy occurrence를 주변 legacy anchor 기준으로 삽입한다.
-        for li, x in missing:
-            prev_anchor_pos = None
-            for prev_li in range(li-1, -1, -1):
-                y = legacy[prev_li]
-                for mi in range(len(merged)-1, -1, -1):
-                    if merged[mi] == y:
-                        prev_anchor_pos = mi
-                        break
-                if prev_anchor_pos is not None:
-                    break
-
-            next_anchor_pos = None
-            for next_li in range(li+1, len(legacy)):
-                y = legacy[next_li]
-                for mi in range(0, len(merged)):
-                    if merged[mi] == y:
-                        next_anchor_pos = mi
-                        break
-                if next_anchor_pos is not None:
-                    break
-
-            if prev_anchor_pos is not None:
-                merged.insert(prev_anchor_pos + 1, x)
-            elif next_anchor_pos is not None:
-                merged.insert(next_anchor_pos, x)
-            else:
-                merged.append(x)
-        return merged
-
-    precise_order = collect_precise_order()
-    legacy_order  = collect_legacy_order()
-
-    # 비표준 class-like 청크에서 Code attribute 파싱이 실패하면 legacy 그대로 사용.
-    if precise_order:
-        bc_to_tag8k = merge_preserve_legacy(precise_order, legacy_order)
-    else:
-        bc_to_tag8k = legacy_order
+    # JVM이 실행하는 Code 속성의 실제 ldc/ldc_w 참조만 사용한다.
+    # LineNumberTable 등 class 속성 데이터는 명령어가 아니다.
+    bc_to_tag8k = collect_precise_order()
 
     # tag8에만 있고 바이트코드에 없는 항목 (원본 유지 대상)
     bc_tag8_set = set(bc_to_tag8k)
@@ -400,38 +358,30 @@ def get_strings_bc_order(p):
     return [decode(pool[p['tag8_order'][k]]).replace('\n','<lf>')
             for k in p['bc_to_tag8k']]
 
-def get_bc_order_lines_with_duplicate_notes(p):
-    """추출용 라인 생성. 중복 occurrence를 comment로 표시한다.
-
-    comment는 rebuild 시 무시되므로 본문 줄 수와 bc_map은 유지된다.
-    - dup_of: 같은 tag8_k가 다시 호출된 경우. 실제 같은 원문 풀 항목을 공유한다.
-    - same_text_as: 텍스트는 같지만 tag8_k가 다른 경우. 독립 항목일 수 있다.
-    """
-    lines = []
-    first_tag8_line = {}
-    first_text_line = {}
-    for out_i, tag8_k in enumerate(p['bc_to_tag8k'], start=1):
-        text = decode(p['pool'][p['tag8_order'][tag8_k]]).replace('\n','<lf>')
-        notes = []
-        if tag8_k in first_tag8_line:
-            notes.append(f"dup_of: line {first_tag8_line[tag8_k]}, tag8 {tag8_k}")
-        elif text in first_text_line:
-            prev_line, prev_tag8 = first_text_line[text]
-            notes.append(f"same_text_as: line {prev_line}, tag8 {prev_tag8}")
-        for note in notes:
-            lines.append(f"# {note}")
-        lines.append(text)
-        first_tag8_line.setdefault(tag8_k, out_i)
-        first_text_line.setdefault(text, (out_i, tag8_k))
-    return lines
-
 def get_strings_tag8_order(p):
     """tag8 선언 순서로 문자열 반환 (레거시)."""
     return [decode(p['pool'][i]).replace('\n','<lf>')
             for i in p['tag8_order'] if i in p['pool']]
 
+def add_inline_duplicate_markers(lines, body_indexes):
+    """Prefix every member of repeated text with the same metadata label."""
+    counts = {}
+    for index in body_indexes:
+        text = lines[index]
+        counts[text] = counts.get(text, 0) + 1
+    groups = {}
+    next_group = 1
+    for index in body_indexes:
+        text = lines[index]
+        if counts[text] < 2:
+            continue
+        if text not in groups:
+            groups[text] = next_group
+            next_group += 1
+        lines[index] = f"#dup({groups[text]}): {text}"
+
 # ── 재조립 ───────────────────────────────────────────────────────────────────
-def rebuild(p, new_strs_bc, tbl, bc_to_tag8k=None):
+def rebuild(p, new_strs_bc, tbl, bc_to_tag8k=None, source_lines=None, source_name=None):
     """
     new_strs_bc: 바이트코드 순서 문자열 목록
     내부적으로 tag8 선언 순서로 재매핑해서 패치.
@@ -454,7 +404,11 @@ def rebuild(p, new_strs_bc, tbl, bc_to_tag8k=None):
             new_raw = orig_raw
         else:
             processed = process_sub_tag(new_str)
-            warn_long_visual_lines(processed, 23, f"bc {n}")
+            if source_name and source_lines and n < len(source_lines):
+                context = f"{source_name}:{source_lines[n]}"
+            else:
+                context = f"bc {n}"
+            warn_long_visual_lines(processed, context=context)
             s = apply_table(processed.replace('<lf>','\n'), tbl)
             try:    enc = s.encode('euc_jis_2004')
             except: enc = s.encode('euc_jis_2004', errors='replace')
@@ -519,6 +473,7 @@ def fl00_write(data, toc, patches):
 def data_to_lines(data):
     """FL00/class 파일에서 바이트코드 순서로 텍스트 추출."""
     lines = []
+    body_indexes = []
     if data[:4] == b'FL00':
         toc = fl00_toc(data)
         if not toc: return []
@@ -527,7 +482,7 @@ def data_to_lines(data):
             if cnum==0: continue
             p = parse(data[off:off+sz])
             if not p: continue
-            body_lines = get_bc_order_lines_with_duplicate_notes(p)
+            body_lines = get_strings_bc_order(p)
             if body_lines:
                 # 헤더에 매핑 정보 삽입
                 bc_map   = ','.join(map(str, p['bc_to_tag8k']))
@@ -537,36 +492,46 @@ def data_to_lines(data):
                 lines.append(f"# bc_map: {bc_map}")
                 if unmapped:
                     lines.append(f"# bc_unmap: {unmapped}")
-                lines.extend(body_lines)
+                for text in body_lines:
+                    body_indexes.append(len(lines))
+                    lines.append(text)
                 lines.append("")
     elif data[:4] == CAFEBABE:
         p = parse(data)
-        if p: lines.extend(get_bc_order_lines_with_duplicate_notes(p))
+        if p:
+            for text in get_strings_bc_order(p):
+                body_indexes.append(len(lines))
+                lines.append(text)
+    add_inline_duplicate_markers(lines, body_indexes)
     return lines
 
 # ── txt 파싱 ─────────────────────────────────────────────────────────────────
 def parse_txt(lines):
     """
-    반환: {chunk_index: {'strs': [...], 'bc_map': [...], 'unmapped': [...], 'total': int}}
+    반환: {chunk_index: {'strs': [...], 'line_nos': [...], 'bc_map': [...],
+                         'unmapped': [...], 'total': int}}
     bc_map/unmapped가 없으면 레거시(tag8 순서) 모드로 처리.
     """
     chunks = {}
     cur_ci = None
-    cur_strs = []; cur_bc_map = None; cur_unmapped = []; cur_total = None
+    cur_strs = []; cur_line_nos = []
+    cur_bc_map = None; cur_unmapped = []; cur_total = None
 
     def flush():
         if cur_ci is not None:
             chunks[cur_ci] = {
                 'strs': cur_strs,
+                'line_nos': cur_line_nos,
                 'bc_map': cur_bc_map,
                 'unmapped': cur_unmapped,
                 'total': cur_total,
             }
 
-    for line in lines:
+    for file_line_no, line in enumerate(lines, start=1):
         if line.startswith('# chunk '):
             flush()
-            cur_strs=[]; cur_bc_map=None; cur_unmapped=[]; cur_total=None
+            cur_strs=[]; cur_line_nos=[]
+            cur_bc_map=None; cur_unmapped=[]; cur_total=None
             parts = line.split()
             try:    cur_ci = int(parts[2])
             except: cur_ci = None
@@ -576,26 +541,38 @@ def parse_txt(lines):
                     try: cur_total = int(part.split('=')[1])
                     except: pass
         elif line.startswith('# bc_map:'):
-            cur_bc_map = list(map(int, line.split(':',1)[1].strip().split(',')))
+            s = line.split(':',1)[1].strip()
+            cur_bc_map = list(map(int, s.split(','))) if s else []
         elif line.startswith('# bc_unmap:'):
             s = line.split(':',1)[1].strip()
             cur_unmapped = list(map(int, s.split(','))) if s else []
-        elif line.startswith('# '):
-            # dup_of / same_text_as 같은 추출 주석은 rebuild에서 무시한다.
+        elif (
+            line.startswith('# dup_of:')
+            or line.startswith('# same_text_as:')
+            or line.startswith('# extraction_order:')
+        ):
+            # 추출기가 생성한 주석만 무시한다. 그 밖의 # 시작 행은 실제 문자열이다.
             continue
         elif line == '':
             continue
         else:
-            cur_strs.append(line)
+            cur_strs.append(DUP_MARKER_RE.sub('', line, count=1))
+            cur_line_nos.append(file_line_no)
     flush()
 
     # 헤더 없는 단독 .class 케이스
     if not chunks and cur_strs:
-        chunks[None] = {'strs': cur_strs, 'bc_map': None, 'unmapped': [], 'total': None}
+        chunks[None] = {
+            'strs': cur_strs,
+            'line_nos': cur_line_nos,
+            'bc_map': None,
+            'unmapped': [],
+            'total': None,
+        }
     return chunks
 
 # ── 패치 적용 ─────────────────────────────────────────────────────────────────
-def apply_patches(data, chunks, tbl):
+def apply_patches(data, chunks, tbl, source_name=None):
     if data[:4] == b'FL00':
         toc = fl00_toc(data)
         if not toc: print("FL00 TOC 파싱 실패"); return None
@@ -608,6 +585,7 @@ def apply_patches(data, chunks, tbl):
             if not p: print(f"  [건너뜀] 청크 {ci}: 파싱 실패"); continue
 
             strs    = chunk_data['strs']
+            line_nos = chunk_data.get('line_nos', [])
             bc_map  = chunk_data['bc_map']
 
             if bc_map is not None:
@@ -617,7 +595,7 @@ def apply_patches(data, chunks, tbl):
                 expected = len(bc_map)
                 if len(strs) != expected:
                     print(f"  [오류] 청크 {ci}: 바이트코드 항목 {expected}개 ≠ txt {len(strs)}줄"); continue
-                rb = rebuild(p, strs, tbl, bc_map)
+                rb = rebuild(p, strs, tbl, bc_map, line_nos, source_name)
             else:
                 # 레거시: tag8 선언 순서
                 expected = len(p['tag8_order'])
@@ -629,7 +607,11 @@ def apply_patches(data, chunks, tbl):
                     orig_raw = p['pool'].get(str_pool_idx, b'')
                     has_null = orig_raw.endswith(b'\x00')
                     processed = process_sub_tag(new_str)
-                    warn_long_visual_lines(processed, 23, f"tag8 {k}")
+                    if source_name and k < len(line_nos):
+                        context = f"{source_name}:{line_nos[k]}"
+                    else:
+                        context = f"tag8 {k}"
+                    warn_long_visual_lines(processed, context=context)
                     s = apply_table(processed.replace('<lf>','\n'), tbl)
                     try:    enc = s.encode('euc_jis_2004')
                     except: enc = s.encode('euc_jis_2004', errors='replace')
@@ -653,15 +635,17 @@ def apply_patches(data, chunks, tbl):
     elif data[:4] == CAFEBABE:
         cd = chunks.get(None, chunks.get(0, {}))
         strs = cd.get('strs', [])
+        line_nos = cd.get('line_nos', [])
         bc_map = cd.get('bc_map')
         p = parse(data)
         if not p: return None
         if bc_map is not None:
-            rb = rebuild(p, strs, tbl, bc_map)
+            rb = rebuild(p, strs, tbl, bc_map, line_nos, source_name)
         else:
             if len(strs) != len(p['tag8_order']):
                 print(f"[오류] tag8 {len(p['tag8_order'])}개 ≠ txt {len(strs)}줄"); return None
-            rb = rebuild(p, strs, tbl)  # fallback
+            rb = rebuild(p, strs, tbl, source_lines=line_nos,
+                         source_name=source_name)  # fallback
         return rb
     print(f"알 수 없는 포맷: {data[:4].hex()}"); return None
 
@@ -681,6 +665,7 @@ def do_extract(evt_path):
     data = open(evt_path,'rb').read()
     lines = data_to_lines(data)
     if not lines: print("추출된 문자열 없음"); return
+    lines.insert(0, '# extraction_order: precise_code_v4')
     out_path = evt_path + '.txt'
     open(out_path,'w',encoding='utf-8').write('\n'.join(lines))
     n = len([l for l in lines if l and not l.startswith('#')])
@@ -697,7 +682,7 @@ def do_rebuild(evt_path, txt_path, map_path=None):
         print(f"치환 테이블: {found}  ({len(tbl)}개)")
     else:
         print("치환 테이블 없음")
-    out = apply_patches(data, chunks, tbl)
+    out = apply_patches(data, chunks, tbl, os.path.basename(txt_path))
     if out is None: return
     out_path = evt_path + '.new'
     open(out_path,'wb').write(out)

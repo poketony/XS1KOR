@@ -1,163 +1,122 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x64 cnum=190 total=4
-# bc_map: 0,3,2,1
+# bc_map: 0,3
+# bc_unmap: 1,2
 22222222222222222222222222222222222222222222222222222
 【揚陸待機エリア】
-Nobi
-Chijimi
 
 # chunk 4 @ 0x1080 cnum=887 total=91
-# bc_map: 86,4,21,4,25,4,19,4,23,4,22,4,85,4,28,38,59,3,84,49,4,75,4,17,53,80,4,46,78,4,26,50,55,4,38,56,4,51,66,3,79,4,43,67,87,4,27,62,72,3,32,68,4,65,29,3,39,48,3,76,88,4,16,3,37,31,90,4,89,4,0,4,33,81,63,3,40,4,54,45,3,57,4,36,1,3,71,44,3,82,52,4,30,58,3,42,70,4,35,41,4,54,45,3,57,4,74,73,4,18,69,34,77,83,47,60,4,2,61,4,2,64,4,24,4,43,7,5,20,14,15,9,11,13,10,12,13,6
-# bc_unmap: 8
+# bc_map: 86,4,21,4,25,4,19,4,23,4,22,4,85,4,28,38,59,3,84,49,4,75,4,17,53,80,4,46,78,4,26,50,55,4,38,56,4,51,66,3,79,4,43,67,87,4,27,62,72,3,32,68,4,65,29,3,39,48,3,76,88,4,16,3,37,31,90,4,89,4,0,4,33,81,63,3,40,4,54,45,3,57,4,36,1,3,71,44,3,82,52,4,30,58,3,42,70,4,35,41,4,54,45,3,57,4,74,73,4,18,69,34,77,83,47,60,4,2,61,4,2,64,4,24,4,20,8,14,15
+# bc_unmap: 5,6,7,9,10,11,12,13
 移動先の入力をお願いします。
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【パークエリア】に移動します。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【隔離格納庫エリア】に移動します。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【ドックエリア】に移動します。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【居住エリア】に移動します。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【ブリッジエリア】に移動します。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 あぁ、ちび様ぁ〜！<lf>
-この/[font(Ａ．Ｇ．Ｗ．Ｓ．)]、<lf>
+#dup(2): この/[font(Ａ．Ｇ．Ｗ．Ｓ．)]、<lf>
 もう少し大事に扱って下さいよぉ……。
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 直しても、すぐ壊されるんじゃ、<lf>
 たまったもんじゃありませんよぉ〜！！
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 少しは、私らの事も考えて下さいよぉ〜！！
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ……まったくよぉ。<lf>
 ちび様の操縦は荒っぽいからなぁ……。<lf>
 最新鋭の/[font(Ａ．Ｇ．Ｗ．Ｓ．)]もボロボロだよぉ〜。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 そのくせ、すぐに直せだの、<lf>
 手を抜くなだのうるさいしなぁ〜。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 あ、ちび様また出番ですか？<lf>
 だったら、<lf>
 ほかの/[font(Ａ．Ｇ．Ｗ．Ｓ．)]を使って下さい。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 16, tag8 38
-この/[font(Ａ．Ｇ．Ｗ．Ｓ．)]、<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): この/[font(Ａ．Ｇ．Ｗ．Ｓ．)]、<lf>
 まだ動かせる状態じゃないんですよ！
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ちび様が/[font(Ａ．Ｇ．Ｗ．Ｓ．)]を使うときは、<lf>
 ヤバイ調査とかが多いからね。
-# dup_of: line 18, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 整備するほうも、気合入れないとね。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ご苦労様です！<lf>
 今のところこの武器庫には<lf>
 誰一人通しておりません！
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 あ、ちび様？<lf>
 ダメっスよ！！<lf>
 勝手に武器を持ち出されちゃあ……。
-# dup_of: line 18, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 いっつも<lf>
 俺が怒られんスから！！
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ホラホラ！！<lf>
 あっち行って！！
-# dup_of: line 18, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 この中は危険な武器やら何やらが<lf>
 たくさん入ってんだ！！
-# dup_of: line 18, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 怪我したくなかったら<lf>
 近づかない事だな！！
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ……なんだ？<lf>
-# dup_of: line 18, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ここは武器庫だ。<lf>
 あんた達客人には<lf>
 関係の無い場所だよ。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 鍵がかかっている。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[color(0x329bbe)]武器庫の鍵/[color(0xffffff)]を使った。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 いや〜どうしてこう、<lf>
 次から次へと<lf>
 ドンパチを起こすのかね？
-# dup_of: line 18, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 これじゃ、整備が追いつかねぇ〜よ。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
-ちび様！ちび様の/[font(Ａ．Ｇ．Ｗ．Ｓ．)]<lf>
-せっかく直したんですからね〜！
-# dup_of: line 18, tag8 3
-/[waitkey(1)]/[clear()]
-もう、簡単に壊さないで下さいよぉ。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): ちび様！ちび様の/[font(Ａ．Ｇ．Ｗ．Ｓ．)]<lf>
+#dup(5): せっかく直したんですからね〜！
+#dup(3): /[waitkey(1)]/[clear()]
+#dup(6): もう、簡単に壊さないで下さいよぉ。
+#dup(1): /[waitkey(64)]/[close()]
 ここには、あなた達の乗る<lf>
 /[font(Ａ．Ｇ．Ｗ．Ｓ．)]はありませんよ。
-# dup_of: line 18, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 動かせるものは<lf>
 すべて出払ってますから。
-# dup_of: line 18, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 残ってるのは、<lf>
 ちび様が壊したものばかりですよ。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 あれ、ちび様の/[font(Ａ．Ｇ．Ｗ．Ｓ．)]は<lf>
 もうここにはありませんよ。
-# dup_of: line 18, tag8 3
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ご自分の/[font(Ａ．Ｇ．Ｗ．Ｓ．)]カプセルに<lf>
 入れてあるんじゃないんですか？
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 くそ、戻ってきてもすぐ出撃だぁ〜<lf>
 これじゃ、直すヒマなんかありゃしねえ。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 79, tag8 54
-ちび様！ちび様の/[font(Ａ．Ｇ．Ｗ．Ｓ．)]<lf>
-# dup_of: line 80, tag8 45
-せっかく直したんですからね〜！
-# dup_of: line 18, tag8 3
-/[waitkey(1)]/[clear()]
-# dup_of: line 82, tag8 57
-もう、簡単に壊さないで下さいよぉ。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): ちび様！ちび様の/[font(Ａ．Ｇ．Ｗ．Ｓ．)]<lf>
+#dup(5): せっかく直したんですからね〜！
+#dup(3): /[waitkey(1)]/[clear()]
+#dup(6): もう、簡単に壊さないで下さいよぉ。
+#dup(1): /[waitkey(64)]/[close()]
 外の戦闘はかなり激しくなってます。<lf>
 十分気をつけて下さい。
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ……実を言うとですね。<lf>
 俺は/[font(Ａ．Ｇ．Ｗ．Ｓ．)]の１体や２体<lf>
 おシャカになっても構わないんですよ。<lf>
@@ -165,32 +124,16 @@ Chijimi
 無事に帰還される。<lf>
 その代償が俺達の整備した/[font(Ａ．Ｇ．Ｗ．Ｓ．)]だったら<lf>
 やすいモンじゃないですか！？<lf>
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
-/[label(仮人)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(7): /[label(仮人)]
 クーカイ前です。【仮】
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 118, tag8 2
-/[label(仮人)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(7): /[label(仮人)]
 ネピリムの歌声前です。【仮】
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【揚陸待機エリア駅】
-# dup_of: line 2, tag8 4
-/[waitkey(64)]/[close()]
-# dup_of: line 43, tag8 43
-ご苦労様です！<lf>
-Nobi
-Chijimi
+#dup(1): /[waitkey(64)]/[close()]
 【パークエリア】<lf>【隔離格納庫エリア】<lf>【ドックエリア】<lf>【居住エリア】<lf>【ブリッジエリア】<lf>　キャンセル
+PPPPPPPPPPPPPPPPPPPPPPP
 enterd : /[$0]
 entrance: /[$0]
-TalkNPC1
-TalkNPC2
-TalkNPC3
-TalkNPC1a
-TalkNPC2a
-# dup_of: line 134, tag8 13
-TalkNPC3
-Evt

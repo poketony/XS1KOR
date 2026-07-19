@@ -1,5 +1,7 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0xc6c cnum=559 total=13
-# bc_map: 0,1,10,2,3,4,5,6,7,12,8,9,11
+# bc_map: 0,1,10,2,3,4,5,6,7,12,8,11
+# bc_unmap: 9
 EOB:0
 EOB_Escape
 lo:0
@@ -11,5 +13,4 @@ broken:5
 enterd : /[$0]
 イベント3020a - 3021
 entrance: /[$0]
-idle
 はい<lf>いいえ

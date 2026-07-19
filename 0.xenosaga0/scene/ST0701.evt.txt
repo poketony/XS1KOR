@@ -1,33 +1,28 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x64 cnum=131 total=2
 # bc_map: 1,0
 13131313131313131313131313131313131313131313
 12121212121212121212121212121212121212121212
 
 # chunk 4 @ 0xdb4 cnum=470 total=18
-# bc_map: 0,11,12,2,10,3,1,15,13,2,17,3,0,9,14,3,7,16,8,5,6,4
-/[label(지기)]
+# bc_map: 0,11,12,2,10,3,1,15,13,2,17,3,0,9,14,3,7,16,8
+# bc_unmap: 4,5,6
+#dup(1): /[label(지기)]
 …우선 브리지까지 가서 이 배의<lf>
 책임자에게 상황을 설명하겠다．
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 …따라와 줄 수 있나？
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 /[label(모모)]
 후훗．<lf>
 아까도 말했잖아요？
-# dup_of: line 4, tag8 2
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 모모는 보기보다 튼튼하다고요．
-# dup_of: line 6, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 0
-/[label(지기)]
+#dup(3): /[waitkey(64)]/[close()]
+#dup(1): /[label(지기)]
 …그랬지．<lf>
 그럼 가자！！
-# dup_of: line 6, tag8 3
-/[waitkey(64)]/[close()]
+#dup(3): /[waitkey(64)]/[close()]
 enterd : /[$0]
 パーティー情報・leader_ziggy,momo,*,*,*,*
 entrance: /[$0]
-TalkNPC2
-TalkNPC3
-Evt

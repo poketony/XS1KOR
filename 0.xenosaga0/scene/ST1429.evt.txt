@@ -1,12 +1,12 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0xbe4 cnum=529 total=8
-# bc_map: 7,0,6,4,4,1,2,3,5
+# bc_map: 7,0,6,4,4,1,2,5
+# bc_unmap: 3
 自動車のような形をしている。
 /[waitkey(64)]/[close()]
 イベント2050:アリアドネショッピングモールじゃないの？
-lo:0
-# dup_of: line 4, tag8 4
-lo:0
+#dup(1): lo:0
+#dup(1): lo:0
 enterd : /[$0]
 entrance: /[$0]
-idle
 はい<lf>いいえ

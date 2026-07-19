@@ -24,7 +24,7 @@
 
 >>> [004] op=0x21(display) flag=0x00 offset=0x0206
 　방어　　
-　카운터 부스트 １０％ＵＰ
+　카운터 부스트 １０％ 업
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x02E0

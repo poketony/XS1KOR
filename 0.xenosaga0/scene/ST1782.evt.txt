@@ -1,80 +1,57 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x710 cnum=477 total=36
-# bc_map: 10,14,33,2,9,1,34,35,20,2,16,25,2,19,22,27,1,12,23,32,1,30,26,2,10,14,33,2,9,1,29,15,1,17,11,2,16,25,2,13,31,1,18,28,2,0,24,2,0,21,2,7,8,3,5,4,6
-おう、おう、おう、邪魔だよ、邪魔！<lf>
-こっちは出撃準備で忙しいんだ。<lf>
-話なんかしてる暇ねぇんだよ！
-/[waitkey(64)]/[close()]
-お、ちび艦長。出撃かい？
-/[waitkey(1)]/[clear()]
+# bc_map: 10,14,33,2,9,1,34,35,20,2,16,25,2,19,22,27,1,12,23,32,1,30,26,2,10,14,33,2,9,1,29,15,1,17,11,2,16,25,2,13,31,1,18,28,2,0,24,2,0,21,2,7,8
+# bc_unmap: 3,4,5,6
+#dup(1): おう、おう、おう、邪魔だよ、邪魔！<lf>
+#dup(2): こっちは出撃準備で忙しいんだ。<lf>
+#dup(3): 話なんかしてる暇ねぇんだよ！
+#dup(4): /[waitkey(64)]/[close()]
+#dup(5): お、ちび艦長。出撃かい？
+#dup(6): /[waitkey(1)]/[clear()]
 連邦の奴等に<lf>
 遅れなんか取るんじゃねぇよ！<lf>
 ガツーンといってやれ、ガツーンと！
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
-これより/[font(Ａ．Ｇ．Ｗ．Ｓ．)]が出撃します。<lf>
-危険ですからここから離れて下さい！
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(7): これより/[font(Ａ．Ｇ．Ｗ．Ｓ．)]が出撃します。<lf>
+#dup(8): 危険ですからここから離れて下さい！
+#dup(4): /[waitkey(64)]/[close()]
 ちび様！<lf>
 ファウンデーションに<lf>
 向かわれなくてよろしいのですか？
-# dup_of: line 6, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(6): /[waitkey(1)]/[clear()]
 ここからでは、<lf>
 ファウンデーションの市街区には<lf>
 行けませんよ！
-# dup_of: line 6, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(6): /[waitkey(1)]/[clear()]
 急いでランチ乗り場に<lf>
 向かって下さい！
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 10
-おう、おう、おう、邪魔だよ、邪魔！<lf>
-# dup_of: line 2, tag8 14
-こっちは出撃準備で忙しいんだ。<lf>
-# dup_of: line 3, tag8 33
-話なんかしてる暇ねぇんだよ！
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 9
-お、ちび艦長。出撃かい？
-# dup_of: line 6, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): おう、おう、おう、邪魔だよ、邪魔！<lf>
+#dup(2): こっちは出撃準備で忙しいんだ。<lf>
+#dup(3): 話なんかしてる暇ねぇんだよ！
+#dup(4): /[waitkey(64)]/[close()]
+#dup(5): お、ちび艦長。出撃かい？
+#dup(6): /[waitkey(1)]/[clear()]
 心配すんなよ、<lf>
 この艦は俺達がしっかり守ってやっからよ。
-# dup_of: line 6, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(6): /[waitkey(1)]/[clear()]
 さっさと<lf>
 お姫さんを助けに行ってこいや！
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 11, tag8 16
-これより/[font(Ａ．Ｇ．Ｗ．Ｓ．)]が出撃します。<lf>
-# dup_of: line 12, tag8 25
-危険ですからここから離れて下さい！
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(7): これより/[font(Ａ．Ｇ．Ｗ．Ｓ．)]が出撃します。<lf>
+#dup(8): 危険ですからここから離れて下さい！
+#dup(4): /[waitkey(64)]/[close()]
 ここは大丈夫！<lf>
 我々への心配は無用です！
-# dup_of: line 6, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(6): /[waitkey(1)]/[clear()]
 それよりも、お仲間を助ける事だけに<lf>
 専念なさって下さい！
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
-/[label(仮人)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(9): /[label(仮人)]
 ファウンデーション前です。【仮】
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 46, tag8 0
-/[label(仮人)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(9): /[label(仮人)]
 ネピリムの歌声前です。【仮】
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
+#dup(4): /[waitkey(64)]/[close()]
 enterd : /[$0]
 entrance: /[$0]
-TalkNPC1
-TalkNPC2
-TalkNPC1a
-TalkNPC2a

@@ -1,128 +1,102 @@
+# extraction_order: precise_code_v4
 # chunk 2 @ 0x468 cnum=853 total=83
-# bc_map: 33,3,67,3,48,3,1,17,39,3,1,41,59,69,3,1,24,65,71,3,1,68,58,2,54,34,3,1,27,2,64,80,3,1,42,61,3,1,79,26,28,25,3,1,20,81,2,29,21,0,3,1,18,66,3,1,40,38,60,3,1,82,31,3,1,23,43,19,3,1,44,46,3,52,45,3,52,32,3,53,55,3,1,51,56,3,47,62,15,72,63,74,76,77,78,73,49,75,16,4,47,62,22,35,30,36,70,50,57,15,72,63,74,76,77,78,73,49,16,4,9,10,11,12,13,14,5,6,7,8,37
+# bc_map: 33,3,67,3,48,3,1,17,39,3,1,41,59,69,3,1,24,65,71,3,1,68,58,2,54,34,3,1,27,2,64,80,3,1,42,61,3,1,79,26,28,25,3,1,20,81,2,29,21,0,3,1,18,66,3,1,40,38,60,3,1,82,31,3,1,23,43,19,3,1,44,46,3,52,45,3,52,32,3,53,55,3,1,51,56,3,47,62,22,35,30,36,70,50,57,15,72,63,74,76,77,78,73,49,75,16,37
+# bc_unmap: 4,5,6,7,8,9,10,11,12,13,14
 どこがいいかしら？<lf>
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 探さないでください。<lf>
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 クランクを回しますか？<lf>
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あ〜あ、せっかく荷造り終わったのに…。<lf>
 また一からやり直しだよ〜。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 まったく、<lf>
 何なのよあの気色悪いバケモノは！<lf>
 私達に何の恨みがあるというのさ。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 え？どうしてみんな元気なのかって？<lf>
 当たり前ですよ、<lf>
 落ち込んでいても仕方ないじゃないですか。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 私達って、もともと<lf>
 世間からのあぶれ者の集団でしたからね。
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ツライ事には、<lf>
 なれてるのかもしれませんよね。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 こりゃ、口ではなく手を動かせ！手を！
-# dup_of: line 24, tag8 2
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 大体、荷物を積むより先に、<lf>
 車を治すほうが先じゃろうが！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 まったく、派手にやってくれたもんだよ。<lf>
 元どおりにしなけりゃ寝る事もできないねぇ。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 見ていて下さい。<lf>
 この街は再び生まれ変わります。<lf>
 こんなにみんな頑張ってるんですもの。<lf>
 きっと、素晴らしい街になりますよ。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あーいそがしい！<lf>
 邪魔よ、邪魔！
-# dup_of: line 24, tag8 2
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 こんな状態で観光？<lf>
 いいわねー、暇で…。
 <lf>
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あなたと遊んでる時間はないの！<lf>
 忙しいんだから、どいてくれない？
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 まだ、外ではどんぱちやってるんだろ？<lf>
 まぁ、またここが襲われたって、<lf>
 俺達がすぐに元通りにしちまうけどな。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 隣の地区の方もかなりの被害だったらしいですよ。<lf>
 でも、被害を受けた人達の為に、みんな力を合わせて頑張っているんです。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 えへへ、みんなでお片付けって、楽しいね！<lf>
 みんな一生懸命なんだから、<lf>
 あなたもサボってちゃだめよ。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 よ、さっきはありがとう。<lf>
 アンタらのおかげで、心置きなく仕事ができるぜ。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-セグメント・アドレスＮｏ．１<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): セグメント・アドレスＮｏ．１<lf>
 を発見した。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 74, tag8 52
-セグメント・アドレスＮｏ．１<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): セグメント・アドレスＮｏ．１<lf>
 と表示されている。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 セグメント・アドレスＮｏ．１の<lf>
 デコードを終了します。
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 1
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 シオン宛に<lf>
 メールが届いてるよ！！
-# dup_of: line 2, tag8 3
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 クランク
 回す<lf>回さない<lf>
+うえあげ
+ぬけ
+したさげ
+ぬけぬけ
+自然落下
+サブルート扉見つけた
+メールを見る<lf>メールを見ない
 enterd : /[$0]
 襲撃後外観街２・１
 外マップ
@@ -134,48 +108,4 @@ enterd : /[$0]
 サブルート MC_KUK14
 襲撃後宿屋３Ｆ・３
 entrance: /[$0]
-Talk_npc1
-# dup_of: line 87, tag8 47
-クランク
-# dup_of: line 88, tag8 62
-回す<lf>回さない<lf>
-うえあげ
-ぬけ
-したさげ
-ぬけぬけ
-自然落下
-サブルート扉見つけた
-メールを見る<lf>メールを見ない
-# dup_of: line 89, tag8 15
-enterd : /[$0]
-# dup_of: line 90, tag8 72
-襲撃後外観街２・１
-# dup_of: line 91, tag8 63
-外マップ
-# dup_of: line 92, tag8 74
-襲撃後宿屋１Ｆ・１
-# dup_of: line 93, tag8 76
-襲撃後酒場１Ｆ・１
-# dup_of: line 94, tag8 77
-襲撃後酒場２Ｆ・２
-# dup_of: line 95, tag8 78
-襲撃後酒場２Ｆ・３
-# dup_of: line 96, tag8 73
-襲撃後外観街２・２
-# dup_of: line 97, tag8 49
-サブルート MC_KUK14
-# dup_of: line 99, tag8 16
-entrance: /[$0]
-# dup_of: line 100, tag8 4
-Talk_npc1
-Talk_npc2
-Talk_npc3
-Talk_npc4
-Talk_npc5
-Talk_npc6
-Talk_npc9
-Talk_npc10
-Talk_npc11
-Talk_npc12
-Talk_npc13
 はい<lf>いいえ

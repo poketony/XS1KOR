@@ -1,505 +1,314 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x1748 cnum=1299 total=215
-# bc_map: 140,10,70,111,9,58,164,10,186,160,9,91,51,10,93,114,10,57,60,98,10,156,173,9,210,205,145,10,55,65,9,76,202,9,207,185,10,150,208,162,9,190,126,174,10,5,56,153,72,10,5,69,86,10,3,165,61,9,168,144,10,1,146,9,36,103,201,9,149,37,10,33,134,9,104,10,87,133,49,10,194,128,39,195,75,40,9,135,170,10,80,199,9,89,142,10,79,166,10,66,107,169,10,64,184,10,92,41,163,10,177,62,138,9,59,161,10,82,68,9,178,9,30,29,88,10,197,102,9,90,200,9,42,67,9,77,10,85,137,9,196,9,57,101,10,179,175,9,209,147,212,10,187,113,143,10,81,141,181,9,94,71,10,5,84,9,44,100,10,5,83,44,99,10,5,54,9,136,35,9,32,124,139,10,5,45,183,10,3,115,43,9,189,180,9,148,34,74,10,3,118,108,9,110,120,172,192,10,3,129,213,9,52,10,2,182,106,155,158,9,152,48,10,2,131,121,78,9,105,10,2,0,95,9,167,10,6,127,10,6,123,10,2,125,206,188,9,112,122,191,10,7,119,109,10,3,97,63,157,9,130,10,8,31,9,53,211,171,9,176,204,10,4,159,198,10,7,214,9,47,193,154,10,4,50,203,10,7,116,10,4,27,10,7,28,9,73,151,38,10,4,46,10,117,132,10,96,23,25,26,25,26,25,26,24,12,14,17,18,20,13,21,19,15,16,11,22,96,23,25,26,25,26,25,26,24,67,67,67,67,67,67,12,14,17,18,20,13,21,19,15,67,16,52,67,11,22,150,96
+# bc_map: 140,10,70,111,9,58,164,10,186,160,9,91,51,10,93,114,10,57,60,98,10,156,173,9,210,205,145,10,55,65,9,76,202,9,207,185,10,150,208,162,9,190,126,174,10,5,56,153,72,10,5,69,86,10,3,165,61,9,168,144,10,1,146,9,36,103,201,9,149,37,10,33,134,9,104,10,87,133,49,10,194,128,39,195,75,40,9,135,170,10,80,199,9,89,142,10,79,166,10,66,107,169,10,64,184,10,92,41,163,10,177,62,138,9,59,161,10,82,68,9,178,9,30,29,88,10,197,102,9,90,200,9,42,67,9,77,10,85,137,9,196,9,57,101,10,179,175,9,209,147,212,10,187,113,143,10,81,141,181,9,94,71,10,5,84,9,44,100,10,5,83,44,99,10,5,54,9,136,35,9,32,124,139,10,5,45,183,10,3,115,43,9,189,180,9,148,34,74,10,3,118,108,9,110,120,172,192,10,3,129,213,9,52,10,2,182,106,155,158,9,152,48,10,2,131,121,78,9,105,10,2,0,95,9,167,10,6,127,10,6,123,10,2,125,206,188,9,112,122,191,10,7,119,109,10,3,97,63,157,9,130,10,8,31,9,53,211,171,9,176,204,10,4,159,198,10,7,214,9,47,193,154,10,4,50,203,10,7,116,10,4,27,10,7,28,9,73,151,38,10,4,46,10,117,132,10,96,23,24,96
+# bc_unmap: 11,12,13,14,15,16,17,18,19,20,21,22,25,26
 下に降りますか？
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 すでに、ファウンデーションの各区画から<lf>
 グノーシスによる被害報告が出ています。
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 このままでは被害が拡大する一方です。<lf>
 急いで下さい！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 現在、すべてランチデッキを開放。<lf>
 待避住人の収容を開始しました！
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 でも、数が多すぎて<lf>
 かなり混乱しているようです。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 どういうこと？<lf>
 グノーシスの転移がとまらへん！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-このままじゃ、<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(3): このままじゃ、<lf>
 この宙域がグノーシスで埋まってまうで。<lf>
 はよう、敵を食い止めんと！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 居住区の一つから、<lf>
 救難信号が出ています。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 避難が間に合わず、<lf>
 被害区域に<lf>
 住民が取り残されているようです。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ぐ、グノーシス、<lf>
 さらに転移してきますぅ！
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 たいへんですぅ！<lf>
 艦の周りもグノーシスだらけですぅ！
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 連邦の艦がどんどん<lf>
 沈んでいきますよぉ……。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 周辺宙域のグノーシスは、<lf>
 連邦の艦と/[font(Ａ．Ｇ．Ｗ．Ｓ．)]部隊が<lf>
 応戦しています。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 皆さんは<lf>
 ファウンデーション内に侵入した<lf>
 敵の排除をお願いします！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-/[label(メリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label(メリィ)]
 こないな時こそ、うろたえたらアカンで。<lf>
 大丈夫や。このファウンデーションは、<lf>
 そない簡単に落とされへんて！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 46, tag8 5
-/[label(メリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label(メリィ)]
 すでに/[font(Ａ．Ｇ．Ｗ．Ｓ．)]部隊を発進さしとる、<lf>
 ちび様達は住人の避難を最優先に頼むで！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-/[label(シェリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): /[label(シェリィ)]
 急がなければ、<lf>
 この艦にも敵が侵入してきます！
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 我々が敵を抑えている間に、<lf>
 住人を避難させて下さい！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(アレン)]
 僕はここで住人の収容を手伝います。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 いいですか？<lf>
 みなさんも<lf>
 絶対無茶はしないでくださいよ！
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 危なくなったら、逃げるんですよ！<lf>
 いいですね、絶対ですよ！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 あの、お願いします。<lf>
 モモさんを…お姉様を助けて下さい！
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 よろしくお願いします！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ちび様！ちび様なら<lf>
 モモさんを…
 お姉様を助けられますよね！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 確かに、歪みの中心から<lf>
 プロトタイプ……、<lf>
 いえ、モモさんの反応が<lf>
 確認できるんですが、<lf>
 それ以外にも<lf>
 いくつかの微弱なノイズを感じます。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 モモさん以外にも、私達の姉妹が<lf>
 捕まっているのでしょうか……。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ちび様…あの中、<lf>
 私達の姉妹の反応で満ちています……。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 でも、ほとんどがノイズばかりで、<lf>
 今にも消えてしまいそうなんです……。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ちび様…<lf>
 悲しいって、こういう事なんですか……？
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 しっかり頼むでぇ！<lf>
 ウチらの姉妹の命がかかっとるんや、<lf>
 手ぇ抜いたら承知せぇへんよ！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 さっすがは、ちび様や！<lf>
 気合はいりまくりやね。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 でも、調子に乗ったらアカンで。<lf>
 いっつもガイナン様に<lf>
 怒られとるんやから。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 曙光、ラインの乙女、相転移砲<lf>
 これほどの物を生み出すなんて、<lf>
 ヴェクターの開発力はすばらしいですね！
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 この力があれば、<lf>
 必ずモモさんを救出できますよ！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ちび様、今度デュランダルにも<lf>
 すっごい武器つけましょうね！
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 曙光なんかに負けちゃ駄目ですよ！
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 あ、私が<lf>
 『/[font(ＫＯＳ−ＭＯＳ)]さんみたいになる』<lf>
 って言うのはどうですか？
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 私、姉妹とか、愛情とか、<lf>
 まだよく分からないんですけど
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 でも、彼女、<lf>
 私達みんなのお姉さんなんです。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 いなくなったら、<lf>
 すごく悲しいと思うんです。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 だから……お願いします！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ちび様ぁ…<lf>
 モモのお姉様は助かりますよねぇ。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 私、すごく悲しいんですぅ。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
-# dup_of: line 18, tag8 57
-このままじゃ、<lf>
+#dup(2): /[waitkey(1)]/[clear()]
+#dup(3): このままじゃ、<lf>
 またお仕事失敗しちゃいますよぉ……。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 曙光の参戦により、<lf>
 敵グノーシスの戦力４８％ダウン。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 連邦艦隊も、<lf>
 再びグノーシスへの攻撃を<lf>
 開始しました。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 現在、歌声までのルートに<lf>
 グノーシスの姿はありません。<lf>
 今のうちです、急いでください。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ちび様、<lf>
 今なら連邦艦隊を盾にして<lf>
 歌声まで行く事ができますよ！
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 どうせ他に使い道が無いんですから、<lf>
 せいぜい時間稼ぎをしてもらいましょう！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 46, tag8 5
-/[label(メリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label(メリィ)]
 ちび様。準備はええんか？
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
-うちらのことは心配せんと、<lf>
+#dup(2): /[waitkey(1)]/[clear()]
+#dup(6): うちらのことは心配せんと、<lf>
 はよモモちゃん救い出したってや！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 46, tag8 5
-/[label(メリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label(メリィ)]
 ちび様。<lf>
-# dup_of: line 167, tag8 44
-うちらのことは心配せんと、<lf>
+#dup(6): うちらのことは心配せんと、<lf>
 はよモモちゃんを救い出したってや。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 46, tag8 5
-/[label(メリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label(メリィ)]
 くっそー！
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 モモちゃんさえ、<lf>
 あん中におらんかったら……。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 あないなもん、<lf>
 ファウンデーションの主砲で<lf>
 一発やのに……。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 46, tag8 5
-/[label(メリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(4): /[label(メリィ)]
 えぇか、ここが正念場や。<lf>
 気合い入れなアカンで！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 55, tag8 3
-/[label(シェリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): /[label(シェリィ)]
 グノーシスの転移現象は<lf>
 いまだ続いています。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 現状は何とか防いでいますが、<lf>
 果たしてどこまで持つか……。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 力場は間違いなく、<lf>
 あのネピリムの歌声から発せられています。<lf>
 それが止まないことには……。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 55, tag8 3
-/[label(シェリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): /[label(シェリィ)]
 デッキで、<lf>
 エルザが発進準備を行っています。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 エルザ発進後、<lf>
 デュランダルの最大火力で<lf>
 援護を行いますので<lf>
 真っ直ぐ歌声に向かって下さい。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 55, tag8 3
-/[label(シェリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): /[label(シェリィ)]
 マシューズ船長が<lf>
 首を長くして待っていますよ。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 がんばって。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-/[label(ガイナン)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(7): /[label(ガイナン)]
 歌声を<lf>
 アルベドが動かしているということは、<lf>
 奴の目的は間違いなく、<lf>
 彼女が保持しているミズラヒの記録だ。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 外のグノーシスは俺達で何とかする。<lf>
 お前達は急いで彼女を。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 215, tag8 2
-/[label(ガイナン)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(7): /[label(ガイナン)]
 ミルチア紛争時に消失したといわれていた<lf>
 ネピリムの歌声。<lf>
 だがそれは、奴の手にあった。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 アルベド……奴めいったいどうやって……。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 215, tag8 2
-/[label(ガイナン)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(7): /[label(ガイナン)]
  “奴”のことだ。<lf>
 どんな細工を仕掛けているか判らん。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 慎重に行動してくれ。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-/[label(仮人)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(8): /[label(仮人)]
 ファウンデーション前です。【仮】
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 237, tag8 6
-/[label(仮人)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(8): /[label(仮人)]
 ネピリムの歌声前です。【仮】
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 215, tag8 2
-/[label(ガイナン)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(7): /[label(ガイナン)]
 ファウンデーションは、<lf>
 転移してくるグノーシスの対処に精一杯で、<lf>
 現座標からは動けん。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 グノーシスの中をかいくぐって<lf>
 ネピリムの歌声に接舷するには、<lf>
 相応の機動力を持った船が必要だな。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-/[label(Ｊｒ．)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(9): /[label(Ｊｒ．)]
 デュランダルの揚陸艇じゃ無理ってか…。<lf>
 エルザは？　動けるか？
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 55, tag8 3
-/[label(シェリィ)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): /[label(シェリィ)]
 はい。
 さきほど状況を確認したところ、<lf>
 幸いにして無傷のようです。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 マシューズ船長に伝えますか？
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(Ｊｒ．]
 ああ、頼む。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 くそう…、さっきの奴の感触……。<lf>
 野郎、モモの深層意識に<lf>
 接触しようとしていた……。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 時間がない！<lf>
 行くぜ、おっさん！　ケイオス！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-/[label(シオン)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(10): /[label(シオン)]
 待って、Ｊｒ．君。<lf>
 私達にも手伝わせて！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 252, tag8 7
-/[label(Ｊｒ．)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(9): /[label(Ｊｒ．)]
 馬鹿なことをいうな！
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 お前、あそこがどういう場所か<lf>
 知ってんのか！？<lf>
 奴がどんな男なのかを！？
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 273, tag8 4
-/[label(シオン)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(10): /[label(シオン)]
 お願い！<lf>
 行かせて。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 252, tag8 7
-/[label(Ｊｒ．)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(9): /[label(Ｊｒ．)]
 シオン…？
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 273, tag8 4
-/[label(シオン)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(10): /[label(シオン)]
 ………。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 252, tag8 7
-/[label(Ｊｒ．)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(9): /[label(Ｊｒ．)]
 …分かった。
-# dup_of: line 5, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 その代わり一時も気を抜くんじゃないぞ。<lf>
 場所が場所だ。<lf>
 いいな？
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 273, tag8 4
-/[label(シオン)]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(10): /[label(シオン)]
 ええ。
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 シオン宛てに<lf>
 メールが届いてるよ！！
-# dup_of: line 2, tag8 10
-/[waitkey(64)]/[close()]
-はい<lf>いいえ
+#dup(1): /[waitkey(64)]/[close()]
+#dup(11): はい<lf>いいえ
 enterd : /[$0]
-ring_L
-ring_R
-# dup_of: line 309, tag8 25
-ring_L
-# dup_of: line 310, tag8 26
-ring_R
-# dup_of: line 309, tag8 25
-ring_L
-# dup_of: line 310, tag8 26
-ring_R
 entrance: /[$0]
-TalkNPC1
-TalkNPC2
-TalkNPC4
-TalkNPC5
-TalkNPC8
-TalkNPC11
-TalkNPC9
-TalkNPC7
-TalkNPC30
-TalkNPC31
-Evt0
-Utagoe
-# dup_of: line 307, tag8 96
-はい<lf>いいえ
-# dup_of: line 308, tag8 23
-enterd : /[$0]
-# dup_of: line 309, tag8 25
-ring_L
-# dup_of: line 310, tag8 26
-ring_R
-# dup_of: line 309, tag8 25
-ring_L
-# dup_of: line 310, tag8 26
-ring_R
-# dup_of: line 309, tag8 25
-ring_L
-# dup_of: line 310, tag8 26
-ring_R
-# dup_of: line 315, tag8 24
-entrance: /[$0]
-# dup_of: line 134, tag8 67
-すごく悲しいと思うんです。
-# dup_of: line 134, tag8 67
-すごく悲しいと思うんです。
-# dup_of: line 134, tag8 67
-すごく悲しいと思うんです。
-# dup_of: line 134, tag8 67
-すごく悲しいと思うんです。
-# dup_of: line 134, tag8 67
-すごく悲しいと思うんです。
-# dup_of: line 134, tag8 67
-すごく悲しいと思うんです。
-# dup_of: line 316, tag8 12
-TalkNPC1
-# dup_of: line 317, tag8 14
-TalkNPC2
-# dup_of: line 318, tag8 17
-TalkNPC4
-# dup_of: line 319, tag8 18
-TalkNPC5
-# dup_of: line 320, tag8 20
-TalkNPC8
-# dup_of: line 321, tag8 13
-TalkNPC11
-# dup_of: line 322, tag8 21
-TalkNPC9
-# dup_of: line 323, tag8 19
-TalkNPC7
-# dup_of: line 324, tag8 15
-TalkNPC30
-# dup_of: line 134, tag8 67
-すごく悲しいと思うんです。
-# dup_of: line 325, tag8 16
-TalkNPC31
-# dup_of: line 213, tag8 52
-がんばって。
-# dup_of: line 134, tag8 67
-すごく悲しいと思うんです。
-# dup_of: line 326, tag8 11
-Evt0
-# dup_of: line 327, tag8 22
-Utagoe
-# dup_of: line 38, tag8 150
-周辺宙域のグノーシスは、<lf>
-# dup_of: line 307, tag8 96
-はい<lf>いいえ
+#dup(11): はい<lf>いいえ

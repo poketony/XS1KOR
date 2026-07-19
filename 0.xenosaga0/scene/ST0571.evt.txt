@@ -1,236 +1,167 @@
+# extraction_order: precise_code_v4
 # chunk 3 @ 0x648 cnum=623 total=94
 # bc_map: 2,23,91,5,4,24,78,5,2,41,5,4,67,73,83,5,2,57,48,6,4,51,5,2,19,72,0,62,47,5,4,65,40,30,0,80,88,86,5,2,56,45,60,6,2,16,90,0,55,33,79,5,4,84,0,39,64,74,5,2,9,6,4,66,63,5,2,22,21,52,5,4,43,0,49,36,0,92,87,5,2,10,6,2,29,5,3,54,28,5,3,13,5,2,20,46,5,3,18,68,6,4,50,93,5,2,61,34,5,4,85,5,2,14,89,77,0,75,58,5,4,71,6,1,15,44,5,2,70,38,5,1,12,37,5,2,53,26,6,2,70,69,81,0,27,31,82,0,17,32,5,1,11,42,76,6,35,6,2,59,25,6,7,8
-/[label(시온)]
+#dup(1): /[label(시온)]
 좋은 아침，/[font(ＫＯＳ−ＭＯＳ)]．<lf>
 상태는 어때？
-/[waitkey(64)]/[clear()]
-/[label(ＫＯＳ−ＭＯＳ)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(ＫＯＳ−ＭＯＳ)]
 좋은 아침입니다，시온．<lf>
 특별한 문제는 없습니다．
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 그래，건강해 보여서 다행이네．
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 5, tag8 4
-/[label(ＫＯＳ−ＭＯＳ)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(ＫＯＳ−ＭＯＳ)]
 시스템이 정상 작동 중일 뿐입니다．<lf>
 건강하다는 말은<lf>
 제게 해당되지 않습니다．
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 정말，아침 인사 정도는<lf>
 적당히 응해 줘도 되잖아！
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 4
-/[label(ＫＯＳ−ＭＯＳ)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(3): /[label(ＫＯＳ−ＭＯＳ)]
 무슨 일입니까，시온？
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 아니，<lf>
 아무것도 아니야．
-<lf>
+#dup(5): <lf>
 캐터펄트에 이상이 있어서<lf>
 잠깐 확인하러 왔어．
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 5, tag8 4
-/[label(ＫＯＳ−ＭＯＳ)]
-시온，<lf>
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(ＫＯＳ−ＭＯＳ)]
+#dup(6): 시온，<lf>
 이미 이해하고 있으리라 생각합니다만，<lf>
 여기는 캐터펄트가 아닙니다．
-# dup_of: line 27, tag8 0
-<lf>
+#dup(5): <lf>
 이상을 점검하려면<lf>
 뱃머리에 있는 캐터펄트 덱으로<lf>
 이동해야 하지 않겠습니까？
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 정말，<lf>
 그런 말 안 해도<lf>
 알고 있다니까．
-# dup_of: line 20, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 네가 신경 쓰여서<lf>
 보러 온 거 아냐．
-# dup_of: line 27, tag8 0
-<lf>
+#dup(5): <lf>
 정말이지<lf>
 이런 부모의 마음을 왜<lf>
 이해하지 못하는 걸까……．
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 5, tag8 4
-/[label(ＫＯＳ−ＭＯＳ)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(ＫＯＳ−ＭＯＳ)]
 저를 배려해 주신 점은 감사드립니다．
-# dup_of: line 27, tag8 0
-<lf>
+#dup(5): <lf>
 하지만 지금은<lf>
 캐터펄트의 이상을 조사하는 것이<lf>
 우선이라고 생각합니다만？
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 ………．
-# dup_of: line 20, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 4
-/[label(ＫＯＳ−ＭＯＳ)]
-시온，<lf>
+#dup(4): /[waitkey(64)]/[close()]
+#dup(3): /[label(ＫＯＳ−ＭＯＳ)]
+#dup(6): 시온，<lf>
 캐터펄트 점검은 끝났습니까？
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 어？<lf>
 응，끝났어．<lf>
 아무래도 문제없는 것 같아．
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 5, tag8 4
-/[label(ＫＯＳ−ＭＯＳ)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(ＫＯＳ−ＭＯＳ)]
 그렇습니까．
-# dup_of: line 27, tag8 0
-<lf>
+#dup(5): <lf>
 그렇다면<lf>
 이런 곳을 서성거리지 말고
-# dup_of: line 27, tag8 0
-<lf>
+#dup(5): <lf>
 신속히 선장에게<lf>
 보고해야 한다고 생각합니다만？
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 ………알고 있어．
-# dup_of: line 20, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 여기가 /[font(ＫＯＳ−ＭＯＳ)]의 조정실이구나．
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-/[label(모모)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(7): /[label(모모)]
 와아<lf>
 여기가 /[font(ＫＯＳ−ＭＯＳ)] 씨의 방이군요．
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 87, tag8 3
-/[label(모모)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(7): /[label(모모)]
 아，저게 베드인가요？
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 응，<lf>
 뭐 그런 셈이지．
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 87, tag8 3
-/[label(모모)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(7): /[label(모모)]
 좋겠다！<lf>
 모모도 빨리 전용 방을 갖고 싶어요．
-# dup_of: line 20, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 4
-/[label(ＫＯＳ−ＭＯＳ)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(3): /[label(ＫＯＳ−ＭＯＳ)]
 무슨 일입니까？ 시온．<lf>
 비상사태입니까？
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 앤드루 중령님이 사라졌어．<lf>
 지금부터 찾으러 갈 거야．
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 5, tag8 4
-/[label(ＫＯＳ−ＭＯＳ)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(ＫＯＳ−ＭＯＳ)]
 저도 수색에 참가할까요？<lf>
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 아，괜찮아．<lf>
 시내라서<lf>
 요란하게 굴 수도 없으니까．
-# dup_of: line 27, tag8 0
-<lf>
+#dup(5): <lf>
 필요하면 부를 테니<lf>
 편히 쉬고 있어．
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 5, tag8 4
-/[label(ＫＯＳ−ＭＯＳ)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(ＫＯＳ−ＭＯＳ)]
 알겠습니다．
-# dup_of: line 20, tag8 6
-/[waitkey(64)]/[close()]
-/[label(앤드루)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(8): /[label(앤드루)]
 자네인가，아까 그 카레<lf>
 그…… 맛있더군．
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-중령님！<lf>
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
+#dup(9): 중령님！<lf>
 잘・먹・었・습・니・다는요？
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 124, tag8 1
-/[label(앤드루)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(8): /[label(앤드루)]
 그，그래……<lf>
 자，잘 먹었……습니다．
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 네，<lf>
 서툴렀지만 잘하셨어요！
-# dup_of: line 20, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
-# dup_of: line 129, tag8 70
-중령님！<lf>
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
+#dup(9): 중령님！<lf>
 보클린데 사건은<lf>
 정말 괴로운 일이었다고 생각해요．
-# dup_of: line 27, tag8 0
-<lf>
+#dup(5): <lf>
 하지만<lf>
 여기는 민간 화객선이고，<lf>
 저희는 그냥 손님이잖아요．
-# dup_of: line 27, tag8 0
-<lf>
+#dup(5): <lf>
 군대나 군인이라는 데<lf>
 너무 얽매이지 않아도 돼요．
-# dup_of: line 4, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 124, tag8 1
-/[label(앤드루)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(8): /[label(앤드루)]
 ……그런가．<lf>
 듣고 보니 그렇군．<lf>
 주의하지．
-# dup_of: line 20, tag8 6
-/[waitkey(64)]/[close()]
+#dup(4): /[waitkey(64)]/[close()]
 이게 나오면 오류입니다！
-# dup_of: line 20, tag8 6
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label(시온)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(1): /[label(시온)]
 잘 자고 있는 것 같네……．<lf>
 잘 자，/[font(ＫＯＳ−ＭＯＳ)]．
-# dup_of: line 20, tag8 6
-/[waitkey(64)]/[close()]
+#dup(4): /[waitkey(64)]/[close()]
 enterd : /[$0]
 entrance: /[$0]

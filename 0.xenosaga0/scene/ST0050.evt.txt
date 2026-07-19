@@ -1,88 +1,62 @@
+# extraction_order: precise_code_v4
 # chunk 3 @ 0x91c cnum=554 total=38
-# bc_map: 2,34,21,22,5,3,13,0,12,26,5,2,23,5,2,24,5,2,36,5,2,33,5,3,29,25,5,3,17,4,19,31,5,2,15,5,3,16,20,5,3,14,35,4,32,28,5,27,5,37,5,18,30,1,18,8,4,9,11,7,6,10
-/[label()]
+# bc_map: 2,34,21,22,5,3,13,0,12,26,5,2,23,5,2,24,5,2,36,5,2,33,5,3,29,25,5,3,17,4,19,31,5,2,15,5,3,16,20,5,3,14,35,4,32,28,5,27,5,37,5,18,30,1,18,8,9,11
+# bc_unmap: 6,7,10
+#dup(1): /[label()]
 현재 아이템은 임시입니다．<lf>
 아이템을 획득하면<lf>
 미유키에게서 메일이 올 예정입니다．
-/[waitkey(64)]/[close()]
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 아，메일！
 <lf>
 …미유키한테서 온 거네．<lf>
 대체 무슨 일일까……？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
 메일이 오지 않았습니다．<lf>
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
 이미 메일을 받았습니다．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
 볼 수 없다오！
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
 유감……．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 6, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 장대한 계획이라니……<lf>
 대체 뭔 생각을 하는 걸까 그 애는…
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 6, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 조금 피곤해졌어．
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 모두에겐 미안하지만，<lf>
 잠깐 쉬도록 할까…．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[label()]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label()]
 안녕히 주무세요．
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 6, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 맞다，자기 전에<lf>
 모두의 상태를 보러 가야 했었지ー！
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 6, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 아차！<lf>
 짐이 도착해 있었어．
-# dup_of: line 30, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(4): /[waitkey(1)]/[clear()]
 빨리 /[font(Ａ．Ｇ．Ｗ．Ｓ．)] 격납고로<lf>
 가야 해！
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 휴식하겠습니까？
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ＨＰ・ＥＰ가 회복되었다！！
-# dup_of: line 5, tag8 5
-/[waitkey(64)]/[close()]
-예<lf>아니요
+#dup(2): /[waitkey(64)]/[close()]
+#dup(5): 예<lf>아니요
 잠깐 낮잠을 자자<lf>아직 안 돼，모두가 걱정돼
 *********全回復しました**************
-# dup_of: line 52, tag8 18
-예<lf>아니요
+#dup(5): 예<lf>아니요
 enterd : /[$0]
-# dup_of: line 30, tag8 4
-/[waitkey(1)]/[clear()]
 entrance: /[$0]
 shoot on
-Talk_npc1
-TalkNPC21
-mws

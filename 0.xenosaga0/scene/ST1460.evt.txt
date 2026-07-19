@@ -1,11 +1,12 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0xf98 cnum=503 total=9
-# bc_map: 7,0,1,8,3,4,5,2,6
+# bc_map: 7,0,1,8,3,4,2,6
+# bc_unmap: 5
 エレベーターを作動させますか？
 /[waitkey(64)]/[close()]
 EOB****************************************************
 種
 enterd : /[$0]
 entrance: /[$0]
-idle
 elv.py: /[#1]
 はい<lf>いいえ

@@ -1,22 +1,20 @@
+# extraction_order: precise_code_v4
 # chunk 2 @ 0x468 cnum=1125 total=193
-# bc_map: 82,2,168,2,116,2,0,25,94,162,1,107,1,47,177,172,133,184,142,166,2,0,60,139,1,63,96,1,158,167,186,1,29,187,2,0,39,141,1,120,66,144,80,2,0,93,128,42,2,0,87,157,137,104,62,2,0,50,175,54,84,30,1,99,124,2,0,95,132,102,90,101,2,0,22,1,48,169,159,49,179,1,67,36,2,0,73,41,98,1,138,134,174,2,0,21,44,34,1,92,147,136,2,0,75,143,163,72,103,2,0,88,111,170,108,61,129,185,1,112,59,2,0,52,81,43,135,148,110,2,0,86,113,183,140,1,74,2,0,38,71,20,77,2,0,125,20,76,56,2,0,33,1,45,64,114,171,173,2,0,65,182,78,91,192,68,2,0,191,57,69,164,1,83,55,2,0,24,152,149,2,0,23,127,126,109,2,0,85,145,151,2,0,40,146,2,121,106,2,121,79,2,122,123,2,0,119,130,2,0,70,97,46,32,180,156,1,51,176,105,37,178,1,100,53,2,0,26,31,165,27,58,1,28,35,2,115,150,19,181,118,131,17,154,153,160,188,189,190,155,117,161,18,9,3,8,10,11,12,13,14,15,4,5,25,115,150,19,181,118,131,17,154,153,160,188,189,190,155,117,18,9,6,7,3,8,10,11,12,13,14,15,4,5,6,7,3,89
-# bc_unmap: 16
+# bc_map: 82,2,168,2,116,2,0,25,94,162,1,107,1,47,177,172,133,184,142,166,2,0,60,139,1,63,96,1,158,167,186,1,29,187,2,0,39,141,1,120,66,144,80,2,0,93,128,42,2,0,87,157,137,104,62,2,0,50,175,54,84,30,1,99,124,2,0,95,132,102,90,101,2,0,22,1,48,169,159,49,179,1,67,36,2,0,73,41,98,1,138,134,174,2,0,21,44,34,1,92,147,136,2,0,75,143,163,72,103,2,0,88,111,170,108,61,129,185,1,112,59,2,0,52,81,43,135,148,110,2,0,86,113,183,140,1,74,2,0,38,71,20,77,2,0,125,20,76,56,2,0,33,1,45,64,114,171,173,2,0,65,182,78,91,192,68,2,0,191,57,69,164,1,83,55,2,0,24,152,149,2,0,23,127,126,109,2,0,85,145,151,2,0,40,146,2,121,106,2,121,79,2,122,123,2,0,119,130,2,0,70,97,46,32,180,156,1,51,176,105,37,178,1,100,53,2,0,26,31,165,27,58,1,28,35,2,115,150,19,181,118,131,16,17,154,153,160,188,189,190,155,117,161,18,89
+# bc_unmap: 3,4,5,6,7,8,9,10,11,12,13,14,15
 どこがいいかしら？<lf>
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 探さないでください。<lf>
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 クランクを回しますか？<lf>
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あ〜あ、しんどいねぇ…<lf>
 まったく、人使いの荒いじいさんだぜ。<lf>
 少しは休ませろっていうんだ！
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ん、なんだ？よそ者か？
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 このファウンデーションはな<lf>
 特殊な能力や身体機能を持った連中で<lf>
 構成されてるのさ。<lf>
@@ -24,128 +22,97 @@
 被害者とか言われているみたいだが<lf>
 俺達は被害者だなんてこれっぽっちも<lf>
 思った事ないぜ。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 すべからく、人はその誕生の瞬間から<lf>
 何らかの社会的責任を負っている。<lf>
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 そう考えりゃ、この能力も<lf>
 まんざら捨てたもんでもないさ。<lf>
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 実際、Ｊｒ．様達デュランダルクルーの<lf>
 戦後の連邦への貢献については、<lf>
 誰もが認めているものだし
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 あのグノーシスだって結構<lf>
 退治してきてんだぜ？
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 え？<lf>
 俺の特殊能力は何かって？
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ズバリ、一目見ただけで、<lf>
 その物体の質量が<lf>
 判っちまうってヤツだ。<lf>
 どうだい、この仕事向きって感じだろ？
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 まったく、この酒場って趣味悪いわよね。<lf>
 マスターの趣味丸出しってかんじー、<lf>
 きしょくわるいわー。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 ねぇねぇ、あのマスター<lf>
 実はガイナン理事のファンクラブの<lf>
 会員らしいのよ。<lf>
 やっぱり、<lf>
 そういう趣味があるのかしらね……。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 こりゃ！<lf>
 無駄口たたいとらんで、<lf>
 さっさと働かんか！<lf>
 なんだい、あんたら？<lf>
 あのデュランダルからきなすったのか？
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 もしかして、あんたら<lf>
 デュランダルで働いとるのかね？
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 まったくうらやましい限りだ。<lf>
 ワシらもあそこで働けるように<lf>
 もっと頑張らんとな。<lf>
 ほりゃ！気張れ！<lf>
 もっと気張らんか！！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あ、このホテルをつかうのかい？
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 このホテルはね、今でこそ３６区に<lf>
 新しく出来た超高層ホテルに<lf>
 客を取られちゃいるがね。<lf>
 この市街区でも一番の仲の良い夫婦が<lf>
 経営しててさ、
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 そりゃ、サービス満点の<lf>
 いいホテルだったんだよ。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 でも、数年前に奥さんが死んじまってね…。<lf>
 おやじの方はそれ以来<lf>
 めっきり元気を無くしちまったんだよ。
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 何でもさ、<lf>
 今でも家族の写真を前にして<lf>
 泣いてるそうだよ…。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あ、お客さん？<lf>
 ここのホテル、<lf>
 あんまり流行ってないのよね…。
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 まぁ、観光客のほとんどは<lf>
 反対側の市街区にいっちゃうから<lf>
 仕方ないんだろうけど…。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 でもね、<lf>
 儲かってないはずなのに、<lf>
 店の中にでっかい金庫があるのよ。<lf>
 でね、中には<lf>
 ものすごい財産を入れているって噂なの！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 ねぇねぇ、知ってる？<lf>
 ガイナンにはさ、隠し子がいるんだって！<lf>
 昨日ママが言ってたんだ。<lf>
@@ -153,171 +120,131 @@
 ぜんぜん歳を取らないんだって！<lf>
 ママはサイボーグじゃないかって<lf>
 言ってたんだ！
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ガイナンの子供って、<lf>
 すっげー！かっくいい！！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 こんにちは！<lf>
 どうです、この２７市街区は？<lf>
 けっこう変わった雰囲気でしょ？<lf>
 今は亡き地球の、<lf>
 古きよき時代というのを<lf>
 イメージして作られたんですよ。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 なんでも、この市街区には<lf>
 ガイナン理事とＪｒ．理事のお二人が<lf>
 蒐集された、本物の当時の建材が<lf>
 使われているんですって。
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 でもそれってホントなのかしら……。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 え、ホテルですか？<lf>
 でしたら、すぐそこにありますよ。<lf>
-「ＯＵＲ　ＴＲＥＡＳＵＲＥ」<lf>
+#dup(4): 「ＯＵＲ　ＴＲＥＡＳＵＲＥ」<lf>
 という看板がある建物がそうですから。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 ホテル、見つかりました？<lf>
-# dup_of: line 142, tag8 20
-「ＯＵＲ　ＴＲＥＡＳＵＲＥ」<lf>
+#dup(4): 「ＯＵＲ　ＴＲＥＡＳＵＲＥ」<lf>
 という看板がありますから<lf>
 すぐわかると思いますよ。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あんたら観光かい？<lf>
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ここの市街区にはならず者が多い。<lf>
 そして、そいつらの頭で<lf>
 キングってのがいるんだが、<lf>
 本人いわく極悪人だそうだ。<lf>
 気をつけたほうがいいぜ。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 そのキングはな、<lf>
 自称「ファウンデーションを影で牛耳る男」<lf>
 とか息巻いてるんだが、<lf>
 まぁ、自分のペットも<lf>
 飼い慣らせないような男だから、<lf>
 たかが知れてるけどな。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 隣の市街区のパン屋が<lf>
 すごい評判なんですよ。<lf>
 ただ、たまにキングの部下が、<lf>
 店を見張ってるんですけどね。
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 なにか、よくない事でも<lf>
 してるんでしょうかね？
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あ、大丈夫ですよ。<lf>
 変なものは入っていません<lf>
 味は保証します。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あ、そこのクランクいじると、<lf>
 マスターに怒られるんだから。<lf>
 マスターってすっごく強いんだから。<lf>
 アナタなんか、一撃で倒されちゃうわよ。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 なんだよ？<lf>
 別にごみ箱あさってるわけじゃねぇよ。<lf>
 回収だよ回収、仕事なんだよ！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 おいおい、今作業中なんだよ！<lf>
 危ないから入ってくんじゃねぇよ。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-セグメント・アドレスＮｏ．１<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): セグメント・アドレスＮｏ．１<lf>
 を発見した。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 197, tag8 121
-セグメント・アドレスＮｏ．１<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(5): セグメント・アドレスＮｏ．１<lf>
 と表示されている。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 セグメント・アドレスＮｏ．１の<lf>
 デコードを終了します。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 シオン宛に<lf>
 メールが届いてるよ！！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 ちょっと、<lf>
 むやみに近づかないでよね！？<lf>
 こっちは危険な作業をしてるんだから！<lf>
 あんたみたいな、<lf>
 能天気な人に触られでもしたら<lf>
 大変な事になるわよ！
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 これは、敵の技を封じる為のトラップなの！<lf>
 特に毒の技に効果を発揮するタイプなのよ。<lf>
 わかった！？<lf>
 いくらノロマなあなたでも、<lf>
 私の言ってる事ぐらい理解できるわよね？
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 もしちゃんと理解できてるんなら、<lf>
 さっさとそこを退いてちょうだい！
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 7, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あぁ…やってしまいましたね……。<lf>
 あれほど、触ってはイケナイと<lf>
 忠告しましたのに…。<lf>
 あぁ、でも、何かしら…？<lf>
 すごく、いい気分です……。
-# dup_of: line 11, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 あなたとは、<lf>
 いいお友達になれそうですわ……。
-# dup_of: line 2, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 クランク
 回す<lf>回さない<lf>
 serial = 1
 自然落下
 サブルート扉見つけた
 メールを見る<lf>メールを見ない
+case1
 enterd : /[$0]
 外観街２・１
 外マップ
@@ -329,79 +256,4 @@ enterd : /[$0]
 サブルート MC_KUK14
 宿屋３Ｆ・３
 entrance: /[$0]
-Talk_npc21
-Talk_npc1
-Talk_npc2
-Talk_npc3
-Talk_npc4
-Talk_npc5
-Talk_npc6
-Talk_npc7
-Talk_npc9
-Talk_npc10
-Talk_npc11
-# dup_of: line 8, tag8 25
-あ〜あ、しんどいねぇ…<lf>
-# dup_of: line 237, tag8 115
-クランク
-# dup_of: line 238, tag8 150
-回す<lf>回さない<lf>
-# dup_of: line 239, tag8 19
-serial = 1
-# dup_of: line 240, tag8 181
-自然落下
-# dup_of: line 241, tag8 118
-サブルート扉見つけた
-# dup_of: line 242, tag8 131
-メールを見る<lf>メールを見ない
-# dup_of: line 243, tag8 17
-enterd : /[$0]
-# dup_of: line 244, tag8 154
-外観街２・１
-# dup_of: line 245, tag8 153
-外マップ
-# dup_of: line 246, tag8 160
-宿屋１Ｆ・１
-# dup_of: line 247, tag8 188
-酒場１Ｆ・１
-# dup_of: line 248, tag8 189
-酒場２Ｆ・２
-# dup_of: line 249, tag8 190
-酒場２Ｆ・３
-# dup_of: line 250, tag8 155
-外観街２・２
-# dup_of: line 251, tag8 117
-サブルート MC_KUK14
-# dup_of: line 253, tag8 18
-entrance: /[$0]
-# dup_of: line 254, tag8 9
-Talk_npc21
-Talk_npc12
-Talk_npc13
-# dup_of: line 255, tag8 3
-Talk_npc1
-# dup_of: line 256, tag8 8
-Talk_npc2
-# dup_of: line 257, tag8 10
-Talk_npc3
-# dup_of: line 258, tag8 11
-Talk_npc4
-# dup_of: line 259, tag8 12
-Talk_npc5
-# dup_of: line 260, tag8 13
-Talk_npc6
-# dup_of: line 261, tag8 14
-Talk_npc7
-# dup_of: line 262, tag8 15
-Talk_npc9
-# dup_of: line 263, tag8 4
-Talk_npc10
-# dup_of: line 264, tag8 5
-Talk_npc11
-# dup_of: line 283, tag8 6
-Talk_npc12
-# dup_of: line 284, tag8 7
-Talk_npc13
-# dup_of: line 255, tag8 3
-Talk_npc1
 はい<lf>いいえ

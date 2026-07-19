@@ -1,3 +1,4 @@
+# extraction_order: precise_code_v4
 # chunk 2 @ 0x314 cnum=134 total=1
 # bc_map: 0
 알고 싶다<lf>딱히 듣고 싶지 않다
@@ -6,68 +7,52 @@
 # bc_map: 7,32,0,0,5,33,1,28,25,0,0,20,13,1,27,34,0,0,8,23,1,12,18,1,4,10,1,6,1,14,1,17,21,26,29,19,16,1,9,22,1,15,24,1,31,1,30,1,11,2,3
 이 앞은 그노시스투성이라<lf>
 나아갈 수가 없어！！<lf>
-<lf>
-# dup_of: line 3, tag8 0
-<lf>
+#dup(1): <lf>
+#dup(1): <lf>
 …물론<lf>
 /[font(Ａ．Ｇ．Ｗ．Ｓ．)]가 있으면 다르겠지만！<lf>
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 파트너 녀석！！<lf>
 무기도 안 들고 격납고로 가 버렸어．<lf>
-# dup_of: line 3, tag8 0
-<lf>
-# dup_of: line 3, tag8 0
-<lf>
+#dup(1): <lf>
+#dup(1): <lf>
 난 여기 숨어서<lf>
 그노시스가 지나가길 기다릴 거야…<lf>
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 파트너가 말리는 걸 뿌리치고<lf>
 /[font(Ｕ．Ｍ．Ｎ．)] 통신실을 뛰쳐나왔어…<lf>
-# dup_of: line 3, tag8 0
-<lf>
-# dup_of: line 3, tag8 0
-<lf>
+#dup(1): <lf>
+#dup(1): <lf>
 이렇게 괴물이 많을 줄은<lf>
 생각도 못 했다고！！<lf>
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 정말로 파트너 말이 맞았어…<lf>
 맨몸으로 그런 괴물을 당해 낼 리가…<lf>
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 …대답이 없다．<lf>
 그냥 시체인 것 같다……<lf>
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 여기서 카메라를 전환합니다．（임시）<lf>
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 그노시스의 습성에 대해 듣고 싶어？<lf>
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 놈들 중에는 움직이는 것에<lf>
 관심을 보이는 녀석들도 있어．<lf>
 무기를 갖고 있지 않다면<lf>
 다른 물건에 시선을 돌리게 만들면 돼．<lf>
 예를 들면…<lf>
 텔레비전이나 영사기 같은 거…<lf>
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 그렇구나…<lf>
 행운을 빌게！！<lf>
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 스위치가 있다．<lf>
 눌러 보겠습니까？<lf>
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 함내 모니터를 켭니다．<lf>
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 함내 모니터를 끕니다．<lf>
-# dup_of: line 7, tag8 1
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 예<lf>아니요
 enterd : /[$0]
 entrance: /[$0]

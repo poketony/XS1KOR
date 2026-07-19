@@ -1,3 +1,4 @@
+# extraction_order: precise_code_v4
 # chunk 3 @ 0x500 cnum=244 total=7
 # bc_map: 0,5,6,1,2,3,4
 /[label(시온)]

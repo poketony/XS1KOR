@@ -1,30 +1,27 @@
+# extraction_order: precise_code_v4
 # chunk 5 @ 0xeb4 cnum=696 total=24
-# bc_map: 8,7,0,9,1,20,23,1,22,21,2,17,13,2,17,11,2,18,19,2,3,10,16,4,14,15,5,6,4,20,12
+# bc_map: 8,7,0,9,1,20,23,1,22,21,2,17,13,2,17,11,2,18,19,2,3,10,16,4,14,15,5,12
+# bc_unmap: 6
 「고장 남．이쪽에서는 안 열립니다．<lf>
 　불편을 끼쳐 죄송합니다．　　보안부」/[waitkey(64)]/[close()]
 /[label(Ｚｉｇｇｕｒａｔ８)]
 이곳 바닥은 발소리가 울릴 것 같군…．<lf>
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 적에게 들키지 않도록 뛰지 말고<lf>
 나아가는 편이 좋겠어．<lf>
-# dup_of: line 5, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 분명 Ｒ２ 버튼을 누른 채 이동하면<lf>
 걸을 수 있었지．<lf>
-/[waitkey(64)]/[close()]
-세그먼트 어드레스 Ｎｏ．４라고<lf>
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): 세그먼트 어드레스 Ｎｏ．４라고<lf>
 적힌 문을 발견했다．
-# dup_of: line 11, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 12, tag8 17
-세그먼트 어드레스 Ｎｏ．４라고<lf>
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): 세그먼트 어드레스 Ｎｏ．４라고<lf>
 표시되어 있다．
-# dup_of: line 11, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 세그먼트 어드레스 Ｎｏ．４의<lf>
 디코드를 종료합니다．
-# dup_of: line 11, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 EOB_Always
 ここの床は響きそうだイベント
 서브루트 문 발견
@@ -32,9 +29,4 @@ enterd : /[$0]
 イベントSCE02007：マーグリス登場（プロレマCF終了）
 서브루트
 entrance: /[$0]
-yurayura
-# dup_of: line 24, tag8 4
-enterd : /[$0]
-# dup_of: line 6, tag8 20
-적에게 들키지 않도록 뛰지 말고<lf>
 예<lf>아니요

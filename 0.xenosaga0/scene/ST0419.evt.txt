@@ -1,30 +1,24 @@
+# extraction_order: precise_code_v4
 # chunk 5 @ 0x8a0 cnum=762 total=16
 # bc_map: 14,0,13,0,10,9,0,10,7,0,11,12,0,15,0,1,5,5,4,6,3,8,2
 함내 모니터 스위치는 고장 나 있다．
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 반응이 없다．
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
-세그먼트 어드레스 Ｎｏ．１６이라고<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): 세그먼트 어드레스 Ｎｏ．１６이라고<lf>
 적힌 문을 발견했다．
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
-# dup_of: line 5, tag8 10
-세그먼트 어드레스 Ｎｏ．１６이라고<lf>
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): 세그먼트 어드레스 Ｎｏ．１６이라고<lf>
 표시되어 있다．
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 세그먼트 어드레스 Ｎｏ．１６의<lf>
 디코드를 종료합니다．
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ＥＶＳ【환경 시뮬레이터】를 종료합니다．
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 enterd : /[$0]
-【환경 시뮬레이터】・VOK10로 jump！！
-# dup_of: line 17, tag8 5
-【환경 시뮬레이터】・VOK10로 jump！！
+#dup(3): 【환경 시뮬레이터】・VOK10로 jump！！
+#dup(3): 【환경 시뮬레이터】・VOK10로 jump！！
 【환경 시뮬레이터】・VOK04로 jump！！
 【환경 시뮬레이터】・ＶＯＫ１９으로 점프！！
 evsExit를 호출했습니다

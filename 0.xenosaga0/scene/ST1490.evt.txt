@@ -1,13 +1,14 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x74 cnum=145 total=1
 # bc_map: 0
 ele3_2
 
 # chunk 5 @ 0xe6c cnum=750 total=31
-# bc_map: 21,30,1,0,27,15,16,28,29,18,24,1,20,1,11,22,23,25,19,13,2,3,4,5,6,7,8,11,22,12,14,10,9,17
-# bc_unmap: 26
+# bc_map: 21,30,1,0,27,15,16,28,29,18,24,1,20,1,23,25,19,13,2,3,4,5,6,7,8,11,22,26,12,10,17
+# bc_unmap: 9,14
 何か書いてあります。<lf>
 読みますか？<lf>
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(インフォメーション)]
 現在、当エレベーターは緊急停止状態に<lf>
 あります。<lf>
@@ -16,13 +17,9 @@ ele3_2
 解除してください。/[waitkey(64)]/[close()]
 ボタンがあります。
 押しますか？
-# dup_of: line 3, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 下の階へ降りますか？
-# dup_of: line 3, tag8 1
-/[waitkey(64)]/[close()]
-enterd : /[$0]
-全部壊れた
+#dup(1): /[waitkey(64)]/[close()]
 情報
 梯子下げ
 マップジャンプ
@@ -34,12 +31,9 @@ lo2 = true
 5
 6
 7
-# dup_of: line 15, tag8 11
 enterd : /[$0]
-# dup_of: line 16, tag8 22
 全部壊れた
+梯子移動
 entrance: /[$0]
-tenmetu
 ele3_1
-ele3
 はい<lf>いいえ

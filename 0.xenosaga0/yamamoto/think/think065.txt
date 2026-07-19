@@ -1,0 +1,53 @@
+# think_patch extract: think065.bin.ori
+# 총 11개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x029C
+　シーアルウイング　　Ｓ
+　　ブースト封鎖
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x0388
+　ムーバーハンド　　Ｓ
+　　後列とばし
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x03D6
+　ライフイーター　　Ｓ
+　　ドレインＨＰ
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x0426
+ライフイーター　　Ｓ
+　　ドレインＨＰ
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x0474
+ギガフレッシュ　　Ｓ
+　　全ステータスクリア
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x0694
+　体質変換防御！
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x079A
+　炎　属性のある攻撃を完全防御
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x081A
+　雷　属性のある攻撃を完全防御
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x089A
+　冷　属性のある攻撃を完全防御
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x091A
+　Ｂ　属性のある攻撃を完全防御
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x099A
+　気　属性のある攻撃を完全防御
+<<<

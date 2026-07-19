@@ -274,34 +274,34 @@ lightSPL end.
 shion_act1
 door_open
 door_open_2
-あら　アンドリュー中佐<lf>ここじゃなかったんだ
+어라？ 앤드루 중령님<lf>여기에도 안 계시네
 door_close
 matehws_act2
 chaos_act2
 tonny_act2
 hammer_act2
 shion_act2
-どうしたの
-また食事に来てないから<lf>探してたんだけど――
+왜 그래？
+또 식사하러 안 오셔서<lf>찾고 있는 중이었어……
 matehws_act3
 hammer_act3
-外出たんじゃないっすか
-チャーター便があるかどうか<lf>探すって言ってたっす
-ちょっと待て<lf>あの格好でか
-まずいな――
+외출한 거 아님까？
+전세편이 있나 없나<lf>찾아보겠다고 했었슴다
+잠깐 기다려 봐<lf>그 차림으로 나갔다고？
+위험한데……
 shion_act5_1
 shion_act5
 tonny_act6
 chaos_act6
 matehws_act6
-この辺りは戦後補償が<lf>未処理のまま見捨てられた宙域だ
-当時の軍の暴走ぶりは<lf>遺恨として残っている
+이 주변은 전후 보상이 처리되지 않은 채<lf>버려진 우주 영역이다
+당시 군대의 난폭함에<lf>원한이 뿌리내린 곳이지
 shion_act6
-軍人が一人でうろついて<lf>いいところじゃない
-そんなに危険な場所なの
+군인이 혼자서 어슬렁거려도<lf>되는 곳이 아니야
+그렇게나 위험한 장소인가요？
 shion_act7
 matehws_act7
-民間人なら<lf>問題はないんだが――
+민간인이라면<lf>문제는 없겠지만……
 /[$0]
 /[$0](Cursor = /[$1])
 CaptureMODE ---Chr(pic+zpic)

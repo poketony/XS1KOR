@@ -1,11 +1,11 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0xbc8 cnum=528 total=7
-# bc_map: 6,0,2,2,5,3,4,1
+# bc_map: 6,0,2,2,5,3,4
+# bc_unmap: 1
 フロアを移動しますか？
 /[waitkey(64)]/[close()]
-WINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWIN
-# dup_of: line 3, tag8 2
-WINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWIN
+#dup(1): WINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWIN
+#dup(1): WINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWIN
 はい<lf>いいえ
 enterd : /[$0]
 entrance: /[$0]
-Evt

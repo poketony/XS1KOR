@@ -1,0 +1,83 @@
+# think_patch extract: think040.bin.ori
+# 총 16개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x1A(condition) flag=0x00 offset=0x002E
+|\x05t\x04
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x02C0
+　포스 퍼니셔　　Ｅ
+
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x02FE
+　올 큐어
+　　전체 ＨＰ 회복
+<<<
+
+>>> [003] op=0x1A(condition) flag=0x00 offset=0x050A
+rebirth
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x065A
+　쓰러진 두 사람을 보고
+　에테르가 증가한다
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x0AE0
+　Ｊｒ．에게 반응
+（전 행동자가 Ｊｒ．）
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x0B1E
+　시온에게 반응
+（전 행동자가 시온）
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x0B5C
+　시온 쪽 의식체 소실
+
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x0B88
+　Ｊｒ．쪽 의식체 소실
+
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x0BB4
+　시온과 Ｊｒ．……
+　둘의 과거는 둘의 힘으로
+　끊어낼 수밖에 없다．
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x0C16
+　버서커 피스트　Ｐ／Ｓ
+　　가끔씩 파일럿 기절
+<<<
+
+>>> [011] op=0x21(display) flag=0x00 offset=0x0C5E
+　그래비티 블래스트
+　　현재 ＨＰ의 １／４ 대미지
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x0CA2
+　데린저 펄스　　Ｓ
+　　ＡＰ 하프
+<<<
+
+>>> [013] op=0x21(display) flag=0x00 offset=0x0CDC
+　루인 어스　　Ｅ
+
+<<<
+
+>>> [014] op=0x21(display) flag=0x00 offset=0x0CFE
+　카오스 오라　　Ｓ
+　　혼란
+<<<
+
+>>> [015] op=0x21(display) flag=0x00 offset=0x0D28
+　이터널 리버스
+　　ＨＰ 회복
+<<<

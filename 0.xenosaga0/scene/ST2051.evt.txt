@@ -1,130 +1,88 @@
+# extraction_order: precise_code_v4
 # chunk 2 @ 0x43c cnum=583 total=52
-# bc_map: 2,2,2,0,34,50,19,2,0,30,46,17,23,47,1,45,20,2,0,18,2,0,22,27,2,0,11,36,2,0,15,2,0,27,2,0,36,2,0,10,2,0,48,33,1,44,25,1,31,2,0,28,1,12,29,49,1,40,41,2,0,13,32,43,2,0,38,16,1,26,14,37,1,24,21,2,51,2,22,35,35,8,39,42,9,7,5,6,3,4
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
-/[label()]
+# bc_map: 2,2,2,0,34,50,19,2,0,30,46,17,23,47,1,45,20,2,0,18,2,0,22,27,2,0,11,36,2,0,15,2,0,27,2,0,36,2,0,10,2,0,48,33,1,44,25,1,31,2,0,28,1,12,29,49,1,40,41,2,0,13,32,43,2,0,38,16,1,26,14,37,1,24,21,2,51,2,35,35,8,39,42,9
+# bc_unmap: 3,4,5,6,7
+#dup(1): /[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 今、街の人の為に<lf>
 部屋は全室解放してるんです。<lf>
 ご自由に休んでいってくださいね！
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 もう、おとうさんはいないけど、<lf>
 私一人でも、<lf>
 このホテルは続けていくつもりです。<lf>
 そして、いつか<lf>
 自分の子供に教えてあげるんです。
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 私のお父さんとお母さんは、<lf>
 すばらしかったんだって！
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 ごゆっくりどうぞ。
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 そうですか？<lf>
-また、いらしてくださいね。
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 0
-/[label()]
+#dup(4): また、いらしてくださいね。
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あ、いらっしゃいませ！<lf>
-何かお求めですか？
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 0
-/[label()]
+#dup(5): 何かお求めですか？
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 いらっしゃいませ〜！
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 0
-/[label()]
-# dup_of: line 24, tag8 27
-また、いらしてくださいね。
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 0
-/[label()]
-# dup_of: line 28, tag8 36
-何かお求めですか？
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
+#dup(4): また、いらしてくださいね。
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
+#dup(5): 何かお求めですか？
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あ、いらっしゃいませ！
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 見てくださいよ、あの子を。<lf>
 一人でこのホテルを切り盛りしてるんですよ。
-# dup_of: line 15, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 本当は悲しくて、泣きたくて、<lf>
 でもそれを一生懸命我慢して。<lf>
-# dup_of: line 15, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 わたしらも見習わんといかんですな。
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 まったく、まいっちゃうわよ。
-# dup_of: line 15, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 あの子、お父さん亡くしたばっかりなのに<lf>
 みんなの為にホテルを提供するって<lf>
 言い出したんだよ！
-# dup_of: line 15, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 大人の私達が、<lf>
 子供に負けてられないわよね！
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 あんたらも、<lf>
 ウロウロしてるくらいなら、<lf>
 扉のひとつも直しなよ！
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 4, tag8 0
-/[label()]
+#dup(1): /[waitkey(64)]/[close()]
+#dup(2): /[label()]
 俺ッちさ、家を壊されちまったから、<lf>
 ここに住まわせてもらってんだよ
-# dup_of: line 15, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 でもよ、<lf>
 あんな小さい子ががんばってるのに、<lf>
 俺が落ち込んでいてもしょうがないよな。
-# dup_of: line 15, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 だから、
 せめてホテルの修理をしようと思ってさ！
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ＨＰ・ＥＰが回復した！！
-# dup_of: line 1, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 23, tag8 22
-そうですか？<lf>
-休む<lf>休まない
-# dup_of: line 80, tag8 35
-休む<lf>休まない
+#dup(1): /[waitkey(64)]/[close()]
+#dup(6): 休む<lf>休まない
+#dup(6): 休む<lf>休まない
 enterd : /[$0]
 外概観１・３
 宿屋２Ｆ・１
 entrance: /[$0]
-Talk_npc5
-Talk_npc3
-Talk_npc4
-Talk_npc1
-Talk_npc2

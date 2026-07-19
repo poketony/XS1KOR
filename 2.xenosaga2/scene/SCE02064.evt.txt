@@ -1,0 +1,375 @@
+# chunk 16 @ 0x60f0 cnum=2716 total=372
+# bc_map: 221,172,198,98,100,73,99,50,164,165,166,167,169,170,162,149,151,152,153,155,157,49,51,148,52,102,0,2,3,4,5,6,7,8,9,10,12,15,16,21,26,107,65,67,53,66,56,254,346,350,349,257,256,253,252,337,339,338,55,62,63,57,58,59,64,60,61,342,258,265,282,299,316,317,318,319,320,321,259,260,261,262,263,264,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,255,251,341,345,352,353,354,355,356,357,358,359,360,361,201,202,203,204,205,206,207,208,209,210,250,362,363,364,365,366,367,368,369,370,371,211,212,213,214,215,216,217,218,219,220,54,68,105,45,41,134,135,95,96,46,47,39,40,142,71,33,30,238,137,70,34,29,139,106,69,138,72,136,110,11,222,229,191,25,104,1,18,13,97,48,14,112,111,131,129,132,130,143,87,78,122,199,200,79,88,89,108,91,90,141,140,109,92,187,188,120,121,93,230,192,193,194,195,94,22,23,189,234,224,168,190,235,223,101,74,76,77,80,81,82,83,84,85,86,103,114,116,117,118,119,113,115,133,75,144,32,125,128,123,126,127,124,17,171,44,43,42,145,19,146,20,233,231,232,147,150,37,38,227,228,237,197,196,351,35,36,322,323,329,330,331,332,333,334,335,336,324,325,326,327,328,154,156,226,225,236,178,179,173,245,31,240,347,242,249,161,160,158,159,181,180,182,174,175,239,348,241,343,183,244,344,163,185,184,177,176,246,247,248,186,340,243,27,28,24
+# bc_unmap: 24
+msg_clear_thread
+eventmovie/
+lightSPL_main
+HISTORY CLEAR
+HISTORYDELETE PTR=/[$0]
+ERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRROR!!
+HISTORY-SET /[$0]
+CameraHistory Overflow!!
+act4_mary
+act4_matehws
+act4_shelley
+alpha max!!
+cam1.setFov(/[#0]f);
+cam1.setRotate   (/[#0]f,/[#1]f,/[#2]f);
+act4_chaos
+XEVEFLAG:EV02064_F
+Xenvmainthreadmain
+Xenvplaythread
+_MSGprint.
+act2_jr
+act3_allen
+Camera instant test
+Cameratest_history
+WAIT=/[$0]
+Cancel!!
+History is Empty.
+<lf>
+*************ColorScreen Printout*************
+*************Focus Printout*************
+***********Objchk printout***********
+*********CameraHistory SPL*********
+*********CameraTool Standby*****************
+*********Capture End.*****************
+*********Capture Start!!!*****************
+*********Capture Waiting...*****************
+*********CaptureTool Standby*****************
+*********DEBUGPRINT3*********
+*********ManualCamera Replay*********
+*********Timechk Standby*****************
+--alpha--
+/[#0]f,/[#1]f,/[#2]f,/[#3]f,
+Layer = Back
+CaptureMode = /[$0]
+Capture_wait
+Capture Cancel.
+Capture_abrupt
+CaptureMODE ---Chr(pic)
+キャプチャモード
+全画面
+ＢＧのみ（ＺＰＩＣなし）
+ＢＧのみ（ＺＰＩＣあり）
+キャラ単体（ＺＰＩＣなし）
+キャラ単体（ＺＰＩＣあり）
+オブジェ単体（ＺＰＩＣなし）
+オブジェ単体（ＺＰＩＣあり）
+テキスト（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣなし）
+パーティクル（ＺＰＩＣあり）
+CaptureMODE ---All Screen.
+CaptureMODE ---SoftImage BG(pic)
+CaptureMODE ---SoftImage BG(pic+zpic)
+CaptureMODE ---Chr(pic+zpic)
+CaptureMODE ---MObj(pic)
+CaptureMODE ---MObj(pic+zpic)
+CaptureMODE ---TXT(pic)
+CaptureMODE ---Particle(pic)
+CaptureMODE ---Particle(pic+zpic)
+ページ切り替え
+キャラ０
+キャラ１
+キャラ２
+キャラ３
+キャラ４
+キャラ５
+キャラ６
+キャラ７
+キャラ８
+キャラ９
+キャラ０Ａ
+キャラ０Ｂ
+キャラ０Ｃ
+キャラ０Ｄ
+キャラ０Ｅ
+キャラ０Ｆ
+キャラ１０
+キャラ１１
+キャラ１２
+キャラ１３
+キャラ１４
+キャラ１５
+キャラ１６
+キャラ１７
+キャラ１８
+キャラ１９
+キャラ１Ａ
+キャラ１Ｂ
+キャラ１Ｃ
+キャラ１Ｄ
+キャラ１Ｅ
+キャラ１Ｆ
+キャラ２０
+キャラ２１
+キャラ２２
+キャラ２３
+キャラ２４
+キャラ２５
+キャラ２６
+キャラ２７
+キャラ２８
+キャラ２９
+キャラ２Ａ
+キャラ２Ｂ
+キャラ２Ｃ
+キャラ２Ｄ
+キャラ２Ｅ
+キャラ２Ｆ
+キャラ３０
+キャラ３１
+キャラ３２
+キャラ３３
+キャラ３４
+キャラ３５
+キャラ３６
+キャラ３７
+キャラ３８
+キャラ３９
+キャラ３Ａ
+キャラ３Ｂ
+キャラ３Ｃ
+キャラ３Ｄ
+キャラ３Ｅ
+キャラ３Ｆ
+キャラのみキャプチャ
+オブジェのみキャプチャ
+フォルダ選択
+企画サイドのフォルダを使用する
+ｍｏｖｉｅ００（まつやま）
+ｍｏｖｉｅ０１（たいぞう）
+ｍｏｖｉｅ０２（はましま）
+ｍｏｖｉｅ０３（たけなか）
+ｍｏｖｉｅ０４（なかむら）
+ｍｏｖｉｅ０５（いけうち）
+ｍｏｖｉｅ０６（？？？？）
+ｍｏｖｉｅ０７（ふち）
+ｍｏｖｉｅ０８（ふち）
+ｍｏｖｉｅ０９（保存）
+movie00
+movie01
+movie02
+movie03
+movie04
+movie05
+movie06
+movie07
+movie08
+movie09
+エフェクトサイドのフォルダを使用する
+ｍｏｖｉｅ１０（おの）
+ｍｏｖｉｅ１１（くらもと）
+ｍｏｖｉｅ１２（すぎさわ）
+ｍｏｖｉｅ１３（ふじ）
+ｍｏｖｉｅ１４（やぎ）
+ｍｏｖｉｅ１５（こじま）
+ｍｏｖｉｅ１６（おの７６５）
+ｍｏｖｉｅ１７（うなかみ）
+ｍｏｖｉｅ１８（さとせい）
+ｍｏｖｉｅ１９（さとせい）
+movie10
+movie11
+movie12
+movie13
+movie14
+movie15
+movie16
+movie17
+movie18
+movie19
+Capture Folder Setting...
+ColorScreen  SetMode
+Layer = /[$0]
+Before.
+Back.
+Red Max!!
+Red Min!!
+Green Max!!
+Green Min!!
+Blue Max!!
+Blue Min!!
+Alpha Max!!
+Alpha Min!!
+ScreenColor SetMode-------end
+ColorScreenParamZ = {
+0,
+/[$1],
+};
+Runtime.setDefocus(0,2,ColorScreenParamZ);
+ColorScreenParamBack = {
+1,
+/[$0],
+Runtime.setDefocus(15, /[$2], ColorScreenParamBack);
+Layer = /[$3]
+ColorScreenParam = {
+Runtime.setDefocus(15, /[$2], ColorScreenParam);
+ColorScreenParam[2] = /[$1]
+Runtime.setDefocus(/[$2], /[$3], ColorScreenParam);
+Layer not exist.
+*********DEBUGPRINT*********
+pos[] ={
+rot[] ={
+fov[] ={
+/[#0]f,/[#1]f,
+LINKTABLE
+ 
+,
+*********DEBUGPRINT4*********
+HISPTR
+CAMHIS
+*********DEBUGPRINT6*********
+MANUALCAMPTR
+MANUALCAMHIS
+PATH = SPLINE
+PATH = DOWN
+PATH = UP
+PATH = LINEAR
+ShakeRoutine_main
+Facechk...
+F-/[$0]
+No Face!!!
+mouth close.
+mouth open.
+F-/[$0]/[$2] frame(/[$1])
+Facechk...end.
+Focus SetMode
+Layer = Before
+Focus delta = /[$0](back)
+Focus SetMode-------end
+Runtime.setDefocusQuick(/[$0], 2, /[$1], /[$2]);
+Runtime.setDefocusQuick(/[$0], 1, /[$1], /[$2]);
+Layer Not insight.
+Fog  SetMode
+far Ratio Max!!
+far Ratio Min!!
+Near Ratio Max!!
+Near Ratio Min!!
+Fog SetMode-------end
+setFog(1,/[#0]f,/[#1]f,/[#2]f,/[#3]f,/[$4],/[$5],/[$6],/[$7]);
+gnoFilter[0] = /[#0]f;
+gnoFilter[1] = /[#1]f;
+gnoFilter[2] = /[#2]f;
+gnoFilter[3] = /[#3]f;
+Gnochk...
+--filter--
+--ref_alpha--
+filter max!!
+shake max!!
+ref_alpha max!!
+alpha min!!
+filter min!!
+shake min!!
+ref-alpha min!!
+HISTORYLOOK PTR=/[$0]
+End(Button).
+End.(RETURN = /[$0])
+Event Out
+FLSallen.fpk
+FLSchaos.fpk
+FLSjr.fpk
+FLSmary.fpk
+FLSmatehws.fpk
+FLSshelley.fpk
+Face End.
+INPUT Number!!
+MSGprint.
+ManualCamera MOVE to start.
+ManualCamera not Recorded.
+ManualCameraRecord START!!!
+Mtn Frame = /[$0]
+MSGprint(with Face).
+ManualCam_record.
+Record /[$0]
+End(TimeOver).
+Time = /[$0]
+/[wait(CLOSEwin)]/[close()]
+Objchk......(Chr)
+Objchk......End
+Objchk(+Mtn)......
+Objchk......(Effect)
+Objchk......(Unit)
+Objchk......
+*********printout /[$0]***********
+cam1.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setTranslate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setRotate(/[#0]f,/[#1]f,/[#2]f);
+BaseCam.setFov(/[#0]f);
+Timechk_main
+----------シーンは終了しました。
+Timerchk_srv_main
+-----Cut = /[$1] CutTime = /[$2](Total = /[$0])
+setTranslate(/[#0]f,/[#1]f,/[#2]f);
+setRotate   (/[#0]f,/[#1]f,/[#2]f);
+setScale(/[#0]f,/[#1]f,/[#2]f);
+VibRoutine_main
+XEVEJNAME:SCE03000
+===
+==========================
+ring_L
+ring_R
+spl
+lightSPL start.
+lightSPL end.
+ＯＫ
+2064_1
+2064_2
+スタート　０→９
+スタート　１０→１９
+スタート　２０→２９
+スタート　３０→３９
+スタート　４０→４９
+スタート　５０→５９
+スタート　６０→６９
+スタート　７０→７９
+スタート　８０→８９
+スタート　９０→９９
+スタート　１００→１０９
+スタート　１１０→１１９
+スタート　１２０→１２９
+スタート　１３０→１３９
+スタート　１４０→１４９
+act2_chaos
+act2_matehws
+reset_pos
+reset_mot
+space_L
+face2_chaos
+face2_jr
+eyes2_chaos
+ったく　何がどうなってんだか──
+/[ruby(中央電脳/マ　マ)]が風邪ひいちまったんで<lf>調査も分析も暫くはお預けだ
+【ケイオス】
+災難だったね
+【Ｊｒ．】
+よく言うぜ
+act3_shadow
+act3_matehws
+act3_chaos
+act3_jr
+face3_jr
+face3_allen
+face3_matehws
+eyes3_chaos
+eyes3_jr
+【アレン】
+知り合いなんですか
+【マシューズ】
+ボスだよ<lf>俺達の上得意さん
+face3_matehws2
+あー　ちび旦那
+仕事中にミルチア行きのお客さんを<lf>拾ったんですけどね
+act4_jr
+face4_jr
+face4_chaos
+eyes4_jr
+eyes4_chaos
+どうします
+どうやら訳ありな客のようだな──
+ま　それよりエルザの修理が先だろ
+face4_jr2
+ファウンデーションで直してけよ
+あれじゃ目的地までもたないぜ
+/[$0]
+/[$0](Cursor = /[$1])
+--shake--

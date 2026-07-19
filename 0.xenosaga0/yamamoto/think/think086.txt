@@ -1,0 +1,89 @@
+# think_patch extract: think086.bin.ori
+# 총 17개 텍스트 엔트리
+# 번역 시 텍스트 내용만 수정하세요.
+# 텍스트가 원본보다 길면 자동으로 잘림.
+
+>>> [000] op=0x21(display) flag=0x00 offset=0x022E
+　도주
+
+<<<
+
+>>> [001] op=0x21(display) flag=0x00 offset=0x047A
+　ストレイジパワー　　Ｓ
+　　物理攻撃力アップ
+<<<
+
+>>> [002] op=0x21(display) flag=0x00 offset=0x04DC
+　タイムウォーク　　Ｓ
+　　スピード２５
+<<<
+
+>>> [003] op=0x21(display) flag=0x00 offset=0x08BA
+　死界の독　　Ｓ
+　　リバースＨＰ
+<<<
+
+>>> [004] op=0x21(display) flag=0x00 offset=0x0900
+　煉獄の炎　　Ｅ／불꽃
+
+<<<
+
+>>> [005] op=0x21(display) flag=0x00 offset=0x0940
+　魔神の血　　Ｓ
+　　ＥＰ×２
+<<<
+
+>>> [006] op=0x21(display) flag=0x00 offset=0x0978
+　呪印の鎖　　Ｓ
+　　コンボ封鎖（□）
+<<<
+
+>>> [007] op=0x21(display) flag=0x00 offset=0x09B8
+　呪印の鎖　　Ｓ
+　　コンボ封鎖（△）
+<<<
+
+>>> [008] op=0x21(display) flag=0x00 offset=0x09F8
+　冥界の血印　　Ｓ
+　　ＨＰドレイン
+<<<
+
+>>> [009] op=0x21(display) flag=0x00 offset=0x0A36
+　冥界の霊印　　Ｓ
+　　ＥＰドレイン
+<<<
+
+>>> [010] op=0x21(display) flag=0x00 offset=0x0BA6
+　冷衝
+　　슬로
+<<<
+
+>>> [011] op=0x21(display) flag=0x00 offset=0x0BD2
+　　　
+　　슬로
+<<<
+
+>>> [012] op=0x21(display) flag=0x00 offset=0x0BFE
+　治癒
+　　ＨＰ 회복
+<<<
+
+>>> [013] op=0x21(display) flag=0x00 offset=0x0C2C
+　治癒
+　　ＨＰ 회복
+<<<
+
+>>> [014] op=0x21(display) flag=0x00 offset=0x0C6C
+　誘い　　Ｓ
+　　수면
+<<<
+
+>>> [015] op=0x21(display) flag=0x00 offset=0x0C9C
+　誘い　　Ｓ
+　　パイロット睡眠
+<<<
+
+>>> [016] op=0x21(display) flag=0x00 offset=0x0CD6
+　冷界　　Ｅ
+
+<<<

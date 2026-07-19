@@ -1,469 +1,337 @@
+# extraction_order: precise_code_v4
 # chunk 3 @ 0x648 cnum=1014 total=217
-# bc_map: 6,208,64,92,10,6,215,91,88,9,210,2,95,10,7,216,188,160,9,132,184,10,7,72,66,120,99,10,62,84,212,200,10,56,86,54,9,151,162,207,10,187,41,124,10,126,68,213,9,185,174,211,9,36,9,168,10,6,3,179,113,129,10,6,97,195,130,10,6,186,10,6,110,205,10,6,206,75,10,6,108,141,10,7,178,96,114,145,10,7,49,191,192,122,152,10,7,98,111,10,7,53,175,166,10,7,134,155,10,7,63,142,10,6,154,105,201,10,6,46,1,93,9,87,61,165,10,6,119,209,51,10,6,199,158,78,10,6,1,94,150,79,164,10,6,159,177,51,10,6,118,109,73,156,10,6,82,0,100,70,107,10,6,157,176,10,6,167,133,10,6,52,190,140,202,0,102,203,144,45,10,6,180,47,182,10,6,44,65,127,10,7,153,48,10,7,57,9,50,198,123,9,163,189,10,7,115,146,147,10,7,131,169,77,10,7,58,9,89,196,161,0,103,10,7,38,214,74,10,7,149,183,112,10,7,81,67,43,197,116,10,7,85,76,10,7,83,171,121,106,10,7,139,0,102,173,90,172,80,10,7,42,125,181,10,7,117,69,143,10,8,104,60,137,10,8,5,71,10,8,37,10,8,59,136,10,8,40,10,8,37,10,8,60,137,10,8,135,204,10,8,37,10,8,138,10,8,0,101,55,10,8,37,10,8,39,4,128,9,148,193,194,10,24,13,24,25,14,12,17,11,28,30,32,34,20,16,19,29,11,31,11,33,35,18,26,27,170,22,23,21,15,121
-/[label(뒤랑달 승무원 １)]
+# bc_map: 6,208,64,92,10,6,215,91,88,9,210,2,95,10,7,216,188,160,9,132,184,10,7,72,66,120,99,10,62,84,212,200,10,56,86,54,9,151,162,207,10,187,41,124,10,126,68,213,9,185,174,211,9,36,9,168,10,6,3,179,113,129,10,6,97,195,130,10,6,186,10,6,110,205,10,6,206,75,10,6,108,141,10,7,178,96,114,145,10,7,49,191,192,122,152,10,7,98,111,10,7,53,175,166,10,7,134,155,10,7,63,142,10,6,154,105,201,10,6,46,1,93,9,87,61,165,10,6,119,209,51,10,6,199,158,78,10,6,1,94,150,79,164,10,6,159,177,51,10,6,118,109,73,156,10,6,82,0,100,70,107,10,6,157,176,10,6,167,133,10,6,52,190,140,202,0,102,203,144,45,10,6,180,47,182,10,6,44,65,127,10,7,153,48,10,7,57,9,50,198,123,9,163,189,10,7,115,146,147,10,7,131,169,77,10,7,58,9,89,196,161,0,103,10,7,38,214,74,10,7,149,183,112,10,7,81,67,43,197,116,10,7,85,76,10,7,83,171,121,106,10,7,139,0,102,173,90,172,80,10,7,42,125,181,10,7,117,69,143,10,8,104,60,137,10,8,5,71,10,8,37,10,8,59,136,10,8,40,10,8,37,10,8,60,137,10,8,135,204,10,8,37,10,8,138,10,8,0,101,55,10,8,37,10,8,39,4,128,9,148,193,194,10,13,24,25,14,12,17,11,28,30,32,34,20,16,19,29,11,31,11,33,35,18,26,27,170
+# bc_unmap: 15,21,22,23
+#dup(1): /[label(뒤랑달 승무원 １)]
 방에 들어가자마자 습격당했습니다．<lf>
 이 녀석이 약해서 살았지만……．<lf>
 어딘가에 들어갈 때는 조심하십시오．
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 Ｕ−ＴＩＣ 함의 브리지는<lf>
 아무래도 Ｎｏ．３ 문 너머 같습니다．<lf>
 하지만 돌입할 때 닫혀 버려서……．
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 열려면<lf>
 /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 필요한 듯합니다만<lf>
 어디에 있는지까지는……．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 Ｕ−ＴＩＣ 전함의 병사들은<lf>
 준비가 철저한 건지 비겁한 건지，<lf>
 매복하거나 그늘에 숨은 경우가 많아서
-# dup_of: line 10, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 예상 밖의 전투가 아주 많습니다．<lf>
 조심하십시오，꼬마님．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 그나저나 난감하군요……．
 이 병사，<lf>
 카드 키가 있는 곳을 알면서도<lf>
 좀처럼 말하려 하지 않습니다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 수고하셨습니다，꼬마님<lf>
 도와드리지 못해서 죄송합니다．<lf>
 무사히 카드 키를 입수하신 것 같군요．<lf>
 다행입니다，다행이에요．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 예？ 아까 그 포로 말입니까？<lf>
 잠깐 눈을 뗀 사이에<lf>
 사라져 버렸습니다．
-# dup_of: line 10, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 증원을 부른 기색도 없어 보이고，<lf>
 아마 탈출정 같은 걸로<lf>
 도망친 게 아닐까 싶습니다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 저는 현재<lf>
 『꼬마님이 브리지로 향하십니다』라고<lf>
 셸리 씨에게 보고하는 중입니다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 브리지 위치는 아시죠？<lf>
 방에서 나가 제５ 통로 서쪽에 있는<lf>
 Ｎｏ．３ 문 너머에 있는 듯합니다．
-# dup_of: line 10, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 준비를 마치면 서둘러 제압해 주십시오．<lf>
 새로운 적 함대의 전이가 없을 거라곤<lf>
 장담할 수 없으니까요．
-# dup_of: line 10, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ………．
-# dup_of: line 10, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 돌아볼 여유가 없어 죄송합니다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 있는 곳……．<lf>
 평범하게 물어봐도 입을 열지 않습니다．<lf>
 역시 이럴 때는 성심성의껏！<lf>
 대답하기 쉽게 정중히 물어봐야 할까요？
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 좀처럼 입을 열지 않더라도<lf>
 캐묻는 데에는 마음이 중요한 법이죠．<lf>
 정중히 물어볼까요？
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
-조급해하지 말고 다시 정중히 물어볼까요？
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
+서두르지 말고 다시 정중히 물어볼까요？
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 그가 말하기 쉽도록 한 번 더<lf>
 물어볼까요？
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 얘기를 들을 수 있는 상태가 될 때까지<lf>
 잠시 기다릴까요？
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 이제 충분히 얘기할 수 있을 것 같군요．<lf>
 재개할까요？<lf>
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 평범하게 물어봐도<lf>
 좀처럼 입을 열지 않는다면<lf>
 역시 몸에 물어볼 수밖에 없나……．<lf>
 알기 쉬운 형태로 물어봐도 될까요？
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 너무 저자세로 나가면<lf>
 상대가 기어오를 테니……．<lf>
 입장을 알게 해 주기 위해서라도<lf>
 확실하게 말해 줘야 합니다．<lf>
 조금 거칠게 물어봐도 되겠죠？
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 좀처럼 입을 열지 않는군요．<lf>
 더 강하게 추궁할까요？
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 이제 슬슬 입을 열게 해야……．<lf>
 시간 낭비는 좋은 수가 아닙니다．<lf>
 거칠게 심문해도 될까요？
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 어쩔 수 없군요．놈이 진정된 뒤에<lf>
-심문을 재개할까요？
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(5): 심문을 재개할까요？
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 오！ 이제 말할 수 있을 것 같군요．<lf>
 재개하죠！
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 완전히 얕보이고 말았습니다．<lf>
 잠잠해질 때까지 기다리는 편이<lf>
 좋을 것 같군요．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 저기〜 대단히 송구합니다만，<lf>
-/[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 <lf>
+#dup(6): /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 <lf>
 어디 있는지 알고 계시지 않습니까？
-# dup_of: line 10, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 가능하다면…… 가능하다면 말입니다만，<lf>
 번거롭게 해 드려서 죄송한데<lf>
 저희에게 알려 주실 수는 없겠습니까？
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 너무 괴롭혔군요．주눅 들어서 입도<lf>
 열지 못합니다．조금 시간을 두는 게<lf>
-좋다고 생각합니다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(7): 좋다고 생각합니다．
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 얕보이고 말았군요．<lf>
 살짝 과하게 친절했던 걸지도……．<lf>
 잠시 시간을 둘까요？
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
-# dup_of: line 121, tag8 1
-/[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 <lf>
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
+#dup(6): /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 <lf>
 어디 있는지 알고 계시지 않습니까？<lf>
 위치를 모르면 여러모로 곤란합니다．<lf>
 부디 알려 주실 수 없겠습니까？<lf>
 나쁘게 대우하지는 않겠습니다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 살짝 과하게 서둘렀군요．<lf>
 시간을 두고 심문을 재개하는 편이<lf>
-# dup_of: line 131, tag8 51
-좋다고 생각합니다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
-좋은 느낌으로 진행되는 줄 알았는데……．<lf>
+#dup(7): 좋다고 생각합니다．
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
+잘 되어 가는 줄 알았는데……．<lf>
 조금 더 강하게 나갔어야 했군요．<lf>
 잠시 뒤에<lf>
-심문을 재개할까요？
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(5): 심문을 재개할까요？
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 슬슬 지쳤겠죠．<lf>
-/[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 
+#dup(8): /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 
 있는 곳만 알려 주면<lf>
 이런 심문은 끝날 텐데……．<lf>
 아직도 말할 생각이 없습니까？
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 조금 심하게 몰아붙였을지도？<lf>
 시간을 두는 편이 좋겠군요．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 압박이 약했다고는 생각되지 않는데……．<lf>
 어쩔 수 없죠．느긋하게 설득합시다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 좋은 사람이군요〜 당신은．<lf>
 눈을 보면 알 수 있습니다．<lf>
 다친 동료를 생각하면<lf>
 양심에 시달려 좀처럼<lf>
-# dup_of: line 158, tag8 0
-/[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 
-있는 곳을<lf>
+#dup(8): /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 
+#dup(9): 있는 곳을<lf>
 말하지 못할 뿐이죠．<lf>
 알겠습니다．기다리겠습니다！<lf>
 당신이 말할 마음이 들 때까지．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 마지막 말을 잘못했군요．<lf>
 마음을 닫아 버린 것 같습니다．<lf>
 기분이 풀릴 때까지 기다릴까요？
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 6
-/[label(뒤랑달 승무원 １)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(뒤랑달 승무원 １)]
 나머지는 부탁드립니다，꼬마님．<lf>
 여긴 저희에게 맡기고<lf>
 브리지로 서둘러 주십시오．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 완전히 기어올랐군요．<lf>
 너무 저자세로 나가서 그렇습니다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 어이 어이 어이 어이！
-# dup_of: line 10, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 너무 까불면<lf>
 내 특기인 『철권』이<lf>
 크리티컬 히트한다！
-# dup_of: line 10, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 좋게 좋게 말할 때<lf>
 아픈 꼴 보기 전에 불어！
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 이런 이런．삐져 버렸습니다．<lf>
 난감하군요．당분간 내버려 두지 않으면<lf>
 말해 줄 것 같지 않습니다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 저자세로 나가니까 얕보이는 거예요．<lf>
 포로니까 더 강하게 나가도 됩니다．<lf>
 잠시 내버려 둘 수밖에 없군요．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 야 야 야 야！
-# dup_of: line 10, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 빨리 입 열라고 하는 말이<lf>
 너한테는 안 들리냐？<lf>
 다치기 전에<lf>
-# dup_of: line 158, tag8 0
-/[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 
+#dup(8): /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 
 있는 곳을 말해．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 ……삐져 버렸군요．<lf>
 Ｕ−ＴＩＣ 병사는 의외로 한심하네요〜<lf>
 한동안 입을 열 것 같지 않습니다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 말할지도？ ……라고 생각했는데<lf>
 유감입니다．잠시 뒤에<lf>
 더 강하게 몰아붙여 볼까요．<lf>
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 슬슬 입을 열지 않으면<lf>
 온화한 나도 가만있지 않을 거다．<lf>
 끝까지 말하지 않을 생각이라면<lf>
 팔꿈치로 맞을지 무릎으로 맞을지<lf>
 잘 생각해 두시지．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 조금 세게 말했을 뿐인데 이 꼴이군요．<lf>
 잠시 내버려 둡시다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 쳇．마지막에 친절하게 말을<lf>
 건네서 그렇습니다．<lf>
 세게 말했으면 순순히 불었을 텐데．<lf>
-뭐，조급해하지 말고 다시 추궁하죠．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+뭐，서두르지 말고 다시 추궁하죠．
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 내 인내심에도 한계가 왔다．<lf>
-# dup_of: line 158, tag8 0
-/[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 
-# dup_of: line 177, tag8 102
-있는 곳을<lf>
+#dup(8): /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 
+#dup(9): 있는 곳을<lf>
 불라고 몇 번이나 말했을 텐데．<lf>
 어쩔 거냐？<lf>
 말할 건지 안 할 건지<lf>
 슬슬 확실히 하자고．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 아〜아，거의 다 됐는데．<lf>
 입을 다물어 버렸습니다．<lf>
 끈기 있게 갈 수밖에 없군요．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 15, tag8 7
-/[label(뒤랑달 승무원 ２)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(뒤랑달 승무원 ２)]
 좋았어！<lf>
 이걸로 브리지와 카드 키 위치는<lf>
-알았습니다．나머지는 부탁드립니다，꼬마님．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-/[label(병사)]
+알았습니다．나머진 부탁드립니다，꼬마님．
+#dup(2): /[waitkey(64)]/[close()]
+#dup(10): /[label(병사)]
 흥！<lf>
-너희한테 알려 줄 건<lf>
-아무것도 없다니까！
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 271, tag8 8
-/[label(병사)]
+#dup(11): 너희한테 알려 줄 건<lf>
+#dup(12): 아무것도 없다니까！
+#dup(2): /[waitkey(64)]/[close()]
+#dup(10): /[label(병사)]
 /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]？<lf>
 글，글쎄〜<lf>
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 271, tag8 8
-/[label(병사)]
-………．<lf>
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 271, tag8 8
-/[label(병사)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(10): /[label(병사)]
+#dup(13): ………．<lf>
+#dup(2): /[waitkey(64)]/[close()]
+#dup(10): /[label(병사)]
 너희에게 알려 줄 것 따윈<lf>
 아무것도 없다！
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 271, tag8 8
-/[label(병사)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(10): /[label(병사)]
 ……모르겠군．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 271, tag8 8
-/[label(병사)]
-# dup_of: line 281, tag8 37
-………．<lf>
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 271, tag8 8
-/[label(병사)]
-# dup_of: line 273, tag8 60
-너희한테 알려 줄 건<lf>
-# dup_of: line 274, tag8 137
-아무것도 없다니까！
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 271, tag8 8
-/[label(병사)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(10): /[label(병사)]
+#dup(13): ………．<lf>
+#dup(2): /[waitkey(64)]/[close()]
+#dup(10): /[label(병사)]
+#dup(11): 너희한테 알려 줄 건<lf>
+#dup(12): 아무것도 없다니까！
+#dup(2): /[waitkey(64)]/[close()]
+#dup(10): /[label(병사)]
 설령 알고 있어도……<lf>
 말할 수는 없다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 271, tag8 8
-/[label(병사)]
-# dup_of: line 281, tag8 37
-………．<lf>
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 271, tag8 8
-/[label(병사)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(10): /[label(병사)]
+#dup(13): ………．<lf>
+#dup(2): /[waitkey(64)]/[close()]
+#dup(10): /[label(병사)]
 대답할 건 아무것도 없다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 271, tag8 8
-/[label(병사)]
-# dup_of: line 158, tag8 0
-/[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 
+#dup(2): /[waitkey(64)]/[close()]
+#dup(10): /[label(병사)]
+#dup(8): /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 
 있는 곳은……．<lf>
 아니，말할 수는 없다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 271, tag8 8
-/[label(병사)]
-# dup_of: line 281, tag8 37
-………．<lf>
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-# dup_of: line 271, tag8 8
-/[label(병사)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(10): /[label(병사)]
+#dup(13): ………．<lf>
+#dup(2): /[waitkey(64)]/[close()]
+#dup(10): /[label(병사)]
 ……어쩔 수 없군．<lf>
 /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]는<lf>
 마굴리스 사령관님의 방에 있다．
-# dup_of: line 10, tag8 9
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 사령관님의 방은<lf>
 제５ 통로를 빙 돌면 나오는<lf>
 제６ 통로 너머에 있다．
-# dup_of: line 5, tag8 10
-/[waitkey(64)]/[close()]
-case 11
+#dup(2): /[waitkey(64)]/[close()]
 FINAL INIT !!!!!!!!!!!!!!!!!!!!!!!!!
-# dup_of: line 324, tag8 24
 case 11
 case 12
 Late_NPC
 ENE1_TALK
 NPC1_TALK1
-ADVANCE!
+#dup(14): ADVANCE!
 fail A
 fail F
 fail K
@@ -472,20 +340,12 @@ THE END!
 NPC1_LOOKAT_13
 NPC2_TALK
 fail E
-# dup_of: line 331, tag8 11
-ADVANCE!
+#dup(14): ADVANCE!
 fail J
-# dup_of: line 331, tag8 11
-ADVANCE!
+#dup(14): ADVANCE!
 fail O
 fail T
 NPC2_LOOKAT_13
 enterd : /[$0]
 entrance: /[$0]
 포로 확인
-Talk_npc1
-Talk_npc2
-Talk_ene1
-Late_npc
-# dup_of: line 249, tag8 121
-세게 말했으면 순순히 불었을 텐데．<lf>

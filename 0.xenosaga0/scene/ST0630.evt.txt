@@ -1,93 +1,70 @@
+# extraction_order: precise_code_v4
 # chunk 3 @ 0xe88 cnum=626 total=47
-# bc_map: 1,15,5,3,14,18,13,0,40,5,1,39,43,5,1,41,38,21,20,5,3,24,5,1,29,45,4,16,19,46,5,3,36,5,1,26,27,35,44,6,2,25,5,1,28,32,5,2,34,22,5,1,23,33,30,5,2,12,42,37,6,17,6,31,10,11,8,7,9
-/[label(시온)]
+# bc_map: 1,15,5,3,14,18,13,0,40,5,1,39,43,5,1,41,38,21,20,5,3,24,5,1,29,45,4,16,19,46,5,3,36,5,1,26,27,35,44,6,2,25,5,1,28,32,5,2,34,22,5,1,23,33,30,5,2,12,42,37,6,17,6,31,10,11
+# bc_unmap: 7,8,9
+#dup(1): /[label(시온)]
 여기는 제２ 격납고야．
-/[waitkey(64)]/[clear()]
-/[label(모모)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(모모)]
 저기……．<lf>
 방금 전투에서<lf>
 여기저기 상처를 냈는데，
 <lf>
 괜찮을까요？
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 1
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 괜찮아，<lf>
 걱정하지 마．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 1
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 대부분 격납고는<lf>
 튼튼하게 만들어져 있는 데다，<lf>
 여기는 뭐가 더<lf>
 있는 것 같거든．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 4, tag8 3
-/[label(모모)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(모모)]
 무슨 뜻인가요？
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 1
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 캐터펄트 덱 바닥이<lf>
 유도 패널로 되어 있는 거 알아？
 /[waitkey(1)]/[clear()]
 이 방도 보면<lf>
 거기와 구조적으로 붙어 있거든？<lf>
 구조도 뭔가 가속실 같고……．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 4, tag8 3
-/[label(모모)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(3): /[label(모모)]
 가속실……？
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 1
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 뭐，선장님한테 물어보는 게 빠르겠지．<lf>
 물론 불법 부품도<lf>
 쓰인 모양이니까<lf>
 가르쳐 주진 않겠지만．
-/[waitkey(64)]/[close()]
-/[label(지기)]
+#dup(4): /[waitkey(64)]/[close()]
+#dup(5): /[label(지기)]
 무슨 일이지？
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 1
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 앤드루 중령님이 사라졌어요．<lf>
 같이 찾아 주실 수 있나요？
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 41, tag8 2
-/[label(지기)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(5): /[label(지기)]
 중령이라면 괜찮겠지．<lf>
 그리 걱정할 필요는 없다．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 1, tag8 1
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(1): /[label(시온)]
 그치만<lf>
 만약 무슨 일이 생겼을 수도 있고，<lf>
 지기 씨가 있으면 든든해서요……．
-# dup_of: line 3, tag8 5
-/[waitkey(64)]/[clear()]
-# dup_of: line 41, tag8 2
-/[label(지기)]
+#dup(2): /[waitkey(64)]/[clear()]
+#dup(5): /[label(지기)]
 ……알았다．<lf>
 그 때문에 출발이 늦어져도 곤란하니<lf>
 협력하지．
-# dup_of: line 40, tag8 6
-/[waitkey(64)]/[close()]
+#dup(4): /[waitkey(64)]/[close()]
 이게 나오면 오류입니다！
-# dup_of: line 40, tag8 6
-/[waitkey(64)]/[close()]
+#dup(4): /[waitkey(64)]/[close()]
 フラグオン！
 enterd : /[$0]
 entrance: /[$0]
-TalkNPC11
-ANNAI
-Talk_npc7

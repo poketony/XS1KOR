@@ -1,84 +1,60 @@
+# extraction_order: precise_code_v4
 # chunk 5 @ 0xc98 cnum=760 total=42
-# bc_map: 20,7,3,19,7,3,26,7,4,27,7,4,18,7,4,30,6,29,7,5,0,28,23,36,7,1,31,32,38,7,2,21,37,35,7,1,24,22,34,40,7,5,33,39,7,41,7,24,9,13,20,14,16,25,15,10,10,11,12,17,25
-# bc_unmap: 8
-→사령실
-/[waitkey(64)]/[close()]
-/[label(병사 Ｃ)]
+# bc_map: 20,7,3,19,7,3,26,7,4,27,7,4,18,7,4,30,6,29,7,5,0,28,23,36,7,1,31,32,38,7,2,21,37,35,7,1,24,22,34,40,7,5,33,39,7,41,7,9,8,13,20,14,16,25,15,25
+# bc_unmap: 10,11,12,17
+#dup(1): →사령실
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(병사 Ｃ)]
 …빨리 교대 시간이 안 오려나．
-# dup_of: line 2, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 3, tag8 3
-/[label(병사 Ｃ)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(병사 Ｃ)]
 하암…… 졸려．
-# dup_of: line 2, tag8 7
-/[waitkey(64)]/[close()]
-/[label(병사 Ｄ)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(병사 Ｄ)]
 응？
-# dup_of: line 2, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 9, tag8 4
-/[label(병사 Ｄ)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(병사 Ｄ)]
 …파리인가？
-# dup_of: line 2, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 9, tag8 4
-/[label(병사 Ｄ)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): /[label(병사 Ｄ)]
 탁！
 /[waitkey(1)]/[clear()]
 쳇…… 놓쳤나．
-# dup_of: line 2, tag8 7
-/[waitkey(64)]/[close()]
-/[label(Ｚｉｇｇｕｒａｔ８)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(5): /[label(Ｚｉｇｇｕｒａｔ８)]
 /[font(Ｕ−ＴＩＣ)] 기관의 범용형 /[font(Ａ．Ｇ．Ｗ．Ｓ．)]<lf>
 타입 메르쿠리오다．<lf>
 역시 혼자서 이놈을<lf>
 상대하기는 버겁겠군…．
-# dup_of: line 2, tag8 7
-/[waitkey(64)]/[close()]
-/[label(병사 Ａ)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(6): /[label(병사 Ａ)]
 마굴리스 사령관님이 확보한<lf>
 리얼리언 말인데，엄청난 힘을<lf>
 갖고 있다는 얘기가 있어……．
-# dup_of: line 2, tag8 7
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 /[label(병사 Ｂ)]
 그런 아이 모습을 한<lf>
 합성 인간이？<lf>
 그냥 소문이겠지．
-# dup_of: line 2, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 26, tag8 1
-/[label(병사 Ａ)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(6): /[label(병사 Ａ)]
 하지만 마굴리스 사령관님은<lf>
 꽤 집착하시는 모양이던데？<lf>
 지금은 성당의 방 너머에 있는<lf>
 독방동에 갇혀 있댔어．
-# dup_of: line 2, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 20, tag8 5
-/[label(Ｚｉｇｇｕｒａｔ８)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(5): /[label(Ｚｉｇｇｕｒａｔ８)]
 ２인승 소형정인가……<lf>
 탈출할 때 쓸 수 있겠군．
-# dup_of: line 2, tag8 7
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ＥＶＳ 【환경 시뮬레이터】를 종료합니다．
-# dup_of: line 2, tag8 7
-/[waitkey(64)]/[close()]
-# dup_of: line 37, tag8 24
-하지만 마굴리스 사령관님은<lf>
+#dup(2): /[waitkey(64)]/[close()]
 FINAL_INIT
+0
 d
-# dup_of: line 1, tag8 20
-→사령실
+#dup(1): →사령실
 enterd : /[$0]
 evsExitをコールしました
-예<lf>아니요
+#dup(7): 예<lf>아니요
 entrance: /[$0]
-TalkNPC1
-# dup_of: line 56, tag8 10
-TalkNPC1
-TalkNPC3
-TalkNPC4
-idle
-# dup_of: line 54, tag8 25
-예<lf>아니요
+#dup(7): 예<lf>아니요

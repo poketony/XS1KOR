@@ -1,152 +1,110 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x64 cnum=188 total=4
-# bc_map: 0,3,2,1
+# bc_map: 0,3
+# bc_unmap: 1,2
 22222222222222222222222222222222222222222222222222222
 【居住エリア】
-Nobi
-Chijimi
 
 # chunk 4 @ 0x105c cnum=780 total=81
-# bc_map: 70,1,24,1,26,1,22,1,27,1,21,1,69,1,40,64,78,0,73,48,1,20,36,46,0,35,79,1,41,61,1,29,31,0,32,58,1,18,62,1,28,0,33,66,37,1,15,80,52,74,44,1,19,59,1,16,51,72,0,56,63,1,17,45,1,42,39,77,0,76,68,65,1,50,30,0,38,67,75,1,71,49,1,43,57,60,0,34,47,1,25,1,53,54,1,51,4,2,23,5,55,13,14,8,6,9,11,7,10,12,6,3
+# bc_map: 70,1,24,1,26,1,22,1,27,1,21,1,69,1,40,64,78,0,73,48,1,20,36,46,0,35,79,1,41,61,1,29,31,0,32,58,1,18,62,1,28,0,33,66,37,1,15,80,52,74,44,1,19,59,1,16,51,72,0,56,63,1,17,45,1,42,39,77,0,76,68,65,1,50,30,0,38,67,75,1,71,49,1,43,57,60,0,34,47,1,25,1,53,54,1,23,5,55,13,14
+# bc_unmap: 2,3,4,6,7,8,9,10,11,12
 移動先の入力をお願いします。
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【ブリッジエリア】に移動します。
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【揚陸待機エリア】に移動します。
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【パークエリア】に移動します。
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【隔離格納庫エリア】に移動します。
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【ドックエリア】に移動します。
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 移動先の入力はキャンセルされました。
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ふー、終わった終わった！<lf>
 後はシャワーでも浴びて、<lf>
 酒でも飲むかー！
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 警官だって人の子だよなぁ、<lf>
 やっぱ仕事の後の一杯が一番だぜ！
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ……女の子？<lf>
 さぁ、ここには来てないな。<lf>
 もし、来てたらそりゃ覚えてるさ！！
-# dup_of: line 18, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 この艦に女の子が来るなんて<lf>
 １年に１度あるか無いかだからね！！
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 まぁ、何か連絡があったら<lf>
 報告してあげますよ！！
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 あ、Ｊｒ．様。<lf>
 あのカジノ、いいですよねぇ！
-# dup_of: line 18, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 あれのおかげで、<lf>
 仕事の疲れなんか吹っ飛びますよ！
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ……でも、<lf>
 実はイカサマとかしてませんか？
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 あ、今日の仕事はおしまいですか？
-# dup_of: line 18, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 いいですねぇ、私はこれから交代ですよ。<lf>
 昨日、カジノで取られた分、<lf>
 しっかり働かないとねぇ……。
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ……しかし、<lf>
 Ｊｒ．様も艦の中にまで<lf>
 ギャンブル場を作るんだから、<lf>
 豪快というか、なんというか、<lf>
 まったくたいしたお方だよ……。
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ……まぁ、そのおかげで<lf>
 俺達も楽しめるんですけどねぇ。
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ……しまったぁ！！<lf>
 ギャンブルに夢中になってたら<lf>
 艦が出港しちまったよぉ……。
-# dup_of: line 18, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 一人じゃファウンデーションに<lf>
 帰る事もできないしなぁ……。
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 ……しゃーない、<lf>
 もう少し遊んでいくかぁ！！
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 まったく、<lf>
 なんで警官の俺が<lf>
 逮捕されなきゃならないんだよ！
-# dup_of: line 18, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 連邦法って言うのは、<lf>
 無実の人間を<lf>
 捕まえる為の法律なのか！！
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 アレン？<lf>
 ああ、ヴェクターの制服を来た人ですよね！
-# dup_of: line 18, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 だったら、<lf>
 泣きながらランチ乗り場の方に<lf>
 走っていくのを見ましたよ。
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 結構みっともない走り方だったんで、<lf>
 よく覚えてます。
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 まったく、腹が立つよなぁ……。<lf>
 人がいい調子で儲けてたら、<lf>
 兵隊の奴等いきなり邪魔しやがってぇ！
-# dup_of: line 18, tag8 0
-/[waitkey(1)]/[clear()]
+#dup(2): /[waitkey(1)]/[clear()]
 こうなりゃ、<lf>
 もっかいカジノにいって、遊び直しだ！
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 【居住エリア駅】
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 シオン宛てに<lf>
 メールが届いてるよ！！
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
-# dup_of: line 57, tag8 51
-ギャンブルに夢中になってたら<lf>
-Nobi
-Chijimi
+#dup(1): /[waitkey(64)]/[close()]
 【ブリッジエリア】<lf>【揚陸待機エリア】<lf>【パークエリア】<lf>【隔離格納庫エリア】<lf>【ドックエリア】<lf>　キャンセル
 PPPPPPPPPPPPPPPPPPPPPPP
 メールを見る<lf>メールを見ない
 enterd : /[$0]
 entrance: /[$0]
-TalkNPC1s
-TalkNPC1
-TalkNPC2
-TalkNPC3
-TalkNPC1a
-TalkNPC2a
-TalkNPC3a
-# dup_of: line 105, tag8 6
-TalkNPC1
-Evt

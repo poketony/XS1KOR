@@ -1,22 +1,20 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x10cc cnum=604 total=14
-# bc_map: 8,0,11,9,0,10,0,12,0,1,6,13,2,3,4,5,7
+# bc_map: 8,0,11,9,0,10,0,12,0,1,6,13,2,4,5,7
+# bc_unmap: 3
 エレベーターを作動させますか？
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 反応が無い。<lf>
 何かに連動しているようだ。
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 反応が無い。
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 急な斜面でとても登れない。
-# dup_of: line 2, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 enterd : /[$0]
 weight: /[#1]
 移動可
 entrance: /[$0]
-idle
 super_getFlags: /[#1]
 super_setFlags: /[#1]
 はい<lf>いいえ

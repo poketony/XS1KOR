@@ -1,44 +1,34 @@
+# extraction_order: precise_code_v4
 # chunk 2 @ 0x97c cnum=435 total=20
 # bc_map: 12,17,0,10,0,8,0,9,0,7,0,18,14,5,0,4,3,0,11,0,16,0,15,0,19,0,13,0,6,1,2
 스위치가 있다．<lf>
 눌러 보겠습니까？<lf>
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 에어록을 해제합니다．<lf>
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 에어록 해제를 중지합니다．<lf>
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 에어록을 잠급니다．<lf>
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 에어록 잠금을 중지합니다．<lf>
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 젠장！！<lf>
 내가 그만 저런 곳에<lf>
 “물건”을 두고 와 버렸어！！<lf>
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 저 괴물의 움직임을 멈출 수 있으면<lf>
 “물건”을 가져올 수 있을 텐데……<lf>
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 서브루트로 들어가려면…<lf>
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 전용 열쇠가 필요하다．<lf>
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 앞으로 가고 싶은데…<lf>
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 차가 방해된다．<lf>
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 로케 테스트<lf>
-# dup_of: line 3, tag8 0
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 예<lf>아니요
 enterd : /[$0]
 entrance: /[$0]

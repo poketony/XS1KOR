@@ -1,14 +1,14 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0xec0 cnum=419 total=10
-# bc_map: 1,7,9,2,0,6,8,2,4,5,3
+# bc_map: 1,7,9,2,0,6,8,2,4,5
+# bc_unmap: 3
 /[label(モモ)]
 ここ……<lf>
 モモが生まれた部屋です。
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[label(シオン)]
 え？<lf>
 この部屋でモモちゃんが……？
-# dup_of: line 4, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 enterd : /[$0]
 entrance: /[$0]
-Momo

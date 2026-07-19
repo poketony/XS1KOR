@@ -1,20 +1,16 @@
+# extraction_order: precise_code_v4
 # chunk 0 @ 0x44 cnum=71 total=2
-# bc_map: 0,1,1,1
+# bc_map: 0,1
 Start Down
-Start Up
-# dup_of: line 2, tag8 1
-Start Up
-# dup_of: line 2, tag8 1
 Start Up
 
 # chunk 2 @ 0x614 cnum=378 total=11
 # bc_map: 10,1,8,7,1,2,9,3,5,6,0,4
 ＥＶＳ 【환경 시뮬레이터】를 종료합니다．
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 보스전에 들어갑니다．<lf>
 이벤트로 점프합니다．<lf>
-# dup_of: line 2, tag8 1
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 Event Pass
 공사 중입니다/[wait(30)]/[close()]
 enterd : /[$0]

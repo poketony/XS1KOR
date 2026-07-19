@@ -1,272 +1,192 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0xf28 cnum=1474 total=130
-# bc_map: 96,119,4,53,98,5,51,67,4,57,111,5,52,89,4,90,61,60,5,32,122,5,62,5,42,81,5,92,102,4,95,91,5,63,109,5,113,43,112,5,41,107,5,31,5,33,45,5,25,54,99,4,55,39,100,5,44,106,38,5,93,105,5,65,5,126,27,4,66,5,80,108,118,72,5,49,46,4,58,97,5,37,40,64,5,83,115,5,124,5,3,36,5,123,5,3,35,5,3,34,116,5,3,73,82,5,3,79,1,78,68,94,2,5,3,30,121,4,24,117,5,3,87,47,5,3,59,5,3,48,120,5,3,28,5,3,56,75,4,50,74,5,3,70,71,5,3,114,5,3,76,103,5,3,125,5,3,104,26,5,3,88,29,5,3,110,101,5,84,77,5,84,69,5,85,86,5,16,18,19,0,17,14,21,22,23,15,7,12,8,9,13,10,11,20,6,86,127,128,129
+# bc_map: 96,119,4,53,98,5,51,67,4,57,111,5,52,89,4,90,61,60,5,32,122,5,62,5,42,81,5,92,102,4,95,91,5,63,109,5,113,43,112,5,41,107,5,31,5,33,45,5,25,54,99,4,55,39,100,5,44,106,38,5,93,105,5,65,5,126,27,4,66,5,80,108,118,72,5,49,46,4,58,97,5,37,40,64,5,83,115,5,124,5,3,36,5,123,5,3,35,5,3,34,116,5,3,73,82,5,3,79,1,78,68,94,2,5,3,30,121,4,24,117,5,3,87,47,5,3,59,5,3,48,120,5,3,28,5,3,56,75,4,50,74,5,3,70,71,5,3,114,5,3,76,103,5,3,125,5,3,104,26,5,3,88,29,5,3,110,101,5,84,77,5,84,69,5,85,86,5,16,18,19,0,17,14,15,20,127,128,129
+# bc_unmap: 6,7,8,9,10,11,12,13,21,22,23
 내 여자 친구가<lf>
 무기도 안 들고 나가 버렸어！！
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 이렇게 숨어 있을 수밖에 없다니<lf>
 난 정말 한심해……．
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 이，이，이 앞은 그노시스투성이라<lf>
 도저히 움직일 수가 없어！！
-# dup_of: line 3, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 이대로라면 저 괴물들에게<lf>
 여자 친구가 잡아먹히고 말 거야！！
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 이，이런 괴물이……<lf>
 저，정말로 있，다니……
-# dup_of: line 3, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 저，정말로 하，하하……<lf>
 게，게다가 이렇게，<lf>
 이렇게나 많이……
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 …제대…로 남자 친구 말을…<lf>
 들을 걸… 그랬어……．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 이미 숨이 끊어졌다．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 너 여기 오는 길에<lf>
 그노시스랑 마주쳤어？
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 놈들 중에는 움직이는 것에<lf>
 관심을 보이는 녀석들도 있지．
-# dup_of: line 3, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 예를 들면…<lf>
 모니터 영상 같은 것에…
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 그렇구나…<lf>
 행운을 빈다！！
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 충고 하나 할게！！<lf>
 너도 여기서 구조대가 올 때까지<lf>
 기다리는 게 좋을걸！！
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 네가 그래도 가겠다면<lf>
 놈들에 대해 알려 줄게…．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 …그래，그 괴물들의 습성 말이야…．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 …뭐，나머지는 운만 좋으면<lf>
 너도 도망칠 수 있을지도 모르지．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ……젠장！！<lf>
 이렇게 그노시스가 우글거리면<lf>
 앞으로 갈 수가 없잖아！？
-# dup_of: line 3, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 여기서 앞으로 간다고 해도<lf>
 저런 괴물들이 얼마나 있을지<lf>
 알 수가 없어！！
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 너도 알잖아？<lf>
 놈들에게 조금이라도 닿아 봐！<lf>
 순식간에 저세상행이라고！！
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 놈들의 시선을 끌 만한 게 있으면<lf>
 저쪽으로 갈 수 있을지도 몰라……．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 잠깐 기다려！！
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ！！<lf>
 ……뭐야，벡터 사람이잖아．
-# dup_of: line 3, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 그나저나 당신 알고 있나？
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 젠장！！ 학자란 것들은<lf>
 왜들 그리 아는 척을 할까．<lf>
 사실은 아무것도<lf>
 모르는 주제에……．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 오！？<lf>
 너 정신이 없구나！？
-# dup_of: line 3, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 이런 비상시일수록<lf>
 내 말을 들을 여유를 가지라고！！
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 『남의 말에 진지하게 귀를 기울여！！』<lf>
 이 앞에서 무슨 일이 일어나든<lf>
 네가 그것만 지키면 어떻게든 될 거야！
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 스위치가 있다．<lf>
 눌러 보겠습니까？
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 함내 모니터를 켭니다．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 『역시 그만두자……．』
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 함내 모니터 스위치는 고장 나 있다．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 「잘 넘어간 것 같네……．」
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 「어쨌든<lf>
 빨리 누군가와 합류해야 해……．」
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 서，설마 이 함 전체가<lf>
 그노시스에게 점거된 거야！？
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 알렌 쪽은 괜찮을까……．<lf>
 /[font(ＫＯＳ−ＭＯＳ)]가 없으면<lf>
 저놈들을 쓰러뜨리는 건 불가능해……．<lf>
 어쨌든 /[color(0xfa3232)]잡히면 끝/[color(0xffffff)]이야！！<lf>
 어떻게든 /[color(0xfa3232)]적과 접촉하지 않고/[color(0xffffff)]<lf>
 /[font(ＫＯＳ−ＭＯＳ)]가 있는 곳까지 가야 해！！
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 ……격벽 스위치？<lf>
 마음의 위안 정도는 되겠지……．<lf>
-# dup_of: line 3, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 ……어쨌든 그노시스가 눈치채기 전에<lf>
 빨리 여기서 벗어나야 해！
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 힐베르트 이펙트가 작용하지 않는 한<lf>
 아무리 싸워도 소용없어……．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 더 가까이 가는 건 위험할지도……．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 앗！<lf>
 들켰다고！？
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 ……놈들？
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 여기를 돌파하지 않는 한<lf>
 모두가 있는 곳으로 갈 수 없어……．
-# dup_of: line 3, tag8 4
-/[waitkey(1)]/[clear()]
+#dup(1): /[waitkey(1)]/[clear()]
 그렇다고 제대로 싸운다 한들<lf>
 이길 수 있는 상대도 아닌 것 같아…．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 아무래도 모니터에 정신이 팔렸나 보네．<lf>
 과연，확실히 그 사람이 말한 대로야．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 싸울 수 없지만 어떻게든 될지도……．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 일부러 내가 먼저<lf>
 위험한 짓을 할 필요는 없겠지……．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 ！！
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 반응이 없어……．<lf>
 ……브리지까지 습격당했단 거야！？
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 브리지가 봉쇄됐다고！？<lf>
 ……안 좋은 예감이 들어．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 91, tag8 3
-/[label(시온)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(3): /[label(시온)]
 돌아가 봐야 아무것도 없어．<lf>
 다른 루트를 찾는 게 좋겠어．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-세그먼트 어드레스 Ｎｏ．１６이라고<lf>
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): 세그먼트 어드레스 Ｎｏ．１６이라고<lf>
 적힌 문을 발견했다．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
-# dup_of: line 169, tag8 84
-세그먼트 어드레스 Ｎｏ．１６이라고<lf>
+#dup(2): /[waitkey(64)]/[close()]
+#dup(4): 세그먼트 어드레스 Ｎｏ．１６이라고<lf>
 표시되어 있다．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 세그먼트 어드레스 Ｎｏ．１６의<lf>
 디코드를 종료합니다．
-# dup_of: line 6, tag8 5
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 pass3
 serch_off!!!!!!!!!!!!!!!!!!!!!!
 serch_on!!!!!!!!!!!!!!!!!!!!!!!
 *****************************************
 pipopapopipopapopipopapopipopapopipopapopipopapopipopapopipopapo
 enterd : /[$0]
-sound01
-sound02
-sound03
 entrance: /[$0]
-TalkNPC1
-TouchNPC1
-TalkNPC2
-TalkNPC3
-TouchNPC3
-TalkNPC6
-TalkNPC7
 shoot on
-Evt
-# dup_of: line 176, tag8 86
-디코드를 종료합니다．
 ＊＊＊＊＊＊소리가 났다！！＊＊＊＊＊＊＊
 ＊＊＊＊＊＊소리 ２가 났다！！＊＊＊＊＊＊＊
 ＊＊＊＊＊＊소리 ３이 났다！！＊＊＊＊＊＊＊

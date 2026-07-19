@@ -1,71 +1,57 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0xb14 cnum=560 total=47
-# bc_map: 0,10,2,0,12,18,2,0,11,17,2,0,9,19,44,1,14,2,34,33,1,41,16,2,20,37,1,30,23,2,36,21,24,1,31,28,2,40,22,32,2,42,2,45,2,27,38,2,13,15,7,39,29,25,46,26,35,43,3,8,4,5
-# bc_unmap: 6
-/[label(シオン)]
+# bc_map: 0,10,2,0,12,18,2,0,11,17,2,0,9,19,44,1,14,2,34,33,1,41,16,2,20,37,1,30,23,2,36,21,24,1,31,28,2,40,22,32,2,42,2,45,2,27,38,2,13,6,15,7,39,29,25,46,26,35,43,8
+# bc_unmap: 3,4,5
+#dup(1): /[label(シオン)]
 『今日は疲れたしもう休もうかしら……。』
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 0
-/[label(シオン)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(シオン)]
 『無理は体に毒ね。<lf>
 もう休みましょう……。』
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 0
-/[label(シオン)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(シオン)]
 『広い艦だったし、<lf>
 もうちょっと遊んでみようかな。』
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 0
-/[label(シオン)]
+#dup(2): /[waitkey(64)]/[close()]
+#dup(1): /[label(シオン)]
 ……さっきはちょっと<lf>
 アレン君に冷たくしすぎちゃったな…<lf>
 直接会って謝らなくちゃ。
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 でも、どこ行っちゃったんだろう？
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ナンダ！？<lf>
 ナマイキソウナチビダナ……。
-# dup_of: line 16, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ヤスミタイナラ<lf>
 べっどデヤスメ！！
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 オッ！？<lf>
 メズラシク、キャクジンカ？
-# dup_of: line 16, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ジュクスイシタッテ<lf>
 オレガミハッテテヤルゾ！！
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 マタ、チビカ？<lf>
 オマエガ、コノフネノ<lf>
 カンチョーダッテ？
-# dup_of: line 16, tag8 1
-/[waitkey(1)]/[clear()]
+#dup(3): /[waitkey(1)]/[clear()]
 ソンナよたバナシ<lf>
 シンジラレルカ？
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ヤアヤア、キャクジン！！<lf>
 オマエラノ、トモダチノチビハ<lf>
 チョット、ナマイキダナ！！
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 休憩をとりますか？
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 ＨＰ・ＥＰが回復した！！
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 シオン宛てに<lf>
 メールが届いてるよ！！
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(2): /[waitkey(64)]/[close()]
 『疲れた時は休むのが１番！！』<lf>『もうちょっと探索してみよう！！』
+\\\\\\\\\\\
 はい<lf>いいえ
 enterd : /[$0]
 モモ、抜けます！！
@@ -75,7 +61,4 @@ enterd : /[$0]
 コスモス、抜けます！！
 パーティーセットをシオンだけにするぞ！！
 完了！！完了！！パーティーはシオンだけになったはず！？
-Open
 entrance: /[$0]
-TalkNPC1
-TalkNPC1a

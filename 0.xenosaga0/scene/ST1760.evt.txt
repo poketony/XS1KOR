@@ -1,63 +1,48 @@
+# extraction_order: precise_code_v4
 # chunk 4 @ 0x710 cnum=512 total=35
-# bc_map: 0,26,31,33,7,0,26,31,33,7,3,18,34,7,1,17,21,6,22,7,4,19,24,6,14,20,7,2,16,23,7,5,15,6,27,32,25,7,28,30,7,12,29,13,8,11,9,10
-/[label(アレン)]
-シェリィさんに呼ばれているので<lf>
-僕はデュランダルのブリッジに<lf>
-行ってきます。
-/[waitkey(64)]/[close()]
-# dup_of: line 1, tag8 0
-/[label(アレン)]
-# dup_of: line 2, tag8 26
-シェリィさんに呼ばれているので<lf>
-# dup_of: line 3, tag8 31
-僕はデュランダルのブリッジに<lf>
-# dup_of: line 4, tag8 33
-行ってきます。
-# dup_of: line 5, tag8 7
-/[waitkey(64)]/[close()]
+# bc_map: 0,26,31,33,7,0,26,31,33,7,3,18,34,7,1,17,21,6,22,7,4,19,24,6,14,20,7,2,16,23,7,5,15,6,27,32,25,7,28,30,7,12,29,13
+# bc_unmap: 8,9,10,11
+#dup(1): /[label(アレン)]
+#dup(2): シェリィさんに呼ばれているので<lf>
+#dup(3): 僕はデュランダルのブリッジに<lf>
+#dup(4): 行ってきます。
+#dup(5): /[waitkey(64)]/[close()]
+#dup(1): /[label(アレン)]
+#dup(2): シェリィさんに呼ばれているので<lf>
+#dup(3): 僕はデュランダルのブリッジに<lf>
+#dup(4): 行ってきます。
+#dup(5): /[waitkey(64)]/[close()]
 /[label(ジギー)]
 ……ヨアキム・ミズラヒか。<lf>
 謎の多い男だ。
-# dup_of: line 5, tag8 7
-/[waitkey(64)]/[close()]
+#dup(5): /[waitkey(64)]/[close()]
 /[label(ケイオス)]
 ……モモの事、<lf>
 ちょっと心配だな……。
-/[waitkey(1)]/[clear()]
+#dup(6): /[waitkey(1)]/[clear()]
 どこへ行ったんだろう？
-# dup_of: line 5, tag8 7
-/[waitkey(64)]/[close()]
+#dup(5): /[waitkey(64)]/[close()]
 /[label(Ｊｒ．)]
 あいつ……<lf>
 もしかして俺の言ったこと気にして……
-# dup_of: line 18, tag8 6
-/[waitkey(1)]/[clear()]
+#dup(6): /[waitkey(1)]/[clear()]
 ……ここにある事実は<lf>
 あの子には少しキツ過ぎたか……。
-# dup_of: line 5, tag8 7
-/[waitkey(64)]/[close()]
+#dup(5): /[waitkey(64)]/[close()]
 /[label(シオン)]
 ……モモちゃん、<lf>
 どこへ行っちゃったんだろう？
-# dup_of: line 5, tag8 7
-/[waitkey(64)]/[close()]
+#dup(5): /[waitkey(64)]/[close()]
 /[label(ＫＯＳ−ＭＯＳ)]
 ……モモが確認できません。
-# dup_of: line 18, tag8 6
-/[waitkey(1)]/[clear()]
+#dup(6): /[waitkey(1)]/[clear()]
 シオン、<lf>
 捜索を開始した方が<lf>
 よいのではないでしょうか？
-# dup_of: line 5, tag8 7
-/[waitkey(64)]/[close()]
+#dup(5): /[waitkey(64)]/[close()]
 シオン宛てに<lf>
 メールが届いてるよ！！
-# dup_of: line 5, tag8 7
-/[waitkey(64)]/[close()]
+#dup(5): /[waitkey(64)]/[close()]
 enterd : /[$0]
 パーティー情報・leader_shion,kosmos,chaos,*,*,*
 entrance: /[$0]
-TalkALLEN
-TalkZIGGY
-TalkCHAOS
-TalkJUNIOUR

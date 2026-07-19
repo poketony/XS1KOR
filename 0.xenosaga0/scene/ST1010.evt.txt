@@ -1,11 +1,11 @@
+# extraction_order: precise_code_v4
 # chunk 1 @ 0x204 cnum=369 total=10
 # bc_map: 0,9,2,1,2,3,4,5,6,7,8
 /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]가 있다．<lf>
 카드 키를 가져가겠습니까？<lf>
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 /[color(0x329bbe)]Ｎｏ．３ 카드/[color(0xffffff)]를 손에 넣었다<lf>
-# dup_of: line 3, tag8 2
-/[waitkey(64)]/[close()]
+#dup(1): /[waitkey(64)]/[close()]
 A - Type
 B - Type
 C - Type

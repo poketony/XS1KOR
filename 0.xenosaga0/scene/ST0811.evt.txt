@@ -1,11 +1,11 @@
+# extraction_order: precise_code_v4
 # chunk 6 @ 0xe94 cnum=452 total=7
-# bc_map: 5,0,2,5,3,4,6
-# bc_unmap: 1
-→사령실
+# bc_map: 5,0,1,2,5,3,4,6
+#dup(1): →사령실
 /[waitkey(64)]/[close()]
+0
 d
-# dup_of: line 1, tag8 5
-→사령실
+#dup(1): →사령실
 enterd : /[$0]
 entrance: /[$0]
 예<lf>아니요
