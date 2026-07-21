@@ -18,7 +18,7 @@ zensin3
 zensin4
 zensin5
 shion_serifu_001
-どうやら<lf>中心部に来たみたいね──
+아무래도<lf>중심부에 도착한 모양이네……
 zensin_stop
 zensin_stop1
 zensin_stop2
@@ -26,24 +26,24 @@ zensin_stop3
 zensin_stop4
 zensin_stop5
 shion_serifu_002_mae
-あれは──
+저건……
 chaos_serifu_002_mae
-建物
+건물？
 kosms_idl
 shion_lookupend
 chaos_lookupend
 momo_idl
 ziggy_idl
-それとも<lf>何かの装置だろうか──
+아니면<lf>무슨 장치 같은 걸까……？
 mtn_003_mae
 mtn_004_mae
 mtn_003
 mtn_004
-どういうこと
+무슨 뜻이야？
 shion_serifu_002_1
-さあ──ただ
+글쎄…… 다만……
 chaos_serifu_002
-ただ
+다만？
 shion_serifu_002_2
 zensin_xx
 zensin1_xx
@@ -51,10 +51,10 @@ zensin2_xx
 zensin3_xx
 zensin4_xx
 zensin5_xx
-仮に<lf>ここが中心部だとするなら
-何らかの形で<lf>このグノーシスに関わっているもの
-という考え方も<lf>出来る
-あくまで<lf>僕らの基準に照らしてのことだけど
+만약<lf>여기가 중심부라 가정한다면
+모종의 형태로<lf>이 그노시스와 관련된 것이라고
+생각해 볼 수도 있지
+어디까지나 우리의 기준으로<lf>비추어 봤을 때의 얘기지만
 kosms_idl_smooth
 shion_idl_smooth
 chaos_idl_smooth
@@ -65,34 +65,34 @@ mtn_006
 shion_idl
 chaos_idl
 ziggy_serifu_006
-あれが<lf>人工物であるのなら
-俺達のように取り込まれた<lf>船か何かの残骸ということか──
-人は──
+저것이 인공물이라면
+우리처럼 집어삼켜진<lf>배나 무언가의 잔해라는 건가……
+사람은……
 momo_serifu_006
-私達もああなっちゃうんですか
+우리도 저렇게 되는 걸까요？
 mtn_007_mae
 mtn_007
 mtn_008
 shion_serifu_007_1
-そうなる前に<lf>脱出しましょ
+그렇게 되기 전에<lf>탈출하자
 shion_serifu_007_2
-ＫＯＳ−ＭＯＳ<lf>エルザの位置は
+ＫＯＳ−ＭＯＳ<lf>엘자의 위치는？
 mtn_009
 kosms_serifu_008
-不明です<lf>ロストしました
-ロストって──
+불명입니다<lf>로스트됐습니다
+로스트됐다니……
 shion_serifu_008
-中心部付近の磁場<lf>重力場が不安定になってきている影響です
-１３分前に探知した座標は<lf>ここより下層　３００メートル程の場所です
+중심부 부근의 자기장과 중력장이<lf>불안정해짐에 따른 영향입니다
+１３분 전에 탐지한 좌표는<lf>여기서 아래로 ３００ｍ 정도 떨어진 곳입니다
 mtn_010
 mtn_011
 momo_serifu_010
-すぐ近くですね<lf>行きますか
+바로 근처에 있군요<lf>출발하죠
 shion_serifu_010
-ええ
+그래
 mtn_012
 chaos_muki
 momo_muki
 ziggy_muki
-この付近の残骸のように<lf>なっていないことを信じてね
+이 부근의 잔해처럼 되지 않았기를<lf>믿어 보자
 shion_serifu_011

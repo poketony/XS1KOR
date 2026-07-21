@@ -2,11 +2,11 @@
 # chunk 4 @ 0x12e4 cnum=612 total=8
 # bc_map: 6,0,7,0,1,2,3,5
 # bc_unmap: 4
-エレベーターを作動させますか？
+엘리베이터를 작동시키겠습니까？
 #dup(1): /[waitkey(64)]/[close()]
-下に何か挟まっているようだ。
+아래에 뭔가 끼어 있는 것 같다．
 #dup(1): /[waitkey(64)]/[close()]
 1
 enterd : /[$0]
 entrance: /[$0]
-はい<lf>いいえ
+예<lf>아니요

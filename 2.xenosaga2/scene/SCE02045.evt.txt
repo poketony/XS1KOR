@@ -311,13 +311,13 @@ lightSPL end.
 FLSshion_h.fpk
 act1_shion2
 face1_shion
-──ン──
-──オン──
+……………
+……온……
 reset_pos
 act2_shion2
 face2_shion
-──シオン──
-シオン
+……시온……
+시온
 act2_fog
 act2_mist
 act3_shion
@@ -330,33 +330,33 @@ act4_fog
 face4_elly
 eyes4_elly
 【ネピリム】
-もう──<lf>間に合わないかもしれない──
+이젠……<lf>너무 늦었을지도 몰라……
 act5_shion
 act5_mist
 act5_fog
 face5_shion
 【シオン】
-あなたは誰
-間に合わないって──<lf>一体何が間に合わないの
+넌 누구야？
+늦었을지도 모른다니……<lf>대체 뭐가 늦었다는 건데？
 act6_shion
 act6_elly
 act6_mist
 act6_fog
 face6_elly
-どちらを選択するかは　彼次第──
-でも　あなたなら──
+어느 쪽을 선택할지는 그 하기 나름……
+하지만 너라면……
 act7_shion
 act7_shion2
 act7_elly
 act7_mist
 act7_fog
 face7_elly
-彼の最期の気持ちを<lf>理解してあげられるかも知れない
+그의 마지막 마음을<lf>이해해 줄 수 있을지도 몰라
 act8_shion_next_set
 act8_shion2
 face8_shion
 eyes8_shion
-それが<lf>彼にとっての安らぎ──
+그것이<lf>그에게 안식이 될 테니……
 act9_shadow
 act9_shion
 act10_shion
