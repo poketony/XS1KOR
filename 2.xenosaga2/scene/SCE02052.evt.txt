@@ -87,7 +87,7 @@ shion_serifu_008
 mtn_010
 mtn_011
 momo_serifu_010
-바로 근처에 있군요<lf>출발하죠
+바로 근처에 있군요<lf>출발해요
 shion_serifu_010
 그래
 mtn_012

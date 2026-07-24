@@ -15,7 +15,9 @@ if "%~1"=="" (
     echo The original PSS is searched automatically under the default original root.
     echo.
     echo Output file has _safe_tail before .pss.
-    echo Run this BEFORE any old last-sector patch step.
+    echo Video packets, GOPs, PTS, SCR, and ADPCM are preserved.
+    echo Only the missing MPEG sequence-end marker is restored.
+    echo Do not run any old last-sector patch step afterward.
     echo The output is refused if it would be larger than the original PSS.
     echo.
     pause
@@ -38,7 +40,7 @@ for %%I in (%*) do (
         exit /b 1
     )
     echo.
-    echo === Safe tail graft: %%~fI ===
+    echo === Safe MPEG termination patch: %%~fI ===
     echo Searching original PSS automatically from the input file name.
     echo.
     python "%SCRIPT%" "%%~fI" --overwrite

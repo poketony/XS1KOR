@@ -14,10 +14,11 @@ from pathlib import Path
 PACK_MAGIC = b"\x00\x00\x01\xBA"
 END_MAGIC = b"\x00\x00\x01\xB9"
 PREFIX = b"\x00\x00\x01"
+VIDEO_END_MAGIC = b"\x00\x00\x01\xB7"
 PRIVATE_STREAM_1 = 0xBD
 TAIL_PACKS = 4
 MAX_TAIL_PACKS = 48
-DEFAULT_ORIGINAL_ROOT = Path("E:\\\uc81c\ub178\uc0ac\uac001 \uc601\uc0c1 \uc791\uc5c5\uc18c\\original")
+DEFAULT_ORIGINAL_ROOT = Path(r"E:\Xenosaga1Cutscenes\original")
 NO_PES_HEADER = {0xBC, 0xBE, 0xBF, 0xF0, 0xF1, 0xF2, 0xF8, 0xFF}
 VIDEO_STREAM_0 = 0xE0
 PICTURE_START_CODE = 0x00
@@ -240,6 +241,22 @@ def make_padding_packet(total_size: int) -> bytes:
     if packet_length > 0xFFFF:
         raise ValueError(f"Padding packet too large: {total_size}")
     return PREFIX + b"\xBE" + packet_length.to_bytes(2, "big") + (b"\x00" * packet_length)
+
+
+def shrink_padding_packet_from_template(
+    buf: bytes | bytearray,
+    packet: Packet,
+    total_size: int,
+) -> bytes:
+    if packet.stream_id != 0xBE:
+        raise ValueError(f"Padding template is not BE at 0x{packet.offset:X}")
+    if total_size < 6:
+        raise ValueError(f"Cannot shrink MPEG padding below 6 bytes: {total_size}")
+    payload_size = total_size - 6
+    template_payload = bytes(buf[packet.offset + 6 : packet.end])
+    if len(template_payload) < payload_size:
+        raise ValueError(f"Padding template is too small at 0x{packet.offset:X}")
+    return PREFIX + b"\xBE" + payload_size.to_bytes(2, "big") + template_payload[:payload_size]
 
 
 def packet_bytes(buf: bytes | bytearray, packet: Packet) -> bytes:
@@ -559,6 +576,40 @@ def collect_video_from_gop(
         if start < packet.end:
             video.extend(buf[start : packet.end])
     return bytes(video)
+
+
+def collect_tail_video(
+    *,
+    buf: bytes | bytearray,
+    tail_packets: list[Packet],
+) -> bytes:
+    video = bytearray()
+    for packet in tail_packets:
+        if packet.stream_id != VIDEO_STREAM_0 or packet.payload_offset is None:
+            continue
+        video.extend(buf[packet.payload_offset : packet.end])
+    return bytes(video)
+
+
+def translated_tail_video_with_original_end(
+    *,
+    original_buf: bytes | bytearray,
+    translated_buf: bytes | bytearray,
+    original_tail_packets: list[Packet],
+    translated_tail_packets: list[Packet],
+) -> tuple[bytes, bool]:
+    translated_video = collect_tail_video(
+        buf=translated_buf,
+        tail_packets=translated_tail_packets,
+    )
+    original_video = collect_tail_video(
+        buf=original_buf,
+        tail_packets=original_tail_packets,
+    )
+    sequence_end_added = original_video.endswith(VIDEO_END_MAGIC) and not translated_video.endswith(VIDEO_END_MAGIC)
+    if sequence_end_added:
+        translated_video += VIDEO_END_MAGIC
+    return translated_video, sequence_end_added
 
 
 def translated_video_insert_index(
@@ -904,10 +955,11 @@ def choose_keep_translated_video_layout(
             )
             continue
 
-        translated_video = collect_video_from_gop(
-            buf=translated_buf,
-            tail_packets=translated_tail_packets,
-            gop_file_offset=gop_file_offset,
+        translated_video, _sequence_end_added = translated_tail_video_with_original_end(
+            original_buf=original_buf,
+            translated_buf=translated_buf,
+            original_tail_packets=original_tail_packets,
+            translated_tail_packets=translated_tail_packets,
         )
         insert_index = translated_video_insert_index(
             translated_packets=original_tail_packets,
@@ -920,7 +972,7 @@ def choose_keep_translated_video_layout(
                 if packet.stream_id == VIDEO_STREAM_0 and packet.payload_offset is not None
             )
             rejected.append(
-                f"{candidate_tail_packs}: translated GOP video {len(translated_video)} "
+                f"{candidate_tail_packs}: translated tail video {len(translated_video)} "
                 f"> original E0 capacity {original_video_capacity}"
             )
             continue
@@ -937,7 +989,7 @@ def choose_keep_translated_video_layout(
         )
 
     raise ValueError(
-        "Translated GOP video and ADPCM do not fit in original tail structure within auto-expand limit. "
+        "Translated tail video and ADPCM do not fit in original tail structure within auto-expand limit. "
         f"Tried tail packs {first_tail_packs}..{max_tail_packs}: " + "; ".join(rejected)
     )
 
@@ -951,11 +1003,13 @@ def build_original_map_translated_video_tail(
     translated_tail_packets: list[Packet],
     original_tail_packets: list[Packet],
     translated_gop_file_offset: int,
-) -> tuple[bytes, int, int, int, str]:
-    translated_video = collect_video_from_gop(
-        buf=translated_buf,
-        tail_packets=translated_tail_packets,
-        gop_file_offset=translated_gop_file_offset,
+) -> tuple[bytes, int, int, int, str, bool]:
+    del translated_gop_file_offset
+    translated_video, sequence_end_added = translated_tail_video_with_original_end(
+        original_buf=original_buf,
+        translated_buf=translated_buf,
+        original_tail_packets=original_tail_packets,
+        translated_tail_packets=translated_tail_packets,
     )
     rebuilt_tail, rebuilt_packets, available_packets, insert_tail_offset = rebuild_video_tail_from_data(
         tail_bytes=tail_bytes,
@@ -964,7 +1018,7 @@ def build_original_map_translated_video_tail(
         tail_packets=original_tail_packets,
         video_data=translated_video,
         suppress_video_before_insert=True,
-        source_label="Translated",
+        source_label="Translated tail",
     )
     return (
         rebuilt_tail,
@@ -972,10 +1026,11 @@ def build_original_map_translated_video_tail(
         available_packets,
         insert_tail_offset,
         hashlib.sha256(translated_video).hexdigest(),
+        sequence_end_added,
     )
 
 
-def safe_tail_graft(
+def legacy_safe_tail_graft(
     original: Path,
     translated: Path,
     output: Path,
@@ -1018,6 +1073,7 @@ def safe_tail_graft(
     translated_video_packets: int | None = None
     video_insert_tail_offset: int | None = None
     video_source_sha256: str | None = None
+    video_sequence_end_added = False
     borrowed_be_bytes = 0
     gop_source = "translated" if keep_translated_video else "original"
 
@@ -1060,6 +1116,7 @@ def safe_tail_graft(
             translated_video_packets,
             video_insert_tail_offset,
             video_source_sha256,
+            video_sequence_end_added,
         ) = build_original_map_translated_video_tail(
             tail_bytes=rebuilt_tail_bytes,
             original_buf=original_buf,
@@ -1158,6 +1215,20 @@ def safe_tail_graft(
     if not output_buf.endswith(END_MAGIC):
         raise ValueError("Output does not end with 00 00 01 B9 after safe tail graft.")
 
+    if keep_translated_video:
+        expected_tail_video, _sequence_end_added = translated_tail_video_with_original_end(
+            original_buf=original_buf,
+            translated_buf=translated_buf,
+            original_tail_packets=original_tail_packets,
+            translated_tail_packets=translated_tail_packets,
+        )
+        output_tail_video = collect_tail_video(
+            buf=output_buf,
+            tail_packets=packets_from(output_buf, translated_tail_start),
+        )
+        if output_tail_video != expected_tail_video:
+            raise ValueError("Translated tail video changed during safe tail graft. Refusing output.")
+
     translated_audio_after = audio_stats(output_buf)
     if translated_audio_before.sha256 != translated_audio_after.sha256:
         raise ValueError("ADPCM stream changed during safe tail graft. Refusing output.")
@@ -1193,8 +1264,196 @@ def safe_tail_graft(
         "translated_video_packets": translated_video_packets,
         "video_insert_tail_offset": video_insert_tail_offset,
         "video_source_sha256": video_source_sha256,
+        "video_sequence_end_added": video_sequence_end_added,
         "graft_mode": graft_mode,
         "fallback_reason": fallback_reason,
+        "audio_sha256": translated_audio_after.sha256,
+        "audio_ads_len": translated_audio_after.ads_len,
+        "audio_ssbd_size": translated_audio_after.ssbd_size,
+        "audio_ads_delta": translated_audio_after.ads_delta,
+        "audio_bad_frames": translated_audio_after.bad_frames,
+    }
+
+
+def safe_tail_graft(
+    original: Path,
+    translated: Path,
+    output: Path,
+    *,
+    tail_packs: int,
+    max_tail_packs: int,
+    sync_to_gop: bool,
+    keep_translated_video: bool,
+    overwrite: bool,
+    allow_oversize_input: bool,
+    allow_bad_input_audio: bool,
+) -> dict[str, object]:
+    """Restore MPEG sequence end without replacing or repacketizing video."""
+    del max_tail_packs, sync_to_gop
+
+    if original.resolve() == translated.resolve():
+        raise ValueError("Original and translated paths are the same file.")
+    if output.resolve() == translated.resolve():
+        raise ValueError("Output and translated input paths are the same file.")
+    if output.exists() and not overwrite:
+        raise FileExistsError(f"Output already exists. Use --overwrite: {output}")
+
+    original_buf = bytearray(original.read_bytes())
+    translated_buf = bytearray(translated.read_bytes())
+    original_size = len(original_buf)
+    translated_size = len(translated_buf)
+    if translated_size > original_size and not allow_oversize_input:
+        raise ValueError(
+            "Translated PSS is larger than original. Refusing to create an unrebuildable output: "
+            f"{translated_size} > {original_size}. Re-encode/remux smaller, or pass --allow-oversize-input "
+            "only for diagnostics."
+        )
+    if not translated_buf.endswith(END_MAGIC):
+        raise ValueError("Translated input does not end with 00 00 01 B9.")
+
+    translated_audio_before = audio_stats(translated_buf)
+    if translated_audio_before.bad_frames and not allow_bad_input_audio:
+        raise ValueError(
+            "Translated input already has invalid ADPCM frames. Run this script directly on the ps2str mux output, "
+            "or pass --allow-bad-input-audio only for diagnostics. "
+            f"bad_frames={translated_audio_before.bad_frames}"
+        )
+
+    original_packets = iter_packets(original_buf)
+    translated_packets = iter_packets(translated_buf)
+    original_video = collect_tail_video(buf=original_buf, tail_packets=original_packets)
+    translated_video_before = collect_tail_video(buf=translated_buf, tail_packets=translated_packets)
+    if not original_video.endswith(VIDEO_END_MAGIC):
+        raise ValueError("Original PSS video does not end with 00 00 01 B7; refusing to invent a terminator.")
+
+    output_buf = bytearray(translated_buf)
+    patch_strategy = "already-present"
+    video_sequence_end_added = False
+    video_be_borrowed_bytes = 0
+    changed_packet_offsets: list[int] = []
+    expected_video = translated_video_before
+
+    if not translated_video_before.endswith(VIDEO_END_MAGIC):
+        final_e0_index = next(
+            (index for index in range(len(translated_packets) - 1, -1, -1)
+             if translated_packets[index].stream_id == VIDEO_STREAM_0),
+            None,
+        )
+        if final_e0_index is None:
+            raise ValueError("Translated PSS has no E0 video packet.")
+        final_e0 = translated_packets[final_e0_index]
+        if final_e0.payload_offset is None or final_e0.payload_length is None:
+            raise ValueError("Final E0 packet has no payload.")
+
+        if final_e0.payload_length >= 4 and output_buf[final_e0.end - 4 : final_e0.end] == b"\x00" * 4:
+            output_buf[final_e0.end - 4 : final_e0.end] = VIDEO_END_MAGIC
+            expected_video = translated_video_before[:-4] + VIDEO_END_MAGIC
+            patch_strategy = "replace-final-zero-stuffing"
+            changed_packet_offsets.append(final_e0.offset)
+        else:
+            if final_e0_index + 1 >= len(translated_packets):
+                raise ValueError("Final E0 packet has no following BE padding packet for sequence end.")
+            padding = translated_packets[final_e0_index + 1]
+            if padding.stream_id != 0xBE or padding.offset != final_e0.end:
+                raise ValueError(
+                    "Final E0 packet is not immediately followed by BE padding; refusing to move video packets."
+                )
+
+            e0_size = final_e0.end - final_e0.offset
+            padding_size = padding.end - padding.offset
+            if e0_size + len(VIDEO_END_MAGIC) > MAX_PS2_PES_PACKET_SIZE:
+                raise ValueError(
+                    f"Final E0 packet cannot grow safely: {e0_size} + {len(VIDEO_END_MAGIC)} "
+                    f"> {MAX_PS2_PES_PACKET_SIZE}"
+                )
+            if padding_size - len(VIDEO_END_MAGIC) < 6:
+                raise ValueError(
+                    f"Following BE padding is too small to lend {len(VIDEO_END_MAGIC)} bytes: {padding_size}"
+                )
+            if final_e0.packet_length is None:
+                raise ValueError("Final E0 packet has no PES packet length.")
+
+            e0_bytes = bytearray(output_buf[final_e0.offset : final_e0.end])
+            e0_bytes[4:6] = (final_e0.packet_length + len(VIDEO_END_MAGIC)).to_bytes(2, "big")
+            new_padding_size = padding_size - len(VIDEO_END_MAGIC)
+            output_buf[final_e0.offset : padding.end] = (
+                e0_bytes
+                + VIDEO_END_MAGIC
+                + shrink_padding_packet_from_template(translated_buf, padding, new_padding_size)
+            )
+            expected_video = translated_video_before + VIDEO_END_MAGIC
+            patch_strategy = "extend-final-e0-into-be"
+            video_be_borrowed_bytes = len(VIDEO_END_MAGIC)
+            changed_packet_offsets.extend((final_e0.offset, padding.offset))
+        video_sequence_end_added = True
+
+    if len(output_buf) != translated_size:
+        raise ValueError(f"Output size changed unexpectedly: {len(output_buf)} != {translated_size}")
+    if len(output_buf) > original_size:
+        raise ValueError(f"Output would be larger than original: {len(output_buf)} > {original_size}")
+    if not output_buf.endswith(END_MAGIC):
+        raise ValueError("Output does not end with 00 00 01 B9.")
+    if pack_offsets(output_buf) != pack_offsets(translated_buf):
+        raise ValueError("Pack start offsets changed during termination-only patch.")
+
+    output_packets = iter_packets(output_buf)
+    translated_e0_packets = [packet for packet in translated_packets if packet.stream_id == VIDEO_STREAM_0]
+    output_e0_packets = [packet for packet in output_packets if packet.stream_id == VIDEO_STREAM_0]
+    if len(output_e0_packets) != len(translated_e0_packets):
+        raise ValueError("E0 packet count changed during termination-only patch.")
+    for before, after in zip(translated_e0_packets, output_e0_packets):
+        if before.offset != after.offset or before.payload_offset != after.payload_offset:
+            raise ValueError(f"E0/PES boundary moved at 0x{before.offset:X}.")
+
+    output_video = collect_tail_video(buf=output_buf, tail_packets=output_packets)
+    if output_video != expected_video:
+        raise ValueError("Video changed beyond the intended 00 00 01 B7 restoration.")
+    if not output_video.endswith(VIDEO_END_MAGIC):
+        raise ValueError("Output video does not end with 00 00 01 B7.")
+
+    translated_audio_after = audio_stats(output_buf)
+    if translated_audio_before.sha256 != translated_audio_after.sha256:
+        raise ValueError("ADPCM stream changed during termination-only patch.")
+    if translated_audio_after.bad_frames and not allow_bad_input_audio:
+        raise ValueError(f"Output ADPCM contains invalid frames: {translated_audio_after.bad_frames}")
+
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_bytes(output_buf)
+
+    return {
+        "original": str(original),
+        "translated": str(translated),
+        "output": str(output),
+        "original_size": original_size,
+        "translated_size": translated_size,
+        "output_size": len(output_buf),
+        "requested_tail_packs": tail_packs,
+        "tail_packs": 0,
+        "max_tail_packs": 0,
+        "gop_tail_packs": None,
+        "gop_file_offset": None,
+        "gop_tail_offset": None,
+        "gop_source": "translated",
+        "sync_to_gop": False,
+        "keep_translated_video": keep_translated_video,
+        "original_tail_start": None,
+        "translated_tail_start": None,
+        "tail_size": 0,
+        "inserted_bd_packets": 0,
+        "translated_tail_bd_packets": 0,
+        "borrowed_be_bytes": 0,
+        "rebuilt_video_packets": None,
+        "translated_video_packets": None,
+        "video_insert_tail_offset": None,
+        "video_source_sha256": hashlib.sha256(translated_video_before).hexdigest(),
+        "video_output_sha256": hashlib.sha256(output_video).hexdigest(),
+        "video_sequence_end_added": video_sequence_end_added,
+        "video_be_borrowed_bytes": video_be_borrowed_bytes,
+        "video_packets": sum(packet.stream_id == VIDEO_STREAM_0 for packet in translated_packets),
+        "changed_packet_offsets": changed_packet_offsets,
+        "patch_strategy": patch_strategy,
+        "graft_mode": "termination-only",
+        "fallback_reason": None,
         "audio_sha256": translated_audio_after.sha256,
         "audio_ads_len": translated_audio_after.ads_len,
         "audio_ssbd_size": translated_audio_after.ssbd_size,
@@ -1206,8 +1465,7 @@ def safe_tail_graft(
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description=(
-            "Copy the original final PSS tail for video/end behavior while preserving translated ADPCM packets. "
-            "Use this instead of the old whole-tail copy step."
+            "Restore the original MPEG sequence-end marker without replacing GOPs or repacketizing PSS video."
         )
     )
     parser.add_argument(
@@ -1224,17 +1482,17 @@ def build_parser() -> argparse.ArgumentParser:
         "--max-tail-packs",
         type=int,
         default=MAX_TAIL_PACKS,
-        help="Auto-expand the final graft window up to this many packs when the default tail has too little BD capacity.",
+        help="Compatibility option; ignored by termination-only mode.",
     )
     parser.add_argument(
         "--no-gop-sync",
         action="store_true",
-        help="Do not expand the final graft window to include the last original MPEG GOP start.",
+        help="Compatibility option; ignored by termination-only mode.",
     )
     parser.add_argument(
         "--keep-translated-video",
         action="store_true",
-        help="Use the translated last GOP video inside the original tail structure to avoid original subtitle flashes.",
+        help="Compatibility option; changes only the output suffix. Video is always preserved.",
     )
     parser.add_argument(
         "--allow-oversize-input",
@@ -1261,9 +1519,6 @@ def main(argv: list[str] | None = None) -> int:
     else:
         raise ValueError("Expected either TRANSLATED.pss or ORIGINAL.pss TRANSLATED.pss.")
 
-    if args.keep_translated_video and args.no_gop_sync:
-        raise ValueError("--keep-translated-video cannot be combined with --no-gop-sync.")
-
     output = (
         args.out.resolve()
         if args.out
@@ -1287,20 +1542,28 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Output        : {report['output']}")
     print(f"Size          : {report['output_size']} / original {report['original_size']} bytes")
     print(f"Mode          : {report['graft_mode']}")
-    print(f"Tail graft    : last {report['tail_packs']} packs, {report['tail_size']} bytes")
-    if report["gop_tail_packs"]:
-        print(f"Video sync    : last {report['gop_source']} GOP within {report['gop_tail_packs']} packs")
-    if report["gop_tail_offset"] is not None:
-        print(f"GOP offset    : tail + {report['gop_tail_offset']} bytes")
-    if report["tail_packs"] != report["requested_tail_packs"]:
-        print(f"Tail expanded : {report['requested_tail_packs']} -> {report['tail_packs']} packs")
-    print(f"BD rebuilt    : {report['inserted_bd_packets']} / {report['translated_tail_bd_packets']} packet(s)")
-    if report["borrowed_be_bytes"]:
-        print(f"BE borrowed   : {report['borrowed_be_bytes']} byte(s) for final BD")
-    if report["rebuilt_video_packets"] is not None:
-        print(f"Video rebuilt : {report['rebuilt_video_packets']} / {report['translated_video_packets']} packet(s)")
-    if report["video_insert_tail_offset"] is not None:
-        print(f"Video insert  : tail + {report['video_insert_tail_offset']} bytes")
+    if report["graft_mode"] == "termination-only":
+        print(f"Video packets : preserved ({report['video_packets']} E0 packet(s), no GOP replacement)")
+        print(f"Patch strategy: {report['patch_strategy']}")
+        if report["video_be_borrowed_bytes"]:
+            print(f"BE borrowed   : {report['video_be_borrowed_bytes']} byte(s) for final E0")
+    else:
+        print(f"Tail graft    : last {report['tail_packs']} packs, {report['tail_size']} bytes")
+        if report["gop_tail_packs"]:
+            print(f"Video sync    : last {report['gop_source']} GOP within {report['gop_tail_packs']} packs")
+        if report["gop_tail_offset"] is not None:
+            print(f"GOP offset    : tail + {report['gop_tail_offset']} bytes")
+        if report["tail_packs"] != report["requested_tail_packs"]:
+            print(f"Tail expanded : {report['requested_tail_packs']} -> {report['tail_packs']} packs")
+        print(f"BD rebuilt    : {report['inserted_bd_packets']} / {report['translated_tail_bd_packets']} packet(s)")
+        if report["borrowed_be_bytes"]:
+            print(f"BE borrowed   : {report['borrowed_be_bytes']} byte(s) for final BD")
+        if report["rebuilt_video_packets"] is not None:
+            print(f"Video rebuilt : {report['rebuilt_video_packets']} / {report['translated_video_packets']} packet(s)")
+        if report["video_insert_tail_offset"] is not None:
+            print(f"Video insert  : tail + {report['video_insert_tail_offset']} bytes")
+    if report["video_sequence_end_added"]:
+        print("Video end     : restored 00 00 01 B7 from original structure")
     print(f"Audio hash    : unchanged ({str(report['audio_sha256'])[:16]}...)")
     print(f"ADPCM check   : bad_frames={report['audio_bad_frames']}, ads_delta={report['audio_ads_delta']}")
     print("End code      : verified 00 00 01 B9")

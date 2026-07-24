@@ -399,9 +399,9 @@
 드릴 게임 종료
 이제 알겠어！<lf>한 번 더 들어 볼까
 기억하고 있어！<lf>뭐였더라？
-#dup(15): /[color(0x329bbe)]드릴 패스포트/[color(0xffffff)]를 손에 넣었다！　/[waitkey(64)]/[close()]
-#dup(15): /[color(0x329bbe)]드릴 패스포트/[color(0xffffff)]를 손에 넣었다！　/[waitkey(64)]/[close()]
-#dup(15): /[color(0x329bbe)]드릴 패스포트/[color(0xffffff)]를 손에 넣었다！　/[waitkey(64)]/[close()]
+#dup(15): /[color(0x329bbe)]드릴 패스포트/[color(0xffffff)]를 손에 넣었다！/[waitkey(64)]/[close()]
+#dup(15): /[color(0x329bbe)]드릴 패스포트/[color(0xffffff)]를 손에 넣었다！/[waitkey(64)]/[close()]
+#dup(15): /[color(0x329bbe)]드릴 패스포트/[color(0xffffff)]를 손에 넣었다！/[waitkey(64)]/[close()]
 해 볼까<lf>왠지 싫어……
 해 볼까<lf>역시 싫어！
 파괴 체크

@@ -12,6 +12,7 @@ import argparse
 import hashlib
 import os
 from pathlib import Path
+import struct
 
 import slps_strings
 from ov02_database_search import apply_database_search_patch
@@ -45,6 +46,291 @@ EVT_HALF_WIDTH_PATCHES = {
     # addiu s5, s5, 10 -> addiu s5, s5, 16
     0x078A0C: (b"\x0a\x00\xb5\x26", b"\x10\x00\xb5\x26"),
 }
+
+TEXT_VA_DELTA = 0x1FF000
+MENU_SPACE_CAVE_VA = 0x002805C0
+MENU_SPACE_CAVE_SIZE = 0x124
+MENU_SPACE_CAVE_SHA256 = "9263b6f908b343b00eb4c0995591591608f80772b91646564421c295567b65b3"
+MENU_SPACE_SCOPE_MAGIC = 0x4D535043
+MENU_SPACE_NORMAL_HEADER_VA = 0x004C22A8
+
+
+def _mips_i(opcode: int, rs: int, rt: int, immediate: int) -> int:
+    return (
+        ((opcode & 0x3F) << 26)
+        | ((rs & 0x1F) << 21)
+        | ((rt & 0x1F) << 16)
+        | (immediate & 0xFFFF)
+    )
+
+
+def _mips_r(rs: int, rt: int, rd: int, function: int) -> int:
+    return ((rs & 0x1F) << 21) | ((rt & 0x1F) << 16) | ((rd & 0x1F) << 11) | function
+
+
+def _mips_j(opcode: int, target: int) -> int:
+    if target & 3:
+        raise ValueError(f"unaligned MIPS jump target 0x{target:x}")
+    return ((opcode & 0x3F) << 26) | ((target >> 2) & 0x03FFFFFF)
+
+
+def _build_menu_space_patch() -> tuple[bytes, dict[str, int]]:
+    """Build scoped 8-pixel spaces without changing the original 0x20 bytes."""
+    words: list[int | tuple[str, int, int, str | int]] = []
+    labels: dict[str, int] = {}
+
+    def emit(word: int) -> None:
+        words.append(word)
+
+    def label(name: str) -> None:
+        labels[name] = len(words)
+
+    def branch(opcode: int, rs: int, rt: int, target: str | int) -> None:
+        words.append(("branch", opcode, (rs << 5) | rt, target))
+
+    def jump(opcode: int, target: str | int) -> None:
+        words.append(("jump", opcode, 0, target))
+
+    # Item and shop callers enter WindowSPMain here. Carry the scope in saved
+    # register s7, avoiding writes to the read/execute-only code cave.
+    label("scope_entry")
+    emit(_mips_i(0x09, 29, 29, -0x10))             # addiu sp, sp, -0x10
+    emit(_mips_i(0x3F, 29, 31, 0))                 # sd ra, 0(sp)
+    emit(_mips_i(0x3F, 29, 23, 8))                 # sd s7, 8(sp)
+    emit(_mips_i(0x0F, 0, 23, MENU_SPACE_SCOPE_MAGIC >> 16))
+    emit(_mips_i(0x0D, 23, 23, MENU_SPACE_SCOPE_MAGIC & 0xFFFF))
+    jump(0x03, 0x002800F0)                         # jal WindowSPMain
+    emit(0)
+    emit(_mips_i(0x37, 29, 23, 8))                 # ld s7, 8(sp)
+    emit(_mips_i(0x37, 29, 31, 0))                 # ld ra, 0(sp)
+    emit(_mips_r(31, 0, 0, 0x08))                  # jr ra
+    emit(_mips_i(0x09, 29, 29, 0x10))              # addiu sp, sp, 0x10
+
+    # The battle-result path does not enter through WindowSPMain. Give its
+    # eMessage call the same temporary scope while preserving the caller's s7.
+    label("force_entry")
+    emit(_mips_i(0x09, 29, 29, -0x10))             # addiu sp, sp, -0x10
+    emit(_mips_i(0x3F, 29, 31, 0))                 # sd ra, 0(sp)
+    emit(_mips_i(0x3F, 29, 23, 8))                 # sd s7, 8(sp)
+    emit(_mips_i(0x0F, 0, 23, MENU_SPACE_SCOPE_MAGIC >> 16))
+    emit(_mips_i(0x0D, 23, 23, MENU_SPACE_SCOPE_MAGIC & 0xFFFF))
+    jump(0x03, 0x00277BD8)                         # jal eMessageMain
+    emit(0)
+    emit(_mips_i(0x37, 29, 23, 8))                 # ld s7, 8(sp)
+    emit(_mips_i(0x37, 29, 31, 0))                 # ld ra, 0(sp)
+    emit(_mips_r(31, 0, 0, 0x08))                  # jr ra
+    emit(_mips_i(0x09, 29, 29, 0x10))              # addiu sp, sp, 0x10
+
+    # eMessageMain normalizes the object's high flag bits on first use. Marking
+    # before that point made item/shop rows cache normal-width spaces. Intercept
+    # its draw call instead, after normalization and immediately before the
+    # deferred queue is built, then restore the object's original bit.
+    label("draw_entry")
+    emit(_mips_i(0x0F, 0, 8, MENU_SPACE_SCOPE_MAGIC >> 16))
+    emit(_mips_i(0x0D, 8, 8, MENU_SPACE_SCOPE_MAGIC & 0xFFFF))
+    branch(0x05, 23, 8, "draw_tail")               # bne s7, t0, draw_tail
+    emit(0)
+    emit(_mips_i(0x09, 29, 29, -0x10))             # addiu sp, sp, -0x10
+    emit(_mips_i(0x3F, 29, 31, 0))                 # sd ra, 0(sp)
+    emit(_mips_i(0x2B, 29, 4, 8))                  # sw a0, 8(sp)
+    emit(_mips_i(0x24, 4, 2, 0))                   # lbu v0, 0(a0)
+    emit(_mips_i(0x28, 29, 2, 0x0C))               # sb v0, 0xc(sp)
+    emit(_mips_i(0x0D, 2, 2, 0x40))                # ori v0, v0, 0x40
+    emit(_mips_i(0x28, 4, 2, 0))                   # sb v0, 0(a0)
+    jump(0x03, 0x00277248)                         # jal eMessageDrawType01
+    emit(0)
+    emit(_mips_i(0x23, 29, 4, 8))                  # lw a0, 8(sp)
+    emit(_mips_i(0x24, 4, 2, 0))                   # lbu v0, 0(a0)
+    emit(_mips_i(0x0C, 2, 2, 0xBF))                # andi v0, v0, 0xbf
+    emit(_mips_i(0x24, 29, 3, 0x0C))               # lbu v1, 0xc(sp)
+    emit(_mips_i(0x0C, 3, 3, 0x40))                # andi v1, v1, 0x40
+    emit(_mips_r(2, 3, 2, 0x25))                   # or v0, v0, v1
+    emit(_mips_i(0x28, 4, 2, 0))                   # sb v0, 0(a0)
+    emit(_mips_i(0x37, 29, 31, 0))                 # ld ra, 0(sp)
+    emit(_mips_r(31, 0, 0, 0x08))                  # jr ra
+    emit(_mips_i(0x09, 29, 29, 0x10))              # addiu sp, sp, 0x10
+    label("draw_tail")
+    jump(0x02, 0x00277248)                         # j eMessageDrawType01
+    emit(0)
+
+    # Convert only already-classified ASCII spaces from the marked object into
+    # a one-byte queue sentinel. The source message and queue length stay intact.
+    label("copy_hook")
+    emit(_mips_i(0x24, 19, 8, 0))                  # lbu t0, 0(s3)
+    emit(_mips_i(0x0C, 8, 8, 0x40))                # andi t0, t0, 0x40
+    branch(0x04, 8, 0, "copy_store")               # beq t0, zero, copy_store
+    emit(0)
+    # The A.G.W.S. parts list uses literal spaces to position its Price header.
+    emit(_mips_i(0x23, 19, 8, 0x18))               # lw t0, 0x18(s3)
+    emit(_mips_i(0x0F, 0, 9, MENU_SPACE_NORMAL_HEADER_VA >> 16))
+    emit(_mips_i(0x0D, 9, 9, MENU_SPACE_NORMAL_HEADER_VA & 0xFFFF))
+    branch(0x04, 8, 9, "copy_store")               # beq t0, t1, copy_store
+    emit(0)
+    emit(_mips_i(0x09, 0, 2, 0x7F))                # li v0, 0x7f
+    label("copy_store")
+    emit(_mips_i(0x28, 18, 2, -1))                 # sb v0, -1(s2)
+    branch(0x05, 3, 4, 0x00277A00)                 # bne v1, a0, space loop
+    emit(0)
+    jump(0x02, 0x00277A1C)                         # j original loop exit
+    emit(0)
+
+    # Flush the sentinel with the exact normal-space glyph coordinates. The
+    # previous 0x0000 coordinate caused the visible dot-like replacement.
+    label("glyph_hook")
+    emit(_mips_i(0x09, 0, 8, 0x7F))                # li t0, 0x7f
+    branch(0x05, 18, 8, "glyph_tail")              # bne s2, t0, glyph_tail
+    emit(0)
+    emit(_mips_i(0x09, 0, 4, 0x1000))              # li a0, 0x1000
+    emit(_mips_i(0x09, 0, 5, 0x2F00))              # li a1, 0x2f00
+    emit(_mips_i(0x09, 0, 6, 0x0408))              # li a2, 0x0408
+    label("glyph_tail")
+    jump(0x02, 0x002194B0)                         # j xglFontFlushSub
+    emit(0)
+
+    resolved: list[int] = []
+    for index, word in enumerate(words):
+        if isinstance(word, int):
+            resolved.append(word)
+            continue
+        kind, opcode, registers, target = word
+        target_va = MENU_SPACE_CAVE_VA + labels[target] * 4 if isinstance(target, str) else target
+        source_va = MENU_SPACE_CAVE_VA + index * 4
+        if kind == "branch":
+            delta_bytes = target_va - (source_va + 4)
+            if delta_bytes & 3:
+                raise AssertionError(f"unaligned branch target 0x{target_va:08x}")
+            delta = delta_bytes // 4
+            if not -0x8000 <= delta <= 0x7FFF:
+                raise AssertionError(f"branch target out of range: 0x{target_va:08x}")
+            rs, rt = registers >> 5, registers & 0x1F
+            resolved.append(_mips_i(opcode, rs, rt, delta))
+        elif kind == "jump":
+            resolved.append(_mips_j(opcode, target_va))
+        else:
+            raise AssertionError(kind)
+
+    code = struct.pack(f"<{len(resolved)}I", *resolved)
+    if len(code) > MENU_SPACE_CAVE_SIZE:
+        raise AssertionError(
+            f"menu-space patch is {len(code)} bytes, capacity is {MENU_SPACE_CAVE_SIZE}"
+        )
+    addresses = {name: MENU_SPACE_CAVE_VA + index * 4 for name, index in labels.items()}
+    return code.ljust(MENU_SPACE_CAVE_SIZE, b"\0"), addresses
+
+
+def _assert_menu_space_cave_unreferenced(data: bytearray) -> None:
+    cave_end = MENU_SPACE_CAVE_VA + MENU_SPACE_CAVE_SIZE
+    cave_offset = MENU_SPACE_CAVE_VA - TEXT_VA_DELTA
+    text_start = 0x1000
+    text_end = 0x134CB0
+    branch_opcodes = {0x01, 0x04, 0x05, 0x06, 0x07, 0x14, 0x15, 0x16, 0x17}
+    for offset in range(text_start, text_end, 4):
+        if cave_offset <= offset < cave_offset + MENU_SPACE_CAVE_SIZE:
+            continue
+        word = struct.unpack_from("<I", data, offset)[0]
+        opcode = word >> 26
+        pc = offset + TEXT_VA_DELTA
+        target = None
+        if opcode in (0x02, 0x03):
+            target = ((pc + 4) & 0xF0000000) | ((word & 0x03FFFFFF) << 2)
+        elif opcode in branch_opcodes:
+            immediate = word & 0xFFFF
+            if immediate & 0x8000:
+                immediate -= 0x10000
+            target = pc + 4 + immediate * 4
+        if target is not None and MENU_SPACE_CAVE_VA <= target < cave_end:
+            raise ValueError(
+                f"menu-space cave has an external code reference from VA 0x{pc:08x}"
+            )
+
+    for start, end in ((0x134D00, 0x2D7938), (0x2D8000, 0x2EB93C)):
+        for offset in range(start, end - 3, 4):
+            pointer = struct.unpack_from("<I", data, offset)[0]
+            if MENU_SPACE_CAVE_VA <= pointer < cave_end:
+                raise ValueError(
+                    f"menu-space cave has a loaded pointer reference at 0x{offset:08x}"
+                )
+
+
+def _apply_scoped_menu_half_spaces(data: bytearray) -> list[str]:
+    cave_offset = MENU_SPACE_CAVE_VA - TEXT_VA_DELTA
+    actual_hash = hashlib.sha256(
+        data[cave_offset : cave_offset + MENU_SPACE_CAVE_SIZE]
+    ).hexdigest()
+    if actual_hash != MENU_SPACE_CAVE_SHA256:
+        raise ValueError(
+            f"unexpected menu-space cave at 0x{cave_offset:08x}: "
+            f"expected SHA-256 {MENU_SPACE_CAVE_SHA256}, found {actual_hash}"
+        )
+    _assert_menu_space_cave_unreferenced(data)
+
+    code, addresses = _build_menu_space_patch()
+    data[cave_offset : cave_offset + MENU_SPACE_CAVE_SIZE] = code
+
+    patches = (
+        (
+            "scoped eMessage ASCII-space queue marker",
+            0x00277A10,
+            bytes.fromhex("00 00 42 a2 fa ff 64 14"),
+            struct.pack(
+                "<2I",
+                _mips_j(0x02, addresses["copy_hook"]),
+                _mips_i(0x09, 18, 18, 1),
+            ),
+        ),
+        (
+            "xgl scoped ASCII-space glyph",
+            0x0021A458,
+            bytes.fromhex("2c 65 08 0c"),
+            struct.pack("<I", _mips_j(0x03, addresses["glyph_hook"])),
+        ),
+        (
+            "scoped eMessage draw after flag normalization",
+            0x00277DAC,
+            bytes.fromhex("92 dc 09 0c"),
+            struct.pack("<I", _mips_j(0x03, addresses["draw_entry"])),
+        ),
+        (
+            "item list WindowSP initialization",
+            0x00287D9C,
+            struct.pack("<I", _mips_j(0x03, 0x002800F0)),
+            struct.pack("<I", _mips_j(0x03, addresses["scope_entry"])),
+        ),
+        (
+            "item list WindowSP draw",
+            0x00287F0C,
+            struct.pack("<I", _mips_j(0x03, 0x002800F0)),
+            struct.pack("<I", _mips_j(0x03, addresses["scope_entry"])),
+        ),
+        (
+            "shop list WindowSP draw",
+            0x002A01C4,
+            struct.pack("<I", _mips_j(0x03, 0x002800F0)),
+            struct.pack("<I", _mips_j(0x03, addresses["scope_entry"])),
+        ),
+        (
+            "battle-result item eMessage",
+            0x0029C0B8,
+            bytes.fromhex("f6 de 09 0c"),
+            struct.pack("<I", _mips_j(0x03, addresses["force_entry"])),
+        ),
+    )
+    changes = []
+    for label, va, expected, replacement in patches:
+        offset = va - TEXT_VA_DELTA
+        actual = bytes(data[offset : offset + len(expected)])
+        if actual != expected:
+            raise ValueError(
+                f"unexpected {label} code at VA 0x{va:08x}: "
+                f"expected {expected.hex(' ')}, found {actual.hex(' ')}"
+            )
+        data[offset : offset + len(replacement)] = replacement
+        changes.append(f"{label}: VA 0x{va:08x}")
+
+    changes.append(
+        "item/shop/battle-result ASCII spaces: exact blank glyph at 8px, source and queue lengths unchanged"
+    )
+    return changes
 
 
 def parse_translations(path: Path) -> dict[int, str]:
@@ -192,6 +478,7 @@ def apply_spacing_fixes(data: bytearray, translations: dict[int, str]) -> list[s
             f"0x{offset:08x}: EVT half-width advance "
             f"{expected.hex(' ')} -> {replacement_bytes.hex(' ')}"
         )
+    changes.extend(_apply_scoped_menu_half_spaces(data))
     return changes
 
 

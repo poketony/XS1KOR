@@ -43,12 +43,12 @@ hammr_fm_irekae1
 allen_serifu_02_1
 그노시스를 흡수한 것처럼 보였습니다
 shion_serifu_02_1
-나도 모르는 무기가 있었다니……
+나도 모르는 장비가 있었다니……
 mtn_015
 mtn_016
 mtn_017
 shion_serifu_02_2
-아니，무기 같은 게 아니야
+아니，장비 같은 게 아니야
 저건……
 allen_serifu_02_2
 있을 수 없는 상황이에요
