@@ -44,6 +44,95 @@ KOR_UI_PATCHES = (
     (0x1ebf8, bytes.fromhex('a4 00 04 24'), bytes.fromhex('ac 00 04 24')),
 )
 
+# CardDeckDisp and CardListDisp copy each card name into a temporary stack
+# buffer before drawing it. Convert only ASCII spaces in those two temporary
+# buffers to the SLPS menu-spacing sentinel (0x7f). The source card data,
+# counts, headers, effects, and every other OV10 text path remain unchanged.
+# This requires the matching SLPS build produced by patch_slps_menu_spacing.py,
+# whose font hook renders 0x7f as an exact blank glyph with an 8-pixel advance.
+CARD_LIST_SPACE_PATCHES = (
+    (
+        'CardDeckDisp reserve s6 for the spacing sentinel',
+        0x9a74,
+        bytes.fromhex('20 00 b6 27'),
+        bytes.fromhex('7f 00 16 24'),
+    ),
+    (
+        'CardDeckDisp copy card name with 8-pixel ASCII spaces',
+        0x9b10,
+        bytes.fromhex(
+            '08 00 a0 10 2d 30 00 00 21 10 26 02 21 20 a6 03 '
+            '00 00 43 90 01 00 c6 24 2a 10 c5 00 fa ff 40 14 '
+            '00 00 83 a0 21 10 a6 03 f0 ff 06 34 08 00 05 86 '
+            '2d 38 a0 03 06 00 04 86 00 00 40 a0'
+        ),
+        bytes.fromhex(
+            '09 00 a0 10 2d 20 a0 03 00 00 23 92 01 00 31 26 '
+            '20 00 62 38 0a 18 c2 02 ff ff a5 24 00 00 83 a0 '
+            'f9 ff a0 14 01 00 84 24 00 00 80 a0 f0 ff 06 34 '
+            '08 00 05 86 2d 38 a0 03 06 00 04 86'
+        ),
+    ),
+    (
+        'CardDeckDisp recover count scratch pointer for sprintf',
+        0x9ba0,
+        bytes.fromhex('2d 20 c0 02'),
+        bytes.fromhex('20 00 a4 27'),
+    ),
+    (
+        'CardDeckDisp recover count scratch pointer for drawing',
+        0x9bc8,
+        bytes.fromhex('2d 38 c0 02'),
+        bytes.fromhex('20 00 a7 27'),
+    ),
+    (
+        'CardListDisp reserve s8 for the spacing sentinel',
+        0xdccc,
+        bytes.fromhex('a5 00 1e 3c'),
+        bytes.fromhex('7f 00 1e 24'),
+    ),
+    (
+        'CardListDisp make marker base available on both branch paths',
+        0xdd3c,
+        bytes.fromhex('08 00 64 56'),
+        bytes.fromhex('08 00 64 16'),
+    ),
+    (
+        'CardListDisp selected marker base before card-name copy',
+        0xdd54,
+        bytes.fromhex('b8 cb c7 27'),
+        bytes.fromhex('b8 cb 47 24'),
+    ),
+    (
+        'CardListDisp copy card name with 8-pixel ASCII spaces',
+        0xdd78,
+        bytes.fromhex(
+            '08 00 a0 10 2d 30 00 00 21 10 26 02 21 20 a6 03 '
+            '00 00 43 90 01 00 c6 24 2a 10 c5 00 fa ff 40 14 '
+            '00 00 83 a0 21 10 a6 03 f0 ff 06 34 08 00 05 86 '
+            '2d 38 a0 03 06 00 04 86 00 00 40 a0'
+        ),
+        bytes.fromhex(
+            '09 00 a0 10 2d 20 a0 03 00 00 23 92 01 00 31 26 '
+            '20 00 62 38 0a 18 c2 03 ff ff a5 24 00 00 83 a0 '
+            'f9 ff a0 14 01 00 84 24 00 00 80 a0 f0 ff 06 34 '
+            '08 00 05 86 2d 38 a0 03 06 00 04 86'
+        ),
+    ),
+    (
+        'CardListDisp selected count marker base',
+        0xde14,
+        bytes.fromhex('b8 cb c7 27'),
+        bytes.fromhex('b8 cb 47 24'),
+    ),
+    (
+        'CardListDisp selected unavailable-card marker base',
+        0xde80,
+        bytes.fromhex('b8 cb c7 27'),
+        bytes.fromhex('b8 cb 67 24'),
+    ),
+)
+
 for _stream in (sys.stdout, sys.stderr):
     if hasattr(_stream, 'reconfigure'):
         _stream.reconfigure(encoding='utf-8', errors='replace')
@@ -1318,6 +1407,20 @@ def rebuild_from_elf_strings(bin_path, txt_path, out_path=None):
                 f"[WARN] UI patch skipped at 0x{off:08x}: "
                 f"expected {expected.hex(' ')}, found {actual.hex(' ')}"
             )
+
+    for label, off, expected, replacement in CARD_LIST_SPACE_PATCHES:
+        if len(expected) != len(replacement):
+            raise ValueError(f'{label}: patch changes the OV10 file size')
+        actual = bytes(data[off:off + len(expected)])
+        if actual == replacement:
+            continue
+        if actual != expected:
+            raise ValueError(
+                f"{label}: unexpected code at 0x{off:08x}; "
+                f"expected {expected.hex(' ')}, found {actual.hex(' ')}"
+            )
+        data[off:off + len(expected)] = replacement
+        ui_patched += 1
 
     with open(out_path, 'wb') as f:
         f.write(data)

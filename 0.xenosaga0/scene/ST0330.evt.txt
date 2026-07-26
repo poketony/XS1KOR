@@ -1,9 +1,9 @@
 # extraction_order: precise_code_v4
 # chunk 1 @ 0x204 cnum=311 total=8
 # bc_map: 6,0,7,0,1,5,2,3,4
-휴식을 취하겠습니까？
+휴식하겠습니까？
 #dup(1): /[waitkey(64)]/[close()]
-ＨＰ・ＥＰ가 회복됐다！！
+ＨＰ・ＥＰ가 회복되었다！！
 #dup(1): /[waitkey(64)]/[close()]
 \\\\\\\\\\\
 예<lf>아니요

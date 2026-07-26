@@ -8,9 +8,9 @@ set "DELETED=0"
 echo Target folder:
 echo   "%TARGET%"
 echo.
-echo Searching for *.ads, *.mov, and *.m2v files under the target folder...
+echo Searching for *.mov files under the target folder...
 
-for /r "%TARGET%" %%F in (*.ads *.mov *.m2v) do (
+for /r "%TARGET%" %%F in (*.mov) do (
   set /a FOUND+=1
 )
 
@@ -32,7 +32,7 @@ if errorlevel 2 (
 )
 
 echo.
-for /r "%TARGET%" %%F in (*.ads *.mov *.m2v) do (
+for /r "%TARGET%" %%F in (*.mov) do (
   del /f /q "%%F"
   if exist "%%F" (
     echo Failed: "%%F"

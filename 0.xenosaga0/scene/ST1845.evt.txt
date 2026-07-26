@@ -19,13 +19,13 @@
 #dup(2): /[waitkey(64)]/[close()]
 이동할 곳의 입력이 취소되었습니다．
 #dup(2): /[waitkey(64)]/[close()]
-……으으으<lf>
-메리！！어서 도망쳐！！
+……으으으，<lf>
+멜리！！ 어서 도망쳐！！
 #dup(2): /[waitkey(64)]/[close()]
 그，그만둬！！<lf>
 그 아이는 건드리지 마！！
 #dup(2): /[waitkey(64)]/[close()]
-……당신<lf>
+……당신，<lf>
 이 사람 아이를 못 봤어？
 #dup(2): /[waitkey(64)]/[close()]
 아무래도<lf>
@@ -65,8 +65,8 @@
 #dup(2): /[waitkey(64)]/[close()]
 #dup(3): ……
 #dup(2): /[waitkey(64)]/[close()]
-……미안해．<lf>
-잠시만 혼자 있게 해 주겠어……<lf>
+……미안．<lf>
+잠시 혼자 있게 해 줘……<lf>
 #dup(2): /[waitkey(64)]/[close()]
 #dup(3): ……
 #dup(2): /[waitkey(64)]/[close()]
@@ -82,14 +82,14 @@
 사람들에게 도움이 되고 싶었습니다．
 #dup(2): /[waitkey(64)]/[close()]
 /[label(시온)]
-파운데이션에 남겨 둔<lf>
+파운데이션에 두고 온<lf>
 모모가 걱정되네……
 #dup(1): /[waitkey(1)]/[clear()]
 데리러 가는 편이<lf>
 좋을지도 몰라．
 #dup(2): /[waitkey(64)]/[close()]
 /[label(지기)]
-……모모라<lf>
+……모모라，<lf>
 과연 혼자 둬도 괜찮을까？
 #dup(1): /[waitkey(1)]/[clear()]
 ……상태를 보러 가야겠군．
