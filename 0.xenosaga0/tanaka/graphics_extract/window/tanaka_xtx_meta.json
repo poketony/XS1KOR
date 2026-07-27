@@ -1,0 +1,519 @@
+{
+  "tool": "tanaka_graphics_workflow",
+  "version": 2,
+  "source": "window.xtx",
+  "source_size": 43088,
+  "source_sha256": "4e3d92a9212bb86c28831c75a9cf9fd1c0a266bb1cb22a3195032ab62343713d",
+  "ov11_sha256": "f98da706c68d4534c12539a068358acee571504c3181b54b1b75d2faa2f7ca8b",
+  "palette_storage": "XTX upload bytes; OV11 selects the embedded CLUT by TEX0 CBP",
+  "profile": "OV11_PSMT8_regions",
+  "images": [
+    {
+      "path": "PSMT8_001.png",
+      "sha256": "c6d19dcc2028060f3134ec0cc1b36399c8c987e738a86a48bd595054f867652f",
+      "size": [
+        256,
+        168
+      ],
+      "image_index": 0,
+      "pstart": 80,
+      "pend": 43088,
+      "max_index": 255,
+      "palette_cbps": [
+        564
+      ],
+      "regions": [
+        {
+          "address": 10530984,
+          "u": 0,
+          "v": 0,
+          "width": 176,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "SubWindow_Tex",
+          "symbol_offset": 0,
+          "source": "sub_window"
+        },
+        {
+          "address": 10531016,
+          "u": 176,
+          "v": 0,
+          "width": 72,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Level_Tex",
+          "symbol_offset": 0,
+          "source": "level_select"
+        },
+        {
+          "address": 10531044,
+          "u": 176,
+          "v": 16,
+          "width": 72,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Level_Tex",
+          "symbol_offset": 28,
+          "source": "level_select"
+        },
+        {
+          "address": 10531072,
+          "u": 176,
+          "v": 32,
+          "width": 72,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Level_Tex",
+          "symbol_offset": 56,
+          "source": "level_select"
+        },
+        {
+          "address": 10531100,
+          "u": 176,
+          "v": 48,
+          "width": 72,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Level_Tex",
+          "symbol_offset": 84,
+          "source": "level_select"
+        },
+        {
+          "address": 10531128,
+          "u": 176,
+          "v": 64,
+          "width": 64,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "ExChange_Tex",
+          "symbol_offset": 0,
+          "source": "exchange_select"
+        },
+        {
+          "address": 10531156,
+          "u": 176,
+          "v": 80,
+          "width": 64,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "ExChange_Tex",
+          "symbol_offset": 28,
+          "source": "exchange_select"
+        },
+        {
+          "address": 10531184,
+          "u": 176,
+          "v": 96,
+          "width": 64,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "ExChange_Tex",
+          "symbol_offset": 56,
+          "source": "exchange_select"
+        },
+        {
+          "address": 10531216,
+          "u": 0,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 0,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531244,
+          "u": 24,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 28,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531272,
+          "u": 48,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 56,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531300,
+          "u": 72,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 84,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531328,
+          "u": 96,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 112,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531356,
+          "u": 120,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 140,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531384,
+          "u": 144,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 168,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531412,
+          "u": 168,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 196,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531904,
+          "u": 160,
+          "v": 120,
+          "width": 20,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 280,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531652,
+          "u": 0,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 28,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531680,
+          "u": 16,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 56,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531708,
+          "u": 32,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 84,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531736,
+          "u": 48,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 112,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531764,
+          "u": 64,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 140,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531792,
+          "u": 80,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 168,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531820,
+          "u": 96,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 196,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531848,
+          "u": 112,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 224,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531876,
+          "u": 128,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 252,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531624,
+          "u": 144,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 0,
+          "source": "DecPrint2"
+        }
+      ],
+      "covered_pixels": 37728,
+      "total_pixels": 43008
+    }
+  ],
+  "palette_resource": "window.xtx",
+  "edit_rule": "RGB/no-alpha OV11 palette reference. Keep originals unchanged; add *_KOR.png to replace changed pixels."
+}

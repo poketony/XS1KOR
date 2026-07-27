@@ -1,0 +1,16 @@
+{
+  "source": "BG.xtx",
+  "output": "graphics_rebuilt/BG.xtx",
+  "edited_images": [
+    "PSMT8_001_KOR.png"
+  ],
+  "original_size": 262224,
+  "rebuilt_size": 262224,
+  "changed_bytes": 42699,
+  "changed_span": [
+    30915,
+    142696
+  ],
+  "source_sha256": "4ac00afdc89f73f2bedc4fcedc2f7bb7679fc6479af1c1f980c1d9f2cf174326",
+  "output_sha256": "051c4d7cc7a8cb6539b21d106f978573da2189db39d762046f19a0cb59be7080"
+}

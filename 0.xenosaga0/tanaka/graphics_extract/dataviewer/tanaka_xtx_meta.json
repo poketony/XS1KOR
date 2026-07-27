@@ -1,0 +1,88 @@
+{
+  "tool": "tanaka_graphics_workflow",
+  "version": 2,
+  "source": "dataviewer.xtx",
+  "source_size": 262224,
+  "source_sha256": "b9c803c52565b4bb52698575c60e0efb4f6fbdc8dea3e0d280de24639a77d4f7",
+  "ov11_sha256": "f98da706c68d4534c12539a068358acee571504c3181b54b1b75d2faa2f7ca8b",
+  "palette_storage": "XTX upload bytes; OV11 selects the embedded CLUT by TEX0 CBP",
+  "profile": "OV11_PSMT8_regions",
+  "images": [
+    {
+      "path": "PSMT8_001.png",
+      "sha256": "6e33b5859e399b11e46f169023d588d9b31beb42617f6ee5c87b8c8db59fc0c6",
+      "size": [
+        512,
+        512
+      ],
+      "image_index": 0,
+      "pstart": 80,
+      "pend": 262224,
+      "max_index": 255,
+      "palette_cbps": [
+        896,
+        1012
+      ],
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        },
+        {
+          "address": 10533176,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 1012,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "back_tex.118",
+          "symbol_offset": 0,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10533112,
+          "u": 0,
+          "v": 448,
+          "width": 480,
+          "height": 64,
+          "tbp": 0,
+          "cbp": 1012,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "keytex.115",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "covered_pixels": 260096,
+      "total_pixels": 262144
+    }
+  ],
+  "palette_resource": "dataviewer.xtx",
+  "edit_rule": "RGB/no-alpha OV11 palette reference. Keep originals unchanged; add *_KOR.png to replace changed pixels."
+}

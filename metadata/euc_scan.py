@@ -24,6 +24,8 @@ txt 포맷: <hex_offset>|<orig_bytes>/<slack_bytes>|<text>
 """
 
 import sys, os, json
+from bisect import bisect_right
+from dataclasses import dataclass
 
 for _stream in (sys.stdout, sys.stderr):
     if hasattr(_stream, 'reconfigure'):
@@ -31,6 +33,59 @@ for _stream in (sys.stdout, sys.stderr):
 
 ENCODING = 'euc_jis_2004'
 CTRL_OK  = frozenset([0x01,0x02,0x03,0x08,0x09,0x0a,0x0c,0x0d,0x1f,0x19])
+
+# xglFontGetSPcodeSize (SLPS VA 0x00218d08) indexes this runtime table.
+# Each value is the number of operand bytes following control code 0x00-0x1f.
+# 0x08 and 0x15 are variable-sized and are handled below.
+SPCODE_OPERAND_COUNTS = (
+    0x00, 0x01, 0x01, 0x01, 0x01, 0x01, 0x03, 0x00,
+    0xff, 0x00, 0x00, 0x00, 0x03, 0x01, 0x05, 0x03,
+    0x05, 0x06, 0x02, 0x02, 0x00, 0xff, 0x00, 0x07,
+    0x01, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00,
+)
+SPCODE_08_FLAG_WIDTHS = (0x02, 0x02, 0x03, 0x02, 0x02, 0x00, 0x00, 0x00)
+# eMessageNextGyou/eMessageCat handle 0x1e before the xgl layer and always
+# consume its following icon/style ID (SLPS VA 0x00277048 / 0x00277f58).
+SOURCE_CONTROL_OPERAND_OVERRIDES = {0x1e: 0x01}
+
+
+@dataclass(frozen=True)
+class ParsedString:
+    terminator: int
+    embedded_zero_offsets: tuple
+    control_packets: tuple
+    control_ranges: tuple
+
+
+@dataclass(frozen=True)
+class StringSlot:
+    offset: int
+    raw: bytes
+    trailing: int
+
+    @property
+    def end(self):
+        return self.offset + len(self.raw)
+
+
+@dataclass(frozen=True)
+class TranslationEdit:
+    offset: int
+    text: str
+    declared_length: object
+    line_number: int
+
+
+@dataclass
+class GroupedRebuildStats:
+    patched_groups: int = 0
+    patched_records: int = 0
+    unchanged_groups: int = 0
+    missing: int = 0
+    overflow: int = 0
+    invalid: int = 0
+    control_warnings: int = 0
+    polluted: int = 0
 
 # OV10 text lives in a dense card-help block. A blind scan from 0x0 catches
 # executable/table bytes that only coincidentally look like EUC-JIS-2004.
@@ -61,10 +116,8 @@ def apply_replace_table(text, table):
 
 
 def is_polluted_legacy_text(text):
-    # OV10's old blind scan sometimes decoded 0x0c packet headers as text.
-    # Rebuilding those lines would reinsert corrupted control bytes, so leave
-    # the original bytes untouched.
-    return any(fragment in text for fragment in ('\\x0c', '寸咤', '釘味', '釘達'))
+    # OV10's old blind scan sometimes decoded packet payloads as these glyphs.
+    return any(fragment in text for fragment in ('寸咤', '釘味', '釘達'))
 
 
 def raw_to_display(raw):
@@ -78,9 +131,25 @@ def raw_to_display(raw):
             continue
         if b == 0x0d:
             out.append('\\r')
+            operand_count = source_control_operand_count(raw, i, len(raw))
+            if operand_count is None:
+                i += 1
+            else:
+                packet_end = i + 1 + operand_count
+                out.extend(f'\\x{value:02x}' for value in raw[i + 1:packet_end])
+                i = packet_end
+            continue
+        if b < 0x20:
+            operand_count = source_control_operand_count(raw, i, len(raw))
+            if operand_count is not None:
+                packet_end = i + 1 + operand_count
+                out.extend(f'\\x{value:02x}' for value in raw[i:packet_end])
+                i = packet_end
+                continue
+            out.append(f'\\x{b:02x}')
             i += 1
             continue
-        if b < 0x20 or b == 0x7f or b == 0x80:
+        if b == 0x7f or b == 0x80:
             out.append(f'\\x{b:02x}')
             i += 1
             continue
@@ -157,6 +226,173 @@ def encode_display(s, table):
 
     flush_literal()
     return bytes(out)
+
+
+def spcode_operand_count(data, offset, end=None):
+    """Return the operand size used by xglFontGetSPcodeSize."""
+    if end is None:
+        end = len(data)
+    if offset < 0 or offset >= end:
+        return None
+
+    command = data[offset]
+    if command >= 0x20:
+        return None
+
+    count = SPCODE_OPERAND_COUNTS[command]
+    if command == 0x08:
+        if offset + 1 >= end:
+            return None
+        flags = data[offset + 1]
+        count = 1 + sum(
+            width for bit, width in enumerate(SPCODE_08_FLAG_WIDTHS)
+            if flags & (1 << bit)
+        )
+    elif command == 0x15:
+        if offset + 1 >= end:
+            return None
+        count = data[offset + 1] + 2
+    elif count == 0xff:
+        return None
+
+    if offset + 1 + count > end:
+        return None
+    return count
+
+
+def source_control_operand_count(data, offset, end=None):
+    """Return source-message operands, including eMessage-only controls."""
+    if end is None:
+        end = len(data)
+    if offset < 0 or offset >= end:
+        return None
+    override = SOURCE_CONTROL_OPERAND_OVERRIDES.get(data[offset])
+    if override is None:
+        return spcode_operand_count(data, offset, end)
+    if offset + 1 + override > end:
+        return None
+    return override
+
+
+def _euc_character_size(data, offset, end):
+    lead = data[offset]
+    if lead == 0x8f:
+        size = 3
+    elif lead == 0x8e or 0xa1 <= lead <= 0xfe:
+        size = 2
+    else:
+        return None
+
+    if offset + size > end:
+        return None
+    try:
+        data[offset:offset + size].decode(ENCODING)
+    except UnicodeDecodeError:
+        return None
+    return size
+
+
+def parse_control_aware_string(data, start, end=None):
+    """Parse one runtime string and return its real NUL terminator.
+
+    A zero byte inside a control-code operand is data, not a terminator. This
+    follows the same operand sizes as xglFontGetSPcodeSize rather than guessing
+    from neighboring text.
+    """
+    if end is None:
+        end = len(data)
+    if not 0 <= start < end:
+        return None
+
+    offset = start
+    embedded_zeros = []
+    control_packets = []
+    control_ranges = []
+    while offset < end:
+        value = data[offset]
+        if value == 0:
+            return ParsedString(
+                offset,
+                tuple(embedded_zeros),
+                tuple(control_packets),
+                tuple(control_ranges),
+            )
+
+        if value < 0x20:
+            operand_count = source_control_operand_count(data, offset, end)
+            if operand_count is None:
+                return None
+            packet_end = offset + 1 + operand_count
+            packet = bytes(data[offset:packet_end])
+            control_ranges.append((offset, packet_end))
+            if value not in (0x0a, 0x0d):
+                control_packets.append(packet)
+            embedded_zeros.extend(
+                index
+                for index in range(offset + 1, packet_end)
+                if data[index] == 0
+            )
+            offset = packet_end
+            continue
+
+        if 0x20 <= value <= 0x7e:
+            offset += 1
+            continue
+
+        size = _euc_character_size(data, offset, end)
+        if size is None:
+            return None
+        offset += size
+
+    return None
+
+
+def trailing_nulls_after(data, terminator, end=None):
+    if end is None:
+        end = len(data)
+    scan = terminator + 1
+    while scan < end and data[scan] == 0:
+        scan += 1
+    return scan - terminator - 1
+
+
+def parse_translation_edits(txt_path):
+    edits = {}
+    skipped = 0
+    with open(txt_path, encoding='utf-8-sig', newline='') as stream:
+        for line_number, raw_line in enumerate(stream, 1):
+            line = raw_line.rstrip('\r\n')
+            if not line or line.startswith('#'):
+                continue
+            parts = line.split('|', 2)
+            if len(parts) == 3:
+                offset_text, info, text = parts
+            elif len(parts) == 2:
+                offset_text, text = parts
+                info = ''
+            else:
+                skipped += 1
+                continue
+            try:
+                offset = int(offset_text.strip(), 16)
+            except ValueError:
+                print(f'[WARN] line {line_number}: invalid offset {offset_text!r}')
+                skipped += 1
+                continue
+
+            declared_length = None
+            if info:
+                try:
+                    declared_length = int(info.split('/', 1)[0].strip(), 10)
+                except ValueError:
+                    pass
+            edits[offset] = TranslationEdit(
+                offset,
+                text,
+                declared_length,
+                line_number,
+            )
+    return edits, skipped
 
 
 def file_scan_ranges(bin_path, data_len, start=0):
@@ -248,7 +484,7 @@ def append_legacy_suffix(orig_raw, new_raw):
     return new_raw + suffix, len(suffix)
 
 
-def iter_strings(data, start=0, end=None, preserve_segments=False):
+def iter_legacy_strings(data, start=0, end=None, preserve_segments=False):
     """
     start~EOF 구간 스캔, yield: (offset, raw_bytes, trailing_nulls)
     """
@@ -327,6 +563,247 @@ def iter_legacy_aliases(data, start, end):
         pos = np + 1
 
 
+def build_string_slots(data, start=0, end=None, preserve_segments=False):
+    """Return non-overlapping strings using the renderer's control grammar."""
+    if end is None:
+        end = len(data)
+
+    legacy = sorted(
+        iter_legacy_strings(data, start, end, preserve_segments),
+        key=lambda item: item[0],
+    )
+    slots = []
+    covered_until = start
+    for offset, raw, trailing in legacy:
+        if offset < covered_until:
+            continue
+
+        parsed = parse_control_aware_string(data, offset, end)
+        legacy_end = offset + len(raw)
+        bridged_by_control = (
+            parsed is not None
+            and any(
+                packet_start < legacy_end < packet_end
+                for packet_start, packet_end in parsed.control_ranges
+            )
+        )
+        expands_over_control_packet = (
+            parsed is not None
+            and parsed.terminator > legacy_end
+            and bridged_by_control
+        )
+        if expands_over_control_packet:
+            raw = bytes(data[offset:parsed.terminator])
+            trailing = trailing_nulls_after(data, parsed.terminator, end)
+            covered_until = parsed.terminator
+        else:
+            covered_until = offset + len(raw)
+        slots.append(StringSlot(offset, bytes(raw), trailing))
+    return slots
+
+
+def iter_strings(data, start=0, end=None, preserve_segments=False):
+    for slot in build_string_slots(data, start, end, preserve_segments):
+        yield slot.offset, slot.raw, slot.trailing
+
+
+def build_string_catalog(data, ranges):
+    slots = []
+    legacy = {}
+    for low, high, preserve in ranges:
+        slots.extend(build_string_slots(data, low, high, preserve))
+        for offset, raw, trailing in iter_legacy_strings(data, low, high, preserve):
+            legacy.setdefault(offset, StringSlot(offset, raw, trailing))
+        for offset, raw, trailing in iter_legacy_aliases(data, low, high):
+            legacy.setdefault(offset, StringSlot(offset, raw, trailing))
+    slots.sort(key=lambda slot: slot.offset)
+    return slots, legacy
+
+
+def _slot_for_offset(slots, starts, offset):
+    index = bisect_right(starts, offset) - 1
+    if index < 0:
+        return None
+    slot = slots[index]
+    if slot.offset <= offset < slot.end:
+        return slot
+    return None
+
+
+def format_control_packets(packets):
+    if not packets:
+        return '-'
+    return ' '.join(packet.hex() for packet in packets)
+
+
+def apply_grouped_translations(
+    data,
+    ranges,
+    edits,
+    replace_table,
+    label='string',
+    skip_polluted=True,
+):
+    """Apply legacy fragments and new full records one logical string at a time."""
+    source = bytes(data)
+    slots, legacy = build_string_catalog(source, ranges)
+    starts = [slot.offset for slot in slots]
+    grouped = {}
+    stats = GroupedRebuildStats()
+
+    for edit in edits.values():
+        if skip_polluted and is_polluted_legacy_text(edit.text):
+            stats.polluted += 1
+            continue
+        slot = _slot_for_offset(slots, starts, edit.offset)
+        if slot is None:
+            print(
+                f'[WARN] {label} line {edit.line_number} 0x{edit.offset:08x}: '
+                'source string not found; skipped'
+            )
+            stats.missing += 1
+            continue
+        grouped.setdefault(slot.offset, []).append(edit)
+
+    slot_by_offset = {slot.offset: slot for slot in slots}
+    for slot_offset in sorted(grouped):
+        slot = slot_by_offset[slot_offset]
+        group_edits = sorted(grouped[slot_offset], key=lambda edit: edit.offset)
+        original_validation = slot.raw + b'\x00' * (slot.trailing + 1)
+        original_parsed = parse_control_aware_string(original_validation, 0)
+
+        full_edits = [
+            edit for edit in group_edits
+            if edit.offset == slot.offset
+            and edit.declared_length == len(slot.raw)
+        ]
+        if full_edits:
+            group_edits = [full_edits[-1]]
+
+        cursor = slot.offset
+        rebuilt = bytearray()
+        encoded_records = 0
+        group_invalid = False
+        for edit in group_edits:
+            span = edit.declared_length
+            if span is None:
+                legacy_slot = legacy.get(edit.offset)
+                if legacy_slot is not None:
+                    span = len(legacy_slot.raw)
+                elif edit.offset == slot.offset:
+                    span = len(slot.raw)
+
+            if span is None or span <= 0:
+                print(
+                    f'[WARN] {label} line {edit.line_number} 0x{edit.offset:08x}: '
+                    'original byte length is unavailable; logical string skipped'
+                )
+                group_invalid = True
+                break
+            if edit.offset < cursor or edit.offset + span > slot.end:
+                print(
+                    f'[WARN] {label} line {edit.line_number} 0x{edit.offset:08x}: '
+                    f'original span {span}B overlaps or exceeds logical slot '
+                    f'0x{slot.offset:08x}-0x{slot.end:08x}; skipped'
+                )
+                group_invalid = True
+                break
+
+            try:
+                encoded = encode_display(edit.text, replace_table)
+            except Exception as error:
+                print(
+                    f'[ERR] {label} line {edit.line_number} 0x{edit.offset:08x}: '
+                    f'encode failed ({error})'
+                )
+                group_invalid = True
+                break
+
+            # Old dumps could end a record in the middle of a control packet.
+            # Keep that legacy boundary exact: trim accidentally exposed extra
+            # operands, or restore omitted operands from the source prefix. A
+            # normalized full logical record can still replace the whole packet.
+            original_end = edit.offset + span
+            if original_parsed is not None and original_end < slot.end:
+                relative_end = original_end - slot.offset
+                for packet_start, packet_end in original_parsed.control_ranges:
+                    if packet_start < relative_end < packet_end:
+                        command = slot.raw[packet_start]
+                        translated_start = encoded.rfind(bytes((command,)))
+                        if translated_start != -1:
+                            source_prefix = relative_end - packet_start
+                            translated_prefix = len(encoded) - translated_start
+                            if translated_prefix > source_prefix:
+                                encoded = encoded[
+                                    :translated_start + source_prefix
+                                ]
+                            elif translated_prefix < source_prefix:
+                                encoded += slot.raw[
+                                    packet_start + translated_prefix:relative_end
+                                ]
+                        break
+
+            rebuilt.extend(source[cursor:edit.offset])
+            rebuilt.extend(encoded)
+            cursor = edit.offset + span
+            encoded_records += 1
+
+        if group_invalid:
+            stats.invalid += 1
+            continue
+
+        rebuilt.extend(source[cursor:slot.end])
+        rebuilt = bytes(rebuilt)
+        capacity = len(slot.raw) + slot.trailing
+        if len(rebuilt) > capacity:
+            print(
+                f'[WARN] {label} logical slot 0x{slot.offset:08x}: '
+                f'needs {len(rebuilt)}B, capacity is {capacity}B; skipped'
+            )
+            stats.overflow += 1
+            continue
+
+        parsed = None
+        if original_parsed is not None:
+            validation = rebuilt + b'\x00' * (capacity - len(rebuilt) + 1)
+            parsed = parse_control_aware_string(validation, 0)
+            if (
+                parsed is None
+                or parsed.terminator < len(rebuilt)
+                or parsed.terminator > capacity
+            ):
+                print(
+                    f'[WARN] {label} logical slot 0x{slot.offset:08x}: rebuilt bytes '
+                    'contain an early NUL or an incomplete control/EUC sequence; skipped'
+                )
+                stats.invalid += 1
+                continue
+
+        if (
+            original_parsed is not None
+            and parsed is not None
+            and original_parsed.control_packets != parsed.control_packets
+        ):
+            print(
+                f'[WARN] {label} logical slot 0x{slot.offset:08x}: control packets differ '
+                f'orig={format_control_packets(original_parsed.control_packets)} '
+                f'new={format_control_packets(parsed.control_packets)}'
+            )
+            stats.control_warnings += 1
+
+        if rebuilt == slot.raw:
+            stats.unchanged_groups += 1
+            continue
+
+        slot_size = len(slot.raw) + 1 + slot.trailing
+        data[slot.offset:slot.offset + slot_size] = b'\x00' * slot_size
+        data[slot.offset:slot.offset + len(rebuilt)] = rebuilt
+        stats.patched_groups += 1
+        stats.patched_records += encoded_records
+
+    return stats
+
+
 # ── 추출 ──────────────────────────────────────────────────────────────────────
 
 def extract(bin_path, start=0):
@@ -364,7 +841,7 @@ def extract(bin_path, start=0):
 
 # ── 리빌드 ────────────────────────────────────────────────────────────────────
 
-def rebuild(bin_path, txt_path):
+def _rebuild_individual_legacy(bin_path, txt_path):
     data  = bytearray(open(bin_path, 'rb').read())
     table = load_replace_table(bin_path)
 
@@ -479,6 +956,47 @@ def rebuild(bin_path, txt_path):
 
 
 # ── main ──────────────────────────────────────────────────────────────────────
+
+def rebuild(bin_path, txt_path):
+    data = bytearray(open(bin_path, 'rb').read())
+    table = load_replace_table(bin_path)
+
+    start = 0
+    with open(txt_path, encoding='utf-8-sig', newline='') as stream:
+        for line in stream:
+            if line.startswith('# scan start:'):
+                try:
+                    start = int(line.split(':', 1)[1].strip(), 16)
+                except ValueError:
+                    pass
+                break
+
+    ranges = (
+        parse_scan_ranges(txt_path, len(data))
+        or file_scan_ranges(bin_path, len(data), start)
+    )
+    edits, malformed = parse_translation_edits(txt_path)
+    stats = apply_grouped_translations(
+        data,
+        ranges,
+        edits,
+        table,
+        label=os.path.basename(bin_path),
+    )
+
+    base, ext = os.path.splitext(bin_path)
+    out_path = base + '_patched' + ext
+    with open(out_path, 'wb') as stream:
+        stream.write(data)
+
+    print(
+        f'[DONE] groups={stats.patched_groups} records={stats.patched_records} '
+        f'malformed={malformed} missing={stats.missing} '
+        f'overflow={stats.overflow} invalid={stats.invalid} '
+        f'control_warn={stats.control_warnings} polluted={stats.polluted}'
+    )
+    print(f'[OK] output: {out_path}')
+
 
 def usage():
     print(__doc__)

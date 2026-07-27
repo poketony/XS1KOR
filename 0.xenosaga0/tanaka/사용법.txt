@@ -1,0 +1,14 @@
+<그래픽>
+해당 폴더에서 cmd 열고 사용(cardgfx랑 같음)
+tanakagfx list: 인식된 XTX 목록과 추출 상태를 표시한다.
+tanakagfx extract-all: 모든 XTX를 graphics_extract 아래에 추출한다.
+
+tanakagfx extract help_all: help_all_xtx 파일을 추출한다.
+작업 시에는 _KOR 수정본을 만들면 자동 적용됨.
+
+tanakagfx rebuild help_all: 리빌드 예시
+
+<텍스트>
+casinotext rebuild: 리빌드 명령어
+text\CASINO.txt: 수정할 파일
+text_rebuilt\CASINO.res: 산출물

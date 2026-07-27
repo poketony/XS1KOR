@@ -1,0 +1,69 @@
+{
+  "tool": "tanaka_graphics_workflow",
+  "version": 2,
+  "source": "help_all.xtx",
+  "source_size": 262224,
+  "source_sha256": "80269e04a42222672dd88507cd15c1ddcf7879a879d4ab95b591333296f1fbbb",
+  "ov11_sha256": "f98da706c68d4534c12539a068358acee571504c3181b54b1b75d2faa2f7ca8b",
+  "palette_storage": "XTX upload bytes; OV11 selects the embedded CLUT by TEX0 CBP",
+  "profile": "OV11_PSMT8_regions",
+  "images": [
+    {
+      "path": "PSMT8_001.png",
+      "sha256": "d37e962c607fd3a618a08ec5cc4bbdd992ddf8b58020f235d15399c4f94d64fe",
+      "size": [
+        512,
+        512
+      ],
+      "image_index": 0,
+      "pstart": 80,
+      "pend": 262224,
+      "max_index": 255,
+      "palette_cbps": [
+        508
+      ],
+      "regions": [
+        {
+          "address": 10534192,
+          "u": 0,
+          "v": 0,
+          "width": 480,
+          "height": 256,
+          "tbp": 0,
+          "cbp": 508,
+          "mode": 0,
+          "psm": "PSMT8",
+          "source": "SlHelpMode"
+        },
+        {
+          "address": 10534384,
+          "u": 0,
+          "v": 256,
+          "width": 256,
+          "height": 256,
+          "tbp": 0,
+          "cbp": 508,
+          "mode": 0,
+          "psm": "PSMT8",
+          "source": "NgHelpMode"
+        },
+        {
+          "address": 10534416,
+          "u": 256,
+          "v": 256,
+          "width": 256,
+          "height": 128,
+          "tbp": 0,
+          "cbp": 508,
+          "mode": 0,
+          "psm": "PSMT8",
+          "source": "NgHelpMode"
+        }
+      ],
+      "covered_pixels": 221184,
+      "total_pixels": 262144
+    }
+  ],
+  "palette_resource": "help_all.xtx",
+  "edit_rule": "RGB/no-alpha OV11 palette reference. Keep originals unchanged; add *_KOR.png to replace changed pixels."
+}

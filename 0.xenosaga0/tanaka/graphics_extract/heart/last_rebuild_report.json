@@ -1,0 +1,16 @@
+{
+  "source": "heart.xtx",
+  "output": "graphics_rebuilt/heart.xtx",
+  "edited_images": [
+    "PSMT8_001_KOR.png"
+  ],
+  "original_size": 262224,
+  "rebuilt_size": 262224,
+  "changed_bytes": 76,
+  "changed_span": [
+    5909,
+    10061
+  ],
+  "source_sha256": "ef38dc92e65a7031a32587c6e938897f4ef084e16195275ad1ae81263604a30e",
+  "output_sha256": "d6199ff966796670738a4bfa751da996fe515070c8a5bd31858e8be8542b54b7"
+}

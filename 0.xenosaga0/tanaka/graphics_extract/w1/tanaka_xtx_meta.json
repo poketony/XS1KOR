@@ -1,0 +1,45 @@
+{
+  "tool": "tanaka_graphics_workflow",
+  "version": 2,
+  "source": "w1.xtx",
+  "source_size": 262224,
+  "source_sha256": "70f1abf5c3e2a9c0cc39333c164982136d4aad16e695bcdf89a019ea1718fce5",
+  "ov11_sha256": "f98da706c68d4534c12539a068358acee571504c3181b54b1b75d2faa2f7ca8b",
+  "palette_storage": "XTX upload bytes; OV11 selects the embedded CLUT by TEX0 CBP",
+  "profile": "OV11_PSMT8_regions",
+  "images": [
+    {
+      "path": "PSMT8_001.png",
+      "sha256": "845f2dce99a709b321a0b5e3ca04ab62972721317e4450052d58c917ab317550",
+      "size": [
+        512,
+        512
+      ],
+      "image_index": 0,
+      "pstart": 80,
+      "pend": 262224,
+      "max_index": 255,
+      "palette_cbps": [
+        64
+      ],
+      "regions": [
+        {
+          "address": 10534072,
+          "u": 0,
+          "v": 0,
+          "width": 256,
+          "height": 64,
+          "tbp": 0,
+          "cbp": 64,
+          "mode": 0,
+          "psm": "PSMT8",
+          "source": "SlPrizeEffect"
+        }
+      ],
+      "covered_pixels": 16384,
+      "total_pixels": 262144
+    }
+  ],
+  "palette_resource": "w1.xtx",
+  "edit_rule": "RGB/no-alpha OV11 palette reference. Keep originals unchanged; add *_KOR.png to replace changed pixels."
+}

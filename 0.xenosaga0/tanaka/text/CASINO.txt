@@ -1,0 +1,111 @@
+﻿# source=CASINO.res
+# format: <zero-based id> TAB <item.name|item.description|bundle.label> TAB <UTF-8 text>
+# edit only the third column; keep ids and field names unchanged
+# escapes: \n, \r, \t, \\
+# fixed encoded limits: item.name=39, item.description=79, bundle.label=27 bytes
+000	item.name	회복 세트
+000	item.description	아쿠아지스트，로즈지스트，제타지스트， \n엑스트라지스트로 이루어진 회복약 세트
+001	item.name	도주와 휴식 세트
+001	item.description	이스케이프 볼 ５개와 텐트 ５개 세트
+002	item.name	황금 주사위
+002	item.description	ＨＰ 한 자릿수 대미지 증감
+003	item.name	브레이브 하트
+003	item.description	ＨＰ가 적을수록 Ｓｔｒ Ｕｐ
+004	item.name	제타지스트 ＤＸ
+004	item.description	기절 회복＆ＨＰ ＭＡＸ
+005	item.name	무신의 부적
+005	item.description	무기 공격력 ５０％ Ｕｐ
+006	item.name	설정화 ０１
+006	item.description	비밀 설정화．안에 그려져 있는 것은？
+007	item.name	설정화 ０２
+007	item.description	비밀 설정화．안에 그려져 있는 것은？
+008	item.name	설정화 ０３
+008	item.description	비밀 설정화．안에 그려져 있는 것은？
+009	item.name	설정화 ０４
+009	item.description	비밀 설정화．안에 그려져 있는 것은？
+010	item.name	설정화 ０５
+010	item.description	비밀 설정화．안에 그려져 있는 것은？
+011	item.name	설정화 ０６
+011	item.description	비밀 설정화．안에 그려져 있는 것은？
+012	item.name	설정화 ０７
+012	item.description	비밀 설정화．안에 그려져 있는 것은？
+013	item.name	설정화 ０８
+013	item.description	비밀 설정화．안에 그려져 있는 것은？
+014	item.name	설정화 ０９
+014	item.description	비밀 설정화．안에 그려져 있는 것은？
+015	item.name	설정화 １０
+015	item.description	비밀 설정화．안에 그려져 있는 것은？
+016	item.name	설정화 １１
+016	item.description	비밀 설정화．안에 그려져 있는 것은？
+017	item.name	설정화 １２
+017	item.description	비밀 설정화．안에 그려져 있는 것은？
+018	item.name	설정화 １３
+018	item.description	비밀 설정화．안에 그려져 있는 것은？
+019	item.name	설정화 １４
+019	item.description	비밀 설정화．안에 그려져 있는 것은？
+020	item.name	설정화 １５
+020	item.description	비밀 설정화．안에 그려져 있는 것은？
+021	item.name	설정화 １６
+021	item.description	비밀 설정화．안에 그려져 있는 것은？
+022	item.name	설정화 １７
+022	item.description	비밀 설정화．안에 그려져 있는 것은？
+023	item.name	설정화 １８
+023	item.description	비밀 설정화．안에 그려져 있는 것은？
+024	item.name	설정화 １９
+024	item.description	비밀 설정화．안에 그려져 있는 것은？
+025	item.name	설정화 ２０
+025	item.description	비밀 설정화．안에 그려져 있는 것은？
+026	item.name	설정화 ２１
+026	item.description	비밀 설정화．안에 그려져 있는 것은？
+027	item.name	설정화 ２２
+027	item.description	비밀 설정화．안에 그려져 있는 것은？
+028	item.name	설정화 ２３
+028	item.description	비밀 설정화．안에 그려져 있는 것은？
+029	item.name	설정화 ２４
+029	item.description	비밀 설정화．안에 그려져 있는 것은？
+030	item.name	설정화 ２５
+030	item.description	비밀 설정화．안에 그려져 있는 것은？
+031	item.name	설정화 ２６
+031	item.description	비밀 설정화．안에 그려져 있는 것은？
+032	item.name	설정화 ２７
+032	item.description	비밀 설정화．안에 그려져 있는 것은？
+033	item.name	설정화 ２８
+033	item.description	비밀 설정화．안에 그려져 있는 것은？
+034	item.name	설정화 ２９
+034	item.description	비밀 설정화．안에 그려져 있는 것은？
+035	item.name	설정화 ３０
+035	item.description	비밀 설정화．안에 그려져 있는 것은？
+036	item.name	스타터 세트
+036	item.description	카드 게임의 스타터 세트
+037	item.name	카드 팩 １탄
+037	item.description	카드 게임의 부스터 팩 제１탄
+038	item.name	카드 팩 ２탄
+038	item.description	카드 게임의 부스터 팩 제２탄
+039	item.name	ＰＭ 카드 Ｆ
+039	item.description	카드 게임의 레어 카드．\n무엇이 들어 있을지 기대된다．
+040	item.name	ＰＭ 카드 Ｇ
+040	item.description	카드 게임의 레어 카드．\n무엇이 들어 있을지 기대된다．
+041	item.name	ＰＭ 카드 Ｈ
+041	item.description	카드 게임의 레어 카드．\n무엇이 들어 있을지 기대된다．
+042	item.name	ＰＭ 카드 Ｉ
+042	item.description	카드 게임의 레어 카드．\n무엇이 들어 있을지 기대된다．
+043	item.name	ＰＭ 카드 Ｊ
+043	item.description	카드 게임의 레어 카드．\n무엇이 들어 있을지 기대된다．
+044	item.name	ＰＭ 카드 Ｋ
+044	item.description	카드 게임의 레어 카드．\n무엇이 들어 있을지 기대된다．
+045	item.name	ＰＭ 카드 Ｌ
+045	item.description	카드 게임의 레어 카드．\n무엇이 들어 있을지 기대된다．
+046	item.name	ＰＭ 카드 Ｍ
+046	item.description	카드 게임의 레어 카드．\n무엇이 들어 있을지 기대된다．
+047	item.name	ＰＭ 카드 Ｎ
+047	item.description	카드 게임의 레어 카드．\n무엇이 들어 있을지 기대된다．
+048	item.name	ＰＭ 카드 Ｏ
+048	item.description	카드 게임의 레어 카드．\n무엇이 들어 있을지 기대된다．
+049	item.name	ＰＭ 카드 Ｐ
+049	item.description	카드 게임의 레어 카드．\n무엇이 들어 있을지 기대된다．
+050	item.name	ＰＭ 카드 Ｑ
+050	item.description	카드 게임의 레어 카드．\n무엇이 들어 있을지 기대된다．
+000	bundle.label	　　　　１０개　　１００Ｇ
+001	bundle.label	　　　１００개　　９５０Ｇ
+002	bundle.label	　　　５００개　４５００Ｇ
+003	bundle.label	　　１０００개　８０００Ｇ

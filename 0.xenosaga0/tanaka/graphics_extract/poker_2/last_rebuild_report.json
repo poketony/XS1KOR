@@ -1,0 +1,16 @@
+{
+  "source": "poker_2.xtx",
+  "output": "graphics_rebuilt/poker_2.xtx",
+  "edited_images": [
+    "PSMT8_001_KOR.png"
+  ],
+  "original_size": 262224,
+  "rebuilt_size": 262224,
+  "changed_bytes": 40351,
+  "changed_span": [
+    81,
+    248356
+  ],
+  "source_sha256": "56938179fce2168b5842e9c560afd472c5c8636a1c2e62675b58554e06d12ebd",
+  "output_sha256": "d54a72fb9f4afbdaa2139b00294c661698e9df81c0e8907544574e40d65bae7e"
+}

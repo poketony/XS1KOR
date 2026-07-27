@@ -1,0 +1,651 @@
+{
+  "source": "CASINO.res",
+  "output": "C:\\Users\\JO\\XS1KOR\\0.xenosaga0\\tanaka\\text_rebuilt\\CASINO.res",
+  "changed_fields": [
+    {
+      "key": "item.000.name",
+      "offset": 12,
+      "size": 40,
+      "encoded_bytes": 9
+    },
+    {
+      "key": "item.000.description",
+      "offset": 52,
+      "size": 80,
+      "encoded_bytes": 77
+    },
+    {
+      "key": "item.001.name",
+      "offset": 136,
+      "size": 40,
+      "encoded_bytes": 16
+    },
+    {
+      "key": "item.001.description",
+      "offset": 176,
+      "size": 80,
+      "encoded_bytes": 35
+    },
+    {
+      "key": "item.002.name",
+      "offset": 260,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.002.description",
+      "offset": 300,
+      "size": 80,
+      "encoded_bytes": 26
+    },
+    {
+      "key": "item.003.name",
+      "offset": 384,
+      "size": 40,
+      "encoded_bytes": 13
+    },
+    {
+      "key": "item.003.description",
+      "offset": 424,
+      "size": 80,
+      "encoded_bytes": 27
+    },
+    {
+      "key": "item.004.name",
+      "offset": 508,
+      "size": 40,
+      "encoded_bytes": 15
+    },
+    {
+      "key": "item.004.description",
+      "offset": 548,
+      "size": 80,
+      "encoded_bytes": 22
+    },
+    {
+      "key": "item.005.name",
+      "offset": 632,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.005.description",
+      "offset": 672,
+      "size": 80,
+      "encoded_bytes": 23
+    },
+    {
+      "key": "item.006.name",
+      "offset": 756,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.006.description",
+      "offset": 796,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.007.name",
+      "offset": 880,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.007.description",
+      "offset": 920,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.008.name",
+      "offset": 1004,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.008.description",
+      "offset": 1044,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.009.name",
+      "offset": 1128,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.009.description",
+      "offset": 1168,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.010.name",
+      "offset": 1252,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.010.description",
+      "offset": 1292,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.011.name",
+      "offset": 1376,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.011.description",
+      "offset": 1416,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.012.name",
+      "offset": 1500,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.012.description",
+      "offset": 1540,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.013.name",
+      "offset": 1624,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.013.description",
+      "offset": 1664,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.014.name",
+      "offset": 1748,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.014.description",
+      "offset": 1788,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.015.name",
+      "offset": 1872,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.015.description",
+      "offset": 1912,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.016.name",
+      "offset": 1996,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.016.description",
+      "offset": 2036,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.017.name",
+      "offset": 2120,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.017.description",
+      "offset": 2160,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.018.name",
+      "offset": 2244,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.018.description",
+      "offset": 2284,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.019.name",
+      "offset": 2368,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.019.description",
+      "offset": 2408,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.020.name",
+      "offset": 2492,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.020.description",
+      "offset": 2532,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.021.name",
+      "offset": 2616,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.021.description",
+      "offset": 2656,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.022.name",
+      "offset": 2740,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.022.description",
+      "offset": 2780,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.023.name",
+      "offset": 2864,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.023.description",
+      "offset": 2904,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.024.name",
+      "offset": 2988,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.024.description",
+      "offset": 3028,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.025.name",
+      "offset": 3112,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.025.description",
+      "offset": 3152,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.026.name",
+      "offset": 3236,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.026.description",
+      "offset": 3276,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.027.name",
+      "offset": 3360,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.027.description",
+      "offset": 3400,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.028.name",
+      "offset": 3484,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.028.description",
+      "offset": 3524,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.029.name",
+      "offset": 3608,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.029.description",
+      "offset": 3648,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.030.name",
+      "offset": 3732,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.030.description",
+      "offset": 3772,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.031.name",
+      "offset": 3856,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.031.description",
+      "offset": 3896,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.032.name",
+      "offset": 3980,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.032.description",
+      "offset": 4020,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.033.name",
+      "offset": 4104,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.033.description",
+      "offset": 4144,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.034.name",
+      "offset": 4228,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.034.description",
+      "offset": 4268,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.035.name",
+      "offset": 4352,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.035.description",
+      "offset": 4392,
+      "size": 80,
+      "encoded_bytes": 36
+    },
+    {
+      "key": "item.036.name",
+      "offset": 4476,
+      "size": 40,
+      "encoded_bytes": 11
+    },
+    {
+      "key": "item.036.description",
+      "offset": 4516,
+      "size": 80,
+      "encoded_bytes": 23
+    },
+    {
+      "key": "item.037.name",
+      "offset": 4600,
+      "size": 40,
+      "encoded_bytes": 12
+    },
+    {
+      "key": "item.037.description",
+      "offset": 4640,
+      "size": 80,
+      "encoded_bytes": 28
+    },
+    {
+      "key": "item.038.name",
+      "offset": 4724,
+      "size": 40,
+      "encoded_bytes": 12
+    },
+    {
+      "key": "item.038.description",
+      "offset": 4764,
+      "size": 80,
+      "encoded_bytes": 28
+    },
+    {
+      "key": "item.039.name",
+      "offset": 4848,
+      "size": 40,
+      "encoded_bytes": 12
+    },
+    {
+      "key": "item.039.description",
+      "offset": 4888,
+      "size": 80,
+      "encoded_bytes": 53
+    },
+    {
+      "key": "item.040.name",
+      "offset": 4972,
+      "size": 40,
+      "encoded_bytes": 12
+    },
+    {
+      "key": "item.040.description",
+      "offset": 5012,
+      "size": 80,
+      "encoded_bytes": 53
+    },
+    {
+      "key": "item.041.name",
+      "offset": 5096,
+      "size": 40,
+      "encoded_bytes": 12
+    },
+    {
+      "key": "item.041.description",
+      "offset": 5136,
+      "size": 80,
+      "encoded_bytes": 53
+    },
+    {
+      "key": "item.042.name",
+      "offset": 5220,
+      "size": 40,
+      "encoded_bytes": 12
+    },
+    {
+      "key": "item.042.description",
+      "offset": 5260,
+      "size": 80,
+      "encoded_bytes": 53
+    },
+    {
+      "key": "item.043.name",
+      "offset": 5344,
+      "size": 40,
+      "encoded_bytes": 12
+    },
+    {
+      "key": "item.043.description",
+      "offset": 5384,
+      "size": 80,
+      "encoded_bytes": 53
+    },
+    {
+      "key": "item.044.name",
+      "offset": 5468,
+      "size": 40,
+      "encoded_bytes": 12
+    },
+    {
+      "key": "item.044.description",
+      "offset": 5508,
+      "size": 80,
+      "encoded_bytes": 53
+    },
+    {
+      "key": "item.045.name",
+      "offset": 5592,
+      "size": 40,
+      "encoded_bytes": 12
+    },
+    {
+      "key": "item.045.description",
+      "offset": 5632,
+      "size": 80,
+      "encoded_bytes": 53
+    },
+    {
+      "key": "item.046.name",
+      "offset": 5716,
+      "size": 40,
+      "encoded_bytes": 12
+    },
+    {
+      "key": "item.046.description",
+      "offset": 5756,
+      "size": 80,
+      "encoded_bytes": 53
+    },
+    {
+      "key": "item.047.name",
+      "offset": 5840,
+      "size": 40,
+      "encoded_bytes": 12
+    },
+    {
+      "key": "item.047.description",
+      "offset": 5880,
+      "size": 80,
+      "encoded_bytes": 53
+    },
+    {
+      "key": "item.048.name",
+      "offset": 5964,
+      "size": 40,
+      "encoded_bytes": 12
+    },
+    {
+      "key": "item.048.description",
+      "offset": 6004,
+      "size": 80,
+      "encoded_bytes": 53
+    },
+    {
+      "key": "item.049.name",
+      "offset": 6088,
+      "size": 40,
+      "encoded_bytes": 12
+    },
+    {
+      "key": "item.049.description",
+      "offset": 6128,
+      "size": 80,
+      "encoded_bytes": 53
+    },
+    {
+      "key": "item.050.name",
+      "offset": 6212,
+      "size": 40,
+      "encoded_bytes": 12
+    },
+    {
+      "key": "item.050.description",
+      "offset": 6252,
+      "size": 80,
+      "encoded_bytes": 53
+    },
+    {
+      "key": "bundle.000.label",
+      "offset": 6336,
+      "size": 28,
+      "encoded_bytes": 26
+    },
+    {
+      "key": "bundle.001.label",
+      "offset": 6368,
+      "size": 28,
+      "encoded_bytes": 26
+    },
+    {
+      "key": "bundle.002.label",
+      "offset": 6400,
+      "size": 28,
+      "encoded_bytes": 26
+    },
+    {
+      "key": "bundle.003.label",
+      "offset": 6432,
+      "size": 28,
+      "encoded_bytes": 26
+    }
+  ],
+  "original_size": 7488,
+  "rebuilt_size": 7488,
+  "changed_bytes": 2967,
+  "changed_span": [
+    12,
+    6445
+  ],
+  "source_sha256": "89bc6ecf11deb5c307ccacf290c057bb14d4e97306bb9e7f8a4e8afbbccd79c8",
+  "output_sha256": "1bb75d8c580a5c08a752c77c97a36865eb2819926beac691d6fc4b38c0ddac67"
+}

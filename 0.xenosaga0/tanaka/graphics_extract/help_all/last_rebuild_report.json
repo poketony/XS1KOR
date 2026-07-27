@@ -1,0 +1,16 @@
+{
+  "source": "help_all.xtx",
+  "output": "graphics_rebuilt/help_all.xtx",
+  "edited_images": [
+    "PSMT8_001_KOR.png"
+  ],
+  "original_size": 262224,
+  "rebuilt_size": 262224,
+  "changed_bytes": 17206,
+  "changed_span": [
+    3531,
+    259628
+  ],
+  "source_sha256": "80269e04a42222672dd88507cd15c1ddcf7879a879d4ab95b591333296f1fbbb",
+  "output_sha256": "20648afb08313ce3e3515a73476bacdbe2dd3a71c57c3bb6d2f7239e0e7607c3"
+}

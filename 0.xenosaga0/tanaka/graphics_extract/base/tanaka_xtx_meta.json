@@ -1,0 +1,1408 @@
+{
+  "tool": "tanaka_graphics_workflow",
+  "version": 2,
+  "source": "base.xtx",
+  "source_size": 262224,
+  "source_sha256": "65a599783a1119fa60bb5931ae5597683d18d6691aa457c18f472424ad7c380e",
+  "ov11_sha256": "f98da706c68d4534c12539a068358acee571504c3181b54b1b75d2faa2f7ca8b",
+  "palette_storage": "XTX upload bytes; OV11 selects the embedded CLUT by TEX0 CBP",
+  "profile": "OV11_PSMT8_regions",
+  "images": [
+    {
+      "path": "PSMT8_001.png",
+      "sha256": "45499365499e52bbc5c6693028da32835675ea40f6b9f1945b4a53a79fcdab58",
+      "size": [
+        512,
+        512
+      ],
+      "image_index": 0,
+      "pstart": 80,
+      "pend": 262224,
+      "max_index": 255,
+      "palette_cbps": [
+        180,
+        188,
+        316,
+        436,
+        444,
+        564,
+        572,
+        692
+      ],
+      "regions": [
+        {
+          "address": 10523944,
+          "u": 256,
+          "v": 48,
+          "width": 112,
+          "height": 200,
+          "tbp": 0,
+          "cbp": 316,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "slot_window.0",
+          "symbol_offset": 0,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524024,
+          "u": 0,
+          "v": 0,
+          "width": 112,
+          "height": 64,
+          "tbp": 128,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 0,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524108,
+          "u": 112,
+          "v": 0,
+          "width": 112,
+          "height": 64,
+          "tbp": 384,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 84,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524052,
+          "u": 0,
+          "v": 64,
+          "width": 112,
+          "height": 64,
+          "tbp": 149,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 28,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524136,
+          "u": 112,
+          "v": 64,
+          "width": 112,
+          "height": 64,
+          "tbp": 640,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 112,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524080,
+          "u": 0,
+          "v": 128,
+          "width": 112,
+          "height": 64,
+          "tbp": 384,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 56,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524248,
+          "u": 112,
+          "v": 128,
+          "width": 112,
+          "height": 64,
+          "tbp": 917,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 224,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524192,
+          "u": 0,
+          "v": 192,
+          "width": 112,
+          "height": 64,
+          "tbp": 405,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 168,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524164,
+          "u": 112,
+          "v": 192,
+          "width": 112,
+          "height": 64,
+          "tbp": 661,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 140,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524220,
+          "u": 0,
+          "v": 256,
+          "width": 112,
+          "height": 64,
+          "tbp": 896,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 196,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10525976,
+          "u": 0,
+          "v": 320,
+          "width": 112,
+          "height": 64,
+          "tbp": 0,
+          "cbp": 180,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "linetex.15",
+          "symbol_offset": 0,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10526928,
+          "u": 368,
+          "v": 48,
+          "width": 128,
+          "height": 48,
+          "tbp": 0,
+          "cbp": 436,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.37",
+          "symbol_offset": 0,
+          "source": "NgGetsDownBtnPrint"
+        },
+        {
+          "address": 10526956,
+          "u": 368,
+          "v": 96,
+          "width": 128,
+          "height": 48,
+          "tbp": 0,
+          "cbp": 436,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.37",
+          "symbol_offset": 28,
+          "source": "NgGetsDownBtnPrint"
+        },
+        {
+          "address": 10526984,
+          "u": 368,
+          "v": 144,
+          "width": 128,
+          "height": 48,
+          "tbp": 0,
+          "cbp": 436,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.37",
+          "symbol_offset": 56,
+          "source": "NgGetsDownBtnPrint"
+        },
+        {
+          "address": 10524712,
+          "u": 340,
+          "v": 256,
+          "width": 40,
+          "height": 88,
+          "tbp": 0,
+          "cbp": 436,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "spinbt",
+          "symbol_offset": 0,
+          "source": "SpinBtnPrint"
+        },
+        {
+          "address": 10524740,
+          "u": 380,
+          "v": 256,
+          "width": 40,
+          "height": 88,
+          "tbp": 0,
+          "cbp": 436,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "spinbt",
+          "symbol_offset": 28,
+          "source": "SpinBtnPrint"
+        },
+        {
+          "address": 10524768,
+          "u": 420,
+          "v": 256,
+          "width": 40,
+          "height": 88,
+          "tbp": 0,
+          "cbp": 436,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "spinbt",
+          "symbol_offset": 56,
+          "source": "SpinBtnPrint"
+        },
+        {
+          "address": 10525216,
+          "u": 104,
+          "v": 496,
+          "width": 104,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "OptionText",
+          "symbol_offset": 56,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10526896,
+          "u": 256,
+          "v": 352,
+          "width": 192,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.36",
+          "symbol_offset": 0,
+          "source": "NgTimePrint"
+        },
+        {
+          "address": 10525188,
+          "u": 160,
+          "v": 480,
+          "width": 96,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "OptionText",
+          "symbol_offset": 28,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10524960,
+          "u": 256,
+          "v": 256,
+          "width": 84,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PicTable",
+          "symbol_offset": 0,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10524988,
+          "u": 256,
+          "v": 272,
+          "width": 84,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PicTable",
+          "symbol_offset": 28,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10525016,
+          "u": 256,
+          "v": 288,
+          "width": 84,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PicTable",
+          "symbol_offset": 56,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10525100,
+          "u": 256,
+          "v": 304,
+          "width": 84,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PicTable",
+          "symbol_offset": 140,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10525044,
+          "u": 256,
+          "v": 320,
+          "width": 84,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PicTable",
+          "symbol_offset": 84,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10525072,
+          "u": 256,
+          "v": 336,
+          "width": 84,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PicTable",
+          "symbol_offset": 112,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10525160,
+          "u": 104,
+          "v": 464,
+          "width": 80,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "OptionText",
+          "symbol_offset": 0,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10524576,
+          "u": 224,
+          "v": 0,
+          "width": 32,
+          "height": 32,
+          "tbp": 0,
+          "cbp": 572,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "pay_window",
+          "symbol_offset": 0,
+          "source": "SlPayWindowPrint"
+        },
+        {
+          "address": 10524604,
+          "u": 224,
+          "v": 32,
+          "width": 32,
+          "height": 32,
+          "tbp": 0,
+          "cbp": 572,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "pay_window",
+          "symbol_offset": 28,
+          "source": "SlPayWindowPrint"
+        },
+        {
+          "address": 10526272,
+          "u": 256,
+          "v": 352,
+          "width": 128,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "TimeBar.19",
+          "symbol_offset": 0,
+          "source": "SlModePrint"
+        },
+        {
+          "address": 10525272,
+          "u": 192,
+          "v": 464,
+          "width": 64,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "OptionText",
+          "symbol_offset": 112,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10526152,
+          "u": 104,
+          "v": 480,
+          "width": 56,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Text.17",
+          "symbol_offset": 0,
+          "source": "SlModePrint"
+        },
+        {
+          "address": 10525244,
+          "u": 208,
+          "v": 496,
+          "width": 48,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "OptionText",
+          "symbol_offset": 84,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10525944,
+          "u": 352,
+          "v": 360,
+          "width": 40,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Total.14",
+          "symbol_offset": 0,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525688,
+          "u": 256,
+          "v": 256,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 0,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525716,
+          "u": 256,
+          "v": 272,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 28,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525744,
+          "u": 256,
+          "v": 288,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 56,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525828,
+          "u": 256,
+          "v": 304,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 140,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525128,
+          "u": 460,
+          "v": 312,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PicTable",
+          "symbol_offset": 168,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10525772,
+          "u": 256,
+          "v": 320,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 84,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525912,
+          "u": 460,
+          "v": 328,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 224,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525800,
+          "u": 256,
+          "v": 336,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 112,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525884,
+          "u": 392,
+          "v": 360,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 196,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10524296,
+          "u": 496,
+          "v": 48,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 0,
+          "source": "decprint"
+        },
+        {
+          "address": 10524324,
+          "u": 496,
+          "v": 72,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 28,
+          "source": "decprint"
+        },
+        {
+          "address": 10524352,
+          "u": 496,
+          "v": 96,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 56,
+          "source": "decprint"
+        },
+        {
+          "address": 10524380,
+          "u": 496,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 84,
+          "source": "decprint"
+        },
+        {
+          "address": 10524408,
+          "u": 496,
+          "v": 144,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 112,
+          "source": "decprint"
+        },
+        {
+          "address": 10524436,
+          "u": 496,
+          "v": 168,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 140,
+          "source": "decprint"
+        },
+        {
+          "address": 10524464,
+          "u": 464,
+          "v": 192,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 168,
+          "source": "decprint"
+        },
+        {
+          "address": 10524492,
+          "u": 480,
+          "v": 192,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 196,
+          "source": "decprint"
+        },
+        {
+          "address": 10524520,
+          "u": 496,
+          "v": 192,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 224,
+          "source": "decprint"
+        },
+        {
+          "address": 10524548,
+          "u": 464,
+          "v": 216,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 252,
+          "source": "decprint"
+        },
+        {
+          "address": 10524824,
+          "u": 480,
+          "v": 216,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "stopbt",
+          "symbol_offset": 0,
+          "source": "SlStopBtnPrint"
+        },
+        {
+          "address": 10524852,
+          "u": 496,
+          "v": 216,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "stopbt",
+          "symbol_offset": 28,
+          "source": "SlStopBtnPrint"
+        },
+        {
+          "address": 10524880,
+          "u": 460,
+          "v": 288,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "stopbt",
+          "symbol_offset": 56,
+          "source": "SlStopBtnPrint"
+        },
+        {
+          "address": 10525304,
+          "u": 464,
+          "v": 240,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 0,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525332,
+          "u": 476,
+          "v": 240,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 28,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525360,
+          "u": 488,
+          "v": 240,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 56,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525388,
+          "u": 500,
+          "v": 240,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 84,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525416,
+          "u": 464,
+          "v": 256,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 112,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525444,
+          "u": 476,
+          "v": 256,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 140,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525472,
+          "u": 488,
+          "v": 256,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 168,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525500,
+          "u": 500,
+          "v": 256,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 196,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525528,
+          "u": 464,
+          "v": 272,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 224,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525556,
+          "u": 476,
+          "v": 272,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 252,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10526304,
+          "u": 256,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 0,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526332,
+          "u": 264,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 28,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526360,
+          "u": 272,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 56,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526388,
+          "u": 280,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 84,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526416,
+          "u": 288,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 112,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526444,
+          "u": 296,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 140,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526472,
+          "u": 304,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 168,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526500,
+          "u": 312,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 196,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526528,
+          "u": 320,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 224,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526556,
+          "u": 328,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 252,
+          "source": "SlGuidPrint"
+        }
+      ],
+      "covered_pixels": 151424,
+      "total_pixels": 262144
+    }
+  ],
+  "palette_resource": "base.xtx",
+  "edit_rule": "RGB/no-alpha OV11 palette reference. Keep originals unchanged; add *_KOR.png to replace changed pixels."
+}

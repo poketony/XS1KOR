@@ -388,5 +388,5 @@ door_move_act9
 시〜온！
 놀러 가자！
 door_move_act11
-론치 승강장에서 기다릴 테니까<lf>빨리 오라고！ 그럼 이따 봐！
+셔틀 타는 곳에서 기다릴 테니까<lf>빨리 오라고！ 그럼 이따 봐！
 light.setGlobalPointLightCol( 0, /[#0]f,/[#1]f,/[#2]f);

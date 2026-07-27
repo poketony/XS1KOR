@@ -1,0 +1,416 @@
+{
+  "tool": "tanaka_graphics_workflow",
+  "version": 2,
+  "source": "sam.xtx",
+  "source_size": 505056,
+  "source_sha256": "b98b3db4090925bccf4b5d8e6a915b72641c54129fabefeac3467b4e41b3e523",
+  "ov11_sha256": "f98da706c68d4534c12539a068358acee571504c3181b54b1b75d2faa2f7ca8b",
+  "palette_storage": "XTX upload bytes; OV11 selects the embedded CLUT by TEX0 CBP",
+  "profile": "OV11_SAM_PSMT4",
+  "images": [
+    {
+      "path": "PSMT4_001.png",
+      "sha256": "0bc76e3326a586e355f254e9025fe88a5816d911f9865e25386125266992d3f4",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 0,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_002.png",
+      "sha256": "dd27584ce3002a01da003248fa85bf997abd54f194f6a0e24de643382b22e1dd",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 256,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_003.png",
+      "sha256": "0ad42fcd6af1d83b71b79309876f121be59a7e2422f6a1788715b2cfb35ef686",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 512,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_004.png",
+      "sha256": "8ff35d4f1f2395b86105c9cb3be96ef1dd3b8027e159006baf76c013555af406",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 768,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_005.png",
+      "sha256": "1203aa2db707b2206c7427687be65c6128f6f0522065a3e8627c2b2bee8b0049",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 1024,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_006.png",
+      "sha256": "9336da4a099589156528299fc4a723a391c334aeca400fb0f8d080305d91084f",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 1280,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_007.png",
+      "sha256": "8c2f9dc48e6491934789509b5a1573f2c109fb966a6e4e2842d27b283a871c07",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 1536,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_008.png",
+      "sha256": "951b41028f85a7a0f6d0df70215c1a987b7546c134c41454067e21c430a34c5f",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 1792,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_009.png",
+      "sha256": "9dac339b01bb99f8b7b9d0faa8f177175704d4d4aa110a652145e7f565db910b",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 2048,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_010.png",
+      "sha256": "e483ee67c1c938ba3084de9c488e65920fc40587d4c76a5f0d98d818bb432aaf",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 2304,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_011.png",
+      "sha256": "fa49f1b18c8b18c6f9346834700a8d94679a55dce3b6b39b64c72a3a9b2cf03c",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 2560,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_012.png",
+      "sha256": "8645946c8f7039e28b18da91353782a3fbddbcab7eaeda78f84e10828ed02d91",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 2816,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_013.png",
+      "sha256": "435c43933358fbc5839ec6db9fd5edd0a9db04556e437cd955bc559a8fc04737",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 3072,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_014.png",
+      "sha256": "8f7659902e170017b75ebe8be16e4e9cd4f9f334c9ac3f72362073a3b510e9ac",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 3328,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_015.png",
+      "sha256": "54d1b203a893864d497eeab6351bfb22f8039ce4f1101570e8e875ab27a34fa7",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 3584,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_016.png",
+      "sha256": "8d24d130ab0174bd5992e158fd27fdd2eb5dfe19d386862d62c658bf4eb4e622",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 0,
+      "x": 3840,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_017.png",
+      "sha256": "2cae92e3ae3795f49f301674126f7ead0c3f6be2d64817f87973b9dce60d0830",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 1,
+      "x": 0,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_018.png",
+      "sha256": "f04ea1d71b3ce77a155be5aac38d33e47098d46351299d8bdee7db0492a62859",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 1,
+      "x": 256,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_019.png",
+      "sha256": "01fc2fe2b915a9b89c2dae1601f81308b20459e14b03f1ca5e174ae833d73961",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 1,
+      "x": 512,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_020.png",
+      "sha256": "0800761267bbc3119e621649b2b42bbc9ab5b755b87b572427316fc187589cc6",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 1,
+      "x": 768,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_021.png",
+      "sha256": "85a71e5bbb9cea9e7388579ccaeef3a6cb52584a34b5d1b058acf9e8b0685606",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 1,
+      "x": 1024,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_022.png",
+      "sha256": "24449f6bfbd4e693f61c2c921c441ef41c80a41269a3c902f90efb10e2f87080",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 1,
+      "x": 1280,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_023.png",
+      "sha256": "049aba9e4b43679ca52fd136f797338597eb18969a41bc623ac612012a2e40df",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 1,
+      "x": 1536,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_024.png",
+      "sha256": "1479b6030e568d90164b7fbc3c52f96b6f88c335d850edccdc2eeb56303739b0",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 1,
+      "x": 1792,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_025.png",
+      "sha256": "93d0d83ff7114fcf9a8e9865ab085ba11ce965a0440fc92e2550b79aab915eda",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 2,
+      "x": 0,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_026.png",
+      "sha256": "38b6533d2ef74970eec04d178df78f9dad5d4ef723034dce003b9786e148e1b6",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 2,
+      "x": 256,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_027.png",
+      "sha256": "fc46acced8b43436a53183ecd4e5854802d5f2c46da16c9eca05b2cacbb499d6",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 2,
+      "x": 512,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_028.png",
+      "sha256": "4812caba8c87b1bef777b9e2c6c26da9a7a674a22b4142505a27604f48a0624b",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 3,
+      "x": 0,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_029.png",
+      "sha256": "3328e0847f5cd8c4fb52132830fffeae00bc97e3b0df2ac7dc1029f8fb33c4bc",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 3,
+      "x": 256,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_030.png",
+      "sha256": "ccbd729619d7d8c767257bd32ed97f56ac8b0879538d5f0b12322d9d59da0456",
+      "size": [
+        256,
+        128
+      ],
+      "image_index": 3,
+      "x": 512,
+      "max_index": 15,
+      "palette_cbp": 2046
+    },
+    {
+      "path": "PSMT4_031.png",
+      "sha256": "1bac206f2ac685cbd2336659ae36aa586ef881316dad4045f62156f5c36d0f73",
+      "size": [
+        208,
+        128
+      ],
+      "image_index": 3,
+      "x": 768,
+      "max_index": 15,
+      "palette_cbp": 2046
+    }
+  ],
+  "slots": [
+    {
+      "image_index": 0,
+      "logical_width": 4096,
+      "logical_height": 128,
+      "dbw4": 256,
+      "dbw32": 512
+    },
+    {
+      "image_index": 1,
+      "logical_width": 2048,
+      "logical_height": 128,
+      "dbw4": 128,
+      "dbw32": 256
+    },
+    {
+      "image_index": 2,
+      "logical_width": 768,
+      "logical_height": 128,
+      "dbw4": 48,
+      "dbw32": 128
+    },
+    {
+      "image_index": 3,
+      "logical_width": 976,
+      "logical_height": 128,
+      "dbw4": 61,
+      "dbw32": 128
+    }
+  ],
+  "palette_source": "external GS CLUT at CBP 0x7FE",
+  "edit_rule": "RGB/no-alpha OV11 palette reference. Keep originals unchanged; add *_KOR.png to replace changed pixels."
+}

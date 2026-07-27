@@ -1,0 +1,16 @@
+{
+  "source": "spade.xtx",
+  "output": "graphics_rebuilt/spade.xtx",
+  "edited_images": [
+    "PSMT8_001_KOR.png"
+  ],
+  "original_size": 262224,
+  "rebuilt_size": 262224,
+  "changed_bytes": 98,
+  "changed_span": [
+    5905,
+    10048
+  ],
+  "source_sha256": "ce2390057d55354ba12a1791d589075e266905a1dcd2dba7ca41cb890c96965d",
+  "output_sha256": "d6453a24e5a3675152fd55abbafd4596e1ca621aa54c5a53cbbb5401cf6514e4"
+}

@@ -1,0 +1,16 @@
+{
+  "source": "window.xtx",
+  "output": "graphics_rebuilt/window.xtx",
+  "edited_images": [
+    "PSMT8_001_KOR.png"
+  ],
+  "original_size": 43088,
+  "rebuilt_size": 43088,
+  "changed_bytes": 1903,
+  "changed_span": [
+    16307,
+    28717
+  ],
+  "source_sha256": "4e3d92a9212bb86c28831c75a9cf9fd1c0a266bb1cb22a3195032ab62343713d",
+  "output_sha256": "54cd634b3df9257e70f34c72436ab4c1409f6575ed982ebd30edb49be250538b"
+}

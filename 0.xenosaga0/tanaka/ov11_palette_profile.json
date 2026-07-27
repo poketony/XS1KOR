@@ -1,0 +1,6746 @@
+{
+  "version": 1,
+  "source": "metadata/OV11.OVL",
+  "ovl_size": 70729,
+  "ovl_sha256": "f98da706c68d4534c12539a068358acee571504c3181b54b1b75d2faa2f7ca8b",
+  "gs_base_tbp_cbp": 14336,
+  "palette_storage": "XTX upload bytes; OV11 selects the embedded CLUT by TEX0 CBP",
+  "resources": {
+    "01_Y1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "01_Y2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "02_Y1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "02_Y2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "03_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "03_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "03_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "03_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "04_Y1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "04_Y2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "05_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "05_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "05_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "05_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "06_Y1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "06_Y2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "07_Y1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "07_Y2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "08_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "08_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "08_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "08_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "09_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "09_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "09_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "09_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "10_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "10_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "10_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "10_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "11_Y1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "11_Y2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "12_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "12_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "12_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "12_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "13_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "13_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "13_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "13_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "14_Y1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "14_Y2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "15_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "15_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "15_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "15_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "16_Y1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "16_Y2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "17_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "17_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "17_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "17_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "18_Y1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "18_Y2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "19_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "19_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "19_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "19_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "20_Y1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "20_Y2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "21_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "21_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "21_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "21_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "22_Y1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "22_Y2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "23_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "23_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "23_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "23_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "24_Y1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "24_Y2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "25_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "25_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "25_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "25_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "26_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "26_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "26_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "26_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "27_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "27_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "27_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "27_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "28_W1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "28_W2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "28_W3.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "28_W4.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "29_Y1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "29_Y2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "30_Y1.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "30_Y2.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode"
+      ]
+    },
+    "base.xtx": {
+      "regions": [
+        {
+          "address": 10523944,
+          "u": 256,
+          "v": 48,
+          "width": 112,
+          "height": 200,
+          "tbp": 0,
+          "cbp": 316,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "slot_window.0",
+          "symbol_offset": 0,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524024,
+          "u": 0,
+          "v": 0,
+          "width": 112,
+          "height": 64,
+          "tbp": 128,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 0,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524108,
+          "u": 112,
+          "v": 0,
+          "width": 112,
+          "height": 64,
+          "tbp": 384,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 84,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524052,
+          "u": 0,
+          "v": 64,
+          "width": 112,
+          "height": 64,
+          "tbp": 149,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 28,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524136,
+          "u": 112,
+          "v": 64,
+          "width": 112,
+          "height": 64,
+          "tbp": 640,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 112,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524080,
+          "u": 0,
+          "v": 128,
+          "width": 112,
+          "height": 64,
+          "tbp": 384,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 56,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524248,
+          "u": 112,
+          "v": 128,
+          "width": 112,
+          "height": 64,
+          "tbp": 917,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 224,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524192,
+          "u": 0,
+          "v": 192,
+          "width": 112,
+          "height": 64,
+          "tbp": 405,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 168,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524164,
+          "u": 112,
+          "v": 192,
+          "width": 112,
+          "height": 64,
+          "tbp": 661,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 140,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10524220,
+          "u": 0,
+          "v": 256,
+          "width": 112,
+          "height": 64,
+          "tbp": 896,
+          "cbp": 188,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Real.2",
+          "symbol_offset": 196,
+          "source": "SlRealDraw"
+        },
+        {
+          "address": 10525976,
+          "u": 0,
+          "v": 320,
+          "width": 112,
+          "height": 64,
+          "tbp": 0,
+          "cbp": 180,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "linetex.15",
+          "symbol_offset": 0,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10526928,
+          "u": 368,
+          "v": 48,
+          "width": 128,
+          "height": 48,
+          "tbp": 0,
+          "cbp": 436,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.37",
+          "symbol_offset": 0,
+          "source": "NgGetsDownBtnPrint"
+        },
+        {
+          "address": 10526956,
+          "u": 368,
+          "v": 96,
+          "width": 128,
+          "height": 48,
+          "tbp": 0,
+          "cbp": 436,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.37",
+          "symbol_offset": 28,
+          "source": "NgGetsDownBtnPrint"
+        },
+        {
+          "address": 10526984,
+          "u": 368,
+          "v": 144,
+          "width": 128,
+          "height": 48,
+          "tbp": 0,
+          "cbp": 436,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.37",
+          "symbol_offset": 56,
+          "source": "NgGetsDownBtnPrint"
+        },
+        {
+          "address": 10524712,
+          "u": 340,
+          "v": 256,
+          "width": 40,
+          "height": 88,
+          "tbp": 0,
+          "cbp": 436,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "spinbt",
+          "symbol_offset": 0,
+          "source": "SpinBtnPrint"
+        },
+        {
+          "address": 10524740,
+          "u": 380,
+          "v": 256,
+          "width": 40,
+          "height": 88,
+          "tbp": 0,
+          "cbp": 436,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "spinbt",
+          "symbol_offset": 28,
+          "source": "SpinBtnPrint"
+        },
+        {
+          "address": 10524768,
+          "u": 420,
+          "v": 256,
+          "width": 40,
+          "height": 88,
+          "tbp": 0,
+          "cbp": 436,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "spinbt",
+          "symbol_offset": 56,
+          "source": "SpinBtnPrint"
+        },
+        {
+          "address": 10525216,
+          "u": 104,
+          "v": 496,
+          "width": 104,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "OptionText",
+          "symbol_offset": 56,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10526896,
+          "u": 256,
+          "v": 352,
+          "width": 192,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.36",
+          "symbol_offset": 0,
+          "source": "NgTimePrint"
+        },
+        {
+          "address": 10525188,
+          "u": 160,
+          "v": 480,
+          "width": 96,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "OptionText",
+          "symbol_offset": 28,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10524960,
+          "u": 256,
+          "v": 256,
+          "width": 84,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PicTable",
+          "symbol_offset": 0,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10524988,
+          "u": 256,
+          "v": 272,
+          "width": 84,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PicTable",
+          "symbol_offset": 28,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10525016,
+          "u": 256,
+          "v": 288,
+          "width": 84,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PicTable",
+          "symbol_offset": 56,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10525100,
+          "u": 256,
+          "v": 304,
+          "width": 84,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PicTable",
+          "symbol_offset": 140,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10525044,
+          "u": 256,
+          "v": 320,
+          "width": 84,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PicTable",
+          "symbol_offset": 84,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10525072,
+          "u": 256,
+          "v": 336,
+          "width": 84,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PicTable",
+          "symbol_offset": 112,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10525160,
+          "u": 104,
+          "v": 464,
+          "width": 80,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "OptionText",
+          "symbol_offset": 0,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10524576,
+          "u": 224,
+          "v": 0,
+          "width": 32,
+          "height": 32,
+          "tbp": 0,
+          "cbp": 572,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "pay_window",
+          "symbol_offset": 0,
+          "source": "SlPayWindowPrint"
+        },
+        {
+          "address": 10524604,
+          "u": 224,
+          "v": 32,
+          "width": 32,
+          "height": 32,
+          "tbp": 0,
+          "cbp": 572,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "pay_window",
+          "symbol_offset": 28,
+          "source": "SlPayWindowPrint"
+        },
+        {
+          "address": 10526272,
+          "u": 256,
+          "v": 352,
+          "width": 128,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "TimeBar.19",
+          "symbol_offset": 0,
+          "source": "SlModePrint"
+        },
+        {
+          "address": 10525272,
+          "u": 192,
+          "v": 464,
+          "width": 64,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "OptionText",
+          "symbol_offset": 112,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10526152,
+          "u": 104,
+          "v": 480,
+          "width": 56,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Text.17",
+          "symbol_offset": 0,
+          "source": "SlModePrint"
+        },
+        {
+          "address": 10525244,
+          "u": 208,
+          "v": 496,
+          "width": 48,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "OptionText",
+          "symbol_offset": 84,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10525944,
+          "u": 352,
+          "v": 360,
+          "width": 40,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Total.14",
+          "symbol_offset": 0,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525688,
+          "u": 256,
+          "v": 256,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 0,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525716,
+          "u": 256,
+          "v": 272,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 28,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525744,
+          "u": 256,
+          "v": 288,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 56,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525828,
+          "u": 256,
+          "v": 304,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 140,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525128,
+          "u": 460,
+          "v": 312,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PicTable",
+          "symbol_offset": 168,
+          "source": "SlRateTableDraw"
+        },
+        {
+          "address": 10525772,
+          "u": 256,
+          "v": 320,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 84,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525912,
+          "u": 460,
+          "v": 328,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 224,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525800,
+          "u": 256,
+          "v": 336,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 112,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10525884,
+          "u": 392,
+          "v": 360,
+          "width": 28,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Pic.13",
+          "symbol_offset": 196,
+          "source": "SlResultDraw"
+        },
+        {
+          "address": 10524296,
+          "u": 496,
+          "v": 48,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 0,
+          "source": "decprint"
+        },
+        {
+          "address": 10524324,
+          "u": 496,
+          "v": 72,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 28,
+          "source": "decprint"
+        },
+        {
+          "address": 10524352,
+          "u": 496,
+          "v": 96,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 56,
+          "source": "decprint"
+        },
+        {
+          "address": 10524380,
+          "u": 496,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 84,
+          "source": "decprint"
+        },
+        {
+          "address": 10524408,
+          "u": 496,
+          "v": 144,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 112,
+          "source": "decprint"
+        },
+        {
+          "address": 10524436,
+          "u": 496,
+          "v": 168,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 140,
+          "source": "decprint"
+        },
+        {
+          "address": 10524464,
+          "u": 464,
+          "v": 192,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 168,
+          "source": "decprint"
+        },
+        {
+          "address": 10524492,
+          "u": 480,
+          "v": 192,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 196,
+          "source": "decprint"
+        },
+        {
+          "address": 10524520,
+          "u": 496,
+          "v": 192,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 224,
+          "source": "decprint"
+        },
+        {
+          "address": 10524548,
+          "u": 464,
+          "v": 216,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 692,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "decfont",
+          "symbol_offset": 252,
+          "source": "decprint"
+        },
+        {
+          "address": 10524824,
+          "u": 480,
+          "v": 216,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "stopbt",
+          "symbol_offset": 0,
+          "source": "SlStopBtnPrint"
+        },
+        {
+          "address": 10524852,
+          "u": 496,
+          "v": 216,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "stopbt",
+          "symbol_offset": 28,
+          "source": "SlStopBtnPrint"
+        },
+        {
+          "address": 10524880,
+          "u": 460,
+          "v": 288,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "stopbt",
+          "symbol_offset": 56,
+          "source": "SlStopBtnPrint"
+        },
+        {
+          "address": 10525304,
+          "u": 464,
+          "v": 240,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 0,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525332,
+          "u": 476,
+          "v": 240,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 28,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525360,
+          "u": 488,
+          "v": 240,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 56,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525388,
+          "u": 500,
+          "v": 240,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 84,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525416,
+          "u": 464,
+          "v": 256,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 112,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525444,
+          "u": 476,
+          "v": 256,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 140,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525472,
+          "u": 488,
+          "v": 256,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 168,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525500,
+          "u": 500,
+          "v": 256,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 196,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525528,
+          "u": 464,
+          "v": 272,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 224,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10525556,
+          "u": 476,
+          "v": 272,
+          "width": 12,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 444,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "DeciList.9",
+          "symbol_offset": 252,
+          "source": "SlDecPrintSmall"
+        },
+        {
+          "address": 10526304,
+          "u": 256,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 0,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526332,
+          "u": 264,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 28,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526360,
+          "u": 272,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 56,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526388,
+          "u": 280,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 84,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526416,
+          "u": 288,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 112,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526444,
+          "u": 296,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 140,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526472,
+          "u": 304,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 168,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526500,
+          "u": 312,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 196,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526528,
+          "u": 320,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 224,
+          "source": "SlGuidPrint"
+        },
+        {
+          "address": 10526556,
+          "u": 328,
+          "v": 248,
+          "width": 8,
+          "height": 8,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "GuidPtTex",
+          "symbol_offset": 252,
+          "source": "SlGuidPrint"
+        }
+      ],
+      "functions": [
+        "SlRealDraw",
+        "decprint",
+        "SlPayWindowPrint",
+        "SpinBtnPrint",
+        "SlStopBtnPrint",
+        "SlDecPrintSmall",
+        "SlRateTableDraw",
+        "SlResultDraw",
+        "SlModePrint",
+        "SlGuidPrint",
+        "NgTimePrint",
+        "NgPaidPrint",
+        "NgGetsDownBtnPrint",
+        "NgSpinBtnPrint",
+        "NgLamp",
+        "NgStopGuidPt",
+        "NgFwdGuidPt",
+        "NgStopBtnPrint",
+        "DrawNgPanel",
+        "NgReal"
+      ]
+    },
+    "BG.xtx": {
+      "regions": [
+        {
+          "address": 10530936,
+          "u": 0,
+          "v": 0,
+          "width": 511,
+          "height": 447,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "EntryBG_Tex",
+          "symbol_offset": 0,
+          "source": "menu_mode"
+        }
+      ],
+      "functions": [
+        "menu_mode"
+      ]
+    },
+    "clover.xtx": {
+      "regions": [
+        {
+          "address": 10529560,
+          "u": 0,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 0,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529588,
+          "u": 80,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 28,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529616,
+          "u": 160,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 56,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529896,
+          "u": 256,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 336,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529924,
+          "u": 336,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 364,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529952,
+          "u": 416,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1004,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 392,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529644,
+          "u": 0,
+          "v": 120,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 84,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529672,
+          "u": 80,
+          "v": 120,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 112,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529700,
+          "u": 160,
+          "v": 120,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 140,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529728,
+          "u": 0,
+          "v": 256,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 168,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529756,
+          "u": 80,
+          "v": 256,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 196,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529784,
+          "u": 160,
+          "v": 256,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 224,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529812,
+          "u": 0,
+          "v": 376,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 252,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529840,
+          "u": 80,
+          "v": 376,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 280,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529868,
+          "u": 160,
+          "v": 376,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 308,
+          "source": "PoCardDraw"
+        }
+      ],
+      "functions": [
+        "PoCardDraw"
+      ]
+    },
+    "dataviewer.xtx": {
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        },
+        {
+          "address": 10533176,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 1012,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "back_tex.118",
+          "symbol_offset": 0,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10533112,
+          "u": 0,
+          "v": 448,
+          "width": 480,
+          "height": 64,
+          "tbp": 0,
+          "cbp": 1012,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "keytex.115",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "functions": [
+        "VW_ViewMode",
+        "VW_SamMode"
+      ]
+    },
+    "dia.xtx": {
+      "regions": [
+        {
+          "address": 10529560,
+          "u": 0,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 0,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529588,
+          "u": 80,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 28,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529616,
+          "u": 160,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 56,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529896,
+          "u": 256,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 336,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529924,
+          "u": 336,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 364,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529952,
+          "u": 416,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1004,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 392,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529644,
+          "u": 0,
+          "v": 120,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 84,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529672,
+          "u": 80,
+          "v": 120,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 112,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529700,
+          "u": 160,
+          "v": 120,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 140,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529728,
+          "u": 0,
+          "v": 256,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 168,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529756,
+          "u": 80,
+          "v": 256,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 196,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529784,
+          "u": 160,
+          "v": 256,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 224,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529812,
+          "u": 0,
+          "v": 376,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 252,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529840,
+          "u": 80,
+          "v": 376,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 280,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529868,
+          "u": 160,
+          "v": 376,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 308,
+          "source": "PoCardDraw"
+        }
+      ],
+      "functions": [
+        "PoCardDraw"
+      ]
+    },
+    "exchange1.xtx": {
+      "regions": [
+        {
+          "address": 10531576,
+          "u": 0,
+          "v": 0,
+          "width": 511,
+          "height": 447,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "BG_Tex",
+          "symbol_offset": 0,
+          "source": "shop_main"
+        }
+      ],
+      "functions": [
+        "shop_main"
+      ]
+    },
+    "exchange2.xtx": {
+      "regions": [
+        {
+          "address": 10531576,
+          "u": 0,
+          "v": 0,
+          "width": 511,
+          "height": 447,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "BG_Tex",
+          "symbol_offset": 0,
+          "source": "coin_main"
+        }
+      ],
+      "functions": [
+        "coin_main"
+      ]
+    },
+    "heart.xtx": {
+      "regions": [
+        {
+          "address": 10529560,
+          "u": 0,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 0,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529588,
+          "u": 80,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 28,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529616,
+          "u": 160,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 56,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529896,
+          "u": 256,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 336,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529924,
+          "u": 336,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 364,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529952,
+          "u": 416,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1004,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 392,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529644,
+          "u": 0,
+          "v": 120,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 84,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529672,
+          "u": 80,
+          "v": 120,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 112,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529700,
+          "u": 160,
+          "v": 120,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 140,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529728,
+          "u": 0,
+          "v": 256,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 168,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529756,
+          "u": 80,
+          "v": 256,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 196,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529784,
+          "u": 160,
+          "v": 256,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 224,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529812,
+          "u": 0,
+          "v": 376,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 252,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529840,
+          "u": 80,
+          "v": 376,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 280,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529868,
+          "u": 160,
+          "v": 376,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 308,
+          "source": "PoCardDraw"
+        }
+      ],
+      "functions": [
+        "PoCardDraw"
+      ]
+    },
+    "help_all.xtx": {
+      "regions": [
+        {
+          "address": 10534192,
+          "u": 0,
+          "v": 0,
+          "width": 480,
+          "height": 256,
+          "tbp": 0,
+          "cbp": 508,
+          "mode": 0,
+          "psm": "PSMT8",
+          "source": "SlHelpMode"
+        },
+        {
+          "address": 10534384,
+          "u": 0,
+          "v": 256,
+          "width": 256,
+          "height": 256,
+          "tbp": 0,
+          "cbp": 508,
+          "mode": 0,
+          "psm": "PSMT8",
+          "source": "NgHelpMode"
+        },
+        {
+          "address": 10534416,
+          "u": 256,
+          "v": 256,
+          "width": 256,
+          "height": 128,
+          "tbp": 0,
+          "cbp": 508,
+          "mode": 0,
+          "psm": "PSMT8",
+          "source": "NgHelpMode"
+        }
+      ],
+      "functions": [
+        "NgHelpMode",
+        "SlHelpMode"
+      ]
+    },
+    "poker_1.xtx": {
+      "regions": [
+        {
+          "address": 10529512,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.68",
+          "symbol_offset": 0,
+          "source": "PoBgDraw"
+        }
+      ],
+      "functions": [
+        "PoBgDraw"
+      ]
+    },
+    "poker_2.xtx": {
+      "regions": [
+        {
+          "address": 10530176,
+          "u": 0,
+          "v": 0,
+          "width": 352,
+          "height": 176,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.80",
+          "symbol_offset": 0,
+          "source": "PoRateTableDraw"
+        },
+        {
+          "address": 10530240,
+          "u": 0,
+          "v": 256,
+          "width": 352,
+          "height": 176,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.85",
+          "symbol_offset": 0,
+          "source": "PoBonusBGDraw"
+        },
+        {
+          "address": 10529296,
+          "u": 22,
+          "v": 176,
+          "width": 464,
+          "height": 48,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.58",
+          "symbol_offset": 0,
+          "source": "PoWindowMessage"
+        },
+        {
+          "address": 10529328,
+          "u": 352,
+          "v": 0,
+          "width": 144,
+          "height": 112,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.59",
+          "symbol_offset": 0,
+          "source": "PoDialog"
+        },
+        {
+          "address": 10528944,
+          "u": 352,
+          "v": 352,
+          "width": 129,
+          "height": 56,
+          "tbp": 0,
+          "cbp": 636,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "waku.53",
+          "symbol_offset": 0,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528972,
+          "u": 352,
+          "v": 416,
+          "width": 129,
+          "height": 56,
+          "tbp": 0,
+          "cbp": 636,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "waku.53",
+          "symbol_offset": 28,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10529440,
+          "u": 352,
+          "v": 256,
+          "width": 64,
+          "height": 96,
+          "tbp": 0,
+          "cbp": 988,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "type1_tex.63",
+          "symbol_offset": 0,
+          "source": "PoDialog"
+        },
+        {
+          "address": 10530840,
+          "u": 96,
+          "v": 224,
+          "width": 160,
+          "height": 32,
+          "tbp": 0,
+          "cbp": 756,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.98",
+          "symbol_offset": 0,
+          "source": "PoResultLamp"
+        },
+        {
+          "address": 10530288,
+          "u": 416,
+          "v": 256,
+          "width": 64,
+          "height": 80,
+          "tbp": 0,
+          "cbp": 1004,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "MarkerTex.87",
+          "symbol_offset": 0,
+          "source": "PoBonusBGDraw"
+        },
+        {
+          "address": 10529392,
+          "u": 192,
+          "v": 432,
+          "width": 64,
+          "height": 64,
+          "tbp": 0,
+          "cbp": 988,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "type0_tex.61",
+          "symbol_offset": 0,
+          "source": "PoDialog"
+        },
+        {
+          "address": 10530504,
+          "u": 0,
+          "v": 224,
+          "width": 80,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 988,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoSelecterTex",
+          "symbol_offset": 0,
+          "source": "PoSelectMarkDraw"
+        },
+        {
+          "address": 10530532,
+          "u": 0,
+          "v": 240,
+          "width": 80,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 988,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoSelecterTex",
+          "symbol_offset": 28,
+          "source": "PoSelectMarkDraw"
+        },
+        {
+          "address": 10530400,
+          "u": 480,
+          "v": 256,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1004,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PtrTex.89",
+          "symbol_offset": 0,
+          "source": "PoBonusBGDraw"
+        },
+        {
+          "address": 10529000,
+          "u": 0,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 0,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529028,
+          "u": 24,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 28,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529056,
+          "u": 48,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 56,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529084,
+          "u": 72,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 84,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529112,
+          "u": 96,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 112,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529140,
+          "u": 120,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 140,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529168,
+          "u": 144,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 168,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529196,
+          "u": 168,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 196,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529232,
+          "u": 18,
+          "v": 176,
+          "width": 8,
+          "height": 48,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Ltex.56",
+          "symbol_offset": 0,
+          "source": "PoWindowMessage"
+        },
+        {
+          "address": 10529264,
+          "u": 486,
+          "v": 176,
+          "width": 8,
+          "height": 48,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Rtex.57",
+          "symbol_offset": 0,
+          "source": "PoWindowMessage"
+        },
+        {
+          "address": 10528692,
+          "u": 0,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 28,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528720,
+          "u": 16,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 56,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528748,
+          "u": 32,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 84,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528776,
+          "u": 48,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 112,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528804,
+          "u": 64,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 140,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528832,
+          "u": 80,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 168,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528860,
+          "u": 96,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 196,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528888,
+          "u": 112,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 224,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528916,
+          "u": 128,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 252,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528664,
+          "u": 144,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 0,
+          "source": "PoMoneyPrint"
+        }
+      ],
+      "functions": [
+        "PoMoneyPrint",
+        "PoCurDraw",
+        "PoWindowMessage",
+        "PoDialog",
+        "PoRateTableDraw",
+        "PoBonusBGDraw",
+        "PoSelectMarkDraw",
+        "PoResultLamp"
+      ]
+    },
+    "sam.xtx": {
+      "regions": [
+        {
+          "address": 10532200,
+          "u": 0,
+          "v": 0,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 0,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532228,
+          "u": 256,
+          "v": 0,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 28,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532256,
+          "u": 512,
+          "v": 0,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 56,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532284,
+          "u": 768,
+          "v": 0,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 84,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532312,
+          "u": 0,
+          "v": 64,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 112,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532340,
+          "u": 256,
+          "v": 64,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 140,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532368,
+          "u": 512,
+          "v": 64,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 168,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532396,
+          "u": 768,
+          "v": 64,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 196,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532424,
+          "u": 0,
+          "v": 128,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 224,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532452,
+          "u": 256,
+          "v": 128,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 252,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532480,
+          "u": 512,
+          "v": 128,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 280,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532508,
+          "u": 768,
+          "v": 128,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 308,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532536,
+          "u": 0,
+          "v": 192,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 336,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532564,
+          "u": 256,
+          "v": 192,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 364,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532592,
+          "u": 512,
+          "v": 192,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 392,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532620,
+          "u": 768,
+          "v": 192,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 420,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532648,
+          "u": 0,
+          "v": 256,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 448,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532676,
+          "u": 256,
+          "v": 256,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 476,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532704,
+          "u": 512,
+          "v": 256,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 504,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532732,
+          "u": 768,
+          "v": 256,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 532,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532760,
+          "u": 0,
+          "v": 320,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 560,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532788,
+          "u": 256,
+          "v": 320,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 588,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532816,
+          "u": 512,
+          "v": 320,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 616,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532844,
+          "u": 768,
+          "v": 320,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 644,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532872,
+          "u": 0,
+          "v": 384,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 672,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532900,
+          "u": 256,
+          "v": 384,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 700,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532928,
+          "u": 512,
+          "v": 384,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 728,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532956,
+          "u": 768,
+          "v": 384,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 756,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10532984,
+          "u": 0,
+          "v": 448,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 784,
+          "source": "VW_SamMode"
+        },
+        {
+          "address": 10533012,
+          "u": 256,
+          "v": 448,
+          "width": 255,
+          "height": 127,
+          "tbp": 0,
+          "cbp": 2046,
+          "mode": 3,
+          "psm": "PSMT4",
+          "texture_size": [
+            1024,
+            1024
+          ],
+          "symbol": "ViewSamTex",
+          "symbol_offset": 812,
+          "source": "VW_SamMode"
+        }
+      ],
+      "functions": [
+        "VW_SamMode"
+      ],
+      "default_cbp": 2046,
+      "default_psm": "PSMT4",
+      "palette_source": "shared runtime GS state; outside sam.xtx upload"
+    },
+    "slot_1.xtx": {
+      "regions": [
+        {
+          "address": 10526736,
+          "u": 0,
+          "v": 0,
+          "width": 511,
+          "height": 447,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "BoxSpr",
+          "symbol_offset": 0,
+          "source": "SlBgDraw"
+        }
+      ],
+      "functions": [
+        "SlBgDraw"
+      ],
+      "palette_resource": "slot_2.xtx"
+    },
+    "slot_2.xtx": {
+      "regions": [
+        {
+          "address": 10527216,
+          "u": 0,
+          "v": 0,
+          "width": 511,
+          "height": 447,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "NineGameBG_Tex.43",
+          "symbol_offset": 0,
+          "source": "NineGameBG_Draw"
+        }
+      ],
+      "functions": [
+        "NineGameBG_Draw"
+      ]
+    },
+    "spade.xtx": {
+      "regions": [
+        {
+          "address": 10529560,
+          "u": 0,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 0,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529588,
+          "u": 80,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 28,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529616,
+          "u": 160,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 56,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529896,
+          "u": 256,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 336,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529924,
+          "u": 336,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 364,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529952,
+          "u": 416,
+          "v": 0,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1004,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 392,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529644,
+          "u": 0,
+          "v": 120,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 84,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529672,
+          "u": 80,
+          "v": 120,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 112,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529700,
+          "u": 160,
+          "v": 120,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 140,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529728,
+          "u": 0,
+          "v": 256,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 168,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529756,
+          "u": 80,
+          "v": 256,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 196,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529784,
+          "u": 160,
+          "v": 256,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 224,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529812,
+          "u": 0,
+          "v": 376,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 252,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529840,
+          "u": 80,
+          "v": 376,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 280,
+          "source": "PoCardDraw"
+        },
+        {
+          "address": 10529868,
+          "u": 160,
+          "v": 376,
+          "width": 80,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "CardTex",
+          "symbol_offset": 308,
+          "source": "PoCardDraw"
+        }
+      ],
+      "functions": [
+        "PoCardDraw",
+        "PoCardDrawAnime",
+        "PoBonusCardAnime"
+      ]
+    },
+    "w1.xtx": {
+      "regions": [
+        {
+          "address": 10534072,
+          "u": 0,
+          "v": 0,
+          "width": 256,
+          "height": 64,
+          "tbp": 0,
+          "cbp": 64,
+          "mode": 0,
+          "psm": "PSMT8",
+          "source": "SlPrizeEffect"
+        }
+      ],
+      "functions": [
+        "SlPrizeEffect"
+      ]
+    },
+    "window.xtx": {
+      "regions": [
+        {
+          "address": 10530984,
+          "u": 0,
+          "v": 0,
+          "width": 176,
+          "height": 120,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "SubWindow_Tex",
+          "symbol_offset": 0,
+          "source": "sub_window"
+        },
+        {
+          "address": 10531016,
+          "u": 176,
+          "v": 0,
+          "width": 72,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Level_Tex",
+          "symbol_offset": 0,
+          "source": "level_select"
+        },
+        {
+          "address": 10531044,
+          "u": 176,
+          "v": 16,
+          "width": 72,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Level_Tex",
+          "symbol_offset": 28,
+          "source": "level_select"
+        },
+        {
+          "address": 10531072,
+          "u": 176,
+          "v": 32,
+          "width": 72,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Level_Tex",
+          "symbol_offset": 56,
+          "source": "level_select"
+        },
+        {
+          "address": 10531100,
+          "u": 176,
+          "v": 48,
+          "width": 72,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Level_Tex",
+          "symbol_offset": 84,
+          "source": "level_select"
+        },
+        {
+          "address": 10531128,
+          "u": 176,
+          "v": 64,
+          "width": 64,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "ExChange_Tex",
+          "symbol_offset": 0,
+          "source": "exchange_select"
+        },
+        {
+          "address": 10531156,
+          "u": 176,
+          "v": 80,
+          "width": 64,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "ExChange_Tex",
+          "symbol_offset": 28,
+          "source": "exchange_select"
+        },
+        {
+          "address": 10531184,
+          "u": 176,
+          "v": 96,
+          "width": 64,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "ExChange_Tex",
+          "symbol_offset": 56,
+          "source": "exchange_select"
+        },
+        {
+          "address": 10531216,
+          "u": 0,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 0,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531244,
+          "u": 24,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 28,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531272,
+          "u": 48,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 56,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531300,
+          "u": 72,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 84,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531328,
+          "u": 96,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 112,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531356,
+          "u": 120,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 140,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531384,
+          "u": 144,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 168,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531412,
+          "u": 168,
+          "v": 144,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "Cursor_Tex",
+          "symbol_offset": 196,
+          "source": "submenu_select"
+        },
+        {
+          "address": 10531904,
+          "u": 160,
+          "v": 120,
+          "width": 20,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 280,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531652,
+          "u": 0,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 28,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531680,
+          "u": 16,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 56,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531708,
+          "u": 32,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 84,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531736,
+          "u": 48,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 112,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531764,
+          "u": 64,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 140,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531792,
+          "u": 80,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 168,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531820,
+          "u": 96,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 196,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531848,
+          "u": 112,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 224,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531876,
+          "u": 128,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 252,
+          "source": "DecPrint2"
+        },
+        {
+          "address": 10531624,
+          "u": 144,
+          "v": 120,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 564,
+          "mode": 2,
+          "psm": "PSMT8",
+          "texture_size": [
+            256,
+            256
+          ],
+          "symbol": "tex.105",
+          "symbol_offset": 0,
+          "source": "DecPrint2"
+        }
+      ],
+      "functions": [
+        "sub_window",
+        "submenu_select",
+        "level_select",
+        "exchange_select",
+        "DecPrint2",
+        "UtlCurPrint"
+      ]
+    }
+  }
+}

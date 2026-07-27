@@ -1,0 +1,125 @@
+{
+  "tool": "tanaka_graphics_workflow",
+  "version": 2,
+  "source": "slot_1.xtx",
+  "source_size": 245936,
+  "source_sha256": "39ee471dd092d5677fd4be00fa8464d564809f795b0629ee133897afd3b05032",
+  "ov11_sha256": "f98da706c68d4534c12539a068358acee571504c3181b54b1b75d2faa2f7ca8b",
+  "palette_storage": "XTX upload bytes; OV11 selects the embedded CLUT by TEX0 CBP",
+  "profile": "OV11_PSMT8_regions",
+  "images": [
+    {
+      "path": "PSMT8_001.png",
+      "sha256": "6c031107512b4a009ea0604287c60c934674f4f33c45787a6c48124d912cb81e",
+      "size": [
+        512,
+        256
+      ],
+      "image_index": 0,
+      "pstart": 112,
+      "pend": 131184,
+      "max_index": 255,
+      "palette_cbps": [
+        1020
+      ],
+      "regions": [
+        {
+          "address": 10526736,
+          "u": 0,
+          "v": 0,
+          "width": 511,
+          "height": 447,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "BoxSpr",
+          "symbol_offset": 0,
+          "source": "SlBgDraw"
+        }
+      ],
+      "covered_pixels": 130816,
+      "total_pixels": 131072
+    },
+    {
+      "path": "PSMT8_002.png",
+      "sha256": "e82eaef50c7b9fcfb9a9547a9027db973ef2c06cfe3c35a64c7110fea8fc59f9",
+      "size": [
+        256,
+        192
+      ],
+      "image_index": 1,
+      "pstart": 131216,
+      "pend": 180368,
+      "max_index": 255,
+      "palette_cbps": [
+        1020
+      ],
+      "regions": [
+        {
+          "address": 10526736,
+          "u": 0,
+          "v": 0,
+          "width": 511,
+          "height": 447,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "BoxSpr",
+          "symbol_offset": 0,
+          "source": "SlBgDraw"
+        }
+      ],
+      "covered_pixels": 49152,
+      "total_pixels": 49152
+    },
+    {
+      "path": "PSMT8_003.png",
+      "sha256": "82dcaf17fa3c0accd21b2c186daf0d70b8bc6e4ac311260754aa31df03eb8071",
+      "size": [
+        256,
+        256
+      ],
+      "image_index": 2,
+      "pstart": 180400,
+      "pend": 245936,
+      "max_index": 255,
+      "palette_cbps": [
+        1020
+      ],
+      "regions": [
+        {
+          "address": 10526736,
+          "u": 0,
+          "v": 0,
+          "width": 511,
+          "height": 447,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "BoxSpr",
+          "symbol_offset": 0,
+          "source": "SlBgDraw"
+        }
+      ],
+      "covered_pixels": 65536,
+      "total_pixels": 65536
+    }
+  ],
+  "palette_resource": "slot_2.xtx",
+  "edit_rule": "RGB/no-alpha OV11 palette reference. Keep originals unchanged; add *_KOR.png to replace changed pixels."
+}

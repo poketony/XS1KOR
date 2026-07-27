@@ -1,0 +1,16 @@
+{
+  "source": "dataviewer.xtx",
+  "output": "graphics_rebuilt/dataviewer.xtx",
+  "edited_images": [
+    "PSMT8_001_KOR.png"
+  ],
+  "original_size": 262224,
+  "rebuilt_size": 262224,
+  "changed_bytes": 4352,
+  "changed_span": [
+    205043,
+    261601
+  ],
+  "source_sha256": "b9c803c52565b4bb52698575c60e0efb4f6fbdc8dea3e0d280de24639a77d4f7",
+  "output_sha256": "3ba2610a96464913da1d46f007b4253252c156cfa8e25864a45d0f3ea11e5d4a"
+}

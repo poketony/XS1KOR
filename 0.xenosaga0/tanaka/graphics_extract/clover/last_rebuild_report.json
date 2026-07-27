@@ -1,0 +1,16 @@
+{
+  "source": "clover.xtx",
+  "output": "graphics_rebuilt/clover.xtx",
+  "edited_images": [
+    "PSMT8_001_KOR.png"
+  ],
+  "original_size": 262224,
+  "rebuilt_size": 262224,
+  "changed_bytes": 98,
+  "changed_span": [
+    5905,
+    10048
+  ],
+  "source_sha256": "14e79a95012e1809fcbd7458a91978f44c7237939a150524d6faaba7f088a21b",
+  "output_sha256": "801175f6f9116316cf1cd71a60af6734d210ced35d3485b462382f5af78ec26d"
+}

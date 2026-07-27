@@ -27,11 +27,14 @@ txt 포맷: <hex_offset>|<orig_bytes>/<slack_bytes>|<text>
 
 import sys, os, json
 
+import euc_scan
+
 for _stream in (sys.stdout, sys.stderr):
     if hasattr(_stream, 'reconfigure'):
         _stream.reconfigure(encoding='utf-8', errors='replace')
 
 SCAN_START = 0x1665e0
+SCAN_END   = 0x2eb93c  # end of the last loaded CPU section (embedded OV02)
 ENCODING   = 'euc_jis_2004'
 CTRL_OK    = frozenset(range(1, 0x20))
 
@@ -88,7 +91,7 @@ def to_display(s):
     return ''.join(out)
 
 
-def raw_to_display(raw):
+def _raw_to_display_legacy(raw):
     out = []
     i = 0
     while i < len(raw):
@@ -134,6 +137,10 @@ def raw_to_display(raw):
             out.append(decoded)
 
     return ''.join(out)
+
+
+def raw_to_display(raw):
+    return euc_scan.raw_to_display(raw)
 
 
 def from_display(s):
@@ -294,7 +301,7 @@ def _jp_runs_fixed(seg, base_off):
             i += 1
 
 
-def iter_strings(data, start):
+def _iter_strings_manual_legacy(data, start):
     """
     start~EOF 구간 스캔, yield: (offset, raw_bytes, trailing_nulls)
     두 가지 추출 방식 통합:
@@ -363,6 +370,10 @@ def iter_strings(data, start):
         pos = np + 1
 
 
+def iter_strings(data, start):
+    yield from euc_scan.iter_strings(data, start, min(SCAN_END, len(data)), False)
+
+
 # ── 추출 ──────────────────────────────────────────────────────────────────────
 
 def extract(bin_path):
@@ -394,7 +405,7 @@ def extract(bin_path):
 
 # ── 리빌드 ────────────────────────────────────────────────────────────────────
 
-def rebuild(bin_path, txt_path):
+def _rebuild_individual_legacy(bin_path, txt_path):
     data  = bytearray(open(bin_path, 'rb').read())
     table = load_replace_table(bin_path)
 
@@ -492,6 +503,33 @@ def rebuild(bin_path, txt_path):
 
 
 # ── main ──────────────────────────────────────────────────────────────────────
+
+def rebuild(bin_path, txt_path):
+    data = bytearray(open(bin_path, 'rb').read())
+    table = load_replace_table(bin_path)
+    edits, malformed = euc_scan.parse_translation_edits(txt_path)
+    stats = euc_scan.apply_grouped_translations(
+        data,
+        [(SCAN_START, min(SCAN_END, len(data)), False)],
+        edits,
+        table,
+        label=os.path.basename(bin_path),
+        skip_polluted=False,
+    )
+
+    base, ext = os.path.splitext(bin_path)
+    out_path = base + '_patched' + ext
+    with open(out_path, 'wb') as stream:
+        stream.write(data)
+
+    print(
+        f'[DONE] groups={stats.patched_groups} records={stats.patched_records} '
+        f'malformed={malformed} missing={stats.missing} '
+        f'overflow={stats.overflow} invalid={stats.invalid} '
+        f'control_warn={stats.control_warnings}'
+    )
+    print(f'[OK] output: {out_path}')
+
 
 def usage():
     print(__doc__)

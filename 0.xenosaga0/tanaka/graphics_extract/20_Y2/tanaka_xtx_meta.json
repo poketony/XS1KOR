@@ -1,0 +1,51 @@
+{
+  "tool": "tanaka_graphics_workflow",
+  "version": 2,
+  "source": "20_Y2.xtx",
+  "source_size": 262224,
+  "source_sha256": "831b90a549b28e5cccadff8b4e276e4c2e5edeb25cb508db98072108d03a68bd",
+  "ov11_sha256": "f98da706c68d4534c12539a068358acee571504c3181b54b1b75d2faa2f7ca8b",
+  "palette_storage": "XTX upload bytes; OV11 selects the embedded CLUT by TEX0 CBP",
+  "profile": "OV11_PSMT8_regions",
+  "images": [
+    {
+      "path": "PSMT8_001.png",
+      "sha256": "d5e4cd9d192ff5f685833284c529045bf76ab889ae8c3c56f90067d29ccd2682",
+      "size": [
+        512,
+        512
+      ],
+      "image_index": 0,
+      "pstart": 80,
+      "pend": 262224,
+      "max_index": 255,
+      "palette_cbps": [
+        896
+      ],
+      "regions": [
+        {
+          "address": 10533080,
+          "u": 0,
+          "v": 0,
+          "width": 512,
+          "height": 448,
+          "tbp": 0,
+          "cbp": 896,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.114",
+          "symbol_offset": 0,
+          "source": "VW_ViewMode"
+        }
+      ],
+      "covered_pixels": 229376,
+      "total_pixels": 262144
+    }
+  ],
+  "palette_resource": "20_Y2.xtx",
+  "edit_rule": "RGB/no-alpha OV11 palette reference. Keep originals unchanged; add *_KOR.png to replace changed pixels."
+}

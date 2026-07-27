@@ -79,41 +79,19 @@ def build_translated_image(source: Path, translations_path: Path) -> bytes:
     if not ranges:
         ranges = euc_scan.file_scan_ranges(str(source), len(data), start)
 
-    originals = {}
-    for low, high, preserve in ranges:
-        for offset, raw, trailing in euc_scan.iter_strings(bytes(data), low, high, preserve):
-            originals[offset] = (raw, trailing)
-        if preserve:
-            for offset, raw, trailing in euc_scan.iter_legacy_aliases(bytes(data), low, high):
-                originals.setdefault(offset, (raw, trailing))
-
-    edits = parse_translations(translations_path)
-    patched = missing = overflow = legacy_suffix = 0
-    for offset, text in sorted(edits.items()):
-        if euc_scan.is_polluted_legacy_text(text):
-            continue
-        if offset not in originals:
-            print(f"[WARN] OV02 translation offset 0x{offset:08x} is missing; skipped")
-            missing += 1
-            continue
-        original, trailing = originals[offset]
-        encoded = euc_scan.encode_display(text, replace_table)
-        encoded, suffix_len = euc_scan.append_legacy_suffix(original, encoded)
-        if suffix_len:
-            legacy_suffix += 1
-        if encoded == original:
-            continue
-        if len(encoded) > len(original) + trailing:
-            print(f"[WARN] OV02 translation offset 0x{offset:08x} exceeds its slot; skipped")
-            overflow += 1
-            continue
-        slot_size = len(original) + 1 + trailing
-        data[offset : offset + slot_size] = b"\0" * slot_size
-        data[offset : offset + len(encoded)] = encoded
-        patched += 1
+    edits, malformed = euc_scan.parse_translation_edits(str(translations_path))
+    stats = euc_scan.apply_grouped_translations(
+        data,
+        ranges,
+        edits,
+        replace_table,
+        label="OV02",
+    )
     print(
-        f"[OK] OV02 translated strings: {patched}; missing={missing}, "
-        f"overflow={overflow}, legacy_suffix={legacy_suffix}"
+        f"[OK] OV02 translated logical strings: {stats.patched_groups}; "
+        f"records={stats.patched_records}, malformed={malformed}, "
+        f"missing={stats.missing}, overflow={stats.overflow}, "
+        f"invalid={stats.invalid}, control={stats.control_warnings}"
     )
     return bytes(data)
 

@@ -1,0 +1,633 @@
+{
+  "tool": "tanaka_graphics_workflow",
+  "version": 2,
+  "source": "poker_2.xtx",
+  "source_size": 262224,
+  "source_sha256": "56938179fce2168b5842e9c560afd472c5c8636a1c2e62675b58554e06d12ebd",
+  "ov11_sha256": "f98da706c68d4534c12539a068358acee571504c3181b54b1b75d2faa2f7ca8b",
+  "palette_storage": "XTX upload bytes; OV11 selects the embedded CLUT by TEX0 CBP",
+  "profile": "OV11_PSMT8_regions",
+  "images": [
+    {
+      "path": "PSMT8_001.png",
+      "sha256": "12b844db9ce3f8ad03ef527a2e7f76eb75f8a78a6971607e1fc727819a3a0897",
+      "size": [
+        512,
+        512
+      ],
+      "image_index": 0,
+      "pstart": 80,
+      "pend": 262224,
+      "max_index": 255,
+      "palette_cbps": [
+        636,
+        756,
+        988,
+        1000,
+        1004,
+        1016,
+        1020
+      ],
+      "regions": [
+        {
+          "address": 10530176,
+          "u": 0,
+          "v": 0,
+          "width": 352,
+          "height": 176,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.80",
+          "symbol_offset": 0,
+          "source": "PoRateTableDraw"
+        },
+        {
+          "address": 10530240,
+          "u": 0,
+          "v": 256,
+          "width": 352,
+          "height": 176,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.85",
+          "symbol_offset": 0,
+          "source": "PoBonusBGDraw"
+        },
+        {
+          "address": 10529296,
+          "u": 22,
+          "v": 176,
+          "width": 464,
+          "height": 48,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.58",
+          "symbol_offset": 0,
+          "source": "PoWindowMessage"
+        },
+        {
+          "address": 10529328,
+          "u": 352,
+          "v": 0,
+          "width": 144,
+          "height": 112,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.59",
+          "symbol_offset": 0,
+          "source": "PoDialog"
+        },
+        {
+          "address": 10528944,
+          "u": 352,
+          "v": 352,
+          "width": 129,
+          "height": 56,
+          "tbp": 0,
+          "cbp": 636,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "waku.53",
+          "symbol_offset": 0,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528972,
+          "u": 352,
+          "v": 416,
+          "width": 129,
+          "height": 56,
+          "tbp": 0,
+          "cbp": 636,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "waku.53",
+          "symbol_offset": 28,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10529440,
+          "u": 352,
+          "v": 256,
+          "width": 64,
+          "height": 96,
+          "tbp": 0,
+          "cbp": 988,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "type1_tex.63",
+          "symbol_offset": 0,
+          "source": "PoDialog"
+        },
+        {
+          "address": 10530840,
+          "u": 96,
+          "v": 224,
+          "width": 160,
+          "height": 32,
+          "tbp": 0,
+          "cbp": 756,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "tex.98",
+          "symbol_offset": 0,
+          "source": "PoResultLamp"
+        },
+        {
+          "address": 10530288,
+          "u": 416,
+          "v": 256,
+          "width": 64,
+          "height": 80,
+          "tbp": 0,
+          "cbp": 1004,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "MarkerTex.87",
+          "symbol_offset": 0,
+          "source": "PoBonusBGDraw"
+        },
+        {
+          "address": 10529392,
+          "u": 192,
+          "v": 432,
+          "width": 64,
+          "height": 64,
+          "tbp": 0,
+          "cbp": 988,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "type0_tex.61",
+          "symbol_offset": 0,
+          "source": "PoDialog"
+        },
+        {
+          "address": 10530504,
+          "u": 0,
+          "v": 224,
+          "width": 80,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 988,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoSelecterTex",
+          "symbol_offset": 0,
+          "source": "PoSelectMarkDraw"
+        },
+        {
+          "address": 10530532,
+          "u": 0,
+          "v": 240,
+          "width": 80,
+          "height": 16,
+          "tbp": 0,
+          "cbp": 988,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoSelecterTex",
+          "symbol_offset": 28,
+          "source": "PoSelectMarkDraw"
+        },
+        {
+          "address": 10530400,
+          "u": 480,
+          "v": 256,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1004,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PtrTex.89",
+          "symbol_offset": 0,
+          "source": "PoBonusBGDraw"
+        },
+        {
+          "address": 10529000,
+          "u": 0,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 0,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529028,
+          "u": 24,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 28,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529056,
+          "u": 48,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 56,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529084,
+          "u": 72,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 84,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529112,
+          "u": 96,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 112,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529140,
+          "u": 120,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 140,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529168,
+          "u": 144,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 168,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529196,
+          "u": 168,
+          "v": 432,
+          "width": 24,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1000,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "PoCurTex",
+          "symbol_offset": 196,
+          "source": "PoCurDraw"
+        },
+        {
+          "address": 10529232,
+          "u": 18,
+          "v": 176,
+          "width": 8,
+          "height": 48,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Ltex.56",
+          "symbol_offset": 0,
+          "source": "PoWindowMessage"
+        },
+        {
+          "address": 10529264,
+          "u": 486,
+          "v": 176,
+          "width": 8,
+          "height": 48,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "Rtex.57",
+          "symbol_offset": 0,
+          "source": "PoWindowMessage"
+        },
+        {
+          "address": 10528692,
+          "u": 0,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 28,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528720,
+          "u": 16,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 56,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528748,
+          "u": 32,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 84,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528776,
+          "u": 48,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 112,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528804,
+          "u": 64,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 140,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528832,
+          "u": 80,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 168,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528860,
+          "u": 96,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 196,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528888,
+          "u": 112,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 224,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528916,
+          "u": 128,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 252,
+          "source": "PoMoneyPrint"
+        },
+        {
+          "address": 10528664,
+          "u": 144,
+          "v": 456,
+          "width": 16,
+          "height": 24,
+          "tbp": 0,
+          "cbp": 1016,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "fontlist.52",
+          "symbol_offset": 0,
+          "source": "PoMoneyPrint"
+        }
+      ],
+      "covered_pixels": 209392,
+      "total_pixels": 262144
+    }
+  ],
+  "palette_resource": "poker_2.xtx",
+  "edit_rule": "RGB/no-alpha OV11 palette reference. Keep originals unchanged; add *_KOR.png to replace changed pixels."
+}

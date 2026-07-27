@@ -1,0 +1,16 @@
+{
+  "source": "dia.xtx",
+  "output": "graphics_rebuilt/dia.xtx",
+  "edited_images": [
+    "PSMT8_001_KOR.png"
+  ],
+  "original_size": 262224,
+  "rebuilt_size": 262224,
+  "changed_bytes": 76,
+  "changed_span": [
+    5909,
+    10061
+  ],
+  "source_sha256": "7172e853ca44b71c5ff35a9d3b585a8991c127f727901bbb14e64a5203001b6a",
+  "output_sha256": "9fa2b7db0923f976d9e4a3ed7cfe0e318058051f023764cc13a3ef62df128460"
+}

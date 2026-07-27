@@ -1,0 +1,51 @@
+{
+  "tool": "tanaka_graphics_workflow",
+  "version": 2,
+  "source": "slot_2.xtx",
+  "source_size": 262224,
+  "source_sha256": "a24fa3c0dd480f20f8d248986fa58eb2362572a5a4377adc045da441d926ab35",
+  "ov11_sha256": "f98da706c68d4534c12539a068358acee571504c3181b54b1b75d2faa2f7ca8b",
+  "palette_storage": "XTX upload bytes; OV11 selects the embedded CLUT by TEX0 CBP",
+  "profile": "OV11_PSMT8_regions",
+  "images": [
+    {
+      "path": "PSMT8_001.png",
+      "sha256": "f8fe04da856c5cb9beb951b6e4219dca35133b7fc0a60d97a2098fbcf19d4899",
+      "size": [
+        512,
+        512
+      ],
+      "image_index": 0,
+      "pstart": 80,
+      "pend": 262224,
+      "max_index": 255,
+      "palette_cbps": [
+        1020
+      ],
+      "regions": [
+        {
+          "address": 10527216,
+          "u": 0,
+          "v": 0,
+          "width": 511,
+          "height": 447,
+          "tbp": 0,
+          "cbp": 1020,
+          "mode": 0,
+          "psm": "PSMT8",
+          "texture_size": [
+            512,
+            512
+          ],
+          "symbol": "NineGameBG_Tex.43",
+          "symbol_offset": 0,
+          "source": "NineGameBG_Draw"
+        }
+      ],
+      "covered_pixels": 228417,
+      "total_pixels": 262144
+    }
+  ],
+  "palette_resource": "slot_2.xtx",
+  "edit_rule": "RGB/no-alpha OV11 palette reference. Keep originals unchanged; add *_KOR.png to replace changed pixels."
+}

@@ -14,6 +14,7 @@ import os
 from pathlib import Path
 import struct
 
+import euc_scan
 import slps_strings
 from ov02_database_search import apply_database_search_patch
 
@@ -378,44 +379,28 @@ def visible_cells(text: str) -> int:
 
 
 def apply_translations(
-    data: bytearray, source: Path, translations: dict[int, str]
-) -> tuple[int, int, int, int]:
+    data: bytearray, source: Path, edits: dict[int, euc_scan.TranslationEdit]
+) -> tuple[int, int, int, int, int]:
     replace_table = slps_strings.load_replace_table(str(source))
-    originals = {
-        offset: (raw, trailing)
-        for offset, raw, trailing in slps_strings.iter_strings(bytes(data), slps_strings.SCAN_START)
-    }
-    patched = 0
-    skipped_missing = 0
-    skipped_overflow = 0
-    control_warnings = 0
-    for offset, new_text in sorted(translations.items()):
-        cover_start = slps_strings.covering_logical_string(offset)
-        if cover_start is not None and cover_start in translations:
-            continue
-        if offset not in originals:
-            print(f"[WARN] translation offset 0x{offset:08x} is not a source string; skipped")
-            skipped_missing += 1
-            continue
-        original, trailing = originals[offset]
-        encoded = slps_strings.encode_display(new_text, replace_table)
-        slot_size = len(original) + 1 + trailing
-        if len(encoded) > len(original) + trailing:
-            print(
-                f"[WARN] translation at 0x{offset:08x} needs {len(encoded)} bytes; "
-                f"slot capacity is {len(original) + trailing}; skipped"
-            )
-            skipped_overflow += 1
-            continue
-        if slps_strings.control_bytes(original) != slps_strings.control_bytes(encoded):
-            print(f"[WARN] translation at 0x{offset:08x} changes control bytes")
-            control_warnings += 1
-        if encoded == original:
-            continue
-        data[offset : offset + slot_size] = b"\0" * slot_size
-        data[offset : offset + len(encoded)] = encoded
-        patched += 1
-    return patched, skipped_missing, skipped_overflow, control_warnings
+    stats = euc_scan.apply_grouped_translations(
+        data,
+        [(
+            slps_strings.SCAN_START,
+            min(slps_strings.SCAN_END, len(data)),
+            False,
+        )],
+        edits,
+        replace_table,
+        label="SLPS",
+        skip_polluted=False,
+    )
+    return (
+        stats.patched_groups,
+        stats.patched_records,
+        stats.missing + stats.invalid,
+        stats.overflow,
+        stats.control_warnings,
+    )
 
 
 def apply_spacing_fixes(data: bytearray, translations: dict[int, str]) -> list[str]:
@@ -519,9 +504,16 @@ def main() -> None:
     original = source.read_bytes()
     data = bytearray(original)
     translations = parse_translations(translations_path)
-    translated_count, missing_count, overflow_count, control_warnings = apply_translations(
-        data, source, translations
+    translation_edits, malformed = euc_scan.parse_translation_edits(
+        str(translations_path)
     )
+    (
+        translated_count,
+        translated_records,
+        missing_count,
+        overflow_count,
+        control_warnings,
+    ) = apply_translations(data, source, translation_edits)
     spacing_changes = apply_spacing_fixes(data, translations)
     replace_table = slps_strings.load_replace_table(str(source))
     database_changes = apply_database_search_patch(
@@ -533,9 +525,12 @@ def main() -> None:
     )
     write_output(output, data, args.replace_output)
 
-    print(f"[OK] translated strings: {translated_count}")
     print(
-        f"[OK] translation warnings: missing={missing_count}, "
+        f"[OK] translated logical strings: {translated_count}; "
+        f"records={translated_records}"
+    )
+    print(
+        f"[OK] translation warnings: malformed={malformed}, missing={missing_count}, "
         f"overflow={overflow_count}, control={control_warnings}"
     )
     for change in spacing_changes:
