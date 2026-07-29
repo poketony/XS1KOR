@@ -8,15 +8,15 @@ INIT
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x0130
-　ハイパーロケットガン　Ｐ／Ｓ
+　하이퍼 로켓 건　Ｐ／Ｓ
 　　장갑 결손
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x01B2
-　パワーグレネード　　Ｅ
+　파워 그레네이드　　Ｅ
 
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x01E0
-なにもしない
+가만히 있기
 <<<

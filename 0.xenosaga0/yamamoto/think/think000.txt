@@ -40,7 +40,7 @@
 <<<
 
 >>> [009] op=0x21(display) flag=0x00 offset=0x0D10
-　様子を見ている
+상황을 보고 있다
 <<<
 
 >>> [010] op=0x1A(condition) flag=0x00 offset=0x0D90
@@ -104,7 +104,7 @@ MOVE
 <<<
 
 >>> [025] op=0x21(display) flag=0x00 offset=0x1528
-防御
+방어
 <<<
 
 >>> [026] op=0x21(display) flag=0x00 offset=0x158E
@@ -136,7 +136,7 @@ MOVE
 <<<
 
 >>> [033] op=0x21(display) flag=0x00 offset=0x1754
-超変身
+超변신
 <<<
 
 >>> [034] op=0x21(display) flag=0x00 offset=0x1778
@@ -236,11 +236,11 @@ MOVE
 <<<
 
 >>> [058] op=0x21(display) flag=0x00 offset=0x1D2E
-自爆装置作動
+자폭装置作動
 <<<
 
 >>> [059] op=0x21(display) flag=0x00 offset=0x1D6A
-防御
+방어
 <<<
 
 >>> [060] op=0x21(display) flag=0x00 offset=0x1D8C
@@ -272,11 +272,11 @@ MOVE
 <<<
 
 >>> [067] op=0x21(display) flag=0x00 offset=0x1F42
-自爆装置作動
+자폭装置作動
 <<<
 
 >>> [068] op=0x21(display) flag=0x00 offset=0x1F6E
-防御
+방어
 <<<
 
 >>> [069] op=0x21(display) flag=0x00 offset=0x1F90
@@ -284,7 +284,7 @@ MOVE
 <<<
 
 >>> [070] op=0x21(display) flag=0x00 offset=0x1FE4
-　自爆装置作動
+　자폭装置作動
 
 <<<
 
@@ -351,48 +351,48 @@ MOVE
 <<<
 
 >>> [086] op=0x21(display) flag=0x00 offset=0x2532
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [087] op=0x1A(condition) flag=0x00 offset=0x2546
-チェックＰＯＳ１
+체크 ＰＯＳ１
 <<<
 
 >>> [088] op=0x21(display) flag=0x00 offset=0x258A
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [089] op=0x1A(condition) flag=0x00 offset=0x259E
-チェックＰＯＳ２
+체크 ＰＯＳ２
 <<<
 
 >>> [090] op=0x21(display) flag=0x00 offset=0x25E2
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [091] op=0x1A(condition) flag=0x00 offset=0x25F6
-チェックＰＯＳ３
+체크 ＰＯＳ３
 <<<
 
 >>> [092] op=0x21(display) flag=0x00 offset=0x263A
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [093] op=0x1A(condition) flag=0x00 offset=0x264E
-チェックＰＯＳ４
+체크 ＰＯＳ４
 <<<
 
 >>> [094] op=0x21(display) flag=0x00 offset=0x2692
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [095] op=0x1A(condition) flag=0x00 offset=0x26A6
-チェックＰＯＳ５
+체크 ＰＯＳ５
 <<<
 
 >>> [096] op=0x21(display) flag=0x00 offset=0x26DC
@@ -401,8 +401,8 @@ MOVE
 <<<
 
 >>> [097] op=0x21(display) flag=0x00 offset=0x2720
-　ソウルスフリング
-　　ＥＰオーバー
+　소울 스프링
+　　ＥＰ 오버
 <<<
 
 >>> [098] op=0x21(display) flag=0x00 offset=0x27AC
@@ -427,7 +427,7 @@ MOVE
 <<<
 
 >>> [103] op=0x21(display) flag=0x00 offset=0x28EE
-　防御
+　방어
 <<<
 
 >>> [104] op=0x21(display) flag=0x00 offset=0x2916
@@ -459,8 +459,8 @@ MOVE
 <<<
 
 >>> [111] op=0x21(display) flag=0x00 offset=0x2A2C
-　【デススペル】
-　トラップの影響で発動失敗！
+　【데스 스펠】
+　트랩 영향으로 발동 실패！
 <<<
 
 >>> [112] op=0x21(display) flag=0x00 offset=0x2AAE
@@ -472,7 +472,7 @@ MOVE
 <<<
 
 >>> [114] op=0x21(display) flag=0x00 offset=0x2B2A
-　様子を見ている
+상황을 보고 있다
 <<<
 
 >>> [115] op=0x21(display) flag=0x00 offset=0x2B5C

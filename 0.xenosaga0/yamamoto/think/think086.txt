@@ -9,81 +9,81 @@
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x047A
-　ストレイジパワー　　Ｓ
-　　物理攻撃力アップ
+　스트레이지 파워　　Ｓ
+　　물리 공격력 업
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x04DC
-　タイムウォーク　　Ｓ
-　　スピード２５
+　타임 워크　　Ｓ
+　　스피드 ２５
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x08BA
-　死界の독　　Ｓ
-　　リバースＨＰ
+　저승의 독　 Ｓ
+　　리버스 ＨＰ
 <<<
 
 >>> [004] op=0x21(display) flag=0x00 offset=0x0900
-　煉獄の炎　　Ｅ／불꽃
+　연옥의 불　 Ｅ／불꽃
 
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x0940
-　魔神の血　　Ｓ
+　마신의 피　 Ｓ
 　　ＥＰ×２
 <<<
 
 >>> [006] op=0x21(display) flag=0x00 offset=0x0978
-　呪印の鎖　　Ｓ
-　　コンボ封鎖（□）
+　저주의 사슬　 Ｓ
+　 콤보 봉쇄（□）
 <<<
 
 >>> [007] op=0x21(display) flag=0x00 offset=0x09B8
-　呪印の鎖　　Ｓ
-　　コンボ封鎖（△）
+　저주의 사슬　 Ｓ
+　 콤보 봉쇄（□）
 <<<
 
 >>> [008] op=0x21(display) flag=0x00 offset=0x09F8
-　冥界の血印　　Ｓ
-　　ＨＰドレイン
+　명계의 혈인　　Ｓ
+　　ＨＰ 드레인
 <<<
 
 >>> [009] op=0x21(display) flag=0x00 offset=0x0A36
-　冥界の霊印　　Ｓ
-　　ＥＰドレイン
+　명계의 영인　　Ｓ
+　　ＥＰ 드레인
 <<<
 
 >>> [010] op=0x21(display) flag=0x00 offset=0x0BA6
-　冷衝
+　냉충
 　　슬로
 <<<
 
 >>> [011] op=0x21(display) flag=0x00 offset=0x0BD2
-　　　
+　냉충
 　　슬로
 <<<
 
 >>> [012] op=0x21(display) flag=0x00 offset=0x0BFE
-　治癒
+　치유
 　　ＨＰ 회복
 <<<
 
 >>> [013] op=0x21(display) flag=0x00 offset=0x0C2C
-　治癒
+　치유
 　　ＨＰ 회복
 <<<
 
 >>> [014] op=0x21(display) flag=0x00 offset=0x0C6C
-　誘い　　Ｓ
+　유혹　　Ｓ
 　　수면
 <<<
 
 >>> [015] op=0x21(display) flag=0x00 offset=0x0C9C
-　誘い　　Ｓ
-　　パイロット睡眠
+　유혹　　Ｓ
+　　파일럿 수면
 <<<
 
 >>> [016] op=0x21(display) flag=0x00 offset=0x0CD6
-　冷界　　Ｅ
+　냉계　　Ｅ
 
 <<<

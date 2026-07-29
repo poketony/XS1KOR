@@ -28,11 +28,11 @@
 <<<
 
 >>> [006] op=0x21(display) flag=0x00 offset=0x0512
-グノーシスに変身
+グノーシスに변신
 <<<
 
 >>> [007] op=0x21(display) flag=0x00 offset=0x0534
-兵士に変身
+兵士に변신
 <<<
 
 >>> [008] op=0x21(display) flag=0x00 offset=0x0566

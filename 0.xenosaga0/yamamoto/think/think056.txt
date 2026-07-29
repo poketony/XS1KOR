@@ -4,72 +4,72 @@
 # 텍스트가 원본보다 길면 자동으로 잘림.
 
 >>> [000] op=0x21(display) flag=0x00 offset=0x0268
-　チャンピオン태클　　Ｐ
+　챔피언 태클　　Ｐ
 
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x02B8
-　トロルスィング　　Ｐ
+　트롤 스윙　　Ｐ
 　　물리 공격력 저하
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x02FC
-　リベンジガード
+　리벤지 가드
 
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x034E
-　カウンターブースト
+　카운터 부스트
 
 <<<
 
 >>> [004] op=0x1A(condition) flag=0x00 offset=0x037E
-死んでブーストチェック
+죽어서 부스트 체크
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x0418
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [006] op=0x1A(condition) flag=0x00 offset=0x042C
-チェックＰＯＳ１
+체크 ＰＯＳ１
 <<<
 
 >>> [007] op=0x21(display) flag=0x00 offset=0x0470
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [008] op=0x1A(condition) flag=0x00 offset=0x0484
-チェックＰＯＳ２
+체크 ＰＯＳ２
 <<<
 
 >>> [009] op=0x21(display) flag=0x00 offset=0x04C8
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [010] op=0x1A(condition) flag=0x00 offset=0x04DC
-チェックＰＯＳ３
+체크 ＰＯＳ３
 <<<
 
 >>> [011] op=0x21(display) flag=0x00 offset=0x0520
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [012] op=0x1A(condition) flag=0x00 offset=0x0534
-チェックＰＯＳ４
+체크 ＰＯＳ４
 <<<
 
 >>> [013] op=0x21(display) flag=0x00 offset=0x0578
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [014] op=0x1A(condition) flag=0x00 offset=0x058C
-チェックＰＯＳ５
+체크 ＰＯＳ５
 <<<
 
 >>> [015] op=0x21(display) flag=0x00 offset=0x05B2
@@ -88,13 +88,13 @@
 <<<
 
 >>> [018] op=0x21(display) flag=0x00 offset=0x0700
-　アブソープション　　Ｅ
-　　ＥＰドレイン
+　앱소프션　　Ｅ
+　　ＥＰ 드레인
 <<<
 
 >>> [019] op=0x21(display) flag=0x00 offset=0x074C
-　ソウルスフリング　　Ｓ
-　　ＥＰオーバー
+　소울 스프링　　Ｓ
+　　ＥＰ 오버
 <<<
 
 >>> [020] op=0x21(display) flag=0x00 offset=0x078C
@@ -134,5 +134,5 @@
 <<<
 
 >>> [028] op=0x21(display) flag=0x00 offset=0x0A0C
-　様子を見ている
+상황을 보고 있다
 <<<

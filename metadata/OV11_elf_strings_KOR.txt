@@ -28,11 +28,11 @@ S|0000d730|ViewerDescription[01]|163/4|{CTRL0C:de b6 ff|시온의　ＣＧ　일
 S|0000d7d8|ViewerTitle[01]|19/4|{CTRL0C:bb ff e5|시온 \x19\x01ＣＧ\x19\x00}
 S|0000d7f0|ViewerDescription[02]|167/0|{CTRL0C:de b6 ff|이시가키가　디자인한　Ａ．Ｇ．Ｗ．Ｓ．\n중장갑　원거리　지원형으로　디자인됐다．\n등에　장착하는　장포신　무장은　팔의\n클로로　고정한다는　설정이다．}
 S|0000d898|ViewerTitle[02]|18/5|{CTRL0C:bb ff e5|\x19\x01ＡＧА０５\x19\x00}
-S|0000d8b0|ViewerDescription[03]|157/2|{CTRL0C:de b6 ff|무기타니가　디자인한　Ａ．Ｇ．Ｗ．Ｓ．\n여성형　Ａ．Ｇ．Ｗ．Ｓ．라는　의뢰로\n그려졌으며，　모모　전용기로　디자인된\n기체．팔　부분이　특징적이다．}
+S|0000d8b0|ViewerDescription[03]|157/2|{CTRL0C:de b6 ff|무기타니가　디자인한　Ａ．Ｇ．Ｗ．Ｓ．\n여성형　Ａ．Ｇ．Ｗ．Ｓ．라는　의뢰로\n그려졌으며，모모　전용기로　디자인된\n기체．팔　부분이　특징적이다．}
 S|0000d950|ViewerTitle[03]|22/1|{CTRL0C:bb ff e5|\x19\x01ＶＸА４０００\x19\x00}
 S|0000d968|ViewerDescription[04]|153/6|{CTRL0C:de b6 ff|무기타니가　디자인한　Ａ．Ｇ．Ｗ．Ｓ．\n그의　Ａ．Ｇ．Ｗ．Ｓ．디자인　콘셉트는\n콘셉트　카．전신에　환경　매핑을\n적용한　것도　그　때문이다．}
 S|0000da08|ViewerTitle[04]|24/7|{CTRL0C:bb ff e5|\x19\x01ＶＸА２００００\x19\x00}
-S|0000da28|ViewerDescription[05]|161/6|{CTRL0C:de b6 ff|이시가키가　디자인한　Ａ．Ｇ．Ｗ．Ｓ．\n격투전용으로　디자인됐으며，　팔과\n다리에　특징이　잘　드러나　있다．\n다리는　주행　형태로　변형할　수　있다．}
+S|0000da28|ViewerDescription[05]|161/6|{CTRL0C:de b6 ff|이시가키가　디자인한　Ａ．Ｇ．Ｗ．Ｓ．\n격투전용으로　디자인됐으며，팔과\n다리에　특징이　잘　드러나　있다．\n다리는　주행　형태로　변형할　수　있다．}
 S|0000dad0|ViewerTitle[05]|18/5|{CTRL0C:bb ff e5|\x19\x01ＡＧА０４\x19\x00}
 S|0000dae8|ViewerDescription[06]|161/6|{CTRL0C:de b6 ff|무기타니가　디자인한　기체．\nＶＸ−１００００　직후에　디자인됐으며，\n콘셉트는　노출된　카본　프레임과\n장갑의　대비．}
 S|0000db90|ViewerTitle[06]|22/1|{CTRL0C:bb ff e5|\x19\x01ＶＸА９０００\x19\x00}
@@ -48,29 +48,29 @@ S|0000de68|ViewerDescription[11]|79/0|{CTRL0C:de b6 ff|가이난의　표정　�
 S|0000deb8|ViewerTitle[11]|15/0|{CTRL0C:bb ff e5|가이난 １}
 S|0000dec8|ViewerDescription[12]|107/4|{CTRL0C:de b6 ff|지기의　전신　설정화．이　그림은\n이미지　일러스트의　원화．\n복장은　우스다　다다야스가　담당했다．}
 S|0000df38|ViewerTitle[12]|13/2|{CTRL0C:bb ff e5|지기 ３}
-S|0000df48|ViewerDescription[13]|122/5|{CTRL0C:de b6 ff|지기의　표정　설정화．이　설정이\n그려질　당시에는　아직　신체\n디자인이　정해지지　않아서，　다소\n날씬하게　그려졌다．}
+S|0000df48|ViewerDescription[13]|122/5|{CTRL0C:de b6 ff|지기의　표정　설정화．이　설정이\n그려질　당시에는　아직　신체\n디자인이　정해지지　않아서，다소\n날씬하게　그려졌다．}
 S|0000dfc8|ViewerTitle[13]|13/2|{CTRL0C:bb ff e5|지기 ２}
 S|0000dfd8|ViewerDescription[14]|133/2|{CTRL0C:de b6 ff|다나카　쿠니히코의　이미지　일러스트．\n각　이미지는　모두　실제　축척에　맞춰\n그려졌다．가슴　부분이　매력　포인트．}
 S|0000e060|ViewerTitle[14]|13/2|{CTRL0C:bb ff e5|지기 １}
-S|0000e070|ViewerDescription[15]|104/7|{CTRL0C:de b6 ff|코스모스의　표정　설정화．초기에\n그려진　것으로，　머리　바이저의\n디자인이　결정본과　다르다．}
+S|0000e070|ViewerDescription[15]|104/7|{CTRL0C:de b6 ff|코스모스의　표정　설정화．초기에\n그려진　것으로，머리　바이저의\n디자인이　결정본과　다르다．}
 S|0000e0e0|ViewerTitle[15]|25/6|{CTRL0C:bb ff e5|\x19\x01코스모스\x19\x00 ２}
-S|0000e100|ViewerDescription[16]|147/4|{CTRL0C:de b6 ff|다나카　쿠니히코의　이미지　일러스트．\n극중에서는　전체적으로　옅은　파란색\n인상이　강하지만，　정식　색상은\n펄　화이트를　기조로　한다．}
+S|0000e100|ViewerDescription[16]|147/4|{CTRL0C:de b6 ff|다나카　쿠니히코의　이미지　일러스트．\n극　중에서는　전체적으로　옅은　파란색\n인상이　강하지만，정식　색상은\n펄　화이트를　기조로　한다．}
 S|0000e198|ViewerTitle[16]|25/6|{CTRL0C:bb ff e5|\x19\x01코스모스\x19\x00 １}
-S|0000e1b8|ViewerDescription[17]|139/4|{CTRL0C:de b6 ff|모모의　전신　설정화．교복풍으로\n그려　달라는　의뢰로　제작됐다．얼핏\n단순해　보이지만，　등　부분은\n의외로　복잡한　디자인이다．}
+S|0000e1b8|ViewerDescription[17]|139/4|{CTRL0C:de b6 ff|모모의　전신　설정화．교복풍으로\n그려　달라는　의뢰로　제작됐다．얼핏\n단순해　보이지만，등　부분은\n의외로　복잡한　디자인이다．}
 S|0000e248|ViewerTitle[17]|11/4|{CTRL0C:bb ff e5|모모 ３}
 S|0000e258|ViewerDescription[18]|145/6|{CTRL0C:de b6 ff|모모의　표정　설정화．정면　그림은\n쓸쓸한　표정이　많은　모모의　귀중한\n한　컷．머리　장식은　준비안이며，\n이후　장식만　변경됐다．}
 S|0000e2f0|ViewerTitle[18]|11/4|{CTRL0C:bb ff e5|모모 ２}
-S|0000e300|ViewerDescription[19]|135/0|{CTRL0C:de b6 ff|다나카　쿠니히코의　이미지　일러스트．\n모모의　교복　색상을　알　수　있다．\n극중과　달리，　순수한　검정이　기조다．}
+S|0000e300|ViewerDescription[19]|135/0|{CTRL0C:de b6 ff|다나카　쿠니히코의　이미지　일러스트．\n모모의　교복　색상을　알　수　있다．\n극　중과　달리，순수한　검정이　기조다．}
 S|0000e388|ViewerTitle[19]|11/4|{CTRL0C:bb ff e5|모모 １}
 S|0000e398|ViewerDescription[20]|81/6|{CTRL0C:de b6 ff|Ｊｒ．의　롱　코트　차림．코트는\nＡ．Ｇ．Ｗ．Ｓ．에　탈　때는　벗는다．}
 S|0000e3f0|ViewerTitle[20]|17/6|{CTRL0C:bb ff e5|\x19\x01Ｊｒ．\x19\x00 ４}
 S|0000e408|ViewerDescription[21]|163/4|{CTRL0C:de b6 ff|Ｊｒ．의　전신　설정화．코트를　벗은\n보기　드문　모습．바지　허벅지　부분은\n지퍼로　분리된다．그림에는　없지만，\n허리　뒤에　한　쌍의　홀스터가　있다．}
 S|0000e4b0|ViewerTitle[21]|17/6|{CTRL0C:bb ff e5|\x19\x01Ｊｒ．\x19\x00 ３}
-S|0000e4c8|ViewerDescription[22]|116/3|{CTRL0C:de b6 ff|Ｊｒ．의　표정　설정화．다나카에게\n「개구쟁이　소년」으로　의뢰했기에，\n극중보다　표정이　풍부하다．}
+S|0000e4c8|ViewerDescription[22]|116/3|{CTRL0C:de b6 ff|Ｊｒ．의　표정　설정화．다나카에게\n「개구쟁이　소년」으로　의뢰했기에，\n극　중보다　표정이　풍부하다．}
 S|0000e540|ViewerTitle[22]|17/6|{CTRL0C:bb ff e5|\x19\x01Ｊｒ．\x19\x00 ２}
 S|0000e558|ViewerDescription[23]|122/5|{CTRL0C:de b6 ff|다나카　쿠니히코의　이미지　일러스트．\n설정화보다　조금　어리게　그려졌다．\n손에　든　총은　ＣＯＬＴ１９１１．}
 S|0000e5d8|ViewerTitle[23]|17/6|{CTRL0C:bb ff e5|\x19\x01Ｊｒ．\x19\x00 １}
-S|0000e5f0|ViewerDescription[24]|167/0|{CTRL0C:de b6 ff|케이오스의　전신　설정화．가냘픈\n소년이라는　콘셉트로　그려져，　허리가\n상당히　가늘다．케이오스는　초기부터\n거의　변경　없이　결정본에　이르렀다．}
+S|0000e5f0|ViewerDescription[24]|167/0|{CTRL0C:de b6 ff|케이오스의　전신　설정화．가냘픈\n소년이라는　콘셉트로　그려져，허리가\n상당히　가늘다．케이오스는　초기부터\n거의　변경　없이　결정본에　이르렀다．}
 S|0000e698|ViewerTitle[24]|15/0|{CTRL0C:bb ff e5|케이오스 ３}
 S|0000e6a8|ViewerDescription[25]|155/4|{CTRL0C:de b6 ff|케이오스의　표정　설정화．실제\n폴리곤　모델은　이　그림　직전의\n러프안을　바탕으로　제작됐다．후기\n디자인이라선지　머리칼　끝이　강조됐다．}
 S|0000e748|ViewerTitle[25]|15/0|{CTRL0C:bb ff e5|케이오스 ２}
@@ -78,7 +78,7 @@ S|0000e758|ViewerDescription[26]|118/1|{CTRL0C:de b6 ff|다나카　쿠니히코
 S|0000e7d0|ViewerTitle[26]|15/0|{CTRL0C:bb ff e5|케이오스 １}
 S|0000e7e0|ViewerDescription[27]|151/0|{CTRL0C:de b6 ff|시온의　표정　설정화．이　디자인이\n결정되기까지　１０개　가까운　시안이\n있었다．참고로　안경은　처음부터\n쓰는　것으로　정해져　있었다．}
 S|0000e878|ViewerTitle[27]|13/2|{CTRL0C:bb ff e5|시온 ３}
-S|0000e888|ViewerDescription[28]|167/0|{CTRL0C:de b6 ff|시온의　전신　설정화．프로젝트\n극초기에　그려져，　이때는　아직\n목의　초커（리본　모양　목걸이）가\n없다．초커는　다나카의　아이디어．}
+S|0000e888|ViewerDescription[28]|167/0|{CTRL0C:de b6 ff|시온의　전신　설정화．프로젝트\n극초기에　그려져，이때는　아직\n목의　초커（리본　모양　목걸이）가\n없다．초커는　다나카의　아이디어．}
 S|0000e930|ViewerTitle[28]|13/2|{CTRL0C:bb ff e5|시온 ２}
 S|0000e940|ViewerDescription[29]|166/1|{CTRL0C:de b6 ff|다나카　쿠니히코의　이미지　일러스트．\nＢ３　보드에　아크릴　과슈로　그렸다．\n시온의　제복은　다소　노란빛이\n강한　크림색임을　알　수　있다．}
 S|0000e9e8|ViewerTitle[29]|13/2|{CTRL0C:bb ff e5|시온 １}

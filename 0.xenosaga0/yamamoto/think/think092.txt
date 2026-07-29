@@ -40,7 +40,7 @@
 <<<
 
 >>> [009] op=0x21(display) flag=0x00 offset=0x0986
-　様子を見ている
+상황을 보고 있다
 <<<
 
 >>> [010] op=0x21(display) flag=0x00 offset=0x09BC
@@ -68,7 +68,7 @@
 <<<
 
 >>> [016] op=0x21(display) flag=0x00 offset=0x0A98
-防御体勢
+방어体勢
 <<<
 
 >>> [017] op=0x21(display) flag=0x00 offset=0x0AC2

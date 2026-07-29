@@ -44,7 +44,7 @@
 <<<
 
 >>> [010] op=0x21(display) flag=0x00 offset=0x0A78
-防御体勢
+방어体勢
 <<<
 
 >>> [011] op=0x21(display) flag=0x00 offset=0x0AA2

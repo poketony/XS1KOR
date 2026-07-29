@@ -329,7 +329,7 @@ CUT1 END
 CUT2 START
 act2
 act3s
-문을 여세요
+받으십시오
 헬머인가？
 CUT2 END
 CUT3 START

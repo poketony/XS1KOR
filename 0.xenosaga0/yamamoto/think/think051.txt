@@ -8,22 +8,22 @@ INIT
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x0238
-　チャンピオン태클　　Ｐ
+　챔피언 태클　　Ｐ
 
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x0288
-　トロルスィング　　Ｐ
+　트롤 스윙　　Ｐ
 물리 방어력 저하
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x02C8
-　リベンジガード
+　리벤지 가드
 
 <<<
 
 >>> [004] op=0x21(display) flag=0x00 offset=0x031A
-　カウンターブースト
+　카운터 부스트
 
 <<<
 
@@ -69,5 +69,5 @@ INIT
 <<<
 
 >>> [014] op=0x21(display) flag=0x00 offset=0x0666
-　様子を見ている
+상황을 보고 있다
 <<<

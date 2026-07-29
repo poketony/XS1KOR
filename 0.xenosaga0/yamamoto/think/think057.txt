@@ -14,120 +14,120 @@ x\x09
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x02E0
-　エーテル防御力復活　
-（エアッド使用後の一時低下）
+　에테르 방어력 부활　
+（에어드 사용 후 일시 저하）
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x06E2
-　エアッド　　Ｅ
+　에어드　　Ｅ
 
 <<<
 
 >>> [004] op=0x21(display) flag=0x00 offset=0x0742
-　ビームサーベル　　Ｐ／Ｂ
+　빔 사벨　　Ｐ／Ｂ
 
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x076A
-アルベド
-「弱い！弱すぎるぞ！おまえ！
+알베도
+「약해！ 완전 약하다고 너！
 <<<
 
 >>> [006] op=0x21(display) flag=0x00 offset=0x0798
-アルベド
-「次で殺しちまうかもな？
+알베도
+「다음 걸로 죽여 볼까？
 <<<
 
 >>> [007] op=0x21(display) flag=0x00 offset=0x07CA
-アルベド
-「さあ〜、
-　もっと俺を楽しませてくれ
+알베도
+「자〜
+　좀 더 날 즐겁게 해 봐
 <<<
 
 >>> [008] op=0x21(display) flag=0x00 offset=0x081C
-　サイコハンド　　Ｐ／Ｓ
+　사이코 핸드　　Ｐ／Ｓ
 　　슬로
 <<<
 
 >>> [009] op=0x21(display) flag=0x00 offset=0x084C
-　サイコハンド　　Ｐ
+　사이코 핸드　　Ｐ
 
 <<<
 
 >>> [010] op=0x21(display) flag=0x00 offset=0x09B6
-変身
+변신
 <<<
 
 >>> [011] op=0x21(display) flag=0x00 offset=0x0B40
-　ウェイバーソニック　　Ｅ／Ｓ
+　웨이버 소닉　　Ｅ／Ｓ
 　　슬로
 <<<
 
 >>> [012] op=0x21(display) flag=0x00 offset=0x0B9C
-　라이트닝ブラスト　　Ｅ
+　라이트닝 블래스트　　Ｅ
 
 <<<
 
 >>> [013] op=0x21(display) flag=0x00 offset=0x0C18
-　スペクトラウェーブ　　Ｓ
-　　エーテルボム
+　스펙트라 웨이브　　Ｓ
+　　에테르 봄
 <<<
 
 >>> [014] op=0x21(display) flag=0x00 offset=0x0C7C
-　リプレスフォース　　Ｓ
-　　攻撃封鎖
+　리프레스 포스　　Ｓ
+　 공격 봉쇄
 <<<
 
 >>> [015] op=0x21(display) flag=0x00 offset=0x0CE6
-　ドーズパワー　　Ｓ
-パイロット睡眠
+　도즈 파워　　Ｓ
+　　파일럿 수면
 <<<
 
 >>> [016] op=0x21(display) flag=0x00 offset=0x0D4A
-　パワースペル　　Ｓ
-　　物理攻撃力アップ
+　파워 스펠　　Ｓ
+　　물리 공격력 업
 <<<
 
 >>> [017] op=0x21(display) flag=0x00 offset=0x0DB4
-　クイックアップ　　Ｓ
-　　スピード２５
+　퀵 업　　Ｓ
+　　스피드 ２５
 <<<
 
 >>> [018] op=0x21(display) flag=0x00 offset=0x0DFA
-対ステータスシールド低下
-ステータス攻撃が有効
+대스테이터스 실드 저하
+스테이터스 공격이 유효
 <<<
 
 >>> [019] op=0x21(display) flag=0x00 offset=0x0FB2
-　カオスアロー　Ｅ／Ｓ
+　카오스 애로　Ｅ／Ｓ
 　　혼란
 <<<
 
 >>> [020] op=0x21(display) flag=0x00 offset=0x1004
-　サウザンドストーム　　Ｅ
+　사우전드 스톰　　Ｅ
 
 <<<
 
 >>> [021] op=0x21(display) flag=0x00 offset=0x106A
-　フレアウイング　　Ｓ
-　　アンチヴェール
+　플레어 윙　　Ｓ
+　　안티베일
 <<<
 
 >>> [022] op=0x21(display) flag=0x00 offset=0x10E4
-　シャドーウイング　　Ｓ
-　　駆動機関停止
+　섀도 윙　　Ｓ
+　 구동 기관 정지
 <<<
 
 >>> [023] op=0x21(display) flag=0x00 offset=0x1152
-　シャドーウイング　　Ｓ
-　　ストップ
+　섀도 윙　　Ｓ
+　　스톱
 <<<
 
 >>> [024] op=0x21(display) flag=0x00 offset=0x119A
-対ステータスシールド低下
-ステータス攻撃が有効
+대스테이터스 실드 저하
+스테이터스 공격이 유효
 <<<
 
 >>> [025] op=0x21(display) flag=0x00 offset=0x11D6
-　『로스트』の影響で発動不可能
+ 『로스트』로 인해 발동 불가능
 <<<

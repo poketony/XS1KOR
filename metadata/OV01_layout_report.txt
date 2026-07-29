@@ -1,0 +1,61 @@
+OV01 Layout Analysis
+====================
+source: ov01.ovl.ori
+translation: ov01_strings.KOR.txt
+
+Verified Rendering Geometry
+---------------------------
+- Ether/item information text: 312 px (SLPS eBattleWinOpen, VA 0x0027dc48).
+- Status-name window: x=8, patched width=208 px (OV01 menuStatNamePut, VAs 0x00a28cac and 0x00a28c9c).
+- Battle system font: double-byte glyph=20 px, ASCII byte including space=16 px.
+- Fullwidth Roman/proportional glyphs require runtime font metrics; reports crossing
+  the limit only in their 1-20 px range are marked proportional-check.
+
+Current In-place Capacity
+-------------------------
+- translations exceeding original slot plus zero slack: 12
+- 0x0418c8: original=6 slack=1 encoded=9 over=2 | 빛과 날개
+- 0x0419e0: original=29 slack=2 encoded=32 over=1 | 아군 전체\n모든 스테이터스 클리어
+- 0x041fb8: original=29 slack=2 encoded=32 over=1 | 아군 하나\n모든 스테이터스 클리어
+- 0x042188: original=23 slack=0 encoded=24 over=1 | 아군 하나\nＳ．ＰＴ＋５０
+- 0x0421b0: original=23 slack=0 encoded=24 over=1 | 아군 하나\nＳ．ＰＴ＋１０
+- 0x042208: original=23 slack=0 encoded=24 over=1 | 아군 하나\nＥ．ＰＴ＋５０
+- 0x042230: original=23 slack=0 encoded=24 over=1 | 아군 하나\nＥ．ＰＴ＋１０
+- 0x042288: original=23 slack=0 encoded=24 over=1 | 아군 하나\nＴ．ＰＴ＋５０
+- 0x0422b0: original=23 slack=0 encoded=24 over=1 | 아군 하나\nＴ．ＰＴ＋１０
+- 0x0456e8: original=14 slack=1 encoded=16 over=1 | 하나／근접／타격
+- 0x046f68: original=23 slack=0 encoded=26 over=3 | 하나／직선／돌격\n십자 사격
+- 0x0472a0: original=31 slack=0 encoded=32 over=1 | 하나／근접／타격／불꽃\n백열 차기
+
+Technique/Item Description Width
+--------------------------------
+- ether: definite=0, proportional-check=0
+- item: definite=0, proportional-check=0
+- normal_tech: definite=0, proportional-check=0
+- special_tech: definite=0, proportional-check=2
+
+- [proportional-check] special_tech[17] 0x047428: 286-324px | 하나／근접／돌격／Ｓ / 카트리지 교체로 ＳＴ 효과 변화
+- [proportional-check] special_tech[19] 0x047390: 271-328px | 하나／근접／Ｓ／１회 효과 / Ｂ，Ｇ계에 에테르 대미지×２ 봄
+
+Status Name Width
+-----------------
+- Patched eBattleWinOpen2 centers STATUS by xglFontGetStringWidth:
+  start=(W-6-rendered_width)/2.
+- The original counter advanced two source bytes per non-newline glyph; a
+  one-byte ASCII space skipped part of the next Korean glyph and shifted text right.
+- The original W=176 reserves 170 pixels; patched W=208 reserves 202 pixels.
+- The longest current labels are 172 pixels, leaving 30 pixels.
+- Only this STATUS window is enlarged.
+
+Relocation Rules
+----------------
+- The 12-byte tables are [name pointer, description pointer, sort-key pointer].
+- Relocate a unique string once and patch every pointer reference listed by the
+  pointer-based dump. Shared strings must stay shared unless deliberately split.
+- Preserve the canonical empty string at file offset 0x0448c0.
+- Direct strings at 0x040ea0, 0x040ea8 and 0x040eb0 are MIPS address references;
+  either keep them in place or patch their LUI/ADDIU instruction pairs.
+- The current OV01 battle-font extension ends at runtime VA 0x00a53364. A new
+  pool must start after that point and must not overwrite its mapping data.
+- Keep the fixed OVL file size. Extend PT_LOAD only into the unused non-ALLOC
+  symbol-table tail; fail the build if that internal pool is exhausted.

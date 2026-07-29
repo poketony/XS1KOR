@@ -1,0 +1,165 @@
+{
+  "tool": "xtx_tool_ver7_fixed_palette_formula",
+  "version": 14,
+  "source_xtx_name": "stat.xtx",
+  "source_xtx_path": "C:\\Users\\JO\\XS1KOR\\xtx 개발소\\stat.xtx",
+  "xtx_size": 237696,
+  "xtx_sha256": "d9ac8bd11f66af2035bc70445d4a5dd86c32dede185509829d984e40ea31f633",
+  "image_count": 2,
+  "images": [
+    {
+      "index": 0,
+      "width": 384,
+      "height": 128,
+      "bw": 8,
+      "bw_eff": 8,
+      "offset": 0,
+      "img_size": 12290,
+      "img_addr": 64,
+      "x0": 0,
+      "y0": 0,
+      "pstart": 96,
+      "pend": 196704,
+      "valid": true
+    },
+    {
+      "index": 1,
+      "width": 128,
+      "height": 80,
+      "bw": 8,
+      "bw_eff": 8,
+      "offset": 12288,
+      "img_size": 2562,
+      "img_addr": 196704,
+      "x0": 192,
+      "y0": 0,
+      "pstart": 196736,
+      "pend": 237696,
+      "valid": true
+    }
+  ],
+  "format_detection": {
+    "source": "ambiguous: no LEX",
+    "tex0_psm_values": [],
+    "editable_formats": [
+      "PSMT8",
+      "PSMT4"
+    ]
+  },
+  "gs_layout_facts": {
+    "PSMT8_PAGE": [
+      128,
+      64
+    ],
+    "PSMT4_PAGE": [
+      128,
+      128
+    ],
+    "PSMT8_CLUT_ENTRIES": 256,
+    "PSMT4_CLUT_ENTRIES": 16
+  },
+  "metadata_runtime_evidence": [
+    "OV12.OVL strings reference rg_help.euc.c, help.npr, help_*.bxx, RgBxxGetXtx, pXtxData, and pLexData.",
+    "This supports the container -> XTX/LEX -> GS indexed texture pipeline."
+  ],
+  "edit_files": {
+    "PSMT8": {
+      "path": "PSMT8.png",
+      "sha256": "644503d54530b0f606e25ce283c222ae9bbe84a68ab27dd4397703c4d9f0741e",
+      "size": [
+        1024,
+        1024
+      ],
+      "max_index": 255,
+      "read_only_due_to_overlapping_slots": true
+    },
+    "PSMT4": {
+      "path": "PSMT4.png",
+      "sha256": "3dc63e09ec98b19bd0454b86eeaadcccb88614e6a9cd934f3e166ca70e6bb12f",
+      "size": [
+        1024,
+        1024
+      ],
+      "max_index": 15,
+      "config": {
+        "profile": "full_atlas_psmt4",
+        "width": 1024,
+        "height": 1024,
+        "dbp": 0,
+        "dbw4": 64,
+        "dbw32": 512,
+        "gs_layout_facts": {
+          "PSMT8_PAGE": [
+            128,
+            64
+          ],
+          "PSMT4_PAGE": [
+            128,
+            128
+          ],
+          "PSMT8_CLUT_ENTRIES": 256,
+          "PSMT4_CLUT_ENTRIES": 16
+        },
+        "notes": [
+          "PSMT4 is a logical GS interpretation of the same XTX upload bytes.",
+          "PCSX2 GS layout basis: PSMT4 page=128x128, PSMT8 page=128x64, CLUT entries are 16/256.",
+          "Edit exact index values 0..15 only."
+        ]
+      },
+      "read_only_due_to_overlapping_slots": true
+    }
+  },
+  "clean_edit_files": [],
+  "subimage_edit_files": [
+    {
+      "path": "stat_1.png",
+      "sha256": "a238a8c829b7a6607a5800fbebd35fafec490d0a9520752ed529795a589a54a3",
+      "slot_order": 0,
+      "image_index": 0,
+      "rect": [
+        0,
+        0,
+        768,
+        256
+      ],
+      "size": [
+        768,
+        256
+      ],
+      "requires_lex": false
+    },
+    {
+      "path": "stat_2.png",
+      "sha256": "1361395398dda6c7b45c8f273229a61692e445115c0cf0d0b6e1d5b20c0ec53a",
+      "slot_order": 1,
+      "image_index": 1,
+      "rect": [
+        384,
+        0,
+        640,
+        160
+      ],
+      "size": [
+        256,
+        160
+      ],
+      "requires_lex": false
+    }
+  ],
+  "full_reference_files": {},
+  "rebuild_rule": [
+    "PSMT4.png, PSMT8.png, and palette-applied PSMT4_NNN/PSMT8_NNN PNGs are separate edit pipelines.",
+    "<source>_N.png subimage files are also edit inputs when changed.",
+    "<source>_full_index.png is a PSMT8 full-index reference/edit input.",
+    "Preferred workflow: keep extracted originals untouched and place edited *_KOR.png files beside them.",
+    "Example: PSMT8_001_KOR.png replaces PSMT8_001.png; <source>_1_KOR.png replaces <source>_1.png.",
+    "Edit only one pipeline before import.",
+    "PSMT4 pixels must be exact index values 0..15.",
+    "PSMT8 pixels must be exact index values 0..255.",
+    "PSMT4_NNN.png and PSMT8_NNN.png are TEX0/CLUT-resolved editable image views.",
+    "Palette-resolved edit PNGs use indexed P mode with the real RGB palette and no PNG alpha channel.",
+    "Their pixel values are imported directly as GS palette indices; do not convert them to RGBA.",
+    "If several files in one pipeline changed, they are applied together.",
+    "If files from multiple pipelines changed, rebuild stops as ambiguous."
+  ]
+}

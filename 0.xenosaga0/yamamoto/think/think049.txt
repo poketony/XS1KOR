@@ -14,126 +14,126 @@
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x02F6
-　【ポイズンバブル】
-　トラップの影響で発動失敗！
+　【포이즌 버블】
+　트랩 영향으로 발동 실패！
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x0374
-　ポイズンバブル　　Ｅ／Ｓ
+　포이즌 버블　　Ｅ／Ｓ
 　　독
 <<<
 
 >>> [004] op=0x21(display) flag=0x00 offset=0x03B6
-　ドレインアーム　　Ｅ
-　　ＨＰドレイン
+　드레인 암　　Ｅ
+　　ＨＰ 드레인
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x040E
-　ドレインアーム　　Ｅ
-　　ＨＰドレイン
+　드레인 암　　Ｅ
+　　ＨＰ 드레인
 <<<
 
 >>> [006] op=0x21(display) flag=0x00 offset=0x04EE
-　技体分離
+ 기체 분리
 
 <<<
 
 >>> [007] op=0x21(display) flag=0x00 offset=0x050E
-　様子をみている
+상황을 보고 있다
 <<<
 
 >>> [008] op=0x1A(condition) flag=0x00 offset=0x0578
-４のアタック確率
+４의 어택 확률
 <<<
 
 >>> [009] op=0x21(display) flag=0x00 offset=0x060C
-　ブラストウェーブ　　Ｐ
+　블래스트 웨이브　　Ｐ
 
 <<<
 
 >>> [010] op=0x1A(condition) flag=0x00 offset=0x064C
-４の魔＆防確率
+４의마＆방확률
 <<<
 
 >>> [011] op=0x21(display) flag=0x00 offset=0x06A8
-　リンドフ로스트　　Ｅ／냉기
+　린드 프로스트　　Ｅ／냉기
 
 <<<
 
 >>> [012] op=0x1A(condition) flag=0x00 offset=0x06DE
-４のワーク１の中身
+４번 워크 １의내용
 <<<
 
 >>> [013] op=0x21(display) flag=0x00 offset=0x06FE
-　防御
+　방어
 
 <<<
 
 >>> [014] op=0x1A(condition) flag=0x00 offset=0x073A
-ガードしていたか？
+가드 중이었나？
 <<<
 
 >>> [015] op=0x1A(condition) flag=0x00 offset=0x0778
-５のアタック確率
+５의 어택 확률
 <<<
 
 >>> [016] op=0x21(display) flag=0x00 offset=0x07EA
-　轟雷撃　　Ｅ／번개
+　굉뢰격　　Ｅ／번개
 
 <<<
 
 >>> [017] op=0x21(display) flag=0x00 offset=0x082A
-　念動破　　Ｅ
+　염동파　　Ｅ
 
 <<<
 
 >>> [018] op=0x1A(condition) flag=0x00 offset=0x0860
-５の魔＆防確率
+５의마＆방확률
 <<<
 
 >>> [019] op=0x1A(condition) flag=0x00 offset=0x08B8
-使用した数は？
+사용한 수는？
 <<<
 
 >>> [020] op=0x21(display) flag=0x00 offset=0x08F2
-　絶命響
-　　即死
+　절명향
+　　즉사
 <<<
 
 >>> [021] op=0x1A(condition) flag=0x00 offset=0x0930
-５のワーク１の中身
+５번 워크 １의내용
 <<<
 
 >>> [022] op=0x21(display) flag=0x00 offset=0x0950
-　防御
+　방어
 
 <<<
 
 >>> [023] op=0x21(display) flag=0x00 offset=0x096C
-　様子をみている
+상황을 보고 있다
 <<<
 
 >>> [024] op=0x21(display) flag=0x00 offset=0x0BCC
-　ブラストウェーブ　　Ｐ
+　블래스트 웨이브　　Ｐ
 
 <<<
 
 >>> [025] op=0x21(display) flag=0x00 offset=0x0C12
-　リンドフ로스트　　Ｅ／냉기
+　린드 프로스트　　Ｅ／냉기
 
 <<<
 
 >>> [026] op=0x21(display) flag=0x00 offset=0x0C54
-　念動破　　Ｅ
+　염동파　　Ｅ
 
 <<<
 
 >>> [027] op=0x21(display) flag=0x00 offset=0x0C90
-　轟雷撃　　Ｅ／번개
+　굉뢰격　　Ｅ／번개
 
 <<<
 
 >>> [028] op=0x21(display) flag=0x00 offset=0x0CD0
-　絶命響
-　　即死
+　절명향
+　　즉사
 <<<

@@ -21,7 +21,8 @@ from ov02_database_search import apply_database_search_patch
 
 LENGTH_TABLE_PATCHES = {
     # table offset: (expected original bytes, translation string offsets)
-    0x2D6070: (b"\x03\x03\x06\x06\x06", (0x2D6060, 0x2D6068, None, None, None)),
+    # MenuFilePas message order is Save, Load, /Slot 1, /Slot 2, /HDD.
+    0x2D6070: (b"\x03\x03\x06\x06\x06", (0x2D6068, 0x2D6060, None, None, None)),
     0x2D62E8: (b"\x06\x03\x03\x04\x04", (0x2C0CE0, None, None, None, None)),
     0x2D6750: (b"\x04\x03\x04\x07", (0x2C3540, 0x2D6748, 0x2C3530, 0x2C3520)),
     # Embedded OV02 copy. The standalone OV02 used at runtime has the same table.
@@ -48,6 +49,53 @@ EVT_HALF_WIDTH_PATCHES = {
     0x078A0C: (b"\x0a\x00\xb5\x26", b"\x10\x00\xb5\x26"),
 }
 
+# Expanded Korean file-menu strings do not all fit their original slots.  The
+# two longest strings occupy the 0x48-byte alignment gap between .sdata and
+# .sbss; their vacated slots are reused by other strings.  The compound
+# 0x2bf100 stream may then extend into the vacated 0x2bf160 slot.  No .sbss
+# storage is consumed.
+LOAD_TEXT_RELOCATION_OFFSETS = frozenset({
+    0x002BF100,
+    0x002BF134,
+    0x002BF160,
+    0x002BF388,
+    0x002BF528,
+    0x002BF7B8,
+    0x002D6060,
+})
+LOAD_TEXT_RELOCATIONS = {
+    # translation offset: (destination file offset, destination span)
+    0x002BF528: (0x002D7938, 0x24),
+    0x002BF7B8: (0x002D795C, 0x24),
+    0x002BF388: (0x002BF528, 0x20),
+    0x002D6060: (0x002BF388, 0x18),
+    0x002BF160: (0x002BF7B8, 0x20),
+}
+LOAD_TEXT_SOURCE_LENGTHS = {
+    0x002BF160: 0x1A,
+    0x002BF388: 0x16,
+    0x002BF528: 0x1F,
+    0x002BF7B8: 0x1F,
+    0x002D6060: 0x06,
+}
+LOAD_TEXT_POINTER_PATCHES = {
+    0x002BF4CC: (0x004BE388, 0x004BE528),
+    0x002BF574: (0x004BE528, 0x004D6938),
+    0x002BF894: (0x004BE7B8, 0x004D695C),
+    0x0016952C: (0x004D5060, 0x004BE388),
+    0x002BF0A8: (0x004D5060, 0x004BE388),
+    0x002BF218: (0x004BE160, 0x004BE7B8),
+}
+LOAD_TEXT_COMPOUND_PARTS = (0x002BF100, 0x002BF134)
+LOAD_TEXT_COMPOUND_BRIDGE = (0x002BF132, 0x002BF134)
+LOAD_TEXT_COMPOUND_DESTINATION = (0x002BF100, 0x80)
+LOAD_TEXT_COMPOUND_SOURCE_LENGTH = 0x5A
+LOAD_TEXT_SDATA_GAP = (0x002D7938, 0x002D7980)
+LOAD_TEXT_PHDR_FILESZ_OFFSET = 0x84
+LOAD_TEXT_PHDR_FILESZ = (0x001A2C38, 0x001A2C80)
+LOAD_TEXT_SDATA_SH_SIZE_OFFSET = 0x002FC9B4
+LOAD_TEXT_SDATA_SH_SIZE = (0x000034B8, 0x00003500)
+
 TEXT_VA_DELTA = 0x1FF000
 MENU_SPACE_CAVE_VA = 0x002805C0
 MENU_SPACE_CAVE_SIZE = 0x124
@@ -67,6 +115,15 @@ def _mips_i(opcode: int, rs: int, rt: int, immediate: int) -> int:
 
 def _mips_r(rs: int, rt: int, rd: int, function: int) -> int:
     return ((rs & 0x1F) << 21) | ((rt & 0x1F) << 16) | ((rd & 0x1F) << 11) | function
+
+
+def _mips_shift(rt: int, rd: int, amount: int, function: int) -> int:
+    return (
+        ((rt & 0x1F) << 16)
+        | ((rd & 0x1F) << 11)
+        | ((amount & 0x1F) << 6)
+        | function
+    )
 
 
 def _mips_j(opcode: int, target: int) -> int:
@@ -122,44 +179,13 @@ def _build_menu_space_patch() -> tuple[bytes, dict[str, int]]:
     emit(_mips_r(31, 0, 0, 0x08))                  # jr ra
     emit(_mips_i(0x09, 29, 29, 0x10))              # addiu sp, sp, 0x10
 
-    # eMessageMain normalizes the object's high flag bits on first use. Marking
-    # before that point made item/shop rows cache normal-width spaces. Intercept
-    # its draw call instead, after normalization and immediately before the
-    # deferred queue is built, then restore the object's original bit.
-    label("draw_entry")
+    # Convert ASCII spaces only while one of the scoped callers is active. Do
+    # not borrow eMessage object flag bits: those bits select battle font state.
+    # The source message and deferred queue length stay intact.
+    label("copy_hook")
     emit(_mips_i(0x0F, 0, 8, MENU_SPACE_SCOPE_MAGIC >> 16))
     emit(_mips_i(0x0D, 8, 8, MENU_SPACE_SCOPE_MAGIC & 0xFFFF))
-    branch(0x05, 23, 8, "draw_tail")               # bne s7, t0, draw_tail
-    emit(0)
-    emit(_mips_i(0x09, 29, 29, -0x10))             # addiu sp, sp, -0x10
-    emit(_mips_i(0x3F, 29, 31, 0))                 # sd ra, 0(sp)
-    emit(_mips_i(0x2B, 29, 4, 8))                  # sw a0, 8(sp)
-    emit(_mips_i(0x24, 4, 2, 0))                   # lbu v0, 0(a0)
-    emit(_mips_i(0x28, 29, 2, 0x0C))               # sb v0, 0xc(sp)
-    emit(_mips_i(0x0D, 2, 2, 0x40))                # ori v0, v0, 0x40
-    emit(_mips_i(0x28, 4, 2, 0))                   # sb v0, 0(a0)
-    jump(0x03, 0x00277248)                         # jal eMessageDrawType01
-    emit(0)
-    emit(_mips_i(0x23, 29, 4, 8))                  # lw a0, 8(sp)
-    emit(_mips_i(0x24, 4, 2, 0))                   # lbu v0, 0(a0)
-    emit(_mips_i(0x0C, 2, 2, 0xBF))                # andi v0, v0, 0xbf
-    emit(_mips_i(0x24, 29, 3, 0x0C))               # lbu v1, 0xc(sp)
-    emit(_mips_i(0x0C, 3, 3, 0x40))                # andi v1, v1, 0x40
-    emit(_mips_r(2, 3, 2, 0x25))                   # or v0, v0, v1
-    emit(_mips_i(0x28, 4, 2, 0))                   # sb v0, 0(a0)
-    emit(_mips_i(0x37, 29, 31, 0))                 # ld ra, 0(sp)
-    emit(_mips_r(31, 0, 0, 0x08))                  # jr ra
-    emit(_mips_i(0x09, 29, 29, 0x10))              # addiu sp, sp, 0x10
-    label("draw_tail")
-    jump(0x02, 0x00277248)                         # j eMessageDrawType01
-    emit(0)
-
-    # Convert only already-classified ASCII spaces from the marked object into
-    # a one-byte queue sentinel. The source message and queue length stay intact.
-    label("copy_hook")
-    emit(_mips_i(0x24, 19, 8, 0))                  # lbu t0, 0(s3)
-    emit(_mips_i(0x0C, 8, 8, 0x40))                # andi t0, t0, 0x40
-    branch(0x04, 8, 0, "copy_store")               # beq t0, zero, copy_store
+    branch(0x05, 23, 8, "copy_store")              # bne s7, t0, copy_store
     emit(0)
     # The A.G.W.S. parts list uses literal spaces to position its Price header.
     emit(_mips_i(0x23, 19, 8, 0x18))               # lw t0, 0x18(s3)
@@ -187,6 +213,45 @@ def _build_menu_space_patch() -> tuple[bytes, dict[str, int]]:
     label("glyph_tail")
     jump(0x02, 0x002194B0)                         # j xglFontFlushSub
     emit(0)
+
+    # eBattleWinOpen2 normally centers by advancing its counter pointer two
+    # bytes for every non-newline character. A one-byte ASCII space therefore
+    # skips the first byte of the following Korean glyph and undercounts the
+    # line. The OV01 STATUS window uses W=0xd0, so center that one window from
+    # xglFontGetStringWidth while preserving the original formula for every
+    # other centered eBattleWinOpen2 caller.
+    label("status_center_hook")
+    emit(_mips_i(0x09, 29, 29, -0x10))             # addiu sp, sp, -0x10
+    emit(_mips_i(0x3F, 29, 31, 0))                 # sd ra, 0(sp)
+    emit(_mips_i(0x3F, 29, 9, 8))                  # sd t1, 8(sp)
+    emit(_mips_i(0x25, 17, 8, 0x0C))               # lhu t0, 0x0c(s1)
+    emit(_mips_i(0x0D, 0, 9, 0x00D0))              # ori t1, zero, 0xd0
+    branch(0x05, 8, 9, "status_center_fallback")   # bne t0, t1, fallback
+    emit(_mips_i(0x23, 17, 4, 0x10))               # lw a0, 0x10(s1)
+    jump(0x03, 0x0021AE20)                         # jal xglFontGetStringWidth
+    emit(0)
+    emit(_mips_i(0x25, 17, 3, 0x0C))               # lhu v1, 0x0c(s1)
+    emit(_mips_i(0x09, 3, 3, -6))                  # addiu v1, v1, -6
+    emit(_mips_r(3, 2, 3, 0x23))                   # subu v1, v1, v0
+    branch(0x04, 0, 0, "status_center_done")       # b done
+    emit(_mips_shift(3, 3, 1, 0x03))               # sra v1, v1, 1
+
+    label("status_center_fallback")
+    emit(_mips_r(7, 8, 2, 0x2A))                   # slt v0, a3, t0
+    emit(_mips_i(0x25, 17, 3, 0x0C))               # lhu v1, 0x0c(s1)
+    emit(_mips_r(8, 2, 7, 0x0B))                   # movn a3, t0, v0
+    emit(_mips_i(0x09, 3, 3, -6))                  # addiu v1, v1, -6
+    emit(_mips_shift(3, 3, 1, 0x02))               # srl v1, v1, 1
+    emit(_mips_shift(7, 2, 2, 0x00))               # sll v0, a3, 2
+    emit(_mips_r(2, 7, 2, 0x21))                   # addu v0, v0, a3
+    emit(_mips_shift(2, 2, 1, 0x00))               # sll v0, v0, 1
+    emit(_mips_r(3, 2, 3, 0x23))                   # subu v1, v1, v0
+
+    label("status_center_done")
+    emit(_mips_i(0x37, 29, 9, 8))                  # ld t1, 8(sp)
+    emit(_mips_i(0x37, 29, 31, 0))                 # ld ra, 0(sp)
+    emit(_mips_r(31, 0, 0, 0x08))                  # jr ra
+    emit(_mips_i(0x09, 29, 29, 0x10))              # addiu sp, sp, 0x10
 
     resolved: list[int] = []
     for index, word in enumerate(words):
@@ -286,10 +351,16 @@ def _apply_scoped_menu_half_spaces(data: bytearray) -> list[str]:
             struct.pack("<I", _mips_j(0x03, addresses["glyph_hook"])),
         ),
         (
-            "scoped eMessage draw after flag normalization",
-            0x00277DAC,
-            bytes.fromhex("92 dc 09 0c"),
-            struct.pack("<I", _mips_j(0x03, addresses["draw_entry"])),
+            "OV01 STATUS actual-pixel centering",
+            0x0027DE98,
+            bytes.fromhex("2a 10 e8 00 fa ff 63 24 0b 38 02 01 42 18 03 00"),
+            struct.pack(
+                "<4I",
+                _mips_j(0x03, addresses["status_center_hook"]),
+                0,
+                _mips_i(0x04, 0, 0, 9),
+                _mips_i(0x2B, 9, 3, 4),
+            ),
         ),
         (
             "item list WindowSP initialization",
@@ -329,7 +400,7 @@ def _apply_scoped_menu_half_spaces(data: bytearray) -> list[str]:
         changes.append(f"{label}: VA 0x{va:08x}")
 
     changes.append(
-        "item/shop/battle-result ASCII spaces: exact blank glyph at 8px, source and queue lengths unchanged"
+        "item/shop/battle-result ASCII spaces: exact blank glyph at 8px, eMessage flags untouched"
     )
     return changes
 
@@ -382,6 +453,11 @@ def apply_translations(
     data: bytearray, source: Path, edits: dict[int, euc_scan.TranslationEdit]
 ) -> tuple[int, int, int, int, int]:
     replace_table = slps_strings.load_replace_table(str(source))
+    regular_edits = {
+        offset: edit
+        for offset, edit in edits.items()
+        if offset not in LOAD_TEXT_RELOCATION_OFFSETS
+    }
     stats = euc_scan.apply_grouped_translations(
         data,
         [(
@@ -389,7 +465,7 @@ def apply_translations(
             min(slps_strings.SCAN_END, len(data)),
             False,
         )],
-        edits,
+        regular_edits,
         replace_table,
         label="SLPS",
         skip_polluted=False,
@@ -401,6 +477,152 @@ def apply_translations(
         stats.overflow,
         stats.control_warnings,
     )
+
+
+def _replace_exact_bytes(
+    data: bytearray,
+    offset: int,
+    expected: bytes,
+    replacement: bytes,
+    label: str,
+) -> None:
+    actual = bytes(data[offset : offset + len(expected)])
+    if actual != expected:
+        raise ValueError(
+            f"unexpected {label} at 0x{offset:08x}: "
+            f"expected {expected.hex(' ')}, found {actual.hex(' ')}"
+        )
+    data[offset : offset + len(replacement)] = replacement
+
+
+def apply_load_text_relocations(
+    data: bytearray,
+    original: bytes,
+    translations: dict[int, str],
+    encode_display,
+) -> list[str]:
+    """Relocate the four expanded Korean Load strings without touching .sbss."""
+    gap_start, gap_end = LOAD_TEXT_SDATA_GAP
+    if bytes(original[gap_start:gap_end]) != b"\0" * (gap_end - gap_start):
+        raise ValueError("SLPS .sdata/.sbss alignment gap is not empty")
+    if bytes(data[gap_start:gap_end]) != bytes(original[gap_start:gap_end]):
+        raise ValueError("SLPS .sdata/.sbss alignment gap was modified before relocation")
+
+    compound_parts = []
+    for source_offset in LOAD_TEXT_COMPOUND_PARTS:
+        text = translations.get(source_offset)
+        if text is None:
+            raise ValueError(
+                f"missing compound Load translation for 0x{source_offset:08x}"
+            )
+        compound_parts.append(encode_display(text))
+    bridge_start, bridge_end = LOAD_TEXT_COMPOUND_BRIDGE
+    compound = compound_parts[0] + original[bridge_start:bridge_end] + compound_parts[1]
+    compound_destination, compound_span = LOAD_TEXT_COMPOUND_DESTINATION
+    if len(compound) >= compound_span:
+        raise ValueError(
+            f"compound Load string needs {len(compound)}B plus terminator, "
+            f"destination span is {compound_span}B"
+        )
+    if bytes(data[compound_destination:compound_destination + compound_span]) != (
+        original[compound_destination:compound_destination + compound_span]
+    ):
+        raise ValueError("compound Load destination was modified before relocation")
+    original_compound = original[
+        compound_destination:compound_destination + LOAD_TEXT_COMPOUND_SOURCE_LENGTH
+    ]
+    original_parsed = euc_scan.parse_control_aware_string(original_compound + b"\0", 0)
+    rebuilt_parsed = euc_scan.parse_control_aware_string(compound + b"\0", 0)
+    if (
+        original_parsed is None
+        or rebuilt_parsed is None
+        or rebuilt_parsed.terminator != len(compound)
+        or original_parsed.control_packets != rebuilt_parsed.control_packets
+    ):
+        raise ValueError("compound Load control stream is invalid or changed")
+
+    encoded_strings = {}
+    for source_offset, (destination, span) in LOAD_TEXT_RELOCATIONS.items():
+        text = translations.get(source_offset)
+        if text is None:
+            raise ValueError(
+                f"missing relocated Load translation for 0x{source_offset:08x}"
+            )
+        encoded = encode_display(text)
+        if len(encoded) >= span:
+            raise ValueError(
+                f"relocated Load string 0x{source_offset:08x} needs "
+                f"{len(encoded)}B plus terminator, destination span is {span}B"
+            )
+
+        source_length = LOAD_TEXT_SOURCE_LENGTHS[source_offset]
+        original_raw = original[source_offset : source_offset + source_length]
+        original_parsed = euc_scan.parse_control_aware_string(original_raw + b"\0", 0)
+        rebuilt_parsed = euc_scan.parse_control_aware_string(encoded + b"\0", 0)
+        if (
+            original_parsed is None
+            or rebuilt_parsed is None
+            or rebuilt_parsed.terminator != len(encoded)
+        ):
+            raise ValueError(
+                f"invalid relocated Load string at 0x{source_offset:08x}"
+            )
+        if original_parsed.control_packets != rebuilt_parsed.control_packets:
+            raise ValueError(
+                f"relocated Load control packets differ at 0x{source_offset:08x}: "
+                f"{euc_scan.format_control_packets(original_parsed.control_packets)} -> "
+                f"{euc_scan.format_control_packets(rebuilt_parsed.control_packets)}"
+            )
+
+        expected_destination = original[destination : destination + span]
+        if bytes(data[destination : destination + span]) != expected_destination:
+            raise ValueError(
+                f"relocated Load destination 0x{destination:08x} was modified"
+            )
+        encoded_strings[source_offset] = encoded
+
+    _replace_exact_bytes(
+        data,
+        LOAD_TEXT_PHDR_FILESZ_OFFSET,
+        LOAD_TEXT_PHDR_FILESZ[0].to_bytes(4, "little"),
+        LOAD_TEXT_PHDR_FILESZ[1].to_bytes(4, "little"),
+        "main data PT_LOAD p_filesz",
+    )
+    _replace_exact_bytes(
+        data,
+        LOAD_TEXT_SDATA_SH_SIZE_OFFSET,
+        LOAD_TEXT_SDATA_SH_SIZE[0].to_bytes(4, "little"),
+        LOAD_TEXT_SDATA_SH_SIZE[1].to_bytes(4, "little"),
+        ".sdata section size",
+    )
+    for pointer_offset, (expected, replacement) in LOAD_TEXT_POINTER_PATCHES.items():
+        _replace_exact_bytes(
+            data,
+            pointer_offset,
+            expected.to_bytes(4, "little"),
+            replacement.to_bytes(4, "little"),
+            "Load text pointer",
+        )
+
+    changes = []
+    for source_offset, (destination, span) in LOAD_TEXT_RELOCATIONS.items():
+        encoded = encoded_strings[source_offset]
+        data[destination : destination + span] = b"\0" * span
+        data[destination : destination + len(encoded)] = encoded
+        changes.append(
+            f"0x{source_offset:08x} -> 0x{destination:08x} "
+            f"({len(encoded)}B/{span - 1}B)"
+        )
+    data[compound_destination:compound_destination + compound_span] = b"\0" * compound_span
+    data[compound_destination:compound_destination + len(compound)] = compound
+    changes.append(
+        f"0x002bf100+0x002bf134 -> 0x{compound_destination:08x} "
+        f"({len(compound)}B/{compound_span - 1}B)"
+    )
+    changes.append(
+        "main data PT_LOAD/.sdata extended through 0x002d797f; .sbss at 0x004d6980 unchanged"
+    )
+    return changes
 
 
 def apply_spacing_fixes(data: bytearray, translations: dict[int, str]) -> list[str]:
@@ -514,8 +736,14 @@ def main() -> None:
         overflow_count,
         control_warnings,
     ) = apply_translations(data, source, translation_edits)
-    spacing_changes = apply_spacing_fixes(data, translations)
     replace_table = slps_strings.load_replace_table(str(source))
+    load_text_changes = apply_load_text_relocations(
+        data,
+        original,
+        translations,
+        lambda text: slps_strings.encode_display(text, replace_table),
+    )
+    spacing_changes = apply_spacing_fixes(data, translations)
     database_changes = apply_database_search_patch(
         data,
         lambda text: slps_strings.encode_display(text, replace_table),
@@ -535,6 +763,8 @@ def main() -> None:
     )
     for change in spacing_changes:
         print(f"[OK] spacing {change}")
+    for change in load_text_changes:
+        print(f"[OK] Load text {change}")
     for change in database_changes:
         print(f"[OK] database search {change}")
     print(f"[OK] source SHA-256: {sha256(original)}")

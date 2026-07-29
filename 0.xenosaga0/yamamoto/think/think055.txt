@@ -4,52 +4,52 @@
 # 텍스트가 원본보다 길면 자동으로 잘림.
 
 >>> [000] op=0x1A(condition) flag=0x00 offset=0x0116
-死んでブーストチェック
+죽어서 부스트 체크
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x01B0
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [002] op=0x1A(condition) flag=0x00 offset=0x01C4
-チェックＰＯＳ１
+체크 ＰＯＳ１
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x0208
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [004] op=0x1A(condition) flag=0x00 offset=0x021C
-チェックＰＯＳ２
+체크 ＰＯＳ２
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x0260
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [006] op=0x1A(condition) flag=0x00 offset=0x0274
-チェックＰＯＳ３
+체크 ＰＯＳ３
 <<<
 
 >>> [007] op=0x21(display) flag=0x00 offset=0x02B8
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [008] op=0x1A(condition) flag=0x00 offset=0x02CC
-チェックＰＯＳ４
+체크 ＰＯＳ４
 <<<
 
 >>> [009] op=0x21(display) flag=0x00 offset=0x0310
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [010] op=0x1A(condition) flag=0x00 offset=0x0324
-チェックＰＯＳ５
+체크 ＰＯＳ５
 <<<
 
 >>> [011] op=0x21(display) flag=0x00 offset=0x034A
@@ -68,13 +68,13 @@
 <<<
 
 >>> [014] op=0x21(display) flag=0x00 offset=0x0498
-　アブソープション　　Ｅ
-　　ＥＰドレイン
+　앱소프션　　Ｅ
+　　ＥＰ 드레인
 <<<
 
 >>> [015] op=0x21(display) flag=0x00 offset=0x04E4
-　ソウルスフリング　　Ｓ
-　　ＥＰオーバー
+　소울 스프링　　Ｓ
+　　ＥＰ 오버
 <<<
 
 >>> [016] op=0x21(display) flag=0x00 offset=0x0524
@@ -83,5 +83,5 @@
 <<<
 
 >>> [017] op=0x21(display) flag=0x00 offset=0x058C
-　様子を見ている
+상황을 보고 있다
 <<<

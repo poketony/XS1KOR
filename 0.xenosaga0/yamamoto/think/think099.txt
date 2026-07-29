@@ -56,7 +56,7 @@
 <<<
 
 >>> [013] op=0x21(display) flag=0x00 offset=0x0AF6
-　防御体勢
+　방어体勢
 <<<
 
 >>> [014] op=0x21(display) flag=0x00 offset=0x0B22

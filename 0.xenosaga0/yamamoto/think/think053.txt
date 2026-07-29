@@ -19,7 +19,7 @@
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x0410
-　Ｗ선더볼트　　Ｅ／번개
+　Ｗ 선더볼트　　Ｅ／번개
 
 <<<
 
@@ -39,52 +39,52 @@
 <<<
 
 >>> [007] op=0x1A(condition) flag=0x00 offset=0x0522
-死んでブーストチェック
+죽어서 부스트 체크
 <<<
 
 >>> [008] op=0x21(display) flag=0x00 offset=0x05BC
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [009] op=0x1A(condition) flag=0x00 offset=0x05D0
-チェックＰＯＳ１
+체크 ＰＯＳ１
 <<<
 
 >>> [010] op=0x21(display) flag=0x00 offset=0x0614
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [011] op=0x1A(condition) flag=0x00 offset=0x0628
-チェックＰＯＳ２
+체크 ＰＯＳ２
 <<<
 
 >>> [012] op=0x21(display) flag=0x00 offset=0x066C
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [013] op=0x1A(condition) flag=0x00 offset=0x0680
-チェックＰＯＳ３
+체크 ＰＯＳ３
 <<<
 
 >>> [014] op=0x21(display) flag=0x00 offset=0x06C4
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [015] op=0x1A(condition) flag=0x00 offset=0x06D8
-チェックＰＯＳ４
+체크 ＰＯＳ４
 <<<
 
 >>> [016] op=0x21(display) flag=0x00 offset=0x071C
-　反魂変化
+ 반혼 변화
 
 <<<
 
 >>> [017] op=0x1A(condition) flag=0x00 offset=0x0730
-チェックＰＯＳ５
+체크 ＰＯＳ５
 <<<
 
 >>> [018] op=0x21(display) flag=0x00 offset=0x0756
@@ -103,13 +103,13 @@
 <<<
 
 >>> [021] op=0x21(display) flag=0x00 offset=0x08A4
-　アブソープション　　Ｅ
-　　ＥＰドレイン
+　앱소프션　　Ｅ
+　　ＥＰ 드레인
 <<<
 
 >>> [022] op=0x21(display) flag=0x00 offset=0x08F0
-　ソウルスフリング　　Ｓ
-　　ＥＰオーバー
+　소울 스프링　　Ｓ
+　　ＥＰ 오버
 <<<
 
 >>> [023] op=0x21(display) flag=0x00 offset=0x0930
@@ -118,17 +118,17 @@
 <<<
 
 >>> [024] op=0x21(display) flag=0x00 offset=0x0A1A
-　ファイアボール　　Ｅ／불꽃
+　파이어 볼　　Ｅ／불꽃
 
 <<<
 
 >>> [025] op=0x21(display) flag=0x00 offset=0x0A56
-　サンダーフライ　　Ｅ／번개
+　선더 플라이　　Ｅ／번개
 
 <<<
 
 >>> [026] op=0x21(display) flag=0x00 offset=0x0A9E
-　スティング슬로　　Ｓ
+　스팅 슬로　　Ｓ
 　　슬로
 <<<
 
@@ -138,25 +138,25 @@
 <<<
 
 >>> [028] op=0x21(display) flag=0x00 offset=0x0AFC
-　【ポイズンバブル】
-　トラップの影響で発動失敗！
+　【포이즌 버블】
+　트랩 영향으로 발동 실패！
 <<<
 
 >>> [029] op=0x21(display) flag=0x00 offset=0x0B84
-　ポイズンバブル　　Ｅ／Ｓ
+　포이즌 버블　　Ｅ／Ｓ
 　　독
 <<<
 
 >>> [030] op=0x21(display) flag=0x00 offset=0x0BC6
-　ドレインアーム　　Ｅ
-　　ＨＰドレイン
+　드레인 암　　Ｅ
+　　ＨＰ 드레인
 <<<
 
 >>> [031] op=0x21(display) flag=0x00 offset=0x0C1E
-　ドレインアーム　　Ｅ
-　　ＨＰドレイン
+　드레인 암　　Ｅ
+　　ＨＰ 드레인
 <<<
 
 >>> [032] op=0x21(display) flag=0x00 offset=0x0C5A
-　様子を見ている
+상황을 보고 있다
 <<<
