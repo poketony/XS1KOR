@@ -263,12 +263,12 @@ def main():
         epilog="""
 예시:
   # 추출
-  python xeno1_maptext.py extract mapex   mapex.bin   mapex_text.json
-  python xeno1_maptext.py extract savemap savemap.bin savemap_text.json
+  python xeno1_maptext.py extract mapex mapex.bin mapex.json
+  python xeno1_maptext.py extract savemap savemap.bin savemap.json
 
   # 임포트 (치환표 적용)
-  python xeno1_maptext.py import mapex   mapex.bin   mapex_text.json   mapex_new.bin   --table XENOSAGA_KOR-JPN.json
-  python xeno1_maptext.py import savemap savemap.bin savemap_text.json savemap_new.bin --table XENOSAGA_KOR-JPN.json
+  python xeno1_maptext.py import mapex mapex.bin mapex.json mapex_new.bin --table XENOSAGA_KOR-JPN.json
+  python xeno1_maptext.py import savemap savemap.bin savemap.json savemap_new.bin --table XENOSAGA_KOR-JPN.json
 """,
     )
     sub = parser.add_subparsers(dest="cmd", required=True)

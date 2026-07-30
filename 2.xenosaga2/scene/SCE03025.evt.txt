@@ -353,18 +353,18 @@ act3_light
 face3_allen
 face_stop_feb
 c03s25cut03.cam
-人が──
-あの服──<lf>レアリエンかな──
+사람이……
+저 옷……<lf>리얼리언인가……？
 act3b_chara
 act3b_stained_set
 face3b_momo
 c03s25cut03b.cam
-ええ──<lf>たしかにレアリエンみたいですけど──
+네……<lf>확실히 리얼리언 같긴 한데……
 act4_chara
 act4_stained_set
 face4_feb
 c03s25cut04.cam
-でもちょっと違う感じもします──
+조금 다른 느낌도 들어요……
 act5_chara
 act5_stained_set
 face5_allen
@@ -374,22 +374,22 @@ face5_chaos
 face5_jr
 face_stop_momo
 c03s25cut05.cam
-これも　誰かの<lf>心の中の風景なんでしょうか　主任
-──主任
-君は──<lf>レアリエンなのか
+이것도 누군가의<lf>마음속 풍경일까요，주임님？
+……주임님？
+너는……<lf>리얼리언인가？
 act6_chara
 act6_stained_set
 face6_feb
 c03s25cut06.cam
-はい<lf>フェブロニアといいます
-レアリエンの安らげる場所が欲しくて<lf>この教会の手入れをしているんです
+네<lf>페브로니아라고 합니다
+리얼리언들에게도 안식처가 있었으면 해서<lf>이 교회를 관리하고 있어요
 act7a_chara
 act7_stained_set
 face7a_shion
 c03s25cut07a.cam
-フェブロニア──
-知り合いか
-────
+페브로니아……
+아는 사이야？
+…………
 act_bank_on
 act_bank_stained_set
 face_bank_feb
@@ -412,14 +412,14 @@ face10_shion
 face10_jr
 eyes10_shion
 c03s25cut10.cam
-私──知ってる──
+나…… 알아……
 act11_chara
 act11_stained_set
 face_stop_chaos
 face_stop_jr
 face_stop_ziggy
 c03s25cut11.cam
-知ってるわ──あなたを──
+알고 있어…… 너를……
 act12_chara
 face12_shion
 face12_allen
@@ -428,8 +428,8 @@ face12_chaos
 eyes12_shion
 act12_stained_set
 c03s25cut12.cam
-でも　嫌──<lf>思い出したくない──
-だって　だって──
+하지만 싫어……<lf>떠올리고 싶지 않아……
+왜냐하면，왜냐하면……
 act14_chara
 act14_stained_set
 c03s25cut14.cam
@@ -438,7 +438,7 @@ act14B_light
 face14b_feb
 eyes14b_feb
 c03s25cut14b.cam
-シオン　いらっしゃい
+시온，어서 와
 act15_chara
 act15_stained_set
 face15_shion
@@ -448,17 +448,17 @@ act16_chara
 face16_feb
 c03s25cut16.cam
 face18_elly
-その扉を開けた瞬間から
+그 문을 연 순간부터
 act19_chara
 act19_stained_set
 face19_elly
 c03s25cut19.cam
-あなた達は自分自身と<lf>向きあっていくことになる
+너희는 자기 자신과<lf>마주하게 될 거야
 act20_chara
 act20_stained_set
 face20_elly
 c03s25cut20.cam
-それは<lf>とても辛くて哀しいこと──
+그건<lf>너무나 괴롭고 슬픈 일……
 act21_chara
 act21_stained_set
 act21_light
@@ -466,7 +466,7 @@ face21_shionM
 face21_shion
 face_stop_elly
 c03s25cut21.cam
-だけどそれは　あなた達にとっても<lf>私達にとっても　とても大切なことなの
+하지만 그건 너희에게도，<lf>우리에게도 아주 중요한 일이야
 act22_chara
 act22_stained_set
 face22_shion
