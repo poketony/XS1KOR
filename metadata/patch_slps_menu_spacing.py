@@ -100,7 +100,11 @@ TEXT_VA_DELTA = 0x1FF000
 MENU_SPACE_CAVE_VA = 0x002805C0
 MENU_SPACE_CAVE_SIZE = 0x124
 MENU_SPACE_CAVE_SHA256 = "9263b6f908b343b00eb4c0995591591608f80772b91646564421c295567b65b3"
-MENU_SPACE_SCOPE_MAGIC = 0x4D535043
+MENU_SPACE_SCOPE_FLAG_VA = 0x004D6C94
+MENU_SPACE_SBSS_SIZE_OFFSET = 0x002FC9DC
+MENU_SPACE_SBSS_SIZE = (0x314, 0x318)
+MENU_SPACE_SBSS_VA = 0x004D6980
+MENU_SPACE_BSS_VA = 0x004D6D00
 MENU_SPACE_NORMAL_HEADER_VA = 0x004C22A8
 
 
@@ -149,43 +153,45 @@ def _build_menu_space_patch() -> tuple[bytes, dict[str, int]]:
     def jump(opcode: int, target: str | int) -> None:
         words.append(("jump", opcode, 0, target))
 
-    # Item and shop callers enter WindowSPMain here. Carry the scope in saved
-    # register s7, avoiding writes to the read/execute-only code cave.
+    # Item and shop callers enter WindowSPMain here. Keep the scope in a
+    # dedicated zero-initialized .sbss word so nested renderer calls cannot
+    # clobber it as they did when this used s7.
     label("scope_entry")
     emit(_mips_i(0x09, 29, 29, -0x10))             # addiu sp, sp, -0x10
     emit(_mips_i(0x3F, 29, 31, 0))                 # sd ra, 0(sp)
-    emit(_mips_i(0x3F, 29, 23, 8))                 # sd s7, 8(sp)
-    emit(_mips_i(0x0F, 0, 23, MENU_SPACE_SCOPE_MAGIC >> 16))
-    emit(_mips_i(0x0D, 23, 23, MENU_SPACE_SCOPE_MAGIC & 0xFFFF))
+    emit(_mips_i(0x0F, 0, 8, MENU_SPACE_SCOPE_FLAG_VA >> 16))
+    emit(_mips_i(0x09, 0, 9, 1))                   # li t1, 1
+    emit(_mips_i(0x2B, 8, 9, MENU_SPACE_SCOPE_FLAG_VA & 0xFFFF))
     jump(0x03, 0x002800F0)                         # jal WindowSPMain
     emit(0)
-    emit(_mips_i(0x37, 29, 23, 8))                 # ld s7, 8(sp)
+    emit(_mips_i(0x0F, 0, 8, MENU_SPACE_SCOPE_FLAG_VA >> 16))
+    emit(_mips_i(0x2B, 8, 0, MENU_SPACE_SCOPE_FLAG_VA & 0xFFFF))
     emit(_mips_i(0x37, 29, 31, 0))                 # ld ra, 0(sp)
     emit(_mips_r(31, 0, 0, 0x08))                  # jr ra
     emit(_mips_i(0x09, 29, 29, 0x10))              # addiu sp, sp, 0x10
 
     # The battle-result path does not enter through WindowSPMain. Give its
-    # eMessage call the same temporary scope while preserving the caller's s7.
+    # eMessage call the same temporary memory scope.
     label("force_entry")
     emit(_mips_i(0x09, 29, 29, -0x10))             # addiu sp, sp, -0x10
     emit(_mips_i(0x3F, 29, 31, 0))                 # sd ra, 0(sp)
-    emit(_mips_i(0x3F, 29, 23, 8))                 # sd s7, 8(sp)
-    emit(_mips_i(0x0F, 0, 23, MENU_SPACE_SCOPE_MAGIC >> 16))
-    emit(_mips_i(0x0D, 23, 23, MENU_SPACE_SCOPE_MAGIC & 0xFFFF))
+    emit(_mips_i(0x0F, 0, 8, MENU_SPACE_SCOPE_FLAG_VA >> 16))
+    emit(_mips_i(0x09, 0, 9, 1))                   # li t1, 1
+    emit(_mips_i(0x2B, 8, 9, MENU_SPACE_SCOPE_FLAG_VA & 0xFFFF))
     jump(0x03, 0x00277BD8)                         # jal eMessageMain
     emit(0)
-    emit(_mips_i(0x37, 29, 23, 8))                 # ld s7, 8(sp)
+    emit(_mips_i(0x0F, 0, 8, MENU_SPACE_SCOPE_FLAG_VA >> 16))
+    emit(_mips_i(0x2B, 8, 0, MENU_SPACE_SCOPE_FLAG_VA & 0xFFFF))
     emit(_mips_i(0x37, 29, 31, 0))                 # ld ra, 0(sp)
     emit(_mips_r(31, 0, 0, 0x08))                  # jr ra
     emit(_mips_i(0x09, 29, 29, 0x10))              # addiu sp, sp, 0x10
 
-    # Convert ASCII spaces only while one of the scoped callers is active. Do
-    # not borrow eMessage object flag bits: those bits select battle font state.
-    # The source message and deferred queue length stay intact.
+    # Convert ASCII spaces only while one of the scoped callers is active. The
+    # source message, eMessage flags and deferred queue length stay intact.
     label("copy_hook")
-    emit(_mips_i(0x0F, 0, 8, MENU_SPACE_SCOPE_MAGIC >> 16))
-    emit(_mips_i(0x0D, 8, 8, MENU_SPACE_SCOPE_MAGIC & 0xFFFF))
-    branch(0x05, 23, 8, "copy_store")              # bne s7, t0, copy_store
+    emit(_mips_i(0x0F, 0, 8, MENU_SPACE_SCOPE_FLAG_VA >> 16))
+    emit(_mips_i(0x23, 8, 8, MENU_SPACE_SCOPE_FLAG_VA & 0xFFFF))
+    branch(0x04, 8, 0, "copy_store")               # beq t0, zero, copy_store
     emit(0)
     # The A.G.W.S. parts list uses literal spaces to position its Price header.
     emit(_mips_i(0x23, 19, 8, 0x18))               # lw t0, 0x18(s3)
@@ -214,40 +220,21 @@ def _build_menu_space_patch() -> tuple[bytes, dict[str, int]]:
     jump(0x02, 0x002194B0)                         # j xglFontFlushSub
     emit(0)
 
-    # eBattleWinOpen2 normally centers by advancing its counter pointer two
-    # bytes for every non-newline character. A one-byte ASCII space therefore
-    # skips the first byte of the following Korean glyph and undercounts the
-    # line. The OV01 STATUS window uses W=0xd0, so center that one window from
-    # xglFontGetStringWidth while preserving the original formula for every
-    # other centered eBattleWinOpen2 caller.
+    # Negative-width eBattleWinOpen2 callers request centered text. Its normal
+    # counter advances two source bytes for every non-newline character, so a
+    # one-byte ASCII space skips part of the next Korean glyph. Current gameplay
+    # has one such caller (OV01 STATUS); use the renderer's actual pixel width.
     label("status_center_hook")
     emit(_mips_i(0x09, 29, 29, -0x10))             # addiu sp, sp, -0x10
     emit(_mips_i(0x3F, 29, 31, 0))                 # sd ra, 0(sp)
     emit(_mips_i(0x3F, 29, 9, 8))                  # sd t1, 8(sp)
-    emit(_mips_i(0x25, 17, 8, 0x0C))               # lhu t0, 0x0c(s1)
-    emit(_mips_i(0x0D, 0, 9, 0x00D0))              # ori t1, zero, 0xd0
-    branch(0x05, 8, 9, "status_center_fallback")   # bne t0, t1, fallback
     emit(_mips_i(0x23, 17, 4, 0x10))               # lw a0, 0x10(s1)
     jump(0x03, 0x0021AE20)                         # jal xglFontGetStringWidth
     emit(0)
     emit(_mips_i(0x25, 17, 3, 0x0C))               # lhu v1, 0x0c(s1)
     emit(_mips_i(0x09, 3, 3, -6))                  # addiu v1, v1, -6
     emit(_mips_r(3, 2, 3, 0x23))                   # subu v1, v1, v0
-    branch(0x04, 0, 0, "status_center_done")       # b done
     emit(_mips_shift(3, 3, 1, 0x03))               # sra v1, v1, 1
-
-    label("status_center_fallback")
-    emit(_mips_r(7, 8, 2, 0x2A))                   # slt v0, a3, t0
-    emit(_mips_i(0x25, 17, 3, 0x0C))               # lhu v1, 0x0c(s1)
-    emit(_mips_r(8, 2, 7, 0x0B))                   # movn a3, t0, v0
-    emit(_mips_i(0x09, 3, 3, -6))                  # addiu v1, v1, -6
-    emit(_mips_shift(3, 3, 1, 0x02))               # srl v1, v1, 1
-    emit(_mips_shift(7, 2, 2, 0x00))               # sll v0, a3, 2
-    emit(_mips_r(2, 7, 2, 0x21))                   # addu v0, v0, a3
-    emit(_mips_shift(2, 2, 1, 0x00))               # sll v0, v0, 1
-    emit(_mips_r(3, 2, 3, 0x23))                   # subu v1, v1, v0
-
-    label("status_center_done")
     emit(_mips_i(0x37, 29, 9, 8))                  # ld t1, 8(sp)
     emit(_mips_i(0x37, 29, 31, 0))                 # ld ra, 0(sp)
     emit(_mips_r(31, 0, 0, 0x08))                  # jr ra
@@ -333,6 +320,20 @@ def _apply_scoped_menu_half_spaces(data: bytearray) -> list[str]:
     code, addresses = _build_menu_space_patch()
     data[cave_offset : cave_offset + MENU_SPACE_CAVE_SIZE] = code
 
+    if MENU_SPACE_SCOPE_FLAG_VA != MENU_SPACE_SBSS_VA + MENU_SPACE_SBSS_SIZE[0]:
+        raise AssertionError("menu-space scope flag is not at the original .sbss end")
+    if MENU_SPACE_SBSS_VA + MENU_SPACE_SBSS_SIZE[1] > MENU_SPACE_BSS_VA:
+        raise AssertionError("expanded .sbss overlaps .bss")
+    current_sbss_size = struct.unpack_from("<I", data, MENU_SPACE_SBSS_SIZE_OFFSET)[0]
+    if current_sbss_size != MENU_SPACE_SBSS_SIZE[0]:
+        raise ValueError(
+            f"unexpected .sbss size 0x{current_sbss_size:x}; "
+            f"expected 0x{MENU_SPACE_SBSS_SIZE[0]:x}"
+        )
+    struct.pack_into(
+        "<I", data, MENU_SPACE_SBSS_SIZE_OFFSET, MENU_SPACE_SBSS_SIZE[1]
+    )
+
     patches = (
         (
             "scoped eMessage ASCII-space queue marker",
@@ -381,6 +382,36 @@ def _apply_scoped_menu_half_spaces(data: bytearray) -> list[str]:
             struct.pack("<I", _mips_j(0x03, addresses["scope_entry"])),
         ),
         (
+            "ether point list WindowSP 1",
+            0x002A8670,
+            struct.pack("<I", _mips_j(0x03, 0x002800F0)),
+            struct.pack("<I", _mips_j(0x03, addresses["scope_entry"])),
+        ),
+        (
+            "ether point list WindowSP 2",
+            0x002A8718,
+            struct.pack("<I", _mips_j(0x03, 0x002800F0)),
+            struct.pack("<I", _mips_j(0x03, addresses["scope_entry"])),
+        ),
+        (
+            "ether point list WindowSP 3",
+            0x002A87D4,
+            struct.pack("<I", _mips_j(0x03, 0x002800F0)),
+            struct.pack("<I", _mips_j(0x03, addresses["scope_entry"])),
+        ),
+        (
+            "ether point list WindowSP 4",
+            0x002A8878,
+            struct.pack("<I", _mips_j(0x03, 0x002800F0)),
+            struct.pack("<I", _mips_j(0x03, addresses["scope_entry"])),
+        ),
+        (
+            "ether point list WindowSP 5",
+            0x002A892C,
+            struct.pack("<I", _mips_j(0x03, 0x002800F0)),
+            struct.pack("<I", _mips_j(0x03, addresses["scope_entry"])),
+        ),
+        (
             "battle-result item eMessage",
             0x0029C0B8,
             bytes.fromhex("f6 de 09 0c"),
@@ -400,7 +431,11 @@ def _apply_scoped_menu_half_spaces(data: bytearray) -> list[str]:
         changes.append(f"{label}: VA 0x{va:08x}")
 
     changes.append(
-        "item/shop/battle-result ASCII spaces: exact blank glyph at 8px, eMessage flags untouched"
+        "item/shop/ether-point/battle-result ASCII spaces: .sbss-scoped exact blank glyph at 8px, eMessage flags untouched"
+    )
+    changes.append(
+        f"menu-space scope flag: VA 0x{MENU_SPACE_SCOPE_FLAG_VA:08x}, "
+        f".sbss 0x{MENU_SPACE_SBSS_SIZE[0]:x} -> 0x{MENU_SPACE_SBSS_SIZE[1]:x}"
     )
     return changes
 
@@ -751,6 +786,8 @@ def main() -> None:
         memsz_offset=0xA8,
         expected_memsz=0x1393C,
     )
+    if len(data) != len(original):
+        raise AssertionError("SLPS rebuild changed the executable file size")
     write_output(output, data, args.replace_output)
 
     print(

@@ -10,8 +10,8 @@
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x05AA
-　적랑권　　Ｐ
-　　장갑 결손
+ 적랑권　　Ｐ
+  장갑 결손
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x05E4
@@ -69,8 +69,8 @@
 <<<
 
 >>> [013] op=0x21(display) flag=0x00 offset=0x0CB4
-　하얀 것
-　　모든 스테이터스 클리어
+ 하얀 것
+  모든 스테이터스 클리어
 <<<
 
 >>> [014] op=0x21(display) flag=0x00 offset=0x0D26

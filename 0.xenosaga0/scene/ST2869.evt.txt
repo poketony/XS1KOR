@@ -2,12 +2,12 @@
 # chunk 4 @ 0x8e8 cnum=409 total=9
 # bc_map: 8,0,2,5,7,4,6,3,6
 # bc_unmap: 1
-ＥＶＳ【環境シミュレーター】を終了します。
+ＥＶＳ【환경 시뮬레이터】를 종료합니다．
 /[waitkey(64)]/[close()]
 enterd : /[$0]
 lo:0
-イベント3047A
-evsExitをコールしました
-#dup(1): はい<lf>いいえ
+이벤트3047A
+evsExit를 호출했습니다
+#dup(1): 예<lf>아니요
 entrance: /[$0]
-#dup(1): はい<lf>いいえ
+#dup(1): 예<lf>아니요

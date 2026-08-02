@@ -2,10 +2,10 @@
 # chunk 4 @ 0x17e0 cnum=554 total=13
 # bc_map: 12,0,11,11,11,7,8
 # bc_unmap: 1,2,3,4,5,6,9,10
-フロアを移動しますか？
+플로어를 이동시키겠습니까？
 /[waitkey(64)]/[close()]
-#dup(1): はい<lf>いいえ
-#dup(1): はい<lf>いいえ
-#dup(1): はい<lf>いいえ
+#dup(1): 예<lf>아니요
+#dup(1): 예<lf>아니요
+#dup(1): 예<lf>아니요
 enterd : /[$0]
 entrance: /[$0]

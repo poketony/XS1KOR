@@ -214,14 +214,14 @@ ManualCameraRecord START!!!
 End(TimeOver).
 End(Button).
 マーグリス[OFF]
-鼠どもは網からすり抜けた――
-準備してくれ――
-遂に聴くか――
-あれを――
+쥐새끼들이 그물을 빠져나갔다……
+준비해 다오……
+드디어 듣는 건가……
+그걸……
 look1_albelt
-あの歌声を――
+그 노랫소리를……
 look2_albelt
-/[ruby(見物/みもの)]だぞ
+이거 참 볼 만하겠어
 look3_albelt
 ------------MP速度変更は正常に終了しました。
 *********Timechk Standby*****************

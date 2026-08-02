@@ -4,6 +4,6 @@
 # bc_unmap: 0
 enterd : /[$0]
 lo:0
-イベント3047A
+이벤트3047A
 entrance: /[$0]
-はい<lf>いいえ
+예<lf>아니요

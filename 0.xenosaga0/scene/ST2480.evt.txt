@@ -1,20 +1,20 @@
 # extraction_order: precise_code_v4
 # chunk 4 @ 0x8e8 cnum=588 total=16
 # bc_map: 9,0,10,0,15,14,7,8,4,5,2,11,12,13,3,1,6
-ボタンがあります。押してみますか？
+버튼이 있다．눌러 보겠습니까？
 #dup(1): /[waitkey(64)]/[close()]
-ロックされている。
+잠겨 있다．
 #dup(1): /[waitkey(64)]/[close()]
-瓦礫２【MC_KAS13】・３・シオン
-瓦礫２【MC_KAS13】・２・シオン
-イベント3022
-タワー【MC_KAS05】・２・Jr
+잔해２【MC_KAS13】・３・시온
+잔해２【MC_KAS13】・２・시온
+이벤트3022
+타워【MC_KAS05】・２・Jr
 lo:0
 lo:1
 enterd : /[$0]
-公園【MC_KAS31】・３・シオン
-地下鉄トンネル【MC_KAS20】・３・Jr
-森入り口【MC_KAS15】・１・シオン
+공원【MC_KAS31】・３・시온
+지하철 터널【MC_KAS20】・３・Jr
+숲 입구【MC_KAS15】・１・시온
 entrance: /[$0]
 ITEM:1
-はい<lf>いいえ
+예<lf>아니요

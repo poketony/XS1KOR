@@ -15,12 +15,12 @@
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x0344
 　치유
-　　ＨＰ 회복
+　 ＨＰ 회복
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x0372
 　치유
-　　ＨＰ 회복
+　 ＨＰ 회복
 <<<
 
 >>> [004] op=0x21(display) flag=0x00 offset=0x04C2
@@ -39,7 +39,7 @@
 <<<
 
 >>> [007] op=0x21(display) flag=0x00 offset=0x084C
-　연옥의 불　 Ｅ／불꽃
+ 연옥의 불  Ｅ／불꽃
 
 <<<
 

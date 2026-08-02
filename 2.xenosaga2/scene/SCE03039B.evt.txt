@@ -184,7 +184,7 @@ ManualCamera not Recorded.
 ManualCameraRecord START!!!
 No Face!!!
 Runtime.setDefocus(12, 1, ColorScreenParam12);
-ＮＯ．００９７──
+ＮＯ．００９７……
 キャラのみキャプチャ
 オブジェのみキャプチャ
 フォルダ選択
@@ -366,42 +366,42 @@ lightSPL start.
 lightSPL end.
 map_nomber---------------(/[#0])
 momo4_act1
-モモの/[ruby(姉妹/しまい)]──
-そうなのね──
-ここは　パパの──
-初めて/[ruby(姉妹/あなた)]と会えたのに
-言葉も交わせないなんて──
+모모의 자매……
+그랬구나……
+여긴 아빠의……
+처음으로 너를 만났는데도
+말 한마디 나눌 수 없다니……
 momo_act3
 momo_act3_ha
 momo4_act3
-あなたのこと
-沢山聞きたかったのに──　
+너에 대해서
+잔뜩 물어보고 싶었는데……
 momo_act4
 momo4_act4
 momo_act5
 momo4_act5
-──まだ生きている　
-ねぇ　大丈夫　
-誰があなたをこんな姿にしたの　
+아직 살아 있었구나！
+저기，괜찮아？
+누가 너를 이렇게 만든 거야？
 momo_act6
 momo4_act6
 momo_act12
 momo4_act12
-今のは──
-あなたの記憶なの──　
+지금 그건……
+너의 기억이구나……　
 momo_act13
 momo_act14
 momo4_act14
-ありがとう　
-モモにパパの姿を見せてくれたのね──
+고마워　
+모모에게 아빠의 모습을 보여 준 거네……
 momo_act15_ha
 momo_die
 momo4_act15
 momo_act16
-居るのね──
-この先に──
+있는 거지……？
+이 앞에……
 momo_act17_1
 momo_act17_2
 momo4_act18
 light.setGlobalPointLightCol( 0, /[#0]f,/[#1]f,/[#2]f);
-パパのこと
+아빠에 대해서

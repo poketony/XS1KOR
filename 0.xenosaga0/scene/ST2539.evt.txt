@@ -5,4 +5,4 @@ EOB
 lo:0
 enterd : /[$0]
 entrance: /[$0]
-はい<lf>いいえ
+예<lf>아니요

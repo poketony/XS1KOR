@@ -448,7 +448,7 @@ act16_chara
 face16_feb
 c03s25cut16.cam
 face18_elly
-그 문을 연 순간부터
+그 문을 여는 순간부터
 act19_chara
 act19_stained_set
 face19_elly

@@ -1,12 +1,12 @@
 # extraction_order: precise_code_v4
 # chunk 4 @ 0x804 cnum=625 total=7
 # bc_map: 6,0,2,1,5,1,5,3,4
-飛び降りますか？
+뛰어내리겠습니까？
 /[waitkey(64)]/[close()]
 WINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWIN
 #dup(1): 1
-#dup(2): はい<lf>いいえ
+#dup(2): 예<lf>아니요
 #dup(1): 1
-#dup(2): はい<lf>いいえ
+#dup(2): 예<lf>아니요
 enterd : /[$0]
 entrance: /[$0]

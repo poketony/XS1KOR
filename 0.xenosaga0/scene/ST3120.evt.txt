@@ -1,7 +1,7 @@
 # extraction_order: precise_code_v4
 # chunk 4 @ 0x710 cnum=539 total=6
 # bc_map: 5,0,1,2,3,4
-裏側からロックがかかっている。
+반대편에서 잠겨 있다．
 /[waitkey(64)]/[close()]
 WINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWIN
 \\\\\\\\\\\\

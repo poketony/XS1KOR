@@ -2,20 +2,20 @@
 # chunk 4 @ 0x14d4 cnum=842 total=17
 # bc_map: 16,0,15,0,11,14,14,14,14,14,14,14,14,14,1,12,13
 # bc_unmap: 2,3,4,5,6,7,8,9,10
-フロアを移動しますか？
+플로어를 이동시키겠습니까？
 #dup(1): /[waitkey(64)]/[close()]
-スイッチを押しますか？
+스위치를 누르겠습니까？
 #dup(1): /[waitkey(64)]/[close()]
 WINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWINWIN
-#dup(2): はい<lf>いいえ
-#dup(2): はい<lf>いいえ
-#dup(2): はい<lf>いいえ
-#dup(2): はい<lf>いいえ
-#dup(2): はい<lf>いいえ
-#dup(2): はい<lf>いいえ
-#dup(2): はい<lf>いいえ
-#dup(2): はい<lf>いいえ
-#dup(2): はい<lf>いいえ
+#dup(2): 예<lf>아니요
+#dup(2): 예<lf>아니요
+#dup(2): 예<lf>아니요
+#dup(2): 예<lf>아니요
+#dup(2): 예<lf>아니요
+#dup(2): 예<lf>아니요
+#dup(2): 예<lf>아니요
+#dup(2): 예<lf>아니요
+#dup(2): 예<lf>아니요
 152152152152152152152152152152152152152152152152152152152152152
 enterd : /[$0]
 entrance: /[$0]

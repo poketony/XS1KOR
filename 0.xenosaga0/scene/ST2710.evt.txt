@@ -2,7 +2,7 @@
 # chunk 4 @ 0x8e8 cnum=493 total=5
 # bc_map: 4,1,2,3
 # bc_unmap: 0
-イベント3050C1
+이벤트3050C1
 enterd : /[$0]
 entrance: /[$0]
-はい<lf>いいえ
+예<lf>아니요

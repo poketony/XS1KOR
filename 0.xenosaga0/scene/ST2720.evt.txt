@@ -2,19 +2,19 @@
 # chunk 4 @ 0x10cc cnum=604 total=14
 # bc_map: 8,0,11,9,0,10,0,12,0,1,6,13,2,4,5,7
 # bc_unmap: 3
-エレベーターを作動させますか？
+엘리베이터를 작동시키겠습니까？
 #dup(1): /[waitkey(64)]/[close()]
-反応が無い。<lf>
-何かに連動しているようだ。
+반응이 없다．<lf>
+무언가와 연동된 듯하다．
 #dup(1): /[waitkey(64)]/[close()]
-反応が無い。
+반응이 없다．
 #dup(1): /[waitkey(64)]/[close()]
-急な斜面でとても登れない。
+경사가 가팔라 도저히 올라갈 수 없다．
 #dup(1): /[waitkey(64)]/[close()]
 enterd : /[$0]
 weight: /[#1]
-移動可
+이동 가능
 entrance: /[$0]
 super_getFlags: /[#1]
 super_setFlags: /[#1]
-はい<lf>いいえ
+예<lf>아니요

@@ -6,4 +6,4 @@ enterd : /[$0]
 entrance: /[$0]
 super_getFlags: /[#1]
 super_setFlags: /[#1]
-はい<lf>いいえ
+예<lf>아니요

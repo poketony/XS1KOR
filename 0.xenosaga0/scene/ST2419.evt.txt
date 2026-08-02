@@ -1,25 +1,25 @@
 # extraction_order: precise_code_v4
 # chunk 4 @ 0x8e8 cnum=458 total=16
 # bc_map: 13,0,6,5,0,11,14,0,15,0,4,4,4,1,12,9,8,10,3,7,2,7
-鍵が掛かっている。
+잠겨 있다．
 #dup(1): /[waitkey(64)]/[close()]
-「←森<lf>
-　→教会」
+「←숲<lf>
+　→교회」
 #dup(1): /[waitkey(64)]/[close()]
-時空のゆがみがあります。
-飛び込みますか？
+시공의 왜곡이 있다．<lf>
+뛰어들겠습니까？
 #dup(1): /[waitkey(64)]/[close()]
-ＥＶＳ【環境シミュレーター】を終了します。
+ＥＶＳ【환경 시뮬레이터】를 종료합니다．
 #dup(1): /[waitkey(64)]/[close()]
 #dup(2): lo:0
 #dup(2): lo:0
 #dup(2): lo:0
 enterd : /[$0]
-森２【MC_KAS17】・３
-教会内部【MC_KAS06】・１
-イベント3025
-教会内部【MC_KAS06】・２
-evsExitをコールしました
-#dup(3): はい<lf>いいえ
+숲２【MC_KAS17】・３
+교회 내부【MC_KAS06】・１
+이벤트3025
+교회 내부【MC_KAS06】・２
+evsExit를 호출했습니다
+#dup(3): 예<lf>아니요
 entrance: /[$0]
-#dup(3): はい<lf>いいえ
+#dup(3): 예<lf>아니요

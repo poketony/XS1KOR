@@ -6,11 +6,11 @@
   ],
   "original_size": 262224,
   "rebuilt_size": 262224,
-  "changed_bytes": 4352,
+  "changed_bytes": 3875,
   "changed_span": [
     205043,
-    261601
+    252462
   ],
   "source_sha256": "b9c803c52565b4bb52698575c60e0efb4f6fbdc8dea3e0d280de24639a77d4f7",
-  "output_sha256": "3ba2610a96464913da1d46f007b4253252c156cfa8e25864a45d0f3ea11e5d4a"
+  "output_sha256": "590b998db618f88290577518ac8b542cbcf2929c46a29495f2b83982463cf784"
 }

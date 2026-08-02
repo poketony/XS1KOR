@@ -90,8 +90,26 @@ class SlpsLoadTextRelocationTests(unittest.TestCase):
         hook = addresses["status_center_hook"]
         self.assertLessEqual(len(cave), patcher.MENU_SPACE_CAVE_SIZE)
         self.assertEqual(
-            struct.unpack_from("<I", cave, hook - patcher.MENU_SPACE_CAVE_VA + 28)[0],
+            struct.unpack_from("<I", cave, hook - patcher.MENU_SPACE_CAVE_VA + 16)[0],
             patcher._mips_j(0x03, 0x0021AE20),
+        )
+
+        scope = addresses["scope_entry"] - patcher.MENU_SPACE_CAVE_VA
+        self.assertEqual(
+            struct.unpack_from("<I", cave, scope + 8)[0],
+            patcher._mips_i(
+                0x0F, 0, 8, patcher.MENU_SPACE_SCOPE_FLAG_VA >> 16
+            ),
+        )
+        self.assertEqual(
+            struct.unpack_from("<I", cave, scope + 16)[0],
+            patcher._mips_i(
+                0x2B, 8, 9, patcher.MENU_SPACE_SCOPE_FLAG_VA & 0xFFFF
+            ),
+        )
+        self.assertEqual(
+            struct.unpack_from("<I", data, patcher.MENU_SPACE_SBSS_SIZE_OFFSET)[0],
+            patcher.MENU_SPACE_SBSS_SIZE[1],
         )
 
         patch_offset = 0x0027DE98 - patcher.TEXT_VA_DELTA
@@ -111,6 +129,24 @@ class SlpsLoadTextRelocationTests(unittest.TestCase):
         for va in (0x0027DDD0, 0x0027DFF0, 0x0027E7A0, 0x0027E7E4, 0x0027E9F0):
             offset = va - patcher.TEXT_VA_DELTA
             self.assertEqual(data[offset:offset + 4], self.original[offset:offset + 4])
+
+        scope_call = struct.pack("<I", patcher._mips_j(0x03, addresses["scope_entry"]))
+        for va in (
+            0x00287D9C,
+            0x00287F0C,
+            0x002A01C4,
+            0x002A8670,
+            0x002A8718,
+            0x002A87D4,
+            0x002A8878,
+            0x002A892C,
+        ):
+            offset = va - patcher.TEXT_VA_DELTA
+            self.assertEqual(bytes(data[offset:offset + 4]), scope_call)
+
+        force_call = struct.pack("<I", patcher._mips_j(0x03, addresses["force_entry"]))
+        force_offset = 0x0029C0B8 - patcher.TEXT_VA_DELTA
+        self.assertEqual(bytes(data[force_offset:force_offset + 4]), force_call)
 
 
 if __name__ == "__main__":

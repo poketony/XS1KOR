@@ -11,7 +11,7 @@
 그야말로 『군계일닭』이군요！
 #dup(2): /[waitkey(64)]/[clear()]
 #dup(3): /[label(시온)]
-……저기，
+……저기，<lf>
 제가 『닭』인가요？
 #dup(2): /[waitkey(64)]/[clear()]
 #dup(1): /[label()]

@@ -3,4 +3,4 @@
 # bc_map: 0,1,2
 enterd : /[$0]
 entrance: /[$0]
-はい<lf>いいえ
+예<lf>아니요

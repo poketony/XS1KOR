@@ -1,8 +1,8 @@
 # extraction_order: precise_code_v4
 # chunk 1 @ 0x1ec cnum=155 total=5
 # bc_map: 4,0,1,3,2
-ボス戦闘後後処理
-0に勝利
-1に勝利
-ジャンプします
+보스전 후처리
+0에게 승리
+1에게 승리
+점프합니다
 entrance: /[$0]

@@ -272,7 +272,7 @@
 정말 무서운 건 없어？
 #dup(3): /[waitkey(64)]/[close()]
 #dup(1): /[label(시온)]
-#dup(9): 어라？
+#dup(9): 어라？ 
 이상하네……
 #dup(3): /[waitkey(64)]/[close()]
 #dup(5): /[label(지기)]
@@ -283,7 +283,7 @@
 어디로 간 걸까……？
 #dup(3): /[waitkey(64)]/[close()]
 #dup(4): /[label(케이오스)]
-#dup(9): 어라？
+#dup(9): 어라？ 
 #dup(10): 이상하네……
 #dup(3): /[waitkey(64)]/[close()]
 #dup(4): /[label(케이오스)]
@@ -291,7 +291,7 @@
 어디로 간 걸까……？
 #dup(3): /[waitkey(64)]/[close()]
 #dup(6): /[label(Ｊｒ．)]
-응？
+응？ 
 #dup(10): 이상하네……
 #dup(3): /[waitkey(64)]/[close()]
 #dup(6): /[label(Ｊｒ．)]

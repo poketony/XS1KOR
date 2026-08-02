@@ -8,7 +8,7 @@ INIT
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x0178
-상황을 보고 있다
+상황을 보는 중
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x0272

@@ -2,7 +2,7 @@
 # chunk 4 @ 0xc6c cnum=585 total=16
 # bc_map: 15,0,1,2,12,3,4,5,6,7,8,14,10,13,9,13
 # bc_unmap: 11
-ＥＶＳ【環境シミュレーター】を終了します。
+ＥＶＳ【환경 시뮬레이터】를 종료합니다．
 /[waitkey(64)]/[close()]
 EOB:0
 EOB_Escape
@@ -13,8 +13,8 @@ broken:3
 broken:4
 broken:5
 enterd : /[$0]
-イベント3020a - 3021
-evsExitをコールしました
-#dup(1): はい<lf>いいえ
+이벤트3020a - 3021
+evsExit를 호출했습니다
+#dup(1): 예<lf>아니요
 entrance: /[$0]
-#dup(1): はい<lf>いいえ
+#dup(1): 예<lf>아니요

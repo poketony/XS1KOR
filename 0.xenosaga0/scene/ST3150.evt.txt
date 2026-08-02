@@ -2,13 +2,13 @@
 # chunk 4 @ 0xec0 cnum=419 total=10
 # bc_map: 1,7,9,2,0,6,8,2,4,5
 # bc_unmap: 3
-/[label(モモ)]
-ここ……<lf>
-モモが生まれた部屋です。
+/[label(모모)]
+여기……<lf>
+모모가 태어난 방이에요．
 #dup(1): /[waitkey(64)]/[close()]
-/[label(シオン)]
-え？<lf>
-この部屋でモモちゃんが……？
+/[label(시온)]
+어？<lf>
+이 방에서 모모가……？
 #dup(1): /[waitkey(64)]/[close()]
 enterd : /[$0]
 entrance: /[$0]

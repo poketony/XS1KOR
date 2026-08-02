@@ -3,7 +3,7 @@
 # bc_map: 3,1,5,2,0,4
 lo:0
 enterd : /[$0]
-地下改札口【MC_KAS18】・６
+지하 개찰구【MC_KAS18】・６
 entrance: /[$0]
 ITEM:1
-はい<lf>いいえ
+예<lf>아니요
