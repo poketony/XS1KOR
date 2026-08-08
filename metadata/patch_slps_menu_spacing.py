@@ -152,6 +152,16 @@ MENU_SPACE_SBSS_SIZE = (0x314, 0x318)
 MENU_SPACE_SBSS_VA = 0x004D6980
 MENU_SPACE_BSS_VA = 0x004D6D00
 MENU_SPACE_NORMAL_HEADER_VA = 0x004C22A8
+AGWS_BULLET_CAVE_VA = 0x00218AB0
+AGWS_BULLET_CAVE_SIZE = 0x48
+AGWS_BULLET_CAVE_SHA256 = "fafd872028dd51b3c0888c086aed129e691e31b5bb85fab8258a540471f75e61"
+FILE_PROGRESS_X_HELPER_VA = AGWS_BULLET_CAVE_VA + 0x30
+FILE_PROGRESS_X_HOOK_VA = 0x00282BA4
+FILE_PROGRESS_ORIGINAL_X = 0x220
+FILE_PROGRESS_ORIGINAL_CELLS = 4
+FILE_PROGRESS_CELL_WIDTH = 0x14
+FILE_PROGRESS_LOAD_TEXT_OFFSET = 0x002BFE30
+FILE_PROGRESS_SAVE_TEXT_OFFSET = 0x002BFE40
 
 
 def _mips_i(opcode: int, rs: int, rt: int, immediate: int) -> int:
@@ -183,7 +193,7 @@ def _mips_j(opcode: int, target: int) -> int:
 
 
 def _build_menu_space_patch() -> tuple[bytes, dict[str, int]]:
-    """Build scoped 8-pixel spaces without changing the original 0x20 bytes."""
+    """Build small shared menu fixes in the verified executable code cave."""
     words: list[int | tuple[str, int, int, str | int]] = []
     labels: dict[str, int] = {}
 
@@ -215,6 +225,15 @@ def _build_menu_space_patch() -> tuple[bytes, dict[str, int]]:
     emit(_mips_i(0x37, 29, 31, 0))                 # ld ra, 0(sp)
     emit(_mips_r(31, 0, 0, 0x08))                  # jr ra
     emit(_mips_i(0x09, 29, 29, 0x10))              # addiu sp, sp, 0x10
+
+    # AgwsPasMain receives a list-row cursor in work+0x56. The original uses
+    # that ordinal directly as a mount-position ID, although MenuAgws stores
+    # the real row-to-position map at work+0x10. Return the mapped ID in a2.
+    label("agws_mount_position")
+    emit(_mips_i(0x20, 9, 6, 0x56))                # lb a2, 0x56(t1)
+    emit(_mips_r(6, 9, 6, 0x21))                   # addu a2, a2, t1
+    emit(_mips_r(31, 0, 0, 0x08))                  # jr ra
+    emit(_mips_i(0x20, 6, 6, 0x10))                # lb a2, 0x10(a2)
 
     # The battle-result path does not enter through WindowSPMain. Give its
     # eMessage call the same temporary memory scope.
@@ -317,14 +336,68 @@ def _build_menu_space_patch() -> tuple[bytes, dict[str, int]]:
     return code.ljust(MENU_SPACE_CAVE_SIZE, b"\0"), addresses
 
 
-def _assert_menu_space_cave_unreferenced(data: bytearray) -> None:
-    cave_end = MENU_SPACE_CAVE_VA + MENU_SPACE_CAVE_SIZE
-    cave_offset = MENU_SPACE_CAVE_VA - TEXT_VA_DELTA
+def _build_agws_bullet_mount_patch(save_x: int, load_x: int) -> bytes:
+    """Build the AGWS mount fix and the adjacent file-progress X selector."""
+    if not 0 <= save_x <= 0x7FFF or not 0 <= load_x <= 0x7FFF:
+        raise ValueError("file-progress X coordinate is outside ADDIU range")
+    words = (
+        _mips_i(0x28, 17, 2, 0x58),               # sb v0, 0x58(s1)
+        _mips_i(0x21, 17, 4, 0x64),               # lh a0, 0x64(s1)
+        _mips_j(0x03, 0x00A18550),                 # jal current A.G.W.S. data getter
+        0,
+        _mips_i(0x20, 17, 3, 0x54),               # lb v1, 0x54(s1)
+        _mips_r(2, 3, 2, 0x21),                   # addu v0, v0, v1
+        _mips_j(0x03, 0x0028BB20),                 # jal OptMntToWpnPos
+        _mips_i(0x20, 2, 4, 0x5A),                # lb a0, 0x5a(v0)
+        _mips_i(0x28, 17, 2, 0x10),               # sb v0, 0x10(s1)
+        _mips_i(0x28, 17, 0, 0x56),               # sb zero, 0x56(s1)
+        _mips_j(0x02, 0x0029A348),                 # j original state assignment
+        _mips_i(0x09, 0, 3, 0x46),                # li v1, 0x46
+        # tskFileEx uses mode 0 for Save and mode 1 for Load. Select a
+        # separately centered fixed X while preserving its original delay slot.
+        _mips_i(0x24, 4, 8, 2),                   # lbu t0, 2(a0)
+        _mips_i(0x09, 0, 3, save_x),              # li v1, save_x
+        _mips_i(0x09, 0, 9, load_x),              # li t1, load_x
+        _mips_r(9, 8, 3, 0x0B),                   # movn v1, t1, t0
+        _mips_r(31, 0, 0, 0x08),                  # jr ra
+        0,
+    )
+    code = struct.pack(f"<{len(words)}I", *words)
+    if len(code) > AGWS_BULLET_CAVE_SIZE:
+        raise AssertionError(
+            f"AGWS bullet patch is {len(code)} bytes, capacity is {AGWS_BULLET_CAVE_SIZE}"
+        )
+    return code.ljust(AGWS_BULLET_CAVE_SIZE, b"\0")
+
+
+def _file_progress_x_positions(translations: dict[int, str]) -> tuple[int, int]:
+    """Center translated progress labels around the original four-cell layout."""
+    positions = []
+    for offset, label in (
+        (FILE_PROGRESS_SAVE_TEXT_OFFSET, "Save"),
+        (FILE_PROGRESS_LOAD_TEXT_OFFSET, "Load"),
+    ):
+        text = translations.get(offset)
+        if text is None:
+            raise ValueError(f"missing {label} progress translation at 0x{offset:08x}")
+        cells = visible_cells(text)
+        extra_width = (cells - FILE_PROGRESS_ORIGINAL_CELLS) * FILE_PROGRESS_CELL_WIDTH
+        if extra_width & 1:
+            raise ValueError(f"{label} progress text cannot be centered on an integer X")
+        positions.append(FILE_PROGRESS_ORIGINAL_X - extra_width // 2)
+    return positions[0], positions[1]
+
+
+def _assert_code_cave_unreferenced(
+    data: bytearray, cave_va: int, cave_size: int, label: str
+) -> None:
+    cave_end = cave_va + cave_size
+    cave_offset = cave_va - TEXT_VA_DELTA
     text_start = 0x1000
     text_end = 0x134CB0
     branch_opcodes = {0x01, 0x04, 0x05, 0x06, 0x07, 0x14, 0x15, 0x16, 0x17}
     for offset in range(text_start, text_end, 4):
-        if cave_offset <= offset < cave_offset + MENU_SPACE_CAVE_SIZE:
+        if cave_offset <= offset < cave_offset + cave_size:
             continue
         word = struct.unpack_from("<I", data, offset)[0]
         opcode = word >> 26
@@ -337,21 +410,52 @@ def _assert_menu_space_cave_unreferenced(data: bytearray) -> None:
             if immediate & 0x8000:
                 immediate -= 0x10000
             target = pc + 4 + immediate * 4
-        if target is not None and MENU_SPACE_CAVE_VA <= target < cave_end:
+        if target is not None and cave_va <= target < cave_end:
             raise ValueError(
-                f"menu-space cave has an external code reference from VA 0x{pc:08x}"
+                f"{label} cave has an external code reference from VA 0x{pc:08x}"
             )
+
+    # Function pointers can also be formed in code as LUI plus ADDIU/ORI.
+    # Check the next four instructions, matching the compiler's address loads.
+    for offset in range(text_start, text_end, 4):
+        if cave_offset <= offset < cave_offset + cave_size:
+            continue
+        word = struct.unpack_from("<I", data, offset)[0]
+        if word >> 26 != 0x0F:
+            continue
+        base_register = (word >> 16) & 0x1F
+        high = word & 0xFFFF
+        for following in range(offset + 4, min(offset + 20, text_end), 4):
+            next_word = struct.unpack_from("<I", data, following)[0]
+            opcode = next_word >> 26
+            if opcode not in (0x09, 0x0D):
+                continue
+            if ((next_word >> 21) & 0x1F) != base_register:
+                continue
+            low = next_word & 0xFFFF
+            if opcode == 0x09 and low & 0x8000:
+                low -= 0x10000
+            target = ((high << 16) + low) & 0xFFFFFFFF
+            if cave_va <= target < cave_end:
+                pc = offset + TEXT_VA_DELTA
+                next_pc = following + TEXT_VA_DELTA
+                raise ValueError(
+                    f"{label} cave address is constructed at VAs "
+                    f"0x{pc:08x}/0x{next_pc:08x}"
+                )
 
     for start, end in ((0x134D00, 0x2D7938), (0x2D8000, 0x2EB93C)):
         for offset in range(start, end - 3, 4):
             pointer = struct.unpack_from("<I", data, offset)[0]
-            if MENU_SPACE_CAVE_VA <= pointer < cave_end:
+            if cave_va <= pointer < cave_end:
                 raise ValueError(
-                    f"menu-space cave has a loaded pointer reference at 0x{offset:08x}"
+                    f"{label} cave has a loaded pointer reference at 0x{offset:08x}"
                 )
 
 
-def _apply_scoped_menu_half_spaces(data: bytearray) -> list[str]:
+def _apply_scoped_menu_half_spaces(
+    data: bytearray, translations: dict[int, str]
+) -> list[str]:
     cave_offset = MENU_SPACE_CAVE_VA - TEXT_VA_DELTA
     actual_hash = hashlib.sha256(
         data[cave_offset : cave_offset + MENU_SPACE_CAVE_SIZE]
@@ -361,10 +465,29 @@ def _apply_scoped_menu_half_spaces(data: bytearray) -> list[str]:
             f"unexpected menu-space cave at 0x{cave_offset:08x}: "
             f"expected SHA-256 {MENU_SPACE_CAVE_SHA256}, found {actual_hash}"
         )
-    _assert_menu_space_cave_unreferenced(data)
+    _assert_code_cave_unreferenced(
+        data, MENU_SPACE_CAVE_VA, MENU_SPACE_CAVE_SIZE, "menu-space"
+    )
 
     code, addresses = _build_menu_space_patch()
     data[cave_offset : cave_offset + MENU_SPACE_CAVE_SIZE] = code
+
+    agws_cave_offset = AGWS_BULLET_CAVE_VA - TEXT_VA_DELTA
+    actual_hash = hashlib.sha256(
+        data[agws_cave_offset : agws_cave_offset + AGWS_BULLET_CAVE_SIZE]
+    ).hexdigest()
+    if actual_hash != AGWS_BULLET_CAVE_SHA256:
+        raise ValueError(
+            f"unexpected AGWS bullet cave at 0x{agws_cave_offset:08x}: "
+            f"expected SHA-256 {AGWS_BULLET_CAVE_SHA256}, found {actual_hash}"
+        )
+    _assert_code_cave_unreferenced(
+        data, AGWS_BULLET_CAVE_VA, AGWS_BULLET_CAVE_SIZE, "AGWS bullet"
+    )
+    save_x, load_x = _file_progress_x_positions(translations)
+    data[
+        agws_cave_offset : agws_cave_offset + AGWS_BULLET_CAVE_SIZE
+    ] = _build_agws_bullet_mount_patch(save_x, load_x)
 
     if MENU_SPACE_SCOPE_FLAG_VA != MENU_SPACE_SBSS_VA + MENU_SPACE_SBSS_SIZE[0]:
         raise AssertionError("menu-space scope flag is not at the original .sbss end")
@@ -408,6 +531,56 @@ def _apply_scoped_menu_half_spaces(data: bytearray) -> list[str]:
                 _mips_i(0x04, 0, 0, 9),
                 _mips_i(0x2B, 9, 3, 4),
             ),
+        ),
+        (
+            "AGWS part-path mapped mount ID",
+            0x00296050,
+            struct.pack("<I", _mips_i(0x20, 9, 6, 0x56)),
+            struct.pack("<I", _mips_j(0x03, addresses["agws_mount_position"])),
+        ),
+        (
+            "AGWS part-path label slot",
+            0x00296098,
+            struct.pack("<I", _mips_i(0x29, 6, 2, 10)),
+            struct.pack("<I", _mips_i(0x29, 6, 2, 8)),
+        ),
+        (
+            "AGWS bullet-path mapped mount ID",
+            0x002960B8,
+            struct.pack("<I", _mips_i(0x20, 9, 6, 0x56)),
+            struct.pack("<I", _mips_j(0x03, addresses["agws_mount_position"])),
+        ),
+        (
+            "AGWS bullet-path label slot",
+            0x00296108,
+            struct.pack("<I", _mips_i(0x29, 5, 8, 10)),
+            struct.pack("<I", _mips_i(0x29, 5, 8, 8)),
+        ),
+        (
+            "AGWS bullet-path label length",
+            0x0029610C,
+            struct.pack("<I", _mips_i(0x20, 6, 3, 5)),
+            struct.pack("<I", _mips_i(0x20, 6, 3, 4)),
+        ),
+        (
+            "AGWS bullet submenu mount initialization",
+            0x0029A330,
+            struct.pack(
+                "<2I",
+                _mips_i(0x09, 0, 2, -1),
+                _mips_i(0x04, 0, 0, 4),
+            ),
+            struct.pack(
+                "<2I",
+                _mips_j(0x02, AGWS_BULLET_CAVE_VA),
+                _mips_i(0x09, 0, 2, -1),
+            ),
+        ),
+        (
+            "Save/Load progress fixed-X centering",
+            FILE_PROGRESS_X_HOOK_VA,
+            struct.pack("<I", _mips_i(0x09, 0, 3, FILE_PROGRESS_ORIGINAL_X)),
+            struct.pack("<I", _mips_j(0x03, FILE_PROGRESS_X_HELPER_VA)),
         ),
         (
             "item list WindowSP initialization",
@@ -456,6 +629,12 @@ def _apply_scoped_menu_half_spaces(data: bytearray) -> list[str]:
             0x002A892C,
             struct.pack("<I", _mips_j(0x03, 0x002800F0)),
             struct.pack("<I", _mips_j(0x03, addresses["scope_entry"])),
+        ),
+        (
+            "ether point result eMessage",
+            0x002A8EA8,
+            struct.pack("<I", _mips_j(0x03, 0x00277BD8)),
+            struct.pack("<I", _mips_j(0x03, addresses["force_entry"])),
         ),
         (
             "battle-result item eMessage",
@@ -874,7 +1053,7 @@ def apply_spacing_fixes(data: bytearray, translations: dict[int, str]) -> list[s
             f"0x{offset:08x}: EVT half-width advance "
             f"{expected.hex(' ')} -> {replacement_bytes.hex(' ')}"
         )
-    changes.extend(_apply_scoped_menu_half_spaces(data))
+    changes.extend(_apply_scoped_menu_half_spaces(data, translations))
     return changes
 
 
