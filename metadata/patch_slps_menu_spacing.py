@@ -24,6 +24,26 @@ LENGTH_TABLE_PATCHES = {
     # MenuFilePas message order is Save, Load, /Slot 1, /Slot 2, /HDD.
     0x2D6070: (b"\x03\x03\x06\x06\x06", (0x2D6068, 0x2D6060, None, None, None)),
     0x2D62E8: (b"\x06\x03\x03\x04\x04", (0x2C0CE0, None, None, None, None)),
+    # AgwsPasMain positions each following breadcrumb from the visible length
+    # of the preceding label.  Index zero is the control-built A.G.W.S. title.
+    0x2C2410: (
+        b"\x05\x03\x03\x04\x04\x03\x03\x03\x03\x04\x04\x02\x07",
+        (
+            None,
+            0x2D6438,
+            0x2D6430,
+            0x2C23D8,
+            0x2C23C8,
+            0x2D6428,
+            0x2D6420,
+            0x2D6418,
+            0x2D6410,
+            0x2C23B8,
+            0x2C23A8,
+            0x2D6408,
+            0x2C2398,
+        ),
+    ),
     0x2D6750: (b"\x04\x03\x04\x07", (0x2C3540, 0x2D6748, 0x2C3530, 0x2C3520)),
     # Embedded OV02 copy. The standalone OV02 used at runtime has the same table.
     0x2EA2D8: (b"\x03\x05\x03\x03\x05", (0x2EA2D0, 0x2EA2C0, 0x2EA2B8, 0x2EA2B0, 0x2EA2A0)),
@@ -95,6 +115,32 @@ LOAD_TEXT_PHDR_FILESZ_OFFSET = 0x84
 LOAD_TEXT_PHDR_FILESZ = (0x001A2C38, 0x001A2C80)
 LOAD_TEXT_SDATA_SH_SIZE_OFFSET = 0x002FC9B4
 LOAD_TEXT_SDATA_SH_SIZE = (0x000034B8, 0x00003500)
+
+# The fourteen AGWS equipment labels occupy one contiguous 0x70-byte block.
+# Several Korean labels exceed their original eight-byte slots.  The four
+# labels without a leading slash are exact suffixes of their breadcrumb forms,
+# so they can safely share the same NUL-terminated storage.  The resulting
+# strings fit on two-byte boundaries.  These are the only runtime pointer-table
+# entries that refer to the individual labels.
+AGWS_TEXT_OFFSETS = tuple(range(0x002D6400, 0x002D6470, 8))
+AGWS_TEXT_REGION = (0x002D6400, 0x002D6470)
+AGWS_TEXT_POINTERS = {
+    0x0016983C: 0x002D6438,
+    0x00169840: 0x002D6430,
+    0x0016984C: 0x002D6428,
+    0x00169850: 0x002D6420,
+    0x00169854: 0x002D6418,
+    0x00169858: 0x002D6410,
+    0x00169864: 0x002D6408,
+    0x0016986C: 0x002D6400,
+    0x00169870: 0x002D6430,
+    0x00169898: 0x002D6468,
+    0x0016989C: 0x002D6460,
+    0x001698A0: 0x002D6458,
+    0x001698A4: 0x002D6450,
+    0x001698A8: 0x002D6448,
+    0x001698AC: 0x002D6440,
+}
 
 TEXT_VA_DELTA = 0x1FF000
 MENU_SPACE_CAVE_VA = 0x002805C0
@@ -492,6 +538,7 @@ def apply_translations(
         offset: edit
         for offset, edit in edits.items()
         if offset not in LOAD_TEXT_RELOCATION_OFFSETS
+        and offset not in AGWS_TEXT_OFFSETS
     }
     stats = euc_scan.apply_grouped_translations(
         data,
@@ -660,6 +707,113 @@ def apply_load_text_relocations(
     return changes
 
 
+def apply_agws_text_relocation(
+    data: bytearray,
+    original: bytes,
+    translations: dict[int, str],
+    encode_display,
+) -> list[str]:
+    """Pack expanded AGWS labels inside their original aggregate region."""
+    region_start, region_end = AGWS_TEXT_REGION
+    if bytes(data[region_start:region_end]) != original[region_start:region_end]:
+        raise ValueError("AGWS text region was modified before relocation")
+
+    encoded_strings: dict[int, bytes] = {}
+    destinations: dict[int, int] = {}
+    stored_offsets: list[int] = []
+    cursor = region_start
+    for source_offset in AGWS_TEXT_OFFSETS:
+        text = translations.get(source_offset)
+        if text is None:
+            raise ValueError(f"missing AGWS translation for 0x{source_offset:08x}")
+        encoded = encode_display(text)
+        if not encoded or b"\0" in encoded:
+            raise ValueError(f"invalid AGWS text at 0x{source_offset:08x}")
+        parsed = euc_scan.parse_control_aware_string(encoded + b"\0", 0)
+        if parsed is None or parsed.terminator != len(encoded):
+            raise ValueError(f"malformed AGWS text at 0x{source_offset:08x}")
+        if parsed.control_packets:
+            raise ValueError(f"unexpected control code in AGWS text 0x{source_offset:08x}")
+
+        shared_with = next(
+            (
+                stored_offset
+                for stored_offset in stored_offsets
+                if encoded_strings[stored_offset].endswith(encoded)
+            ),
+            None,
+        )
+        if shared_with is not None:
+            prefix_length = len(encoded_strings[shared_with]) - len(encoded)
+            destination = destinations[shared_with] + prefix_length
+            if destination & 1:
+                raise ValueError(
+                    f"unaligned shared AGWS text destination 0x{destination:08x}"
+                )
+            destinations[source_offset] = destination
+            encoded_strings[source_offset] = encoded
+            continue
+
+        cursor = (cursor + 1) & ~1
+        destination_end = cursor + len(encoded) + 1
+        if destination_end > region_end:
+            raise ValueError(
+                f"AGWS labels need 0x{destination_end - region_start:x} bytes; "
+                f"region capacity is 0x{region_end - region_start:x}"
+            )
+        destinations[source_offset] = cursor
+        encoded_strings[source_offset] = encoded
+        stored_offsets.append(source_offset)
+        cursor = destination_end
+
+    for pointer_offset, source_offset in AGWS_TEXT_POINTERS.items():
+        expected = source_offset + TEXT_VA_DELTA
+        replacement = destinations[source_offset] + TEXT_VA_DELTA
+        _replace_exact_bytes(
+            data,
+            pointer_offset,
+            expected.to_bytes(4, "little"),
+            replacement.to_bytes(4, "little"),
+            "AGWS text pointer",
+        )
+
+    data[region_start:region_end] = b"\0" * (region_end - region_start)
+    changes = []
+    for source_offset in stored_offsets:
+        destination = destinations[source_offset]
+        encoded = encoded_strings[source_offset]
+        data[destination:destination + len(encoded)] = encoded
+
+    for source_offset in AGWS_TEXT_OFFSETS:
+        destination = destinations[source_offset]
+        encoded = encoded_strings[source_offset]
+        shared_with = next(
+            (
+                stored_offset
+                for stored_offset in stored_offsets
+                if stored_offset != source_offset
+                and destinations[stored_offset] < destination
+                and destinations[stored_offset] + len(encoded_strings[stored_offset])
+                == destination + len(encoded)
+            ),
+            None,
+        )
+        suffix_note = (
+            f", suffix of 0x{shared_with:08x}" if shared_with is not None else ""
+        )
+        changes.append(
+            f"0x{source_offset:08x} -> 0x{destination:08x} "
+            f"({len(encoded)}B plus NUL{suffix_note})"
+        )
+
+    used = cursor - region_start
+    changes.append(
+        f"packed size 0x{used:x}/0x{region_end - region_start:x}; "
+        f"runtime pointers={len(AGWS_TEXT_POINTERS)}"
+    )
+    return changes
+
+
 def apply_spacing_fixes(data: bytearray, translations: dict[int, str]) -> list[str]:
     changes = []
     for table_offset, (expected, string_offsets) in LENGTH_TABLE_PATCHES.items():
@@ -778,6 +932,12 @@ def main() -> None:
         translations,
         lambda text: slps_strings.encode_display(text, replace_table),
     )
+    agws_text_changes = apply_agws_text_relocation(
+        data,
+        original,
+        translations,
+        lambda text: slps_strings.encode_display(text, replace_table),
+    )
     spacing_changes = apply_spacing_fixes(data, translations)
     database_changes = apply_database_search_patch(
         data,
@@ -802,6 +962,8 @@ def main() -> None:
         print(f"[OK] spacing {change}")
     for change in load_text_changes:
         print(f"[OK] Load text {change}")
+    for change in agws_text_changes:
+        print(f"[OK] AGWS text {change}")
     for change in database_changes:
         print(f"[OK] database search {change}")
     print(f"[OK] source SHA-256: {sha256(original)}")
