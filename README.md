@@ -5,7 +5,7 @@
 <h1 align="center">XS1KOR</h1>
 
 <p align="center">
-  <strong>제노사가 에피소드 I 한국어화 프로젝트 · PS2 자산 포맷 연구 · 재현 가능한 로컬라이제이션 툴체인</strong><br>
+  <strong>제노사가 에피소드 I 한국어화 작업 · PS2 데이터 분석과 빌드 도구</strong><br>
   <strong>Xenosaga Episode I Korean Localization · PS2 Asset Research · Reproducible Build Toolchain</strong>
 </p>
 
@@ -15,14 +15,14 @@
   Canonical build workspace: <code>Xenosaga1WorkSpace</code>
 </p>
 
-XS1KOR은 단순한 번역문 모음이 아니다. 게임의 대사, 메뉴, UMN 메일과 용어사전, 카드게임, 카지노, 폰트, 텍스처, 실행 파일과 오버레이, FMV, 디스크 아카이브를 **추출하고 수정한 뒤 다시 게임이 읽을 수 있는 형태로 조립하기 위해 만든 작업 환경**이다.
+XS1KOR은 제노사가 에피소드 I을 한국어로 옮기면서 만든 도구와 작업 자료를 모아 둔 저장소입니다. 대사와 메뉴, UMN, 카드게임, 카지노, 폰트, 텍스처, 실행 파일, FMV, 디스크 아카이브까지 한국어화 과정에서 다룬 영역을 한곳에서 확인할 수 있습니다.
 
-이 저장소에는 번역 결과뿐 아니라 그 결과를 만들기 위해 분석한 바이너리 구조, 포맷별 추출·재조립 도구, 원본 보존 규칙, 라운드트립 검증 자료와 실제 작업 산출물이 함께 남아 있다. 한글패치 제작 기록인 동시에, 제노사가 에피소드 I의 데이터 구조를 재현 가능한 형태로 정리한 기술 아카이브다.
+번역 파일만 모아 놓은 것은 아닙니다. 각 포맷을 풀고 다시 만드는 방법과, 수정한 데이터가 원본 구조를 깨뜨리지 않는지 확인한 과정도 함께 기록했습니다. 작업을 다시 이어 가거나 특정 포맷을 조사할 때 필요한 코드와 중간 자료도 가능한 범위에서 남겨 두었습니다.
 
-**English summary.** XS1KOR is not just a set of translated strings. It is a production workspace for extracting, editing, rebuilding, and validating the dialogue, UI, UMN database, card and casino assets, fonts, textures, executable overlays, FMV subtitles, archive sets, and final DVD-9 image of Xenosaga Episode I. The repository preserves both the finished Korean assets and the reverse-engineered tools used to produce them.
+**English summary.** XS1KOR is a technical workspace for studying, editing, rebuilding, and validating the dialogue, UI, UMN database, card and casino assets, fonts, textures, executable overlays, FMV subtitles, and archive sets of Xenosaga Episode I. It documents the tools, translation sources, format research, intermediate data, and validation work used to create a local Korean-language build from a user-supplied copy.
 
-> [!IMPORTANT]
-> This repository does not distribute a finished ISO or a one-click end-user patcher. It publishes the localization workspace and research materials. Building an ISO requires a legally owned `SLPS-29002` disc image.
+> [!NOTE]
+> XS1KOR is an independent, unofficial community localization and research project created with respect for the original work. The build instructions are intended for users working from their own `SLPS-29002` copies; the repository does not provide a game disc image.
 
 ## Contents
 
@@ -44,11 +44,11 @@ XS1KOR은 단순한 번역문 모음이 아니다. 게임의 대사, 메뉴, UMN
 - [File and workflow conventions](#file-and-workflow-conventions)
 - [Verification](#verification)
 - [Known limitations](#known-limitations)
-- [Rights and scope](#rights-and-scope)
+- [Acknowledgements](#acknowledgements)
 
 ## Project status
 
-2026-08-10 `main` 기준이다.
+Status below reflects `main` as of 2026-08-10.
 
 | Area | Status | Evidence preserved in this repository |
 |---|---|---|
@@ -58,9 +58,9 @@ XS1KOR은 단순한 번역문 모음이 아니다. 게임의 대사, 메뉴, UMN
 | Card game | Text and graphics complete | Card/deck text tools, 116-resource graphics workflow, translated images |
 | Casino | Text and graphics pipeline complete | `CASINO.res`, OV11 palette profile, Tanaka graphics workflow |
 | Korean fonts | Replacement and expansion complete | `font0.tex`, `font1.tex`, four-sheet codecs, Korean glyph sheets |
-| FMV | Subtitle, encode, mux, and PSS validation pipeline complete | Per-cutscene SRT/MUX data, overlay generator, size-guarded encoder, safe termination patcher |
-| Executables and overlays | Text and UI patch pipelines implemented | Analysis and rebuild data for `SLPS`, `OV01`, `OV02`, `OV10`, `OV11`, and `OV12` |
-| Disc archives | All three archive groups and ISO-root files rebuildable | TOC parser, sector-aware repacker, root-file injector, dual-layer ISO rebuilder |
+| FMV | Subtitle, encode, mux, and PSS validation pipeline complete | Per-cutscene SRT/MUX data, overlay generator, size-guarded encoder, safe termination rebuilder |
+| Executables and overlays | Text and UI rebuild pipelines implemented | Analysis and rebuild data for `SLPS`, `OV01`, `OV02`, `OV10`, `OV11`, and `OV12` |
+| Disc archives | All three archive groups and ISO-root files rebuildable | TOC parser, sector-aware repacker, root-file integration, dual-layer ISO rebuilder |
 
 The names `0.xenosaga0`, `1.xenosaga1`, and `2.xenosaga2` refer to the disc's `XENOSAGA.00`, `.10`, and `.20` **archive groups**. They do not refer to three different Xenosaga games. This repository targets Episode I only.
 
@@ -86,7 +86,7 @@ The tools do not rely on one generic “find a string and overwrite it” method
 | UMN | `.uml`, `header.lst`, `dbheader.lst` | Control-token preservation, text/JPEG separation, image-pointer rebuilds, TSV index editing, batch rebuild of 326 UML assets |
 | Textures | `.xtx`, `.lex`, `.bxx`, `.npr`, ARX payloads | PS2 GS PSMT4/PSMT8 swizzle codecs, CLUT/UV color recovery, indexed-PNG import, container-preserving rebuilds |
 | Fonts | `font0.tex`, `font1.tex` | Four 640×768 glyph-sheet extraction, 20×24 Korean glyph generation, reference-based TEX rebuild |
-| Executable code | `SLPS-29002`, `OV01/02/10/11/12.OVL` | EUC strings, ELF symbols and pointers, MIPS address references, UI-width tables, Korean database search patches |
+| Executable code | `SLPS-29002`, `OV01/02/10/11/12.OVL` | EUC strings, ELF symbols and pointers, MIPS address references, UI-width tables, Korean database search integration |
 | Video | SRT/VTT/ASS, M2V, PSS | Xenosaga-style ASS generation, original-subtitle masking, size-limited MPEG-2 encoding, MPEG termination and ADPCM integrity checks |
 | Disc | `XENOSAGA.00/.10/.20`, chunk files, DVD-9 ISO | Prefix-trie TOC parsing, archive extraction/repack, growth relocation, dual-layer PVD and directory-record updates |
 
@@ -104,19 +104,19 @@ flowchart LR
     E["Korean glyphs in font0/font1"] --> F["Game code point displays Hangul"]
     D --> G["XENOSAGA.00/.10/.20 rebuild"]
     F --> G
-    G --> H["SLPS-29002 DVD-9 image"]
+    G --> H["Local SLPS-29002 DVD-9 build"]
 ```
 
 1. Translators edit readable UTF-8 Korean text.
 2. Rebuild tools load the nearest `XENOSAGA_KOR-JPN.json` and its `replace-table`.
 3. Hangul is mapped to the code points assigned by the project, then encoded with Python's `euc_jis_2004` codec.
 4. Matching Korean glyphs are installed in `font0.tex` and `font1.tex`.
-5. Rebuilt archive assets are placed under `Xenosaga1WorkSpace/hataraku/out00|10|20/tree`; patched SLPS/OVL files are placed under `hataraku/root`.
-6. `main.py repack` rebuilds changed archive groups, injects the size-compatible root files, and writes a new ISO.
+5. Rebuilt archive assets are placed under `Xenosaga1WorkSpace/hataraku/out00|10|20/tree`; rebuilt SLPS/OVL files are placed under `hataraku/root`.
+6. `main.py repack` rebuilds changed archive groups, integrates the size-compatible root files, and writes a local output image.
 
 ## Canonical build workspace: Xenosaga1WorkSpace
 
-[`Xenosaga1WorkSpace`](Xenosaga1WorkSpace/) is the canonical archive and ISO build environment. Its `main.py` handles archive rebuilding, ISO-root executable replacement, and final DVD-9 image generation in one pipeline.
+[`Xenosaga1WorkSpace`](Xenosaga1WorkSpace/) is the canonical archive and ISO build environment. Its `main.py` handles archive rebuilding, ISO-root file integration, and a local DVD-9 rebuild from the user's source image in one workflow.
 
 Treat `Original/` as immutable input, `hataraku/` as the editable staging area, and `kansei/` as generated output.
 
@@ -124,19 +124,19 @@ Treat `Original/` as immutable input, `hataraku/` as the editable staging area, 
 
 ```text
 Xenosaga1WorkSpace/
-├─ main.py               complete unpack / repack entry point
+├─ main.py               primary unpack / repack entry point
 ├─ RepackISO.bat         convenience wrapper: repack, move ISO, clean reports
 ├─ Original/
 │  ├─ Xenosaga Episode I - Der Wille zur Macht.iso
-│  └─ iso/               files extracted from the original ISO
+│  └─ iso/               files prepared from the user's source image
 ├─ hataraku/
-│  ├─ root/              editable ISO-root files: SLPS_290.02, OV*.OVL, etc.
+│  ├─ root/              working ISO-root files: SLPS_290.02, OV*.OVL, etc.
 │  ├─ out00/
 │  │  ├─ manifest.json
 │  │  └─ tree/           XENOSAGA.00 working tree
 │  ├─ out10/             XENOSAGA.10 working tree
 │  └─ out20/             XENOSAGA.20 working tree
-├─ kansei/               rebuilt archive sets, reports, and timestamped ISO
+├─ kansei/               rebuilt archive sets, reports, and local output images
 └─ tsuru/
    ├─ xenoarc.py         TOC parser/builder and virtual archive reader
    ├─ repack.py          archive-set repacker
@@ -151,7 +151,7 @@ From the repository root:
 Set-Location .\Xenosaga1WorkSpace
 ```
 
-### 2. Supply the original ISO
+### 2. Provide the source image
 
 `main.py` currently expects this exact path and filename:
 
@@ -159,7 +159,7 @@ Set-Location .\Xenosaga1WorkSpace
 Original\Xenosaga Episode I - Der Wille zur Macht.iso
 ```
 
-Create `Original/` if needed, place a legally owned `SLPS-29002` image there, and use the filename above exactly. `main.py` never edits this image; completed builds are written to `kansei/`.
+Create `Original/` if needed, place your own `SLPS-29002` disc image there, and use the filename above exactly. `main.py` keeps this source unchanged and writes local builds to `kansei/`.
 
 ### 3. Unpack the ISO and all three archive groups
 
@@ -200,7 +200,7 @@ Copy only final binary outputs into the matching archive tree or root-file slot.
 | `metadata/OV11_patched.OVL` | `hataraku/root/OV11.OVL` |
 | `metadata/OV12_patched.OVL` | `hataraku/root/OV12.OVL` |
 
-`manifest.json` is the authoritative path map for archive entries. Preserve original filenames when staging `.new`, `_patched`, `_rebuilt`, or `_safe_tail` outputs. Root executables are different: rename each metadata build output to its exact ISO filename as shown above.
+Use `manifest.json` as the path map for archive entries. Preserve original filenames when staging `.new`, `_patched`, `_rebuilt`, or `_safe_tail` outputs. ISO-root outputs are handled separately: rename each metadata build output to its exact disc filename as shown above.
 
 For example, after running the metadata rebuild wrappers, copy the outputs from inside `Xenosaga1WorkSpace` with:
 
@@ -215,7 +215,7 @@ Copy-Item ..\metadata\OV12_patched.OVL .\hataraku\root\OV12.OVL -Force
 
 Only copy outputs that were successfully rebuilt and verified. `main.py` requires every root replacement to have exactly the same byte size as the corresponding ISO entry; a size mismatch is reported and skipped.
 
-### 5. Repack the archives and build the ISO
+### 5. Repack the archives and create a local build
 
 ```powershell
 python main.py repack
@@ -229,11 +229,11 @@ For each modified archive group, `main.py`:
 - preserves or rebuilds layer-2 alternate LBAs;
 - fills unused archive space with the original `MONOLITHSOFT Xenosaga Episode.1` pattern;
 - writes a `repack_report.txt` under `kansei/repack00|10|20`;
-- chooses a fast binary ISO patch if replacement sizes are unchanged;
+- uses a fast binary update on the copied image when replacement sizes are unchanged;
 - otherwise shifts following DVD files and updates layer-1/layer-2 PVD and directory records;
 - writes a timestamped ISO to `kansei/` and never edits the source ISO.
 
-After the archive pass, it also reads `hataraku/root/`, resolves each file against the ISO9660 root directory, rejects missing or size-changed entries, and merges valid root replacements into the same ISO build. No separate ISO editor or post-processing step is required.
+After the archive pass, it reads `hataraku/root/`, resolves each file against the ISO9660 root directory, checks its name and size, and integrates compatible root files into the same local build.
 
 > [!WARNING]
 > The current archive-group change detector treats a file as changed when its size differs or its first 8 KiB differs. A same-size edit located entirely after the first 8 KiB can be missed if no other detectable change exists in that group. Read the `main.py repack` log and do not proceed if an expected group reports `no modifications detected`. This detector does not gate files staged in `hataraku/root/`.
@@ -255,7 +255,7 @@ Normal builds should call `main.py`; the `tsuru` modules are documented here for
 
 | Tool | Purpose | Direct use |
 |---|---|---|
-| `main.py` | Extract the owned ISO, unpack all groups and root files, rebuild changed groups, inject root replacements, and build the final ISO | `python main.py unpack` / `python main.py repack` |
+| `main.py` | Prepare a user-supplied source image, unpack all groups and root files, rebuild changed groups, integrate root outputs, and write a local build | `python main.py unpack` / `python main.py repack` |
 | `RepackISO.bat` | Run the complete repack, move the newest ISO to Desktop, and remove archive-report directories | `RepackISO.bat` |
 | `tsuru/xenoarc.py` | Parse/build prefix-trie TOCs; expose TOC + chunks as a virtual stream | Library module imported by `main.py` and `repack.py`; no standalone CLI |
 | `tsuru/repack.py` | Rebuild one unpacked archive group against its original TOC | `python tsuru\repack.py <outNN> <Original\iso\XENOSAGA.N0> <output-dir>` |
@@ -275,8 +275,8 @@ This advanced command rebuilds the archive set only. It does not create the fina
 - Python 3.10 or newer
 - `pycdlib` for `IOP` subdirectory extraction
 - `numpy` and `Pillow` for texture, NPR/BXX, casino, and font tools
-- FMV work: `ffmpeg`, `ffprobe`, Aegisub, `ps2str`/`ps2strw`, and licensed Korean/punctuation TTF files
-- A legally owned `SLPS-29002` ISO matching the filename expected by `main.py`
+- FMV work: `ffmpeg`, `ffprobe`, Aegisub, a PS2-compatible PSS muxer that you are authorized to use, and licensed Korean/punctuation TTF files
+- Your own `SLPS-29002` disc image, using the filename expected by `main.py`
 
 ```powershell
 python -m pip install pycdlib numpy pillow
@@ -369,7 +369,7 @@ These tools preserve record boundaries, pointers, numeric fields, and padding wh
 | [`xeno1_umntxt.py`](0.xenosaga0/endou/umn/xeno1_umntxt.py) | `umntxt.bin` | Handles six 127-byte plugin records with 33-byte names and 94-byte descriptions. |
 | [`xeno1_evtitem.py`](0.xenosaga0/karakama/xeno1_evtitem.py) | `evtitem.dat` | Handles 255 item records while preserving the hiragana index and binary tail. |
 | [`card_text_tool.py`](0.xenosaga0/carddata/card_text_tool.py) | `card.dat`, `deckdata.dat` | Rebuilds card name/effect/quote pointers and validates 48 fixed deck-name fields. |
-| [`casino_text_tool.py`](0.xenosaga0/tanaka/casino_text_tool.py) | `CASINO.res` | Patches only 51 items and four bundle labels; preserves numeric tables and every non-text byte. |
+| [`casino_text_tool.py`](0.xenosaga0/tanaka/casino_text_tool.py) | `CASINO.res` | Updates only 51 items and four bundle labels; preserves numeric tables and every non-text byte. |
 | [`think_patch.py`](0.xenosaga0/yamamoto/think/think_patch.py) | `think*.bin` | Extracts fixed text slots and pads shorter translations without changing the source allocation. |
 | [`thinktool.py`](0.xenosaga0/yamamoto/thinktool.py) | `think*.bin` → scene `.a` | Builds `think_map.json`, reports all owning scene archives, and propagates a rebuilt think file. |
 
@@ -445,7 +445,7 @@ python thinktool.py info think000.bin
 python thinktool.py patch think000.bin
 ```
 
-`scan` searches every scene `.a` file for each `think*.bin` payload and records every offset. `patch` applies one rebuilt think payload to all mapped scene archives.
+`scan` searches every scene `.a` file for each `think*.bin` payload and records every offset. The `patch` subcommand integrates one rebuilt think payload into all mapped scene archives.
 
 ### 3. UMN mail and database
 
@@ -601,12 +601,12 @@ Tools and translation data: [`metadata`](metadata/)
 |---|---|
 | [`euc_scan.py`](metadata/euc_scan.py) | Scans arbitrary ELF/OVL binaries for decodable NUL segments and internal Japanese runs. Extracts `<offset>|<original/slack>|<text>` and rebuilds within verified slots. |
 | [`slps_strings.py`](metadata/slps_strings.py) | Extracts the loaded CPU range of `SLPS_290.02`, including special logical strings that contain embedded NUL operands. |
-| [`patch_slps_menu_spacing.py`](metadata/patch_slps_menu_spacing.py) | Applies translations plus menu-length tables, Load/A.G.W.S. relocations, spacing fixes, and the embedded OV02 database-search patch. |
-| [`ov01_elf_strings.py`](metadata/ov01_elf_strings.py) | Follows ELF symbols, named tables, and MIPS address-construction references. Relocates translations that exceed fixed slots and patches their references. |
-| [`patch_ov02_mail_spacing.py`](metadata/patch_ov02_mail_spacing.py) | Recalculates visible mail-label widths and installs the fourteen-category Korean database-search logic. |
+| [`patch_slps_menu_spacing.py`](metadata/patch_slps_menu_spacing.py) | Applies translations plus menu-length tables, Load/A.G.W.S. relocations, spacing adjustments, and the embedded OV02 database-search update. |
+| [`ov01_elf_strings.py`](metadata/ov01_elf_strings.py) | Follows ELF symbols, named tables, and MIPS address-construction references. Relocates translations that exceed fixed slots and updates their references. |
+| [`patch_ov02_mail_spacing.py`](metadata/patch_ov02_mail_spacing.py) | Recalculates visible mail-label widths and integrates the fourteen-category Korean database-search logic. |
 | [`ov10_elf_strings.py`](metadata/ov10_elf_strings.py) | Uses ELF symbols and an anonymous text range while preserving help-message control packets as tokens. Includes Korean card/menu spacing fixes. |
 | [`ov11_elf_strings.py`](metadata/ov11_elf_strings.py) | Distinguishes ordinary pointer strings from gallery records with 0x0C style headers; supports extract, migrate, rebuild, and verify. |
-| [`ov02_database_search.py`](metadata/ov02_database_search.py) | Shared MIPS patch module used for standalone OV02 and the copy embedded in SLPS; it is not a standalone CLI. |
+| [`ov02_database_search.py`](metadata/ov02_database_search.py) | Shared MIPS localization module used for standalone OV02 and the copy embedded in SLPS; it is not a standalone CLI. |
 
 Use the BAT entry points in `metadata` for normal rebuilds:
 
@@ -625,7 +625,7 @@ Safety properties:
 - Existing outputs are refused unless the wrapper explicitly authorizes atomic replacement of that named output.
 - Expected source bytes, OVL memory sizes, symbol ranges, and pointer targets are checked.
 - Control operands and final file sizes are validated after insertion.
-- Build logs include source/output SHA-256 values and patch summaries.
+- Build logs include source/output SHA-256 values and change summaries.
 
 ### 7. FMV subtitles and PSS
 
@@ -662,13 +662,13 @@ python fmv_subtitle_overlay.py scene.srt --video scene.m2v --out scene_KOR.mov -
 - automatic folder pairing;
 - ASS-only output or ProRes MOV rendering through ffmpeg/libass.
 
-[`FMV_Subtitle_Drop_Folder.bat`](<컷신 영상/FMV_Subtitle_Drop_Folder.bat>) provides the folder drag-and-drop workflow. It expects usable TTF files in a nearby local `SUB` folder. Fonts and `ps2str` binaries are ignored local dependencies and are not included in a public clone.
+[`FMV_Subtitle_Drop_Folder.bat`](<컷신 영상/FMV_Subtitle_Drop_Folder.bat>) provides the folder drag-and-drop workflow. It expects usable TTF files in a nearby local `SUB` folder. Fonts and other local dependencies are ignored and are not included in a public clone.
 
 #### Convert back to PS2 MPEG-2 and mux PSS
 
 Drag the edited MOV onto [`convert.bat`](<컷신 영상/convert.bat>). It encodes 512×448, 30000/1001 fps, MPEG-2 Main Profile video. The BAT derives an initial bitrate from the original M2V size and retries with a lower bitrate until the output fits.
 
-Mux the new M2V with the original ADS using `ps2strw` or `ps2str`. Manual notes are preserved in [`영상 작업 설명.txt`](<컷신 영상/영상 작업 설명.txt>) and [`pss 추출 삽입 방법 확립.txt`](<기타 자료/pss 추출 삽입 방법 확립.txt>).
+Mux the new M2V with the original ADS using a PS2-compatible PSS muxer that you are authorized to use. Manual notes are preserved in [`영상 작업 설명.txt`](<컷신 영상/영상 작업 설명.txt>) and [`pss 추출 삽입 방법 확립.txt`](<기타 자료/pss 추출 삽입 방법 확립.txt>).
 
 #### Restore safe PSS termination
 
@@ -677,7 +677,7 @@ Mux the new M2V with the original ADS using `ps2strw` or `ps2str`. Manual notes 
 python pss_safe_tail_graft.py ORIGINAL.pss TRANSLATED.pss --out TRANSLATED_safe_tail.pss
 ```
 
-Alternatively, drag the `ps2str` output onto [`PSS_Safe_Tail_Graft_Drop.bat`](<컷신 영상/PSS_Safe_Tail_Graft_Drop.bat>). The BAT searches a production-machine original root by filename; on another computer, pass `--original-root` or both files explicitly.
+Alternatively, drag the newly muxed PSS onto [`PSS_Safe_Tail_Graft_Drop.bat`](<컷신 영상/PSS_Safe_Tail_Graft_Drop.bat>). The BAT searches a production-machine original root by filename; on another computer, pass `--original-root` or both files explicitly.
 
 The current [`pss_safe_tail_graft.py`](<컷신 영상/pss_safe_tail_graft.py>) uses termination-only repair:
 
@@ -688,7 +688,7 @@ The current [`pss_safe_tail_graft.py`](<컷신 영상/pss_safe_tail_graft.py>) u
 - rejects invalid ADPCM frames, oversized output, and already damaged input by default;
 - optionally writes a complete `--json-report`.
 
-Use `마지막 프레임이 자막일 경우의 pss_safe.bat` when the final Korean subtitle frame must remain visible. The old last-sector copier under `구버전 폴더` is retained for research history and must not be applied after the current safe patch.
+Use `마지막 프레임이 자막일 경우의 pss_safe.bat` when the final Korean subtitle frame must remain visible. The old last-sector copier under `구버전 폴더` is retained for research history and should not be used after the current safe rebuild.
 
 Finally, place the safe PSS under the exact original path and filename in `Xenosaga1WorkSpace/hataraku/out10/tree` or `out20/tree`, then run `python main.py repack` from the workspace.
 
@@ -699,7 +699,7 @@ XS1KOR/
 ├─ 0.xenosaga0/          XENOSAGA.00 assets: EVT, UMN, cards, casino, system data
 ├─ 1.xenosaga1/          XENOSAGA.10 scene EVT sources and rebuilt assets
 ├─ 2.xenosaga2/          XENOSAGA.20 scene EVT sources and rebuilt assets
-├─ metadata/             SLPS/OVL analysis, translations, patchers, tests
+├─ metadata/             SLPS/OVL analysis, translations, rebuild tools, tests
 ├─ xtx 개발소/           XTX/LEX/ARX and PS2 GS texture core
 ├─ 폰트 관련/            font0/font1 extraction, Korean sheets, TEX rebuild
 ├─ 컷신 영상/            per-cutscene subtitles and FMV/PSS pipeline
@@ -722,7 +722,7 @@ The contributor-named subdirectories below `0.xenosaga0` largely retain the owne
 | `.ori`, `original.*` | Immutable reference source |
 | `_KOR` | Human-edited Korean text, image, or video |
 | `.new`, `_new` | General rebuild output written beside a source |
-| `_patched` | Executable/OVL output with text or code patches |
+| `_patched` | Executable/OVL rebuild output containing text or code changes |
 | `_rebuilt`, `graphics_rebuilt` | Rebuilt graphics or container output |
 | `_safe_tail` | PSS output after termination and ADPCM validation |
 | `*_ext`, `*_extract`, `graphics_extract` | Editable extraction directory |
@@ -786,10 +786,10 @@ Uncertain behavior is documented rather than guessed.
 - The global CLUT upload referenced by casino `sam.xtx` has not been identified. Its panels use index-preserving high-contrast grayscale; `PSMT4_031.png` is padding.
 - Some font generators and cutscene helpers contain production-machine font names or `E:\...` source paths. Update them for a new workstation.
 - `metadata/ov01_strings.py` and `컷신 영상/구버전 폴더` preserve earlier approaches. Prefer `ov01_elf_strings.py` and termination-only `pss_safe_tail_graft.py` for current work.
-- Fixed-offset and source-hash patches are specific to `SLPS-29002`.
+- Fixed-offset and source-hash changes are specific to `SLPS-29002`.
 
-## Rights and scope
+## Acknowledgements
 
-XS1KOR is an unofficial fan-localization and technical-research project. It is not affiliated with or endorsed by Bandai Namco, Monolith Soft, or Sony Interactive Entertainment. `Xenosaga` and all original game trademarks, graphics, audio, video, and other copyrighted material belong to their respective owners.
+XS1KOR is an independent, unofficial community project and is not affiliated with or endorsed by the creators, publishers, or platform holders associated with Xenosaga. `Xenosaga` and all related names, trademarks, characters, artwork, audio, video, and game content remain the property of their respective rights holders.
 
-Use a legally owned game copy. Before redistributing original game data, third-party binaries, or fonts, verify the applicable rights and licenses.
+This project grew from admiration for the original game and respect for everyone who created it: its developers, artists, writers, musicians, localization staff, and the many others whose work made Xenosaga possible. XS1KOR documents the technical work behind a Korean localization and is intended for users working from their own copies of the game.
