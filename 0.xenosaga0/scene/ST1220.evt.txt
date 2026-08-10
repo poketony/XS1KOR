@@ -325,7 +325,7 @@
 #dup(23): ………．
 #dup(12): /[waitkey(64)]/[close()]
 #dup(26): /[label(시온)]
-안녕하세요．
+안녕？
 #dup(18): /[waitkey(64)]/[clear()]
 #dup(22): /[label(루티)]
 ………！？

@@ -14,7 +14,7 @@
 #dup(1): /[waitkey(64)]/[close()]
 #dup(2): /[label()]
 정말이지<lf>
-뭐야，저 기분 나쁜 괴물은！<lf>
+뭐야，그 기분 나쁜 괴물은！<lf>
 우리한테 무슨 원한이 있는 건데．
 #dup(1): /[waitkey(64)]/[close()]
 #dup(2): /[label()]

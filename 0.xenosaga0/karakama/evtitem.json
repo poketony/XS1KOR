@@ -389,21 +389,21 @@
     "name_original": "ロボパーツ頭",
     "name_translation": "로봇의 머리",
     "desc_original": "奇妙な形のジャンクパーツ\n何かに使えそうだ",
-    "desc_translation": "기묘한 정크 파츠\n어딘가에 쓸 수 있을 것 같다"
+    "desc_translation": "기묘한 정크 파츠\n어딘가에 쓸 수 있을 듯하다"
   },
   {
     "idx": 56,
     "name_original": "ロボパーツ右腕",
     "name_translation": "로봇의 오른팔",
     "desc_original": "奇妙な形のジャンクパーツ\nギミックが詰まっているようだ",
-    "desc_translation": "기묘한 정크 파츠\n기믹이 엄청 많은 것 같다"
+    "desc_translation": "기묘한 정크 파츠\n기믹이 엄청 많은 듯하다"
   },
   {
     "idx": 57,
     "name_original": "ロボパーツ左腕",
     "name_translation": "로봇의 왼팔",
     "desc_original": "奇妙な形のジャンクパーツ\nギミックが詰まっているようだ",
-    "desc_translation": "기묘한 정크 파츠\n기믹이 엄청 많은 것 같다"
+    "desc_translation": "기묘한 정크 파츠\n기믹이 엄청 많은 듯하다"
   },
   {
     "idx": 58,
@@ -417,14 +417,14 @@
     "name_original": "ロボパーツ右足",
     "name_translation": "로봇의 오른다리",
     "desc_original": "奇妙な形のジャンクパーツ\n何かと対になっているようだ",
-    "desc_translation": "기묘한 정크 파츠\n무언가와 짝을 이루는 것 같다"
+    "desc_translation": "기묘한 정크 파츠\n무언가와 짝을 이루는 듯하다"
   },
   {
     "idx": 60,
     "name_original": "ロボパーツ左足",
     "name_translation": "로봇의 왼다리",
     "desc_original": "奇妙な形のジャンクパーツ\n何かと対になっているようだ",
-    "desc_translation": "기묘한 정크 파츠\n무언가와 짝을 이루는 것 같다"
+    "desc_translation": "기묘한 정크 파츠\n무언가와 짝을 이루는 듯하다"
   },
   {
     "idx": 61,
