@@ -23,7 +23,6 @@ main.py — Xenosaga Episode I 한글화 메인 빌드 도구.
 from __future__ import annotations
 
 import os
-import shutil
 import struct
 import sys
 from pathlib import Path
@@ -328,8 +327,9 @@ def _collect_root_replacements(layout) -> dict[str, Path]:
 def cmd_repack():
     """
     hataraku/ 의 수정된 파일들로 각 그룹을 리팩하고,
-    ISO를 리빌드하여 kansei/ 에 새 ISO를 만든다.
-    파일 크기 변경도 자동 처리 (후속 파일 shift + PVD/디렉터리 갱신).
+    원본 레이아웃을 유지한 ISO를 kansei/ 에 만든다.
+    아카이브 내부에서는 필요한 파일만 빈 섹터로 재배치할 수 있지만,
+    ISO 루트 파일의 크기·LBA와 레이어 경계는 절대 변경하지 않는다.
     """
     import json
     from isobuild import parse_iso_layout, rebuild_iso
@@ -414,30 +414,15 @@ def cmd_repack():
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     out_iso = KANSEI_DIR / f"{ISO_PATH.stem}_{ts}{ISO_PATH.suffix}"
 
-    if not size_changed:
-        # 빠른 경로: 바이너리 패치
-        print(f"\n=== binary patch (no size change) ===")
-        print(f"  copying original ISO...")
-        shutil.copy2(ISO_PATH, out_iso)
-        with open(out_iso, "r+b") as f:
-            for ent in all_files:
-                if ent.name in replacements:
-                    offset = ent.lba * SECTOR
-                    src_path = replacements[ent.name]
-                    print(f"  patch @ 0x{offset:x}: {ent.name} ({src_path.stat().st_size:,} bytes)")
-                    f.seek(offset)
-                    with open(src_path, "rb") as src:
-                        while True:
-                            buf = src.read(8 * 1024 * 1024)
-                            if not buf:
-                                break
-                            f.write(buf)
-    else:
-        # 전체 리빌드: 파일 크기 변경 시 shift + 메타데이터 갱신
-        print(f"\n=== full ISO rebuild (size changed) ===")
-        if out_iso.exists():
-            out_iso.unlink()
-        rebuild_iso(ISO_PATH, out_iso, replacements, layout)
+    if size_changed:
+        print("\n[error] repack output changed an ISO root-file size.")
+        print("        Fixed-layout ISO build cannot continue.")
+        return 1
+
+    # 동일 크기여도 isobuild의 보호 검사를 반드시 거친다. 특히 XENOSAGA.13과
+    # 레이어 2 시스템 영역의 원본 중첩 바이트가 유지되는지 여기서 확인한다.
+    print(f"\n=== fixed-layout ISO patch ===")
+    rebuild_iso(ISO_PATH, out_iso, replacements, layout)
 
     print(f"\n=== done: {out_iso} ===")
     print(f"  ISO size: {out_iso.stat().st_size:,} bytes")

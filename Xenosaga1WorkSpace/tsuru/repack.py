@@ -1,85 +1,230 @@
 """
-repack.py — Xenosaga Episode I 아카이브 리패커.
+repack.py — Xenosaga Episode I 고정 크기 아카이브 리패커.
+
+원본 아카이브의 청크 크기는 절대 바꾸지 않는다. 수정 파일이 자신의 원래
+섹터 수를 넘으면, 원본 위치 주변을 막는 작은 파일을 작업본에서 줄어든 빈
+섹터로 옮겨 공간을 만든다. 모든 이동은 TOC에 기록되며 최종 배치가 원본
+컨테이너 안에 들어가지 않으면 빌드를 중단한다.
 
 사용법
 ------
     python repack.py <unpack 출력 디렉터리> <원본 TOC> <출력 디렉터리>
-
-    python repack.py ./out10 ../xenosaga/XENOSAGA.10 ./rebuilt10
-
-전략
-----
-원본 DVD 레이아웃은 단순한 연속 팩이 아니라 파일들이 물리적으로 인터리브되어 있다
-(스트리밍/시크 최적화). 그래서 "변하지 않은 파일"은 원본 LBA에 그대로 두고,
-"크기가 커진 파일"만 데이터 영역 뒤쪽으로 재배치한다. 이 방식으로
-
-  - 수정이 전혀 없을 때: 모든 파일이 원본 LBA 그대로 → 게임이 읽는 바이트 범위가 동일
-  - 일부 파일만 수정되고 작아졌을 때: 원본 자리에 그대로 쓴다 (뒤 공간은 필러로 채움)
-  - 커진 파일: 원본 자리 못 쓰고, 기존 max_lba 뒤에 새 LBA 할당해서 배치
-  - TOC는 새 LBA 를 반영해 다시 인코딩되어 파일 이름 1개당 1엔트리로 저장
-
-출력
-----
-    <out>/XENOSAGA.10        새 TOC (N 섹터, byte 0 = N)
-    <out>/XENOSAGA.11..1N    새 청크들, 원본과 같은 개수/크기 목표
-    <out>/repack_report.txt  요약
-
-출력 청크 크기는 원본 크기를 기본값으로 쓰되, 총 데이터가 커지면 마지막 청크만 부풀린다.
 """
 
 from __future__ import annotations
 
 import json
+import shutil
 import sys
+from contextlib import ExitStack
+from dataclasses import dataclass
 from pathlib import Path
 
-from xenoarc import (
-    SECTOR,
-    BuildEntry,
-    align_up,
-    build_toc_stream,
-)
+from xenoarc import SECTOR, BuildEntry, build_toc_stream
 
 
-FILLER = b"MONOLITHSOFT Xenosaga Episode.1\x00"  # 32 bytes, 원본 패딩 패턴
+class RepackLayoutError(ValueError):
+    """수정 파일을 원본 아카이브 크기 안에 안전하게 배치할 수 없음."""
 
 
-def _fill_bytes(n: int) -> bytes:
-    if n <= 0:
-        return b""
-    # FILLER 를 타일링
-    q, r = divmod(n, len(FILLER))
-    return FILLER * q + FILLER[:r]
+@dataclass
+class _Placement:
+    index: int
+    path: str
+    original_lba: int
+    original_sectors: int
+    required_sectors: int
+    lba: int
+
+    @property
+    def end(self) -> int:
+        return self.lba + self.required_sectors
 
 
-def _pad_toc(toc_bytes: bytes, target_size: int) -> bytes:
-    assert len(toc_bytes) <= target_size
-    if len(toc_bytes) == target_size:
-        return toc_bytes
-    return toc_bytes + _fill_bytes(target_size - len(toc_bytes))
+def _sectors(size: int) -> int:
+    return (size + SECTOR - 1) // SECTOR
 
 
 def _chunk_info(orig_toc: Path) -> tuple[int, list[Path], list[int]]:
-    """(orig_toc_size, chunk paths, chunk sizes) 수집."""
+    """(원본 TOC 크기, 청크 경로, 청크 크기) 수집."""
     group_digit = orig_toc.suffix[1]
     chunks: list[Path] = []
     sizes: list[int] = []
     for sub in range(1, 10):
-        p = orig_toc.with_suffix(f".{group_digit}{sub}")
-        if p.exists():
-            chunks.append(p)
-            sizes.append(p.stat().st_size)
-        else:
+        path = orig_toc.with_suffix(f".{group_digit}{sub}")
+        if not path.exists():
             break
+        chunks.append(path)
+        sizes.append(path.stat().st_size)
     if not chunks:
         raise FileNotFoundError(f"No chunk siblings next to {orig_toc}")
     return orig_toc.stat().st_size, chunks, sizes
 
 
+def _overlaps(start: int, end: int, item: _Placement) -> bool:
+    return start < item.end and item.lba < end
+
+
+def _free_gaps(
+    placements: list[_Placement],
+    active: set[int],
+    data_start: int,
+    total_sectors: int,
+) -> list[tuple[int, int]]:
+    intervals = sorted(
+        (item.lba, item.end)
+        for item in placements
+        if item.index in active and item.required_sectors
+    )
+    gaps: list[tuple[int, int]] = []
+    cursor = data_start
+    for start, end in intervals:
+        if start > cursor:
+            gaps.append((cursor, start))
+        cursor = max(cursor, end)
+    if cursor < total_sectors:
+        gaps.append((cursor, total_sectors))
+    return gaps
+
+
+def _plan_fixed_layout(
+    entries_meta: list[dict],
+    source_sizes: list[int],
+    data_start: int,
+    total_sectors: int,
+) -> list[_Placement]:
+    """원본 컨테이너 안에서 겹치지 않는 섹터 배치를 계산한다.
+
+    우선 모든 파일을 원래 LBA에 둔다. 커진 파일은 원래 시작점을 유지한
+    전방 확장과 원래 끝점을 유지한 후방 확장을 비교하고, 옮겨야 하는
+    주변 파일의 총 섹터 수가 작은 쪽을 택한다. 밀려난 파일은 작업본의
+    축소 파일이 만든 빈 구간에 best-fit으로 넣는다.
+    """
+    if len(entries_meta) != len(source_sizes):
+        raise ValueError("entry/source size count mismatch")
+
+    placements = [
+        _Placement(
+            index=index,
+            path=meta["path"],
+            original_lba=meta["lba"],
+            original_sectors=_sectors(meta["size"]),
+            required_sectors=_sectors(source_sizes[index]),
+            lba=meta["lba"],
+        )
+        for index, meta in enumerate(entries_meta)
+    ]
+    active = {item.index for item in placements}
+    relocated: set[int] = set()
+    grown = {
+        item.index
+        for item in placements
+        if item.required_sectors > item.original_sectors
+    }
+
+    for index in sorted(grown, key=lambda i: placements[i].original_lba):
+        item = placements[index]
+        starts = [item.original_lba]
+        end_aligned = item.original_lba + item.original_sectors - item.required_sectors
+        if end_aligned != item.original_lba:
+            starts.append(end_aligned)
+
+        candidates: list[tuple[tuple[int, int, int, int], int, list[int]]] = []
+        for preference, start in enumerate(starts):
+            end = start + item.required_sectors
+            if start < data_start or end > total_sectors:
+                continue
+            blockers = [
+                other.index
+                for other in placements
+                if other.index in active
+                and other.index != index
+                and other.required_sectors
+                and _overlaps(start, end, other)
+            ]
+            # 커진 파일끼리 서로 밀어내는 배치는 불안정하므로 허용하지 않는다.
+            if any(blocker in grown for blocker in blockers):
+                continue
+            score = (
+                sum(placements[blocker].required_sectors for blocker in blockers),
+                len(blockers),
+                abs(start - item.original_lba),
+                preference,
+            )
+            candidates.append((score, start, blockers))
+
+        if not candidates:
+            raise RepackLayoutError(
+                f"{item.path}: cannot expand from {item.original_sectors} to "
+                f"{item.required_sectors} sectors inside the original layout"
+            )
+
+        _, chosen_start, blockers = min(candidates, key=lambda candidate: candidate[0])
+        item.lba = chosen_start
+        for blocker in blockers:
+            active.remove(blocker)
+            relocated.add(blocker)
+
+    # 고정된 항목이 서로 겹치면 위의 국소 확장만으로 해결할 수 없는 배치다.
+    fixed = sorted(
+        (item for item in placements if item.index in active and item.required_sectors),
+        key=lambda item: item.lba,
+    )
+    for previous, current in zip(fixed, fixed[1:]):
+        if previous.end > current.lba:
+            raise RepackLayoutError(
+                f"fixed layout overlap: {previous.path} -> {current.path}"
+            )
+
+    # 큰 파일부터 빈 구간에 넣어 작은 조각 때문에 배치가 실패하지 않게 한다.
+    for index in sorted(
+        relocated,
+        key=lambda i: (-placements[i].required_sectors, placements[i].original_lba),
+    ):
+        item = placements[index]
+        gaps = _free_gaps(placements, active, data_start, total_sectors)
+        choices: list[tuple[tuple[int, int, int], int]] = []
+        for gap_start, gap_end in gaps:
+            gap_size = gap_end - gap_start
+            if gap_size < item.required_sectors:
+                continue
+            near_start = min(
+                max(item.original_lba, gap_start),
+                gap_end - item.required_sectors,
+            )
+            score = (
+                gap_size - item.required_sectors,
+                abs(near_start - item.original_lba),
+                near_start,
+            )
+            choices.append((score, near_start))
+        if not choices:
+            raise RepackLayoutError(
+                f"{item.path}: no {item.required_sectors}-sector free range remains "
+                "inside the original archive"
+            )
+        _, item.lba = min(choices, key=lambda choice: choice[0])
+        active.add(index)
+
+    ordered = sorted(
+        (item for item in placements if item.required_sectors),
+        key=lambda item: item.lba,
+    )
+    for item in ordered:
+        if item.lba < data_start or item.end > total_sectors:
+            raise RepackLayoutError(f"{item.path}: planned range is outside the archive")
+    for previous, current in zip(ordered, ordered[1:]):
+        if previous.end > current.lba:
+            raise RepackLayoutError(
+                f"planned overlap: {previous.path} -> {current.path}"
+            )
+    return placements
+
+
 def repack(unpack_dir: Path, orig_toc: Path, out_dir: Path) -> None:
     manifest_path = unpack_dir / "manifest.json"
-    with open(manifest_path, "r", encoding="utf-8") as f:
-        manifest = json.load(f)
+    with manifest_path.open("r", encoding="utf-8") as stream:
+        manifest = json.load(stream)
 
     tree_dir = unpack_dir / "tree"
     if not tree_dir.is_dir():
@@ -87,232 +232,163 @@ def repack(unpack_dir: Path, orig_toc: Path, out_dir: Path) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     orig_toc_size, orig_chunks, orig_chunk_sizes = _chunk_info(orig_toc)
+    if orig_toc_size % SECTOR or any(size % SECTOR for size in orig_chunk_sizes):
+        raise RepackLayoutError("original TOC/chunk size is not sector aligned")
     orig_n = orig_toc_size // SECTOR
-
-    # 원본 가상 파일 총 크기 = orig_toc_size + sum(chunk sizes)
     orig_virtual = orig_toc_size + sum(orig_chunk_sizes)
+    total_sectors = orig_virtual // SECTOR
 
-    # 엔트리 순서 (원본 TOC 순서) 복원
-    entries_meta = sorted(manifest["entries"], key=lambda e: e["order"])
+    entries_meta = sorted(manifest["entries"], key=lambda entry: entry["order"])
+    sources = [tree_dir / entry["path"] for entry in entries_meta]
+    for source in sources:
+        if not source.is_file():
+            raise FileNotFoundError(f"Missing source file: {source}")
+    source_sizes = [source.stat().st_size for source in sources]
 
-    # 원본 데이터 영역에서 "사용 중인 sector 범위" 집합을 만든다.
-    # reservation = 리스트(정렬된 non-overlapping [start_sector, end_sector_exclusive))
-    # 초기: 파일별로 원본 LBA..LBA+ceil(size/SECTOR)
-    def _build_reservations(items):
-        ranges = []
-        for it in items:
-            s = it["lba"]
-            e = s + (it["size"] + SECTOR - 1) // SECTOR
-            ranges.append((s, e))
-        ranges.sort()
-        # 병합
-        merged = []
-        for s, e in ranges:
-            if merged and s <= merged[-1][1]:
-                merged[-1] = (merged[-1][0], max(merged[-1][1], e))
-            else:
-                merged.append((s, e))
-        return merged
+    placements = _plan_fixed_layout(entries_meta, source_sizes, orig_n, total_sectors)
+    new_lbas = [item.lba for item in placements]
+    moved = [item for item in placements if item.lba != item.original_lba]
+    grown = [
+        item for item in placements
+        if item.required_sectors > item.original_sectors
+    ]
 
-    reservations = _build_reservations(entries_meta)
-    max_used_sector = max(e["lba"] + (e["size"] + SECTOR - 1) // SECTOR for e in entries_meta)
-    print(f"[plan] orig max used sector = {max_used_sector}")
-
-    # 파일별 새 LBA 결정
-    build_entries: list[BuildEntry] = []
-    new_lbas: list[int] = []
-    grown_files: list[tuple[str, int, int]] = []  # (path, old_size, new_size)
-
-    # "커진 파일"은 데이터 영역 뒤쪽에 append. append 커서는 max_used_sector 뒤부터.
-    append_cursor = max_used_sector
-
-    # 원래 슬롯에 들어맞지 못한 파일을 표시
-    kept_count = 0
-    moved_count = 0
-
-    for m in entries_meta:
-        rel = m["path"]
-        src = tree_dir / rel
-        if not src.is_file():
-            raise FileNotFoundError(f"Missing source file: {src}")
-        new_size = src.stat().st_size
-        orig_size = m["size"]
-        orig_lba = m["lba"]
-        # 원 슬롯의 용량 (sector 단위)
-        orig_slot = (orig_size + SECTOR - 1) // SECTOR
-        new_need = (new_size + SECTOR - 1) // SECTOR
-
-        if new_need <= orig_slot:
-            # 원 자리 그대로
-            lba = orig_lba
-            kept_count += 1
-        else:
-            # 뒤로 재배치
-            lba = append_cursor
-            append_cursor += new_need
-            moved_count += 1
-            grown_files.append((rel, orig_size, new_size))
-
-        be = BuildEntry(
-            path=rel,
-            source=src,
-            layer2=bool(m["layer2"]),
-            alt_lba=None,
+    print(f"[plan] fixed archive size: {orig_virtual:,} bytes ({total_sectors} sectors)")
+    print(f"[plan] original LBA kept: {len(placements) - len(moved)}, moved: {len(moved)}")
+    for item in grown:
+        print(
+            f"  [grow] {item.path}: {item.original_sectors} -> "
+            f"{item.required_sectors} sectors, LBA {item.original_lba} -> {item.lba}"
         )
-        build_entries.append(be)
-        new_lbas.append(lba)
+    for item in moved:
+        if item not in grown:
+            print(f"  [move] {item.path}: LBA {item.original_lba} -> {item.lba}")
 
-    print(f"[plan] kept in place: {kept_count}, relocated: {moved_count}")
-    if grown_files[:5]:
-        print(f"[plan] first relocated files:")
-        for p, o, n in grown_files[:5]:
-            print(f"   {p}: {o} -> {n} bytes")
-    final_end_sector = append_cursor  # 데이터 영역 끝 (섹터)
-    print(f"[plan] final end sector = {final_end_sector}  ({final_end_sector * SECTOR} bytes)")
+    build_entries: list[BuildEntry] = []
+    for source, meta, item in zip(sources, entries_meta, placements):
+        alt_lba = meta.get("alt_lba")
+        if bool(meta["layer2"]) and item.lba != item.original_lba:
+            alt_lba = item.lba
+        build_entries.append(
+            BuildEntry(
+                path=meta["path"],
+                source=source,
+                layer2=bool(meta["layer2"]),
+                alt_lba=alt_lba,
+            )
+        )
 
-    # layer2 alt_lba 복원:
-    #   - 원 자리 그대로인 파일: 원본 alt_lba 값을 그대로 사용
-    #   - 재배치된 파일: 새 lba 와 동일 (안전한 fallback)
-    for be, lba, m in zip(build_entries, new_lbas, entries_meta):
-        if be.layer2:
-            if lba == m["lba"] and m.get("alt_lba") is not None:
-                be.alt_lba = m["alt_lba"]
-            else:
-                be.alt_lba = lba
-
-    # 1차: 더미 LBA로 길이 측정
-    stub = build_toc_stream(build_entries, [0] * len(build_entries))
-    toc_byte_len = len(stub)
-    n_new = (toc_byte_len + SECTOR - 1) // SECTOR
-    print(f"[toc] byte length = {toc_byte_len} → N = {n_new} (orig N = {orig_n})")
-
-    if n_new != orig_n:
-        # 파일 경로/개수가 변했을 때만 발생
-        print(f"[warn] TOC sector count changed ({orig_n} -> {n_new})")
-        # LBA 들을 shift. 모든 파일 LBA 는 n_new 이상이어야 하는데, 원본 보존 LBA 는 orig_n 기준.
-        # 보수적으로: shift = n_new - orig_n
-        shift = n_new - orig_n
-        if shift > 0:
-            new_lbas = [lba + shift for lba in new_lbas]
-            final_end_sector += shift
-
-    # 2차: 실제 LBA 로 재빌드
     real = build_toc_stream(build_entries, new_lbas)
-    assert len(real) == toc_byte_len
-    real = bytes([n_new]) + real[1:]
-    # TOC 크기가 원본과 같다면 패딩 영역을 원본 그대로 복사해서 바이트-동일성 유지
+    n_new = _sectors(len(real))
+    if n_new != orig_n:
+        raise RepackLayoutError(
+            f"TOC sector count changed: {orig_n} -> {n_new}; fixed layout aborted"
+        )
+    real = bytes([orig_n]) + real[1:]
     orig_toc_bytes = orig_toc.read_bytes()
-    target_size = n_new * SECTOR
-    if target_size == len(orig_toc_bytes) and len(real) <= target_size:
-        toc_padded = real + orig_toc_bytes[len(real):]
-    else:
-        toc_padded = _pad_toc(real, target_size)
+    if len(real) > len(orig_toc_bytes):
+        raise RepackLayoutError("rebuilt TOC exceeds the original TOC allocation")
 
-    # TOC 쓰기
     out_toc = out_dir / orig_toc.name
-    out_toc.write_bytes(toc_padded)
-    print(f"[write] {out_toc.name} ({len(toc_padded)} bytes)")
+    shutil.copy2(orig_toc, out_toc)
+    with out_toc.open("r+b") as stream:
+        stream.write(real)
 
-    # 데이터 영역 총 바이트 = final_end_sector * SECTOR - n_new * SECTOR
-    data_total = (final_end_sector - n_new) * SECTOR
-    print(f"[write] data region = {data_total} bytes")
+    out_chunk_paths = [out_dir / path.name for path in orig_chunks]
+    for source, destination in zip(orig_chunks, out_chunk_paths):
+        shutil.copy2(source, destination)
 
-    # 청크 쓰기: 초기에는 원본 청크 크기를 유지, 부족하면 마지막 청크가 흡수
-    # 청크 용량 배열
-    chunk_count = len(orig_chunks)
-    chunk_capacities = list(orig_chunk_sizes)
+    chunk_starts: list[int] = []
+    cursor = 0
+    for size in orig_chunk_sizes:
+        chunk_starts.append(cursor)
+        cursor += size
 
-    # 필요한 총 용량
-    needed = data_total
-    # 원본 총 데이터 용량 (첫 TOC 넘어선 영역 포함)
-    orig_budget = sum(orig_chunk_sizes) + (orig_toc_size - n_new * SECTOR)
-    if needed > orig_budget:
-        # 마지막 청크 확장
-        chunk_capacities[-1] += needed - orig_budget
-        print(f"[grow] last chunk +{needed - orig_budget} bytes")
-    elif needed < orig_budget:
-        # 여유분은 마지막 청크에서 줄임 (원본과 같은 크기 유지를 기본으로)
-        # 사실 여기선 그냥 원본 크기를 유지해도 되는데, 용량이 남으면 filler 로 패딩된다.
-        pass
+    with ExitStack() as stack:
+        outputs = [stack.enter_context(path.open("r+b")) for path in out_chunk_paths]
+        for source_path, item in zip(sources, placements):
+            data_offset = item.lba * SECTOR - orig_toc_size
+            remaining = source_path.stat().st_size
+            position = data_offset
+            with source_path.open("rb") as source:
+                while remaining:
+                    chunk_index = max(
+                        index
+                        for index, start in enumerate(chunk_starts)
+                        if position >= start
+                    )
+                    local = position - chunk_starts[chunk_index]
+                    room = orig_chunk_sizes[chunk_index] - local
+                    take = min(4 * 1024 * 1024, remaining, room)
+                    if take <= 0:
+                        raise RepackLayoutError(f"write past final chunk: {item.path}")
+                    data = source.read(take)
+                    if len(data) != take:
+                        raise EOFError(f"short source read: {source_path}")
+                    outputs[chunk_index].seek(local)
+                    outputs[chunk_index].write(data)
+                    position += take
+                    remaining -= take
+        for output in outputs:
+            output.flush()
 
-    out_chunk_paths = [out_dir / p.name for p in orig_chunks]
+    # 크기와 실제 기록 내용을 모두 확인한다.
+    if out_toc.stat().st_size != orig_toc_size:
+        raise RepackLayoutError("output TOC size changed")
+    for output, expected in zip(out_chunk_paths, orig_chunk_sizes):
+        if output.stat().st_size != expected:
+            raise RepackLayoutError(f"output chunk size changed: {output.name}")
 
-    # 출력 청크 파일들: 미리 전체 크기로 생성 후 seek-write (sparse/filler로 초기화)
-    # 간단히: 각 청크를 한번 열고 FILLER 로 채운 뒤 파일 쓰기를 통해 덮어씌움
-    for cp, cap in zip(out_chunk_paths, chunk_capacities):
-        with open(cp, "wb") as f:
-            # FILLER 로 완전히 초기화
-            remaining = cap
-            block = _fill_bytes(min(remaining, 4 * 1024 * 1024))
-            while remaining > 0:
-                take = min(remaining, len(block))
-                f.write(block[:take])
-                remaining -= take
-    print(f"[init] initialized {chunk_count} chunks with filler pattern")
+    with ExitStack() as stack:
+        outputs = [stack.enter_context(path.open("rb")) for path in out_chunk_paths]
+        for source_path, item in zip(sources, placements):
+            position = item.lba * SECTOR - orig_toc_size
+            remaining = source_path.stat().st_size
+            with source_path.open("rb") as source:
+                while remaining:
+                    chunk_index = max(
+                        index
+                        for index, start in enumerate(chunk_starts)
+                        if position >= start
+                    )
+                    local = position - chunk_starts[chunk_index]
+                    take = min(
+                        4 * 1024 * 1024,
+                        remaining,
+                        orig_chunk_sizes[chunk_index] - local,
+                    )
+                    expected = source.read(take)
+                    outputs[chunk_index].seek(local)
+                    actual = outputs[chunk_index].read(take)
+                    if actual != expected:
+                        raise RepackLayoutError(f"read-back mismatch: {item.path}")
+                    position += take
+                    remaining -= take
 
-    # 각 청크의 시작 byte (데이터 영역 기준)
-    chunk_offsets = []
-    acc = 0
-    for cap in chunk_capacities:
-        chunk_offsets.append(acc)
-        acc += cap
-    # 마지막 경계
-    chunk_offsets.append(acc)
-
-    def _write_at_data_offset(off: int, data: bytes):
-        """데이터 영역 오프셋 off 에 data 를 쓴다. 청크 경계를 교차할 수 있다."""
-        remaining = data
-        pos = off
-        while remaining:
-            # 어느 청크인지
-            ci = 0
-            while ci < chunk_count and pos >= chunk_offsets[ci + 1]:
-                ci += 1
-            if ci >= chunk_count:
-                raise RuntimeError(f"write past last chunk @ {pos}")
-            local = pos - chunk_offsets[ci]
-            space = chunk_capacities[ci] - local
-            take = min(len(remaining), space)
-            with open(out_chunk_paths[ci], "r+b") as f:
-                f.seek(local)
-                f.write(remaining[:take])
-            remaining = remaining[take:]
-            pos += take
-
-    # 이제 파일별로 데이터 영역에 쓴다. lba 는 가상 파일 기준 (TOC 포함).
-    # 데이터 영역 오프셋 = (lba - n_new) * SECTOR
-    for be, lba in zip(build_entries, new_lbas):
-        data_off = (lba - n_new) * SECTOR
-        size = be.source.stat().st_size
-        # 스트리밍 복사
-        with open(be.source, "rb") as src:
-            remaining_bytes = size
-            cur = data_off
-            while remaining_bytes > 0:
-                buf = src.read(4 * 1024 * 1024)
-                if not buf:
-                    break
-                _write_at_data_offset(cur, buf)
-                cur += len(buf)
-                remaining_bytes -= len(buf)
-
-    # 리포트
     report_path = out_dir / "repack_report.txt"
-    with open(report_path, "w", encoding="utf-8") as f:
-        f.write(f"Source: {unpack_dir}\n")
-        f.write(f"Reference TOC: {orig_toc}\n")
-        f.write(f"Entries: {len(build_entries)}\n")
-        f.write(f"Original N sectors: {orig_n}  New N sectors: {n_new}\n")
-        f.write(f"Kept in place: {kept_count}\n")
-        f.write(f"Relocated (grew): {moved_count}\n")
-        f.write(f"Original chunk sizes: {orig_chunk_sizes}\n")
-        f.write(f"New chunk sizes    : {chunk_capacities}\n")
-        if grown_files:
-            f.write("\nGrown files (relocated):\n")
-            for p, o, n in grown_files:
-                f.write(f"  {p}: {o} -> {n} (+{n - o})\n")
+    with report_path.open("w", encoding="utf-8") as stream:
+        stream.write(f"Source: {unpack_dir}\n")
+        stream.write(f"Reference TOC: {orig_toc}\n")
+        stream.write(f"Entries: {len(placements)}\n")
+        stream.write(f"Fixed virtual size: {orig_virtual}\n")
+        stream.write(f"Original TOC sectors: {orig_n}\n")
+        stream.write(f"Moved entries: {len(moved)}\n")
+        stream.write(f"Original chunk sizes: {orig_chunk_sizes}\n")
+        stream.write(f"New chunk sizes: {orig_chunk_sizes}\n")
+        if grown:
+            stream.write("\nExpanded entries:\n")
+            for item in grown:
+                stream.write(
+                    f"  {item.path}: {item.original_sectors} -> "
+                    f"{item.required_sectors} sectors, "
+                    f"LBA {item.original_lba} -> {item.lba}\n"
+                )
+        if moved:
+            stream.write("\nMoved entries:\n")
+            for item in moved:
+                stream.write(f"  {item.path}: {item.original_lba} -> {item.lba}\n")
 
-    print(f"[done] {report_path.name}")
+    print(f"[done] {report_path}")
 
 
 def main(argv):

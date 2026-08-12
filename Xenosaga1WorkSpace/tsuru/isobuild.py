@@ -1,9 +1,8 @@
-"""
-isobuild.py — PS2 DVD-9 ISO 스트리밍 리빌더.
+"""isobuild.py — Xenosaga Episode I 원본 레이아웃 고정 ISO 패처.
 
-원본 ISO의 레이아웃을 읽고, 지정된 파일을 교체(크기 변경 가능)하여
-새 ISO를 생성한다. 파일이 커지면 후속 파일 전체를 shift하고
-PVD/디렉터리 레코드를 갱신한다.
+이 모듈은 ISO를 재배열하지 않는다. 원본 이미지를 바이트 단위로 복사한 뒤,
+원본과 크기가 같은 루트 파일만 원래 extent에 덮어쓴다. LBA, ISO9660 메타
+데이터, DVD-9 레이어 경계, 전체 이미지 크기는 원본 그대로 유지된다.
 """
 
 from __future__ import annotations
@@ -15,366 +14,352 @@ from pathlib import Path
 
 SECTOR = 0x800
 
-# ---------------------------------------------------------------------------
-# ISO 레이아웃 파싱
-# ---------------------------------------------------------------------------
 
-@dataclass
+class IsoLayoutError(ValueError):
+    """원본 레이아웃을 보존할 수 없는 ISO 또는 교체 파일."""
+
+
+@dataclass(frozen=True)
 class IsoFileEntry:
-    name: str           # "XENOSAGA.00;1"
-    lba: int            # 원본 absolute LBA
-    size: int           # 원본 바이트 크기
-    layer: int          # 1 or 2
-    lba_rel: int        # layer 내부 상대 LBA (layer 2에서 중요)
-    dir_record_abs: int # 디렉터리 레코드의 ISO 내 절대 바이트 오프셋 (패치용)
+    name: str
+    lba: int
+    size: int
+    layer: int
+    lba_rel: int
+    dir_record_abs: int
+
+    @property
+    def end_byte(self) -> int:
+        return self.lba * SECTOR + self.size
 
 
-@dataclass
+@dataclass(frozen=True)
 class IsoLayout:
-    layer1_files: list[IsoFileEntry]   # LBA 순
-    layer2_files: list[IsoFileEntry]   # LBA 순
-    layer2_base: int | None            # layer 2 시작 섹터 (없으면 None)
-    layer1_pvd_sector: int             # 항상 16
-    layer2_pvd_sector: int | None      # layer2_base + 16
-    layer1_root_dir_abs: int           # root directory 절대 바이트 오프셋
+    layer1_files: list[IsoFileEntry]
+    layer2_files: list[IsoFileEntry]
+    layer2_base: int | None
+    layer1_pvd_sector: int
+    layer2_pvd_sector: int | None
+    layer1_root_dir_abs: int
     layer1_root_dir_size: int
     layer2_root_dir_abs: int | None
     layer2_root_dir_size: int | None
     iso_size: int
 
+    @property
+    def files(self) -> list[IsoFileEntry]:
+        return self.layer1_files + self.layer2_files
+
+
+def _both_u16(data: bytes, offset: int, label: str) -> int:
+    little = struct.unpack_from("<H", data, offset)[0]
+    big = struct.unpack_from(">H", data, offset + 2)[0]
+    if little != big:
+        raise IsoLayoutError(f"{label}: little/big-endian values differ")
+    return little
+
+
+def _both_u32(data: bytes, offset: int, label: str) -> int:
+    little = struct.unpack_from("<I", data, offset)[0]
+    big = struct.unpack_from(">I", data, offset + 4)[0]
+    if little != big:
+        raise IsoLayoutError(f"{label}: little/big-endian values differ")
+    return little
+
+
+def _read_pvd(stream, sector: int) -> bytes:
+    stream.seek(sector * SECTOR)
+    pvd = stream.read(SECTOR)
+    if len(pvd) != SECTOR:
+        raise IsoLayoutError(f"PVD sector {sector}: truncated")
+    if pvd[0] != 1 or pvd[1:6] != b"CD001" or pvd[6] != 1:
+        raise IsoLayoutError(f"PVD sector {sector}: invalid ISO9660 descriptor")
+    if _both_u16(pvd, 128, f"PVD sector {sector} block size") != SECTOR:
+        raise IsoLayoutError(f"PVD sector {sector}: logical block size is not {SECTOR}")
+    _both_u32(pvd, 80, f"PVD sector {sector} volume size")
+    return pvd
+
+
+def _is_pvd_at(stream, sector: int, total_sectors: int) -> bool:
+    if sector < 16 or sector >= total_sectors:
+        return False
+    stream.seek(sector * SECTOR)
+    return stream.read(7) == b"\x01CD001\x01"
+
+
+def _find_layer2_base(stream, iso_size: int, layer1_pvd: bytes) -> int | None:
+    total_sectors = iso_size // SECTOR
+
+    # 이 디스크의 L0 PVD volume-space 값은 두 번째 PVD의 절대 섹터와
+    # 일치한다. 우선 이 규격 정보를 사용하고, 변형 덤프만 중앙 탐색한다.
+    layer1_volume_sectors = _both_u32(layer1_pvd, 80, "layer 1 volume size")
+    candidate = layer1_volume_sectors - 16
+    if candidate > 0 and _is_pvd_at(stream, candidate + 16, total_sectors):
+        return candidate
+
+    # base=0이면 L0의 sector 16 PVD를 L1으로 오인하므로 제외한다.
+    start = max(1, total_sectors // 2 - 100)
+    end = min(total_sectors // 2 + 1000, total_sectors - 16)
+    for base in range(start, end):
+        if _is_pvd_at(stream, base + 16, total_sectors):
+            return base
+    return None
+
+
+def _parse_layer(
+    stream,
+    pvd_sector: int,
+    lba_offset: int,
+    layer: int,
+    iso_size: int,
+) -> tuple[list[IsoFileEntry], int, int]:
+    pvd = _read_pvd(stream, pvd_sector)
+    root_lba_rel = _both_u32(pvd, 158, f"layer {layer} root LBA")
+    root_size = _both_u32(pvd, 166, f"layer {layer} root size")
+    root_abs_byte = (lba_offset + root_lba_rel) * SECTOR
+    if root_abs_byte + root_size > iso_size:
+        raise IsoLayoutError(f"layer {layer} root directory is outside the image")
+
+    stream.seek(root_abs_byte)
+    read_size = _sectors(root_size) * SECTOR
+    data = stream.read(read_size)
+    if len(data) != read_size:
+        raise IsoLayoutError(f"layer {layer} root directory is truncated")
+
+    entries: list[IsoFileEntry] = []
+    position = 0
+    while position < root_size:
+        record_len = data[position]
+        if record_len == 0:
+            position = ((position // SECTOR) + 1) * SECTOR
+            continue
+        if record_len < 34 or position + record_len > len(data):
+            raise IsoLayoutError(
+                f"layer {layer} root record @ {position:#x} is malformed"
+            )
+        name_len = data[position + 32]
+        if 33 + name_len > record_len:
+            raise IsoLayoutError(
+                f"layer {layer} root name @ {position:#x} exceeds its record"
+            )
+        name = data[position + 33 : position + 33 + name_len].decode(
+            "ascii", "replace"
+        )
+        lba_rel = _both_u32(
+            data,
+            position + 2,
+            f"layer {layer} record {name!r} LBA",
+        )
+        size = _both_u32(
+            data,
+            position + 10,
+            f"layer {layer} record {name!r} size",
+        )
+        flags = data[position + 25]
+        if name not in ("\x00", "\x01") and not (flags & 2):
+            absolute_lba = lba_offset + lba_rel
+            if absolute_lba * SECTOR + size > iso_size:
+                raise IsoLayoutError(f"{name}: extent is outside the image")
+            entries.append(
+                IsoFileEntry(
+                    name=name,
+                    lba=absolute_lba,
+                    size=size,
+                    layer=layer,
+                    lba_rel=lba_rel,
+                    dir_record_abs=root_abs_byte + position,
+                )
+            )
+        position += record_len
+    return entries, root_abs_byte, root_size
+
 
 def parse_iso_layout(iso_path: Path) -> IsoLayout:
-    """원본 ISO에서 전체 파일 레이아웃을 추출."""
+    """ISO9660의 두 레이어와 모든 루트 파일 extent를 검증해 읽는다."""
+    iso_path = Path(iso_path)
     iso_size = iso_path.stat().st_size
+    if iso_size % SECTOR:
+        raise IsoLayoutError(f"ISO size is not sector aligned: {iso_size:,}")
 
-    with open(iso_path, "rb") as f:
-        # Layer 1 PVD
-        l1_files, l1_root_abs, l1_root_size = _parse_layer(f, pvd_sector=16, lba_offset=0, layer=1)
-
-        # Layer 2 PVD 탐색
-        l2_base = _find_layer2_base_raw(f, iso_size)
-        l2_files = []
-        l2_root_abs = None
-        l2_root_size = None
-        l2_pvd = None
-        if l2_base is not None:
-            l2_pvd = l2_base + 16
-            l2_files, l2_root_abs, l2_root_size = _parse_layer(
-                f, pvd_sector=l2_pvd, lba_offset=l2_base, layer=2,
+    with iso_path.open("rb") as stream:
+        layer1_pvd = _read_pvd(stream, 16)
+        layer1, layer1_root_abs, layer1_root_size = _parse_layer(
+            stream,
+            pvd_sector=16,
+            lba_offset=0,
+            layer=1,
+            iso_size=iso_size,
+        )
+        layer2_base = _find_layer2_base(stream, iso_size, layer1_pvd)
+        layer2: list[IsoFileEntry] = []
+        layer2_pvd_sector = None
+        layer2_root_abs = None
+        layer2_root_size = None
+        if layer2_base is not None:
+            layer2_pvd_sector = layer2_base + 16
+            layer2, layer2_root_abs, layer2_root_size = _parse_layer(
+                stream,
+                pvd_sector=layer2_pvd_sector,
+                lba_offset=layer2_base,
+                layer=2,
+                iso_size=iso_size,
             )
 
     return IsoLayout(
-        layer1_files=sorted(l1_files, key=lambda e: e.lba),
-        layer2_files=sorted(l2_files, key=lambda e: e.lba),
-        layer2_base=l2_base,
+        layer1_files=sorted(layer1, key=lambda entry: entry.lba),
+        layer2_files=sorted(layer2, key=lambda entry: entry.lba),
+        layer2_base=layer2_base,
         layer1_pvd_sector=16,
-        layer2_pvd_sector=l2_pvd,
-        layer1_root_dir_abs=l1_root_abs,
-        layer1_root_dir_size=l1_root_size,
-        layer2_root_dir_abs=l2_root_abs,
-        layer2_root_dir_size=l2_root_size,
+        layer2_pvd_sector=layer2_pvd_sector,
+        layer1_root_dir_abs=layer1_root_abs,
+        layer1_root_dir_size=layer1_root_size,
+        layer2_root_dir_abs=layer2_root_abs,
+        layer2_root_dir_size=layer2_root_size,
         iso_size=iso_size,
     )
 
 
-def _find_layer2_base_raw(f, iso_size: int) -> int | None:
-    total = iso_size // SECTOR
-    for sec in range(total // 2 - 100, min(total // 2 + 1000, total)):
-        f.seek(sec * SECTOR)
-        if f.read(6) == b"\x01CD001":
-            return sec - 16
-    return None
+def _copy_exact(source, output, size: int, chunk: int = 16 * 1024 * 1024) -> None:
+    remaining = size
+    while remaining:
+        data = source.read(min(chunk, remaining))
+        if not data:
+            raise EOFError(f"source ended with {remaining:,} bytes left")
+        output.write(data)
+        remaining -= len(data)
 
 
-def _parse_layer(f, pvd_sector: int, lba_offset: int, layer: int):
-    f.seek(pvd_sector * SECTOR)
-    pvd = f.read(SECTOR)
-    if pvd[0:6] != b"\x01CD001":
-        return [], 0, 0
-
-    root_lba_rel = struct.unpack_from("<I", pvd, 156 + 2)[0]
-    root_size = struct.unpack_from("<I", pvd, 156 + 10)[0]
-    root_abs_sector = lba_offset + root_lba_rel
-    root_abs_byte = root_abs_sector * SECTOR
-
-    f.seek(root_abs_byte)
-    read_amt = ((root_size + SECTOR - 1) // SECTOR) * SECTOR
-    data = f.read(read_amt)
-
-    entries = []
-    pos = 0
-    while pos < root_size:
-        rec_len = data[pos]
-        if rec_len == 0:
-            next_sec = ((pos // SECTOR) + 1) * SECTOR
-            if next_sec >= root_size:
-                break
-            pos = next_sec
-            continue
-        if pos + 33 > len(data):
-            break
-        name_len = data[pos + 32]
-        if pos + 33 + name_len > len(data):
-            break
-        name = data[pos + 33: pos + 33 + name_len].decode("ascii", "replace")
-        lba_rel = struct.unpack_from("<I", data, pos + 2)[0]
-        size = struct.unpack_from("<I", data, pos + 10)[0]
-        flags = data[pos + 25]
-
-        if name not in ("\x00", "\x01") and not (flags & 2):
-            abs_lba = lba_offset + lba_rel
-            entries.append(IsoFileEntry(
-                name=name,
-                lba=abs_lba,
-                size=size,
-                layer=layer,
-                lba_rel=lba_rel,
-                dir_record_abs=root_abs_byte + pos,
-            ))
-        pos += rec_len
-
-    return entries, root_abs_byte, root_size
+def _compare_file_slice(
+    iso_path: Path,
+    replacement: Path,
+    iso_offset: int,
+    replacement_offset: int,
+    size: int,
+    chunk: int = 4 * 1024 * 1024,
+) -> bool:
+    with iso_path.open("rb") as iso, replacement.open("rb") as source:
+        iso.seek(iso_offset)
+        source.seek(replacement_offset)
+        remaining = size
+        while remaining:
+            take = min(chunk, remaining)
+            if iso.read(take) != source.read(take):
+                return False
+            remaining -= take
+    return True
 
 
-# ---------------------------------------------------------------------------
-# ISO 리빌드
-# ---------------------------------------------------------------------------
+def _layout_signature(layout: IsoLayout) -> tuple:
+    files = tuple(
+        (entry.name, entry.lba, entry.size, entry.layer, entry.lba_rel)
+        for entry in layout.files
+    )
+    return layout.iso_size, layout.layer2_base, files
+
 
 def rebuild_iso(
     orig_iso: Path,
     out_iso: Path,
     replacements: dict[str, Path],
-    layout: IsoLayout,
+    layout: IsoLayout | None = None,
+    progress=print,
 ) -> None:
-    """
-    원본 ISO에서 파일을 교체하여 새 ISO를 생성.
+    """원본 이미지 복사본의 기존 extent에 같은 크기의 파일만 기록한다."""
+    orig_iso = Path(orig_iso)
+    out_iso = Path(out_iso)
+    layout = layout or parse_iso_layout(orig_iso)
 
-    replacements: {"XENOSAGA.02;1": Path("kansei/repack00/XENOSAGA.02"), ...}
-    크기가 달라도 OK — 후속 파일을 shift하고 메타데이터를 갱신한다.
-    """
-    # 새 크기 계산
-    def _new_size(entry: IsoFileEntry) -> int:
-        if entry.name in replacements:
-            return replacements[entry.name].stat().st_size
-        return entry.size
+    if orig_iso.resolve() == out_iso.resolve():
+        raise IsoLayoutError("output ISO must not overwrite the original ISO")
+    if orig_iso.stat().st_size != layout.iso_size:
+        raise IsoLayoutError("source ISO changed after its layout was parsed")
 
-    def _sectors(size: int) -> int:
-        return (size + SECTOR - 1) // SECTOR
+    by_name: dict[str, IsoFileEntry] = {}
+    ambiguous: set[str] = set()
+    for entry in layout.files:
+        if entry.name in by_name:
+            ambiguous.add(entry.name)
+        by_name[entry.name] = entry
+    unknown = sorted(set(replacements) - set(by_name))
+    if unknown:
+        raise IsoLayoutError(f"replacement is not in the ISO root: {unknown}")
+    duplicate_targets = sorted(set(replacements) & ambiguous)
+    if duplicate_targets:
+        raise IsoLayoutError(f"replacement name is ambiguous between layers: {duplicate_targets}")
 
-    # Layer 1 새 LBA 할당
-    # 원본 gap(메타데이터/디렉터리/패딩)을 보존하면서 파일 크기 변경분만 shift.
-    all_l1 = layout.layer1_files
-    new_l1_lbas: dict[str, int] = {}
-    shift = 0  # 누적 shift (섹터 수)
-    if all_l1:
-        for i, ent in enumerate(all_l1):
-            new_l1_lbas[ent.name] = ent.lba + shift
-            old_sectors = _sectors(ent.size)
-            new_sectors_val = _sectors(_new_size(ent))
-            shift += new_sectors_val - old_sectors
+    normalized: dict[str, Path] = {}
+    for name, replacement in replacements.items():
+        replacement = Path(replacement)
+        if not replacement.is_file():
+            raise FileNotFoundError(replacement)
+        entry = by_name[name]
+        replacement_size = replacement.stat().st_size
+        if replacement_size != entry.size:
+            raise IsoLayoutError(
+                f"{name}: replacement size {replacement_size:,} != "
+                f"original extent size {entry.size:,}; layout would change"
+            )
+        normalized[name] = replacement
 
-    # Layer 1 끝
-    if all_l1:
-        last = all_l1[-1]
-        l1_data_end = new_l1_lbas[last.name] + _sectors(_new_size(last))
-    else:
-        l1_data_end = 0
+    # L1의 마지막 파일이 L2 시스템 영역과 겹치는 원본 구조를 보호한다.
+    protected_ranges: list[tuple[int, int, str]] = []
+    if layout.layer2_base is not None and layout.layer2_files:
+        protected_start = layout.layer2_base * SECTOR
+        protected_end = layout.layer2_files[0].lba * SECTOR
+        protected_ranges.append((protected_start, protected_end, "layer 2 metadata"))
 
-    # Layer 2 base 재계산
-    orig_l2_base = layout.layer2_base
-    new_l2_base: int | None = None
-    new_l2_lbas: dict[str, int] = {}
-    l2_meta_size = 0
+    for name, replacement in normalized.items():
+        entry = by_name[name]
+        entry_start = entry.lba * SECTOR
+        entry_end = entry_start + entry.size
+        for protected_start, protected_end, label in protected_ranges:
+            overlap_start = max(entry_start, protected_start)
+            overlap_end = min(entry_end, protected_end)
+            if overlap_start >= overlap_end:
+                continue
+            if not _compare_file_slice(
+                orig_iso,
+                replacement,
+                overlap_start,
+                overlap_start - entry_start,
+                overlap_end - overlap_start,
+            ):
+                raise IsoLayoutError(
+                    f"{name}: replacement changes the overlapping {label} range "
+                    f"{overlap_start // SECTOR}..{_sectors(overlap_end) - 1}"
+                )
 
-    if orig_l2_base is not None and layout.layer2_files:
-        l2_first_file_rel = layout.layer2_files[0].lba_rel
-        l2_meta_size = l2_first_file_rel
+    progress(f"  [layout] fixed ISO size: {layout.iso_size:,} bytes")
+    progress(f"  [layout] fixed layer 2 base: {layout.layer2_base}")
+    out_iso.parent.mkdir(parents=True, exist_ok=True)
+    with orig_iso.open("rb") as source, out_iso.open("wb") as output:
+        _copy_exact(source, output, layout.iso_size)
 
-        # layer2 base: layer1 shift 반영 + L1 데이터 끝보다 뒤에 있어야 함
-        # 원본에서 .13이 L2 base를 넘는 경우가 있음 (negative gap)
-        new_l2_base = max(orig_l2_base + shift, l1_data_end)
+    with out_iso.open("r+b") as output:
+        for name, replacement in normalized.items():
+            entry = by_name[name]
+            progress(f"  [patch] {name} @ LBA {entry.lba} ({entry.size:,} bytes)")
+            output.seek(entry.lba * SECTOR)
+            with replacement.open("rb") as source:
+                _copy_exact(source, output, entry.size)
 
-        l2_shift = 0
-        for i, ent in enumerate(layout.layer2_files):
-            new_l2_lbas[ent.name] = (new_l2_base + ent.lba_rel) + l2_shift
-            old_sectors = _sectors(ent.size)
-            new_sectors_val = _sectors(_new_size(ent))
-            l2_shift += new_sectors_val - old_sectors
-
-    if layout.layer2_files and new_l2_lbas:
-        last_l2 = layout.layer2_files[-1]
-        new_iso_end = new_l2_lbas[last_l2.name] + _sectors(_new_size(last_l2))
-    else:
-        new_iso_end = l1_data_end
-    new_iso_size = new_iso_end * SECTOR
-
-    # 요약 출력
-    orig_size = layout.iso_size
-    print(f"  [layout] layer1 data end: {l1_data_end} (was {all_l1[-1].lba + _sectors(all_l1[-1].size) if all_l1 else 0})")
-    if new_l2_base is not None:
-        print(f"  [layout] layer2 base: {new_l2_base} (was {orig_l2_base})")
-    print(f"  [layout] new ISO: {new_iso_size:,} bytes (was {orig_size:,}, diff={new_iso_size - orig_size:+,})")
-
-    # ISO 쓰기: 원본을 스트리밍 복사하면서 파일 영역만 교체/shift
-    with open(orig_iso, "rb") as src, open(out_iso, "wb") as dst:
-        # 전략: 원본 ISO를 구간별로 복사
-        #   - 파일 사이 gap(메타데이터 영역)은 원본에서 그대로 복사
-        #   - 교체 파일은 새 소스에서 복사
-        #   - shift가 발생하면 gap도 shift된 위치에 기록
-
-        # Layer 1: 시작 ~ 첫 파일 전까지 (메타데이터)
-        first_file_sector = all_l1[0].lba if all_l1 else 296
-        src.seek(0)
-        _stream_copy(src, dst, first_file_sector * SECTOR)
-
-        # Layer 1 파일들 + 사이 gap
-        for i, ent in enumerate(all_l1):
-            new_lba = new_l1_lbas[ent.name]
-
-            # 이 파일 앞의 gap (원본에서 이전 파일 끝 ~ 이 파일 시작 사이)
-            if i == 0:
-                # 첫 파일 전 gap은 이미 위에서 복사함
-                pass
-            else:
-                prev = all_l1[i - 1]
-                prev_end = prev.lba + _sectors(prev.size)
-                gap_start = prev_end
-                gap_size = ent.lba - gap_start
-                if gap_size > 0:
-                    src.seek(gap_start * SECTOR)
-                    _stream_copy(src, dst, gap_size * SECTOR)
-
-            # 파일 위치 맞춤 (shift로 인한 미세 조정)
-            _pad_to(dst, new_lba * SECTOR)
-
-            # 파일 데이터
-            if ent.name in replacements:
-                _write_file(dst, replacements[ent.name])
-            else:
-                src.seek(ent.lba * SECTOR)
-                _stream_copy(src, dst, ent.size)
-            _pad_to_sector(dst)
-
-        # Layer 1 마지막 파일 뒤 ~ Layer 2 시작 사이 gap
-        if new_l2_base is not None and orig_l2_base is not None:
-            if all_l1:
-                last = all_l1[-1]
-                orig_last_end = last.lba + _sectors(last.size)
-                gap_size = orig_l2_base - orig_last_end
-                if gap_size > 0:
-                    src.seek(orig_last_end * SECTOR)
-                    _stream_copy(src, dst, gap_size * SECTOR)
-
-            _pad_to(dst, new_l2_base * SECTOR)
-            # Layer 2 메타 영역 복사
-            src.seek(orig_l2_base * SECTOR)
-            _stream_copy(src, dst, l2_meta_size * SECTOR)
-
-            # Layer 2 파일들 + 사이 gap
-            for i, ent in enumerate(layout.layer2_files):
-                new_lba = new_l2_lbas[ent.name]
-
-                if i > 0:
-                    prev = layout.layer2_files[i - 1]
-                    prev_end = prev.lba + _sectors(prev.size)
-                    gap_size = ent.lba - prev_end
-                    if gap_size > 0:
-                        src.seek(prev_end * SECTOR)
-                        _stream_copy(src, dst, gap_size * SECTOR)
-
-                _pad_to(dst, new_lba * SECTOR)
-
-                if ent.name in replacements:
-                    _write_file(dst, replacements[ent.name])
-                else:
-                    src.seek(ent.lba * SECTOR)
-                    _stream_copy(src, dst, ent.size)
-                _pad_to_sector(dst)
-
-        # 최종 크기 맞춤
-        _pad_to(dst, new_iso_size)
-
-    # PVD / 디렉터리 레코드 패치
-    with open(out_iso, "r+b") as f:
-        # Layer 1 디렉터리 레코드 패치
-        for ent in all_l1:
-            new_lba = new_l1_lbas[ent.name]
-            new_sz = _new_size(ent)
-            _patch_dir_record(f, ent.dir_record_abs, new_lba, new_sz)
-
-        # Layer 2 디렉터리 레코드 패치
-        if new_l2_base is not None and orig_l2_base is not None:
-            shift = new_l2_base - orig_l2_base
-            for ent in layout.layer2_files:
-                new_abs_lba = new_l2_lbas[ent.name]
-                new_rel_lba = new_abs_lba - new_l2_base
-                new_sz = _new_size(ent)
-                new_rec_abs = ent.dir_record_abs + shift * SECTOR
-                _patch_dir_record(f, new_rec_abs, new_rel_lba, new_sz)
-
-            # Layer 2 PVD 내 volume space size 갱신
-            l2_vol_size = new_iso_end - new_l2_base
-            new_l2_pvd_abs = (new_l2_base + 16) * SECTOR
-            f.seek(new_l2_pvd_abs + 80)
-            f.write(struct.pack("<I", l2_vol_size))
-            f.write(struct.pack(">I", l2_vol_size))
-
-            # Layer 1 PVD 의 volume_space 갱신
-            # PCSX2 는 이 값으로 Layer 2 PVD 위치를 결정한다.
-            # 실제 L2 메타 시작 위치는 파일 쓰기 시점에 l1_data_end 이후로 밀렸을 수 있음.
-            # 정확한 PVD 위치 = 실제로 기록된 L2 base + 16
-            actual_l2_base = max(new_l2_base, l1_data_end)
-            new_l1_vol_space = actual_l2_base + 16
-            f.seek(layout.layer1_pvd_sector * SECTOR + 80)
-            f.write(struct.pack("<I", new_l1_vol_space))
-            f.write(struct.pack(">I", new_l1_vol_space))
-
-    print(f"  [done] {out_iso}")
+    if out_iso.stat().st_size != layout.iso_size:
+        raise IsoLayoutError("output ISO size changed")
+    output_layout = parse_iso_layout(out_iso)
+    if _layout_signature(output_layout) != _layout_signature(layout):
+        raise IsoLayoutError("output ISO layout differs from the original")
+    for name, replacement in normalized.items():
+        entry = by_name[name]
+        if not _compare_file_slice(
+            out_iso,
+            replacement,
+            entry.lba * SECTOR,
+            0,
+            entry.size,
+        ):
+            raise IsoLayoutError(f"{name}: output read-back mismatch")
+    progress(f"  [done] {out_iso}")
 
 
-def _patch_dir_record(f, abs_offset: int, new_lba: int, new_size: int):
-    """ISO9660 디렉터리 레코드의 LBA와 size를 양-엔디안으로 패치."""
-    f.seek(abs_offset + 2)
-    f.write(struct.pack("<I", new_lba))
-    f.write(struct.pack(">I", new_lba))
-    f.seek(abs_offset + 10)
-    f.write(struct.pack("<I", new_size))
-    f.write(struct.pack(">I", new_size))
-
-
-def _stream_copy(src, dst, n: int, chunk: int = 8 * 1024 * 1024):
-    remaining = n
-    while remaining > 0:
-        take = min(remaining, chunk)
-        data = src.read(take)
-        if not data:
-            break
-        dst.write(data)
-        remaining -= len(data)
-
-
-def _write_file(dst, path: Path, chunk: int = 8 * 1024 * 1024):
-    with open(path, "rb") as f:
-        while True:
-            data = f.read(chunk)
-            if not data:
-                break
-            dst.write(data)
-
-
-def _pad_to(dst, target: int):
-    cur = dst.tell()
-    if cur < target:
-        gap = target - cur
-        zeros = b"\x00" * min(gap, 1024 * 1024)
-        while gap > 0:
-            take = min(gap, len(zeros))
-            dst.write(zeros[:take])
-            gap -= take
-
-
-def _pad_to_sector(dst):
-    cur = dst.tell()
-    rem = cur % SECTOR
-    if rem:
-        dst.write(b"\x00" * (SECTOR - rem))
+def _sectors(size: int) -> int:
+    return (size + SECTOR - 1) // SECTOR
