@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="1202" height="537" alt="Image" src="https://github.com/user-attachments/assets/42efe7e6-e8da-4cb8-8101-65905c23015f" />
+  <img width="1202" height="700" alt="Image" src="https://github.com/user-attachments/assets/42863046-0fef-40f4-8dcf-ee50995328da" />
 </p>
 
 <h1 align="center">XS1KOR</h1>
