@@ -1,40 +1,39 @@
-# think_patch extract: think022.bin.ori
+# think original extract: think022.bin.ori
 # 총 8개 텍스트 엔트리
-# 번역 시 텍스트 내용만 수정하세요.
-# 텍스트가 원본보다 길면 자동으로 잘림.
+# 원문 초기화: 공백·개행·제어문자 보존. 새 빌드는 translations.json을 사용합니다.
 
->>> [000] op=0x1A(condition) flag=0x00 offset=0x02E4
-−１ 실패／Ｅ１０
+>>> [000] op=0x1A(print) flag=0x00 offset=0x02E4
+−１は失敗／Ｅ１０
 <<<
 
->>> [001] op=0x1A(condition) flag=0x00 offset=0x031E
-−１ 실패／Ｅ０８
+>>> [001] op=0x1A(print) flag=0x00 offset=0x031E
+−１は失敗／Ｅ０８
 <<<
 
->>> [002] op=0x1A(condition) flag=0x00 offset=0x0362
-−１ 실패／Ｅ０９
+>>> [002] op=0x1A(print) flag=0x00 offset=0x0362
+−１は失敗／Ｅ０９
 <<<
 
->>> [003] op=0x1A(condition) flag=0x00 offset=0x03A6
-−１ 실패／Ｅ１２
+>>> [003] op=0x1A(print) flag=0x00 offset=0x03A6
+−１は失敗／Ｅ１２
 <<<
 
 >>> [004] op=0x21(display) flag=0x00 offset=0x03E6
-　공격 유닛 사출！
+　攻撃ユニット射出！
 
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x044C
-　능력 분석　　Ｓ
-　　에테르 다운
+　能力分析　　Ｓ
+　　エーテル力ダウン
 <<<
 
 >>> [006] op=0x21(display) flag=0x00 offset=0x0556
-　스프레드 슈트　　Ｅ／Ｂ
+　スプレーシュート　　Ｅ／Ｂ
 
 <<<
 
 >>> [007] op=0x21(display) flag=0x00 offset=0x0588
-　대기 중
+　行動待機中
 
 <<<

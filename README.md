@@ -619,6 +619,12 @@ RebuildOV11.bat  -> OV11_patched.OVL
 RebuildOV12.bat  -> OV12_patched.OVL
 ```
 
+`RebuildSLPS.bat` also changes only the memory-card browser's first line to
+`XenosagaEPI-##` (full-width Shift-JIS, like Episode III). Save numbers, second-line
+locations, in-game names and save identifiers remain unchanged. Existing saves
+are not edited by this tool; check the browser after saving to a new slot with the
+rebuilt game. The result stays in `metadata`; transfer it to the ROM workspace manually.
+
 Safety properties:
 
 - Source binaries and translation files are read-only inputs.

@@ -1,89 +1,88 @@
-# think_patch extract: think020.bin.ori
+# think original extract: think020.bin.ori
 # 총 17개 텍스트 엔트리
-# 번역 시 텍스트 내용만 수정하세요.
-# 텍스트가 원본보다 길면 자동으로 잘림.
+# 원문 초기화: 공백·개행·제어문자 보존. 새 빌드는 translations.json을 사용합니다.
 
 >>> [000] op=0x21(display) flag=0x00 offset=0x023C
-＞장소（이벤트 슬롯）를
-　분석 중
+＞場（イベントスロット）を
+　分析中
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x02A2
 
-　\x1e"을 메모리에 저장
+　\x1e"をメモリーに記憶
 
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x02C2
 
-　\x1e\x1f을 메모리에 저장
+　\x1e\x1fをメモリーに記憶
 
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x02E2
 
-　\x1e 을 메모리에 저장
+　\x1e をメモリーに記憶
 
 <<<
 
 >>> [004] op=0x21(display) flag=0x00 offset=0x0302
 
-　\x1e!을 메모리에 저장
+　\x1e!をメモリーに記憶
 
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x0324
-　이후의 『격진』을
-　이 이벤트 슬롯에서 발동
+　以後の『激震』を
+　このイベントスロットで発動
 <<<
 
->>> [006] op=0x1A(condition) flag=0x00 offset=0x03E6
-Ｍ사이즈검색
+>>> [006] op=0x1A(print) flag=0x00 offset=0x03E6
+Ｍサイズ検索
 <<<
 
->>> [007] op=0x1A(condition) flag=0x00 offset=0x0434
-레이저 선택
+>>> [007] op=0x1A(print) flag=0x00 offset=0x0434
+レーザーを選べ
 <<<
 
->>> [008] op=0x1A(condition) flag=0x00 offset=0x045A
-ＡＧＷＳ 선택
+>>> [008] op=0x1A(print) flag=0x00 offset=0x045A
+ＡＧＷＳを選べ
 <<<
 
->>> [009] op=0x1A(condition) flag=0x00 offset=0x0486
-레이저는 나왔나？
+>>> [009] op=0x1A(print) flag=0x00 offset=0x0486
+レーザーは出たか？
 <<<
 
 >>> [010] op=0x21(display) flag=0x00 offset=0x04A4
-　레이저 라이플　　Ｅ／Ｂ
+　レーザーライフル　　Ｅ／Ｂ
 
 <<<
 
 >>> [011] op=0x21(display) flag=0x00 offset=0x04FE
-　레이저 라이플　　Ｅ／Ｂ
+　レーザーライフル　　Ｅ／Ｂ
 
 <<<
 
 >>> [012] op=0x21(display) flag=0x00 offset=0x053E
-　격진　　Ｐ
+　激震　　Ｐ
 
 <<<
 
 >>> [013] op=0x21(display) flag=0x00 offset=0x056E
-　소닉 샷　　Ｅ／Ｓ
-　　에테르 다운
+　ソニックショット　　Ｅ／Ｓ
+　　エーテル力ダウン
 <<<
 
 >>> [014] op=0x21(display) flag=0x00 offset=0x05CE
-　자폭 시작
+　自爆装置作動
 
 <<<
 
 >>> [015] op=0x21(display) flag=0x00 offset=0x0622
-　방어
+　防御
 
 <<<
 
 >>> [016] op=0x21(display) flag=0x00 offset=0x0660
-　오토 리페어
-　　ＨＰ 회복
+　オートリペア
+　　ＨＰ回復
 <<<

@@ -1,138 +1,137 @@
-# think_patch extract: think056.bin.ori
+# think original extract: think056.bin.ori
 # 총 29개 텍스트 엔트리
-# 번역 시 텍스트 내용만 수정하세요.
-# 텍스트가 원본보다 길면 자동으로 잘림.
+# 원문 초기화: 공백·개행·제어문자 보존. 새 빌드는 translations.json을 사용합니다.
 
 >>> [000] op=0x21(display) flag=0x00 offset=0x0268
-　챔피언 태클　　Ｐ
+　チャンピオンタックル　　Ｐ
 
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x02B8
-　트롤 스윙　　Ｐ
-　　물리 공격력 저하
+　トロルスィング　　Ｐ
+　　物理攻撃力低下
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x02FC
-　리벤지 가드
+　リベンジガード
 
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x034E
-　카운터 부스트
+　カウンターブースト
 
 <<<
 
->>> [004] op=0x1A(condition) flag=0x00 offset=0x037E
-죽어서 부스트 체크
+>>> [004] op=0x1A(print) flag=0x00 offset=0x037E
+死んでブーストチェック
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x0418
- 반혼 변화
+　反魂変化
 
 <<<
 
->>> [006] op=0x1A(condition) flag=0x00 offset=0x042C
-체크 ＰＯＳ１
+>>> [006] op=0x1A(print) flag=0x00 offset=0x042C
+チェックＰＯＳ１
 <<<
 
 >>> [007] op=0x21(display) flag=0x00 offset=0x0470
- 반혼 변화
+　反魂変化
 
 <<<
 
->>> [008] op=0x1A(condition) flag=0x00 offset=0x0484
-체크 ＰＯＳ２
+>>> [008] op=0x1A(print) flag=0x00 offset=0x0484
+チェックＰＯＳ２
 <<<
 
 >>> [009] op=0x21(display) flag=0x00 offset=0x04C8
- 반혼 변화
+　反魂変化
 
 <<<
 
->>> [010] op=0x1A(condition) flag=0x00 offset=0x04DC
-체크 ＰＯＳ３
+>>> [010] op=0x1A(print) flag=0x00 offset=0x04DC
+チェックＰＯＳ３
 <<<
 
 >>> [011] op=0x21(display) flag=0x00 offset=0x0520
- 반혼 변화
+　反魂変化
 
 <<<
 
->>> [012] op=0x1A(condition) flag=0x00 offset=0x0534
-체크 ＰＯＳ４
+>>> [012] op=0x1A(print) flag=0x00 offset=0x0534
+チェックＰＯＳ４
 <<<
 
 >>> [013] op=0x21(display) flag=0x00 offset=0x0578
- 반혼 변화
+　反魂変化
 
 <<<
 
->>> [014] op=0x1A(condition) flag=0x00 offset=0x058C
-체크 ＰＯＳ５
+>>> [014] op=0x1A(print) flag=0x00 offset=0x058C
+チェックＰＯＳ５
 <<<
 
 >>> [015] op=0x21(display) flag=0x00 offset=0x05B2
-　도주　　
+　逃走　　
 　　
 <<<
 
 >>> [016] op=0x21(display) flag=0x00 offset=0x061A
-　모데스트 커스　　Ｓ
-　　혼란
+　モデストカース　　Ｓ
+　　混乱
 <<<
 
 >>> [017] op=0x21(display) flag=0x00 offset=0x065C
- 원한의 냉기  Ｅ／냉기
+　怨念の冷気　　Ｅ／冷
 
 <<<
 
 >>> [018] op=0x21(display) flag=0x00 offset=0x0700
-　앱소프션　　Ｅ
-　　ＥＰ 드레인
+　アブソープション　　Ｅ
+　　ＥＰドレイン
 <<<
 
 >>> [019] op=0x21(display) flag=0x00 offset=0x074C
-　소울 스프링　　Ｓ
-　　ＥＰ 오버
+　ソウルスフリング　　Ｓ
+　　ＥＰオーバー
 <<<
 
 >>> [020] op=0x21(display) flag=0x00 offset=0x078C
-　도주　　
+　逃走　　
 　　
 <<<
 
 >>> [021] op=0x21(display) flag=0x00 offset=0x0826
-　파워 차지
-　　물리 공격력 업
+　パワーチャージ
+　　物理攻撃力ＵＰ
 <<<
 
->>> [022] op=0x1A(condition) flag=0x00 offset=0x0858
-Ｍ사이즈검색
+>>> [022] op=0x1A(print) flag=0x00 offset=0x0858
+Ｍサイズ検索
 <<<
 
->>> [023] op=0x1A(condition) flag=0x00 offset=0x0896
-태클 선택
+>>> [023] op=0x1A(print) flag=0x00 offset=0x0896
+タックルを選べ
 <<<
 
->>> [024] op=0x1A(condition) flag=0x00 offset=0x08C0
-ＡＧＷＳ 선택
+>>> [024] op=0x1A(print) flag=0x00 offset=0x08C0
+ＡＧＷＳを選べ
 <<<
 
->>> [025] op=0x1A(condition) flag=0x00 offset=0x08F0
-태클 나왔나？
+>>> [025] op=0x1A(print) flag=0x00 offset=0x08F0
+タックルは出たか？
 <<<
 
 >>> [026] op=0x21(display) flag=0x00 offset=0x0920
-　태클　　Ｐ／Ｓ
-　　슬로
+　タックル　　Ｐ／Ｓ
+　　スロウ
 <<<
 
 >>> [027] op=0x21(display) flag=0x00 offset=0x0984
-　트롤 스윙　　Ｐ／Ｓ
-　　물리 방어력 저하
+　トロルスイング　　Ｐ／Ｓ
+　　物理防御力低下
 <<<
 
 >>> [028] op=0x21(display) flag=0x00 offset=0x0A0C
-상황을 보고 있다
+　様子を見ている
 <<<

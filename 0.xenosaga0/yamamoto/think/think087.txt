@@ -1,103 +1,102 @@
-# think_patch extract: think087.bin.ori
+# think original extract: think087.bin.ori
 # 총 20개 텍스트 엔트리
-# 번역 시 텍스트 내용만 수정하세요.
-# 텍스트가 원본보다 길면 자동으로 잘림.
+# 원문 초기화: 공백·개행·제어문자 보존. 새 빌드는 translations.json을 사용합니다.
 
 >>> [000] op=0x21(display) flag=0x00 offset=0x040E
-알베도
-「그런 허접한 기계로
-　뭘 어떻게 할 셈이지？
+アルベド
+「そんなトロイマシンに乗って
+　どうするつもりだぁ？
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x05AA
- 적랑권　　Ｐ
-  장갑 결손
+　赤狼拳　　Ｐ
+　　装甲欠損
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x05E4
-　봉익천무　　Ｅ
+　鳳翼天舞　　Ｅ
 
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x0614
- 마안−몽롱  Ｓ
-  혼란＋ＥＰ 파괴
+　魔眼−朧　　Ｓ
+　　混乱＋ＥＰ破壊
 <<<
 
 >>> [004] op=0x21(display) flag=0x00 offset=0x0656
- 마안−영혼  Ｓ
-  ＨＰ 드레인
+　魔眼−魂　　Ｓ
+　　ＨＰドレイン
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x06A2
-　타천흑령장　　Ｅ
+　堕天黒霊掌　　Ｅ
 　　
 <<<
 
 >>> [006] op=0x21(display) flag=0x00 offset=0x06E6
-　환앵진　　Ｓ
-　　에테르 공격 중시
+　幻桜陣　　Ｓ
+　　エーテル攻撃重視
 <<<
 
 >>> [007] op=0x21(display) flag=0x00 offset=0x072A
-　마풍진　　Ｓ
-　　스피드 ５０
+　魔風陣　　Ｓ
+　　スピード５０
 <<<
 
 >>> [008] op=0x21(display) flag=0x00 offset=0x0B1E
-　벌레 떼　　Ｐ
+　ムシノムレ　　Ｐ
 
 <<<
 
 >>> [009] op=0x21(display) flag=0x00 offset=0x0B64
-　빛의 기둥　　Ｅ
+　ヒカリノハシラ　　Ｅ
 
 <<<
 
 >>> [010] op=0x21(display) flag=0x00 offset=0x0BAE
-　그림자 침　　Ｅ
+　ハナツカゲノハリ　　Ｅ
 
 <<<
 
 >>> [011] op=0x21(display) flag=0x00 offset=0x0C2E
-　파멸의 빛　　Ｅ
+　ハメツノヒカリ　　Ｅ
 
 <<<
 
->>> [012] op=0x1A(condition) flag=0x00 offset=0x0C5E
+>>> [012] op=0x1A(print) flag=0x00 offset=0x0C5E
 ------------->Free Think ------------
 <<<
 
 >>> [013] op=0x21(display) flag=0x00 offset=0x0CB4
- 하얀 것
-  모든 스테이터스 클리어
+　シロキモノ
+　　全ステータスクリア
 <<<
 
 >>> [014] op=0x21(display) flag=0x00 offset=0x0D26
-　파멸의 전조
-　　ＥＰ 드레인
+　ハメツノマエブレ
+　　ＥＰドレイン
 <<<
 
 >>> [015] op=0x21(display) flag=0x00 offset=0x0D7E
-　영원한 기억
-　　로스트
+　トワノキオク
+　　ロスト
 <<<
 
 >>> [016] op=0x21(display) flag=0x00 offset=0x0DD8
-　자폭
+　自爆
 
 <<<
 
->>> [017] op=0x1A(condition) flag=0x00 offset=0x0E38
+>>> [017] op=0x1A(print) flag=0x00 offset=0x0E38
 ============>LASBOSS-d-think
 <<<
 
 >>> [018] op=0x21(display) flag=0x00 offset=0x0EEA
-　선섬광　　Ｅ／Ｓ
-　　에테르 다운
+　扇閃光　　Ｅ／Ｓ
+　　エーテル力ダウン
 <<<
 
 >>> [019] op=0x21(display) flag=0x00 offset=0x0F3C
-　봉멸인　　Ｅ
+　封滅刃　　Ｅ
 
 <<<

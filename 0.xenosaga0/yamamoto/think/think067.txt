@@ -1,48 +1,47 @@
-# think_patch extract: think067.bin.ori
+# think original extract: think067.bin.ori
 # 총 9개 텍스트 엔트리
-# 번역 시 텍스트 내용만 수정하세요.
-# 텍스트가 원본보다 길면 자동으로 잘림.
+# 원문 초기화: 공백·개행·제어문자 보존. 새 빌드는 translations.json을 사용합니다.
 
 >>> [000] op=0x21(display) flag=0x00 offset=0x02C2
-상황을 보고 있다
+　様子を見ている
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x031A
-　【어택 블라인드】
-　트랩 영향으로 발동 실패！
+　【アタックブライン】
+　トラップの影響で発動失敗！
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x0452
-　콜드 스프레이　　Ｅ／Ｓ
-　　슬로
+　コールドスプレー　　Ｅ／Ｓ
+　　スロウ
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x04C0
-　어택 블라인드　　Ｓ
-　　\x1e\x1b 버튼 사용 불가
+　アタックブライン　　Ｓ
+　　\x1e\x1bボタンを使用不能にする
 <<<
 
 >>> [004] op=0x21(display) flag=0x00 offset=0x0546
-　퍼스트 에너지
-　　스피드 ２５
+　ファーストエナジー
+　　スピード２５
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x061A
-　어택 블라인드　　Ｓ
-　　\x1e\x1d 버튼 사용 불가
+　アタックブライン　　Ｓ
+　　\x1e\x1dボタンを使用不能にする
 <<<
 
 >>> [006] op=0x21(display) flag=0x00 offset=0x06A8
 　ＨＥ−ＳＡＷ　　Ｐ／Ｓ
-　 가끔 즉사
+　　稀に即死
 <<<
 
 >>> [007] op=0x21(display) flag=0x00 offset=0x075E
-　어택 블라인드　　
-\x1e\x1c 버튼 사용 불가
+　アタックブライン　　
+\x1e\x1cボタンを使用不能にする
 <<<
 
 >>> [008] op=0x21(display) flag=0x00 offset=0x07E6
-　보디 어택　　Ｐ／Ｓ
-　　파일럿 기절
+　ボディーアタック　　Ｐ／Ｓ
+　　パイロット気絶
 <<<

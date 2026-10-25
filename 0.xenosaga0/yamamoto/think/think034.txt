@@ -1,34 +1,33 @@
-# think_patch extract: think034.bin.ori
+# think original extract: think034.bin.ori
 # 총 6개 텍스트 엔트리
-# 번역 시 텍스트 내용만 수정하세요.
-# 텍스트가 원본보다 길면 자동으로 잘림.
+# 원문 초기화: 공백·개행·제어문자 보존. 새 빌드는 translations.json을 사용합니다.
 
 >>> [000] op=0x21(display) flag=0x00 offset=0x029A
-　라이트닝　　Ｅ／번개
+　ライトニング　　Ｅ／雷
 
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x02FA
-　위스퍼 보이스　　Ｓ
-　　수면
+　ウィスパーヴォイス　　Ｓ
+　　眠り
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x035C
-　베놈 클로　　Ｐ／Ｓ
-　　독
+　ベノムクロー　　Ｐ／Ｓ
+　　毒
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x03B4
-　방어한다
+　身を守る
 
 <<<
 
 >>> [004] op=0x21(display) flag=0x00 offset=0x044C
-　그래비티 봄　　Ｅ
+　グラビティーボム　　Ｅ
 
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x049C
- 상황을 본다
+　様子をみる
 
 <<<

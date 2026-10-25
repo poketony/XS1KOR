@@ -161,7 +161,7 @@ shottype LG10AG
 
 # サブマシンガン     SMG99AG
 shottype SMG99AG
-  name 서브머신건
+  name 서브　머신건
   default
   model mg00
 
@@ -867,7 +867,7 @@ shottype SMP53AG
 # マシンガン
 shottype SMG32VX
   model mg01
-  name 서브머신건
+  name 서브　머신건
   3wa
 
   vshotsnd 23  0.6         #マシンガン音

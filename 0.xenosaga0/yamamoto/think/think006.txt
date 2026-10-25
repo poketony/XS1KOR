@@ -1,36 +1,35 @@
-# think_patch extract: think006.bin
+# think original extract: think006.bin.ori
 # 총 7개 텍스트 엔트리
-# 번역 시 텍스트 내용만 수정하세요.
-# 텍스트가 원본보다 길면 자동으로 잘림.
+# 원문 초기화: 공백·개행·제어문자 보존. 새 빌드는 translations.json을 사용합니다.
 
->>> [000] op=0x1A(condition) flag=0x00 offset=0x0036
+>>> [000] op=0x1A(print) flag=0x00 offset=0x0036
 INIT
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x0178
-상황을 보는 중
+様子を見ている
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x0272
-　확산 빔  Ｅ／Ｂ
+　拡散ビーム　　Ｅ／Ｂ
 
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x02C4
-　낙뢰  Ｅ／번개
+　落雷　　Ｅ／雷
 
 <<<
 
 >>> [004] op=0x21(display) flag=0x00 offset=0x0306
-　힘을 모아 다음 턴에 중력파
+　力をためて次のターンで重力波
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x0370
-　중력파  Ｅ
+　重力波　　Ｅ
 
 <<<
 
 >>> [006] op=0x21(display) flag=0x00 offset=0x0492
-　모우 빔  Ｅ／Ｂ
+　モウビーム　　Ｅ／Ｂ
 
 <<<

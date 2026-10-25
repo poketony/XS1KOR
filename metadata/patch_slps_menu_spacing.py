@@ -1061,6 +1061,77 @@ def sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
+def apply_save_title_prefix(data: bytearray) -> None:
+    """Change only the icon.sys first line; leave the location composer intact."""
+    # 80 unused bytes between .reginfo and .data. Extend the RX segment only
+    # to the next segment boundary; no file growth or BSS storage is needed.
+    prefix = b"".join(
+        b"\x81\x7c" if c == "-" else chr(ord(c) + 0xFEE0).encode("shift_jis")
+        for c in "XenosagaEPI-00"
+    ) + b"\0"
+    words = (
+        0x3C0A0033, 0x354A3CE0,             # t2 = prefix
+        0x248900C0,                         # t1 = icon.sys title
+        0x91430000, 0x254A0001, 0xA1230000, # copy through NUL
+        0x1460FFFC, 0x25290001,
+        0x2402001C, 0xA4820006,             # newline after 14 SJIS characters
+        0x08087E0E, 0x2402000A,             # resume 0x21f838; displaced li v0,10
+    )
+    payload = (struct.pack("<12I", *words) + prefix).ljust(0x50, b"\0")
+    patches = (
+        (0x64, struct.pack("<II", 0x133CB0, 0x133CB0),
+         struct.pack("<II", 0x133D00, 0x133D00)),
+        (0x134CB0, bytes(0x50), payload),
+        (0x20830, struct.pack("<I", 0x2402000A), struct.pack("<I", 0x080CCF2C)),
+        (0x20854, struct.pack("<I", 0x248900DE), struct.pack("<I", 0x248900DC)),
+        (0x20868, struct.pack("<I", 0xA08600DD), struct.pack("<I", 0xA08600DB)),
+        (0x20878, struct.pack("<I", 0xA08300DB), struct.pack("<I", 0xA08300D9)),
+    )
+    for offset, before, after in patches:
+        if len(before) != len(after) or data[offset:offset + len(before)] != before:
+            raise ValueError(f"save-title patch source mismatch at 0x{offset:08x}")
+    for offset, before, after in patches:
+        data[offset:offset + len(before)] = after
+
+
+def apply_tutorial_cursor_fix(data: bytearray) -> None:
+    """Keep only the battle tutorial continuation sprite inside its window."""
+    cave_va, cave_size = 0x0026EC70, 156  # Unreferenced e_test debug routine.
+    cave_offset = cave_va - TEXT_VA_DELTA
+    hook_offset = 0x00277B84 - TEXT_VA_DELTA
+    original_call = struct.pack('<I', _mips_j(3, 0x00270CA0))
+    patched_call = struct.pack('<I', _mips_j(3, cave_va))
+    words = (
+        _mips_i(0x23, 28, 8, -0x5598),       # lw t0, tutorial work pointer(gp)
+        _mips_i(0x09, 8, 9, 0x1BC),         # embedded continuation cursor
+        _mips_i(0x05, 4, 9, 11), 0,         # other cursors keep original XY
+        _mips_i(0x21, 8, 9, 8),             # window X
+        _mips_i(0x21, 8, 10, 0x10),         # window width
+        _mips_r(9, 10, 9, 0x21),
+        _mips_i(0x09, 9, 9, -24),
+        _mips_i(0x29, 4, 9, 4),             # cursor X = right - 24
+        _mips_i(0x21, 8, 9, 10),            # window Y
+        _mips_i(0x21, 8, 10, 0x12),         # window height
+        _mips_r(9, 10, 9, 0x21),
+        _mips_i(0x09, 9, 9, -18),
+        _mips_i(0x29, 4, 9, 6),             # cursor Y = bottom - 18
+        _mips_j(2, 0x00270CA0), 0,          # tail-call preserves caller RA
+    )
+    code = struct.pack(f'<{len(words)}I', *words)
+    if data[hook_offset:hook_offset+4] == patched_call:
+        if data[cave_offset:cave_offset+len(code)] != code:
+            raise ValueError('Tutorial cursor hook exists with unexpected code')
+        return
+    if data[hook_offset:hook_offset+4] != original_call:
+        raise ValueError('Unexpected tutorial cursor call instruction')
+    expected = '2e954f8796ffcb7436a3efbf253f78805f8bf2f0d06f6dd6de50ccb9784a307d'
+    if hashlib.sha256(data[cave_offset:cave_offset+cave_size]).hexdigest() != expected:
+        raise ValueError('Unexpected e_test debug routine; refusing cursor patch')
+    _assert_code_cave_unreferenced(data, cave_va, cave_size, 'tutorial cursor')
+    data[cave_offset:cave_offset+len(code)] = code
+    data[hook_offset:hook_offset+4] = patched_call
+
+
 def write_output(output: Path, data: bytes, replace_output: bool) -> None:
     if output.exists() and not replace_output:
         raise SystemExit(f"[ERROR] refusing to overwrite existing output: {output}")
@@ -1125,6 +1196,8 @@ def main() -> None:
         memsz_offset=0xA8,
         expected_memsz=0x1393C,
     )
+    apply_save_title_prefix(data)
+    apply_tutorial_cursor_fix(data)
     if len(data) != len(original):
         raise AssertionError("SLPS rebuild changed the executable file size")
     write_output(output, data, args.replace_output)
@@ -1145,6 +1218,7 @@ def main() -> None:
         print(f"[OK] AGWS text {change}")
     for change in database_changes:
         print(f"[OK] database search {change}")
+    print("[OK] Memory-card first line: XenosagaEPI-##; location and save ID unchanged")
     print(f"[OK] source SHA-256: {sha256(original)}")
     print(f"[OK] output SHA-256: {sha256(data)}")
     print(f"[OK] output: {output}")

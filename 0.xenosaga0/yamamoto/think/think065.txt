@@ -1,53 +1,52 @@
-# think_patch extract: think065.bin.ori
+# think original extract: think065.bin.ori
 # 총 11개 텍스트 엔트리
-# 번역 시 텍스트 내용만 수정하세요.
-# 텍스트가 원본보다 길면 자동으로 잘림.
+# 원문 초기화: 공백·개행·제어문자 보존. 새 빌드는 translations.json을 사용합니다.
 
 >>> [000] op=0x21(display) flag=0x00 offset=0x029C
-　시알 윙　　Ｓ
-　　부스트 봉쇄
+　シーアルウイング　　Ｓ
+　　ブースト封鎖
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x0388
-　무버 핸드　　Ｓ
-　 후열 날리기
+　ムーバーハンド　　Ｓ
+　　後列とばし
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x03D6
-　라이프 이터　　Ｓ
-　　ＨＰ 드레인
+　ライフイーター　　Ｓ
+　　ドレインＨＰ
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x0426
-　라이프 이터　　Ｓ
-　　ＨＰ 드레인
+ライフイーター　　Ｓ
+　　ドレインＨＰ
 <<<
 
 >>> [004] op=0x21(display) flag=0x00 offset=0x0474
- 기가 프레시  Ｓ
-　　모든 스테이터스 클리어
+ギガフレッシュ　　Ｓ
+　　全ステータスクリア
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x0694
-　체질 변환 방어
+　体質変換防御！
 <<<
 
 >>> [006] op=0x21(display) flag=0x00 offset=0x079A
-　불꽃 속성 공격을 완전 방어
+　炎　属性のある攻撃を完全防御
 <<<
 
 >>> [007] op=0x21(display) flag=0x00 offset=0x081A
-　번개 속성 공격을 완전 방어
+　雷　属性のある攻撃を完全防御
 <<<
 
 >>> [008] op=0x21(display) flag=0x00 offset=0x089A
-　냉기 속성 공격을 완전 방어
+　冷　属性のある攻撃を完全防御
 <<<
 
 >>> [009] op=0x21(display) flag=0x00 offset=0x091A
-　Ｂ 속성 공격을 완전 방어
+　Ｂ　属性のある攻撃を完全防御
 <<<
 
 >>> [010] op=0x21(display) flag=0x00 offset=0x099A
-　기 속성 공격을 완전 방어
+　気　属性のある攻撃を完全防御
 <<<

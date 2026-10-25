@@ -1,45 +1,44 @@
-# think_patch extract: think045.bin.ori
+# think original extract: think045.bin.ori
 # 총 9개 텍스트 엔트리
-# 번역 시 텍스트 내용만 수정하세요.
-# 텍스트가 원본보다 길면 자동으로 잘림.
+# 원문 초기화: 공백·개행·제어문자 보존. 새 빌드는 translations.json을 사용합니다.
 
 >>> [000] op=0x21(display) flag=0x00 offset=0x02DE
-　포이즌 클라우드　　Ｅ／Ｓ
-　　독
+　ポイズンクラウド　　Ｅ／Ｓ
+　　毒
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x031C
-　선더볼트　　Ｅ／번개
+　サンダーボルト　　Ｅ／雷
 
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x038C
-　파워 차지
-　　물리 공격력 업
+　パワーチャージ
+　　物理攻撃力ＵＰ
 <<<
 
->>> [003] op=0x1A(condition) flag=0x00 offset=0x03BE
-Ｍ사이즈검색
+>>> [003] op=0x1A(print) flag=0x00 offset=0x03BE
+Ｍサイズ検索
 <<<
 
->>> [004] op=0x1A(condition) flag=0x00 offset=0x03FC
-태클 선택
+>>> [004] op=0x1A(print) flag=0x00 offset=0x03FC
+タックルを選べ
 <<<
 
->>> [005] op=0x1A(condition) flag=0x00 offset=0x0426
-ＡＧＷＳ 선택
+>>> [005] op=0x1A(print) flag=0x00 offset=0x0426
+ＡＧＷＳを選べ
 <<<
 
->>> [006] op=0x1A(condition) flag=0x00 offset=0x0456
-태클 나왔나？
+>>> [006] op=0x1A(print) flag=0x00 offset=0x0456
+タックルは出たか？
 <<<
 
 >>> [007] op=0x21(display) flag=0x00 offset=0x0494
-　태클　　Ｐ／Ｓ
-　　슬로
+　タックル　　Ｐ／Ｓ
+　　スロウ
 <<<
 
 >>> [008] op=0x21(display) flag=0x00 offset=0x0506
-　트롤 스윙　　Ｐ／Ｓ
-　　물리 방어력 저하
+　トロルスイング　　Ｐ／Ｓ
+　　物理防御力低下
 <<<

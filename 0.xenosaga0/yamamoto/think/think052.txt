@@ -1,38 +1,37 @@
-# think_patch extract: think052.bin.ori
+# think original extract: think052.bin.ori
 # 총 7개 텍스트 엔트리
-# 번역 시 텍스트 내용만 수정하세요.
-# 텍스트가 원본보다 길면 자동으로 잘림.
+# 원문 초기화: 공백·개행·제어문자 보존. 새 빌드는 translations.json을 사용합니다.
 
 >>> [000] op=0x21(display) flag=0x00 offset=0x00FC
-　선더볼트　　Ｅ／번개
+　サンダーボルト　　Ｅ／雷
 
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x0146
-　Ｗ 선더볼트　　Ｅ／번개
+　Ｗサンダーボルト　　Ｅ／雷
 
 <<<
 
 >>> [002] op=0x21(display) flag=0x00 offset=0x01A0
-　ＭＡＸ 선더볼트　　Ｅ／번개
+　ＭＡＸサンダーボルト　Ｅ／雷
 
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x01E0
-　포이즌 클라우드　　Ｅ／Ｓ
-　　독
+　ポイズンクラウド　　Ｅ／Ｓ
+　　毒
 <<<
 
 >>> [004] op=0x21(display) flag=0x00 offset=0x0242
-　선더볼트　　Ｅ／번개
+　サンダーボルト　　Ｅ／雷
 
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x027E
-　포이즌 클라우드　　Ｅ／Ｓ
-　　독
+　ポイズンクラウド　　Ｅ／Ｓ
+　　毒
 <<<
 
 >>> [006] op=0x21(display) flag=0x00 offset=0x02B6
-상황을 보고 있다
+　様子を見ている
 <<<

@@ -1,87 +1,86 @@
-# think_patch extract: think055.bin.ori
+# think original extract: think055.bin.ori
 # 총 18개 텍스트 엔트리
-# 번역 시 텍스트 내용만 수정하세요.
-# 텍스트가 원본보다 길면 자동으로 잘림.
+# 원문 초기화: 공백·개행·제어문자 보존. 새 빌드는 translations.json을 사용합니다.
 
->>> [000] op=0x1A(condition) flag=0x00 offset=0x0116
-죽어서 부스트 체크
+>>> [000] op=0x1A(print) flag=0x00 offset=0x0116
+死んでブーストチェック
 <<<
 
 >>> [001] op=0x21(display) flag=0x00 offset=0x01B0
- 반혼 변화
+　反魂変化
 
 <<<
 
->>> [002] op=0x1A(condition) flag=0x00 offset=0x01C4
-체크 ＰＯＳ１
+>>> [002] op=0x1A(print) flag=0x00 offset=0x01C4
+チェックＰＯＳ１
 <<<
 
 >>> [003] op=0x21(display) flag=0x00 offset=0x0208
- 반혼 변화
+　反魂変化
 
 <<<
 
->>> [004] op=0x1A(condition) flag=0x00 offset=0x021C
-체크 ＰＯＳ２
+>>> [004] op=0x1A(print) flag=0x00 offset=0x021C
+チェックＰＯＳ２
 <<<
 
 >>> [005] op=0x21(display) flag=0x00 offset=0x0260
- 반혼 변화
+　反魂変化
 
 <<<
 
->>> [006] op=0x1A(condition) flag=0x00 offset=0x0274
-체크 ＰＯＳ３
+>>> [006] op=0x1A(print) flag=0x00 offset=0x0274
+チェックＰＯＳ３
 <<<
 
 >>> [007] op=0x21(display) flag=0x00 offset=0x02B8
- 반혼 변화
+　反魂変化
 
 <<<
 
->>> [008] op=0x1A(condition) flag=0x00 offset=0x02CC
-체크 ＰＯＳ４
+>>> [008] op=0x1A(print) flag=0x00 offset=0x02CC
+チェックＰＯＳ４
 <<<
 
 >>> [009] op=0x21(display) flag=0x00 offset=0x0310
- 반혼 변화
+　反魂変化
 
 <<<
 
->>> [010] op=0x1A(condition) flag=0x00 offset=0x0324
-체크 ＰＯＳ５
+>>> [010] op=0x1A(print) flag=0x00 offset=0x0324
+チェックＰＯＳ５
 <<<
 
 >>> [011] op=0x21(display) flag=0x00 offset=0x034A
-　도주　　
+　逃走　　
 　　
 <<<
 
 >>> [012] op=0x21(display) flag=0x00 offset=0x03B2
-　모데스트 커스　　Ｓ
-　　혼란
+　モデストカース　　Ｓ
+　　混乱
 <<<
 
 >>> [013] op=0x21(display) flag=0x00 offset=0x03F4
- 원한의 냉기  Ｅ／냉기
+　怨念の冷気　　Ｅ／冷
 
 <<<
 
 >>> [014] op=0x21(display) flag=0x00 offset=0x0498
-　앱소프션　　Ｅ
-　　ＥＰ 드레인
+　アブソープション　　Ｅ
+　　ＥＰドレイン
 <<<
 
 >>> [015] op=0x21(display) flag=0x00 offset=0x04E4
-　소울 스프링　　Ｓ
-　　ＥＰ 오버
+　ソウルスフリング　　Ｓ
+　　ＥＰオーバー
 <<<
 
 >>> [016] op=0x21(display) flag=0x00 offset=0x0524
-　도주　　
+　逃走　　
 　　
 <<<
 
 >>> [017] op=0x21(display) flag=0x00 offset=0x058C
-상황을 보고 있다
+　様子を見ている
 <<<

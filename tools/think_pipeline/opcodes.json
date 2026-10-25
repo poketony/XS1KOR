@@ -1,0 +1,584 @@
+[
+  {
+    "op": 0,
+    "name": "cmdExit",
+    "address": "0xa1cd48",
+    "args": 0
+  },
+  {
+    "op": 1,
+    "name": "cmdGo",
+    "address": "0xa1cd50",
+    "args": 1
+  },
+  {
+    "op": 2,
+    "name": "cmdGosub",
+    "address": "0xa1cd80",
+    "args": 1
+  },
+  {
+    "op": 3,
+    "name": "cmdReturn",
+    "address": "0xa1cdf8",
+    "args": 0
+  },
+  {
+    "op": 4,
+    "name": "cmdBra",
+    "address": "0xa1ce38",
+    "args": 4
+  },
+  {
+    "op": 5,
+    "name": "cmdOngo",
+    "address": "0xa1cf70",
+    "args": 3
+  },
+  {
+    "op": 6,
+    "name": "cmdOngosub",
+    "address": "0xa1cff0",
+    "args": 3
+  },
+  {
+    "op": 7,
+    "name": "cmdRset",
+    "address": "0xa1d0c0",
+    "args": 2
+  },
+  {
+    "op": 8,
+    "name": "cmdRmath1",
+    "address": "0xa1d128",
+    "args": 1
+  },
+  {
+    "op": 9,
+    "name": "cmdRmath1",
+    "address": "0xa1d128",
+    "args": 1
+  },
+  {
+    "op": 10,
+    "name": "cmdRmath2",
+    "address": "0xa1d218",
+    "args": 2
+  },
+  {
+    "op": 11,
+    "name": "cmdRmath2",
+    "address": "0xa1d218",
+    "args": 2
+  },
+  {
+    "op": 12,
+    "name": "cmdRmath2",
+    "address": "0xa1d218",
+    "args": 2
+  },
+  {
+    "op": 13,
+    "name": "cmdRmath2",
+    "address": "0xa1d218",
+    "args": 2
+  },
+  {
+    "op": 14,
+    "name": "cmdRmath2",
+    "address": "0xa1d218",
+    "args": 2
+  },
+  {
+    "op": 15,
+    "name": "cmdRmath2",
+    "address": "0xa1d218",
+    "args": 2
+  },
+  {
+    "op": 16,
+    "name": "cmdRmath2",
+    "address": "0xa1d218",
+    "args": 2
+  },
+  {
+    "op": 17,
+    "name": "cmdRmath2",
+    "address": "0xa1d218",
+    "args": 2
+  },
+  {
+    "op": 18,
+    "name": "cmdRmath1",
+    "address": "0xa1d128",
+    "args": 1
+  },
+  {
+    "op": 19,
+    "name": "cmdRmath1",
+    "address": "0xa1d128",
+    "args": 1
+  },
+  {
+    "op": 20,
+    "name": "cmdRmath2",
+    "address": "0xa1d218",
+    "args": 2
+  },
+  {
+    "op": 21,
+    "name": "cmdRpush",
+    "address": "0xa1d368",
+    "args": 1
+  },
+  {
+    "op": 22,
+    "name": "cmdRpop",
+    "address": "0xa1d3e0",
+    "args": 1
+  },
+  {
+    "op": 23,
+    "name": "cmdTblget",
+    "address": "0xa1d450",
+    "args": 3
+  },
+  {
+    "op": 24,
+    "name": "cmdTblset",
+    "address": "0xa1d4f0",
+    "args": 3
+  },
+  {
+    "op": 25,
+    "name": "cmdRput",
+    "address": "0xa1d5a0",
+    "args": 1
+  },
+  {
+    "op": 26,
+    "name": "cmdPrint",
+    "address": "0xa1d5d8",
+    "args": 0
+  },
+  {
+    "op": 27,
+    "name": "cmdMemdump",
+    "address": "0xa1d658",
+    "args": 2
+  },
+  {
+    "op": 28,
+    "name": "cmdCmdputon",
+    "address": "0xa1d6a8",
+    "args": 0
+  },
+  {
+    "op": 29,
+    "name": "cmdCmdputoff",
+    "address": "0xa1d6c0",
+    "args": 0
+  },
+  {
+    "op": 32,
+    "name": "cmdMsgPos",
+    "address": "0xa1d6d0",
+    "args": 2
+  },
+  {
+    "op": 33,
+    "name": "cmdMsg",
+    "address": "0xa1d748",
+    "args": 1
+  },
+  {
+    "op": 34,
+    "name": "cmdThinkset",
+    "address": "0xa1d9f0",
+    "args": 0
+  },
+  {
+    "op": 35,
+    "name": "cmdThinkset2",
+    "address": "0xa1da38",
+    "args": 0
+  },
+  {
+    "op": 36,
+    "name": "cmdCounterBoost",
+    "address": "0xa1dcb8",
+    "args": 0
+  },
+  {
+    "op": 37,
+    "name": "cmdStatChk",
+    "address": "0xa1dd08",
+    "args": 3
+  },
+  {
+    "op": 38,
+    "name": "cmdLineChk",
+    "address": "0xa1dda8",
+    "args": 2
+  },
+  {
+    "op": 39,
+    "name": "cmdUnitparaGet",
+    "address": "0xa1de20",
+    "args": 3
+  },
+  {
+    "op": 40,
+    "name": "cmdUnitparaSet",
+    "address": "0xa1dec8",
+    "args": 3
+  },
+  {
+    "op": 41,
+    "name": "cmdUnittbl",
+    "address": "0xa1e1f0",
+    "args": 3
+  },
+  {
+    "op": 42,
+    "name": "cmdUnitCreate",
+    "address": "0xa1e330",
+    "args": 4
+  },
+  {
+    "op": 43,
+    "name": "cmdUnitChange",
+    "address": "0xa1e588",
+    "args": 2
+  },
+  {
+    "op": 44,
+    "name": "cmdAtktbl",
+    "address": "0xa1e678",
+    "args": 3
+  },
+  {
+    "op": 45,
+    "name": "cmdAtkset",
+    "address": "0xa1e898",
+    "args": 2
+  },
+  {
+    "op": 46,
+    "name": "cmdAtktblSort",
+    "address": "0xa1e958",
+    "args": 2
+  },
+  {
+    "op": 47,
+    "name": "cmdAtktblSortRev",
+    "address": "0xa1e970",
+    "args": 2
+  },
+  {
+    "op": 48,
+    "name": "cmdAtktblSearch",
+    "address": "0xa1ebf8",
+    "args": 4
+  },
+  {
+    "op": 49,
+    "name": "cmdTecparaGet",
+    "address": "0xa1ee00",
+    "args": 3
+  },
+  {
+    "op": 50,
+    "name": "cmdMonsSetNoGet",
+    "address": "0xa1efc0",
+    "args": 1
+  },
+  {
+    "op": 51,
+    "name": "cmdPartySizeGet",
+    "address": "0xa1f018",
+    "args": 2
+  },
+  {
+    "op": 52,
+    "name": "cmdLightAmb",
+    "address": "0xa1f110",
+    "args": 3
+  },
+  {
+    "op": 53,
+    "name": "cmdLightCol",
+    "address": "0xa1f1e8",
+    "args": 4
+  },
+  {
+    "op": 54,
+    "name": "cmdLightDir",
+    "address": "0xa1f2e8",
+    "args": 4
+  },
+  {
+    "op": 55,
+    "name": "cmdCamRefMode",
+    "address": "0xa1f4f0",
+    "args": 0
+  },
+  {
+    "op": 56,
+    "name": "cmdCamCamMode",
+    "address": "0xa1f508",
+    "args": 0
+  },
+  {
+    "op": 57,
+    "name": "cmdCamPersMode",
+    "address": "0xa1f548",
+    "args": 0
+  },
+  {
+    "op": 58,
+    "name": "cmdCamBankMode",
+    "address": "0xa1f560",
+    "args": 0
+  },
+  {
+    "op": 59,
+    "name": "cmdCamRefMoveMode",
+    "address": "0xa1f518",
+    "args": 0
+  },
+  {
+    "op": 60,
+    "name": "cmdCamCamMoveMode",
+    "address": "0xa1f530",
+    "args": 0
+  },
+  {
+    "op": 61,
+    "name": "cmdCamPersMoveMode",
+    "address": "0xa1f578",
+    "args": 0
+  },
+  {
+    "op": 62,
+    "name": "cmdCamBankMoveMode",
+    "address": "0xa1f590",
+    "args": 0
+  },
+  {
+    "op": 63,
+    "name": "cmdCamLock",
+    "address": "0xa1f5a8",
+    "args": 0
+  },
+  {
+    "op": 64,
+    "name": "cmdCamCopy",
+    "address": "0xa1f630",
+    "args": 0
+  },
+  {
+    "op": 65,
+    "name": "cmdCamSetPos",
+    "address": "0xa1f6c0",
+    "args": 3
+  },
+  {
+    "op": 66,
+    "name": "cmdCamSetAct",
+    "address": "0xa1f7b0",
+    "args": 5
+  },
+  {
+    "op": 67,
+    "name": "cmdCamSetAct2",
+    "address": "0xa1f918",
+    "args": 8
+  },
+  {
+    "op": 68,
+    "name": "cmdCamSetAct3",
+    "address": "0xa1fb10",
+    "args": 7
+  },
+  {
+    "op": 69,
+    "name": "cmdCamOffsPos",
+    "address": "0xa1fce0",
+    "args": 3
+  },
+  {
+    "op": 70,
+    "name": "cmdCamOffsAng",
+    "address": "0xa1fdd0",
+    "args": 3
+  },
+  {
+    "op": 71,
+    "name": "cmdCamMove",
+    "address": "0xa1fee8",
+    "args": 5
+  },
+  {
+    "op": 72,
+    "name": "cmdCamShake",
+    "address": "0xa20060",
+    "args": 5
+  },
+  {
+    "op": 73,
+    "name": "cmdCamCenterLength",
+    "address": "0xa20140",
+    "args": 1
+  },
+  {
+    "op": 74,
+    "name": "cmdCamUnitHeight",
+    "address": "0xa201c0",
+    "args": 2
+  },
+  {
+    "op": 75,
+    "name": "cmdCamCoordGet",
+    "address": "0xa20268",
+    "args": 3
+  },
+  {
+    "op": 76,
+    "name": "cmdCamBank",
+    "address": "0xa203a8",
+    "args": 1
+  },
+  {
+    "op": 77,
+    "name": "cmdCamPers",
+    "address": "0xa20448",
+    "args": 1
+  },
+  {
+    "op": 78,
+    "name": "cmdCamTblSet",
+    "address": "0xa204c0",
+    "args": 1
+  },
+  {
+    "op": 79,
+    "name": "cmdCamMoveStop",
+    "address": "0xa20518",
+    "args": 0
+  },
+  {
+    "op": 80,
+    "name": "cmdEvent",
+    "address": "0xa20548",
+    "args": 2
+  },
+  {
+    "op": 81,
+    "name": "cmdWaitEvent",
+    "address": "0xa205d8",
+    "args": 1
+  },
+  {
+    "op": 82,
+    "name": "cmdWaitCnt",
+    "address": "0xa20640",
+    "args": 1
+  },
+  {
+    "op": 83,
+    "name": "cmdWaitCamMove",
+    "address": "0xa206a8",
+    "args": 0
+  },
+  {
+    "op": 84,
+    "name": "cmdWaitMsg",
+    "address": "0xa20708",
+    "args": 0
+  },
+  {
+    "op": 85,
+    "name": "cmdVPadEneble",
+    "address": "0xa20730",
+    "args": 0
+  },
+  {
+    "op": 86,
+    "name": "cmdVPadDisable",
+    "address": "0xa20750",
+    "args": 0
+  },
+  {
+    "op": 87,
+    "name": "cmdVPadSet",
+    "address": "0xa20770",
+    "args": 1
+  },
+  {
+    "op": 88,
+    "name": "cmdMapMulSet",
+    "address": "0xa207b0",
+    "args": 4
+  },
+  {
+    "op": 89,
+    "name": "cmdHpPerGet",
+    "address": "0xa208a0",
+    "args": 2
+  },
+  {
+    "op": 90,
+    "name": "cmdEventSlotGet",
+    "address": "0xa20960",
+    "args": 1
+  },
+  {
+    "op": 91,
+    "name": "cmdThinkCamEvent",
+    "address": "0xa209b8",
+    "args": 1
+  },
+  {
+    "op": 92,
+    "name": "cmdCfEncountGet",
+    "address": "0xa20ac8",
+    "args": 1
+  },
+  {
+    "op": 93,
+    "name": "cmdCfEventGet",
+    "address": "0xa20b20",
+    "args": 1
+  },
+  {
+    "op": 94,
+    "name": "cmdThinkNoGet",
+    "address": "0xa20b78",
+    "args": 1
+  },
+  {
+    "op": 95,
+    "name": "cmdStatGet",
+    "address": "0xa20bd0",
+    "args": 4
+  },
+  {
+    "op": 96,
+    "name": "cmdStatSet",
+    "address": "0xa20c98",
+    "args": 4
+  },
+  {
+    "op": 97,
+    "name": "cmdStatReset",
+    "address": "0xa20d68",
+    "args": 3
+  },
+  {
+    "op": 98,
+    "name": "cmdDeadTime",
+    "address": "0xa20e08",
+    "args": 2
+  }
+]

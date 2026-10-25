@@ -1,0 +1,5855 @@
+{
+  "version": 2,
+  "original_sha256": {
+    "think000.bin": "f0dd20ed3ee26f0a04fe390900c6ed534e86abdeed2e6c882d2dc6afeb797c84",
+    "think001.bin": "3d27c16f29e7ec434c1e8d61270bf2888afc6e3c7a01452bb51c7415598f2971",
+    "think002.bin": "d1dc3f3ac024c97e87c5d8d9f8bd9d97d1277ecb7acc6734db4b1e5af7fa38cd",
+    "think003.bin": "3fbb519849d02dedeabc2da9bbb44971ae67827659cbeda1d77b0f3fdfd59bac",
+    "think004.bin": "37deed45b3e8bd167adb059442652815d6820e445b1091663624559f038e5c91",
+    "think005.bin": "cd7ec9bfbf6f4a4edb11edc58cd1b292153e3225f8f7fcaa5a224bd6841b0c63",
+    "think006.bin": "4e389fbfd440a8ddc92a9453e3555b1910cc8af5597a170be0d30894ecc0faf9",
+    "think007.bin": "572cdd7fdf56b50618a9b31a3933aecbdf59f00135ac05db3596bc2d5531dfaf",
+    "think008.bin": "633f3dd03523bd5af7048f8fe03991308091f4715e9c05acf8cf194575e78ffc",
+    "think009.bin": "a11564a22365c515e62b4681bc5e4f3635f8327a0b81aae769fab267f6a58073",
+    "think010.bin": "a959097fdadfea0dd7f5e7fba8afa73d33f6187235301070a4a047d6b654a689",
+    "think011.bin": "6f539cf11fa1e62705d233f91bd3ad3232e839283c737837404f8ba0e69d1892",
+    "think012.bin": "0ceee12dfb0fa2c796ae982ce2c7e91380387325cd4393680ac0b70b199f363f",
+    "think013.bin": "abdd811576e5d297f20b37f30678db814822ff5302b3d70ea6face24ff9b17d1",
+    "think014.bin": "668184e4f151d7b9e6b830a3c5520547c54e5c834060ac230fc1531d289e3caa",
+    "think015.bin": "281899fdfeb7f7e55ff34d7be60333c570f90633db38325cf94b586963a1a379",
+    "think016.bin": "a1cf7be9ffb7b1463672b889b08c4f1a5d0f4df439aca0bf02c341f92c8fdff9",
+    "think017.bin": "60b29021b36f4d10e4d7a5a669349028536d162ffdd513a5bbd0b20cb77a255e",
+    "think018.bin": "73b5494054d12806bd5ef1923f4a09108f214f5c1e3f630f42c269ccbbb5d20f",
+    "think019.bin": "87e627bfaf124e26cb3bca71ec2e6ee21f049e6d12f281b467409b82af59cf62",
+    "think020.bin": "81e9cf76df73f6b16bb248a2c1fc679a97865a0e97f8dc5cfba71d2235318c05",
+    "think021.bin": "4ce3302ecc0ca1eb1f7df9fe942e750b716252ea6cdfd3673260e6275f088768",
+    "think022.bin": "d856f7445ba34b6fa34a2ddbdfd82eb86d88baaa804b63d1987adae99ddf86b8",
+    "think023.bin": "369798e864e40cc7ef825bc6415c499c226dca0fd331bca35469b5d641cf842e",
+    "think024.bin": "369798e864e40cc7ef825bc6415c499c226dca0fd331bca35469b5d641cf842e",
+    "think025.bin": "b932e4d17ac10359861951541c0e9ea9901e599961e72bf627686746f66810a0",
+    "think026.bin": "b6b3af4b851ac07a859b09923488447bae3a2112f59437324686bf6b2b922a9f",
+    "think027.bin": "1fbafe905ea36bec9f0d2ccec8fde12ed40a3fd596718d84aa37f189e4208c81",
+    "think028.bin": "cfc3d507c44392f888d27a8f9a9c7515b3226e1e0ea11ecdc9526492bbbe2e0e",
+    "think029.bin": "d2b23d531d13bdc7494e7265a6037d6514ce7b1211aac81e4348577e27d6f577",
+    "think030.bin": "fe1862535d8f50dcc9f0cac8bbdf74c97564c0d8868690974980e4e548f9b25b",
+    "think031.bin": "f0b6ded5cd278a141a0d7be0d6e9fcd417502975e88056e3a74b4091338b5862",
+    "think032.bin": "2a3eee30c074f5e28c0a5657294ab464876c9a59f54c6106e4c91c6b1b30b217",
+    "think033.bin": "7a5d9c5feda87e95199f72aa3559e482d744cd9904c63175c6b7006de9ef164e",
+    "think034.bin": "35810108352f493bdeb7d5a5f96a300091e34ee79961206110a23822e87748a5",
+    "think035.bin": "59049c9a45a10d719f161cb73e37a67e616476dacaff6a9e5aec9241bd4554e7",
+    "think036.bin": "12366b4704b440c8126f6f7c9e9604a5a555e663d0b414974f205769765bb692",
+    "think037.bin": "91da7c5dadf7c3106d231f3bb24a87fb7c801e2c04324dc9f73376172814e4c6",
+    "think038.bin": "1f53b38d15cfcfa18f02e3c0b3131909f74c8f2154850991d1dfbd3f7a173c9f",
+    "think039.bin": "72325e140697a84c9a238850bb9abb98128d14f33f76b055e8f549d8ea4b15ad",
+    "think040.bin": "e561de38533625024255c8e7a853406cc2343fbb69aed20618367c5f8026fd6c",
+    "think041.bin": "06af6a853af43604760e7a6e658e3a7b2171e92f2ea351b168376e6794cc3903",
+    "think042.bin": "9f45f9c8779ded844b077dde624f0fa5c3b751e86b0ea53c052f886613641229",
+    "think043.bin": "9b38c37eda6c408741f15b844d5c31ff1dbd2d36e413734c81b44bd05789af67",
+    "think044.bin": "053278920de4cd32bf6ff04a77725a6caae721e1a7b7bbd13b58bbc1be5a42b6",
+    "think045.bin": "857ea10071a728ea4c6e6fe774ebc394fc56eafa5a7764d86bc2c2f9a1d5eaf5",
+    "think046.bin": "b5ae3048176dc3ed77c8ad7b6eab648d02e0734832768a7edb5186a63c5d62fd",
+    "think047.bin": "19dc57244bcf40d2d1f770c6c4cf354be55da3c30e962a7767b9e3c9b2ba142e",
+    "think048.bin": "a5cd80d6059c2af903d864746b5d52254c53b9ebc99a6a52122507b693545775",
+    "think049.bin": "69d99fd1e1e252b46c2437571376f0f147edb28fd6d3a5f6521a6d364cecca23",
+    "think050.bin": "cab978726a4a1225b5279b70119e09aebc54950adf6a1a1d690449d9f418ddcc",
+    "think051.bin": "b6cb357fb46dd1baf01b13e1d5458430f166cf36c123a9492beae9d7b588d8c8",
+    "think052.bin": "d2e36c8952e472d6187a815a46538ff09bafcf47c00c6fd8d71c7975c2d0ab0e",
+    "think053.bin": "718224e7cc3307fa15a91523ea711dcfe56fefc416bcb5a6d8cca2d6416319b8",
+    "think054.bin": "2dfced738d5d64c67a48a086a760d6d053805420db86b491e6311e63117cd60a",
+    "think055.bin": "8c947d925c729f5a3fb24a5bb19121f0b8faf39d5144387cd475f52615f75e57",
+    "think056.bin": "389d891249303ffb1f9c7978571743c49bc35c58d3c7965d2f66e8ed0dfa406c",
+    "think057.bin": "97745c2e21b642a55d7b1b203e6e2d34fd5af728602db2d8b2e66096faff5cf8",
+    "think058.bin": "7d1ce99219def782c61ddaf684b995c3ff86031fafb73c67a320462413bc3bd0",
+    "think059.bin": "62c9cc27176a60fb6f526c99dd786cd1fb99a7da7f3ab97ea4dc36f5d0903430",
+    "think060.bin": "62c9cc27176a60fb6f526c99dd786cd1fb99a7da7f3ab97ea4dc36f5d0903430",
+    "think061.bin": "62c9cc27176a60fb6f526c99dd786cd1fb99a7da7f3ab97ea4dc36f5d0903430",
+    "think062.bin": "62c9cc27176a60fb6f526c99dd786cd1fb99a7da7f3ab97ea4dc36f5d0903430",
+    "think063.bin": "91509a852c481049520af121a9bc3b97a5ec3bd0286f00f4dd7e8d3cb74b8a61",
+    "think064.bin": "62c9cc27176a60fb6f526c99dd786cd1fb99a7da7f3ab97ea4dc36f5d0903430",
+    "think065.bin": "1132841af34982e0a59f81459981427e0b623753dee6043b7a2c3c0f1418a49a",
+    "think066.bin": "ea39e4a281d60e68df7066f17f257824861e629dc61a902e4231cb3b9b37b9cb",
+    "think067.bin": "c3e044712b28abe384472de5846cd2bd66d5f88f28bf16e7b25da6716780d168",
+    "think068.bin": "92844b6f098b59348b8c1bff6dcd5a534888bc03c79191753f88dbc6217d3a95",
+    "think069.bin": "bf1d7cf3c8f9af408d77a96cf3c1e1b8858be0882f2012d0a78ad49a3147d080",
+    "think070.bin": "71a3d07df3a71a816921cc73cb69369abafe916fb1080f2d33af58824b6caf53",
+    "think071.bin": "71a3d07df3a71a816921cc73cb69369abafe916fb1080f2d33af58824b6caf53",
+    "think072.bin": "71a3d07df3a71a816921cc73cb69369abafe916fb1080f2d33af58824b6caf53",
+    "think073.bin": "71a3d07df3a71a816921cc73cb69369abafe916fb1080f2d33af58824b6caf53",
+    "think074.bin": "167d7551eb56bc65da39396368e6049158f6b31c4ec4e3c7ed84db843c106b93",
+    "think075.bin": "b294af65d0f938f6d0ec3ec6e0c120e9fd71b2ac9378d8808f67824990d8713e",
+    "think076.bin": "54dfd03eef6ba428bbe3e291bcf536e30c07407f0cb83d4b76f1cd77ef279742",
+    "think077.bin": "af2924beae359a425828ac8ea5017312762eab937cc811e33efc0b0e5430f567",
+    "think078.bin": "af2924beae359a425828ac8ea5017312762eab937cc811e33efc0b0e5430f567",
+    "think079.bin": "51511f70432c6a873bb45956b5f5e2eb644676d87bd95b31d05dacf3cd3ec0a8",
+    "think080.bin": "51511f70432c6a873bb45956b5f5e2eb644676d87bd95b31d05dacf3cd3ec0a8",
+    "think081.bin": "51511f70432c6a873bb45956b5f5e2eb644676d87bd95b31d05dacf3cd3ec0a8",
+    "think082.bin": "51511f70432c6a873bb45956b5f5e2eb644676d87bd95b31d05dacf3cd3ec0a8",
+    "think083.bin": "51511f70432c6a873bb45956b5f5e2eb644676d87bd95b31d05dacf3cd3ec0a8",
+    "think084.bin": "f4e66b8dd3198d23321cd96e406b7aa544cb84f2463119549b94a56dab571b1b",
+    "think085.bin": "51511f70432c6a873bb45956b5f5e2eb644676d87bd95b31d05dacf3cd3ec0a8",
+    "think086.bin": "e022aadfc69c632d3f682dc6ad34a2707107e7a1c9ee51fb068cd6a47e7067d3",
+    "think087.bin": "5e5102a6d20064ede5aa1a8455bb334a96ae74a869543672b2d60b31411c705c",
+    "think088.bin": "9c16b17a46da6a955561f20187c291251a1e1bed0f402c9d8c3def324953cf7d",
+    "think089.bin": "5b9211dc29a91ccc1ad33a0bc9bdfd2e97c3057407a2a4c41e47f0f911c51f98",
+    "think090.bin": "91509a852c481049520af121a9bc3b97a5ec3bd0286f00f4dd7e8d3cb74b8a61",
+    "think091.bin": "f53de035ef341904112391360615ab4e3fe5c4f287e5954a07c556557f9a1ed0",
+    "think092.bin": "f2a389b429f38c52d1452adcc3c22df632971216bcf5e9baa36a363e24f256f1",
+    "think093.bin": "d360953c706f9714d6d1fb432d78360eecbac01b469794a5d6cc1d3217aef5fa",
+    "think094.bin": "9284d2c3bd18134fae8e07a8072bb2ec92caab421f6c1bf8b14fabba512a2ee7",
+    "think095.bin": "10bc6f5b567916061fec112cbfeac950d3f13c51516ba242f647aebecf40af83",
+    "think096.bin": "e9bcca5b6a60aa33a8d78dd36f50c5a1e0089cf7214713450ce219bdca6bfa48",
+    "think097.bin": "b8fafc5b587a44dd7ac030ffa3432d8031ea24b360211df965a3cd77b4b9b1c2",
+    "think098.bin": "5cbac7f1f84899badaec254b7ba8c920e340168c9549f5441fb00fb08b02247b",
+    "think099.bin": "fff9a2930cdb59a413e3b583ebadd01be429b0e5e4e1ab26c98f1b4f795a290d"
+  },
+  "strings": [
+    {
+      "id": "S0001",
+      "source": "PON",
+      "translation": "PON",
+      "locations": [
+        "think000.bin:0x0A22"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0002",
+      "source": "もんすたー",
+      "translation": "몬스터",
+      "locations": [
+        "think000.bin:0x0AA8",
+        "think092.bin:0x0782",
+        "think093.bin:0x0852",
+        "think095.bin:0x08E2",
+        "think096.bin:0x07A2",
+        "think098.bin:0x0282",
+        "think099.bin:0x08A2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0003",
+      "source": "けいおす",
+      "translation": "케이오스",
+      "locations": [
+        "think000.bin:0x0ABA",
+        "think092.bin:0x0794",
+        "think093.bin:0x0864",
+        "think095.bin:0x08F4",
+        "think096.bin:0x07B4",
+        "think099.bin:0x08B4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0004",
+      "source": "もも",
+      "translation": "모모",
+      "locations": [
+        "think000.bin:0x0ACA",
+        "think092.bin:0x07A4",
+        "think093.bin:0x0874",
+        "think095.bin:0x0904",
+        "think096.bin:0x07C4",
+        "think099.bin:0x08C4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0005",
+      "source": "しおん",
+      "translation": "시온",
+      "locations": [
+        "think000.bin:0x0AD6",
+        "think092.bin:0x07B0",
+        "think093.bin:0x0880",
+        "think095.bin:0x0910",
+        "think096.bin:0x07D0",
+        "think099.bin:0x08D0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0006",
+      "source": "　攻撃１　　？／？",
+      "translation": "　공격１　　？／？",
+      "locations": [
+        "think000.bin:0x0C68",
+        "think092.bin:0x08DE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0007",
+      "source": "　攻撃２　　？／？",
+      "translation": "　공격２　　？／？",
+      "locations": [
+        "think000.bin:0x0C88",
+        "think092.bin:0x08FE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0008",
+      "source": "　攻撃３　　？／？",
+      "translation": "　공격３　　？／？",
+      "locations": [
+        "think000.bin:0x0CA8",
+        "think092.bin:0x091E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0009",
+      "source": "　攻撃４　　？／？",
+      "translation": "　공격４　　？／？",
+      "locations": [
+        "think000.bin:0x0CC8",
+        "think092.bin:0x093E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0010",
+      "source": "　攻撃５　　？／？",
+      "translation": "　공격５　　？／？",
+      "locations": [
+        "think000.bin:0x0CE8",
+        "think092.bin:0x095E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0011",
+      "source": "　様子を見ている",
+      "translation": "　상황을 보고 있다",
+      "locations": [
+        "think000.bin:0x0D10",
+        "think000.bin:0x2B2A",
+        "think001.bin:0x1D20",
+        "think001.bin:0x1DEA",
+        "think002.bin:0x01C8",
+        "think002.bin:0x0250",
+        "think002.bin:0x0338",
+        "think002.bin:0x03C4",
+        "think002.bin:0x042A",
+        "think003.bin:0x0278",
+        "think003.bin:0x0300",
+        "think003.bin:0x03E8",
+        "think003.bin:0x0474",
+        "think003.bin:0x04DA",
+        "think013.bin:0x013E",
+        "think013.bin:0x01BC",
+        "think013.bin:0x024C",
+        "think014.bin:0x0230",
+        "think015.bin:0x0400",
+        "think015.bin:0x0490",
+        "think015.bin:0x04E0",
+        "think050.bin:0x0506",
+        "think051.bin:0x0666",
+        "think052.bin:0x02B6",
+        "think053.bin:0x0C5A",
+        "think054.bin:0x0838",
+        "think055.bin:0x058C",
+        "think056.bin:0x0A0C",
+        "think067.bin:0x02C2",
+        "think092.bin:0x0986"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0012",
+      "source": "GUARD",
+      "translation": "GUARD",
+      "locations": [
+        "think000.bin:0x0D90",
+        "think000.bin:0x0E62"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0013",
+      "source": "MOVE1",
+      "translation": "MOVE1",
+      "locations": [
+        "think000.bin:0x0DA8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0014",
+      "source": "MOVE2",
+      "translation": "MOVE2",
+      "locations": [
+        "think000.bin:0x0DC0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0015",
+      "source": "MOVE3",
+      "translation": "MOVE3",
+      "locations": [
+        "think000.bin:0x0DD8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0016",
+      "source": "MOVE",
+      "translation": "MOVE",
+      "locations": [
+        "think000.bin:0x0E86"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0017",
+      "source": "仲間が復活した",
+      "translation": "동료가 부활했다",
+      "locations": [
+        "think000.bin:0x0F3C",
+        "think000.bin:0x1094",
+        "think000.bin:0x2230"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0018",
+      "source": "ガードチェック",
+      "translation": "가드 체크",
+      "locations": [
+        "think000.bin:0x1426",
+        "think000.bin:0x1452",
+        "think000.bin:0x1E22"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0019",
+      "source": "攻撃１",
+      "translation": "공격１",
+      "locations": [
+        "think000.bin:0x148A",
+        "think000.bin:0x2AAE",
+        "think000.bin:0x2AF2",
+        "think000.bin:0x2B5C",
+        "think092.bin:0x09BC",
+        "think092.bin:0x0AC2",
+        "think093.bin:0x099C",
+        "think093.bin:0x0AA2",
+        "think095.bin:0x0A2C",
+        "think095.bin:0x0B32"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0020",
+      "source": "攻撃２",
+      "translation": "공격２",
+      "locations": [
+        "think000.bin:0x14AC",
+        "think000.bin:0x203C",
+        "think092.bin:0x09E4",
+        "think093.bin:0x09C4",
+        "think095.bin:0x0A54"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0021",
+      "source": "攻撃３",
+      "translation": "공격３",
+      "locations": [
+        "think000.bin:0x14CE",
+        "think092.bin:0x0A0C",
+        "think093.bin:0x09EC",
+        "think095.bin:0x0A7C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0022",
+      "source": "攻撃４",
+      "translation": "공격４",
+      "locations": [
+        "think000.bin:0x14F0",
+        "think092.bin:0x0A34",
+        "think093.bin:0x0A14",
+        "think095.bin:0x0AA4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0023",
+      "source": "攻撃５",
+      "translation": "공격５",
+      "locations": [
+        "think000.bin:0x1512",
+        "think092.bin:0x0A5C",
+        "think093.bin:0x0A3C",
+        "think095.bin:0x0ACC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0024",
+      "source": "防御",
+      "translation": "방어",
+      "locations": [
+        "think000.bin:0x1528",
+        "think000.bin:0x1D6A",
+        "think000.bin:0x1F6E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0025",
+      "source": "攻撃",
+      "translation": "공격",
+      "locations": [
+        "think000.bin:0x158E",
+        "think000.bin:0x1A8A",
+        "think000.bin:0x2100"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0026",
+      "source": "魔法",
+      "translation": "마법",
+      "locations": [
+        "think000.bin:0x15AE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0027",
+      "source": "魔法１",
+      "translation": "마법１",
+      "locations": [
+        "think000.bin:0x168C",
+        "think000.bin:0x1778",
+        "think092.bin:0x0BB8",
+        "think092.bin:0x0BFC",
+        "think093.bin:0x0B98",
+        "think093.bin:0x0BDC",
+        "think095.bin:0x0C28",
+        "think095.bin:0x0C6C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0028",
+      "source": "魔法２",
+      "translation": "마법２",
+      "locations": [
+        "think000.bin:0x16AE",
+        "think092.bin:0x0BDA",
+        "think092.bin:0x0C1E",
+        "think093.bin:0x0BBA",
+        "think093.bin:0x0BFE",
+        "think095.bin:0x0C4A",
+        "think095.bin:0x0C8E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0029",
+      "source": "魔法３",
+      "translation": "마법３",
+      "locations": [
+        "think000.bin:0x16D0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0030",
+      "source": "魔法４",
+      "translation": "마법４",
+      "locations": [
+        "think000.bin:0x16F2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0031",
+      "source": "魔法５",
+      "translation": "마법５",
+      "locations": [
+        "think000.bin:0x1714"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0032",
+      "source": "超変身",
+      "translation": "초변신",
+      "locations": [
+        "think000.bin:0x1754"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0033",
+      "source": "呪われろ！",
+      "translation": "저주받아라！",
+      "locations": [
+        "think000.bin:0x17B6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0034",
+      "source": "これでも喰らえ！",
+      "translation": "이거나 먹어라！",
+      "locations": [
+        "think000.bin:0x17DE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0035",
+      "source": "ボルテッカーッ！",
+      "translation": "볼테커！",
+      "locations": [
+        "think000.bin:0x1864"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0036",
+      "source": "貴様、ブス好きだなッ！",
+      "translation": "너，못생긴 여자 좋아하지！",
+      "locations": [
+        "think000.bin:0x1892"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0037",
+      "source": "ナメクジのように死ね！",
+      "translation": "민달팽이처럼 죽어라！",
+      "locations": [
+        "think000.bin:0x18CC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0038",
+      "source": "調子に乗るなッ！",
+      "translation": "건방 떨지 마라！",
+      "locations": [
+        "think000.bin:0x192C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0039",
+      "source": "超絶攻撃！",
+      "translation": "초절 공격！",
+      "locations": [
+        "think000.bin:0x1972"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0040",
+      "source": "ぱわーあっぷ！",
+      "translation": "파워 업！",
+      "locations": [
+        "think000.bin:0x1998",
+        "think000.bin:0x19C2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0041",
+      "source": "親分がてぇ〜へんだ！",
+      "translation": "보스가 위험해〜！",
+      "locations": [
+        "think000.bin:0x19EC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0042",
+      "source": "移動",
+      "translation": "이동",
+      "locations": [
+        "think000.bin:0x1A64",
+        "think098.bin:0x06EC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0043",
+      "source": "チュートリアル",
+      "translation": "튜토리얼",
+      "locations": [
+        "think000.bin:0x1AB8",
+        "think098.bin:0x042C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0044",
+      "source": "パラゲットＥＰ",
+      "translation": "패러킷 ＥＰ",
+      "locations": [
+        "think000.bin:0x1B2C",
+        "think000.bin:0x1DDE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0045",
+      "source": "ガードしていたか？",
+      "translation": "가드하고 있었나？",
+      "locations": [
+        "think000.bin:0x1B74",
+        "think049.bin:0x073A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0046",
+      "source": "感電したか？",
+      "translation": "감전됐나？",
+      "locations": [
+        "think000.bin:0x1BA4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0047",
+      "source": "Ｍサイズ検索",
+      "translation": "Ｍ 사이즈 검색",
+      "locations": [
+        "think000.bin:0x1BCE",
+        "think000.bin:0x1E48",
+        "think020.bin:0x03E6",
+        "think029.bin:0x07B2",
+        "think044.bin:0x06A0",
+        "think045.bin:0x03BE",
+        "think048.bin:0x02EA",
+        "think051.bin:0x04B2",
+        "think054.bin:0x0684",
+        "think056.bin:0x0858"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0048",
+      "source": "レーザーを選べ",
+      "translation": "레이저를 선택해라",
+      "locations": [
+        "think000.bin:0x1C08",
+        "think020.bin:0x0434"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0049",
+      "source": "ＡＧＷＳを選べ",
+      "translation": "ＡＧＷＳ를 선택해라",
+      "locations": [
+        "think000.bin:0x1C2E",
+        "think020.bin:0x045A",
+        "think044.bin:0x0708",
+        "think045.bin:0x0426",
+        "think048.bin:0x0352",
+        "think051.bin:0x051A",
+        "think054.bin:0x06EC",
+        "think056.bin:0x08C0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0050",
+      "source": "レーザーは出たか？",
+      "translation": "레이저는 나왔나？",
+      "locations": [
+        "think000.bin:0x1C5A",
+        "think020.bin:0x0486"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0051",
+      "source": "レーザーライフル",
+      "translation": "레이저 라이플",
+      "locations": [
+        "think000.bin:0x1CA4",
+        "think000.bin:0x1EC4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0052",
+      "source": "激震",
+      "translation": "격진",
+      "locations": [
+        "think000.bin:0x1CD2",
+        "think000.bin:0x1EF2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0053",
+      "source": "ソニックショット",
+      "translation": "소닉 샷",
+      "locations": [
+        "think000.bin:0x1CF4",
+        "think000.bin:0x1F14"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0054",
+      "source": "自爆装置作動",
+      "translation": "자폭 장치 작동",
+      "locations": [
+        "think000.bin:0x1D2E",
+        "think000.bin:0x1F42"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0055",
+      "source": "オートリペア",
+      "translation": "오토 리페어",
+      "locations": [
+        "think000.bin:0x1D8C",
+        "think000.bin:0x1F90"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0056",
+      "source": "　自爆装置作動\n",
+      "translation": "　자폭 장치 작동\n",
+      "locations": [
+        "think000.bin:0x1FE4",
+        "think020.bin:0x05CE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0057",
+      "source": "モーション",
+      "translation": "모션",
+      "locations": [
+        "think000.bin:0x2008"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0058",
+      "source": "ふぬぅー！　鋼の肉体！",
+      "translation": "후웁ー！ 강철의 육체！",
+      "locations": [
+        "think000.bin:0x2078",
+        "think000.bin:0x212E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0059",
+      "source": "ふぅ、疲れた・・・",
+      "translation": "후우，피곤하군・・・",
+      "locations": [
+        "think000.bin:0x2184"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0060",
+      "source": "行動できない",
+      "translation": "행동할 수 없다",
+      "locations": [
+        "think000.bin:0x21A8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0061",
+      "source": "侵入者の排除を開始！",
+      "translation": "침입자 제거를 개시！",
+      "locations": [
+        "think000.bin:0x228C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0062",
+      "source": "緊急呼集！",
+      "translation": "긴급 소집！",
+      "locations": [
+        "think000.bin:0x2340"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0063",
+      "source": "ガーディアン見参",
+      "translation": "가디언 등장",
+      "locations": [
+        "think000.bin:0x23A0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0064",
+      "source": "　鳴けッ！\nメス豚めッ！",
+      "translation": "　울부짖어라！\n암퇘지야！",
+      "locations": [
+        "think000.bin:0x2436"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0065",
+      "source": "　モモたん\nハァハァ・・・",
+      "translation": "　모모땅\n하아하아・・・",
+      "locations": [
+        "think000.bin:0x245A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0066",
+      "source": "かかってこいやッ！",
+      "translation": "덤벼라！",
+      "locations": [
+        "think000.bin:0x2482"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0067",
+      "source": "ひどすぎるッ！",
+      "translation": "너무해！",
+      "locations": [
+        "think000.bin:0x249C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0068",
+      "source": "　反魂変化\n",
+      "translation": "　반혼 변화\n",
+      "locations": [
+        "think000.bin:0x2532",
+        "think000.bin:0x258A",
+        "think000.bin:0x25E2",
+        "think000.bin:0x263A",
+        "think000.bin:0x2692",
+        "think053.bin:0x05BC",
+        "think053.bin:0x0614",
+        "think053.bin:0x066C",
+        "think053.bin:0x06C4",
+        "think053.bin:0x071C",
+        "think055.bin:0x01B0",
+        "think055.bin:0x0208",
+        "think055.bin:0x0260",
+        "think055.bin:0x02B8",
+        "think055.bin:0x0310",
+        "think056.bin:0x0418",
+        "think056.bin:0x0470",
+        "think056.bin:0x04C8",
+        "think056.bin:0x0520",
+        "think056.bin:0x0578"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0069",
+      "source": "チェックＰＯＳ１",
+      "translation": "체크 ＰＯＳ１",
+      "locations": [
+        "think000.bin:0x2546",
+        "think053.bin:0x05D0",
+        "think055.bin:0x01C4",
+        "think056.bin:0x042C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0070",
+      "source": "チェックＰＯＳ２",
+      "translation": "체크 ＰＯＳ２",
+      "locations": [
+        "think000.bin:0x259E",
+        "think053.bin:0x0628",
+        "think055.bin:0x021C",
+        "think056.bin:0x0484"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0071",
+      "source": "チェックＰＯＳ３",
+      "translation": "체크 ＰＯＳ３",
+      "locations": [
+        "think000.bin:0x25F6",
+        "think053.bin:0x0680",
+        "think055.bin:0x0274",
+        "think056.bin:0x04DC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0072",
+      "source": "チェックＰＯＳ４",
+      "translation": "체크 ＰＯＳ４",
+      "locations": [
+        "think000.bin:0x264E",
+        "think053.bin:0x06D8",
+        "think055.bin:0x02CC",
+        "think056.bin:0x0534"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0073",
+      "source": "チェックＰＯＳ５",
+      "translation": "체크 ＰＯＳ５",
+      "locations": [
+        "think000.bin:0x26A6",
+        "think053.bin:0x0730",
+        "think055.bin:0x0324",
+        "think056.bin:0x058C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0074",
+      "source": "　モデストカース\n　　混乱",
+      "translation": "　모데스트 커스\n　　혼란",
+      "locations": [
+        "think000.bin:0x26DC",
+        "think000.bin:0x27AC",
+        "think047.bin:0x041C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0075",
+      "source": "　ソウルスフリング\n　　ＥＰオーバー",
+      "translation": "　소울스 플링\n　　ＥＰ 오버",
+      "locations": [
+        "think000.bin:0x2720"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0076",
+      "source": "攻撃選択",
+      "translation": "공격 선택",
+      "locations": [
+        "think000.bin:0x27F6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0077",
+      "source": "　パワースイング　　体力低下",
+      "translation": "　파워 스윙　　체력 저하",
+      "locations": [
+        "think000.bin:0x2838"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0078",
+      "source": "　パワーチャージ　　攻撃力ＵＰ",
+      "translation": "　파워 차지　　공격력 ＵＰ",
+      "locations": [
+        "think000.bin:0x2876"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0079",
+      "source": "　タックル",
+      "translation": "　태클",
+      "locations": [
+        "think000.bin:0x28C2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0080",
+      "source": "　防御",
+      "translation": "　방어",
+      "locations": [
+        "think000.bin:0x28EE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0081",
+      "source": "　魔法１",
+      "translation": "　마법１",
+      "locations": [
+        "think000.bin:0x2916",
+        "think000.bin:0x29BE",
+        "think096.bin:0x0AFC",
+        "think096.bin:0x0B50",
+        "think099.bin:0x0C20"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0082",
+      "source": "　魔法２",
+      "translation": "　마법２",
+      "locations": [
+        "think000.bin:0x2940",
+        "think000.bin:0x29E8",
+        "think096.bin:0x0B26",
+        "think096.bin:0x0B7A",
+        "think099.bin:0x0C4A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0083",
+      "source": "　魔法３",
+      "translation": "　마법３",
+      "locations": [
+        "think000.bin:0x296A",
+        "think000.bin:0x2A12"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0084",
+      "source": "　魔法４",
+      "translation": "　마법４",
+      "locations": [
+        "think000.bin:0x2994"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0085",
+      "source": "　【デススペル】\n　トラップの影響で発動失敗！",
+      "translation": "　【데스 스펠】\n　트랩의 영향으로 발동 실패！",
+      "locations": [
+        "think000.bin:0x2A2C",
+        "think079.bin:0x0770",
+        "think080.bin:0x0770",
+        "think081.bin:0x0770",
+        "think082.bin:0x0770",
+        "think083.bin:0x0770",
+        "think085.bin:0x0770"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0086",
+      "source": "\n　　　　＜通常攻撃＞\n",
+      "translation": "\n　　　　＜일반 공격＞\n",
+      "locations": [
+        "think001.bin:0x0262"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0087",
+      "source": "　画面の右下の「グループターンウインドウ」\n（以後「ＧＴＷ」）に表示された左側の\n　キャラから、先に行動することができます。\n　次の順番のキャラは、その右側に並びます。",
+      "translation": "　화면 오른쪽 아래의 「그룹 턴 윈도우」\n（이하 「ＧＴＷ」）에 표시되어 있는 왼쪽의\n　캐릭터부터 먼저 행동할 수 있습니다．\n　다음 순서인 캐릭터는 그 오른쪽에 옵니다．",
+      "locations": [
+        "think001.bin:0x0286"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0088",
+      "source": "　ＧＴＷにキャラの表示がなくなると、\n　キャラの行動順番の組み直しが行われます。\n　ＧＴＷに表示のないキャラは、順番が組み\n　直されるまで、行動する機会はありません。",
+      "translation": "　ＧＴＷ에서 캐릭터 표시가 전부 사라지면\n　캐릭터의 행동 순서가 재정렬됩니다．\n　ＧＴＷ에 표시되지 않은 캐릭터는 순서가\n　재정렬되지 않는 한 행동할 수 없습니다．",
+      "locations": [
+        "think001.bin:0x0338"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0089",
+      "source": "　それでは方向キーの左右で攻撃対象を選択し、\n　\u001e\u001cか\u001e\u001dで通常攻撃を行います。",
+      "translation": "　그럼 방향키 좌우로 공격 대상을 선택해，\n　\u001e\u001c나 \u001e\u001d로 일반 공격을 합시다．",
+      "locations": [
+        "think001.bin:0x03E8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0090",
+      "source": "　敵のカテゴリーは、次の３種類です。\n　\u001e:と\u001e;と\u001e<でターゲットアナウンスには\n　\u001e=と\u001e>と\u001e?で表示されます。",
+      "translation": "　적의 카테고리는 다음의 ３종류입니다．\n　\u001e:와 \u001e;과 \u001e<，타깃 아나운스에는\n　\u001e=와 \u001e>과 \u001e?로 표시됩니다．",
+      "locations": [
+        "think001.bin:0x0440"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0091",
+      "source": "　通常攻撃１回につきＡＰを２消費します。\n　ＡＰは毎ターン４補充されるので\n　２回まで通常攻撃を行う事が可能です。",
+      "translation": "　일반 공격 １번당 ＡＰ를 ２ 소비합니다．\n　ＡＰ는 매 턴 ４씩 주어지므로\n　２번까지 일반 공격을 할 수 있습니다．",
+      "locations": [
+        "think001.bin:0x04B6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0092",
+      "source": "　原則として、\u001e\u001c攻撃は物理系。\n　\u001e\u001d攻撃はエーテル系になっています。\n　エーテル系の攻撃は左下の攻撃説明が\n　赤く表示されます。",
+      "translation": "　원칙적으로 \u001e\u001c 공격은 물리，\n　\u001e\u001d 공격은 에테르입니다．\n　에테르 공격은 왼쪽 아래에 있는\n　공격 설명이 빨갛게 표시됩니다．",
+      "locations": [
+        "think001.bin:0x053E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0093",
+      "source": "敵の残数は？",
+      "translation": "남은 적 수는？",
+      "locations": [
+        "think001.bin:0x05D2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0094",
+      "source": "キャラ番号は？",
+      "translation": "캐릭터 번호는？",
+      "locations": [
+        "think001.bin:0x05F8",
+        "think001.bin:0x08C0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0095",
+      "source": "ＡＰは？",
+      "translation": "ＡＰ는？",
+      "locations": [
+        "think001.bin:0x063C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0096",
+      "source": "\n　　　　　＜必殺技＞\n",
+      "translation": "\n　　　　　＜필살기＞\n",
+      "locations": [
+        "think001.bin:0x0674"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0097",
+      "source": "　必殺技を使うにはＡＰが６必要です。\n　通常攻撃を１回だけ行い、\u001e\u001eで終了すると\n　余ったＡＰ２を次のターンに持ち越せます。\n　（ガードを選択するのも有効な手段です）",
+      "translation": "　필살기를 쓰려면 ＡＰ가 ６ 필요합니다．\n　일반 공격을 １번 하고，\u001e\u001e로 종료하면\n　남은 ２ＡＰ가 다음 턴으로 이어집니다．\n　（가드를 하는 것도 좋은 방법입니다）",
+      "locations": [
+        "think001.bin:0x0698"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0098",
+      "source": "　ＡＰはターン毎に４補充されるので、\n　持ち越した２と合わせて６になるわけです。",
+      "translation": "　ＡＰ는 매 턴 ４씩 주어지기 때문에，\n　２가 남으면 다음 턴에 ６이 됩니다．",
+      "locations": [
+        "think001.bin:0x0746"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0099",
+      "source": "　通常攻撃を１回だけ行い、\u001e\u001eで終了すると\n　余ったＡＰを次のターンに持ち越せます。\n　（ガードを選択するのも有効な手段です）",
+      "translation": "　일반 공격을 １번만 하고，\u001e\u001e로 종료하면\n　모은 ＡＰ가 다음 턴으로 이어집니다．\n　（가드를 하는 것도 좋은 방법입니다）",
+      "locations": [
+        "think001.bin:0x07B6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0100",
+      "source": "　ＡＰが６になったので必殺技を使えます。\n　必殺技を出すには特定のコマンドを入力\n　します。",
+      "translation": "　ＡＰ가 ６이니 필살기를 사용합시다．\n　필살기를 쓰려면 특정 커맨드를\n　입력하면 됩니다．",
+      "locations": [
+        "think001.bin:0x084C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0101",
+      "source": "＜シオンの必殺技コマンド＞\n　\u001e\u001c\u001e\u001c\u001e\u001b　イナズマブロー\n　\u001e\u001d\u001e\u001d\u001e\u001b　スペルレイ",
+      "translation": "＜시온의 필살기 커맨드＞\n　\u001e\u001c\u001e\u001c\u001e\u001b　라이트닝 블로\n　\u001e\u001d\u001e\u001d\u001e\u001b　스펠 레이",
+      "locations": [
+        "think001.bin:0x0900"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0102",
+      "source": "＜ＫＯＳ−ＭＯＳの必殺技コマンド＞\n　\u001e\u001c\u001e\u001c\u001e\u001b　Ｒ・ＢＬＡＤＥ\n　\u001e\u001d\u001e\u001d\u001e\u001b　Ｒ・ＣＡＮＮＯＮ\n　\u001e\u001b　　　Ｆ・ＧＳＨＯＴ　\u0019\u0001ｏｒ\u0019\u0002　Ｆ・ＭＳＨＯＴ",
+      "translation": "＜ＫＯＳ−ＭＯＳ의 필살기 커맨드＞\n　\u001e\u001c\u001e\u001c\u001e\u001b　Ｒ−ＢＬＡＤＥ\n　\u001e\u001d\u001e\u001d\u001e\u001b　Ｒ−ＣＡＮＮＯＮ\n　\u001e\u001b　　　Ｆ−ＧＳＨＯＴ　\u0019\u0001ｏｒ\u0019\u0002　Ｆ−ＭＳＨＯＴ",
+      "locations": [
+        "think001.bin:0x096C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0103",
+      "source": "　注意！\n　\u001e\u001bで使用出来る「バックパック攻撃」は、戦闘\n　での使用回数（弾数）が設定されています。",
+      "translation": "　주의！ \u001e\u001b로 쓸 수 있는\n　「백팩 공격」은 전투에서의\n　사용 횟수（탄 수）에 제한이 있습니다．",
+      "locations": [
+        "think001.bin:0x0A02"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0104",
+      "source": "　ボタン表示パネルの右側に追加されたパネルで\n　使用できる状況であるかを確認してください。\n　内容は左から、「弾数→消費ＥＰ→必要ＡＰ」\n　の順です。いずれが欠けても使用不可能です。",
+      "translation": "　버튼 표시 패널 오른쪽에 추가된 패널로\n　사용할 수 있는 상황인지 확인해 주십시오．\n　왼쪽부터 「탄 수→소비 ＥＰ→필요 ＡＰ」\n　하나라도 부족하면 사용할 수 없습니다．",
+      "locations": [
+        "think001.bin:0x0A70"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0105",
+      "source": "\n　　　＜サブメニュー＞\n",
+      "translation": "\n　　　　＜서브 메뉴＞\n",
+      "locations": [
+        "think001.bin:0x0B74"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0106",
+      "source": "　何も行動していない状態で\u001e\u001eを押すと\n　サブメニューが開きます。",
+      "translation": "　행동하지 않은 상태에서 \u001e\u001e를 누르면\n　서브 메뉴가 열립니다．",
+      "locations": [
+        "think001.bin:0x0B9E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0107",
+      "source": "［ＥＴＨＥＲ］（消費ＡＰ４）\n　習得しているエーテルを使用します。\n　エーテルの使用にはＥＰが必要です。",
+      "translation": "［ＥＴＨＥＲ］（소비 ＡＰ ４）\n　습득한 에테르를 사용합니다．\n　에테르를 쓰려면 ＥＰ가 필요합니다．",
+      "locations": [
+        "think001.bin:0x0BF2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0108",
+      "source": "［ＩＴＥＭ］（消費ＡＰ３）\n　所持しているアイテムを使用します。\n　使用対象（敵、味方単体など）の右に「Ｗ」が\n　あれば、Ｗアイテムでの使用が可能です。",
+      "translation": "［ＩＴＥＭ］（소비 ＡＰ ３）\n　소지 중인 아이템을 사용합니다．\n　사용 대상（적，아군） 오른쪽에 「Ｗ」가\n　있으면 Ｗ 아이템으로도 쓸 수 있습니다．",
+      "locations": [
+        "think001.bin:0x0C6E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0109",
+      "source": "＜Ｗアイテムの使い方＞\n　Ｗアイテムには、ＡＰが「６」必要です。\n　使用できるアイテムにカーソルを合わせて、\n　\u001e\u001dで選択してください。",
+      "translation": "＜Ｗ 아이템 사용법＞\n　Ｗ 아이템에는 「６」ＡＰ가 필요합니다．\n　사용할 수 있는 아이템에 커서를 맞추고\n　\u001e\u001d로 선택해 주십시오．",
+      "locations": [
+        "think001.bin:0x0D10"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0110",
+      "source": "　アイテム効果が対象グループ全体になります。\n　ただし、アイテムの消費数も２倍になるので、\n　ストックが２つ以上ないとＷアイテムは使用\n　できません。注意してください！",
+      "translation": "　아이템의 효과는 그룹 전체에 적용됩니다．\n　단，아이템의 소비량도 ２배가 되므로\n　해당 아이템 수가 ２개 이상 남아 있어야\n　Ｗ 아이템으로 사용할 수 있습니다！",
+      "locations": [
+        "think001.bin:0x0DA0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0111",
+      "source": "［ＭＯＶＥ］（消費ＡＰ２）\n　戦闘中の位置を変えます。\n　位置によって受けるダメージが変わったり\n　攻撃方法が制限されたりします。",
+      "translation": "［ＭＯＶＥ］（소비 ＡＰ ２）\n　전투 위치를 바꿉니다．\n　위치에 따라 받는 대미지가 변하거나\n　공격 방법이 제한될 수 있습니다．",
+      "locations": [
+        "think001.bin:0x0E5A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0112",
+      "source": "［Ａ\u0019\u0001．\u0019\u0002Ｇ\u0019\u0001．\u0019\u0002Ｗ\u0019\u0001．\u0019\u0002Ｓ\u0019\u0001．\u0019\u0002］（消費ＡＰ４）\n　所有している「\u0019\u0001Ａ．Ｇ．Ｗ．Ｓ．\u0019\u0002」に搭乗します。\n　「\u0019\u0001Ａ．Ｇ．Ｗ．Ｓ．\u0019\u0002」を所有していないキャラは\n　このコマンドを使用できません。",
+      "translation": "［Ａ\u0019\u0001．\u0019\u0002Ｇ\u0019\u0001．\u0019\u0002Ｗ\u0019\u0001．\u0019\u0002Ｓ\u0019\u0001．\u0019\u0002］（소비 ＡＰ ４）\n　보유한 「\u0019\u0001Ａ．Ｇ．Ｗ．Ｓ．\u0019\u0002」에 탑승합니다．\n　「\u0019\u0001Ａ．Ｇ．Ｗ．Ｓ．\u0019\u0002」가 없는 캐릭터는\n　이 커맨드를 쓸 수 없습니다．",
+      "locations": [
+        "think001.bin:0x0EEE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0113",
+      "source": "［ＧＵＡＲＤ］（消費ＡＰ２）\n　防御して受けるダメージを軽減します。\n　必殺技に使うＡＰをためる時にも便利です。",
+      "translation": "［ＧＵＡＲＤ］（소비 ＡＰ ２）\n　방어해서 받는 대미지를 줄입니다．\n　필살기에 쓸 ＡＰ를 모을 때도 좋습니다．",
+      "locations": [
+        "think001.bin:0x0FBE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0114",
+      "source": "　いわゆる「逃走」コマンドは存在しません！\n　アイテムの「エスケープボール」か\n　シオンが習得するエーテル「グッバイ」を\n　使用することで戦闘から離脱できます。",
+      "translation": "　소위 말하는 「도주」 커맨드는 없습니다！\n　도주용 아이템 「이스케이프 볼」이나\n　시온이 습득하는 에테르 「굿바이」를 쓰면\n　전투에서 도망칠 수 있습니다．",
+      "locations": [
+        "think001.bin:0x1042"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0115",
+      "source": "\n　　　　＜ブースト＞\n",
+      "translation": "\n　　　　　＜부스트＞\n",
+      "locations": [
+        "think001.bin:0x10F8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0116",
+      "source": "　通常攻撃や必殺技がヒットすると\n　ブーストゲージが上昇します。\n　このゲージが最大までたまると\n　ブーストカウンターが１ストックされます。",
+      "translation": "　일반 공격이나 필살기가 명중하게 되면\n　부스트 게이지가 상승합니다．\n　이 게이지가 끝까지 차면\n　부스트 카운터가 １스톡 추가됩니다．",
+      "locations": [
+        "think001.bin:0x111C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0117",
+      "source": "　この戦闘でカウントを増やすこと\n　は難しいので、練習のために\n　カウンターのストックを強制的\n　に「２」ストックします。",
+      "translation": "　이 전투에서는 카운트를 쌓는 것이\n　어려우므로 연습 차원에서\n　카운터의 스톡을 강제로\n　「２」로 늘리도록 하겠습니다．",
+      "locations": [
+        "think001.bin:0x11B2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0118",
+      "source": "　ブーストを行うには、対象となるキャラが\n　・ブーストカウンター１以上ある\n　・右下のＧＴＷに表示されてない\n　の条件を満たしている必要があります。",
+      "translation": "　부스트를 쓰기 위해서는 대상 캐릭터가\n　・부스트 카운터가 １ 이상 있으며\n　・오른쪽 아래 ＧＴＷ에 없어야\n　한다는 조건을 만족해야 합니다．",
+      "locations": [
+        "think001.bin:0x124C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0119",
+      "source": "　Ｒ１又はＲ２を押すと、ブースト可能キャラが\n　表示されます。\n　（条件を満たさないキャラは表示されません）",
+      "translation": "　Ｒ１나 Ｒ２를 누르면 부스트를\n　할 수 있는 캐릭터가 표시됩니다．\n　（조건을 충족한 캐릭터만 표시됩니다）",
+      "locations": [
+        "think001.bin:0x12EA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0120",
+      "source": "　表示されたキャラは、左から\n　それぞれ\u001e\u001c、\u001e\u001d、\u001e\u001bの各ボタンに\n　対応しています。",
+      "translation": "　표시되어 있는 캐릭터는 왼쪽부터\n　각자 \u001e\u001c，\u001e\u001d，\u001e\u001b 버튼에\n　대응하고 있습니다．",
+      "locations": [
+        "think001.bin:0x137E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0121",
+      "source": "　該当キャラのボタンを押すことで、そのキャラ\n　の行動順番を、いま行動しているキャラの\n　次の順番に割り込ませることができます。",
+      "translation": "　해당 캐릭터의 버튼을 누르면 캐릭터의\n　행동 순서를 현재 행동 중인 캐릭터의\n　다음 순서에 끼어들도록 만들 수 있습니다．",
+      "locations": [
+        "think001.bin:0x13DC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0122",
+      "source": "　さらに敵の行動中でも、Ｒ１又はＲ２を押すと\n　ブーストが可能です。\n　（敵の行動終了後に順番が回ってきます）",
+      "translation": "　또한 적의 행동 중에도 Ｒ１나 Ｒ２를\n　누르면 부스트를 쓸 수 있습니다．\n　（적의 행동 후에 순서가 돌아옴）",
+      "locations": [
+        "think001.bin:0x1468"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0123",
+      "source": "\n　　　＜イベントスロット＞\n",
+      "translation": "\n　　　 ＜이벤트 슬롯＞\n",
+      "locations": [
+        "think001.bin:0x14EE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0124",
+      "source": "　ＧＴＷの左側に表示される小さなスロットは、\n　敵や味方を問わず、誰かが行動することで、\n\n　　　\u001e\"→\u001e\u001f→\u001e →\u001e!の順に変化します。",
+      "translation": "　ＧＴＷ의 왼쪽에 표시되는 작은 슬롯은\n　적이든 아군이든 누군가의 행동에 의하여，\n\n　　　\u001e\"→\u001e\u001f→\u001e →\u001e!의 순서로 변화합니다．",
+      "locations": [
+        "think001.bin:0x1518"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0125",
+      "source": "「イベントスロット」です！⇒⇒",
+      "translation": "「이벤트 슬롯」입니다！⇒⇒",
+      "locations": [
+        "think001.bin:0x15A4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0126",
+      "source": "\n　　スロットアイコンの効果\n",
+      "translation": "\n　　　슬롯 아이콘의 효과\n",
+      "locations": [
+        "think001.bin:0x15D0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0127",
+      "source": "\n　　　\u001e\u001f⇔「クリティカル率アップ」\n\n　　　クリティカルの発生確率が高まります。",
+      "translation": "\n　　　\u001e\u001f⇔「크리티컬률 업」\n\n　　　크리티컬이 발생할 확률이 높아집니다．",
+      "locations": [
+        "think001.bin:0x15FA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0128",
+      "source": "\n　\u001e\u001fの注意：敵の行動順番だった場合も同様に\n　　　　　　敵のクリティカルが出やすくなり\n　　　　　　ます！",
+      "translation": "\n　\u001e\u001f　주의：적의 행동 순서일 때도 동일하게\n　　　　　　적의 크리티컬이 발생하기\n　　　　　　쉬워집니다！",
+      "locations": [
+        "think001.bin:0x1656"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0129",
+      "source": "\n　　　\u001e ⇔「ブーストゲージ上昇率アップ」\n\n　　　ブーストポイントが貯まり易くなります。",
+      "translation": "\n　　　\u001e ⇔「부스트 게이지 상승률 업」\n\n　　　부스트 포인트가 더 잘 쌓이게 됩니다．",
+      "locations": [
+        "think001.bin:0x16CC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0130",
+      "source": "\n　　　\u001e!⇔「獲得ポイントアップ」\n\n　　　獲得ポイントをより多く入手できます。",
+      "translation": "\n　　　\u001e!⇔「획득 포인트 업」\n\n　　　획득 포인트를 더 많이 얻게 됩니다．",
+      "locations": [
+        "think001.bin:0x1730"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0131",
+      "source": "\n　　　獲得ポイントとは？\n",
+      "translation": "\n　　　　획득 포인트란？\n",
+      "locations": [
+        "think001.bin:0x178A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0132",
+      "source": "　獲得ポイントは敵を倒すことで入手できます。\n　プレイヤーは獲得ポイントを割り振ることで、\n　レベルアップ以外にキャラの能力を強化、又は\n　進化させることができます。",
+      "translation": "　획득 포인트는 적을 쓰러뜨리면 얻습니다．\n　플레이어는 획득한 포인트를 배분하여，\n　레벨 업 이외에도 캐릭터의 능력을\n　강화 또는 진화시키는 것이 가능합니다．",
+      "locations": [
+        "think001.bin:0x17B2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0133",
+      "source": "　［Ｅ．ＰＴ］（エーテルポイント）\n　エーテルに割り振り、進化\u0019\u0001ｏｒ\u0019\u0002譲渡できる。\n　　　　　　　　　　　",
+      "translation": "　［Ｅ．ＰＴ］（에테르 포인트）\n　에테르에 할당하면 진화\u0019\u0001나 \u0019\u0002양도를\n　실행하는 것이 가능합니다．",
+      "locations": [
+        "think001.bin:0x1862"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0134",
+      "source": "　［Ｓ．ＰＴ］（スキルポイント）\n　アクセサリーから、スキルを引き出せる。\n　　　　　　　　　　　",
+      "translation": "　［Ｓ．ＰＴ］（스킬 포인트）\n　액세서리에 잠들어 있는 스킬을\n　발현시키는 것이 가능합니다．",
+      "locations": [
+        "think001.bin:0x18D8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0135",
+      "source": "　［Ｔ．ＰＴ］（タレントポイント）\n　キャラの基本パラメータを強化できる。\n　　　　　　　　　　　",
+      "translation": "　［Ｔ．ＰＴ］（탤런트 포인트）\n　캐릭터의 능력，즉 기본 파라미터를\n　강화하는 것이 가능합니다．",
+      "locations": [
+        "think001.bin:0x1946"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0136",
+      "source": "\n　　　　　＜実戦編＞\n",
+      "translation": "\n　　　　　＜실전 편＞\n",
+      "locations": [
+        "think001.bin:0x19BA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0137",
+      "source": "　次からは敵が攻撃をしてきます。\n　余計なダメージを受けないように\n　攻撃する順番にも注意しましょう。",
+      "translation": "　이제부터 적이 공격해 올 겁니다．\n　불필요한 대미지를 받지 않도록\n　공격 순서에 주의를 기울입시다．",
+      "locations": [
+        "think001.bin:0x19DE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0138",
+      "source": "　全体攻撃をしてくる右端の兵士を先に倒し…",
+      "translation": "　전체 공격을 하는 병사를 먼저 처리하고…",
+      "locations": [
+        "think001.bin:0x1A58"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0139",
+      "source": "　耐久力のある真ん中のメカは\n　必殺技で倒すのが理想的です。",
+      "translation": "　내구력이 좋은 중앙의 기계는\n　필살기로 처리하면 됩니다．",
+      "locations": [
+        "think001.bin:0x1A98"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0140",
+      "source": "　敵には３種類のカテゴリーがあります。　　　\n　攻撃技には、各カテゴリーに有効なものもある\n　ので、各技の解説で確認してください。",
+      "translation": "　적에는 ３종류의 카테고리가 있습니다．\n　공격 기술에는 각 카테고리에 효과적인 것도\n　있으므로 각 기술의 설명을 봐 주십시오．",
+      "locations": [
+        "think001.bin:0x1AE0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0141",
+      "source": "　ＧＴＷでのカテゴリーアイコンは次の通り。　\n　・\u001e:＆\u001e=⇔「バイオ（Ｂ）系」\n　・\u001e;＆\u001e>⇔「マシン（Ｍ）系」\n　・\u001e<＆\u001e?⇔「グノーシス（Ｇ）系」",
+      "translation": "　ＧＴＷ 카테고리 아이콘의 내용 설명\n　・\u001e:＆\u001e=⇔「바이오（Ｂ）계」\n　・\u001e;＆\u001e>⇔「머신（Ｍ）계」\n　・\u001e<＆\u001e?⇔「그노시스（Ｇ）계」",
+      "locations": [
+        "think001.bin:0x1B6E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0142",
+      "source": "　このターゲットは\n　必殺技で倒してください。",
+      "translation": "　이 타깃은 필살기로\n　쓰러뜨려 주십시오．",
+      "locations": [
+        "think001.bin:0x1C2C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0143",
+      "source": "技番号は？",
+      "translation": "기술 번호는？",
+      "locations": [
+        "think001.bin:0x1C7C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0144",
+      "source": "　グレネード　　Ｅ／炎\n",
+      "translation": "　그레네이드　　Ｅ／불꽃\n",
+      "locations": [
+        "think001.bin:0x1CF2",
+        "think002.bin:0x0222",
+        "think003.bin:0x02D2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0145",
+      "source": "　エネルギーブレット　　Ｅ／Ｂ\n",
+      "translation": "　에너지 불릿　　Ｅ／Ｂ\n",
+      "locations": [
+        "think001.bin:0x1D70",
+        "think002.bin:0x02A0",
+        "think003.bin:0x0350"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0146",
+      "source": "攻撃したキャラ",
+      "translation": "공격한 캐릭터",
+      "locations": [
+        "think001.bin:0x1E34"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0147",
+      "source": "INIT",
+      "translation": "INIT",
+      "locations": [
+        "think002.bin:0x0112",
+        "think003.bin:0x0112",
+        "think004.bin:0x0026",
+        "think006.bin:0x0036",
+        "think012.bin:0x007E",
+        "think014.bin:0x0056",
+        "think015.bin:0x00BA",
+        "think051.bin:0x0052",
+        "think054.bin:0x00A2",
+        "think058.bin:0x0026",
+        "think063.bin:0x0026",
+        "think068.bin:0x007E",
+        "think069.bin:0x009A",
+        "think070.bin:0x005A",
+        "think071.bin:0x005A",
+        "think072.bin:0x005A",
+        "think073.bin:0x005A",
+        "think074.bin:0x0052",
+        "think090.bin:0x0026"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0148",
+      "source": "　ビーム　　Ｅ／Ｂ\n",
+      "translation": "　빔　　Ｅ／Ｂ\n",
+      "locations": [
+        "think002.bin:0x030E",
+        "think003.bin:0x03BE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0149",
+      "source": "　ショックボルト　　Ｅ／雷\n",
+      "translation": "　쇼크 볼트　　Ｅ／번개\n",
+      "locations": [
+        "think002.bin:0x0392",
+        "think003.bin:0x0442"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0150",
+      "source": "＜浮遊敵について＞\n　空中に浮かんでいる敵に対しては\n　\u001e\u001dの直線攻撃で攻撃します。\n　\u001e\u001cの近接攻撃は選べないので注意！",
+      "translation": "＜부유하는 적에 대해＞\n　공중에 떠 있는 적에게는\n　\u001e\u001d로 직선 공격을 합시다．\n　\u001e\u001c로 하는 근접 공격은 안 되니 주의！",
+      "locations": [
+        "think003.bin:0x014A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0151",
+      "source": "\n　　　　＜Ａ\u0019\u0001．\u0019\u0002Ｇ\u0019\u0001．\u0019\u0002Ｗ\u0019\u0001．\u0019\u0002Ｓ\u0019\u0001．\u0019\u0002＞\n",
+      "translation": "\n　　　　＜Ａ\u0019\u0001．\u0019\u0002Ｇ\u0019\u0001．\u0019\u0002Ｗ\u0019\u0001．\u0019\u0002Ｓ\u0019\u0001．\u0019\u0002＞\n",
+      "locations": [
+        "think004.bin:0x0064"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0152",
+      "source": "　このバトルでは、サブメニューの［Ａ\u0019\u0001．\u0019\u0002Ｇ\u0019\u0001．\u0019\u0002Ｗ\u0019\u0001．\u0019\u0002Ｓ\u0019\u0001．\u0019\u0002］\n　を選ぶことで、「\u0019\u0001Ａ．Ｇ．Ｗ．Ｓ．\u0019\u0002」に搭乗できます。\n　　　　　　　　　　　",
+      "translation": "　이 배틀에선 서브 메뉴의 ［Ａ\u0019\u0001．\u0019\u0002Ｇ\u0019\u0001．\u0019\u0002Ｗ\u0019\u0001．\u0019\u0002Ｓ\u0019\u0001．\u0019\u0002］를\n　선택하여 「\u0019\u0001Ａ．Ｇ．Ｗ．Ｓ．\u0019\u0002」에 캐릭터를\n　탑승시킬 수 있습니다．",
+      "locations": [
+        "think004.bin:0x00A0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0153",
+      "source": "　まずメニューから［Ａ\u0019\u0001．\u0019\u0002Ｇ\u0019\u0001．\u0019\u0002Ｗ\u0019\u0001．\u0019\u0002Ｓ\u0019\u0001．\u0019\u0002］を選びます。\n　　　　　　　　　　　",
+      "translation": "　우선 메뉴에서 ［Ａ\u0019\u0001．\u0019\u0002Ｇ\u0019\u0001．\u0019\u0002Ｗ\u0019\u0001．\u0019\u0002Ｓ\u0019\u0001．\u0019\u0002］를\n　선택하여 호출을 준비합시다．",
+      "locations": [
+        "think004.bin:0x014A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0154",
+      "source": "　次に方向キーの左右で出現位置を選んで\n　\u001e\u001bで呼び出します。",
+      "translation": "　그리고 방향키로 등장 위치를 선택해\n　\u001e\u001b로 호출합시다．",
+      "locations": [
+        "think004.bin:0x01CC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0155",
+      "source": "\n　　　呼び出したら、そのターンは終了です。",
+      "translation": "\n　　　호출하면 그 턴은 그대로 종료됩니다．",
+      "locations": [
+        "think004.bin:0x0250"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0156",
+      "source": "\n　＜Ａ\u0019\u0001．\u0019\u0002Ｇ\u0019\u0001．\u0019\u0002Ｗ\u0019\u0001．\u0019\u0002Ｓ\u0019\u0001．\u0019\u0002搭乗時の操作＞\n",
+      "translation": "\n＜Ａ\u0019\u0001．\u0019\u0002Ｇ\u0019\u0001．\u0019\u0002Ｗ\u0019\u0001．\u0019\u0002Ｓ\u0019\u0001．\u0019\u0002 탑승 시 조작＞\n",
+      "locations": [
+        "think004.bin:0x02C0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0157",
+      "source": "　\u0019\u0001Ａ．Ｇ．Ｗ．Ｓ．\u0019\u0002の攻撃も\u001e\u001cと\u001e\u001dで行います。\n　消費ＡＰは、装備している武器によって\n　異なります。",
+      "translation": "　\u0019\u0001Ａ．Ｇ．Ｗ．Ｓ．\u0019\u0002의 공격도　\u001e\u001c，\u001e\u001d로 합니다．\n　소비 ＡＰ는 장비 중인 무기에 따라\n　달라집니다．",
+      "locations": [
+        "think004.bin:0x0302"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0158",
+      "source": "　またサブメニューの内容も若干変わります。",
+      "translation": "　또한 서브 메뉴의 내용도 약간 바뀝니다．",
+      "locations": [
+        "think004.bin:0x0376"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0159",
+      "source": "［Ｗ−ＡＣＴ］\n　両手に特定の同じ武器を装備している場合に\n　使用できます。\n　ＡＰが６必要です。（エーテルは使えません）",
+      "translation": "［Ｗ−ＡＣＴ］\n　양손에 특정한 무기를 같이 장비한 경우\n　쓸 수 있습니다．ＡＰ가\n　６ 필요합니다．（에테르는 사용 불가）",
+      "locations": [
+        "think004.bin:0x03B6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0160",
+      "source": "［ＩＴＥＭ］\n　\u0019\u0001Ａ．Ｇ．Ｗ．Ｓ．\u0019\u0002搭乗時は使えません。\n　　　　　　　　　　　",
+      "translation": "［ＩＴＥＭ］\n　\u0019\u0001Ａ．Ｇ．Ｗ．Ｓ．\u0019\u0002 탑승 시에는\n　아이템을 쓸 수 없습니다．　",
+      "locations": [
+        "think004.bin:0x0442"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0161",
+      "source": "［ＭＯＶＥ］\n　戦闘中の位置を変えます。\n　位置によって受けるダメージが変わったり\n　攻撃方法が制限されたりします。",
+      "translation": "［ＭＯＶＥ］\n　전투 위치를 바꿉니다．\n　위치에 따라 받는 대미지가 변하거나\n　공격 방법이 제한될 수 있습니다．",
+      "locations": [
+        "think004.bin:0x04A6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0162",
+      "source": "［Ａ\u0019\u0001．\u0019\u0002Ｇ\u0019\u0001．\u0019\u0002Ｗ\u0019\u0001．\u0019\u0002Ｓ\u0019\u0001．\u0019\u0002］\n　搭乗している「\u0019\u0001Ａ．Ｇ．Ｗ．Ｓ．\u0019\u0002」から降ります。\n　搭乗時と同じく、ターンは終了します。",
+      "translation": "［Ａ\u0019\u0001．\u0019\u0002Ｇ\u0019\u0001．\u0019\u0002Ｗ\u0019\u0001．\u0019\u0002Ｓ\u0019\u0001．\u0019\u0002］\n　탑승한 「\u0019\u0001Ａ．Ｇ．Ｗ．Ｓ．\u0019\u0002」에서 내립니다．\n　탑승 시와 똑같이 턴이 종료됩니다．",
+      "locations": [
+        "think004.bin:0x052C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0163",
+      "source": "［ＧＵＡＲＤ］\n　防御して受けるダメージを軽減します。\n　ＡＰをためる時にも便利です。",
+      "translation": "［ＧＵＡＲＤ］\n　방어해서 받는 대미지를 줄입니다．\n　ＡＰ를 모을 때도 좋습니다．",
+      "locations": [
+        "think004.bin:0x05C2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0164",
+      "source": "　\u0019\u0001Ａ．Ｇ．Ｗ．Ｓ．\u0019\u0002のＨＰが０になると、そのバトル中は\n　戦闘に復帰できなくなるので注意！",
+      "translation": "　\u0019\u0001Ａ．Ｇ．Ｗ．Ｓ．\u0019\u0002의 ＨＰ가 ０이 되면\n　그 배틀 중에는 복귀할 수 없으니 주의！",
+      "locations": [
+        "think004.bin:0x062C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0165",
+      "source": "　ハンドガン３連射　　Ｐ\n",
+      "translation": "　핸드건 ３연사　　Ｐ\n",
+      "locations": [
+        "think004.bin:0x071E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0166",
+      "source": "なにもしない",
+      "translation": "아무것도 안 한다",
+      "locations": [
+        "think004.bin:0x0748",
+        "think058.bin:0x059A",
+        "think063.bin:0x0596",
+        "think068.bin:0x01C4",
+        "think069.bin:0x01E0",
+        "think070.bin:0x01A0",
+        "think071.bin:0x01A0",
+        "think072.bin:0x01A0",
+        "think073.bin:0x01A0",
+        "think074.bin:0x0198",
+        "think090.bin:0x0596",
+        "think091.bin:0x0258"
+      ],
+      "overrides": {
+        "think004.bin:0x0748": "가만히 있다"
+      }
+    },
+    {
+      "id": "S0167",
+      "source": "\n　　　＜敵の状態について＞",
+      "translation": "\n　　　＜적의 상태에 대해＞",
+      "locations": [
+        "think005.bin:0x0050"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0168",
+      "source": "　リベンジコンボ　　Ｅ／Ｅ／Ｐ\n　　複合連続攻撃",
+      "translation": "　리벤지 콤보　　Ｅ／Ｅ／Ｐ\n　　복합 연속 공격",
+      "locations": [
+        "think005.bin:0x00C2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0169",
+      "source": "ＨＰが半分より多い",
+      "translation": "ＨＰ가 반보다 많다",
+      "locations": [
+        "think005.bin:0x0112"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0170",
+      "source": "ＨＰが半分より少ない",
+      "translation": "ＨＰ가 반보다 적다",
+      "locations": [
+        "think005.bin:0x01A0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0171",
+      "source": "　プラズマショット　　Ｅ／Ｂ\n",
+      "translation": "　플라스마 샷　　Ｅ／Ｂ\n",
+      "locations": [
+        "think005.bin:0x027C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0172",
+      "source": "　アクティブガード\n",
+      "translation": "　액티브 가드\n",
+      "locations": [
+        "think005.bin:0x02B0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0173",
+      "source": "様子を見ている",
+      "translation": "상황을 보고 있다",
+      "locations": [
+        "think006.bin:0x0178"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0174",
+      "source": "　拡散ビーム　　Ｅ／Ｂ\n",
+      "translation": "　확산 빔　　Ｅ／Ｂ\n",
+      "locations": [
+        "think006.bin:0x0272"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0175",
+      "source": "　落雷　　Ｅ／雷\n",
+      "translation": "　낙뢰　　Ｅ／번개\n",
+      "locations": [
+        "think006.bin:0x02C4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0176",
+      "source": "　力をためて次のターンで重力波",
+      "translation": "　힘을 모아 다음 턴에 중력파",
+      "locations": [
+        "think006.bin:0x0306"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0177",
+      "source": "　重力波　　Ｅ\n",
+      "translation": "　중력파　　Ｅ\n",
+      "locations": [
+        "think006.bin:0x0370"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0178",
+      "source": "　モウビーム　　Ｅ／Ｂ\n",
+      "translation": "　모우 빔　　Ｅ／Ｂ\n",
+      "locations": [
+        "think006.bin:0x0492",
+        "think042.bin:0x0522",
+        "think044.bin:0x053E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0179",
+      "source": "　様子を見ている\n",
+      "translation": "　상황을 보고 있다\n",
+      "locations": [
+        "think007.bin:0x02D4",
+        "think007.bin:0x0376",
+        "think007.bin:0x03C6",
+        "think008.bin:0x04A4",
+        "think009.bin:0x036A",
+        "think010.bin:0x0282",
+        "think010.bin:0x033E",
+        "think012.bin:0x0134",
+        "think012.bin:0x01B0",
+        "think014.bin:0x01A4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0180",
+      "source": "　フレアーボム　　Ｅ／炎\n",
+      "translation": "　플레어 봄　　Ｅ／불꽃\n",
+      "locations": [
+        "think007.bin:0x042A",
+        "think009.bin:0x03CE",
+        "think010.bin:0x03A2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0181",
+      "source": "　圧縮器官にダメージ！",
+      "translation": "　압축 기관에 대미지！",
+      "locations": [
+        "think007.bin:0x04C0",
+        "think009.bin:0x0464",
+        "think010.bin:0x042E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0182",
+      "source": "　戦闘モード移行\n",
+      "translation": "　전투 모드 이행\n",
+      "locations": [
+        "think007.bin:0x05F6",
+        "think009.bin:0x059A",
+        "think010.bin:0x0564"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0183",
+      "source": "　フォースウェイブ　　Ｅ／気\n",
+      "translation": "　포스 웨이브　　Ｅ／기공\n",
+      "locations": [
+        "think007.bin:0x067A",
+        "think009.bin:0x061E",
+        "think010.bin:0x05E8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0184",
+      "source": "　メナースカノン　　Ｐ\n",
+      "translation": "　메너스 캐넌　　Ｐ\n",
+      "locations": [
+        "think007.bin:0x06B2",
+        "think009.bin:0x0656",
+        "think010.bin:0x0620"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0185",
+      "source": "　スプレッドビーム　　Ｅ／Ｂ\n",
+      "translation": "　스프레드 빔　　Ｅ／Ｂ\n",
+      "locations": [
+        "think007.bin:0x0716",
+        "think008.bin:0x03D2",
+        "think009.bin:0x06BA",
+        "think010.bin:0x0684",
+        "think042.bin:0x0430",
+        "think044.bin:0x044C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0186",
+      "source": "　クールレイン　　Ｅ／冷\n",
+      "translation": "　쿨 레인　　Ｅ／냉기\n",
+      "locations": [
+        "think007.bin:0x076E",
+        "think009.bin:0x0712",
+        "think010.bin:0x06DC",
+        "think042.bin:0x0488",
+        "think044.bin:0x04A4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0187",
+      "source": "「こっちの世界に実体を固着\n　させないと、グノーシスは\n　倒せないわね・・・。",
+      "translation": "「이쪽 세계에 실체를\n　고착시켜야 그노시스를\n　쓰러뜨릴 수 있을 텐데…．",
+      "locations": [
+        "think007.bin:0x080C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0188",
+      "source": "「これじゃ、戦っても無駄ね\n　ＫＯＳ−ＭＯＳやアレン君\n　達のところへ急がなきゃ！",
+      "translation": "「이래선 싸워도 의미가 없어．\n　ＫＯＳ−ＭＯＳ와 알렌이\n　있는 곳으로 서두르자！",
+      "locations": [
+        "think007.bin:0x0864"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0189",
+      "source": "「こっちの世界に実体を固着さ\n　せないとグノーシスは倒せな\n　いわね・・・。",
+      "translation": "「이쪽 세계에 실체를\n　고착시켜야 그노시스를\n　쓰러뜨릴 수 있을 텐데…．",
+      "locations": [
+        "think007.bin:0x0930"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0190",
+      "source": "「これじゃ、戦っても無駄ね。\n　ＫＯＳ−ＭＯＳやアレンくん\n　達のところへ急がなきゃ！",
+      "translation": "「이래선 싸워도 의미가 없어．\n　ＫＯＳ−ＭＯＳ와 알렌이\n　있는 곳으로 서두르자！",
+      "locations": [
+        "think007.bin:0x09C6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0191",
+      "source": "　アシッドハンド　　Ｐ\n　　物理防御力ダウン",
+      "translation": "　애시드 핸드　　Ｐ\n　　물리 방어력 다운",
+      "locations": [
+        "think008.bin:0x0200"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0192",
+      "source": "　エーテル反撃率上昇\n　カウンターブースト率２０％",
+      "translation": "　에테르 반격률 상승\n　카운터 부스트율 ２０％",
+      "locations": [
+        "think008.bin:0x0296"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0193",
+      "source": "　エーテル反撃率上昇\n　カウンターブースト率４０％",
+      "translation": "　에테르 반격률 상승\n　카운터 부스트율 ４０％",
+      "locations": [
+        "think008.bin:0x02D0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0194",
+      "source": "　エーテル反撃率上昇\n　カウンターブースト率６０％",
+      "translation": "　에테르 반격률 상승\n　카운터 부스트율 ６０％",
+      "locations": [
+        "think008.bin:0x030A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0195",
+      "source": "　エーテル反撃率上昇\n　カウンターブースト率８０％",
+      "translation": "　에테르 반격률 상승\n　카운터 부스트율 ８０％",
+      "locations": [
+        "think008.bin:0x0344"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0196",
+      "source": "　エーテル反撃率上昇\n　カウンターブースト率１００％",
+      "translation": "　에테르 반격률 상승\n　카운터 부스트율 １００％",
+      "locations": [
+        "think008.bin:0x037E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0197",
+      "source": "　エーテル攻撃に反応！",
+      "translation": "　에테르 공격에 반응！",
+      "locations": [
+        "think008.bin:0x043A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0198",
+      "source": "様子を見ている\n",
+      "translation": "상황을 보고 있다\n",
+      "locations": [
+        "think009.bin:0x02C2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0199",
+      "source": "「ここまでだ！」",
+      "translation": "「여기까지다！」",
+      "locations": [
+        "think011.bin:0x030A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0200",
+      "source": "　千呪剣　　Ｅ\n",
+      "translation": "　천주검　　Ｅ\n",
+      "locations": [
+        "think011.bin:0x0382",
+        "think011.bin:0x0D1E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0201",
+      "source": "　無怨殺　　Ｅ\n",
+      "translation": "　무원살　　Ｅ\n",
+      "locations": [
+        "think011.bin:0x03AC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0202",
+      "source": "　御霊降ろし：焔龍\n　　炎吸収（次のターンまで）",
+      "translation": "　영령 강림：염룡\n　　불꽃 흡수（다음 턴까지）",
+      "locations": [
+        "think011.bin:0x040C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0203",
+      "source": "　御霊降ろし：雷鳳\n　　雷吸収（次のターンまで）",
+      "translation": "　영령 강림：뇌조\n　　번개 흡수（다음 턴까지）",
+      "locations": [
+        "think011.bin:0x046A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0204",
+      "source": "　対雷撃シールド崩壊！",
+      "translation": "　대뇌격 실드 붕괴！",
+      "locations": [
+        "think011.bin:0x052E",
+        "think011.bin:0x07F0",
+        "think013.bin:0x02F6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0205",
+      "source": "　グレネードライフル　　Ｐ\n",
+      "translation": "　그레네이드 라이플　　Ｐ\n",
+      "locations": [
+        "think011.bin:0x05E6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0206",
+      "source": "隊長\n「敵前で寝る奴がおるか！！",
+      "translation": "대장\n「누가 적 앞에서 자나！！",
+      "locations": [
+        "think011.bin:0x068C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0207",
+      "source": "部下Ａ\n「す、すみません！　隊長殿！！",
+      "translation": "부하 Ａ\n「죄，죄송합니다 대장님！！",
+      "locations": [
+        "think011.bin:0x06DA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0208",
+      "source": "部下Ｂ\n「す、すみません！　隊長殿！！",
+      "translation": "부하 Ｂ\n「죄，죄송합니다 대장님！！",
+      "locations": [
+        "think011.bin:0x0712"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0209",
+      "source": "ziggy",
+      "translation": "ziggy",
+      "locations": [
+        "think011.bin:0x093A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0210",
+      "source": "マーグリス\n「そいつでは、私には勝てぬ。",
+      "translation": "마굴리스\n「그걸로는 날 이길 수 없다．",
+      "locations": [
+        "think011.bin:0x0AF2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0211",
+      "source": "マーグリス\n「あきらめて、こちらに来い！",
+      "translation": "마굴리스\n「포기하고 이쪽으로 와라！",
+      "locations": [
+        "think011.bin:0x0B2A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0212",
+      "source": "マーグリス\n「所詮は、人為らざるモノか。",
+      "translation": "마굴리스\n「결국은 인간도 아닌 존재．",
+      "locations": [
+        "think011.bin:0x0BB6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0213",
+      "source": "マーグリス\n「時間切れだ！",
+      "translation": "마굴리스\n「시간이 됐군！",
+      "locations": [
+        "think011.bin:0x0C12"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0214",
+      "source": "　無怨殺　　Ｅ\n　　後列に吹き飛ばし",
+      "translation": "　무원살　　Ｅ\n　　후열로 날려 버린다",
+      "locations": [
+        "think011.bin:0x0D46"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0215",
+      "source": "　雷鳳\n　　雷吸収（次の攻撃で解除）",
+      "translation": "　뇌조\n　　번개 흡수（공격 시 해제）",
+      "locations": [
+        "think011.bin:0x0DAC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0216",
+      "source": "　焔龍\n　　炎吸収（次の攻撃で解除）",
+      "translation": "　염룡\n　　불꽃 흡수（공격 시 해제）",
+      "locations": [
+        "think011.bin:0x0E12"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0217",
+      "source": "　マスタードボム　　Ｅ／Ｓ\n　　毒",
+      "translation": "　머스터드 봄　　Ｅ／Ｓ\n　　독",
+      "locations": [
+        "think012.bin:0x017A",
+        "think013.bin:0x0184",
+        "think015.bin:0x03C8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0218",
+      "source": "　レーザーカッター　　Ｐ\n",
+      "translation": "　레이저 커터　　Ｐ\n",
+      "locations": [
+        "think013.bin:0x021E",
+        "think014.bin:0x0202",
+        "think015.bin:0x0462"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0219",
+      "source": "　完全防御\n",
+      "translation": "　완전 방어\n",
+      "locations": [
+        "think013.bin:0x03BC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0220",
+      "source": "　攻撃ユニット射出！\n",
+      "translation": "　공격 유닛 사출！\n",
+      "locations": [
+        "think014.bin:0x0280",
+        "think022.bin:0x03E6",
+        "think023.bin:0x03C4",
+        "think024.bin:0x03C4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0221",
+      "source": "　能力分析　　Ｓ\n　　エーテル力ダウン",
+      "translation": "　능력 분석　　Ｓ\n　　에테르 다운",
+      "locations": [
+        "think014.bin:0x0322",
+        "think022.bin:0x044C",
+        "think023.bin:0x042A",
+        "think024.bin:0x042A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0222",
+      "source": "　レーザー発射　　Ｅ／Ｂ\n",
+      "translation": "　레이저 발사　　Ｅ／Ｂ\n",
+      "locations": [
+        "think014.bin:0x0400",
+        "think015.bin:0x024A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0223",
+      "source": "　行動待機中\n",
+      "translation": "　행동 대기 중\n",
+      "locations": [
+        "think014.bin:0x042E",
+        "think015.bin:0x0386",
+        "think022.bin:0x0588",
+        "think023.bin:0x0566",
+        "think024.bin:0x0566"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0224",
+      "source": "　侵入者の排除を開始！",
+      "translation": "　침입자 제거를 개시！",
+      "locations": [
+        "think014.bin:0x047A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0225",
+      "source": "　緊急呼集！",
+      "translation": "　긴급 소집！",
+      "locations": [
+        "think014.bin:0x0560"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0226",
+      "source": "　出力増強\n　　エーテル攻撃重視",
+      "translation": "　출력 증강\n　　에테르 공격 중시",
+      "locations": [
+        "think015.bin:0x02F0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0227",
+      "source": "　スプレーシュート　　Ｅ／Ｂ\n",
+      "translation": "　스프레이 슈트　　Ｅ／Ｂ\n",
+      "locations": [
+        "think015.bin:0x0354",
+        "think022.bin:0x0556",
+        "think023.bin:0x0534",
+        "think024.bin:0x0534"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0228",
+      "source": "　ラピッドビームガン　　Ｅ／Ｂ\n",
+      "translation": "　래피드 빔 건　　Ｅ／Ｂ\n",
+      "locations": [
+        "think016.bin:0x0188",
+        "think016.bin:0x0270",
+        "think017.bin:0x0176",
+        "think018.bin:0x012E",
+        "think019.bin:0x012E",
+        "think021.bin:0x0274"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0229",
+      "source": "　待機中\n",
+      "translation": "　대기 중\n",
+      "locations": [
+        "think016.bin:0x01BC",
+        "think016.bin:0x02A4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0230",
+      "source": "　作戦移動\n",
+      "translation": "　작전 이동\n",
+      "locations": [
+        "think016.bin:0x0234"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0231",
+      "source": "　思考回路ショート！",
+      "translation": "　사고 회로 쇼트！",
+      "locations": [
+        "think017.bin:0x0216",
+        "think018.bin:0x01C6",
+        "think019.bin:0x01CE",
+        "think021.bin:0x0314"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0232",
+      "source": "　ビームガン　　Ｅ／Ｂ／Ｓ\n　　エーテル力ダウン",
+      "translation": "　빔 건　　Ｅ／Ｂ／Ｓ\n　　에테르 다운",
+      "locations": [
+        "think017.bin:0x029E",
+        "think018.bin:0x0248",
+        "think019.bin:0x0256",
+        "think021.bin:0x039C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0233",
+      "source": "　ガード\n",
+      "translation": "　가드\n",
+      "locations": [
+        "think017.bin:0x02E4",
+        "think018.bin:0x028E",
+        "think019.bin:0x029C",
+        "think021.bin:0x03E2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0234",
+      "source": "＞場（イベントスロット）を\n　分析中",
+      "translation": "＞필드（이벤트 슬롯）를\n　분석 중",
+      "locations": [
+        "think020.bin:0x023C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0235",
+      "source": "\n　\u001e\"をメモリーに記憶\n",
+      "translation": "\n　\u001e\"을 메모리에 저장\n",
+      "locations": [
+        "think020.bin:0x02A2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0236",
+      "source": "\n　\u001e\u001fをメモリーに記憶\n",
+      "translation": "\n　\u001e\u001f을 메모리에 저장\n",
+      "locations": [
+        "think020.bin:0x02C2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0237",
+      "source": "\n　\u001e をメモリーに記憶\n",
+      "translation": "\n　\u001e 을 메모리에 저장\n",
+      "locations": [
+        "think020.bin:0x02E2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0238",
+      "source": "\n　\u001e!をメモリーに記憶\n",
+      "translation": "\n　\u001e!을 메모리에 저장\n",
+      "locations": [
+        "think020.bin:0x0302"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0239",
+      "source": "　以後の『激震』を\n　このイベントスロットで発動",
+      "translation": "　이후의 『격진』을\n　이 이벤트 슬롯에서 발동",
+      "locations": [
+        "think020.bin:0x0324"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0240",
+      "source": "　レーザーライフル　　Ｅ／Ｂ\n",
+      "translation": "　레이저 라이플　　Ｅ／Ｂ\n",
+      "locations": [
+        "think020.bin:0x04A4",
+        "think020.bin:0x04FE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0241",
+      "source": "　激震　　Ｐ\n",
+      "translation": "　격진　　Ｐ\n",
+      "locations": [
+        "think020.bin:0x053E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0242",
+      "source": "　ソニックショット　　Ｅ／Ｓ\n　　エーテル力ダウン",
+      "translation": "　소닉 샷　　Ｅ／Ｓ\n　　에테르 다운",
+      "locations": [
+        "think020.bin:0x056E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0243",
+      "source": "　防御\n",
+      "translation": "　방어\n",
+      "locations": [
+        "think020.bin:0x0622",
+        "think049.bin:0x06FE",
+        "think049.bin:0x0950"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0244",
+      "source": "　オートリペア\n　　ＨＰ回復",
+      "translation": "　오토 리페어\n　　ＨＰ 회복",
+      "locations": [
+        "think020.bin:0x0660"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0245",
+      "source": "　ビクトリーキャノン　　Ｅ／Ｂ\n",
+      "translation": "　빅토리 캐넌　　Ｅ／Ｂ\n",
+      "locations": [
+        "think021.bin:0x0460"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0246",
+      "source": "　ブースト装置５０％出力低下！\n（カウンターブースト５０％）",
+      "translation": "　부스트 출력 ５０％ 저하！\n（카운터 부스트 ５０％）",
+      "locations": [
+        "think021.bin:0x06F6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0247",
+      "source": "　ブースト装置２５％出力低下！\n（カウンターブースト２５％）",
+      "translation": "　부스트 출력 ２５％ 저하！\n（카운터 부스트 ２５％）",
+      "locations": [
+        "think021.bin:0x0748"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0248",
+      "source": "　ブースト装置故障！\n（カウンターブースト不可能）",
+      "translation": "　부스트 장치 고장！\n（카운터 부스트 불가능）",
+      "locations": [
+        "think021.bin:0x079A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0249",
+      "source": "　ブースト装置５０％復活！\n（カウンターブースト５０％）",
+      "translation": "　부스트 장치 ５０％ 복구！\n（카운터 부스트 ５０％）",
+      "locations": [
+        "think021.bin:0x07E2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0250",
+      "source": "−１は失敗／Ｅ１０",
+      "translation": "−１은 실패／Ｅ１０",
+      "locations": [
+        "think022.bin:0x02E4",
+        "think023.bin:0x02C2",
+        "think024.bin:0x02C2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0251",
+      "source": "−１は失敗／Ｅ０８",
+      "translation": "−１은 실패／Ｅ０８",
+      "locations": [
+        "think022.bin:0x031E",
+        "think023.bin:0x02FC",
+        "think024.bin:0x02FC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0252",
+      "source": "−１は失敗／Ｅ０９",
+      "translation": "−１은 실패／Ｅ０９",
+      "locations": [
+        "think022.bin:0x0362",
+        "think023.bin:0x0340",
+        "think024.bin:0x0340"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0253",
+      "source": "−１は失敗／Ｅ１２",
+      "translation": "−１은 실패／Ｅ１２",
+      "locations": [
+        "think022.bin:0x03A6",
+        "think023.bin:0x0384",
+        "think024.bin:0x0384"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0254",
+      "source": "　　　Ａ\u0019\u0001．\u0019\u0002Ｇ\u0019\u0001．\u0019\u0002Ｗ\u0019\u0001．\u0019\u0002Ｓ\u0019\u0001．\u0019\u0002に搭乗",
+      "translation": "　　　Ａ\u0019\u0001．\u0019\u0002Ｇ\u0019\u0001．\u0019\u0002Ｗ\u0019\u0001．\u0019\u0002Ｓ\u0019\u0001．\u0019\u0002에 탑승",
+      "locations": [
+        "think025.bin:0x00CA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0255",
+      "source": "　ロイヤルソード　　Ｐ\n",
+      "translation": "　로열 소드　　Ｐ\n",
+      "locations": [
+        "think025.bin:0x016E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0256",
+      "source": "　様子をみる\n",
+      "translation": "　상황을 본다\n",
+      "locations": [
+        "think025.bin:0x019C",
+        "think025.bin:0x03CC",
+        "think031.bin:0x049A",
+        "think034.bin:0x049C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0257",
+      "source": "　待機する\n",
+      "translation": "　대기한다\n",
+      "locations": [
+        "think025.bin:0x01C0",
+        "think025.bin:0x04D8",
+        "think025.bin:0x058E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0258",
+      "source": "　防御　　\n　カウンターブースト１０％ＵＰ",
+      "translation": "　방어　　\n　카운터 부스트 １０％ 업",
+      "locations": [
+        "think025.bin:0x0206"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0259",
+      "source": "　　　機動兵器に搭乗",
+      "translation": "　　　기동 병기에 탑승",
+      "locations": [
+        "think025.bin:0x02E0",
+        "think025.bin:0x0310"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0260",
+      "source": "　サブマシンガン　　Ｐ\n",
+      "translation": "　서브 머신건　　Ｐ\n",
+      "locations": [
+        "think025.bin:0x0372"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0261",
+      "source": "　フラッシュグレネード　　Ｅ\n",
+      "translation": "　플래시 그레네이드　　Ｅ\n",
+      "locations": [
+        "think025.bin:0x0398"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0262",
+      "source": "　ドラゴンスケイル　　Ｐ\n",
+      "translation": "　드래곤 스케일　　Ｐ\n",
+      "locations": [
+        "think025.bin:0x0482"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0263",
+      "source": "　６８式ミサイル　　Ｐ\n",
+      "translation": "　６８식 미사일　　Ｐ\n",
+      "locations": [
+        "think025.bin:0x04AA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0264",
+      "source": "　２０ミリ・ブラスター　　Ｐ\n",
+      "translation": "　２０ｍｍ 블래스터　　Ｐ\n",
+      "locations": [
+        "think025.bin:0x052E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0265",
+      "source": "　７１式レイルキャノン　　Ｐ\n",
+      "translation": "　７１식 레일 캐넌　　Ｐ\n",
+      "locations": [
+        "think025.bin:0x055A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0266",
+      "source": "　ダウザーファング　　Ｐ／Ｓ\n　　物理攻撃力低下",
+      "translation": "　다우저 팽　　Ｐ／Ｓ\n　　물리 공격력 저하",
+      "locations": [
+        "think026.bin:0x01B6",
+        "think027.bin:0x0218",
+        "think028.bin:0x0248",
+        "think030.bin:0x051A",
+        "think032.bin:0x0318"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0267",
+      "source": "　フレイムボール　　Ｅ／炎\n",
+      "translation": "　플레임 볼　　Ｅ／불꽃\n",
+      "locations": [
+        "think026.bin:0x022C",
+        "think027.bin:0x028E",
+        "think028.bin:0x02BE",
+        "think029.bin:0x0536",
+        "think030.bin:0x0590",
+        "think032.bin:0x038E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0268",
+      "source": "　フリーザーブレス　　Ｅ／冷\n",
+      "translation": "　프리저 브레스　　Ｅ／냉기\n",
+      "locations": [
+        "think026.bin:0x028E",
+        "think027.bin:0x02F0",
+        "think028.bin:0x0320",
+        "think029.bin:0x0598",
+        "think030.bin:0x05F2",
+        "think032.bin:0x03F0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0269",
+      "source": "　ライトニング　　Ｅ／雷\n",
+      "translation": "　라이트닝　　Ｅ／번개\n",
+      "locations": [
+        "think027.bin:0x039A",
+        "think028.bin:0x03CA",
+        "think029.bin:0x0642",
+        "think030.bin:0x069C",
+        "think032.bin:0x0470",
+        "think033.bin:0x02B2",
+        "think034.bin:0x029A",
+        "think035.bin:0x0278"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0270",
+      "source": "　ウィリーウィスプ　　Ｅ\n",
+      "translation": "　윌리 위스프　　Ｅ\n",
+      "locations": [
+        "think027.bin:0x03FA",
+        "think028.bin:0x042A",
+        "think029.bin:0x06A2",
+        "think030.bin:0x06FC",
+        "think032.bin:0x04D0",
+        "think033.bin:0x0312",
+        "think035.bin:0x02D8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0271",
+      "source": "　ウィスパーヴォイス　　Ｓ\n　　眠り",
+      "translation": "　위스퍼 보이스　　Ｓ\n　　수면",
+      "locations": [
+        "think027.bin:0x046C",
+        "think028.bin:0x049C",
+        "think029.bin:0x0714",
+        "think030.bin:0x076E",
+        "think030.bin:0x0A14",
+        "think033.bin:0x0384",
+        "think034.bin:0x02FA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0272",
+      "source": "　ヒートクラッシュ　　Ｐ／炎\n",
+      "translation": "　히트 크래시　　Ｐ／불꽃\n",
+      "locations": [
+        "think029.bin:0x02EE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0273",
+      "source": "　ボマーウェイブ　　Ｅ／炎\n",
+      "translation": "　보머 웨이브　　Ｅ／불꽃\n",
+      "locations": [
+        "think029.bin:0x0350",
+        "think029.bin:0x0412"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0274",
+      "source": "　ヘルカノン　　Ｅ／炎\n",
+      "translation": "　헬 캐넌　　Ｅ／불꽃\n",
+      "locations": [
+        "think029.bin:0x03B0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0275",
+      "source": "　ダウザーファング　　Ｐ／Ｓ\n　　物理攻撃力ダウン",
+      "translation": "　다우저 팽　　Ｐ／Ｓ\n　　물리 공격력 다운",
+      "locations": [
+        "think029.bin:0x04BE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0276",
+      "source": "　パワーチャージ\n　　物理攻撃力ＵＰ",
+      "translation": "　파워 차지\n　　물리 공격력 업",
+      "locations": [
+        "think029.bin:0x0780",
+        "think030.bin:0x07E8",
+        "think032.bin:0x0540",
+        "think044.bin:0x066E",
+        "think045.bin:0x038C",
+        "think051.bin:0x0480",
+        "think054.bin:0x0652",
+        "think056.bin:0x0826"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0277",
+      "source": "　タックル　　Ｐ／Ｓ\n　　装甲欠損",
+      "translation": "　태클　　Ｐ／Ｓ\n　　장갑 결손",
+      "locations": [
+        "think029.bin:0x0822",
+        "think030.bin:0x087A",
+        "think032.bin:0x05D2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0278",
+      "source": "　パワースイング　　Ｐ／Ｓ\n　　物理防御力低下",
+      "translation": "　파워 스윙　　Ｐ／Ｓ\n　　물리 방어력 저하",
+      "locations": [
+        "think029.bin:0x0888",
+        "think030.bin:0x08E0",
+        "think032.bin:0x0638"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0279",
+      "source": "　グラシャクラッシュ　　Ｐ／冷\n",
+      "translation": "　글라시아 크래시　　Ｐ／냉기\n",
+      "locations": [
+        "think030.bin:0x0336"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0280",
+      "source": "　アイスウェイブ　　Ｅ／冷\n",
+      "translation": "　아이스 웨이브　　Ｅ／냉기\n",
+      "locations": [
+        "think030.bin:0x039A",
+        "think030.bin:0x046E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0281",
+      "source": "　フリージカノン　　Ｅ／冷／Ｓ\n　　スロウ",
+      "translation": "　프리지 캐넌　　Ｅ／냉기／Ｓ\n　　슬로",
+      "locations": [
+        "think030.bin:0x03FA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0282",
+      "source": "　ライトニング　　Ｅ／雷",
+      "translation": "　라이트닝　　Ｅ／번개",
+      "locations": [
+        "think030.bin:0x09B4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0283",
+      "source": "　ボルツクラッシュ　　Ｐ／雷\n",
+      "translation": "　볼트 크래시　　Ｐ／번개\n",
+      "locations": [
+        "think031.bin:0x021E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0284",
+      "source": "　スパークウェイブ　　Ｅ／雷\n",
+      "translation": "　스파크 웨이브　　Ｅ／번개\n",
+      "locations": [
+        "think031.bin:0x0280",
+        "think031.bin:0x034A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0285",
+      "source": "　ティターンカノン　　Ｅ／雷\n",
+      "translation": "　티탄 캐넌　　Ｅ／번개\n",
+      "locations": [
+        "think031.bin:0x02E2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0286",
+      "source": "　身を守る\n",
+      "translation": "　방어한다\n",
+      "locations": [
+        "think031.bin:0x03B2",
+        "think034.bin:0x03B4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0287",
+      "source": "　グラビティーボム　　Ｅ\n",
+      "translation": "　그래비티 봄　　Ｅ\n",
+      "locations": [
+        "think031.bin:0x044A",
+        "think034.bin:0x044C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0288",
+      "source": "　コンスティレル\n　　ＨＰ回復",
+      "translation": "　컨스텔\n　　ＨＰ 회복",
+      "locations": [
+        "think032.bin:0x0756",
+        "think035.bin:0x0398",
+        "think077.bin:0x0400",
+        "think078.bin:0x0400",
+        "think079.bin:0x04C4",
+        "think080.bin:0x04C4",
+        "think081.bin:0x04C4",
+        "think082.bin:0x04C4",
+        "think083.bin:0x04C4",
+        "think085.bin:0x04C4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0289",
+      "source": "　復活の奇跡\n",
+      "translation": "　부활의 기적\n",
+      "locations": [
+        "think032.bin:0x07D0",
+        "think035.bin:0x0412"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0290",
+      "source": "　ベノムクロー　　Ｐ／Ｓ\n　　毒",
+      "translation": "　베놈 클로　　Ｐ／Ｓ\n　　독",
+      "locations": [
+        "think033.bin:0x0208",
+        "think034.bin:0x035C",
+        "think035.bin:0x0538"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0291",
+      "source": "　下僕をやられてパワーアップ２",
+      "translation": "　부하가 당해서 파워 업 ２",
+      "locations": [
+        "think036.bin:0x01EE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0292",
+      "source": "　下僕をやられてパワーアップ１",
+      "translation": "　부하가 당해서 파워 업 １",
+      "locations": [
+        "think036.bin:0x029A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0293",
+      "source": "　獄界の魔槍　　Ｅ\n",
+      "translation": "　지옥의 마창　　Ｅ\n",
+      "locations": [
+        "think036.bin:0x032C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0294",
+      "source": "　静寂の刻印　　Ｅ／Ｓ\n　　ロスト",
+      "translation": "　정적의 각인　　Ｅ／Ｓ\n　　로스트",
+      "locations": [
+        "think036.bin:0x0384"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0295",
+      "source": "　漆黒の爪　　Ｐ／Ｓ\n　　物理防御力低下",
+      "translation": "　칠흑의 발톱　　Ｐ／Ｓ\n　　물리 방어력 저하",
+      "locations": [
+        "think036.bin:0x03EA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0296",
+      "source": "　奈落の閃光　　Ｅ\n",
+      "translation": "　나락의 섬광　　Ｅ\n",
+      "locations": [
+        "think036.bin:0x048A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0297",
+      "source": "　不浄の再生\n　　ＨＰ回復",
+      "translation": "　부정한 재생\n　　ＨＰ 회복",
+      "locations": [
+        "think036.bin:0x04CE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0298",
+      "source": "　ハンドグレネード　　Ｅ\n",
+      "translation": "　핸드 그레네이드　　Ｅ\n",
+      "locations": [
+        "think037.bin:0x0250",
+        "think038.bin:0x01E8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0299",
+      "source": "　ミサイル　　Ｐ／炎\n",
+      "translation": "　미사일　　Ｐ／불꽃\n",
+      "locations": [
+        "think037.bin:0x02C2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0300",
+      "source": "rebirth",
+      "translation": "rebirth",
+      "locations": [
+        "think039.bin:0x021C",
+        "think040.bin:0x050A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0301",
+      "source": "ppppppppppppppppp",
+      "translation": "ppppppppppppppppp",
+      "locations": [
+        "think039.bin:0x04BA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0302",
+      "source": "　狂者の拳　　Ｐ／Ｓ\n　　パイロット気絶",
+      "translation": "　광인의 철권　　Ｐ／Ｓ\n　　파일럿 기절",
+      "locations": [
+        "think039.bin:0x056E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0303",
+      "source": "　重力掌波　　Ｅ\n",
+      "translation": "　중력장파　　Ｅ\n",
+      "locations": [
+        "think039.bin:0x05B4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0304",
+      "source": "　カオスオーラ　　Ｓ\n　　混乱",
+      "translation": "　카오스 오라　　Ｓ\n　　혼란",
+      "locations": [
+        "think039.bin:0x0600",
+        "think040.bin:0x0CFE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0305",
+      "source": "　サイコウェイブ　　Ｅ\n",
+      "translation": "　사이코 웨이브　　Ｅ\n",
+      "locations": [
+        "think039.bin:0x0638"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0306",
+      "source": "　エータナルリバース\n　　ＨＰ回復",
+      "translation": "　이터널 리버스\n　　ＨＰ 회복",
+      "locations": [
+        "think039.bin:0x0670"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0307",
+      "source": "　Ｊｒ．の意識に反応\n",
+      "translation": "　Ｊｒ\u0019\u0001．\u0019\u0002의 의식에 반응\n",
+      "locations": [
+        "think039.bin:0x069E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0308",
+      "source": "　シオンの意識に反応\n",
+      "translation": "　시온의 의식에 반응\n",
+      "locations": [
+        "think039.bin:0x06C0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0309",
+      "source": "　シオンに対する意識体消失\n",
+      "translation": "　시온 쪽 의식체 소실\n",
+      "locations": [
+        "think039.bin:0x06E2",
+        "think040.bin:0x0B5C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0310",
+      "source": "　Ｊｒ．に対する意識体消失\n",
+      "translation": "　Ｊｒ\u0019\u0001．\u0019\u0002쪽 의식체 소실\n",
+      "locations": [
+        "think039.bin:0x070E",
+        "think040.bin:0x0B88"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0311",
+      "source": "　シオンとＪｒ．で止めを刺せ！\n",
+      "translation": "　시온과 Ｊｒ\u0019\u0001．\u0019\u0002로 마무리하자！\n",
+      "locations": [
+        "think039.bin:0x073A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0312",
+      "source": "　現在のＨＰの１／４ダメージ\n",
+      "translation": "　현재 ＨＰ의 １／４ 대미지\n",
+      "locations": [
+        "think039.bin:0x076A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0313",
+      "source": "　混乱\n",
+      "translation": "　혼란\n",
+      "locations": [
+        "think039.bin:0x0794"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0314",
+      "source": "　回復\n",
+      "translation": "　회복\n",
+      "locations": [
+        "think039.bin:0x07A8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0315",
+      "source": "　フォースパニッシャー　　Ｅ\n",
+      "translation": "　포스 퍼니셔　　Ｅ\n",
+      "locations": [
+        "think040.bin:0x02C0",
+        "think041.bin:0x02DC",
+        "think044.bin:0x0378",
+        "think046.bin:0x02FC",
+        "think047.bin:0x02F2",
+        "think049.bin:0x027A",
+        "think051.bin:0x03DA",
+        "think053.bin:0x0328",
+        "think054.bin:0x02F2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0316",
+      "source": "　オルキュアー\n　　全体ＨＰ回復",
+      "translation": "　올 큐어\n　　전체 ＨＰ 회복",
+      "locations": [
+        "think040.bin:0x02FE",
+        "think041.bin:0x031A",
+        "think044.bin:0x03B6",
+        "think046.bin:0x033A",
+        "think047.bin:0x0330",
+        "think049.bin:0x02B8",
+        "think051.bin:0x0418",
+        "think053.bin:0x0366",
+        "think054.bin:0x0330"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0317",
+      "source": "　２人の戦闘不能者を見て、\n　エーテル力を増す",
+      "translation": "　쓰러진 두 사람을 보고\n　에테르가 증가한다",
+      "locations": [
+        "think040.bin:0x065A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0318",
+      "source": "　Ｊｒ．の意識に反応\n（ひとつ前の行動者がＪｒ．）",
+      "translation": "　Ｊｒ\u0019\u0001．\u0019\u0002의 의식에 반응\n（직전 행동자가 Ｊｒ\u0019\u0001．\u0019\u0002）",
+      "locations": [
+        "think040.bin:0x0AE0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0319",
+      "source": "　シオンの意識に反応\n（ひとつ前の行動者がシオン）",
+      "translation": "　시온의 의식에 반응\n（직전 행동자가 시온）",
+      "locations": [
+        "think040.bin:0x0B1E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0320",
+      "source": "　シオンとＪｒ．……\n　２人の過去は、２人の力でしか\n　断ち切ることはできない。",
+      "translation": "　시온과 Ｊｒ\u0019\u0001．\u0019\u0002……\n　둘의 과거는 둘의 힘으로\n　끊어낼 수밖에 없다．",
+      "locations": [
+        "think040.bin:0x0BB4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0321",
+      "source": "　バーサーカーフィスト　Ｐ／Ｓ\n　　たまにパイロット気絶",
+      "translation": "　버서커 피스트　Ｐ／Ｓ\n　　가끔씩 파일럿 기절",
+      "locations": [
+        "think040.bin:0x0C16"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0322",
+      "source": "　グラビティーブラスト\n　　現在ＨＰの１／４ダメージ",
+      "translation": "　그래비티 블래스트\n　　현재 ＨＰ의 １／４ 대미지",
+      "locations": [
+        "think040.bin:0x0C5E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0323",
+      "source": "　デリンジャーパルス　　Ｓ\n　　ＡＰハーフ",
+      "translation": "　데린저 펄스　　Ｓ\n　　ＡＰ 하프",
+      "locations": [
+        "think040.bin:0x0CA2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0324",
+      "source": "　ルインアース　　Ｅ\n",
+      "translation": "　루인 어스　　Ｅ\n",
+      "locations": [
+        "think040.bin:0x0CDC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0325",
+      "source": "　エターナルリバース\n　　ＨＰ回復",
+      "translation": "　이터널 리버스\n　　ＨＰ 회복",
+      "locations": [
+        "think040.bin:0x0D28"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0326",
+      "source": "　逃走　　Ｓ\n　　",
+      "translation": "　도주　　Ｓ\n　　",
+      "locations": [
+        "think041.bin:0x03DC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0327",
+      "source": "　モデストカース　　Ｓ\n　　混乱",
+      "translation": "　모데스트 커스　　Ｓ\n　　혼란",
+      "locations": [
+        "think041.bin:0x0408",
+        "think042.bin:0x02D2",
+        "think046.bin:0x0428",
+        "think053.bin:0x07BE",
+        "think055.bin:0x03B2",
+        "think056.bin:0x061A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0328",
+      "source": "　怨念の冷気　　Ｅ／冷\n",
+      "translation": "　원한의 냉기　　Ｅ／냉기\n",
+      "locations": [
+        "think041.bin:0x0442",
+        "think042.bin:0x030C",
+        "think046.bin:0x0462",
+        "think047.bin:0x0450",
+        "think053.bin:0x0800",
+        "think055.bin:0x03F4",
+        "think056.bin:0x065C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0329",
+      "source": "　憎念の火炎　　Ｅ／炎\n",
+      "translation": "　증오의 화염　　Ｅ／불꽃\n",
+      "locations": [
+        "think041.bin:0x0474",
+        "think042.bin:0x033E",
+        "think046.bin:0x0494",
+        "think047.bin:0x0482"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0330",
+      "source": "　邪念の雷撃　　Ｅ／雷\n",
+      "translation": "　악의의 뇌격　　Ｅ／번개\n",
+      "locations": [
+        "think041.bin:0x04A6",
+        "think042.bin:0x0370",
+        "think046.bin:0x04C6",
+        "think047.bin:0x04B4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0331",
+      "source": "　ダメージが吸収されている！",
+      "translation": "　대미지가 흡수되고 있다！",
+      "locations": [
+        "think041.bin:0x04FC",
+        "think042.bin:0x03C6",
+        "think046.bin:0x051C",
+        "think047.bin:0x050A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0332",
+      "source": "　逃走　　\n　　",
+      "translation": "　도주　　\n　　",
+      "locations": [
+        "think042.bin:0x02A8",
+        "think046.bin:0x03FE",
+        "think047.bin:0x03F2",
+        "think053.bin:0x0756",
+        "think053.bin:0x0930",
+        "think055.bin:0x034A",
+        "think055.bin:0x0524",
+        "think056.bin:0x05B2",
+        "think056.bin:0x078C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0333",
+      "source": "　サンダーボルト　　Ｅ／雷\n",
+      "translation": "　선더볼트　　Ｅ／번개\n",
+      "locations": [
+        "think043.bin:0x01F6",
+        "think043.bin:0x0256",
+        "think044.bin:0x05FE",
+        "think045.bin:0x031C",
+        "think050.bin:0x01F2",
+        "think050.bin:0x0334",
+        "think050.bin:0x03EE",
+        "think052.bin:0x00FC",
+        "think052.bin:0x0242",
+        "think053.bin:0x03C6",
+        "think053.bin:0x04AC",
+        "think054.bin:0x0390",
+        "think054.bin:0x047A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0334",
+      "source": "　ポイズンクラウド　　Ｅ／Ｓ\n　　毒",
+      "translation": "　포이즌 클라우드　　Ｅ／Ｓ\n　　독",
+      "locations": [
+        "think043.bin:0x027E",
+        "think044.bin:0x05C0",
+        "think045.bin:0x02DE",
+        "think052.bin:0x01E0",
+        "think052.bin:0x027E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0335",
+      "source": "タックルを選べ",
+      "translation": "태클을 선택해라",
+      "locations": [
+        "think044.bin:0x06DE",
+        "think045.bin:0x03FC",
+        "think048.bin:0x0328",
+        "think051.bin:0x04F0",
+        "think054.bin:0x06C2",
+        "think056.bin:0x0896"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0336",
+      "source": "タックルは出たか？",
+      "translation": "태클은 나왔나？",
+      "locations": [
+        "think044.bin:0x0738",
+        "think045.bin:0x0456",
+        "think048.bin:0x0382",
+        "think051.bin:0x054A",
+        "think054.bin:0x071C",
+        "think056.bin:0x08F0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0337",
+      "source": "　タックル　　Ｐ／Ｓ\n　　スロウ",
+      "translation": "　태클　　Ｐ／Ｓ\n　　슬로",
+      "locations": [
+        "think044.bin:0x0764",
+        "think045.bin:0x0494",
+        "think048.bin:0x03C0",
+        "think051.bin:0x057A",
+        "think054.bin:0x074C",
+        "think056.bin:0x0920"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0338",
+      "source": "　トロルスイング　　Ｐ／Ｓ\n　　物理防御力低下",
+      "translation": "　트롤 스윙　　Ｐ／Ｓ\n　　물리 방어력 저하",
+      "locations": [
+        "think044.bin:0x07D6",
+        "think045.bin:0x0506",
+        "think048.bin:0x0432",
+        "think051.bin:0x05DE",
+        "think054.bin:0x07B0",
+        "think056.bin:0x0984"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0339",
+      "source": "　エナジーチャージ\n　　ちょっぴり回復",
+      "translation": "　에너지 차지\n　　살짝 회복",
+      "locations": [
+        "think048.bin:0x02B6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0340",
+      "source": "　【ポイズンバブル】\n　トラップの影響で発動失敗！",
+      "translation": "　【포이즌 버블】\n　트랩의 영향으로 발동 실패！",
+      "locations": [
+        "think049.bin:0x02F6",
+        "think053.bin:0x0AFC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0341",
+      "source": "　ポイズンバブル　　Ｅ／Ｓ\n　　毒",
+      "translation": "　포이즌 버블　　Ｅ／Ｓ\n　　독",
+      "locations": [
+        "think049.bin:0x0374",
+        "think053.bin:0x0B84"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0342",
+      "source": "　ドレインアーム　　Ｅ\n　　ＨＰドレイン",
+      "translation": "　드레인 암　　Ｅ\n　　ＨＰ 드레인",
+      "locations": [
+        "think049.bin:0x03B6",
+        "think049.bin:0x040E",
+        "think053.bin:0x0BC6",
+        "think053.bin:0x0C1E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0343",
+      "source": "　技体分離\n",
+      "translation": "　기체 분리\n",
+      "locations": [
+        "think049.bin:0x04EE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0344",
+      "source": "　様子をみている",
+      "translation": "　상황을 보고 있다",
+      "locations": [
+        "think049.bin:0x050E",
+        "think049.bin:0x096C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0345",
+      "source": "４のアタック確率",
+      "translation": "４의 어택 확률",
+      "locations": [
+        "think049.bin:0x0578"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0346",
+      "source": "　ブラストウェーブ　　Ｐ\n",
+      "translation": "　블래스트 웨이브　　Ｐ\n",
+      "locations": [
+        "think049.bin:0x060C",
+        "think049.bin:0x0BCC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0347",
+      "source": "４の魔＆防確率",
+      "translation": "４의 마＆방확률",
+      "locations": [
+        "think049.bin:0x064C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0348",
+      "source": "　リンドフロスト　　Ｅ／冷\n",
+      "translation": "　린드 프로스트　　Ｅ／냉기\n",
+      "locations": [
+        "think049.bin:0x06A8",
+        "think049.bin:0x0C12"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0349",
+      "source": "４のワーク１の中身",
+      "translation": "４번 워크 １의내용",
+      "locations": [
+        "think049.bin:0x06DE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0350",
+      "source": "５のアタック確率",
+      "translation": "５의 어택 확률",
+      "locations": [
+        "think049.bin:0x0778"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0351",
+      "source": "　轟雷撃　　Ｅ／雷\n",
+      "translation": "　굉뢰격　　Ｅ／번개\n",
+      "locations": [
+        "think049.bin:0x07EA",
+        "think049.bin:0x0C90"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0352",
+      "source": "　念動破　　Ｅ\n",
+      "translation": "　염동파　　Ｅ\n",
+      "locations": [
+        "think049.bin:0x082A",
+        "think049.bin:0x0C54"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0353",
+      "source": "５の魔＆防確率",
+      "translation": "５의 마＆방확률",
+      "locations": [
+        "think049.bin:0x0860"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0354",
+      "source": "使用した数は？",
+      "translation": "사용한 수는？",
+      "locations": [
+        "think049.bin:0x08B8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0355",
+      "source": "　絶命響\n　　即死",
+      "translation": "　절명향\n　　즉사",
+      "locations": [
+        "think049.bin:0x08F2",
+        "think049.bin:0x0CD0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0356",
+      "source": "５のワーク１の中身",
+      "translation": "５번 워크 １의내용",
+      "locations": [
+        "think049.bin:0x0930"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0357",
+      "source": "　Ｗサンダーボルト　　Ｅ／雷\n",
+      "translation": "　Ｗ 선더볼트　　Ｅ／번개\n",
+      "locations": [
+        "think050.bin:0x023C",
+        "think050.bin:0x0438",
+        "think052.bin:0x0146",
+        "think053.bin:0x0410",
+        "think054.bin:0x03DA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0358",
+      "source": "　ＭＡＸサンダーボルト　Ｅ／雷\n",
+      "translation": "　ＭＡＸ 선더볼트　　Ｅ／번개\n",
+      "locations": [
+        "think050.bin:0x0296",
+        "think050.bin:0x0492",
+        "think052.bin:0x01A0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0359",
+      "source": "　ポイズンクラウド　　Ｐ\n　　毒",
+      "translation": "　포이즌 클라우드　　Ｐ\n　　독",
+      "locations": [
+        "think050.bin:0x02D6",
+        "think050.bin:0x0370",
+        "think050.bin:0x04D2",
+        "think053.bin:0x044E",
+        "think053.bin:0x04E8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0360",
+      "source": "coblt",
+      "translation": "coblt",
+      "locations": [
+        "think050.bin:0x03A0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0361",
+      "source": "ミンティア\n「♂はキライ！",
+      "translation": "민티아\n「♂는 싫어！",
+      "locations": [
+        "think050.bin:0x0AAA",
+        "think089.bin:0x05A0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0362",
+      "source": "ミンティア\n「♂はキライ！\n　二度もいわせるな！！",
+      "translation": "민티아\n「♂는 싫어！\n　두 번 말하게 하지 마！！",
+      "locations": [
+        "think050.bin:0x0AFE",
+        "think089.bin:0x05F4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0363",
+      "source": "ミンティア\n「ビボ！！",
+      "translation": "민티아\n「비보！！",
+      "locations": [
+        "think050.bin:0x0B6A",
+        "think089.bin:0x0660"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0364",
+      "source": "ミンティア\n「この○○な♂の命！！\n　一滴残さず吸いつくせ！！",
+      "translation": "민티아\n「이 ○○한 ♂의 목숨을\n　남김없이 흡수해 버려！！",
+      "locations": [
+        "think050.bin:0x0BB8",
+        "think089.bin:0x06AE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0365",
+      "source": "ミンティア\n「フッ、攻撃毒で死ぬなんて〜",
+      "translation": "민티아\n「훗，공격독으로 죽다니〜",
+      "locations": [
+        "think050.bin:0x0C30",
+        "think089.bin:0x0726"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0366",
+      "source": "ミンティア\n「おバカな♂",
+      "translation": "민티아\n「멍청한 ♂",
+      "locations": [
+        "think050.bin:0x0C60",
+        "think089.bin:0x0756"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0367",
+      "source": "　パープルボム　　Ｅ／Ｓ\n　　攻撃毒",
+      "translation": "　퍼플 봄　　Ｅ／Ｓ\n　　공격독",
+      "locations": [
+        "think050.bin:0x0CBE",
+        "think050.bin:0x0CFC",
+        "think089.bin:0x07B4",
+        "think089.bin:0x07F2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0368",
+      "source": "　ダークスター　　Ｅ\n　　後列とばし",
+      "translation": "　다크 스타　　Ｅ\n　　후열 날리기",
+      "locations": [
+        "think050.bin:0x0DA6",
+        "think089.bin:0x089C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0369",
+      "source": "ミンティア\n「最初にいっとくけど",
+      "translation": "민티아\n「미리 말해 두겠는데",
+      "locations": [
+        "think050.bin:0x0E2C",
+        "think089.bin:0x0922"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0370",
+      "source": "ミンティア\n「あんたたちの持っている\n　あの人型のデカイ機械―",
+      "translation": "민티아\n「너희가 가지고 있는\n　그 거대한 로봇 있지？",
+      "locations": [
+        "think050.bin:0x0E56",
+        "think089.bin:0x094C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0371",
+      "source": "ミンティア\n「アレ、好みじゃないから\n　ここでは禁止―",
+      "translation": "민티아\n「그거，내 취향 아니니까\n　여기선 금지야〜",
+      "locations": [
+        "think050.bin:0x0E9E",
+        "think089.bin:0x0994"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0372",
+      "source": "ミンティア\n「その攻撃！　キライ！！",
+      "translation": "민티아\n「그 공격 싫어！！",
+      "locations": [
+        "think050.bin:0x0F10",
+        "think089.bin:0x0A06"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0373",
+      "source": "ミンティア\n「物理攻撃する奴は殺す！！！",
+      "translation": "민티아\n「물리 공격하면 죽인다！！！",
+      "locations": [
+        "think050.bin:0x0F40",
+        "think089.bin:0x0A36"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0374",
+      "source": "　シャドーアイ　　Ｓ\n　　命中ダウン",
+      "translation": "　섀도 아이　　Ｓ\n　　명중 다운",
+      "locations": [
+        "think050.bin:0x0F74",
+        "think089.bin:0x0A6A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0375",
+      "source": "　スペシャルチェーン　　Ｓ\n　攻撃封鎖（○）",
+      "translation": "　스페셜 체인　　Ｓ\n　공격 봉쇄（○）",
+      "locations": [
+        "think050.bin:0x0FA4",
+        "think089.bin:0x0A9A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0376",
+      "source": "　チャンピオンタックル　　Ｐ\n",
+      "translation": "　챔피언 태클　　Ｐ\n",
+      "locations": [
+        "think051.bin:0x0238",
+        "think054.bin:0x051A",
+        "think056.bin:0x0268"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0377",
+      "source": "　トロルスィング　　Ｐ\n物理防御力低下",
+      "translation": "　트롤 스윙　　Ｐ\n물리 방어력 저하",
+      "locations": [
+        "think051.bin:0x0288"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0378",
+      "source": "　リベンジガード\n",
+      "translation": "　리벤지 가드\n",
+      "locations": [
+        "think051.bin:0x02C8",
+        "think054.bin:0x05AE",
+        "think056.bin:0x02FC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0379",
+      "source": "　カウンターブースト\n",
+      "translation": "　카운터 부스트\n",
+      "locations": [
+        "think051.bin:0x031A",
+        "think054.bin:0x05F6",
+        "think056.bin:0x034E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0380",
+      "source": "死んでブーストチェック",
+      "translation": "죽어서 부스트 체크",
+      "locations": [
+        "think053.bin:0x0522",
+        "think055.bin:0x0116",
+        "think056.bin:0x037E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0381",
+      "source": "　アブソープション　　Ｅ\n　　ＥＰドレイン",
+      "translation": "　앱소프션　　Ｅ\n　　ＥＰ 드레인",
+      "locations": [
+        "think053.bin:0x08A4",
+        "think055.bin:0x0498",
+        "think056.bin:0x0700"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0382",
+      "source": "　ソウルスフリング　　Ｓ\n　　ＥＰオーバー",
+      "translation": "　소울스 플링　　Ｓ\n　　ＥＰ 오버",
+      "locations": [
+        "think053.bin:0x08F0",
+        "think055.bin:0x04E4",
+        "think056.bin:0x074C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0383",
+      "source": "　ファイアボール　　Ｅ／炎\n",
+      "translation": "　파이어 볼　　Ｅ／불꽃\n",
+      "locations": [
+        "think053.bin:0x0A1A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0384",
+      "source": "　サンダーフライ　　Ｅ／雷\n",
+      "translation": "　선더 플라이　　Ｅ／번개\n",
+      "locations": [
+        "think053.bin:0x0A56"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0385",
+      "source": "　スティングスロウ　　Ｓ\n　　スロウ",
+      "translation": "　스팅 슬로　　Ｓ\n　　슬로",
+      "locations": [
+        "think053.bin:0x0A9E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0386",
+      "source": "　逃走\n",
+      "translation": "　도주\n",
+      "locations": [
+        "think053.bin:0x0AD6",
+        "think076.bin:0x0196",
+        "think086.bin:0x022E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0387",
+      "source": "　ポイズンクラウド　　Ｐ／Ｓ\n　　毒",
+      "translation": "　포이즌 클라우드　　Ｐ／Ｓ\n　　독",
+      "locations": [
+        "think054.bin:0x0418",
+        "think054.bin:0x04B6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0388",
+      "source": "　トロルスィング　　Ｐ\n　　物理防御力低下",
+      "translation": "　트롤 스윙　　Ｐ\n　　물리 방어력 저하",
+      "locations": [
+        "think054.bin:0x056A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0389",
+      "source": "　トロルスィング　　Ｐ\n　　物理攻撃力低下",
+      "translation": "　트롤 스윙　　Ｐ\n　　물리 공격력 저하",
+      "locations": [
+        "think056.bin:0x02B8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0390",
+      "source": "　エーテル防御力復活　\n（エアッド使用後の一時低下）",
+      "translation": "　에테르 방어력 부활　\n（에어드 사용 후 일시 저하）",
+      "locations": [
+        "think057.bin:0x02E0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0391",
+      "source": "　エアッド　　Ｅ\n",
+      "translation": "　에어드　　Ｅ\n",
+      "locations": [
+        "think057.bin:0x06E2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0392",
+      "source": "　ビームサーベル　　Ｐ／Ｂ\n",
+      "translation": "　빔 사벨　　Ｐ／Ｂ\n",
+      "locations": [
+        "think057.bin:0x0742"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0393",
+      "source": "アルベド\n「弱い！弱すぎるぞ！おまえ！",
+      "translation": "알베도\n「약해！ 완전 약하다고 너！",
+      "locations": [
+        "think057.bin:0x076A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0394",
+      "source": "アルベド\n「次で殺しちまうかもな？",
+      "translation": "알베도\n「다음 걸로 죽어도 모른다？",
+      "locations": [
+        "think057.bin:0x0798"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0395",
+      "source": "アルベド\n「さあ〜、\n　もっと俺を楽しませてくれ",
+      "translation": "알베도\n「자〜\n　좀 더 날 즐겁게 해 봐",
+      "locations": [
+        "think057.bin:0x07CA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0396",
+      "source": "　サイコハンド　　Ｐ／Ｓ\n　　スロウ",
+      "translation": "　사이코 핸드　　Ｐ／Ｓ\n　　슬로",
+      "locations": [
+        "think057.bin:0x081C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0397",
+      "source": "　サイコハンド　　Ｐ\n",
+      "translation": "　사이코 핸드　　Ｐ\n",
+      "locations": [
+        "think057.bin:0x084C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0398",
+      "source": "変身",
+      "translation": "변신",
+      "locations": [
+        "think057.bin:0x09B6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0399",
+      "source": "　ウェイバーソニック　　Ｅ／Ｓ\n　　スロウ",
+      "translation": "　웨이버 소닉　　Ｅ／Ｓ\n　　슬로",
+      "locations": [
+        "think057.bin:0x0B40"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0400",
+      "source": "　ライトニングブラスト　　Ｅ\n",
+      "translation": "　라이트닝 블래스트　　Ｅ\n",
+      "locations": [
+        "think057.bin:0x0B9C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0401",
+      "source": "　スペクトラウェーブ　　Ｓ\n　　エーテルボム",
+      "translation": "　스펙트라 웨이브　　Ｓ\n　　에테르 봄",
+      "locations": [
+        "think057.bin:0x0C18"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0402",
+      "source": "　リプレスフォース　　Ｓ\n　　攻撃封鎖",
+      "translation": "　리프레스 포스　　Ｓ\n　　공격 봉쇄",
+      "locations": [
+        "think057.bin:0x0C7C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0403",
+      "source": "　ドーズパワー　　Ｓ\nパイロット睡眠",
+      "translation": "　도즈 파워　　Ｓ\n　　파일럿 수면",
+      "locations": [
+        "think057.bin:0x0CE6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0404",
+      "source": "　パワースペル　　Ｓ\n　　物理攻撃力アップ",
+      "translation": "　파워 스펠　　Ｓ\n　　물리 공격력 업",
+      "locations": [
+        "think057.bin:0x0D4A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0405",
+      "source": "　クイックアップ　　Ｓ\n　　スピード２５",
+      "translation": "　퀵 업　　Ｓ\n　　스피드 ２５",
+      "locations": [
+        "think057.bin:0x0DB4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0406",
+      "source": "対ステータスシールド低下\nステータス攻撃が有効",
+      "translation": "대스테이터스 실드 저하\n스테이터스 공격이 유효",
+      "locations": [
+        "think057.bin:0x0DFA",
+        "think057.bin:0x119A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0407",
+      "source": "　カオスアロー　Ｅ／Ｓ\n　　混乱",
+      "translation": "　카오스 애로　Ｅ／Ｓ\n　　혼란",
+      "locations": [
+        "think057.bin:0x0FB2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0408",
+      "source": "　サウザンドストーム　　Ｅ\n",
+      "translation": "　사우전드 스톰　　Ｅ\n",
+      "locations": [
+        "think057.bin:0x1004"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0409",
+      "source": "　フレアウイング　　Ｓ\n　　アンチヴェール",
+      "translation": "　플레어 윙　　Ｓ\n　　안티베일",
+      "locations": [
+        "think057.bin:0x106A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0410",
+      "source": "　シャドーウイング　　Ｓ\n　　駆動機関停止",
+      "translation": "　섀도 윙　　Ｓ\n　　구동 기관 정지",
+      "locations": [
+        "think057.bin:0x10E4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0411",
+      "source": "　シャドーウイング　　Ｓ\n　　ストップ",
+      "translation": "　섀도 윙　　Ｓ\n　　스톱",
+      "locations": [
+        "think057.bin:0x1152"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0412",
+      "source": "　『ロスト』の影響で発動不可能",
+      "translation": "　『로스트』로 인해 발동 불가",
+      "locations": [
+        "think057.bin:0x11D6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0413",
+      "source": "\n　　　　　＜ＡＧＷＳ＞",
+      "translation": "\n　　　　　＜ＡＧＷＳ＞",
+      "locations": [
+        "think058.bin:0x0064"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0414",
+      "source": "　シオンとモモは、ＡＧＷＳに搭乗できます",
+      "translation": "　시온，모모는 ＡＧＷＳ에 탈 수 있습니다",
+      "locations": [
+        "think058.bin:0x0082",
+        "think063.bin:0x007E",
+        "think090.bin:0x007E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0415",
+      "source": "　まずメニューから［ＡＧＷＳ］を選びます",
+      "translation": "　메뉴에서 ［ＡＧＷＳ］를 선택합시다",
+      "locations": [
+        "think058.bin:0x00BA",
+        "think063.bin:0x00B6",
+        "think090.bin:0x00B6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0416",
+      "source": "　次に方向キーの左右で出現位置を選んで\n　○で呼び出します",
+      "translation": "　그 후 방향키 좌우로 위치를 선택해서\n　○로 호출합시다",
+      "locations": [
+        "think058.bin:0x0106",
+        "think063.bin:0x0102",
+        "think090.bin:0x0102"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0417",
+      "source": "　呼び出したら、そのターンは終了です",
+      "translation": "　호출하면 그 턴은 그대로 종료됩니다",
+      "locations": [
+        "think058.bin:0x0182",
+        "think063.bin:0x017E",
+        "think090.bin:0x017E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0418",
+      "source": "\n　　＜ＡＧＷＳ搭乗時の操作＞",
+      "translation": "\n　　＜ＡＧＷＳ의 조작 방법＞",
+      "locations": [
+        "think058.bin:0x01EC",
+        "think063.bin:0x01E8",
+        "think090.bin:0x01E8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0419",
+      "source": "　ＡＧＷＳの攻撃も□と△で行います\n　消費ＡＰは装備してる武器によって異なります",
+      "translation": "　ＡＧＷＳ의 공격도 □와 △로 합니다\n　소비 ＡＰ는 장비한 무기에 따라 다릅니다",
+      "locations": [
+        "think058.bin:0x0210",
+        "think063.bin:0x020C",
+        "think090.bin:0x020C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0420",
+      "source": "　またサブメニューの内容も若干変わります",
+      "translation": "　또한 서브 메뉴의 내용도 약간 바뀝니다",
+      "locations": [
+        "think058.bin:0x0266",
+        "think063.bin:0x0262",
+        "think090.bin:0x0262"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0421",
+      "source": "［Ｗ−ＡＣＴ］\n　両手に同じ武器を装備している時、使用できます\n　ＡＰが６必要です\n　（エーテルは使えません）",
+      "translation": "［Ｗ−ＡＣＴ］\n　양손에 같은 무기를 장비했을 때 씁니다\n　６ＡＰ가 필요합니다\n　（에테르는 사용 불가）",
+      "locations": [
+        "think058.bin:0x029E",
+        "think063.bin:0x029A",
+        "think090.bin:0x029A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0422",
+      "source": "［ＩＴＥＭ］\n　ＡＧＷＳ搭乗時は使えません",
+      "translation": "［ＩＴＥＭ］\n　ＡＧＷＳ 탑승 시에는\n　아이템을 쓸 수 없습니다",
+      "locations": [
+        "think058.bin:0x0318",
+        "think063.bin:0x0314",
+        "think090.bin:0x0314"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0423",
+      "source": "［ＭＯＶＥ］\n　戦闘中の位置を変えます\n　位置によって受けるダメージが変わったり\n　攻撃方法が制限されたりします",
+      "translation": "［ＭＯＶＥ］\n　전투 중인 위치를 바꿉니다\n　위치에 따라 받는 대미지가 바뀌거나\n　공격 방법이 제한되기도 합니다",
+      "locations": [
+        "think058.bin:0x0350",
+        "think063.bin:0x034C",
+        "think090.bin:0x034C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0424",
+      "source": "［ＡＧＷＳ］\n　搭乗しているＡＧＷＳから降ります\n　搭乗時と同じく、ターンは終了します",
+      "translation": "［ＡＧＷＳ］\n　탑승 중인 ＡＧＷＳ에서 내립니다\n　탑승할 때와 똑같이 턴이 종료됩니다",
+      "locations": [
+        "think058.bin:0x03CC",
+        "think063.bin:0x03C8",
+        "think090.bin:0x03C8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0425",
+      "source": "［ＧＵＡＲＤ］\n　防御して受けるダメージを軽減します\n　ＡＰをためる時にも便利です",
+      "translation": "［ＧＵＡＲＤ］\n　방어해서 받는 대미지를 줄입니다\n　ＡＰ를 모을 때에도 편리합니다",
+      "locations": [
+        "think058.bin:0x0430",
+        "think063.bin:0x042C",
+        "think090.bin:0x042C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0426",
+      "source": "　ＡＧＷＳのＨＰが０になると、そのバトル中は\n　戦闘に復帰できなくなるので注意！",
+      "translation": "　ＡＧＷＳ의 ＨＰ가 ０이 되면 그 배틀에선\n　전투에 복귀할 수 없으므로 주의！",
+      "locations": [
+        "think058.bin:0x0490",
+        "think063.bin:0x048C",
+        "think090.bin:0x048C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0427",
+      "source": "　ハンドガン３連射",
+      "translation": "　핸드건 ３연사",
+      "locations": [
+        "think058.bin:0x0552",
+        "think063.bin:0x054E",
+        "think090.bin:0x054E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0428",
+      "source": "　ビームキャノン　　Ｅ\n",
+      "translation": "　빔 캐넌　　Ｅ\n",
+      "locations": [
+        "think059.bin:0x02AA",
+        "think060.bin:0x02AA",
+        "think061.bin:0x02AA",
+        "think062.bin:0x02AA",
+        "think064.bin:0x02AA",
+        "think066.bin:0x0278"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0429",
+      "source": "　ツイングレネード　　Ｅ\n",
+      "translation": "　트윈 그레네이드　　Ｅ\n",
+      "locations": [
+        "think059.bin:0x0330",
+        "think060.bin:0x0330",
+        "think061.bin:0x0330",
+        "think062.bin:0x0330",
+        "think064.bin:0x0330",
+        "think066.bin:0x02F4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0430",
+      "source": "　プラズマビーム　　Ｅ／Ｂ\n",
+      "translation": "　플라스마 빔　　Ｅ／Ｂ\n",
+      "locations": [
+        "think059.bin:0x03B4",
+        "think060.bin:0x03B4",
+        "think061.bin:0x03B4",
+        "think062.bin:0x03B4",
+        "think064.bin:0x03B4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0431",
+      "source": "\n     ＜ＡＧＷＳ＞",
+      "translation": "\n     ＜ＡＧＷＳ＞",
+      "locations": [
+        "think063.bin:0x0064",
+        "think090.bin:0x0064"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0432",
+      "source": "　シーアルウイング　　Ｓ\n　　ブースト封鎖",
+      "translation": "　시알 윙　　Ｓ\n　　부스트 봉쇄",
+      "locations": [
+        "think065.bin:0x029C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0433",
+      "source": "　ムーバーハンド　　Ｓ\n　　後列とばし",
+      "translation": "　무버 핸드　　Ｓ\n　　후열 날리기",
+      "locations": [
+        "think065.bin:0x0388"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0434",
+      "source": "　ライフイーター　　Ｓ\n　　ドレインＨＰ",
+      "translation": "　라이프 이터　　Ｓ\n　　ＨＰ 드레인",
+      "locations": [
+        "think065.bin:0x03D6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0435",
+      "source": "ライフイーター　　Ｓ\n　　ドレインＨＰ",
+      "translation": "　라이프 이터　　Ｓ\n　　ＨＰ 드레인",
+      "locations": [
+        "think065.bin:0x0426"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0436",
+      "source": "ギガフレッシュ　　Ｓ\n　　全ステータスクリア",
+      "translation": " 기가 프레시　　Ｓ\n　　모든 스테이터스 클리어",
+      "locations": [
+        "think065.bin:0x0474"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0437",
+      "source": "　体質変換防御！",
+      "translation": "　체질 변환 방어",
+      "locations": [
+        "think065.bin:0x0694"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0438",
+      "source": "　炎　属性のある攻撃を完全防御",
+      "translation": "　불꽃 속성 공격을 완전 방어",
+      "locations": [
+        "think065.bin:0x079A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0439",
+      "source": "　雷　属性のある攻撃を完全防御",
+      "translation": "　번개 속성 공격을 완전 방어",
+      "locations": [
+        "think065.bin:0x081A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0440",
+      "source": "　冷　属性のある攻撃を完全防御",
+      "translation": "　냉기 속성 공격을 완전 방어",
+      "locations": [
+        "think065.bin:0x089A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0441",
+      "source": "　Ｂ　属性のある攻撃を完全防御",
+      "translation": "　Ｂ 속성 공격을 완전 방어",
+      "locations": [
+        "think065.bin:0x091A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0442",
+      "source": "　気　属性のある攻撃を完全防御",
+      "translation": "　기 속성 공격을 완전 방어",
+      "locations": [
+        "think065.bin:0x099A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0443",
+      "source": "　【アタックブライン】\n　トラップの影響で発動失敗！",
+      "translation": "　【어택 블라인드】\n　트랩의 영향으로 발동 실패！",
+      "locations": [
+        "think067.bin:0x031A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0444",
+      "source": "　コールドスプレー　　Ｅ／Ｓ\n　　スロウ",
+      "translation": "　콜드 스프레이　　Ｅ／Ｓ\n　　슬로",
+      "locations": [
+        "think067.bin:0x0452"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0445",
+      "source": "　アタックブライン　　Ｓ\n　　\u001e\u001bボタンを使用不能にする",
+      "translation": "　어택 블라인드　　Ｓ\n　　\u001e\u001b 버튼 사용 불가",
+      "locations": [
+        "think067.bin:0x04C0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0446",
+      "source": "　ファーストエナジー\n　　スピード２５",
+      "translation": "　퍼스트 에너지\n　　스피드 ２５",
+      "locations": [
+        "think067.bin:0x0546"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0447",
+      "source": "　アタックブライン　　Ｓ\n　　\u001e\u001dボタンを使用不能にする",
+      "translation": "　어택 블라인드　　Ｓ\n　　\u001e\u001d 버튼 사용 불가",
+      "locations": [
+        "think067.bin:0x061A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0448",
+      "source": "　ＨＥ−ＳＡＷ　　Ｐ／Ｓ\n　　稀に即死",
+      "translation": "　ＨＥ−ＳＡＷ　　Ｐ／Ｓ\n　　가끔 즉사",
+      "locations": [
+        "think067.bin:0x06A8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0449",
+      "source": "　アタックブライン　　\n\u001e\u001cボタンを使用不能にする",
+      "translation": "　어택 블라인드　　\n\u001e\u001c 버튼을 사용 불가로 만든다",
+      "locations": [
+        "think067.bin:0x075E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0450",
+      "source": "　ボディーアタック　　Ｐ／Ｓ\n　　パイロット気絶",
+      "translation": "　보디 어택　　Ｐ／Ｓ\n　　파일럿 기절",
+      "locations": [
+        "think067.bin:0x07E6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0451",
+      "source": "　ハイパーロケットガン　Ｐ／Ｓ\n　　装甲欠損",
+      "translation": "　하이퍼 로켓 건　Ｐ／Ｓ\n　　장갑 결손",
+      "locations": [
+        "think068.bin:0x0114",
+        "think069.bin:0x0130",
+        "think070.bin:0x00F0",
+        "think071.bin:0x00F0",
+        "think072.bin:0x00F0",
+        "think073.bin:0x00F0",
+        "think074.bin:0x00E8",
+        "think091.bin:0x0190"
+      ],
+      "overrides": {
+        "think091.bin:0x0190": "　하이퍼 로켓 건　　Ｐ／Ｓ\n　　장갑 결손"
+      }
+    },
+    {
+      "id": "S0452",
+      "source": "　パワーグレネード　　Ｅ\n",
+      "translation": "　파워 그레네이드　　Ｅ\n",
+      "locations": [
+        "think068.bin:0x0196",
+        "think069.bin:0x01B2",
+        "think070.bin:0x0172",
+        "think071.bin:0x0172",
+        "think072.bin:0x0172",
+        "think073.bin:0x0172",
+        "think074.bin:0x016A",
+        "think091.bin:0x0212"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0453",
+      "source": "思考中",
+      "translation": "생각 중",
+      "locations": [
+        "think075.bin:0x00D4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0454",
+      "source": "　剣の力　　Ｓ\n　　物理攻撃力アップ",
+      "translation": "　검의 힘　　Ｓ\n　　물리 공격력 업",
+      "locations": [
+        "think075.bin:0x0270",
+        "think076.bin:0x04C2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0455",
+      "source": "　剣の風　　Ｓ\n　　スピード２５",
+      "translation": "　검의 바람　　Ｓ\n　　스피드 ２５",
+      "locations": [
+        "think075.bin:0x02C8",
+        "think076.bin:0x051A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0456",
+      "source": "　冷衝　　Ｓ\n　　スロウ",
+      "translation": "　냉충　　Ｓ\n　　슬로",
+      "locations": [
+        "think076.bin:0x0312"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0457",
+      "source": "　治癒\n　　ＨＰ回復",
+      "translation": "　치유\n　　ＨＰ 회복",
+      "locations": [
+        "think076.bin:0x0344",
+        "think076.bin:0x0372",
+        "think086.bin:0x0BFE",
+        "think086.bin:0x0C2C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0458",
+      "source": "　死界の毒　　Ｓ\n　　リバースＨＰ",
+      "translation": "　저승의 독　　Ｓ\n　　리버스 ＨＰ",
+      "locations": [
+        "think076.bin:0x0806",
+        "think086.bin:0x08BA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0459",
+      "source": "　煉獄の炎　　Ｅ／炎\n",
+      "translation": "　연옥의 불꽃　　Ｅ／불꽃\n",
+      "locations": [
+        "think076.bin:0x084C",
+        "think086.bin:0x0900"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0460",
+      "source": "　魔神の血　　Ｓ\n　　ＥＰ×２",
+      "translation": "　마신의 피　　Ｓ\n　　ＥＰ×２",
+      "locations": [
+        "think076.bin:0x088C",
+        "think086.bin:0x0940"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0461",
+      "source": "　呪印の鎖　　Ｓ\n　　コンボ封鎖（□）",
+      "translation": "　저주의 사슬　　Ｓ\n　　콤보 봉쇄（□）",
+      "locations": [
+        "think076.bin:0x08C4",
+        "think086.bin:0x0978"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0462",
+      "source": "　呪印の鎖　　Ｓ\n　　コンボ封鎖（△）",
+      "translation": "　저주의 사슬　　Ｓ\n　　콤보 봉쇄（△）",
+      "locations": [
+        "think076.bin:0x0904",
+        "think086.bin:0x09B8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0463",
+      "source": "　冥界の血印　　Ｓ\n　　ＨＰドレイン",
+      "translation": "　명계의 혈인　　Ｓ\n　　ＨＰ 드레인",
+      "locations": [
+        "think076.bin:0x0944",
+        "think086.bin:0x09F8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0464",
+      "source": "　冥界の霊印　　Ｓ\n　　ＥＰドレイン",
+      "translation": "　명계의 영인　　Ｓ\n　　ＥＰ 드레인",
+      "locations": [
+        "think076.bin:0x0982",
+        "think086.bin:0x0A36"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0465",
+      "source": "　ベノムエッジ　　Ｐ／Ｓ\n　　毒",
+      "translation": "　베놈 에지　　Ｐ／Ｓ\n　　독",
+      "locations": [
+        "think077.bin:0x03C0",
+        "think078.bin:0x03C0",
+        "think079.bin:0x0484",
+        "think080.bin:0x0484",
+        "think081.bin:0x0484",
+        "think082.bin:0x0484",
+        "think083.bin:0x0484",
+        "think085.bin:0x0484"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0466",
+      "source": "　デススペル\n　　即死",
+      "translation": "　데스 스펠\n　　즉사",
+      "locations": [
+        "think079.bin:0x07F0",
+        "think080.bin:0x07F0",
+        "think081.bin:0x07F0",
+        "think082.bin:0x07F0",
+        "think083.bin:0x07F0",
+        "think085.bin:0x07F0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0467",
+      "source": "　ブラッドスペル\n　　エーテル力低下",
+      "translation": "　블러드 스펠\n　　에테르 저하",
+      "locations": [
+        "think079.bin:0x0820",
+        "think080.bin:0x0820",
+        "think081.bin:0x0820",
+        "think082.bin:0x0820",
+        "think083.bin:0x0820",
+        "think085.bin:0x0820"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0468",
+      "source": "　デススペル\n　　駆動停止",
+      "translation": "　데스 스펠\n　　구동 정지",
+      "locations": [
+        "think079.bin:0x085E",
+        "think080.bin:0x085E",
+        "think081.bin:0x085E",
+        "think082.bin:0x085E",
+        "think083.bin:0x085E",
+        "think085.bin:0x085E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0469",
+      "source": "target--------------------------------------->",
+      "translation": "target--------------------------------------->",
+      "locations": [
+        "think084.bin:0x023E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0470",
+      "source": "　ターゲット不能\n",
+      "translation": "　타깃 불가능\n",
+      "locations": [
+        "think084.bin:0x0288"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0471",
+      "source": "-------------------------->",
+      "translation": "-------------------------->",
+      "locations": [
+        "think084.bin:0x02EE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0472",
+      "source": "　ビームコート発生！\n　（中古品）",
+      "translation": "　빔 코트 발생！\n　（중고품）",
+      "locations": [
+        "think084.bin:0x042E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0473",
+      "source": "　ビームコート破壊！",
+      "translation": "　빔 코트 파괴！",
+      "locations": [
+        "think084.bin:0x04A4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0474",
+      "source": "　ビームコート損傷！\n　（ビーム防御率２５％）",
+      "translation": "　빔 코트 손상！\n　（빔 방어율 ２５％）",
+      "locations": [
+        "think084.bin:0x04CA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0475",
+      "source": "　ビームコート損傷！\n　（ビーム防御率５０％）",
+      "translation": "　빔 코트 손상！\n　（빔 방어율 ５０％）",
+      "locations": [
+        "think084.bin:0x0508"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0476",
+      "source": "　ビームコート損傷！\n　（ビーム防御率７５％）",
+      "translation": "　빔 코트 손상！\n　（빔 방어율 ７５％）",
+      "locations": [
+        "think084.bin:0x0546"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0477",
+      "source": "　エネルギー充填開始！\n",
+      "translation": "　에너지 충전 개시！\n",
+      "locations": [
+        "think084.bin:0x073E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0478",
+      "source": "少佐\n「メーデ！　メーデ！\n　至急！救援物資の投下を頼む！",
+      "translation": "소령\n「메이데이！　메이데이！\n　빨리 구호 물자를 투하해라！",
+      "locations": [
+        "think084.bin:0x0794"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0479",
+      "source": "オペレータＡ\n「了解しました、少佐！",
+      "translation": "오퍼레이터 Ａ\n「알겠습니다 소령님！",
+      "locations": [
+        "think084.bin:0x07EE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0480",
+      "source": "オペレータＡ\n「大変申し上げにくのですが、\n　上からの命令で・・・",
+      "translation": "오퍼레이터 Ａ\n「대단히 죄송합니다만\n　위에서 내린 명령 때문에…",
+      "locations": [
+        "think084.bin:0x0864"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0481",
+      "source": "オペレータＡ\n「”これ以上、物資のムダ使いを\n　させるな！”",
+      "translation": "오퍼레이터 Ａ\n「“더 이상 물자를\n　낭비하게 두지 마라！”",
+      "locations": [
+        "think084.bin:0x08B0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0482",
+      "source": "オペレータＡ\n「と、のことです。",
+      "translation": "오퍼레이터 Ａ\n「라고 했습니다．",
+      "locations": [
+        "think084.bin:0x08F6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0483",
+      "source": "オペレータＡ\n「少佐なら勝てます！\n　頑張って下さい！",
+      "translation": "오퍼레이터 Ａ\n「소령님이 이기실 겁니다！\n　힘내세요！",
+      "locations": [
+        "think084.bin:0x0920"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0484",
+      "source": "　アイアンプレス　　Ｐ\n",
+      "translation": "　아이언 프레스　　Ｐ\n",
+      "locations": [
+        "think084.bin:0x098C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0485",
+      "source": "　アイアンクラッシュ　　Ｐ\n",
+      "translation": "　아이언 크래시　　Ｐ\n",
+      "locations": [
+        "think084.bin:0x09BE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0486",
+      "source": "　ビーム　　Ｅ\n",
+      "translation": "　빔　　Ｅ\n",
+      "locations": [
+        "think084.bin:0x09F4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0487",
+      "source": "　ドーラバスター　　Ｅ\n",
+      "translation": "　도라 버스터　　Ｅ\n",
+      "locations": [
+        "think084.bin:0x0A2A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0488",
+      "source": "　救援物資　　\n",
+      "translation": "　구호 물자　　\n",
+      "locations": [
+        "think084.bin:0x0A68"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0489",
+      "source": "パイロットＡ\n「少佐！　御武運を。",
+      "translation": "파일럿 Ａ\n「소령님！　무운을 빕니다．",
+      "locations": [
+        "think084.bin:0x0AE2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0490",
+      "source": "パイロットＢ\n「少佐！　御武運を。",
+      "translation": "파일럿 Ｂ\n「소령님！　무운을 빕니다．",
+      "locations": [
+        "think084.bin:0x0B14"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0491",
+      "source": "　ロケットバンカー\n　　後列ふっとばし",
+      "translation": "　로켓 벙커\n　　후열 날리기",
+      "locations": [
+        "think084.bin:0x0C28"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0492",
+      "source": "　ストレイジパワー　　Ｓ\n　　物理攻撃力アップ",
+      "translation": "　스트레이지 파워　　Ｓ\n　　물리 공격력 업",
+      "locations": [
+        "think086.bin:0x047A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0493",
+      "source": "　タイムウォーク　　Ｓ\n　　スピード２５",
+      "translation": "　타임 워크　　Ｓ\n　　스피드 ２５",
+      "locations": [
+        "think086.bin:0x04DC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0494",
+      "source": "　冷衝\n　　スロウ",
+      "translation": "　냉충\n　　슬로",
+      "locations": [
+        "think086.bin:0x0BA6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0495",
+      "source": "　　　\n　　スロウ",
+      "translation": "　냉충\n　　슬로",
+      "locations": [
+        "think086.bin:0x0BD2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0496",
+      "source": "　誘い　　Ｓ\n　　眠り",
+      "translation": "　유혹　　Ｓ\n　　수면",
+      "locations": [
+        "think086.bin:0x0C6C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0497",
+      "source": "　誘い　　Ｓ\n　　パイロット睡眠",
+      "translation": "　유혹　　Ｓ\n　　파일럿 수면",
+      "locations": [
+        "think086.bin:0x0C9C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0498",
+      "source": "　冷界　　Ｅ\n",
+      "translation": "　냉계　　Ｅ\n",
+      "locations": [
+        "think086.bin:0x0CD6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0499",
+      "source": "アルベド\n「そんなトロイマシンに乗って\n　どうするつもりだぁ？",
+      "translation": "알베도\n「그런 허접한 기계로\n　뭘 어떻게 할 셈이지？",
+      "locations": [
+        "think087.bin:0x040E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0500",
+      "source": "　赤狼拳　　Ｐ\n　　装甲欠損",
+      "translation": "　적랑권　　Ｐ\n　　장갑 결손",
+      "locations": [
+        "think087.bin:0x05AA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0501",
+      "source": "　鳳翼天舞　　Ｅ\n",
+      "translation": "　봉익천무　　Ｅ\n",
+      "locations": [
+        "think087.bin:0x05E4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0502",
+      "source": "　魔眼−朧　　Ｓ\n　　混乱＋ＥＰ破壊",
+      "translation": "　마안−몽롱　　Ｓ\n　　혼란＋ＥＰ 파괴",
+      "locations": [
+        "think087.bin:0x0614"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0503",
+      "source": "　魔眼−魂　　Ｓ\n　　ＨＰドレイン",
+      "translation": "　마안−영혼　　Ｓ\n　　ＨＰ 드레인",
+      "locations": [
+        "think087.bin:0x0656"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0504",
+      "source": "　堕天黒霊掌　　Ｅ\n　　",
+      "translation": "　타천흑령장　　Ｅ\n　　",
+      "locations": [
+        "think087.bin:0x06A2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0505",
+      "source": "　幻桜陣　　Ｓ\n　　エーテル攻撃重視",
+      "translation": "　환앵진　　Ｓ\n　　에테르 공격 중시",
+      "locations": [
+        "think087.bin:0x06E6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0506",
+      "source": "　魔風陣　　Ｓ\n　　スピード５０",
+      "translation": "　마풍진　　Ｓ\n　　스피드 ５０",
+      "locations": [
+        "think087.bin:0x072A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0507",
+      "source": "　ムシノムレ　　Ｐ\n",
+      "translation": "　벌레 떼　　Ｐ\n",
+      "locations": [
+        "think087.bin:0x0B1E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0508",
+      "source": "　ヒカリノハシラ　　Ｅ\n",
+      "translation": "　빛의 기둥　　Ｅ\n",
+      "locations": [
+        "think087.bin:0x0B64"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0509",
+      "source": "　ハナツカゲノハリ　　Ｅ\n",
+      "translation": "　그림자 침　　Ｅ\n",
+      "locations": [
+        "think087.bin:0x0BAE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0510",
+      "source": "　ハメツノヒカリ　　Ｅ\n",
+      "translation": "　파멸의 빛　　Ｅ\n",
+      "locations": [
+        "think087.bin:0x0C2E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0511",
+      "source": "------------->Free Think ------------",
+      "translation": "------------->Free Think ------------",
+      "locations": [
+        "think087.bin:0x0C5E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0512",
+      "source": "　シロキモノ\n　　全ステータスクリア",
+      "translation": "　하얀 것\n　　모든 스테이터스 클리어",
+      "locations": [
+        "think087.bin:0x0CB4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0513",
+      "source": "　ハメツノマエブレ\n　　ＥＰドレイン",
+      "translation": "　파멸의 전조\n　　ＥＰ 드레인",
+      "locations": [
+        "think087.bin:0x0D26"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0514",
+      "source": "　トワノキオク\n　　ロスト",
+      "translation": "　영원한 기억\n　　로스트",
+      "locations": [
+        "think087.bin:0x0D7E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0515",
+      "source": "　自爆\n",
+      "translation": "　자폭\n",
+      "locations": [
+        "think087.bin:0x0DD8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0516",
+      "source": "============>LASBOSS-d-think",
+      "translation": "============>LASBOSS-d-think",
+      "locations": [
+        "think087.bin:0x0E38"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0517",
+      "source": "　扇閃光　　Ｅ／Ｓ\n　　エーテル力ダウン",
+      "translation": "　선섬광　　Ｅ／Ｓ\n　　에테르 다운",
+      "locations": [
+        "think087.bin:0x0EEA"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0518",
+      "source": "　封滅刃　　Ｅ\n",
+      "translation": "　봉멸인　　Ｅ\n",
+      "locations": [
+        "think087.bin:0x0F3C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0519",
+      "source": "思考中断",
+      "translation": "생각 중단",
+      "locations": [
+        "think088.bin:0x01B4",
+        "think094.bin:0x0280"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0520",
+      "source": "コンビネーション攻撃思案中",
+      "translation": "콤비네이션 공격 고민 중",
+      "locations": [
+        "think088.bin:0x038C",
+        "think094.bin:0x0444"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0521",
+      "source": "コンビネーション攻撃発案！",
+      "translation": "콤비네이션 공격 발안！",
+      "locations": [
+        "think088.bin:0x03D4",
+        "think094.bin:0x048C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0522",
+      "source": "グレイト・ジョー\n「そんな後ろじゃ〜当らんぞ！",
+      "translation": "그레이트 조\n「그렇게 멀리선 안 맞는다！",
+      "locations": [
+        "think088.bin:0x04C8",
+        "think094.bin:0x0580"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0523",
+      "source": "グレイト・ジョー\n「それとも恐いのか〜？",
+      "translation": "그레이트 조\n「혹시 무서운 건가〜？",
+      "locations": [
+        "think088.bin:0x04FE",
+        "think094.bin:0x05B6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0524",
+      "source": "グレイト・ジョー\n「ガンマンの少年よ",
+      "translation": "그레이트 조\n「총잡이 소년이여",
+      "locations": [
+        "think088.bin:0x056C",
+        "think094.bin:0x0624"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0525",
+      "source": "グレイト・ジョー\n「サシの勝負といこうじゃないか",
+      "translation": "그레이트 조\n「일대일 승부로 가지 않겠나",
+      "locations": [
+        "think088.bin:0x0598",
+        "think094.bin:0x0650"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0526",
+      "source": "グレイト・ジョー\n「勝負解除！！！",
+      "translation": "그레이트 조\n「승부 해제！！",
+      "locations": [
+        "think088.bin:0x06BA",
+        "think094.bin:0x0772"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0527",
+      "source": "グレイト・ジョー\n「まとめて一気にカタをつける！",
+      "translation": "그레이트 조\n「한 번에 마무리해 주마！",
+      "locations": [
+        "think088.bin:0x06E4",
+        "think094.bin:0x079C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0528",
+      "source": "回復とダメージが逆転したかも？\n（確率５０％）",
+      "translation": "회복과 대미지가 역전됐나？\n（확률 ５０％）",
+      "locations": [
+        "think088.bin:0x073A",
+        "think094.bin:0x07F2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0529",
+      "source": "　ブラッドノイズ　　Ｓ\n　　エーテル攻撃力重視",
+      "translation": "　블러드 노이즈　　Ｓ\n　　에테르 공격력 중시",
+      "locations": [
+        "think088.bin:0x079C",
+        "think088.bin:0x0A56",
+        "think094.bin:0x0854",
+        "think094.bin:0x0B02"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0530",
+      "source": "グレイト・ジョー\n「外野は、黙ってろ！！",
+      "translation": "그레이트 조\n「제３자는 닥쳐라！！",
+      "locations": [
+        "think088.bin:0x0876",
+        "think094.bin:0x092E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0531",
+      "source": "グレイト・ジョー\n「愚か者が…",
+      "translation": "그레이트 조\n「어리석긴…",
+      "locations": [
+        "think088.bin:0x08B6",
+        "think094.bin:0x096E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0532",
+      "source": "　ハートショットブロー　Ｐ／Ｓ\n　　戒め",
+      "translation": "　하트 샷 블로　Ｐ／Ｓ\n　　응징",
+      "locations": [
+        "think088.bin:0x093A",
+        "think094.bin:0x09F2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0533",
+      "source": "　カモンブリット　　Ｅ\n",
+      "translation": "　코먼 불릿　　Ｅ\n",
+      "locations": [
+        "think088.bin:0x097C",
+        "think094.bin:0x0A34"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0534",
+      "source": "　ソウルバスター　　Ｅ\n",
+      "translation": "　소울 버스터　　Ｅ\n",
+      "locations": [
+        "think088.bin:0x09C2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0535",
+      "source": "　デッドリーパワー　　Ｓ\n　　物理攻撃力重視",
+      "translation": "　데들리 파워　　Ｓ\n　　물리 공격력 중시",
+      "locations": [
+        "think088.bin:0x0A10",
+        "think094.bin:0x0ABC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0536",
+      "source": "「ここは、僕に任せて",
+      "translation": "「여긴 나한테 맡겨",
+      "locations": [
+        "think091.bin:0x00E0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0537",
+      "source": "メッセージのテスト",
+      "translation": "메시지 테스트",
+      "locations": [
+        "think092.bin:0x0A70",
+        "think093.bin:0x0A50",
+        "think095.bin:0x0AE0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0538",
+      "source": "防御体勢",
+      "translation": "방어 태세",
+      "locations": [
+        "think092.bin:0x0A98",
+        "think093.bin:0x0A78",
+        "think095.bin:0x0B08"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0539",
+      "source": "えくすとら",
+      "translation": "엑스트라",
+      "locations": [
+        "think092.bin:0x0C3A",
+        "think093.bin:0x0C1A",
+        "think095.bin:0x0CC4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0540",
+      "source": "　プライドバスター　　Ｅ\n",
+      "translation": "　프라이드 버스터　　Ｅ\n",
+      "locations": [
+        "think094.bin:0x0A6C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0541",
+      "source": "グレイト・ジョー\n「お前は、Ｎｏ．を間違えている！",
+      "translation": "그레이트 조\n「너，Ｎｏ．를 잘못 골랐다！",
+      "locations": [
+        "think094.bin:0x0BDE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0542",
+      "source": "何もしない",
+      "translation": "아무것도 안 한다",
+      "locations": [
+        "think095.bin:0x0CA4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0543",
+      "source": "　攻撃１",
+      "translation": "　공격１",
+      "locations": [
+        "think096.bin:0x08EC",
+        "think096.bin:0x09FE",
+        "think099.bin:0x0A04",
+        "think099.bin:0x0B22"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0544",
+      "source": "　攻撃２",
+      "translation": "　공격２",
+      "locations": [
+        "think096.bin:0x0916",
+        "think099.bin:0x0A3A"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0545",
+      "source": "　攻撃３",
+      "translation": "　공격３",
+      "locations": [
+        "think096.bin:0x0940",
+        "think099.bin:0x0A64"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0546",
+      "source": "　攻撃４",
+      "translation": "　공격４",
+      "locations": [
+        "think096.bin:0x096A",
+        "think099.bin:0x0A8E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0547",
+      "source": "　攻撃５",
+      "translation": "　공격５",
+      "locations": [
+        "think096.bin:0x0994",
+        "think099.bin:0x0AB8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0548",
+      "source": "　メッセージてすと",
+      "translation": "　메시지 테스트",
+      "locations": [
+        "think096.bin:0x09AA",
+        "think099.bin:0x0ACE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0549",
+      "source": "　防御体勢",
+      "translation": "　방어 태세",
+      "locations": [
+        "think096.bin:0x09D2",
+        "think099.bin:0x0AF6"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0550",
+      "source": "　えくすとら",
+      "translation": "　엑스트라",
+      "locations": [
+        "think096.bin:0x0B9E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0551",
+      "source": "　ちょっとだけやて！\n　なんもせーへんがな！",
+      "translation": "　잠깐만！\n　아무 짓도 안 한다니꺼！",
+      "locations": [
+        "think096.bin:0x0BC0"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0552",
+      "source": "INIT06",
+      "translation": "INIT06",
+      "locations": [
+        "think097.bin:0x0146"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0553",
+      "source": "INIT07",
+      "translation": "INIT07",
+      "locations": [
+        "think097.bin:0x01B4"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0554",
+      "source": "INIT08",
+      "translation": "INIT08",
+      "locations": [
+        "think097.bin:0x0230"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0555",
+      "source": "TURN",
+      "translation": "TURN",
+      "locations": [
+        "think097.bin:0x0266"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0556",
+      "source": "　ケイオス・近距離",
+      "translation": "　케이오스・근거리",
+      "locations": [
+        "think098.bin:0x02AC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0557",
+      "source": "コスモス・遠距離",
+      "translation": "코스모스・원거리",
+      "locations": [
+        "think098.bin:0x02DC"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0558",
+      "source": "シオン・ガード",
+      "translation": "시온・가드",
+      "locations": [
+        "think098.bin:0x031E"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0559",
+      "source": "敵の攻撃",
+      "translation": "적의 공격",
+      "locations": [
+        "think098.bin:0x041C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0560",
+      "source": "グノーシスに変身",
+      "translation": "그노시스로 변신",
+      "locations": [
+        "think098.bin:0x0512"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0561",
+      "source": "兵士に変身",
+      "translation": "병사로 변신",
+      "locations": [
+        "think098.bin:0x0534"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0562",
+      "source": "攻撃ユニット射出",
+      "translation": "공격 유닛 사출",
+      "locations": [
+        "think098.bin:0x0566"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0563",
+      "source": "エーテル",
+      "translation": "에테르",
+      "locations": [
+        "think098.bin:0x058C"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0564",
+      "source": "かみつき",
+      "translation": "물어뜯기",
+      "locations": [
+        "think098.bin:0x05D8"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0565",
+      "source": "火球",
+      "translation": "화구",
+      "locations": [
+        "think098.bin:0x0610"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0566",
+      "source": "増殖",
+      "translation": "증식",
+      "locations": [
+        "think098.bin:0x0662"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0567",
+      "source": "しんく１",
+      "translation": "생각１",
+      "locations": [
+        "think099.bin:0x09A2"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0568",
+      "source": "しんく２",
+      "translation": "생각２",
+      "locations": [
+        "think099.bin:0x09DE"
+      ],
+      "overrides": {}
+    },
+    {
+      "id": "S0569",
+      "source": "しんく３",
+      "translation": "생각３",
+      "locations": [
+        "think099.bin:0x0A14"
+      ],
+      "overrides": {}
+    }
+  ]
+}

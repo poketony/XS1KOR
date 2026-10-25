@@ -1,7 +1,6 @@
-# think_patch extract: think099.bin.ori
+# think original extract: think099.bin.ori
 # 총 17개 텍스트 엔트리
-# 번역 시 텍스트 내용만 수정하세요.
-# 텍스트가 원본보다 길면 자동으로 잘림.
+# 원문 초기화: 공백·개행·제어문자 보존. 새 빌드는 translations.json을 사용합니다.
 
 >>> [000] op=0x21(display) flag=0x00 offset=0x08A2
 もんすたー
@@ -19,11 +18,11 @@
 しおん
 <<<
 
->>> [004] op=0x1A(condition) flag=0x00 offset=0x09A2
+>>> [004] op=0x1A(print) flag=0x00 offset=0x09A2
 しんく１
 <<<
 
->>> [005] op=0x1A(condition) flag=0x00 offset=0x09DE
+>>> [005] op=0x1A(print) flag=0x00 offset=0x09DE
 しんく２
 <<<
 
@@ -31,7 +30,7 @@
 　攻撃１
 <<<
 
->>> [007] op=0x1A(condition) flag=0x00 offset=0x0A14
+>>> [007] op=0x1A(print) flag=0x00 offset=0x0A14
 しんく３
 <<<
 
@@ -56,7 +55,7 @@
 <<<
 
 >>> [013] op=0x21(display) flag=0x00 offset=0x0AF6
-　방어体勢
+　防御体勢
 <<<
 
 >>> [014] op=0x21(display) flag=0x00 offset=0x0B22
