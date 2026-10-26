@@ -3,7 +3,7 @@
 
 Unlike ``ov01_strings.py``, this analyzer does not treat every nonzero run as
 text. It starts from the named OV01 data tables, follows their string pointers,
-and adds the three strings referenced directly by MIPS address construction.
+and adds strings referenced directly by MIPS address construction.
 The output is an analysis/editing source; it does not modify an OVL.
 """
 
@@ -20,8 +20,10 @@ import struct
 
 
 ENCODING = "euc_jis_2004"
-TEXT_RANGES = ((0x40E38, 0x40EC0), (0x411E8, 0x48BB0))
+TEXT_RANGES = ((0x3F638, 0x3F650), (0x40E38, 0x40EC0), (0x411E8, 0x48BB0))
 KNOWN_DIRECT_REFERENCES = {
+    # stat2Proc retains s8 across 118 instructions before appending this message.
+    0x3F638: "code@00a0a148/00a0a320",
     # menuKeyGuideHelp carries the LUI result across a long branch body, so a
     # short local address-construction scan cannot pair these two instructions.
     0x40EB0: "code@00a29304/00a29500",
